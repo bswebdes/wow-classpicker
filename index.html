@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midnight Class Picker - Alle Klassen!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>⚔️ Midnight Class Picker ⚔️</h1>
+        <p class="subtitle">Wer wird es für Midnight? Lass das Schicksal (und die RNG-Götter) entscheiden!</p>
+        
+        <div id="selection-screen" class="selection-screen">
+            <h3>Wähle deine Kämpfer:</h3>
+            <div class="selection-controls">
+                <button id="select-all-btn" class="secondary-btn">✅ Alle auswählen</button>
+                <button id="deselect-all-btn" class="secondary-btn">❌ Alle abwählen</button>
+            </div>
+            <div id="class-grid" class="class-grid">
+                <!-- Klassen-Icons kommen hier rein -->
+            </div>
+        </div>
+
+        <div id="arena" class="arena" style="display:none;">
+            <!-- Charaktere werden dynamisch geladen -->
+        </div>
+
+        <div class="controls">
+            <button id="start-btn">KAMPF STARTEN!</button>
+            <button id="reset-btn" style="display:none;">Zur Auswahl</button>
+        </div>
+
+        <div id="battle-log" class="battle-log">
+            <div class="log-entry">Willkommen in der Arena! Drücke Start, um das Gemetzel zu beginnen.</div>
+        </div>
+
+        <div id="victory-screen" class="victory-screen" style="display:none;">
+            <h2 id="winner-text"></h2>
+            <p>Du spielst in Midnight: <strong id="winner-class"></strong>!</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+# OS / Editor
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# IDE / Project settings
+.vscode/
+.idea/
+*.iml
+
+# Logs / Caches
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.cache/
+.tmp/
+
+# Builds / Outputs (future-proof)
+dist/
+build/
+out/
+coverage/
+
+# Dependencies (falls mal ein Tooling dazukommt)
+node_modules/
+
+# Env files
+.env
+.env.*
+
+# Archives
+*.zip
+*.tar
+*.gz

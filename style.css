@@ -1,0 +1,271 @@
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    max-width: 800px;
+    width: 90%;
+    text-align: center;
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    border: 2px solid #333;
+}
+
+h1 {
+    color: #ffd700;
+    text-shadow: 2px 2px 4px #000;
+}
+
+.subtitle {
+    font-style: italic;
+    color: #bbb;
+    margin-bottom: 30px;
+}
+
+.arena {
+    display: none; /* Initial hidden */
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 40px;
+    padding: 20px;
+    background: #252525;
+    border-radius: 10px;
+    min-height: 250px;
+}
+
+.selection-screen {
+    margin-bottom: 30px;
+    background: #252525;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.selection-controls {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.secondary-btn {
+    padding: 8px 18px;
+    font-size: 0.85rem;
+    background-color: #2a2a2a;
+    color: #bbb;
+    border: 1px solid #444;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-weight: 600;
+}
+
+.secondary-btn:hover {
+    color: #fff;
+    transform: translateY(-2px);
+    background-color: #333;
+}
+
+#select-all-btn:hover {
+    border-color: #4caf50;
+    box-shadow: 0 0 10px rgba(76, 175, 80, 0.3);
+}
+
+#deselect-all-btn:hover {
+    border-color: #f44336;
+    box-shadow: 0 0 10px rgba(244, 67, 54, 0.3);
+}
+
+.class-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.selection-item {
+    width: 60px;
+    padding: 10px;
+    background: #333;
+    border: 2px solid #444;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0.5;
+    filter: grayscale(1);
+}
+
+.selection-item:hover {
+    transform: scale(1.1);
+    border-color: #666;
+}
+
+.selection-item.selected {
+    opacity: 1;
+    filter: grayscale(0);
+    border-color: #ffd700;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+    background: #444;
+}
+
+.selection-item .emoji {
+    font-size: 2rem;
+}
+
+.selection-item .name {
+    font-size: 0.7rem;
+    margin-top: 5px;
+}
+
+.character {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.2s ease-in-out;
+    width: 120px;
+    margin-bottom: 20px;
+}
+
+.avatar {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+    transition: transform 0.2s;
+}
+
+.name {
+    font-weight: bold;
+    margin-top: 5px;
+    font-size: 0.9rem;
+}
+
+/* WoW Class Colors */
+.c-warrior, .warrior .name { color: #C79C6E; }
+.c-paladin, .paladin .name { color: #F58CBA; }
+.c-hunter, .hunter .name { color: #ABD473; }
+.c-rogue, .rogue .name { color: #FFF569; }
+.c-priest, .priest .name { color: #FFFFFF; }
+.c-deathknight, .deathknight .name { color: #C41F3B; }
+.c-shaman, .shaman .name { color: #0070DE; }
+.c-mage, .mage .name { color: #40C7EB; }
+.c-warlock, .warlock .name { color: #8787ED; }
+.c-monk, .monk .name { color: #00FF96; }
+.c-druid, .druid .name { color: #FF7D0A; }
+.c-demonhunter, .demonhunter .name { color: #A330C9; }
+.c-evoker, .evoker .name { color: #33937F; }
+
+.status {
+    font-size: 0.9rem;
+    color: #888;
+    height: 1.2rem;
+}
+
+.hp-bar-container {
+    width: 100px;
+    height: 15px;
+    background: #444;
+    border: 2px solid #000;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.hp-bar {
+    width: 100%;
+    height: 100%;
+    background: #4caf50;
+    transition: width 0.3s ease-out, background-color 0.3s;
+}
+
+.controls button {
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.controls button:hover {
+    background-color: #666;
+    transform: scale(1.05);
+}
+
+#start-btn {
+    background-color: #d32f2f;
+}
+
+#start-btn:hover {
+    background-color: #f44336;
+}
+
+.battle-log {
+    margin-top: 20px;
+    background: #000;
+    color: #0f0;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 15px;
+    height: 150px;
+    overflow-y: auto;
+    text-align: left;
+    border: 1px solid #333;
+    border-radius: 5px;
+}
+
+.log-entry {
+    margin-bottom: 5px;
+    border-bottom: 1px solid #111;
+}
+
+.victory-screen {
+    margin-top: 30px;
+    padding: 20px;
+    border: 3px dashed #ffd700;
+    background: #332b00;
+    border-radius: 15px;
+    animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+/* Animations */
+.shake {
+    animation: shake 0.5s cubic-bezier(.36,.07,.19,.97) both;
+}
+
+@keyframes shake {
+    10%, 90% { transform: translate3d(-1px, 0, 0); }
+    20%, 80% { transform: translate3d(2px, 0, 0); }
+    30%, 50%, 70% { transform: translate3d(-4px, 0, 0); }
+    40%, 60% { transform: translate3d(4px, 0, 0); }
+}
+
+.log-entry.important { color: #ffeb3b; font-weight: bold; }
+.log-entry.evade { color: #00bcd4; }
+.log-entry.damage { color: #f44336; }
+.log-entry.heal { color: #4caf50; }
+
+.dead {
+    opacity: 0.3;
+    filter: grayscale(1);
+    transform: scale(0.8) rotate(10deg);
+}
