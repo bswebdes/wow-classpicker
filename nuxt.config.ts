@@ -5,14 +5,14 @@ export default defineNuxtConfig({
 
   app: {
     head: {
-      title: 'Midnight Class Picker',
+      title: 'WoW Midnight Class Picker - Dein Klassen-Zufallsgenerator',
       htmlAttrs: {
         lang: 'de'
       },
       meta: [
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         { charset: 'utf-8' },
-        { name: 'description', content: 'Lass das Schicksal entscheiden welche Klasse du in Midnight spielst! Der ultimative Midnight Class Picker.' },
+        { name: 'description', content: 'Welche Klasse sollst du in WoW: Midnight spielen? Lass den WoW Class Picker entscheiden! Der ultimative Zufallsgenerator für World of Warcraft.' },
         { name: 'format-detection', content: 'telephone=no' }
       ],
       link: [
@@ -27,8 +27,8 @@ export default defineNuxtConfig({
   // Runtime Config für einfache Pflege
   runtimeConfig: {
     public: {
-      siteName: 'Midnight Class Picker',
-      siteDescription: 'Der ultimative Class Picker für Midnight.',
+      siteName: 'WoW Midnight Class Picker',
+      siteDescription: 'Der ultimative Class Picker für WoW Midnight.',
       language: 'de'
     }
   },

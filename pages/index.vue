@@ -21,10 +21,10 @@ const {
 const config = useRuntimeConfig()
 
 useSeoMeta({
-  title: 'Midnight Class Picker - Wer wird es für Midnight?',
-  ogTitle: 'Midnight Class Picker',
-  description: 'Unentschlossen bei der Klassenwahl? Lass den Midnight Class Picker für dich entscheiden!',
-  ogDescription: 'Unentschlossen bei der Klassenwahl? Lass den Midnight Class Picker für dich entscheiden!',
+  title: 'WoW Midnight Class Picker - Welche WoW Klasse spielst du?',
+  ogTitle: 'WoW Midnight Class Picker',
+  description: 'Unentschlossen bei der WoW Klassenwahl für Midnight? Lass den WoW Class Picker für dich entscheiden!',
+  ogDescription: 'Unentschlossen bei der WoW Klassenwahl für Midnight? Lass den WoW Class Picker für dich entscheiden!',
   ogImage: '/og-image.png', // Pfad zum OG-Image (muss noch erstellt/hochgeladen werden)
   twitterCard: 'summary_large_image',
 })
@@ -67,8 +67,8 @@ const handleReset = () => {
 <template>
   <div class="max-w-5xl w-[90%] mx-auto text-center card p-6 mt-8">
     <header class="mb-6">
-      <h1 class="text-3xl font-extrabold text-yellow-400 drop-shadow-sm">⚔️ Midnight Class Picker ⚔️</h1>
-      <p class="mt-2 italic text-neutral-400">Nuxt Edition - Wer wird es für Midnight? Lass das Schicksal entscheiden!</p>
+      <h1 class="text-3xl font-extrabold text-yellow-400 drop-shadow-sm">⚔️ WoW Midnight Class Picker ⚔️</h1>
+      <p class="mt-2 italic text-neutral-400">Welche Klasse wirst du in Midnight spielen? Lass das Schicksal entscheiden!</p>
     </header>
 
     <!-- Street-Fighter-Style Intros -->
