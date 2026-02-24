@@ -4,6 +4,7 @@ export const classData = {
     warrior: {
         name: 'Krieger',
         emoji: '🛡️',
+        icon: 'class-icons/ClassIcon_warrior.webp',
         description: 'Viel HP und harte Schläge.',
         stats: { hp: 120, crit: 0.1 },
         abilities: [
@@ -16,6 +17,7 @@ export const classData = {
     paladin: {
         name: 'Paladin',
         emoji: '⚖️',
+        icon: 'class-icons/ClassIcon_paladin.webp',
         description: 'Heilung und Unverwundbarkeit.',
         stats: { hp: 100, crit: 0.05 },
         abilities: [
@@ -28,6 +30,7 @@ export const classData = {
     hunter: {
         name: 'Jäger',
         emoji: '🏹',
+        icon: 'class-icons/ClassIcon_hunter.webp',
         description: 'Hoher Schaden, weicht gerne aus.',
         stats: { hp: 90, crit: 0.15 },
         abilities: [
@@ -40,6 +43,7 @@ export const classData = {
     rogue: {
         name: 'Schurke',
         emoji: '🥷',
+        icon: 'class-icons/ClassIcon_rogue.webp',
         description: 'Glaskanone mit hoher Ausweichchance.',
         stats: { hp: 80, crit: 0.2, dodge: 0.15 },
         abilities: [
@@ -52,6 +56,7 @@ export const classData = {
     priest: {
         name: 'Priester',
         emoji: '⛪',
+        icon: 'class-icons/ClassIcon_priest.webp',
         description: 'Starke Heilung, wenig HP.',
         stats: { hp: 85, crit: 0.05 },
         abilities: [
@@ -64,6 +69,7 @@ export const classData = {
     deathknight: {
         name: 'Todesritter',
         emoji: '💀',
+        icon: 'class-icons/ClassIcon_deathknight.webp',
         description: 'Zäh und entzieht Leben.',
         stats: { hp: 115, crit: 0.08 },
         abilities: [
@@ -76,6 +82,7 @@ export const classData = {
     shaman: {
         name: 'Schamane',
         emoji: '⚡',
+        icon: 'class-icons/ClassIcon_shaman.webp',
         description: 'Vielseitig mit Blitzen und Totems.',
         stats: { hp: 100, crit: 0.12 },
         abilities: [
@@ -88,6 +95,7 @@ export const classData = {
     mage: {
         name: 'Magier',
         emoji: '🧙',
+        icon: 'class-icons/ClassIcon_mage.webp',
         description: 'Explosiver Schaden, aber zerbrechlich.',
         stats: { hp: 80, crit: 0.25 },
         abilities: [
@@ -100,6 +108,7 @@ export const classData = {
     warlock: {
         name: 'Hexenmeister',
         emoji: '😈',
+        icon: '/class-icons/ClassIcon_warlock.webp',
         description: 'Viel Ausdauer und dunkle Magie.',
         stats: { hp: 110, crit: 0.1 },
         abilities: [
@@ -112,6 +121,7 @@ export const classData = {
     monk: {
         name: 'Mönch',
         emoji: '🐼',
+        icon: '/class-icons/ClassIcon_monk.webp',
         description: 'Mobil und ausgewogen.',
         stats: { hp: 100, crit: 0.1, dodge: 0.1 },
         abilities: [
@@ -124,6 +134,7 @@ export const classData = {
     druid: {
         name: 'Druide',
         emoji: '🦉',
+        icon: '/class-icons/ClassIcon_druid.webp',
         description: 'Kann alles ein bisschen.',
         stats: { hp: 105, crit: 0.1 },
         abilities: [
@@ -136,6 +147,7 @@ export const classData = {
     demonhunter: {
         name: 'Dämonenjäger',
         emoji: '🦇',
+        icon: '/class-icons/ClassIcon_demon_hunter.webp',
         description: 'Extrem schnell und aggressiv.',
         stats: { hp: 95, crit: 0.15, dodge: 0.05 },
         abilities: [
@@ -148,6 +160,7 @@ export const classData = {
     evoker: {
         name: 'Rufer',
         emoji: '🐲',
+        icon: '/class-icons/ClassIcon_evoker.webp',
         description: 'Mittlere Reichweite, gute Heilung.',
         stats: { hp: 100, crit: 0.12 },
         abilities: [
@@ -228,6 +241,7 @@ export const useBattle = () => {
         name: customNames[id] || classData[id].name,
         className: classData[id].name,
         emoji: classData[id].emoji,
+        icon: classData[id].icon,
         maxHp: startHp,
         hp: startHp,
         abilities: classData[id].abilities.map(a => ({ ...a, currentCD: 0 })),
@@ -235,7 +249,9 @@ export const useBattle = () => {
         evadeNext: false,
         status: 'Bereit!',
         isShaking: false,
-        stats: stats
+        stats: stats,
+        damageDone: 0,
+        healingDone: 0
       }
     })
     battleLog.value = []
@@ -283,6 +299,8 @@ export const useBattle = () => {
           const healVar = 1 + (Math.random() * 2 - 1) * BALANCE.healingVariance
           const healAmount = Math.max(1, Math.round(ability.heal * healVar))
           attacker.hp = Math.min(attacker.maxHp, attacker.hp + healAmount)
+          // Healing-Meter
+          attacker.healingDone = (attacker.healingDone || 0) + healAmount
         }
         if (ability.damage) {
           // Dynamischer Ausweich-Bonus bei niedrigem Leben (Comeback-Potenzial)
@@ -320,6 +338,9 @@ export const useBattle = () => {
             target.hp = Math.max(0, target.hp - finalDamage)
             target.isShaking = true
             setTimeout(() => { target.isShaking = false }, 500)
+
+            // DPS-Meter
+            attacker.damageDone = (attacker.damageDone || 0) + finalDamage
             
             if (target.hp <= 0 && target.alive) {
               target.alive = false

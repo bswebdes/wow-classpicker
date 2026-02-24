@@ -74,12 +74,12 @@ const getPlayerIndex = (id) => {
           <div class="absolute inset-0 rotate-45 scale-150 bg-[repeating-linear-gradient(0deg,#000,#000_1px,transparent_1px,transparent_4px)]"></div>
         </div>
 
-        <div class="relative z-10 transition-transform duration-300 group-hover:scale-110">
-          <div class="text-4xl filter drop-shadow-md">{{ data.emoji }}</div>
+        <div class="absolute inset-0 z-0 transition-transform duration-500 group-hover:scale-125">
+          <img :src="data.icon" :alt="data.name" class="w-full h-full object-cover" />
         </div>
 
         <div 
-          class="relative z-10 text-[0.65rem] mt-2 font-black uppercase tracking-tighter" 
+          class="relative z-10 text-[0.65rem] mt-auto font-black uppercase tracking-tighter bg-black/60 w-full py-1 backdrop-blur-sm" 
           :class="selectedClasses.has(id) ? `text-c-${id}` : 'text-neutral-500'"
           style="font-family: 'Press Start 2P', cursive; font-size: 0.5rem;"
         >
@@ -127,26 +127,8 @@ const getPlayerIndex = (id) => {
 </template>
 
 <style scoped>
-.arcade-btn {
-  @apply relative px-6 py-2 text-white font-black italic uppercase tracking-tighter overflow-hidden transition-all;
-  font-family: 'Permanent Marker', cursive;
-  font-size: 1.1rem;
-}
-
-.arcade-btn:hover {
-  @apply transform -translate-y-0.5;
-}
-
-.arcade-btn:active {
-  @apply transform translate-y-0.5;
-}
-
-.arcade-btn span {
-  text-shadow: 2px 2px 0px #000;
-}
-
 .fighter-card {
-  @apply relative w-28 p-3 bg-neutral-900 border-2 rounded-lg cursor-pointer transition-all duration-300 flex flex-col items-center opacity-60 grayscale scale-95;
+  @apply relative w-28 h-36 p-0 bg-neutral-900 border-2 rounded-lg cursor-pointer transition-all duration-300 flex flex-col items-center opacity-60 grayscale scale-95 overflow-hidden;
 }
 
 .fighter-card:hover {

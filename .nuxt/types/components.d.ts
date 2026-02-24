@@ -18,6 +18,7 @@ interface _GlobalComponents {
   BattleLog: typeof import("../../components/BattleLog.vue")['default']
   CharacterCard: typeof import("../../components/CharacterCard.vue")['default']
   ClassSelection: typeof import("../../components/ClassSelection.vue")['default']
+  DpsMeter: typeof import("../../components/DpsMeter.vue")['default']
   VictoryScreen: typeof import("../../components/VictoryScreen.vue")['default']
   NuxtWelcome: typeof import("../../node_modules/nuxt/dist/app/components/welcome.vue")['default']
   NuxtLayout: typeof import("../../node_modules/nuxt/dist/app/components/nuxt-layout")['default']
@@ -46,6 +47,7 @@ interface _GlobalComponents {
   LazyBattleLog: LazyComponent<typeof import("../../components/BattleLog.vue")['default']>
   LazyCharacterCard: LazyComponent<typeof import("../../components/CharacterCard.vue")['default']>
   LazyClassSelection: LazyComponent<typeof import("../../components/ClassSelection.vue")['default']>
+  LazyDpsMeter: LazyComponent<typeof import("../../components/DpsMeter.vue")['default']>
   LazyVictoryScreen: LazyComponent<typeof import("../../components/VictoryScreen.vue")['default']>
   LazyNuxtWelcome: LazyComponent<typeof import("../../node_modules/nuxt/dist/app/components/welcome.vue")['default']>
   LazyNuxtLayout: LazyComponent<typeof import("../../node_modules/nuxt/dist/app/components/nuxt-layout")['default']>

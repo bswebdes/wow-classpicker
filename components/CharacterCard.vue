@@ -20,7 +20,9 @@ const hpBarColor = computed(() => {
         :style="{ width: hpPercent + '%', backgroundColor: hpBarColor }"
       ></div>
     </div>
-    <div class="text-5xl mb-2">{{ character.emoji }}</div>
+    <div class="w-16 h-16 mb-2">
+      <img :src="character.icon" :alt="character.className" class="w-full h-full object-contain" />
+    </div>
     <div class="font-bold text-sm text-center line-clamp-1" :title="character.name">{{ character.name }}</div>
     <div v-if="character.name !== character.className" class="text-[0.6rem] text-neutral-500 uppercase font-bold">{{ character.className }}</div>
     <div class="text-neutral-400 text-xs h-5">{{ character.status }}</div>

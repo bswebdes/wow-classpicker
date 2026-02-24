@@ -149,18 +149,31 @@ h1 {
 
 /* WoW Class Colors */
 .c-warrior, .warrior .name, .text-c-warrior, .border-c-warrior { color: #C79C6E; }
+.bg-c-warrior { background-color: #C79C6E; }
 .c-paladin, .paladin .name, .text-c-paladin, .border-c-paladin { color: #F58CBA; }
+.bg-c-paladin { background-color: #F58CBA; }
 .c-hunter, .hunter .name, .text-c-hunter, .border-c-hunter { color: #ABD473; }
+.bg-c-hunter { background-color: #ABD473; }
 .c-rogue, .rogue .name, .text-c-rogue, .border-c-rogue { color: #FFF569; }
+.bg-c-rogue { background-color: #FFF569; }
 .c-priest, .priest .name, .text-c-priest, .border-c-priest { color: #FFFFFF; }
+.bg-c-priest { background-color: #FFFFFF; }
 .c-deathknight, .deathknight .name, .text-c-deathknight, .border-c-deathknight { color: #C41F3B; }
+.bg-c-deathknight { background-color: #C41F3B; }
 .c-shaman, .shaman .name, .text-c-shaman, .border-c-shaman { color: #0070DE; }
+.bg-c-shaman { background-color: #0070DE; }
 .c-mage, .mage .name, .text-c-mage, .border-c-mage { color: #40C7EB; }
+.bg-c-mage { background-color: #40C7EB; }
 .c-warlock, .warlock .name, .text-c-warlock, .border-c-warlock { color: #8787ED; }
+.bg-c-warlock { background-color: #8787ED; }
 .c-monk, .monk .name, .text-c-monk, .border-c-monk { color: #00FF96; }
+.bg-c-monk { background-color: #00FF96; }
 .c-druid, .druid .name, .text-c-druid, .border-c-druid { color: #FF7D0A; }
+.bg-c-druid { background-color: #FF7D0A; }
 .c-demonhunter, .demonhunter .name, .text-c-demonhunter, .border-c-demonhunter { color: #A330C9; }
+.bg-c-demonhunter { background-color: #A330C9; }
 .c-evoker, .evoker .name, .text-c-evoker, .border-c-evoker { color: #33937F; }
+.bg-c-evoker { background-color: #33937F; }
 
 .status {
     font-size: 0.9rem;
@@ -264,6 +277,26 @@ h1 {
     opacity: 0.3;
     filter: grayscale(1);
     transform: scale(0.8) rotate(10deg);
+}
+
+/* Arcade Button Styles */
+.arcade-btn {
+    @apply relative px-8 py-3 text-white font-black italic uppercase tracking-tighter overflow-hidden transition-all inline-block;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 1.1rem;
+    line-height: 1;
+}
+
+.arcade-btn:hover {
+    @apply transform -translate-y-0.5;
+}
+
+.arcade-btn:active {
+    @apply transform translate-y-0.5;
+}
+
+.arcade-btn span {
+    text-shadow: 2px 2px 0px #000;
 }
 
 .footer {

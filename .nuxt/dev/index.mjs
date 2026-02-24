@@ -648,8 +648,8 @@ const _inlineRuntimeConfig = {
     }
   },
   "public": {
-    "siteName": "Midnight Class Picker",
-    "siteDescription": "Der ultimative Class Picker für Midnight.",
+    "siteName": "WoW Midnight Class Picker",
+    "siteDescription": "Der ultimative Class Picker für WoW Midnight.",
     "language": "de"
   }
 };

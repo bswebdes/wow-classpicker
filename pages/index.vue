@@ -112,9 +112,14 @@ const handleReset = () => {
         />
       </div>
 
-      <div class="mt-4 flex items-center justify-center gap-3">
-        <button v-if="!isStarted" id="start-btn" class="btn-primary bg-red-700 hover:bg-red-600" @click="handleStart">
-          KAMPF STARTEN!
+      <div class="mt-8 flex items-center justify-center gap-3">
+        <button 
+          v-if="!isStarted" 
+          class="arcade-btn group relative overflow-hidden" 
+          @click="handleStart"
+        >
+          <span class="relative z-10">KAMPF STARTEN!</span>
+          <div class="absolute inset-0 bg-red-700 transform skew-x-[-12deg] group-hover:bg-red-600 transition-colors"></div>
         </button>
         <button v-if="isStarted && !isBattleInProgress" id="reset-btn" class="btn-secondary" @click="handleReset">
           Zur Auswahl
@@ -123,6 +128,10 @@ const handleReset = () => {
 
       <div class="mt-6">
         <BattleLog :log-entries="battleLog" />
+      </div>
+
+      <div class="mt-6">
+        <DpsMeter v-if="isStarted" :characters="characters" />
       </div>
 
       <div class="mt-6">
