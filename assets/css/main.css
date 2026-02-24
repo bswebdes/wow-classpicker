@@ -2,10 +2,6 @@ body {
     background-color: #121212;
     color: #e0e0e0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
     margin: 0;
 }
 
@@ -152,19 +148,19 @@ h1 {
 }
 
 /* WoW Class Colors */
-.c-warrior, .warrior .name { color: #C79C6E; }
-.c-paladin, .paladin .name { color: #F58CBA; }
-.c-hunter, .hunter .name { color: #ABD473; }
-.c-rogue, .rogue .name { color: #FFF569; }
-.c-priest, .priest .name { color: #FFFFFF; }
-.c-deathknight, .deathknight .name { color: #C41F3B; }
-.c-shaman, .shaman .name { color: #0070DE; }
-.c-mage, .mage .name { color: #40C7EB; }
-.c-warlock, .warlock .name { color: #8787ED; }
-.c-monk, .monk .name { color: #00FF96; }
-.c-druid, .druid .name { color: #FF7D0A; }
-.c-demonhunter, .demonhunter .name { color: #A330C9; }
-.c-evoker, .evoker .name { color: #33937F; }
+.c-warrior, .warrior .name, .text-c-warrior, .border-c-warrior { color: #C79C6E; }
+.c-paladin, .paladin .name, .text-c-paladin, .border-c-paladin { color: #F58CBA; }
+.c-hunter, .hunter .name, .text-c-hunter, .border-c-hunter { color: #ABD473; }
+.c-rogue, .rogue .name, .text-c-rogue, .border-c-rogue { color: #FFF569; }
+.c-priest, .priest .name, .text-c-priest, .border-c-priest { color: #FFFFFF; }
+.c-deathknight, .deathknight .name, .text-c-deathknight, .border-c-deathknight { color: #C41F3B; }
+.c-shaman, .shaman .name, .text-c-shaman, .border-c-shaman { color: #0070DE; }
+.c-mage, .mage .name, .text-c-mage, .border-c-mage { color: #40C7EB; }
+.c-warlock, .warlock .name, .text-c-warlock, .border-c-warlock { color: #8787ED; }
+.c-monk, .monk .name, .text-c-monk, .border-c-monk { color: #00FF96; }
+.c-druid, .druid .name, .text-c-druid, .border-c-druid { color: #FF7D0A; }
+.c-demonhunter, .demonhunter .name, .text-c-demonhunter, .border-c-demonhunter { color: #A330C9; }
+.c-evoker, .evoker .name, .text-c-evoker, .border-c-evoker { color: #33937F; }
 
 .status {
     font-size: 0.9rem;
@@ -268,4 +264,21 @@ h1 {
     opacity: 0.3;
     filter: grayscale(1);
     transform: scale(0.8) rotate(10deg);
+}
+
+.footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+    font-size: 0.8rem;
+}
+
+.footer a {
+    color: #888;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.footer a:hover {
+    color: #ffd700;
 }

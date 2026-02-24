@@ -31,8 +31,15 @@ npm run dev
 - **Nuxt 3**: Das Framework für die Web-App.
 - **Vue 3**: Komponentenbasiertes UI (Composition API).
 - **Vite**: Superschneller Bundler.
-- **CSS3**: "Dark Mode" WoW-Feeling, Animationen und Layout.
+- **Tailwind CSS**: Utility-First Styling der kompletten App (über `@nuxtjs/tailwindcss`).
 - **TypeScript**: Typisierte Logik (Composables).
+
+## 📈 SEO & Pflege
+Die Seite ist für Suchmaschinen (SEO) optimiert. Du kannst die wichtigsten Texte an zwei Stellen pflegen:
+
+1.  **Zentrale Einstellungen (`nuxt.config.ts`):** Unter `runtimeConfig.public` und `app.head` findest du den Seitentitel und die allgemeine Beschreibung.
+2.  **Seiten-spezifisch (`pages/index.vue`):** In der `useSeoMeta` Funktion kannst du den Titel, die Beschreibung und Open-Graph Tags (für Social Media Vorschauen) anpassen.
+3.  **Suchmaschinen:** Eine `robots.txt` und `sitemap.xml` befinden sich im `public/` Ordner.
 
 ## 📜 Lizenz
 Dieses Projekt ist zum Spaß erstellt worden. Nutze es, wie du möchtest!

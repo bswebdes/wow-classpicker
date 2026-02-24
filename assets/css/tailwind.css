@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Tailwind layers if needed */
+@layer base {
+  html { @apply scroll-smooth; }
+  body { @apply bg-neutral-900 text-neutral-200 min-h-screen antialiased; }
+}
+
+@layer components {
+  .btn-primary { @apply inline-flex items-center justify-center rounded-md bg-red-600 px-5 py-3 text-base font-semibold uppercase tracking-wide text-white shadow transition hover:bg-red-500 focus:outline-none focus:ring-2 focus:ring-red-400 disabled:opacity-60; }
+  .btn-secondary { @apply inline-flex items-center justify-center rounded-full border border-neutral-600 bg-neutral-800 px-3 py-1.5 text-sm font-semibold text-neutral-300 transition hover:border-neutral-500 hover:text-white; }
+  .card { @apply rounded-xl border border-neutral-800 bg-neutral-800/60 shadow-lg; }
+  .section { @apply rounded-xl border border-neutral-800 bg-neutral-800/60 p-5; }
+}
+
+@layer utilities {
+  .text-glow { text-shadow: 0 0 10px rgba(255,255,255,0.15); }
+}

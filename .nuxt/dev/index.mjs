@@ -647,7 +647,11 @@ const _inlineRuntimeConfig = {
       }
     }
   },
-  "public": {}
+  "public": {
+    "siteName": "Midnight Class Picker",
+    "siteDescription": "Der ultimative Class Picker für Midnight.",
+    "language": "de"
+  }
 };
 const envOptions = {
   prefix: "NITRO_",
@@ -2028,7 +2032,7 @@ const _HoFpK9zgbmA_XoqzOlBzcDeCMeg99beu9ZTNe1h9Kc = (function(nitro) {
 
 const rootDir = "C:/Webdev/classpicker";
 
-const appHead = {"meta":[{"name":"viewport","content":"width=device-width, initial-scale=1"},{"charset":"utf-8"}],"link":[],"style":[],"script":[],"noscript":[],"title":"Midnight Class Picker - Nuxt Edition"};
+const appHead = {"meta":[{"name":"viewport","content":"width=device-width, initial-scale=1"},{"charset":"utf-8"},{"name":"description","content":"Lass das Schicksal entscheiden welche Klasse du in Midnight spielst! Der ultimative Midnight Class Picker."},{"name":"format-detection","content":"telephone=no"}],"link":[{"rel":"icon","type":"image/x-icon","href":"/favicon.ico"}],"style":[],"script":[],"noscript":[],"title":"Midnight Class Picker","htmlAttrs":{"lang":"de"}};
 
 const appRootTag = "div";
 
