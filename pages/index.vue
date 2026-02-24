@@ -131,7 +131,6 @@ const handleReset = () => {
     </main>
 
     <footer class="mt-10 pt-6 border-t border-neutral-800 text-sm text-neutral-400">
-      <NuxtLink class="hover:text-yellow-400 transition" to="/impressum">Impressum</NuxtLink>
     </footer>
   </div>
 </template>
