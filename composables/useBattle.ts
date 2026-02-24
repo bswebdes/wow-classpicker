@@ -169,7 +169,18 @@ const randomNames = [
 ]
 
 export const useBattle = () => {
-  const selectedClasses = ref(new Set(Object.keys(classData)))
+  // Balance-Parameter für faire, aber spannende Kämpfe
+  const BALANCE = {
+    damageVariance: 0.2,       // +-20% Schaden
+    healingVariance: 0.12,     // +-12% Heilung
+    critMult: 1.6,             // normaler Krit-Multiplikator
+    megaCritChance: 0.025,     // 2.5% Chance auf Mega-Krit
+    megaCritMult: 2.5,         // Mega-Krit-Multiplikator
+    lowHpThreshold: 0.3,       // unter 30% HP = Verzweiflungsbonus
+    lowHpCritBonus: 0.1,       // +10% Krit wenn niedriges Leben
+    lowHpDodgeBonus: 0.1       // +10% Ausweichen wenn niedriges Leben
+  }
+  const selectedClasses = ref(new Set())
   const customNames = reactive({})
 
   // Initialize with some random names for default selected classes
@@ -268,11 +279,17 @@ export const useBattle = () => {
           attacker.evadeNext = true
         }
         if (ability.heal) {
-          attacker.hp = Math.min(attacker.maxHp, attacker.hp + ability.heal)
+          // leichte Varianz auf Heilung für mehr Dynamik
+          const healVar = 1 + (Math.random() * 2 - 1) * BALANCE.healingVariance
+          const healAmount = Math.max(1, Math.round(ability.heal * healVar))
+          attacker.hp = Math.min(attacker.maxHp, attacker.hp + healAmount)
         }
         if (ability.damage) {
-          const targetPassiveDodge = target.stats?.dodge || 0
-          const isDodged = target.evadeNext || Math.random() < targetPassiveDodge
+          // Dynamischer Ausweich-Bonus bei niedrigem Leben (Comeback-Potenzial)
+          const targetPassiveDodge = (target.stats?.dodge || 0)
+          const targetLowHpBonus = (target.hp / target.maxHp) < BALANCE.lowHpThreshold ? BALANCE.lowHpDodgeBonus : 0
+          const totalTargetDodge = Math.min(0.6, targetPassiveDodge + targetLowHpBonus) // Kappung gegen Frustmomente
+          const isDodged = target.evadeNext || Math.random() < totalTargetDodge
 
           if (isDodged) {
             target.evadeNext = false
@@ -281,11 +298,23 @@ export const useBattle = () => {
           } else {
             let finalDamage = ability.damage
             
-            // Crit Chance
-            const critChance = attacker.stats?.crit || 0
+            // Grundvarianz für mehr Unvorhersehbarkeit
+            const dmgVar = 1 + (Math.random() * 2 - 1) * BALANCE.damageVariance
+            finalDamage = Math.max(1, Math.round(finalDamage * dmgVar))
+            
+            // Kritische Treffer inkl. Mega-Krit und Low-HP-Bonus
+            const baseCrit = attacker.stats?.crit || 0
+            const lowHpBonus = (attacker.hp / attacker.maxHp) < BALANCE.lowHpThreshold ? BALANCE.lowHpCritBonus : 0
+            const critChance = Math.min(0.75, baseCrit + lowHpBonus)
             if (Math.random() < critChance) {
-              finalDamage = Math.floor(finalDamage * 1.5)
-              addLog(`KRITISCHER TREFFER von ${getColoredName(attacker)}!`, 'important')
+              // Prüfe auf Mega-Krit
+              if (Math.random() < BALANCE.megaCritChance) {
+                finalDamage = Math.floor(finalDamage * BALANCE.megaCritMult)
+                addLog(`MEGA-KRIT von ${getColoredName(attacker)}!`, 'important')
+              } else {
+                finalDamage = Math.floor(finalDamage * BALANCE.critMult)
+                addLog(`KRITISCHER TREFFER von ${getColoredName(attacker)}!`, 'important')
+              }
             }
 
             target.hp = Math.max(0, target.hp - finalDamage)

@@ -29,14 +29,37 @@ useSeoMeta({
   twitterCard: 'summary_large_image',
 })
 
+// Arcade-Intro Steuerung
+const showBattleIntro = ref(false)
+const onBattleIntroFinished = () => {
+  initBattle()
+  startBattle()
+}
+
+// Selection-Intro beim Laden und nach Reset
+const showSelectionIntro = ref(false)
+const onSelectionIntroFinished = () => {
+  showSelectionIntro.value = false
+}
+
+onMounted(() => {
+  showSelectionIntro.value = true
+})
+
 const handleStart = () => {
   if (selectedClasses.value.size < 2) {
     alert("Wähle mindestens 2 Klassen aus, um den Kampf zu starten!")
     return
   }
-  initBattle()
-  startBattle()
+  showBattleIntro.value = true
 }
+
+const handleReset = () => {
+  resetBattle()
+  // kurze Verzögerung, damit UI zurückspringt, dann Intro zeigen
+  setTimeout(() => { showSelectionIntro.value = true }, 50)
+}
+
 </script>
 
 <template>
@@ -46,7 +69,14 @@ const handleStart = () => {
       <p class="mt-2 italic text-neutral-400">Nuxt Edition - Wer wird es für Midnight? Lass das Schicksal entscheiden!</p>
     </header>
 
+    <!-- Street-Fighter-Style Intros -->
+    <BattleIntro :show="showSelectionIntro" mode="selection" @finished="onSelectionIntroFinished" />
+    <BattleIntro :show="showBattleIntro" mode="battle" @finished="onBattleIntroFinished" />
+
     <main>
+      <div v-if="!isStarted" class="mb-4 text-base text-neutral-200">
+        Wähle deine Klasse
+      </div>
       <ClassSelection 
         v-if="!isStarted"
         :selected-classes="selectedClasses"
@@ -84,7 +114,7 @@ const handleStart = () => {
         <button v-if="!isStarted" id="start-btn" class="btn-primary bg-red-700 hover:bg-red-600" @click="handleStart">
           KAMPF STARTEN!
         </button>
-        <button v-if="isStarted && !isBattleInProgress" id="reset-btn" class="btn-secondary" @click="resetBattle">
+        <button v-if="isStarted && !isBattleInProgress" id="reset-btn" class="btn-secondary" @click="handleReset">
           Zur Auswahl
         </button>
       </div>

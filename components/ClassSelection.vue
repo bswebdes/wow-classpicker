@@ -8,62 +8,176 @@ const props = defineProps({
 })
 
 const emit = defineEmits(['toggle', 'selectAll', 'deselectAll', 'randomize-name', 'randomize-all'])
+
+// Ermittelt die Reihenfolge der Auswahl (P1, P2, P3 ...)
+const selectionOrder = computed(() => Array.from(props.selectedClasses))
+const getPlayerIndex = (id) => {
+  const idx = selectionOrder.value.indexOf(id)
+  return idx >= 0 ? idx + 1 : null
+}
 </script>
 
 <template>
-  <div id="selection-screen" class="section mb-6">
-    <h3 class="text-lg font-semibold mb-3">Wähle deine Kämpfer:</h3>
-    <div class="flex justify-center gap-2 mb-4">
-      <button class="btn-secondary" @click="emit('selectAll')" :disabled="isBattleInProgress">✅ Alle auswählen</button>
-      <button class="btn-secondary" @click="emit('deselectAll')" :disabled="isBattleInProgress">❌ Alle abwählen</button>
-      <button class="btn-secondary" @click="emit('randomize-all')" :disabled="isBattleInProgress">🎲 Zufallsnamen</button>
+  <div id="selection-screen" class="section mb-6 relative overflow-hidden">
+    <!-- Dekorative Arcade-Elemente -->
+    <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-red-600 to-transparent opacity-50"></div>
+    
+    <div class="mb-6">
+      <h3 class="text-4xl font-black italic tracking-tighter text-yellow-400 drop-shadow-[2px_2px_0px_rgba(0,0,0,1)] uppercase mb-2" style="font-family: 'Permanent Marker', cursive;">
+        SELECT YOUR FIGHTER
+      </h3>
+      <div class="h-0.5 w-48 mx-auto bg-red-600 shadow-[0_0_10px_rgba(220,38,38,0.8)]"></div>
     </div>
-    <div id="class-grid" class="flex flex-wrap justify-center gap-4">
+
+    <div class="flex justify-center flex-wrap gap-3 mb-8">
+      <button 
+        class="arcade-btn group" 
+        @click="emit('selectAll')" 
+        :disabled="isBattleInProgress"
+      >
+        <span class="relative z-10">ALL IN</span>
+        <div class="absolute inset-0 bg-green-700 transform skew-x-[-12deg] group-hover:bg-green-600 transition-colors"></div>
+      </button>
+      
+      <button 
+        class="arcade-btn group" 
+        @click="emit('deselectAll')" 
+        :disabled="isBattleInProgress"
+      >
+        <span class="relative z-10">CLEAR</span>
+        <div class="absolute inset-0 bg-neutral-700 transform skew-x-[-12deg] group-hover:bg-neutral-600 transition-colors"></div>
+      </button>
+
+      <button 
+        class="arcade-btn group" 
+        @click="emit('randomize-all')" 
+        :disabled="isBattleInProgress"
+      >
+        <span class="relative z-10">RANDOM NAMES</span>
+        <div class="absolute inset-0 bg-blue-700 transform skew-x-[-12deg] group-hover:bg-blue-600 transition-colors"></div>
+      </button>
+    </div>
+
+    <div id="class-grid" class="flex flex-wrap justify-center gap-4 px-2">
       <div 
         v-for="(data, id) in classData" 
         :key="id"
-        class="group relative w-24 p-2 bg-neutral-700 border-2 border-neutral-600 rounded-lg cursor-pointer transition-all duration-200 flex flex-col items-center opacity-50 grayscale hover:scale-105 hover:border-neutral-400 hover:opacity-80"
+        class="fighter-card group"
         :class="[
-          { 'opacity-100 grayscale-0 bg-neutral-600 scale-105 shadow-lg shadow-black/50': selectedClasses.has(id) },
-          selectedClasses.has(id) ? `border-c-${id}` : ''
+          { 'is-selected': selectedClasses.has(id) },
+          selectedClasses.has(id) ? `border-c-${id}` : 'border-neutral-700'
         ]"
-        :style="selectedClasses.has(id) ? { borderColor: 'currentColor' } : {}"
         @click="emit('toggle', id)"
       >
-        <div class="text-2xl">{{ data.emoji }}</div>
-        <div class="text-[0.7rem] mt-1 font-medium text-center" :class="selectedClasses.has(id) ? `text-c-${id}` : 'text-neutral-300'">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-10 pointer-events-none overflow-hidden rounded-lg">
+          <div class="absolute inset-0 rotate-45 scale-150 bg-[repeating-linear-gradient(0deg,#000,#000_1px,transparent_1px,transparent_4px)]"></div>
+        </div>
+
+        <div class="relative z-10 transition-transform duration-300 group-hover:scale-110">
+          <div class="text-4xl filter drop-shadow-md">{{ data.emoji }}</div>
+        </div>
+
+        <div 
+          class="relative z-10 text-[0.65rem] mt-2 font-black uppercase tracking-tighter" 
+          :class="selectedClasses.has(id) ? `text-c-${id}` : 'text-neutral-500'"
+          style="font-family: 'Press Start 2P', cursive; font-size: 0.5rem;"
+        >
           {{ data.name }}
         </div>
         
-        <!-- Custom Name Input + Randomize Button -->
-        <div v-if="selectedClasses.has(id)" class="mt-2 w-full flex items-center gap-1 px-1">
+        <!-- Custom Name Input Overlay -->
+        <div v-if="selectedClasses.has(id)" class="mt-3 w-full relative z-20 flex items-center gap-1 px-1">
           <input 
             v-model="customNames[id]"
             type="text"
-            placeholder="Name..."
-            class="min-w-0 w-full text-[0.6rem] p-0.5 bg-black/40 border border-white/10 rounded text-white text-center focus:outline-none focus:border-yellow-500/50"
+            placeholder="NAME"
+            class="min-w-0 w-full text-[0.6rem] p-1 bg-black/60 border border-white/20 rounded-sm text-white text-center focus:outline-none focus:border-yellow-500 font-bold uppercase"
             @click.stop
           />
           <button 
-            class="shrink-0 px-1 py-0.5 text-[0.6rem] rounded border border-white/10 bg-neutral-800 hover:bg-neutral-700 transition"
-            title="Zufallsname"
+            class="shrink-0 p-1 text-[0.6rem] rounded-sm border border-white/20 bg-neutral-800 hover:bg-red-600 transition-colors"
             @click.stop="emit('randomize-name', id)"
           >🎲</button>
         </div>
         
+        <!-- Tooltip / Stats -->
         <div 
           v-if="selectedClasses.has(id)"
-          class="hidden group-hover:block absolute bottom-full mb-2 p-2 bg-black border border-neutral-700 text-[0.65rem] z-20 rounded shadow-xl w-40 text-left pointer-events-none"
+          class="stats-popup"
         >
-          <div class="font-bold text-yellow-400 mb-1 border-b border-neutral-800 pb-1">{{ data.name }}</div>
-          <div class="text-neutral-300 italic mb-2">"{{ data.description }}"</div>
-          <div class="flex flex-col gap-1 text-neutral-400">
-            <div class="flex justify-between"><span>HP:</span> <span class="text-white">{{ data.stats.hp }}</span></div>
-            <div class="flex justify-between"><span>Crit:</span> <span class="text-white">{{ data.stats.crit * 100 }}%</span></div>
-            <div v-if="data.stats.dodge" class="flex justify-between"><span>Dodge:</span> <span class="text-white">{{ data.stats.dodge * 100 }}%</span></div>
+          <div class="font-black text-yellow-400 mb-1 border-b border-yellow-400/30 pb-1 italic uppercase text-xs">
+            {{ data.name }}
           </div>
+          <div class="text-[0.6rem] text-neutral-300 italic mb-2 leading-tight">"{{ data.description }}"</div>
+          <div class="grid grid-cols-1 gap-1 font-mono text-[0.6rem]">
+            <div class="flex justify-between border-b border-white/5"><span>HP</span> <span class="text-white font-bold">{{ data.stats.hp }}</span></div>
+            <div class="flex justify-between border-b border-white/5"><span>CRT</span> <span class="text-white font-bold">{{ data.stats.crit * 100 }}%</span></div>
+            <div v-if="data.stats.dodge" class="flex justify-between border-b border-white/5"><span>DDG</span> <span class="text-white font-bold">{{ data.stats.dodge * 100 }}%</span></div>
+          </div>
+        </div>
+
+        <!-- Selection Marker mit dynamischem P-Index -->
+        <div v-if="selectedClasses.has(id)" class="absolute -top-1 -right-1 min-w-5 h-5 px-1 bg-yellow-400 text-black text-[0.6rem] flex items-center justify-center font-black rounded-sm shadow-lg z-30 tracking-tighter" :style="{ fontFamily: `'Permanent Marker', cursive` }">
+          P{{ getPlayerIndex(id) }}
         </div>
       </div>
     </div>
   </div>
 </template>
+
+<style scoped>
+.arcade-btn {
+  @apply relative px-6 py-2 text-white font-black italic uppercase tracking-tighter overflow-hidden transition-all;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 1.1rem;
+}
+
+.arcade-btn:hover {
+  @apply transform -translate-y-0.5;
+}
+
+.arcade-btn:active {
+  @apply transform translate-y-0.5;
+}
+
+.arcade-btn span {
+  text-shadow: 2px 2px 0px #000;
+}
+
+.fighter-card {
+  @apply relative w-28 p-3 bg-neutral-900 border-2 rounded-lg cursor-pointer transition-all duration-300 flex flex-col items-center opacity-60 grayscale scale-95;
+}
+
+.fighter-card:hover {
+  @apply opacity-90 grayscale-0 scale-100 border-neutral-500 shadow-[0_0_15px_rgba(255,255,255,0.1)];
+}
+
+.fighter-card.is-selected {
+  @apply opacity-100 grayscale-0 scale-105 bg-neutral-800 shadow-[0_0_20px_rgba(0,0,0,0.6)];
+  border-color: inherit; /* Nutzt die Border-Class für Farben */
+  box-shadow: 0 0 15px currentColor;
+}
+
+.is-selected::after {
+  content: '';
+  @apply absolute inset-0 border-2 border-white/20 rounded-lg animate-pulse;
+}
+
+.stats-popup {
+  @apply hidden group-hover:block absolute bottom-full mb-3 p-3 bg-neutral-900 border-2 border-yellow-500/50 z-[100] rounded shadow-[0_10px_30px_rgba(0,0,0,0.8)] w-44 text-left pointer-events-none backdrop-blur-sm;
+}
+
+/* Scanline Effect */
+.fighter-card::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+  z-index: 5;
+  background-size: 100% 2px, 3px 100%;
+  pointer-events: none;
+  opacity: 0.3;
+}
+</style>

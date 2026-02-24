@@ -14,6 +14,7 @@ type HydrationStrategies = {
 type LazyComponent<T> = DefineComponent<HydrationStrategies, {}, {}, {}, {}, {}, {}, { hydrated: () => void }> & T
 
 interface _GlobalComponents {
+  BattleIntro: typeof import("../../components/BattleIntro.vue")['default']
   BattleLog: typeof import("../../components/BattleLog.vue")['default']
   CharacterCard: typeof import("../../components/CharacterCard.vue")['default']
   ClassSelection: typeof import("../../components/ClassSelection.vue")['default']
@@ -41,6 +42,7 @@ interface _GlobalComponents {
   Html: typeof import("../../node_modules/nuxt/dist/head/runtime/components")['Html']
   Body: typeof import("../../node_modules/nuxt/dist/head/runtime/components")['Body']
   NuxtIsland: typeof import("../../node_modules/nuxt/dist/app/components/nuxt-island")['default']
+  LazyBattleIntro: LazyComponent<typeof import("../../components/BattleIntro.vue")['default']>
   LazyBattleLog: LazyComponent<typeof import("../../components/BattleLog.vue")['default']>
   LazyCharacterCard: LazyComponent<typeof import("../../components/CharacterCard.vue")['default']>
   LazyClassSelection: LazyComponent<typeof import("../../components/ClassSelection.vue")['default']>
