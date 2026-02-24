@@ -14,16 +14,25 @@ Du kannst dich nicht entscheiden, ob du deinen Schurken, Druiden oder doch den n
 - **Farbiger Kampflog**: Verfolge das Geschehen live in einem übersichtlichen, farblich hervorgehobenen Log.
 
 ## 🚀 Installation & Start
-Keine Installation nötig! Da das Projekt nur aus Standard-Webtechnologien besteht:
+Dieses Projekt ist jetzt eine **Nuxt 3 App**!
 
-1. Lade das Repository herunter (oder clone es).
-2. Öffne die `index.html` in deinem bevorzugten Webbrowser.
-3. Wähle deine Klassen und klicke auf **KAMPF STARTEN!**.
+1. Clone das Repository.
+2. Installiere die Abhängigkeiten:
+```bash
+npm install
+```
+3. Starte den Development-Server:
+```bash
+npm run dev
+```
+4. Öffne `http://localhost:3000` im Browser.
 
 ## 🛠 Technologien
-- **HTML5**: Struktur der Arena.
+- **Nuxt 3**: Das Framework für die Web-App.
+- **Vue 3**: Komponentenbasiertes UI (Composition API).
+- **Vite**: Superschneller Bundler.
 - **CSS3**: "Dark Mode" WoW-Feeling, Animationen und Layout.
-- **JavaScript (Vanilla)**: Die komplette Kampflogik, RNG-Steuerung und UI-Updates.
+- **TypeScript**: Typisierte Logik (Composables).
 
 ## 📜 Lizenz
 Dieses Projekt ist zum Spaß erstellt worden. Nutze es, wie du möchtest!

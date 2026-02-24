@@ -32,7 +32,7 @@ h1 {
 }
 
 .arena {
-    display: none; /* Initial hidden */
+    display: flex;
     justify-content: center;
     align-items: flex-end;
     flex-wrap: wrap;
