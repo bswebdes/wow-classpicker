@@ -344,6 +344,8 @@ export const useBattle = () => {
     isBattleInProgress.value = false
     characters.value = []
     winner.value = null
+    // Auswahl wirklich zurücksetzen, damit beim Neustart nichts "hängen" bleibt
+    selectedClasses.value = new Set()
     addLog('Bereit für die nächste Runde? Wähle deine Klassen!')
   }
 

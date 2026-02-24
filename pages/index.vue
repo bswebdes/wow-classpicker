@@ -32,6 +32,8 @@ useSeoMeta({
 // Arcade-Intro Steuerung
 const showBattleIntro = ref(false)
 const onBattleIntroFinished = () => {
+  // Battle-Intro zurücksetzen, damit es beim nächsten Mal erneut ausgelöst werden kann
+  showBattleIntro.value = false
   initBattle()
   startBattle()
 }
@@ -124,7 +126,7 @@ const handleReset = () => {
       </div>
 
       <div class="mt-6">
-        <VictoryScreen v-if="winner" :winner="winner" @close="resetBattle" />
+        <VictoryScreen v-if="winner" :winner="winner" @close="handleReset" />
       </div>
     </main>
 
