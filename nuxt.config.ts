@@ -13,7 +13,8 @@ export default defineNuxtConfig({
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         { charset: 'utf-8' },
         { name: 'description', content: 'Welche Klasse sollst du in WoW: Midnight spielen? Lass den WoW Class Picker entscheiden! Der ultimative Zufallsgenerator für World of Warcraft.' },
-        { name: 'format-detection', content: 'telephone=no' }
+        { name: 'format-detection', content: 'telephone=no' },
+        { name: 'google-site-verification', content: 'LqBug-yqynPB2aX7EkNZrC9F-AzC-3HsbplFBhov7b8' }
       ],
       link: [
         { rel: 'icon', type: 'image/png', href: '/favicon.png' },
