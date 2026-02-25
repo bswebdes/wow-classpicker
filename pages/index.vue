@@ -67,8 +67,8 @@ const handleReset = () => {
 <template>
   <div class="max-w-5xl w-[90%] mx-auto text-center card p-6 mt-8">
     <header class="mb-6">
-      <h1 class="text-3xl font-extrabold text-yellow-400 drop-shadow-sm">⚔️ WoW Midnight Class Picker ⚔️</h1>
-      <p class="mt-2 italic text-neutral-400">Welche Klasse wirst du in Midnight spielen? Lass das Schicksal entscheiden!</p>
+      <h1 class="text-3xl font-extrabold text-yellow-400 drop-shadow-sm">Welche Klasse soll ich in WoW spielen?</h1>
+      <p class="mt-2 italic text-neutral-400">Wähle deine WoW Klassen selbst und lass sie im Battle gegeneinander antreten. Du kannst nur deine Favoriten auswählen, eigene Setups bauen und optional deinen Namen hinterlegen. Am Ende steht dein neuer Main für Raid, Mythic+ oder PvP fest.</p>
     </header>
 
     <!-- Street-Fighter-Style Intros -->
@@ -76,9 +76,6 @@ const handleReset = () => {
     <BattleIntro :show="showBattleIntro" mode="battle" @finished="onBattleIntroFinished" />
 
     <main>
-      <div v-if="!isStarted" class="mb-4 text-base text-neutral-200">
-        Wähle deine Klasse
-      </div>
       <ClassSelection 
         v-if="!isStarted"
         :selected-classes="selectedClasses"

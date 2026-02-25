@@ -5,14 +5,14 @@ export default defineNuxtConfig({
 
   app: {
     head: {
-      title: 'WoW Midnight Class Picker - Dein Klassen-Zufallsgenerator',
+      title: 'World of Warcraft Klassenwahl Welche Klasse passt?',
       htmlAttrs: {
         lang: 'de'
       },
       meta: [
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         { charset: 'utf-8' },
-        { name: 'description', content: 'Welche Klasse sollst du in WoW: Midnight spielen? Lass den WoW Class Picker entscheiden! Der ultimative Zufallsgenerator für World of Warcraft.' },
+        { name: 'description', content: 'Klassenwahl ohne Grübeln. Wähle deine WoW Klassen, setz eigene Duelle auf und lass das Spiel entscheiden. Optional mit Name. Main Empfehlung inklusive.' },
         { name: 'format-detection', content: 'telephone=no' },
         { name: 'google-site-verification', content: 'LqBug-yqynPB2aX7EkNZrC9F-AzC-3HsbplFBhov7b8' }
       ],
