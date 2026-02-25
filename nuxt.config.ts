@@ -16,10 +16,17 @@ export default defineNuxtConfig({
         { name: 'format-detection', content: 'telephone=no' }
       ],
       link: [
-        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+        { rel: 'icon', type: 'image/png', href: '/favicon.png' },
         { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
         { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' },
         { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Press+Start+2P&display=swap' }
+      ],
+      script: [
+        {
+          src: 'https://stats.frysch.studio/script.js',
+          defer: true,
+          'data-website-id': 'f2e035dd-e124-4dcc-8d4b-728a20d74205'
+        }
       ]
     }
   },
