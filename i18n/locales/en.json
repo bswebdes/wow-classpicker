@@ -1,0 +1,174 @@
+{
+  "welcome": "Which class should I play in WoW?",
+  "description": "Choose your WoW classes yourself and let them compete against each other in a battle. You can select only your favorites, build your own setups, and optionally enter your name. In the end, your new main for Raid, Mythic+, or PvP will be decided.",
+  "startBattle": "START BATTLE!",
+  "backToSelection": "Back to selection",
+  "arenaStatus": "Overall Arena Status",
+  "minTwoClasses": "Select at least 2 classes to start the battle!",
+  "selection": {
+    "title": "SELECT YOUR FIGHTER",
+    "allIn": "ALL IN",
+    "clear": "CLEAR",
+    "randomNames": "RANDOM NAMES",
+    "namePlaceholder": "NAME"
+  },
+  "classes": {
+    "warrior": {
+      "name": "Warrior",
+      "description": "Lots of HP and hard hits.",
+      "abilities": {
+        "execute": { "name": "Execute", "msg": "hits with the thick sword! OVERKILL!" },
+        "shieldblock": { "name": "Shield Block", "msg": "hides behind their shield." },
+        "heroicstrike": { "name": "Heroic Strike", "msg": "makes a very... heroic strike." },
+        "victoryrush": { "name": "Victory Rush", "msg": "kills an imaginary rat and heals!" }
+      }
+    },
+    "paladin": {
+      "name": "Paladin",
+      "description": "Healing and invulnerability.",
+      "abilities": {
+        "divineshield": { "name": "Divine Shield", "msg": "turns on the bubble! Untouchable!" },
+        "judgement": { "name": "Judgement of Light", "msg": "judges the target and steals some life." },
+        "avengingwrath": { "name": "Avenging Wrath", "msg": "gets wings! THE POWER OF LIGHT!" },
+        "flashoflight": { "name": "Flash of Light", "msg": "blinds everyone with a bright light and heals." }
+      }
+    },
+    "hunter": {
+      "name": "Hunter",
+      "description": "High damage, likes to dodge.",
+      "abilities": {
+        "aimedshot": { "name": "Aimed Shot", "msg": "aims for 3 hours... and HITS!" },
+        "turtle": { "name": "Aspect of the Turtle", "msg": "becomes a turtle. For some reason." },
+        "killcommand": { "name": "Kill Command!", "msg": "sends their invisible pet. Bite!" },
+        "freezingtrap": { "name": "Freezing Trap", "msg": "freezes the target's feet. Cold!" }
+      }
+    },
+    "rogue": {
+      "name": "Rogue",
+      "description": "Glass cannon with high dodge chance.",
+      "abilities": {
+        "kidneyshot": { "name": "Kidney Shot", "msg": "stuns the target with a nasty kidney shot!" },
+        "eviscerate": { "name": "Eviscerate", "msg": "stabs sneakily! CRIT!" },
+        "pickpocket": { "name": "Pickpocket", "msg": "steals a health potion and drinks it!" },
+        "vanish": { "name": "Vanish", "msg": "disappears into the shadows. Next attack misses!" }
+      }
+    },
+    "priest": {
+      "name": "Priest",
+      "description": "Strong healing, low HP.",
+      "abilities": {
+        "mindblast": { "name": "Mind Blast", "msg": "gives the target a headache." },
+        "shield": { "name": "Power Word: Shield", "msg": "wraps themselves in a glittering sphere." },
+        "flashheal": { "name": "Flash Heal", "msg": "prays very quickly for their health." },
+        "swdeath": { "name": "Shadow Word: Death", "msg": "whispers something spooky into the target's ear." }
+      }
+    },
+    "deathknight": {
+      "name": "Death Knight",
+      "description": "Tough and drains life.",
+      "abilities": {
+        "deathstrike": { "name": "Death Strike", "msg": "sucks the life out of the target. Tasty!" },
+        "deathsadvance": { "name": "Death's Advance", "msg": "walks away very slowly, but is immune to everything." },
+        "howlingblast": { "name": "Howling Blast", "msg": "blows the opponent away with bad breath." },
+        "army": { "name": "Army of the Dead", "msg": "calls their undead buddies to the party." }
+      }
+    },
+    "shaman": {
+      "name": "Shaman",
+      "description": "Versatile with lightning and totems.",
+      "abilities": {
+        "chainlightning": { "name": "Chain Lightning", "msg": "ZAPP! A bolt for you!" },
+        "healingrain": { "name": "Healing Rain", "msg": "makes it rain in the room. Indoor wellness." },
+        "bloodlust": { "name": "Bloodlust", "msg": "gets very red in the face and swings wildly!" },
+        "totem": { "name": "Strength of Earth Totem", "msg": "places a wooden post on the ground." }
+      }
+    },
+    "mage": {
+      "name": "Mage",
+      "description": "Explosive damage, but fragile.",
+      "abilities": {
+        "fireball": { "name": "Fireball", "msg": "throws a burning ball. Hot!" },
+        "iceblock": { "name": "Ice Block", "msg": "becomes an ice cube. Refreshing!" },
+        "blink": { "name": "Blink", "msg": "reappears somewhere else. Magic!" },
+        "polymorph": { "name": "Polymorph", "msg": "turns the target into a sheep. Baa!" }
+      }
+    },
+    "warlock": {
+      "name": "Warlock",
+      "description": "Dark magic and demons.",
+      "abilities": {
+        "chaosbolt": { "name": "Chaos Bolt", "msg": "fires a green dragon head. BOOM!" },
+        "healthstone": { "name": "Healthstone", "msg": "eats a green gum and heals." },
+        "fear": { "name": "Fear", "msg": "tells the target about their taxes. Target runs away!" },
+        "drainlife": { "name": "Drain Life", "msg": "sips on the target like a milkshake." }
+      }
+    },
+    "monk": {
+      "name": "Monk",
+      "description": "Mobile and nasty kicks.",
+      "abilities": {
+        "fists": { "name": "Fists of Fury", "msg": "does the windmill! RATATATA!" },
+        "brew": { "name": "Fortifying Brew", "msg": "drinks something unidentifiable from a barrel." },
+        "kick": { "name": "Blackout Kick", "msg": "kicks so hard the target sees black." },
+        "mist": { "name": "Soothing Mist", "msg": "blows green steam into the air." }
+      }
+    },
+    "druid": {
+      "name": "Druid",
+      "description": "Can do everything except sit still.",
+      "abilities": {
+        "convoke": { "name": "Convoke the Spirits", "msg": "presses all buttons at once! CHAOS!" },
+        "regrowth": { "name": "Regrowth", "msg": "makes flowers grow on them. Pretty!" },
+        "bear": { "name": "Bear Form", "msg": "becomes very fat and fluffy." },
+        "moonfire": { "name": "Moonfire", "msg": "lasers the target from space." }
+      }
+    },
+    "demonhunter": {
+      "name": "Demon Hunter",
+      "description": "Jumps around a lot, looks cool.",
+      "abilities": {
+        "eyebeam": { "name": "Eye Beam", "msg": "stares at the target so hard it burns!" },
+        "blur": { "name": "Blur", "msg": "wiggles so fast they can't be hit." },
+        "chaosstrike": { "name": "Chaos Strike", "msg": "swings wildly with glaives." },
+        "metamorphosis": { "name": "Metamorphosis", "msg": "becomes a big, bad demon. ROAR!" }
+      }
+    },
+    "evoker": {
+      "name": "Evoker",
+      "description": "Spits fire and flies away.",
+      "abilities": {
+        "disintegrate": { "name": "Disintegrate", "msg": "beams the target with a blue laser." },
+        "blossom": { "name": "Emerald Blossom", "msg": "makes a green bud grow from the ground." },
+        "deepbreath": { "name": "Deep Breath", "msg": "flies over once and grills everything." },
+        "rewind": { "name": "Rewind", "msg": "forgot the time and just undoes everything." }
+      }
+    }
+  },
+  "victory": {
+    "champion": "CHAMPION!",
+    "playInMidnight": "You will play in Midnight:",
+    "again": "AGAIN!"
+  },
+  "meter": {
+    "performance": "Performance",
+    "totalDamage": "Total Damage",
+    "totalHealing": "Total Healing"
+  },
+  "battle": {
+    "ready": "READY",
+    "fight": "FIGHT",
+    "selectionWords": ["SELECT", "YOUR", "FIGHTER"],
+    "startLog": "The battle begins with {count} classes!",
+    "evadeLog": "{target} dodges the attack from {attacker}!",
+    "critLog": "CRITICAL HIT by {attacker}!",
+    "megaCritLog": "MEGA-CRIT by {attacker}!",
+    "status": {
+      "ready": "Ready!",
+      "using": "Using {ability}..."
+    }
+  },
+  "seo": {
+    "title": "WoW Midnight Class Picker - Which WoW class do you play?",
+    "description": "Undecided about WoW class selection for Midnight? Let the WoW Class Picker decide for you!"
+  }
+}

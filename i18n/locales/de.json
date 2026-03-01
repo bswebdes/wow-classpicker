@@ -1,0 +1,174 @@
+{
+  "welcome": "Welche Klasse soll ich in WoW spielen?",
+  "description": "Wähle deine WoW Klassen selbst und lass sie im Battle gegeneinander antreten. Du kannst nur deine Favoriten auswählen, eigene Setups bauen und optional deinen Namen hinterlegen. Am Ende steht dein neuer Main für Raid, Mythic+ oder PvP fest.",
+  "startBattle": "KAMPF STARTEN!",
+  "backToSelection": "Zur Auswahl",
+  "arenaStatus": "Gesamt-Status der Arena",
+  "minTwoClasses": "Wähle mindestens 2 Klassen aus, um den Kampf zu starten!",
+  "selection": {
+    "title": "SELECT YOUR FIGHTER",
+    "allIn": "ALLE REIN",
+    "clear": "LÖSCHEN",
+    "randomNames": "ZUFALLS-NAMEN",
+    "namePlaceholder": "NAME"
+  },
+  "classes": {
+    "warrior": {
+      "name": "Krieger",
+      "description": "Viel HP und harte Schläge.",
+      "abilities": {
+        "execute": { "name": "Hinrichten", "msg": "haut mit dem dicken Schwert drauf! OVERKILL!" },
+        "shieldblock": { "name": "Schildblock", "msg": "versteckt sich hinter seinem Schild." },
+        "heroicstrike": { "name": "Heldenhafter Stoß", "msg": "macht einen sehr... heldenhaften Stoß." },
+        "victoryrush": { "name": "Siegesrausch", "msg": "tötet eine imaginäre Ratte und heilt sich!" }
+      }
+    },
+    "paladin": {
+      "name": "Paladin",
+      "description": "Heilung und Unverwundbarkeit.",
+      "abilities": {
+        "divineshield": { "name": "Gottesschild", "msg": "wirft die Angstblase an! Unantastbar!" },
+        "judgement": { "name": "Urteil des Lichts", "msg": "richtet über das Ziel und klaut ein bisschen Leben." },
+        "avengingwrath": { "name": "Zornige Vergeltung", "msg": "bekommt Flügel! DIE MACHT DES LICHTS!" },
+        "flashoflight": { "name": "Lichtblitz", "msg": "blendet alle mit einem hellen Licht und heilt sich." }
+      }
+    },
+    "hunter": {
+      "name": "Jäger",
+      "description": "Hoher Schaden, weicht gerne aus.",
+      "abilities": {
+        "aimedshot": { "name": "Gezielter Schuss", "msg": "zielt 3 Stunden lang... und TRIFFT!" },
+        "turtle": { "name": "Aspekt der Schildkröte", "msg": "wird zu einer Schildkröte. Warum auch immer." },
+        "killcommand": { "name": "Fass!", "msg": "schickt sein unsichtbares Pet los. Beiß!" },
+        "freezingtrap": { "name": "Eiskältefalle", "msg": "friert die Füße des Gegners ein. Kalt!" }
+      }
+    },
+    "rogue": {
+      "name": "Schurke",
+      "description": "Glaskanone mit hoher Ausweichchance.",
+      "abilities": {
+        "kidneyshot": { "name": "Nierenhieb", "msg": "betäubt das Ziel mit einem fiesen Nierenhieb!" },
+        "eviscerate": { "name": "Meucheln", "msg": "sticht hinterhältig zu! KRIT!" },
+        "pickpocket": { "name": "Taschendiebstahl", "msg": "stiehlt einen Heiltrank und trinkt ihn selbst!" },
+        "vanish": { "name": "Vanish", "msg": "verschwindet im Schatten. Nächster Angriff geht ins Leere!" }
+      }
+    },
+    "priest": {
+      "name": "Priester",
+      "description": "Starke Heilung, wenig HP.",
+      "abilities": {
+        "mindblast": { "name": "Gedankenschlag", "msg": "verpasst dem Ziel Kopfschmerzen." },
+        "shield": { "name": "Machtwort: Schild", "msg": "hüllt sich in eine glitzernde Kugel ein." },
+        "flashheal": { "name": "Blitzheilung", "msg": "betet ganz schnell für seine Gesundheit." },
+        "swdeath": { "name": "Schattenwort: Tod", "msg": "flüstert dem Ziel etwas Gruseliges ins Ohr." }
+      }
+    },
+    "deathknight": {
+      "name": "Todesritter",
+      "description": "Zäh und entzieht Leben.",
+      "abilities": {
+        "deathstrike": { "name": "Todesstoß", "msg": "saugt dem Ziel das Leben aus. Lecker!" },
+        "deathsadvance": { "name": "Unaufhaltsamer Tod", "msg": "läuft ganz langsam weg, ist aber immun gegen alles." },
+        "howlingblast": { "name": "Heulende Böe", "msg": "pustet den Gegner mit Mundgeruch weg." },
+        "army": { "name": "Armee der Toten", "msg": "ruft seine untoten Kumpels zur Party." }
+      }
+    },
+    "shaman": {
+      "name": "Schamane",
+      "description": "Vielseitig mit Blitzen und Totems.",
+      "abilities": {
+        "chainlightning": { "name": "Kettenblitzschlag", "msg": "ZAPP! Ein Blitz für dich!" },
+        "healingrain": { "name": "Heilender Regen", "msg": "lässt es im Raum regnen. Indoor-Wellness." },
+        "bloodlust": { "name": "Kampfrausch", "msg": "wird ganz rot im Gesicht und schlägt wild um sich!" },
+        "totem": { "name": "Erdstärketotem", "msg": "stellt einen Holzpfosten auf den Boden." }
+      }
+    },
+    "mage": {
+      "name": "Magier",
+      "description": "Explosiver Schaden, aber zerbrechlich.",
+      "abilities": {
+        "fireball": { "name": "Feuerball", "msg": "wirft einen brennenden Ball. Heiß!" },
+        "iceblock": { "name": "Eisblock", "msg": "wird zu einem Eiswürfel. Erfrischend!" },
+        "blink": { "name": "Blinzeln", "msg": "taucht woanders wieder auf. Magie!" },
+        "polymorph": { "name": "Verwandlung", "msg": "macht das Ziel zu einem Schaf. Mäh!" }
+      }
+    },
+    "warlock": {
+      "name": "Hexenmeister",
+      "description": "Dunkle Magie und Dämonen.",
+      "abilities": {
+        "chaosbolt": { "name": "Chaosblitz", "msg": "schießt einen grünen Drachenkopf ab. BUMM!" },
+        "healthstone": { "name": "Gesundheitsstein", "msg": "isst einen grünen Kaugummi und heilt sich." },
+        "fear": { "name": "Furcht", "msg": "erzählt dem Ziel von seinen Steuern. Das Ziel läuft weg!" },
+        "drainlife": { "name": "Blutsauger", "msg": "schlürft am Ziel wie an einem Milkshake." }
+      }
+    },
+    "monk": {
+      "name": "Mönch",
+      "description": "Mobil und fiese Tritte.",
+      "abilities": {
+        "fists": { "name": "Furorfäuste", "msg": "macht die Windmühle! RATATATA!" },
+        "brew": { "name": "Stärkendes Gebräu", "msg": "trinkt etwas Unidentifizierbares aus einem Fass." },
+        "kick": { "name": "Blackout-Tritt", "msg": "tritt so fest zu, dass dem Ziel schwarz vor Augen wird." },
+        "mist": { "name": "Beruhigender Nebel", "msg": "pustet grünen Dampf in die Luft." }
+      }
+    },
+    "druid": {
+      "name": "Druide",
+      "description": "Kann alles, außer stillsitzen.",
+      "abilities": {
+        "convoke": { "name": "Konvokation der Geister", "msg": "drückt alle Knöpfe gleichzeitig! CHAOS!" },
+        "regrowth": { "name": "Nachwachsen", "msg": "lässt Blumen auf sich wachsen. Hübsch!" },
+        "bear": { "name": "Bärengestalt", "msg": "wird sehr dick und flauschig." },
+        "moonfire": { "name": "Mondfeuer", "msg": "lasert das Ziel aus dem Weltall weg." }
+      }
+    },
+    "demonhunter": {
+      "name": "Dämonenjäger",
+      "description": "Springt viel rum, sieht cool aus.",
+      "abilities": {
+        "eyebeam": { "name": "Augenstrahl", "msg": "starrt das Ziel so böse an, dass es brennt!" },
+        "blur": { "name": "Verschwimmen", "msg": "wackelt so schnell, dass man ihn nicht trifft." },
+        "chaosstrike": { "name": "Chaosstoß", "msg": "schlägt wild mit den Gleven um sich." },
+        "metamorphosis": { "name": "Metamorphose", "msg": "wird zu einem großen, bösen Dämon. ROAR!" }
+      }
+    },
+    "evoker": {
+      "name": "Rufer",
+      "description": "Spuckt Feuer und fliegt weg.",
+      "abilities": {
+        "disintegrate": { "name": "Desintegration", "msg": "strahlt das Ziel mit blauem Laser an." },
+        "blossom": { "name": "Smaragdblüte", "msg": "lässt ein grünes Köpfchen aus dem Boden wachsen." },
+        "deepbreath": { "name": "Tiefer Atem", "msg": "fliegt einmal drüber und grillt alles." },
+        "rewind": { "name": "Zurückspulen", "msg": "hat die Zeit vergessen und macht einfach alles rückgängig." }
+      }
+    }
+  },
+  "victory": {
+    "champion": "CHAMPION!",
+    "playInMidnight": "Du spielst in Midnight:",
+    "again": "NOCHMAL!"
+  },
+  "meter": {
+    "performance": "Leistung",
+    "totalDamage": "Schaden gesamt",
+    "totalHealing": "Heilung gesamt"
+  },
+  "battle": {
+    "ready": "READY",
+    "fight": "FIGHT",
+    "selectionWords": ["WÄHLE", "DEINE", "KÄMPFER"],
+    "startLog": "Der Kampf beginnt mit {count} Klassen!",
+    "evadeLog": "{target} weicht dem Angriff von {attacker} aus!",
+    "critLog": "KRITISCHER TREFFER von {attacker}!",
+    "megaCritLog": "MEGA-KRIT von {attacker}!",
+    "status": {
+      "ready": "Bereit!",
+      "using": "Nutzt {ability}..."
+    }
+  },
+  "seo": {
+    "title": "WoW Midnight Class Picker - Welche WoW Klasse spielst du?",
+    "description": "Unentschlossen bei der WoW Klassenwahl für Midnight? Lass den WoW Class Picker für dich entscheiden!"
+  }
+}

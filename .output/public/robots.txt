@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://midnight-class-picker.vercel.app/sitemap.xml

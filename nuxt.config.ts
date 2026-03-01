@@ -5,14 +5,9 @@ export default defineNuxtConfig({
 
   app: {
     head: {
-      title: 'World of Warcraft Klassenwahl Welche Klasse passt?',
-      htmlAttrs: {
-        lang: 'de'
-      },
       meta: [
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         { charset: 'utf-8' },
-        { name: 'description', content: 'Klassenwahl ohne Grübeln. Wähle deine WoW Klassen, setz eigene Duelle auf und lass das Spiel entscheiden. Optional mit Name. Main Empfehlung inklusive.' },
         { name: 'format-detection', content: 'telephone=no' },
         { name: 'google-site-verification', content: 'LqBug-yqynPB2aX7EkNZrC9F-AzC-3HsbplFBhov7b8' }
       ],
@@ -41,5 +36,22 @@ export default defineNuxtConfig({
     }
   },
 
-  modules: ['@nuxtjs/tailwindcss']
+  modules: ['@nuxtjs/tailwindcss', '@nuxtjs/i18n'],
+
+  i18n: {
+    baseUrl: 'https://classpicker.frysch.studio', // Empfohlen für SEO (Metatags wie og:url)
+    lazy: true,
+    langDir: 'locales',
+    defaultLocale: 'de',
+    strategy: 'prefix_except_default',
+    locales: [
+      { code: 'de', language: 'de-DE', name: 'Deutsch', file: 'de.json' },
+      { code: 'en', language: 'en-US', name: 'English', file: 'en.json' }
+    ],
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: 'i18n_redirected',
+      redirectOn: 'root'
+    }
+  }
 })

@@ -20,12 +20,28 @@ const {
 
 const config = useRuntimeConfig()
 
+const { locale, t } = useI18n()
+const head = useLocaleHead({
+  addDirAttribute: true,
+  identifierAttribute: 'id',
+  addSeoAttributes: true
+})
+
+useHead({
+  htmlAttrs: {
+    lang: head.value.htmlAttrs.lang,
+    dir: head.value.htmlAttrs.dir
+  },
+  link: [...(head.value.link || [])],
+  meta: [...(head.value.meta || [])]
+})
+
 useSeoMeta({
-  title: 'WoW Midnight Class Picker - Welche WoW Klasse spielst du?',
-  ogTitle: 'WoW Midnight Class Picker',
-  description: 'Unentschlossen bei der WoW Klassenwahl für Midnight? Lass den WoW Class Picker für dich entscheiden!',
-  ogDescription: 'Unentschlossen bei der WoW Klassenwahl für Midnight? Lass den WoW Class Picker für dich entscheiden!',
-  ogImage: '/og-image.png', // Pfad zum OG-Image (muss noch erstellt/hochgeladen werden)
+  title: () => t('seo.title'),
+  ogTitle: () => t('seo.title'),
+  description: () => t('seo.description'),
+  ogDescription: () => t('seo.description'),
+  ogImage: '/og-image.png',
   twitterCard: 'summary_large_image',
 })
 
@@ -50,7 +66,7 @@ onMounted(() => {
 
 const handleStart = () => {
   if (selectedClasses.value.size < 2) {
-    alert("Wähle mindestens 2 Klassen aus, um den Kampf zu starten!")
+    alert(t('minTwoClasses'))
     return
   }
   showBattleIntro.value = true
@@ -67,8 +83,8 @@ const handleReset = () => {
 <template>
   <div class="max-w-5xl w-[90%] mx-auto text-center card p-6 mt-8">
     <header class="mb-6">
-      <h1 class="text-3xl font-extrabold text-yellow-400 drop-shadow-sm">Welche Klasse soll ich in WoW spielen?</h1>
-      <p class="mt-2 italic text-neutral-400">Wähle deine WoW Klassen selbst und lass sie im Battle gegeneinander antreten. Du kannst nur deine Favoriten auswählen, eigene Setups bauen und optional deinen Namen hinterlegen. Am Ende steht dein neuer Main für Raid, Mythic+ oder PvP fest.</p>
+      <h1 class="text-3xl font-extrabold text-yellow-400 drop-shadow-sm">{{ $t('welcome') }}</h1>
+      <p class="mt-2 italic text-neutral-400">{{ $t('description') }}</p>
     </header>
 
     <!-- Street-Fighter-Style Intros -->
@@ -90,7 +106,7 @@ const handleReset = () => {
 
       <div v-if="isStarted" class="mb-4">
         <div class="flex justify-between items-center mb-1 text-xs font-bold uppercase tracking-wider text-neutral-400">
-          <span>Gesamt-Status der Arena</span>
+          <span>{{ $t('arenaStatus') }}</span>
           <span>{{ Math.round(globalHpPercent) }}%</span>
         </div>
         <div class="w-full h-3 bg-neutral-800 border border-neutral-700 rounded-full overflow-hidden shadow-inner">
@@ -115,11 +131,11 @@ const handleReset = () => {
           class="arcade-btn group relative overflow-hidden" 
           @click="handleStart"
         >
-          <span class="relative z-10">KAMPF STARTEN!</span>
+          <span class="relative z-10">{{ $t('startBattle') }}</span>
           <div class="absolute inset-0 bg-red-700 transform skew-x-[-12deg] group-hover:bg-red-600 transition-colors"></div>
         </button>
         <button v-if="isStarted && !isBattleInProgress" id="reset-btn" class="btn-secondary" @click="handleReset">
-          Zur Auswahl
+          {{ $t('backToSelection') }}
         </button>
       </div>
 

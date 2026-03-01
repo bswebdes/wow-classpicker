@@ -29,11 +29,11 @@ const maxHealing = computed(() => Math.max(1, ...healingRanking.value.map(e => e
 
 <template>
   <div class="section p-4 border border-neutral-800 rounded bg-neutral-950/50">
-    <div class="text-xs font-bold uppercase tracking-wider text-neutral-400 mb-3">Leistung</div>
+    <div class="text-xs font-bold uppercase tracking-wider text-neutral-400 mb-3">{{ $t('meter.performance') }}</div>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
       <!-- Schaden -->
       <div>
-        <div class="text-sm font-semibold text-neutral-300 mb-2">Schaden gesamt</div>
+        <div class="text-sm font-semibold text-neutral-300 mb-2">{{ $t('meter.totalDamage') }}</div>
         <div class="space-y-2">
           <div v-for="(p, idx) in damageRanking" :key="'d-'+p.id" class="flex items-center gap-2">
             <div class="w-8 text-right text-xs text-neutral-400">#{{ idx+1 }}</div>
@@ -55,7 +55,7 @@ const maxHealing = computed(() => Math.max(1, ...healingRanking.value.map(e => e
 
       <!-- Heilung -->
       <div>
-        <div class="text-sm font-semibold text-neutral-300 mb-2">Heilung gesamt</div>
+        <div class="text-sm font-semibold text-neutral-300 mb-2">{{ $t('meter.totalHealing') }}</div>
         <div class="space-y-2">
           <div v-for="(p, idx) in healingRanking" :key="'h-'+p.id" class="flex items-center gap-2">
             <div class="w-8 text-right text-xs text-neutral-400">#{{ idx+1 }}</div>

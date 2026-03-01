@@ -3,13 +3,13 @@ import { Server } from 'node:http';
 import { resolve, dirname, join } from 'node:path';
 import nodeCrypto from 'node:crypto';
 import { parentPort, threadId } from 'node:worker_threads';
-import { defineEventHandler, handleCacheHeaders, splitCookiesString, createEvent, fetchWithEvent, isEvent, eventHandler, setHeaders, sendRedirect, proxyRequest, getRequestHeader, setResponseHeaders, setResponseStatus, send, getRequestHeaders, setResponseHeader, appendResponseHeader, getRequestURL, getResponseHeader, removeResponseHeader, createError, getQuery as getQuery$1, readBody, createApp, createRouter as createRouter$1, toNodeListener, lazyEventHandler, getResponseStatus, getRouterParam, getResponseStatusText } from 'file://C:/Webdev/classpicker/node_modules/h3/dist/index.mjs';
+import { defineEventHandler, handleCacheHeaders, splitCookiesString, createEvent, fetchWithEvent, isEvent, eventHandler, setHeaders, sendRedirect, proxyRequest, getRequestHeader, setResponseHeaders, setResponseStatus, send, getRequestHeaders, setResponseHeader, appendResponseHeader, getRequestURL, getResponseHeader, getResponseStatus, createError, getCookie, setCookie, sanitizeStatusCode, removeResponseHeader, getQuery as getQuery$1, readBody, getRouterParam, createApp, createRouter as createRouter$1, toNodeListener, lazyEventHandler, getResponseStatusText } from 'file://C:/Webdev/classpicker/node_modules/h3/dist/index.mjs';
 import { escapeHtml } from 'file://C:/Webdev/classpicker/node_modules/@vue/shared/dist/shared.cjs.js';
 import { createRenderer, getRequestDependencies, getPreloadLinks, getPrefetchLinks } from 'file://C:/Webdev/classpicker/node_modules/vue-bundle-renderer/dist/runtime.mjs';
-import { parseURL, withoutBase, joinURL, getQuery, withQuery, withTrailingSlash, decodePath, withLeadingSlash, withoutTrailingSlash, joinRelativeURL } from 'file://C:/Webdev/classpicker/node_modules/ufo/dist/index.mjs';
+import { parseURL, withoutBase, joinURL, getQuery, withQuery, joinRelativeURL, parsePath, withLeadingSlash, withTrailingSlash, decodePath, withoutTrailingSlash } from 'file://C:/Webdev/classpicker/node_modules/ufo/dist/index.mjs';
 import { renderToString } from 'file://C:/Webdev/classpicker/node_modules/vue/server-renderer/index.mjs';
 import { klona } from 'file://C:/Webdev/classpicker/node_modules/klona/dist/index.mjs';
-import defu, { defuFn } from 'file://C:/Webdev/classpicker/node_modules/defu/dist/defu.mjs';
+import defu, { defuFn, createDefu } from 'file://C:/Webdev/classpicker/node_modules/defu/dist/defu.mjs';
 import destr, { destr as destr$1 } from 'file://C:/Webdev/classpicker/node_modules/destr/dist/index.mjs';
 import { snakeCase } from 'file://C:/Webdev/classpicker/node_modules/scule/dist/index.mjs';
 import { createHead as createHead$1, propsToString, renderSSRHead } from 'file://C:/Webdev/classpicker/node_modules/unhead/dist/server.mjs';
@@ -28,6 +28,7 @@ import consola, { consola as consola$1 } from 'file://C:/Webdev/classpicker/node
 import { ErrorParser } from 'file://C:/Webdev/classpicker/node_modules/youch-core/build/index.js';
 import { Youch } from 'file://C:/Webdev/classpicker/node_modules/youch/build/index.js';
 import { SourceMapConsumer } from 'file://C:/Webdev/classpicker/node_modules/source-map/source-map.js';
+import { createRouterMatcher } from 'file://C:/Webdev/classpicker/node_modules/vue-router/vue-router.node.mjs';
 import { AsyncLocalStorage } from 'node:async_hooks';
 import { getContext } from 'file://C:/Webdev/classpicker/node_modules/unctx/dist/index.mjs';
 import { captureRawStackTrace, parseRawStackTrace } from 'file://C:/Webdev/classpicker/node_modules/errx/dist/index.js';
@@ -44,18 +45,18 @@ for (const asset of serverAssets) {
   assets$1.mount(asset.baseName, unstorage_47drivers_47fs({ base: asset.dir, ignore: (asset?.ignore || []) }));
 }
 
-const storage = createStorage({});
+const storage$1 = createStorage({});
 
-storage.mount('/assets', assets$1);
+storage$1.mount('/assets', assets$1);
 
-storage.mount('root', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"C:/Webdev/classpicker","watchOptions":{"ignored":[null]}}));
-storage.mount('src', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"C:/Webdev/classpicker/server","watchOptions":{"ignored":[null]}}));
-storage.mount('build', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"C:/Webdev/classpicker/.nuxt"}));
-storage.mount('cache', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"C:/Webdev/classpicker/.nuxt/cache"}));
-storage.mount('data', unstorage_47drivers_47fs({"driver":"fs","base":"C:/Webdev/classpicker/.data/kv"}));
+storage$1.mount('root', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"C:/Webdev/classpicker","watchOptions":{"ignored":[null]}}));
+storage$1.mount('src', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"C:/Webdev/classpicker/server","watchOptions":{"ignored":[null]}}));
+storage$1.mount('build', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"C:/Webdev/classpicker/.nuxt"}));
+storage$1.mount('cache', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"C:/Webdev/classpicker/.nuxt/cache"}));
+storage$1.mount('data', unstorage_47drivers_47fs({"driver":"fs","base":"C:/Webdev/classpicker/.data/kv"}));
 
 function useStorage(base = "") {
-  return base ? prefixStorage(storage, base) : storage;
+  return base ? prefixStorage(storage$1, base) : storage$1;
 }
 
 const Hasher = /* @__PURE__ */ (() => {
@@ -650,7 +651,57 @@ const _inlineRuntimeConfig = {
   "public": {
     "siteName": "WoW Midnight Class Picker",
     "siteDescription": "Der ultimative Class Picker für WoW Midnight.",
-    "language": "de"
+    "language": "de",
+    "i18n": {
+      "baseUrl": "https://classpicker.frysch.studio",
+      "defaultLocale": "de",
+      "rootRedirect": "",
+      "redirectStatusCode": 302,
+      "skipSettingLocaleOnNavigate": false,
+      "locales": [
+        {
+          "code": "de",
+          "language": "de-DE",
+          "name": "Deutsch"
+        },
+        {
+          "code": "en",
+          "language": "en-US",
+          "name": "English"
+        }
+      ],
+      "detectBrowserLanguage": {
+        "alwaysRedirect": false,
+        "cookieCrossOrigin": false,
+        "cookieDomain": "",
+        "cookieKey": "i18n_redirected",
+        "cookieSecure": false,
+        "fallbackLocale": "",
+        "redirectOn": "root",
+        "useCookie": true
+      },
+      "experimental": {
+        "localeDetector": "",
+        "typedPages": true,
+        "typedOptionsAndMessages": false,
+        "alternateLinkCanonicalQueries": true,
+        "devCache": false,
+        "cacheLifetime": "",
+        "stripMessagesPayload": false,
+        "preload": false,
+        "strictSeo": false,
+        "nitroContextDetection": true,
+        "httpCacheDuration": 10
+      },
+      "domainLocales": {
+        "de": {
+          "domain": ""
+        },
+        "en": {
+          "domain": ""
+        }
+      }
+    }
   }
 };
 const envOptions = {
@@ -2030,9 +2081,1095 @@ const _HoFpK9zgbmA_XoqzOlBzcDeCMeg99beu9ZTNe1h9Kc = (function(nitro) {
   });
 });
 
-const rootDir = "C:/Webdev/classpicker";
+/*!
+  * shared v11.2.8
+  * (c) 2025 kazuya kawaguchi
+  * Released under the MIT License.
+  */
+const _create = Object.create;
+const create = (obj = null) => _create(obj);
+/* eslint-enable */
+/**
+ * Useful Utilities By Evan you
+ * Modified by kazuya kawaguchi
+ * MIT License
+ * https://github.com/vuejs/vue-next/blob/master/packages/shared/src/index.ts
+ * https://github.com/vuejs/vue-next/blob/master/packages/shared/src/codeframe.ts
+ */
+const isArray = Array.isArray;
+const isFunction = (val) => typeof val === 'function';
+const isString = (val) => typeof val === 'string';
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const isObject = (val) => val !== null && typeof val === 'object';
+const objectToString = Object.prototype.toString;
+const toTypeString = (value) => objectToString.call(value);
 
-const appHead = {"meta":[{"name":"viewport","content":"width=device-width, initial-scale=1"},{"charset":"utf-8"},{"name":"description","content":"Klassenwahl ohne Grübeln. Wähle deine WoW Klassen, setz eigene Duelle auf und lass das Spiel entscheiden. Optional mit Name. Main Empfehlung inklusive."},{"name":"format-detection","content":"telephone=no"},{"name":"google-site-verification","content":"LqBug-yqynPB2aX7EkNZrC9F-AzC-3HsbplFBhov7b8"}],"link":[{"rel":"icon","type":"image/png","href":"/favicon.png"},{"rel":"preconnect","href":"https://fonts.googleapis.com"},{"rel":"preconnect","href":"https://fonts.gstatic.com","crossorigin":""},{"rel":"stylesheet","href":"https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Press+Start+2P&display=swap"}],"style":[],"script":[{"src":"https://stats.frysch.studio/script.js","defer":true,"data-website-id":"f2e035dd-e124-4dcc-8d4b-728a20d74205"}],"noscript":[],"title":"World of Warcraft Klassenwahl Welche Klasse passt?","htmlAttrs":{"lang":"de"}};
+const isNotObjectOrIsArray = (val) => !isObject(val) || isArray(val);
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+function deepCopy(src, des) {
+    // src and des should both be objects, and none of them can be a array
+    if (isNotObjectOrIsArray(src) || isNotObjectOrIsArray(des)) {
+        throw new Error('Invalid value');
+    }
+    const stack = [{ src, des }];
+    while (stack.length) {
+        const { src, des } = stack.pop();
+        // using `Object.keys` which skips prototype properties
+        Object.keys(src).forEach(key => {
+            if (key === '__proto__') {
+                return;
+            }
+            // if src[key] is an object/array, set des[key]
+            // to empty object/array to prevent setting by reference
+            if (isObject(src[key]) && !isObject(des[key])) {
+                des[key] = Array.isArray(src[key]) ? [] : create();
+            }
+            if (isNotObjectOrIsArray(des[key]) || isNotObjectOrIsArray(src[key])) {
+                // replace with src[key] when:
+                // src[key] or des[key] is not an object, or
+                // src[key] or des[key] is an array
+                des[key] = src[key];
+            }
+            else {
+                // src[key] and des[key] are both objects, merge them
+                stack.push({ src: src[key], des: des[key] });
+            }
+        });
+    }
+}
+
+const __nuxtMock = { runWithContext: async (fn) => await fn() };
+const merger = createDefu((obj, key, value) => {
+  if (key === "messages" || key === "datetimeFormats" || key === "numberFormats") {
+    obj[key] ??= create(null);
+    deepCopy(value, obj[key]);
+    return true;
+  }
+});
+async function loadVueI18nOptions(vueI18nConfigs) {
+  const nuxtApp = __nuxtMock;
+  let vueI18nOptions = { messages: create(null) };
+  for (const configFile of vueI18nConfigs) {
+    const resolver = await configFile().then((x) => isModule(x) ? x.default : x);
+    const resolved = isFunction(resolver) ? await nuxtApp.runWithContext(() => resolver()) : resolver;
+    vueI18nOptions = merger(create(null), resolved, vueI18nOptions);
+  }
+  vueI18nOptions.fallbackLocale ??= false;
+  return vueI18nOptions;
+}
+const isModule = (val) => toTypeString(val) === "[object Module]";
+async function getLocaleMessages(locale, loader) {
+  const nuxtApp = __nuxtMock;
+  try {
+    const getter = await nuxtApp.runWithContext(loader.load).then((x) => isModule(x) ? x.default : x);
+    return isFunction(getter) ? await nuxtApp.runWithContext(() => getter(locale)) : getter;
+  } catch (e) {
+    throw new Error(`Failed loading locale (${locale}): ` + e.message);
+  }
+}
+async function getLocaleMessagesMerged(locale, loaders = []) {
+  const nuxtApp = __nuxtMock;
+  const messages = await Promise.all(
+    loaders.map((loader) => nuxtApp.runWithContext(() => getLocaleMessages(locale, loader)))
+  );
+  const merged = {};
+  for (const message of messages) {
+    deepCopy(message, merged);
+  }
+  return merged;
+}
+
+var welcome$1 = "Welche Klasse soll ich in WoW spielen?";
+var description$1 = "Wähle deine WoW Klassen selbst und lass sie im Battle gegeneinander antreten. Du kannst nur deine Favoriten auswählen, eigene Setups bauen und optional deinen Namen hinterlegen. Am Ende steht dein neuer Main für Raid, Mythic+ oder PvP fest.";
+var startBattle$1 = "KAMPF STARTEN!";
+var backToSelection$1 = "Zur Auswahl";
+var arenaStatus$1 = "Gesamt-Status der Arena";
+var minTwoClasses$1 = "Wähle mindestens 2 Klassen aus, um den Kampf zu starten!";
+var selection$1 = {
+	title: "SELECT YOUR FIGHTER",
+	allIn: "ALLE REIN",
+	clear: "LÖSCHEN",
+	randomNames: "ZUFALLS-NAMEN",
+	namePlaceholder: "NAME"
+};
+var classes$1 = {
+	warrior: {
+		name: "Krieger",
+		description: "Viel HP und harte Schläge.",
+		abilities: {
+			execute: {
+				name: "Hinrichten",
+				msg: "haut mit dem dicken Schwert drauf! OVERKILL!"
+			},
+			shieldblock: {
+				name: "Schildblock",
+				msg: "versteckt sich hinter seinem Schild."
+			},
+			heroicstrike: {
+				name: "Heldenhafter Stoß",
+				msg: "macht einen sehr... heldenhaften Stoß."
+			},
+			victoryrush: {
+				name: "Siegesrausch",
+				msg: "tötet eine imaginäre Ratte und heilt sich!"
+			}
+		}
+	},
+	paladin: {
+		name: "Paladin",
+		description: "Heilung und Unverwundbarkeit.",
+		abilities: {
+			divineshield: {
+				name: "Gottesschild",
+				msg: "wirft die Angstblase an! Unantastbar!"
+			},
+			judgement: {
+				name: "Urteil des Lichts",
+				msg: "richtet über das Ziel und klaut ein bisschen Leben."
+			},
+			avengingwrath: {
+				name: "Zornige Vergeltung",
+				msg: "bekommt Flügel! DIE MACHT DES LICHTS!"
+			},
+			flashoflight: {
+				name: "Lichtblitz",
+				msg: "blendet alle mit einem hellen Licht und heilt sich."
+			}
+		}
+	},
+	hunter: {
+		name: "Jäger",
+		description: "Hoher Schaden, weicht gerne aus.",
+		abilities: {
+			aimedshot: {
+				name: "Gezielter Schuss",
+				msg: "zielt 3 Stunden lang... und TRIFFT!"
+			},
+			turtle: {
+				name: "Aspekt der Schildkröte",
+				msg: "wird zu einer Schildkröte. Warum auch immer."
+			},
+			killcommand: {
+				name: "Fass!",
+				msg: "schickt sein unsichtbares Pet los. Beiß!"
+			},
+			freezingtrap: {
+				name: "Eiskältefalle",
+				msg: "friert die Füße des Gegners ein. Kalt!"
+			}
+		}
+	},
+	rogue: {
+		name: "Schurke",
+		description: "Glaskanone mit hoher Ausweichchance.",
+		abilities: {
+			kidneyshot: {
+				name: "Nierenhieb",
+				msg: "betäubt das Ziel mit einem fiesen Nierenhieb!"
+			},
+			eviscerate: {
+				name: "Meucheln",
+				msg: "sticht hinterhältig zu! KRIT!"
+			},
+			pickpocket: {
+				name: "Taschendiebstahl",
+				msg: "stiehlt einen Heiltrank und trinkt ihn selbst!"
+			},
+			vanish: {
+				name: "Vanish",
+				msg: "verschwindet im Schatten. Nächster Angriff geht ins Leere!"
+			}
+		}
+	},
+	priest: {
+		name: "Priester",
+		description: "Starke Heilung, wenig HP.",
+		abilities: {
+			mindblast: {
+				name: "Gedankenschlag",
+				msg: "verpasst dem Ziel Kopfschmerzen."
+			},
+			shield: {
+				name: "Machtwort: Schild",
+				msg: "hüllt sich in eine glitzernde Kugel ein."
+			},
+			flashheal: {
+				name: "Blitzheilung",
+				msg: "betet ganz schnell für seine Gesundheit."
+			},
+			swdeath: {
+				name: "Schattenwort: Tod",
+				msg: "flüstert dem Ziel etwas Gruseliges ins Ohr."
+			}
+		}
+	},
+	deathknight: {
+		name: "Todesritter",
+		description: "Zäh und entzieht Leben.",
+		abilities: {
+			deathstrike: {
+				name: "Todesstoß",
+				msg: "saugt dem Ziel das Leben aus. Lecker!"
+			},
+			deathsadvance: {
+				name: "Unaufhaltsamer Tod",
+				msg: "läuft ganz langsam weg, ist aber immun gegen alles."
+			},
+			howlingblast: {
+				name: "Heulende Böe",
+				msg: "pustet den Gegner mit Mundgeruch weg."
+			},
+			army: {
+				name: "Armee der Toten",
+				msg: "ruft seine untoten Kumpels zur Party."
+			}
+		}
+	},
+	shaman: {
+		name: "Schamane",
+		description: "Vielseitig mit Blitzen und Totems.",
+		abilities: {
+			chainlightning: {
+				name: "Kettenblitzschlag",
+				msg: "ZAPP! Ein Blitz für dich!"
+			},
+			healingrain: {
+				name: "Heilender Regen",
+				msg: "lässt es im Raum regnen. Indoor-Wellness."
+			},
+			bloodlust: {
+				name: "Kampfrausch",
+				msg: "wird ganz rot im Gesicht und schlägt wild um sich!"
+			},
+			totem: {
+				name: "Erdstärketotem",
+				msg: "stellt einen Holzpfosten auf den Boden."
+			}
+		}
+	},
+	mage: {
+		name: "Magier",
+		description: "Explosiver Schaden, aber zerbrechlich.",
+		abilities: {
+			fireball: {
+				name: "Feuerball",
+				msg: "wirft einen brennenden Ball. Heiß!"
+			},
+			iceblock: {
+				name: "Eisblock",
+				msg: "wird zu einem Eiswürfel. Erfrischend!"
+			},
+			blink: {
+				name: "Blinzeln",
+				msg: "taucht woanders wieder auf. Magie!"
+			},
+			polymorph: {
+				name: "Verwandlung",
+				msg: "macht das Ziel zu einem Schaf. Mäh!"
+			}
+		}
+	},
+	warlock: {
+		name: "Hexenmeister",
+		description: "Dunkle Magie und Dämonen.",
+		abilities: {
+			chaosbolt: {
+				name: "Chaosblitz",
+				msg: "schießt einen grünen Drachenkopf ab. BUMM!"
+			},
+			healthstone: {
+				name: "Gesundheitsstein",
+				msg: "isst einen grünen Kaugummi und heilt sich."
+			},
+			fear: {
+				name: "Furcht",
+				msg: "erzählt dem Ziel von seinen Steuern. Das Ziel läuft weg!"
+			},
+			drainlife: {
+				name: "Blutsauger",
+				msg: "schlürft am Ziel wie an einem Milkshake."
+			}
+		}
+	},
+	monk: {
+		name: "Mönch",
+		description: "Mobil und fiese Tritte.",
+		abilities: {
+			fists: {
+				name: "Furorfäuste",
+				msg: "macht die Windmühle! RATATATA!"
+			},
+			brew: {
+				name: "Stärkendes Gebräu",
+				msg: "trinkt etwas Unidentifizierbares aus einem Fass."
+			},
+			kick: {
+				name: "Blackout-Tritt",
+				msg: "tritt so fest zu, dass dem Ziel schwarz vor Augen wird."
+			},
+			mist: {
+				name: "Beruhigender Nebel",
+				msg: "pustet grünen Dampf in die Luft."
+			}
+		}
+	},
+	druid: {
+		name: "Druide",
+		description: "Kann alles, außer stillsitzen.",
+		abilities: {
+			convoke: {
+				name: "Konvokation der Geister",
+				msg: "drückt alle Knöpfe gleichzeitig! CHAOS!"
+			},
+			regrowth: {
+				name: "Nachwachsen",
+				msg: "lässt Blumen auf sich wachsen. Hübsch!"
+			},
+			bear: {
+				name: "Bärengestalt",
+				msg: "wird sehr dick und flauschig."
+			},
+			moonfire: {
+				name: "Mondfeuer",
+				msg: "lasert das Ziel aus dem Weltall weg."
+			}
+		}
+	},
+	demonhunter: {
+		name: "Dämonenjäger",
+		description: "Springt viel rum, sieht cool aus.",
+		abilities: {
+			eyebeam: {
+				name: "Augenstrahl",
+				msg: "starrt das Ziel so böse an, dass es brennt!"
+			},
+			blur: {
+				name: "Verschwimmen",
+				msg: "wackelt so schnell, dass man ihn nicht trifft."
+			},
+			chaosstrike: {
+				name: "Chaosstoß",
+				msg: "schlägt wild mit den Gleven um sich."
+			},
+			metamorphosis: {
+				name: "Metamorphose",
+				msg: "wird zu einem großen, bösen Dämon. ROAR!"
+			}
+		}
+	},
+	evoker: {
+		name: "Rufer",
+		description: "Spuckt Feuer und fliegt weg.",
+		abilities: {
+			disintegrate: {
+				name: "Desintegration",
+				msg: "strahlt das Ziel mit blauem Laser an."
+			},
+			blossom: {
+				name: "Smaragdblüte",
+				msg: "lässt ein grünes Köpfchen aus dem Boden wachsen."
+			},
+			deepbreath: {
+				name: "Tiefer Atem",
+				msg: "fliegt einmal drüber und grillt alles."
+			},
+			rewind: {
+				name: "Zurückspulen",
+				msg: "hat die Zeit vergessen und macht einfach alles rückgängig."
+			}
+		}
+	}
+};
+var victory$1 = {
+	champion: "CHAMPION!",
+	playInMidnight: "Du spielst in Midnight:",
+	again: "NOCHMAL!"
+};
+var meter$1 = {
+	performance: "Leistung",
+	totalDamage: "Schaden gesamt",
+	totalHealing: "Heilung gesamt"
+};
+var battle$1 = {
+	ready: "READY",
+	fight: "FIGHT",
+	selectionWords: [
+		"WÄHLE",
+		"DEINE",
+		"KÄMPFER"
+	],
+	startLog: "Der Kampf beginnt mit {count} Klassen!",
+	evadeLog: "{target} weicht dem Angriff von {attacker} aus!",
+	critLog: "KRITISCHER TREFFER von {attacker}!",
+	megaCritLog: "MEGA-KRIT von {attacker}!",
+	status: {
+		ready: "Bereit!",
+		using: "Nutzt {ability}..."
+	}
+};
+var seo$1 = {
+	title: "WoW Midnight Class Picker - Welche WoW Klasse spielst du?",
+	description: "Unentschlossen bei der WoW Klassenwahl für Midnight? Lass den WoW Class Picker für dich entscheiden!"
+};
+const locale_de_46json_700e2f7a = {
+	welcome: welcome$1,
+	description: description$1,
+	startBattle: startBattle$1,
+	backToSelection: backToSelection$1,
+	arenaStatus: arenaStatus$1,
+	minTwoClasses: minTwoClasses$1,
+	selection: selection$1,
+	classes: classes$1,
+	victory: victory$1,
+	meter: meter$1,
+	battle: battle$1,
+	seo: seo$1
+};
+
+var welcome = "Which class should I play in WoW?";
+var description = "Choose your WoW classes yourself and let them compete against each other in a battle. You can select only your favorites, build your own setups, and optionally enter your name. In the end, your new main for Raid, Mythic+, or PvP will be decided.";
+var startBattle = "START BATTLE!";
+var backToSelection = "Back to selection";
+var arenaStatus = "Overall Arena Status";
+var minTwoClasses = "Select at least 2 classes to start the battle!";
+var selection = {
+	title: "SELECT YOUR FIGHTER",
+	allIn: "ALL IN",
+	clear: "CLEAR",
+	randomNames: "RANDOM NAMES",
+	namePlaceholder: "NAME"
+};
+var classes = {
+	warrior: {
+		name: "Warrior",
+		description: "Lots of HP and hard hits.",
+		abilities: {
+			execute: {
+				name: "Execute",
+				msg: "hits with the thick sword! OVERKILL!"
+			},
+			shieldblock: {
+				name: "Shield Block",
+				msg: "hides behind their shield."
+			},
+			heroicstrike: {
+				name: "Heroic Strike",
+				msg: "makes a very... heroic strike."
+			},
+			victoryrush: {
+				name: "Victory Rush",
+				msg: "kills an imaginary rat and heals!"
+			}
+		}
+	},
+	paladin: {
+		name: "Paladin",
+		description: "Healing and invulnerability.",
+		abilities: {
+			divineshield: {
+				name: "Divine Shield",
+				msg: "turns on the bubble! Untouchable!"
+			},
+			judgement: {
+				name: "Judgement of Light",
+				msg: "judges the target and steals some life."
+			},
+			avengingwrath: {
+				name: "Avenging Wrath",
+				msg: "gets wings! THE POWER OF LIGHT!"
+			},
+			flashoflight: {
+				name: "Flash of Light",
+				msg: "blinds everyone with a bright light and heals."
+			}
+		}
+	},
+	hunter: {
+		name: "Hunter",
+		description: "High damage, likes to dodge.",
+		abilities: {
+			aimedshot: {
+				name: "Aimed Shot",
+				msg: "aims for 3 hours... and HITS!"
+			},
+			turtle: {
+				name: "Aspect of the Turtle",
+				msg: "becomes a turtle. For some reason."
+			},
+			killcommand: {
+				name: "Kill Command!",
+				msg: "sends their invisible pet. Bite!"
+			},
+			freezingtrap: {
+				name: "Freezing Trap",
+				msg: "freezes the target's feet. Cold!"
+			}
+		}
+	},
+	rogue: {
+		name: "Rogue",
+		description: "Glass cannon with high dodge chance.",
+		abilities: {
+			kidneyshot: {
+				name: "Kidney Shot",
+				msg: "stuns the target with a nasty kidney shot!"
+			},
+			eviscerate: {
+				name: "Eviscerate",
+				msg: "stabs sneakily! CRIT!"
+			},
+			pickpocket: {
+				name: "Pickpocket",
+				msg: "steals a health potion and drinks it!"
+			},
+			vanish: {
+				name: "Vanish",
+				msg: "disappears into the shadows. Next attack misses!"
+			}
+		}
+	},
+	priest: {
+		name: "Priest",
+		description: "Strong healing, low HP.",
+		abilities: {
+			mindblast: {
+				name: "Mind Blast",
+				msg: "gives the target a headache."
+			},
+			shield: {
+				name: "Power Word: Shield",
+				msg: "wraps themselves in a glittering sphere."
+			},
+			flashheal: {
+				name: "Flash Heal",
+				msg: "prays very quickly for their health."
+			},
+			swdeath: {
+				name: "Shadow Word: Death",
+				msg: "whispers something spooky into the target's ear."
+			}
+		}
+	},
+	deathknight: {
+		name: "Death Knight",
+		description: "Tough and drains life.",
+		abilities: {
+			deathstrike: {
+				name: "Death Strike",
+				msg: "sucks the life out of the target. Tasty!"
+			},
+			deathsadvance: {
+				name: "Death's Advance",
+				msg: "walks away very slowly, but is immune to everything."
+			},
+			howlingblast: {
+				name: "Howling Blast",
+				msg: "blows the opponent away with bad breath."
+			},
+			army: {
+				name: "Army of the Dead",
+				msg: "calls their undead buddies to the party."
+			}
+		}
+	},
+	shaman: {
+		name: "Shaman",
+		description: "Versatile with lightning and totems.",
+		abilities: {
+			chainlightning: {
+				name: "Chain Lightning",
+				msg: "ZAPP! A bolt for you!"
+			},
+			healingrain: {
+				name: "Healing Rain",
+				msg: "makes it rain in the room. Indoor wellness."
+			},
+			bloodlust: {
+				name: "Bloodlust",
+				msg: "gets very red in the face and swings wildly!"
+			},
+			totem: {
+				name: "Strength of Earth Totem",
+				msg: "places a wooden post on the ground."
+			}
+		}
+	},
+	mage: {
+		name: "Mage",
+		description: "Explosive damage, but fragile.",
+		abilities: {
+			fireball: {
+				name: "Fireball",
+				msg: "throws a burning ball. Hot!"
+			},
+			iceblock: {
+				name: "Ice Block",
+				msg: "becomes an ice cube. Refreshing!"
+			},
+			blink: {
+				name: "Blink",
+				msg: "reappears somewhere else. Magic!"
+			},
+			polymorph: {
+				name: "Polymorph",
+				msg: "turns the target into a sheep. Baa!"
+			}
+		}
+	},
+	warlock: {
+		name: "Warlock",
+		description: "Dark magic and demons.",
+		abilities: {
+			chaosbolt: {
+				name: "Chaos Bolt",
+				msg: "fires a green dragon head. BOOM!"
+			},
+			healthstone: {
+				name: "Healthstone",
+				msg: "eats a green gum and heals."
+			},
+			fear: {
+				name: "Fear",
+				msg: "tells the target about their taxes. Target runs away!"
+			},
+			drainlife: {
+				name: "Drain Life",
+				msg: "sips on the target like a milkshake."
+			}
+		}
+	},
+	monk: {
+		name: "Monk",
+		description: "Mobile and nasty kicks.",
+		abilities: {
+			fists: {
+				name: "Fists of Fury",
+				msg: "does the windmill! RATATATA!"
+			},
+			brew: {
+				name: "Fortifying Brew",
+				msg: "drinks something unidentifiable from a barrel."
+			},
+			kick: {
+				name: "Blackout Kick",
+				msg: "kicks so hard the target sees black."
+			},
+			mist: {
+				name: "Soothing Mist",
+				msg: "blows green steam into the air."
+			}
+		}
+	},
+	druid: {
+		name: "Druid",
+		description: "Can do everything except sit still.",
+		abilities: {
+			convoke: {
+				name: "Convoke the Spirits",
+				msg: "presses all buttons at once! CHAOS!"
+			},
+			regrowth: {
+				name: "Regrowth",
+				msg: "makes flowers grow on them. Pretty!"
+			},
+			bear: {
+				name: "Bear Form",
+				msg: "becomes very fat and fluffy."
+			},
+			moonfire: {
+				name: "Moonfire",
+				msg: "lasers the target from space."
+			}
+		}
+	},
+	demonhunter: {
+		name: "Demon Hunter",
+		description: "Jumps around a lot, looks cool.",
+		abilities: {
+			eyebeam: {
+				name: "Eye Beam",
+				msg: "stares at the target so hard it burns!"
+			},
+			blur: {
+				name: "Blur",
+				msg: "wiggles so fast they can't be hit."
+			},
+			chaosstrike: {
+				name: "Chaos Strike",
+				msg: "swings wildly with glaives."
+			},
+			metamorphosis: {
+				name: "Metamorphosis",
+				msg: "becomes a big, bad demon. ROAR!"
+			}
+		}
+	},
+	evoker: {
+		name: "Evoker",
+		description: "Spits fire and flies away.",
+		abilities: {
+			disintegrate: {
+				name: "Disintegrate",
+				msg: "beams the target with a blue laser."
+			},
+			blossom: {
+				name: "Emerald Blossom",
+				msg: "makes a green bud grow from the ground."
+			},
+			deepbreath: {
+				name: "Deep Breath",
+				msg: "flies over once and grills everything."
+			},
+			rewind: {
+				name: "Rewind",
+				msg: "forgot the time and just undoes everything."
+			}
+		}
+	}
+};
+var victory = {
+	champion: "CHAMPION!",
+	playInMidnight: "You will play in Midnight:",
+	again: "AGAIN!"
+};
+var meter = {
+	performance: "Performance",
+	totalDamage: "Total Damage",
+	totalHealing: "Total Healing"
+};
+var battle = {
+	ready: "READY",
+	fight: "FIGHT",
+	selectionWords: [
+		"SELECT",
+		"YOUR",
+		"FIGHTER"
+	],
+	startLog: "The battle begins with {count} classes!",
+	evadeLog: "{target} dodges the attack from {attacker}!",
+	critLog: "CRITICAL HIT by {attacker}!",
+	megaCritLog: "MEGA-CRIT by {attacker}!",
+	status: {
+		ready: "Ready!",
+		using: "Using {ability}..."
+	}
+};
+var seo = {
+	title: "WoW Midnight Class Picker - Which WoW class do you play?",
+	description: "Undecided about WoW class selection for Midnight? Let the WoW Class Picker decide for you!"
+};
+const locale_en_46json_dc85c39b = {
+	welcome: welcome,
+	description: description,
+	startBattle: startBattle,
+	backToSelection: backToSelection,
+	arenaStatus: arenaStatus,
+	minTwoClasses: minTwoClasses,
+	selection: selection,
+	classes: classes,
+	victory: victory,
+	meter: meter,
+	battle: battle,
+	seo: seo
+};
+
+// @ts-nocheck
+const localeCodes =  [
+  "de",
+  "en"
+];
+const localeLoaders = {
+  de: [
+    {
+      key: "locale_de_46json_700e2f7a",
+      load: () => Promise.resolve(locale_de_46json_700e2f7a),
+      cache: true
+    }
+  ],
+  en: [
+    {
+      key: "locale_en_46json_dc85c39b",
+      load: () => Promise.resolve(locale_en_46json_dc85c39b),
+      cache: true
+    }
+  ]
+};
+const vueI18nConfigs = [];
+const normalizedLocales = [
+  {
+    code: "de",
+    language: "de-DE",
+    name: "Deutsch"
+  },
+  {
+    code: "en",
+    language: "en-US",
+    name: "English"
+  }
+];
+
+const setupVueI18nOptions = async (defaultLocale) => {
+  const options = await loadVueI18nOptions(vueI18nConfigs);
+  options.locale = defaultLocale || options.locale || "en-US";
+  options.defaultLocale = defaultLocale;
+  options.fallbackLocale ??= false;
+  options.messages ??= {};
+  for (const locale of localeCodes) {
+    options.messages[locale] ??= {};
+  }
+  return options;
+};
+
+function defineNitroPlugin(def) {
+  return def;
+}
+
+function defineRenderHandler(render) {
+  const runtimeConfig = useRuntimeConfig();
+  return eventHandler(async (event) => {
+    const nitroApp = useNitroApp();
+    const ctx = { event, render, response: void 0 };
+    await nitroApp.hooks.callHook("render:before", ctx);
+    if (!ctx.response) {
+      if (event.path === `${runtimeConfig.app.baseURL}favicon.ico`) {
+        setResponseHeader(event, "Content-Type", "image/x-icon");
+        return send(
+          event,
+          "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+        );
+      }
+      ctx.response = await ctx.render(event);
+      if (!ctx.response) {
+        const _currentStatus = getResponseStatus(event);
+        setResponseStatus(event, _currentStatus === 200 ? 500 : _currentStatus);
+        return send(
+          event,
+          "No response returned from render handler: " + event.path
+        );
+      }
+    }
+    await nitroApp.hooks.callHook("render:response", ctx.response, ctx);
+    if (ctx.response.headers) {
+      setResponseHeaders(event, ctx.response.headers);
+    }
+    if (ctx.response.statusCode || ctx.response.statusMessage) {
+      setResponseStatus(
+        event,
+        ctx.response.statusCode,
+        ctx.response.statusMessage
+      );
+    }
+    return ctx.response.body;
+  });
+}
+
+const scheduledTasks = false;
+
+const tasks = {
+  
+};
+
+const __runningTasks__ = {};
+async function runTask(name, {
+  payload = {},
+  context = {}
+} = {}) {
+  if (__runningTasks__[name]) {
+    return __runningTasks__[name];
+  }
+  if (!(name in tasks)) {
+    throw createError({
+      message: `Task \`${name}\` is not available!`,
+      statusCode: 404
+    });
+  }
+  if (!tasks[name].resolve) {
+    throw createError({
+      message: `Task \`${name}\` is not implemented!`,
+      statusCode: 501
+    });
+  }
+  const handler = await tasks[name].resolve();
+  const taskEvent = { name, payload, context };
+  __runningTasks__[name] = handler.run(taskEvent);
+  try {
+    const res = await __runningTasks__[name];
+    return res;
+  } finally {
+    delete __runningTasks__[name];
+  }
+}
+
+function buildAssetsDir() {
+	// TODO: support passing event to `useRuntimeConfig`
+	return useRuntimeConfig().app.buildAssetsDir;
+}
+function buildAssetsURL(...path) {
+	return joinRelativeURL(publicAssetsURL(), buildAssetsDir(), ...path);
+}
+function publicAssetsURL(...path) {
+	// TODO: support passing event to `useRuntimeConfig`
+	const app = useRuntimeConfig().app;
+	const publicBase = app.cdnURL || app.baseURL;
+	return path.length ? joinRelativeURL(publicBase, ...path) : publicBase;
+}
+
+function parseAcceptLanguage(value) {
+  return value.split(",").map((tag) => tag.split(";")[0]).filter(
+    (tag) => !(tag === "*" || tag === "")
+  );
+}
+function createPathIndexLanguageParser(index = 0) {
+  return (path) => {
+    const rawPath = typeof path === "string" ? path : path.pathname;
+    const normalizedPath = rawPath.split("?")[0];
+    const parts = normalizedPath.split("/");
+    if (parts[0] === "") {
+      parts.shift();
+    }
+    return parts.length > index ? parts[index] || "" : "";
+  };
+}
+
+function useRuntimeI18n(nuxtApp, event) {
+  {
+    return useRuntimeConfig(event).public.i18n;
+  }
+}
+function useI18nDetection(nuxtApp) {
+  const detectBrowserLanguage = useRuntimeI18n().detectBrowserLanguage;
+  const detect = detectBrowserLanguage || {};
+  return {
+    ...detect,
+    enabled: !!detectBrowserLanguage,
+    cookieKey: detect.cookieKey || "i18n_redirected"
+  };
+}
+function resolveRootRedirect(config) {
+  if (!config) {
+    return void 0;
+  }
+  return {
+    path: "/" + (isString(config) ? config : config.path).replace(/^\//, ""),
+    code: !isString(config) && config.statusCode || 302
+  };
+}
+function toArray(value) {
+  return Array.isArray(value) ? value : [value];
+}
+
+function createLocaleConfigs(fallbackLocale) {
+  const localeConfigs = {};
+  for (const locale of localeCodes) {
+    const fallbacks = getFallbackLocaleCodes(fallbackLocale, [locale]);
+    const cacheable = isLocaleWithFallbacksCacheable(locale, fallbacks);
+    localeConfigs[locale] = { fallbacks, cacheable };
+  }
+  return localeConfigs;
+}
+function getFallbackLocaleCodes(fallback, locales) {
+  if (fallback === false) {
+    return [];
+  }
+  if (isArray(fallback)) {
+    return fallback;
+  }
+  let fallbackLocales = [];
+  if (isString(fallback)) {
+    if (locales.every((locale) => locale !== fallback)) {
+      fallbackLocales.push(fallback);
+    }
+    return fallbackLocales;
+  }
+  const targets = [...locales, "default"];
+  for (const locale of targets) {
+    if (locale in fallback == false) {
+      continue;
+    }
+    fallbackLocales = [...fallbackLocales, ...fallback[locale].filter(Boolean)];
+  }
+  return fallbackLocales;
+}
+function isLocaleCacheable(locale) {
+  return localeLoaders[locale] != null && localeLoaders[locale].every((loader) => loader.cache !== false);
+}
+function isLocaleWithFallbacksCacheable(locale, fallbackLocales) {
+  return isLocaleCacheable(locale) && fallbackLocales.every((fallbackLocale) => isLocaleCacheable(fallbackLocale));
+}
+function getDefaultLocaleForDomain(host) {
+  return normalizedLocales.find((l) => !!l.defaultForDomains?.includes(host))?.code;
+}
+const isSupportedLocale = (locale) => localeCodes.includes(locale || "");
+
+function useI18nContext(event) {
+  if (event.context.nuxtI18n == null) {
+    throw new Error("Nuxt I18n server context has not been set up yet.");
+  }
+  return event.context.nuxtI18n;
+}
+function tryUseI18nContext(event) {
+  return event.context.nuxtI18n;
+}
+const getHost = (event) => getRequestURL(event, { xForwardedHost: true }).host;
+async function initializeI18nContext(event) {
+  const runtimeI18n = useRuntimeI18n(void 0, event);
+  const defaultLocale = runtimeI18n.defaultLocale || "";
+  const options = await setupVueI18nOptions(getDefaultLocaleForDomain(getHost(event)) || defaultLocale);
+  const localeConfigs = createLocaleConfigs(options.fallbackLocale);
+  const ctx = createI18nContext();
+  ctx.vueI18nOptions = options;
+  ctx.localeConfigs = localeConfigs;
+  event.context.nuxtI18n = ctx;
+  return ctx;
+}
+function createI18nContext() {
+  return {
+    messages: {},
+    slp: {},
+    localeConfigs: {},
+    trackMap: {},
+    vueI18nOptions: void 0,
+    trackKey(key, locale) {
+      this.trackMap[locale] ??= /* @__PURE__ */ new Set();
+      this.trackMap[locale].add(key);
+    }
+  };
+}
+
+function matchBrowserLocale(locales, browserLocales) {
+  const matchedLocales = [];
+  for (const [index, browserCode] of browserLocales.entries()) {
+    const matchedLocale = locales.find((l) => l.language?.toLowerCase() === browserCode.toLowerCase());
+    if (matchedLocale) {
+      matchedLocales.push({ code: matchedLocale.code, score: 1 - index / browserLocales.length });
+      break;
+    }
+  }
+  for (const [index, browserCode] of browserLocales.entries()) {
+    const languageCode = browserCode.split("-")[0].toLowerCase();
+    const matchedLocale = locales.find((l) => l.language?.split("-")[0].toLowerCase() === languageCode);
+    if (matchedLocale) {
+      matchedLocales.push({ code: matchedLocale.code, score: 0.999 - index / browserLocales.length });
+      break;
+    }
+  }
+  return matchedLocales;
+}
+function compareBrowserLocale(a, b) {
+  if (a.score === b.score) {
+    return b.code.length - a.code.length;
+  }
+  return b.score - a.score;
+}
+function findBrowserLocale(locales, browserLocales) {
+  const matchedLocales = matchBrowserLocale(
+    locales.map((l) => ({ code: l.code, language: l.language || l.code })),
+    browserLocales
+  );
+  return matchedLocales.sort(compareBrowserLocale).at(0)?.code ?? "";
+}
+
+const appHead = {"meta":[{"name":"viewport","content":"width=device-width, initial-scale=1"},{"charset":"utf-8"},{"name":"format-detection","content":"telephone=no"},{"name":"google-site-verification","content":"LqBug-yqynPB2aX7EkNZrC9F-AzC-3HsbplFBhov7b8"}],"link":[{"rel":"icon","type":"image/png","href":"/favicon.png"},{"rel":"preconnect","href":"https://fonts.googleapis.com"},{"rel":"preconnect","href":"https://fonts.gstatic.com","crossorigin":""},{"rel":"stylesheet","href":"https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Press+Start+2P&display=swap"}],"style":[],"script":[{"src":"https://stats.frysch.studio/script.js","defer":true,"data-website-id":"f2e035dd-e124-4dcc-8d4b-728a20d74205"}],"noscript":[]};
 
 const appRootTag = "div";
 
@@ -2043,6 +3180,239 @@ const appTeleportTag = "div";
 const appTeleportAttrs = {"id":"teleports"};
 
 const appId = "nuxt-app";
+
+const separator = "___";
+const pathLanguageParser = createPathIndexLanguageParser(0);
+const getLocaleFromRoutePath = (path) => pathLanguageParser(path);
+const getLocaleFromRouteName = (name) => name.split(separator).at(1) ?? "";
+function normalizeInput(input) {
+  return typeof input !== "object" ? String(input) : String(input?.name || input?.path || "");
+}
+function getLocaleFromRoute(route) {
+  const input = normalizeInput(route);
+  return input[0] === "/" ? getLocaleFromRoutePath(input) : getLocaleFromRouteName(input);
+}
+
+function matchDomainLocale(locales, host, pathLocale) {
+  const normalizeDomain = (domain = "") => domain.replace(/https?:\/\//, "");
+  const matches = locales.filter(
+    (locale) => normalizeDomain(locale.domain) === host || toArray(locale.domains).includes(host)
+  );
+  if (matches.length <= 1) {
+    return matches[0]?.code;
+  }
+  return (
+    // match by current path locale
+    matches.find((l) => l.code === pathLocale)?.code || matches.find((l) => l.defaultForDomains?.includes(host) ?? l.domainDefault)?.code
+  );
+}
+
+const getCookieLocale = (event, cookieName) => (getCookie(event, cookieName)) || void 0;
+const getRouteLocale = (event, route) => getLocaleFromRoute(route);
+const getHeaderLocale = (event) => findBrowserLocale(normalizedLocales, parseAcceptLanguage(getRequestHeader(event, "accept-language") || ""));
+const getHostLocale = (event, path, domainLocales) => {
+  const host = getRequestURL(event, { xForwardedHost: true }).host;
+  const locales = normalizedLocales.map((l) => ({
+    ...l,
+    domain: domainLocales[l.code]?.domain ?? l.domain
+  }));
+  return matchDomainLocale(locales, host, getLocaleFromRoutePath(path));
+};
+const useDetectors = (event, config, nuxtApp) => {
+  if (!event) {
+    throw new Error("H3Event is required for server-side locale detection");
+  }
+  const runtimeI18n = useRuntimeI18n();
+  return {
+    cookie: () => getCookieLocale(event, config.cookieKey),
+    header: () => getHeaderLocale(event) ,
+    navigator: () => void 0,
+    host: (path) => getHostLocale(event, path, runtimeI18n.domainLocales),
+    route: (path) => getRouteLocale(event, path)
+  };
+};
+
+// Generated by @nuxtjs/i18n
+const pathToI18nConfig = {
+  "/": {
+    "de": "/",
+    "en": "/"
+  }
+};
+const i18nPathToPath = {
+  "/": "/"
+};
+
+const matcher = createRouterMatcher([], {});
+for (const path of Object.keys(i18nPathToPath)) {
+  matcher.addRoute({ path, component: () => "", meta: {} });
+}
+const getI18nPathToI18nPath = (path, locale) => {
+  if (!path || !locale) {
+    return;
+  }
+  const plainPath = i18nPathToPath[path];
+  const i18nConfig = pathToI18nConfig[plainPath];
+  if (i18nConfig && i18nConfig[locale]) {
+    return i18nConfig[locale] === true ? plainPath : i18nConfig[locale];
+  }
+};
+function isExistingNuxtRoute(path) {
+  if (path === "") {
+    return;
+  }
+  if (path.endsWith("/__nuxt_error")) {
+    return;
+  }
+  const resolvedMatch = matcher.resolve({ path }, { path: "/", name: "", matched: [], params: {}, meta: {} });
+  return resolvedMatch.matched.length > 0 ? resolvedMatch : void 0;
+}
+function matchLocalized(path, locale, defaultLocale) {
+  if (path === "") {
+    return;
+  }
+  const parsed = parsePath(path);
+  const resolvedMatch = matcher.resolve(
+    { path: parsed.pathname || "/" },
+    { path: "/", name: "", matched: [], params: {}, meta: {} }
+  );
+  if (resolvedMatch.matched.length > 0) {
+    const alternate = getI18nPathToI18nPath(resolvedMatch.matched[0].path, locale);
+    const match = matcher.resolve(
+      { params: resolvedMatch.params },
+      { path: alternate || "/", name: "", matched: [], params: {}, meta: {} }
+    );
+    const isPrefixable = prefixable(locale, defaultLocale);
+    return withLeadingSlash(joinURL(isPrefixable ? locale : "", match.path));
+  }
+}
+function prefixable(currentLocale, defaultLocale) {
+  return (currentLocale !== defaultLocale || "prefix_except_default" === "prefix");
+}
+
+function* detect(detectors, detection, path) {
+  if (detection.enabled) {
+    yield { locale: detectors.cookie(), source: "cookie" };
+    yield { locale: detectors.header(), source: "header" };
+  }
+  {
+    yield { locale: detectors.route(path), source: "route" };
+  }
+  yield { locale: detection.fallbackLocale, source: "fallback" };
+}
+function createRedirectResponse(event, dest, code) {
+  event.node.res.setHeader("location", dest);
+  event.node.res.statusCode = sanitizeStatusCode(code, event.node.res.statusCode);
+  return {
+    headers: event.node.res.getHeaders(),
+    statusCode: event.node.res.statusCode,
+    body: `<!DOCTYPE html><html><head><meta http-equiv="refresh" content="0; url=${dest.replace(/"/g, "%22")}"></head></html>`
+  };
+}
+const _sFxj1qm4JSK280ruMbWj244Vc_kPvZ2LGygVdkmDspA = defineNitroPlugin(async (nitro) => {
+  const runtimeI18n = useRuntimeI18n();
+  const rootRedirect = resolveRootRedirect(runtimeI18n.rootRedirect);
+  runtimeI18n.defaultLocale || "";
+  try {
+    const cacheStorage = useStorage("cache");
+    const cachedKeys = await cacheStorage.getKeys("nitro:handlers:i18n");
+    await Promise.all(cachedKeys.map((key) => cacheStorage.removeItem(key)));
+  } catch {
+  }
+  const detection = useI18nDetection();
+  const cookieOptions = {
+    path: "/",
+    domain: detection.cookieDomain || void 0,
+    maxAge: 60 * 60 * 24 * 365,
+    sameSite: "lax",
+    secure: detection.cookieSecure
+  };
+  const createBaseUrlGetter = () => {
+    isFunction(runtimeI18n.baseUrl) ? "" : runtimeI18n.baseUrl || "";
+    if (isFunction(runtimeI18n.baseUrl)) {
+      console.warn("[nuxt-i18n] Configuring baseUrl as a function is deprecated and will be removed in v11.");
+      return () => "";
+    }
+    return (event, defaultLocale) => {
+      return "";
+    };
+  };
+  function resolveRedirectPath(event, path, pathLocale, defaultLocale, detector) {
+    let locale = "";
+    for (const detected of detect(detector, detection, event.path)) {
+      if (detected.locale && isSupportedLocale(detected.locale)) {
+        locale = detected.locale;
+        break;
+      }
+    }
+    locale ||= defaultLocale;
+    function getLocalizedMatch(locale2) {
+      const res = matchLocalized(path || "/", locale2, defaultLocale);
+      if (res && res !== event.path) {
+        return res;
+      }
+    }
+    let resolvedPath = void 0;
+    let redirectCode = 302;
+    const requestURL = getRequestURL(event);
+    if (rootRedirect && requestURL.pathname === "/") {
+      locale = detection.enabled && locale || defaultLocale;
+      resolvedPath = isSupportedLocale(detector.route(rootRedirect.path)) && rootRedirect.path || matchLocalized(rootRedirect.path, locale, defaultLocale);
+      redirectCode = rootRedirect.code;
+    } else if (runtimeI18n.redirectStatusCode) {
+      redirectCode = runtimeI18n.redirectStatusCode;
+    }
+    switch (detection.redirectOn) {
+      case "root":
+        if (requestURL.pathname !== "/") {
+          break;
+        }
+      // fallthrough (root has no prefix)
+      case "no prefix":
+        if (pathLocale) {
+          break;
+        }
+      // fallthrough to resolve
+      case "all":
+        resolvedPath ??= getLocalizedMatch(locale);
+        break;
+    }
+    if (requestURL.pathname === "/" && "prefix_except_default" === "prefix") ;
+    return { path: resolvedPath, code: redirectCode, locale };
+  }
+  const baseUrlGetter = createBaseUrlGetter();
+  nitro.hooks.hook("request", async (event) => {
+    await initializeI18nContext(event);
+  });
+  nitro.hooks.hook("render:before", async (context) => {
+    const { event } = context;
+    const ctx = useI18nContext(event);
+    const url = getRequestURL(event);
+    const detector = useDetectors(event, detection);
+    const localeSegment = detector.route(event.path);
+    const pathLocale = isSupportedLocale(localeSegment) && localeSegment || void 0;
+    const path = (pathLocale && url.pathname.slice(pathLocale.length + 1)) ?? url.pathname;
+    if (!url.pathname.includes("/_i18n/gY_LMmuL") && !isExistingNuxtRoute(path)) {
+      return;
+    }
+    const resolved = resolveRedirectPath(event, path, pathLocale, ctx.vueI18nOptions.defaultLocale, detector);
+    if (resolved.path && resolved.path !== url.pathname) {
+      ctx.detectLocale = resolved.locale;
+      detection.useCookie && setCookie(event, detection.cookieKey, resolved.locale, cookieOptions);
+      context.response = createRedirectResponse(
+        event,
+        joinURL(baseUrlGetter(event, ctx.vueI18nOptions.defaultLocale), resolved.path + url.search),
+        resolved.code
+      );
+      return;
+    }
+  });
+  nitro.hooks.hook("render:html", (htmlContext, { event }) => {
+    tryUseI18nContext(event);
+  });
+});
+
+const rootDir = "C:/Webdev/classpicker";
 
 const devReducers = {
 	VNode: (data) => isVNode(data) ? {
@@ -2130,6 +3500,7 @@ function onConsoleLog(callback) {
 
 const plugins = [
   _HoFpK9zgbmA_XoqzOlBzcDeCMeg99beu9ZTNe1h9Kc,
+_sFxj1qm4JSK280ruMbWj244Vc_kPvZ2LGygVdkmDspA,
 _neT_YrzXHMlVARK4oQHmKg2aWdM4jRRvOXo94UF9jUY
 ];
 
@@ -2281,20 +3652,6 @@ function setSSRError(ssrContext, error) {
 	ssrContext.error = true;
 	ssrContext.payload = { error };
 	ssrContext.url = error.url;
-}
-
-function buildAssetsDir() {
-	// TODO: support passing event to `useRuntimeConfig`
-	return useRuntimeConfig().app.buildAssetsDir;
-}
-function buildAssetsURL(...path) {
-	return joinRelativeURL(publicAssetsURL(), buildAssetsDir(), ...path);
-}
-function publicAssetsURL(...path) {
-	// TODO: support passing event to `useRuntimeConfig`
-	const app = useRuntimeConfig().app;
-	const publicBase = app.cdnURL || app.baseURL;
-	return path.length ? joinRelativeURL(publicBase, ...path) : publicBase;
 }
 
 const APP_ROOT_OPEN_TAG = `<${appRootTag}${propsToString(appRootAttrs)}>`;
@@ -2582,12 +3939,130 @@ async function getIslandContext(event) {
 	return ctx;
 }
 
+const storage = prefixStorage(useStorage(), "i18n");
+function cachedFunctionI18n(fn, opts) {
+  opts = { maxAge: 1, ...opts };
+  const pending = {};
+  async function get(key, resolver) {
+    const isPending = pending[key];
+    if (!isPending) {
+      pending[key] = Promise.resolve(resolver());
+    }
+    try {
+      return await pending[key];
+    } finally {
+      delete pending[key];
+    }
+  }
+  return async (...args) => {
+    const key = [opts.name, opts.getKey(...args)].join(":").replace(/:\/$/, ":index");
+    const maxAge = opts.maxAge ?? 1;
+    const isCacheable = !opts.shouldBypassCache(...args) && maxAge >= 0;
+    const cache = isCacheable && await storage.getItemRaw(key);
+    if (!cache || cache.ttl < Date.now()) {
+      pending[key] = Promise.resolve(fn(...args));
+      const value = await get(key, () => fn(...args));
+      if (isCacheable) {
+        await storage.setItemRaw(key, { ttl: Date.now() + maxAge * 1e3, value, mtime: Date.now() });
+      }
+      return value;
+    }
+    return cache.value;
+  };
+}
+
+const _getMessages = async (locale) => {
+  return { [locale]: await getLocaleMessagesMerged(locale, localeLoaders[locale]) };
+};
+cachedFunctionI18n(_getMessages, {
+  name: "messages",
+  maxAge: -1 ,
+  getKey: (locale) => locale,
+  shouldBypassCache: (locale) => !isLocaleCacheable(locale)
+});
+const getMessages = _getMessages ;
+const _getMergedMessages = async (locale, fallbackLocales) => {
+  const merged = {};
+  try {
+    if (fallbackLocales.length > 0) {
+      const messages = await Promise.all(fallbackLocales.map(getMessages));
+      for (const message2 of messages) {
+        deepCopy(message2, merged);
+      }
+    }
+    const message = await getMessages(locale);
+    deepCopy(message, merged);
+    return merged;
+  } catch (e) {
+    throw new Error("Failed to merge messages: " + e.message);
+  }
+};
+const getMergedMessages = cachedFunctionI18n(_getMergedMessages, {
+  name: "merged-single",
+  maxAge: -1 ,
+  getKey: (locale, fallbackLocales) => `${locale}-[${[...new Set(fallbackLocales)].sort().join("-")}]`,
+  shouldBypassCache: (locale, fallbackLocales) => !isLocaleWithFallbacksCacheable(locale, fallbackLocales)
+});
+const _getAllMergedMessages = async (locales) => {
+  const merged = {};
+  try {
+    const messages = await Promise.all(locales.map(getMessages));
+    for (const message of messages) {
+      deepCopy(message, merged);
+    }
+    return merged;
+  } catch (e) {
+    throw new Error("Failed to merge messages: " + e.message);
+  }
+};
+cachedFunctionI18n(_getAllMergedMessages, {
+  name: "merged-all",
+  maxAge: -1 ,
+  getKey: (locales) => locales.join("-"),
+  shouldBypassCache: (locales) => !locales.every((locale) => isLocaleCacheable(locale))
+});
+
+const _messagesHandler = defineEventHandler(async (event) => {
+  const locale = getRouterParam(event, "locale");
+  if (!locale) {
+    throw createError({ status: 400, message: "Locale not specified." });
+  }
+  const ctx = useI18nContext(event);
+  if (ctx.localeConfigs && locale in ctx.localeConfigs === false) {
+    throw createError({ status: 404, message: `Locale '${locale}' not found.` });
+  }
+  const messages = await getMergedMessages(locale, ctx.localeConfigs?.[locale]?.fallbacks ?? []);
+  deepCopy(messages, ctx.messages);
+  return ctx.messages;
+});
+const _cachedMessageLoader = defineCachedFunction(_messagesHandler, {
+  name: "i18n:messages-internal",
+  maxAge: -1 ,
+  getKey: (event) => [getRouterParam(event, "locale") ?? "null", getRouterParam(event, "hash") ?? "null"].join("-"),
+  async shouldBypassCache(event) {
+    const locale = getRouterParam(event, "locale");
+    if (locale == null) {
+      return false;
+    }
+    const ctx = tryUseI18nContext(event) || await initializeI18nContext(event);
+    return !ctx.localeConfigs?.[locale]?.cacheable;
+  }
+});
+defineCachedEventHandler(_cachedMessageLoader, {
+  name: "i18n:messages",
+  maxAge: -1 ,
+  swr: false,
+  getKey: (event) => [getRouterParam(event, "locale") ?? "null", getRouterParam(event, "hash") ?? "null"].join("-")
+});
+const _ME4obq = _messagesHandler ;
+
 const _lazy_y9RkWl = () => Promise.resolve().then(function () { return renderer$1; });
 
 const handlers = [
   { route: '', handler: _g3mJju, lazy: false, middleware: true, method: undefined },
   { route: '/__nuxt_error', handler: _lazy_y9RkWl, lazy: true, middleware: false, method: undefined },
   { route: '/__nuxt_island/**', handler: _SxA8c9, lazy: false, middleware: false, method: undefined },
+  { route: '/_i18n/:hash/:locale/messages.json', handler: _ME4obq, lazy: false, middleware: false, method: undefined },
   { route: '/**', handler: _lazy_y9RkWl, lazy: true, middleware: false, method: undefined }
 ];
 
@@ -2731,82 +4206,6 @@ function useNitroApp() {
   return nitroApp$1;
 }
 runNitroPlugins(nitroApp$1);
-
-function defineRenderHandler(render) {
-  const runtimeConfig = useRuntimeConfig();
-  return eventHandler(async (event) => {
-    const nitroApp = useNitroApp();
-    const ctx = { event, render, response: void 0 };
-    await nitroApp.hooks.callHook("render:before", ctx);
-    if (!ctx.response) {
-      if (event.path === `${runtimeConfig.app.baseURL}favicon.ico`) {
-        setResponseHeader(event, "Content-Type", "image/x-icon");
-        return send(
-          event,
-          "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-        );
-      }
-      ctx.response = await ctx.render(event);
-      if (!ctx.response) {
-        const _currentStatus = getResponseStatus(event);
-        setResponseStatus(event, _currentStatus === 200 ? 500 : _currentStatus);
-        return send(
-          event,
-          "No response returned from render handler: " + event.path
-        );
-      }
-    }
-    await nitroApp.hooks.callHook("render:response", ctx.response, ctx);
-    if (ctx.response.headers) {
-      setResponseHeaders(event, ctx.response.headers);
-    }
-    if (ctx.response.statusCode || ctx.response.statusMessage) {
-      setResponseStatus(
-        event,
-        ctx.response.statusCode,
-        ctx.response.statusMessage
-      );
-    }
-    return ctx.response.body;
-  });
-}
-
-const scheduledTasks = false;
-
-const tasks = {
-  
-};
-
-const __runningTasks__ = {};
-async function runTask(name, {
-  payload = {},
-  context = {}
-} = {}) {
-  if (__runningTasks__[name]) {
-    return __runningTasks__[name];
-  }
-  if (!(name in tasks)) {
-    throw createError({
-      message: `Task \`${name}\` is not available!`,
-      statusCode: 404
-    });
-  }
-  if (!tasks[name].resolve) {
-    throw createError({
-      message: `Task \`${name}\` is not implemented!`,
-      statusCode: 501
-    });
-  }
-  const handler = await tasks[name].resolve();
-  const taskEvent = { name, payload, context };
-  __runningTasks__[name] = handler.run(taskEvent);
-  try {
-    const res = await __runningTasks__[name];
-    return res;
-  } finally {
-    delete __runningTasks__[name];
-  }
-}
 
 if (!globalThis.crypto) {
   globalThis.crypto = nodeCrypto.webcrypto;

@@ -13,22 +13,22 @@ const emit = defineEmits(['close'])
       class="max-w-sm w-full p-8 border-4 border-yellow-400 bg-neutral-900 rounded-2xl shadow-2xl shadow-yellow-500/20 text-center animate-bounce-subtle"
     >
       <div class="text-6xl mb-4">🏆</div>
-      <h2 class="text-3xl font-extrabold text-yellow-400 drop-shadow-md">CHAMPION!</h2>
+      <h2 class="text-3xl font-extrabold text-yellow-400 drop-shadow-md">{{ $t('victory.champion') }}</h2>
       
       <div class="mt-6 flex flex-col items-center">
         <div class="w-24 h-24 mb-2">
           <img :src="winner.icon" :alt="winner.className" class="w-full h-full object-contain" />
         </div>
-        <p class="text-xl">Du spielst in Midnight:</p>
+        <p class="text-xl">{{ $t('victory.playInMidnight') }}</p>
         <p class="text-2xl font-bold mt-1" :class="`text-c-${winner.id}`">{{ winner.name }}</p>
-        <p v-if="winner.name !== winner.className" class="text-sm text-neutral-500 uppercase font-bold">{{ winner.className }}</p>
+        <p v-if="winner.name !== winner.className" class="text-sm text-neutral-500 uppercase font-bold">{{ $t(`classes.${winner.classId}.name`) }}</p>
       </div>
 
       <button 
         class="arcade-btn group relative overflow-hidden mt-8 w-full"
         @click="emit('close')"
       >
-        <span class="relative z-10">NOCHMAL!</span>
+        <span class="relative z-10">{{ $t('victory.again') }}</span>
         <div class="absolute inset-0 bg-yellow-600 transform skew-x-[-12deg] group-hover:bg-yellow-500 transition-colors"></div>
       </button>
     </div>

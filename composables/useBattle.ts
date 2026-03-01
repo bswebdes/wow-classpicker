@@ -2,173 +2,147 @@ import { ref, reactive, computed } from 'vue'
 
 export const classData = {
     warrior: {
-        name: 'Krieger',
         emoji: '🛡️',
         icon: 'class-icons/ClassIcon_warrior.webp',
-        description: 'Viel HP und harte Schläge.',
         stats: { hp: 120, crit: 0.1 },
-        abilities: [
-            { name: 'Hinrichten', damage: 45, msg: 'haut mit dem dicken Schwert drauf! OVERKILL!' },
-            { name: 'Schildblock', evade: true, msg: 'versteckt sich hinter seinem Schild.', cooldown: 3 },
-            { name: 'Heldenhafter Stoß', damage: 25, msg: 'macht einen sehr... heldenhaften Stoß.' },
-            { name: 'Siegesrausch', damage: 20, heal: 20, msg: 'tötet eine imaginäre Ratte und heilt sich!', cooldown: 3 }
-        ]
+        abilities: {
+            execute: { damage: 45, cooldown: 0 },
+            shieldblock: { evade: true, cooldown: 3 },
+            heroicstrike: { damage: 25, cooldown: 0 },
+            victoryrush: { damage: 20, heal: 20, cooldown: 3 }
+        }
     },
     paladin: {
-        name: 'Paladin',
         emoji: '⚖️',
         icon: 'class-icons/ClassIcon_paladin.webp',
-        description: 'Heilung und Unverwundbarkeit.',
         stats: { hp: 100, crit: 0.05 },
-        abilities: [
-            { name: 'Gottesschild', evade: true, msg: 'wirft die Angstblase an! Unantastbar!', cooldown: 3 },
-            { name: 'Urteil des Lichts', damage: 25, heal: 10, msg: 'richtet über das Ziel und klaut ein bisschen Leben.', cooldown: 3 },
-            { name: 'Zornige Vergeltung', damage: 40, msg: 'bekommt Flügel! DIE MACHT DES LICHTS!' },
-            { name: 'Lichtblitz', heal: 30, msg: 'blendet alle mit einem hellen Licht und heilt sich.', cooldown: 3 }
-        ]
+        abilities: {
+            divineshield: { evade: true, cooldown: 3 },
+            judgement: { damage: 25, heal: 10, cooldown: 3 },
+            avengingwrath: { damage: 40, cooldown: 0 },
+            flashoflight: { heal: 30, cooldown: 3 }
+        }
     },
     hunter: {
-        name: 'Jäger',
         emoji: '🏹',
         icon: 'class-icons/ClassIcon_hunter.webp',
-        description: 'Hoher Schaden, weicht gerne aus.',
         stats: { hp: 90, crit: 0.15 },
-        abilities: [
-            { name: 'Gezielter Schuss', damage: 35, msg: 'zielt 3 Stunden lang... und TRIFFT!' },
-            { name: 'Aspekt der Schildkröte', evade: true, msg: 'wird zu einer Schildkröte. Warum auch immer.', cooldown: 3 },
-            { name: 'Fass!', damage: 30, msg: 'schickt sein unsichtbares Pet los. Beiß!' },
-            { name: 'Eiskältefalle', damage: 15, msg: 'friert die Füße des Gegners ein. Kalt!' }
-        ]
+        abilities: {
+            aimedshot: { damage: 35, cooldown: 0 },
+            turtle: { evade: true, cooldown: 3 },
+            killcommand: { damage: 30, cooldown: 0 },
+            freezingtrap: { damage: 15, cooldown: 0 }
+        }
     },
     rogue: {
-        name: 'Schurke',
         emoji: '🥷',
         icon: 'class-icons/ClassIcon_rogue.webp',
-        description: 'Glaskanone mit hoher Ausweichchance.',
         stats: { hp: 80, crit: 0.2, dodge: 0.15 },
-        abilities: [
-            { name: 'Nierenhieb', damage: 25, msg: 'betäubt das Ziel mit einem fiesen Nierenhieb!' },
-            { name: 'Meucheln', damage: 35, msg: 'sticht hinterhältig zu! KRIT!' },
-            { name: 'Taschendiebstahl', damage: 10, heal: 15, msg: 'stiehlt einen Heiltrank und trinkt ihn selbst!', cooldown: 3 },
-            { name: 'Vanish', evade: true, msg: 'verschwindet im Schatten. Nächster Angriff geht ins Leere!', cooldown: 3 }
-        ]
+        abilities: {
+            kidneyshot: { damage: 25, cooldown: 0 },
+            eviscerate: { damage: 35, cooldown: 0 },
+            pickpocket: { damage: 10, heal: 15, cooldown: 3 },
+            vanish: { evade: true, cooldown: 3 }
+        }
     },
     priest: {
-        name: 'Priester',
         emoji: '⛪',
         icon: 'class-icons/ClassIcon_priest.webp',
-        description: 'Starke Heilung, wenig HP.',
         stats: { hp: 85, crit: 0.05 },
-        abilities: [
-            { name: 'Gedankenschlag', damage: 30, msg: 'verpasst dem Ziel Kopfschmerzen.' },
-            { name: 'Machtwort: Schild', evade: true, msg: 'hüllt sich in eine glitzernde Kugel ein.', cooldown: 3 },
-            { name: 'Blitzheilung', heal: 40, msg: 'betet ganz schnell für seine Gesundheit.', cooldown: 3 },
-            { name: 'Schattenwort: Tod', damage: 40, msg: 'flüstert dem Ziel etwas Gruseliges ins Ohr.' }
-        ]
+        abilities: {
+            mindblast: { damage: 30, cooldown: 0 },
+            shield: { evade: true, cooldown: 3 },
+            flashheal: { heal: 40, cooldown: 3 },
+            swdeath: { damage: 40, cooldown: 0 }
+        }
     },
     deathknight: {
-        name: 'Todesritter',
         emoji: '💀',
         icon: 'class-icons/ClassIcon_deathknight.webp',
-        description: 'Zäh und entzieht Leben.',
         stats: { hp: 115, crit: 0.08 },
-        abilities: [
-            { name: 'Todesstoß', damage: 25, heal: 20, msg: 'saugt dem Ziel das Leben aus. Lecker!', cooldown: 3 },
-            { name: 'Unaufhaltsamer Tod', evade: true, msg: 'läuft ganz langsam weg, ist aber immun gegen alles.', cooldown: 3 },
-            { name: 'Heulende Böe', damage: 30, msg: 'pustet den Gegner mit Mundgeruch weg.' },
-            { name: 'Armee der Toten', damage: 45, msg: 'ruft seine untoten Kumpels zur Party.' }
-        ]
+        abilities: {
+            deathstrike: { damage: 25, heal: 20, cooldown: 3 },
+            deathsadvance: { evade: true, cooldown: 3 },
+            howlingblast: { damage: 30, cooldown: 0 },
+            army: { damage: 45, cooldown: 0 }
+        }
     },
     shaman: {
-        name: 'Schamane',
         emoji: '⚡',
         icon: 'class-icons/ClassIcon_shaman.webp',
-        description: 'Vielseitig mit Blitzen und Totems.',
         stats: { hp: 100, crit: 0.12 },
-        abilities: [
-            { name: 'Kettenblitzschlag', damage: 35, msg: 'ZAPP! Ein Blitz für dich!' },
-            { name: 'Heilender Regen', heal: 30, msg: 'lässt es im Raum regnen. Indoor-Wellness.', cooldown: 3 },
-            { name: 'Kampfrausch', damage: 20, msg: 'wird ganz rot im Gesicht und schlägt wild um sich!' },
-            { name: 'Erdstärketotem', evade: true, msg: 'stellt einen Holzpfosten auf den Boden.', cooldown: 3 }
-        ]
+        abilities: {
+            chainlightning: { damage: 35, cooldown: 0 },
+            healingrain: { heal: 30, cooldown: 3 },
+            bloodlust: { damage: 20, cooldown: 0 },
+            totem: { evade: true, cooldown: 3 }
+        }
     },
     mage: {
-        name: 'Magier',
         emoji: '🧙',
         icon: 'class-icons/ClassIcon_mage.webp',
-        description: 'Explosiver Schaden, aber zerbrechlich.',
         stats: { hp: 80, crit: 0.25 },
-        abilities: [
-            { name: 'Feuerball', damage: 40, msg: 'wirft einen brennenden Ball. Heiß!' },
-            { name: 'Eisblock', evade: true, msg: 'wird zu einem Eiswürfel. Erfrischend!', cooldown: 3 },
-            { name: 'Blinzeln', evade: true, msg: 'taucht woanders wieder auf. Magie!', cooldown: 3 },
-            { name: 'Verwandlung', damage: 10, msg: 'macht das Ziel zu einem Schaf. Mäh!' }
-        ]
+        abilities: {
+            fireball: { damage: 40, cooldown: 0 },
+            iceblock: { evade: true, cooldown: 3 },
+            blink: { evade: true, cooldown: 3 },
+            polymorph: { damage: 10, cooldown: 0 }
+        }
     },
     warlock: {
-        name: 'Hexenmeister',
         emoji: '😈',
         icon: '/class-icons/ClassIcon_warlock.webp',
-        description: 'Viel Ausdauer und dunkle Magie.',
-        stats: { hp: 110, crit: 0.1 },
-        abilities: [
-            { name: 'Chaosblitz', damage: 45, msg: 'schießt einen grünen Drachenkopf ab. BUMM!' },
-            { name: 'Gesundheitsstein', heal: 35, msg: 'isst einen grünen Stein. Schmeckt nach Limette.', cooldown: 3 },
-            { name: 'Furcht', damage: 15, msg: 'macht dem Ziel Angst vor der Dunkelheit.' },
-            { name: 'Dämonentor', evade: true, msg: 'flüchtet durch ein lila Portal.', cooldown: 3 }
-        ]
+        stats: { hp: 100, crit: 0.08 },
+        abilities: {
+            chaosbolt: { damage: 45, cooldown: 0 },
+            healthstone: { heal: 25, cooldown: 3 },
+            fear: { damage: 10, cooldown: 0 },
+            drainlife: { damage: 20, heal: 15, cooldown: 3 }
+        }
     },
     monk: {
-        name: 'Mönch',
         emoji: '🐼',
         icon: '/class-icons/ClassIcon_monk.webp',
-        description: 'Mobil und ausgewogen.',
-        stats: { hp: 100, crit: 0.1, dodge: 0.1 },
-        abilities: [
-            { name: 'Tritt der aufgehenden Sonne', damage: 30, msg: 'setzt einen Roundhouse-Kick ein!' },
-            { name: 'Bier-Wurf', damage: 20, msg: 'wirft ein Fass Freibier. Das Ziel ist verwirrt!' },
-            { name: 'Schadensumleitung', damage: 15, heal: 15, msg: 'leitet sein Karma (und den Schmerz) um!', cooldown: 3 },
-            { name: 'Wirbelnder Kranichtritt', damage: 25, msg: 'dreht sich wie ein Brummkreisel!' }
-        ]
+        stats: { hp: 95, crit: 0.15, dodge: 0.1 },
+        abilities: {
+            fists: { damage: 35, cooldown: 0 },
+            brew: { heal: 20, evade: true, cooldown: 3 },
+            kick: { damage: 25, cooldown: 0 },
+            mist: { heal: 25, cooldown: 0 }
+        }
     },
     druid: {
-        name: 'Druide',
         emoji: '🦉',
         icon: '/class-icons/ClassIcon_druid.webp',
-        description: 'Kann alles ein bisschen.',
         stats: { hp: 105, crit: 0.1 },
-        abilities: [
-            { name: 'Mondfeuer', damage: 20, msg: 'spamt Mondfeuer! PEW PEW PEW!' },
-            { name: 'Nachwachsen', heal: 30, msg: 'verwandelt sich in einen Baum und heilt sich!', cooldown: 3 },
-            { name: 'Konvokation der Geister', damage: 40, msg: 'drückt den Panik-Knopf! 16 Zauber gleichzeitig!' },
-            { name: 'Kuschelbär', damage: 15, msg: 'rollt als Bär über das Ziel. Flauschig aber schmerzhaft.' }
-        ]
+        abilities: {
+            convoke: { damage: 40, cooldown: 3 },
+            regrowth: { heal: 30, cooldown: 0 },
+            bear: { evade: true, cooldown: 3 },
+            moonfire: { damage: 20, cooldown: 0 }
+        }
     },
     demonhunter: {
-        name: 'Dämonenjäger',
         emoji: '🦇',
         icon: '/class-icons/ClassIcon_demon_hunter.webp',
-        description: 'Extrem schnell und aggressiv.',
         stats: { hp: 95, crit: 0.15, dodge: 0.05 },
-        abilities: [
-            { name: 'Augenstrahl', damage: 40, msg: 'schießt Laser aus den Augen! PEW!' },
-            { name: 'Verschwimmen', evade: true, msg: 'macht ganz viele Schattenbilder von sich.', cooldown: 3 },
-            { name: 'Metamorphose', damage: 30, heal: 10, msg: 'wird zu einem riesigen Dämon. Roar!', cooldown: 3 },
-            { name: 'Gleiten', evade: true, msg: 'segelt elegant über den Boden.', cooldown: 3 }
-        ]
+        abilities: {
+            eyebeam: { damage: 40, cooldown: 3 },
+            blur: { evade: true, cooldown: 3 },
+            chaosstrike: { damage: 30, cooldown: 0 },
+            metamorphosis: { damage: 35, heal: 15, cooldown: 3 }
+        }
     },
     evoker: {
-        name: 'Rufer',
         emoji: '🐲',
         icon: '/class-icons/ClassIcon_evoker.webp',
-        description: 'Mittlere Reichweite, gute Heilung.',
         stats: { hp: 100, crit: 0.12 },
-        abilities: [
-            { name: 'Tiefflug', damage: 30, msg: 'fliegt einmal quer über die Arena. Heiß!' },
-            { name: 'Smaragdblüte', heal: 30, msg: 'lässt Blumen wachsen. Schön grün.', cooldown: 3 },
-            { name: 'Ewigkeitsfeuer', damage: 35, msg: 'spuckt Feuer wie ein richtiger Drache.' },
-            { name: 'Zeit anhalten', evade: true, msg: 'spult die Zeit einfach zurück. Cheater!', cooldown: 3 }
-        ]
+        abilities: {
+            disintegrate: { damage: 40, cooldown: 0 },
+            blossom: { heal: 30, cooldown: 0 },
+            deepbreath: { damage: 35, cooldown: 3 },
+            rewind: { heal: 40, cooldown: 3 }
+        }
     }
 }
 
@@ -223,41 +197,49 @@ export const useBattle = () => {
     })
   }
 
-  const addLog = (message, type = '') => {
-    battleLog.value.push({ id: Date.now() + Math.random(), message, type })
-  }
+    const { t } = useI18n()
 
-  const getColoredName = (char) => {
-    return `<span class="c-${char.id}">${char.name}</span>`
-  }
+    const addLog = (message, type = '') => {
+      battleLog.value.push({ id: Date.now() + Math.random(), message, type })
+    }
 
-  const initBattle = () => {
-    isStarted.value = true
-    characters.value = Array.from(selectedClasses.value).map(id => {
-      const stats = classData[id].stats || {}
-      const startHp = stats.hp || 100
-      return {
-        id,
-        name: customNames[id] || classData[id].name,
-        className: classData[id].name,
-        emoji: classData[id].emoji,
-        icon: classData[id].icon,
-        maxHp: startHp,
-        hp: startHp,
-        abilities: classData[id].abilities.map(a => ({ ...a, currentCD: 0 })),
-        alive: true,
-        evadeNext: false,
-        status: 'Bereit!',
-        isShaking: false,
-        stats: stats,
-        damageDone: 0,
-        healingDone: 0
-      }
-    })
-    battleLog.value = []
-    winner.value = null
-    addLog(`Der Kampf beginnt mit ${characters.value.length} Klassen!`)
-  }
+    const getColoredName = (char) => {
+      return `<span class="c-${char.id}">${char.name}</span>`
+    }
+
+    const initBattle = () => {
+      isStarted.value = true
+      characters.value = Array.from(selectedClasses.value).map(id => {
+        const stats = classData[id].stats || {}
+        const startHp = stats.hp || 100
+        return {
+          id,
+          classId: id,
+          name: customNames[id] || t(`classes.${id}.name`),
+          className: t(`classes.${id}.name`),
+          emoji: classData[id].emoji,
+          icon: classData[id].icon,
+          maxHp: startHp,
+          hp: startHp,
+          abilities: Object.keys(classData[id].abilities).map(key => ({ 
+            ...classData[id].abilities[key], 
+            key,
+            name: t(`classes.${id}.abilities.${key}.name`),
+            msg: t(`classes.${id}.abilities.${key}.msg`)
+          })).map(a => ({ ...a, currentCD: 0 })),
+          alive: true,
+          evadeNext: false,
+          status: t('battle.status.ready'),
+          isShaking: false,
+          stats: stats,
+          damageDone: 0,
+          healingDone: 0
+        }
+      })
+      battleLog.value = []
+      winner.value = null
+      addLog(t('battle.startLog', { count: characters.value.length }))
+    }
 
   const startBattle = async () => {
     if (isBattleInProgress.value) return
@@ -284,8 +266,8 @@ export const useBattle = () => {
         const potentialTargets = characters.value.filter(c => c.alive && c.id !== attacker.id)
         const target = potentialTargets[Math.floor(Math.random() * potentialTargets.length)]
 
-        attacker.status = `Nutzt ${ability.name}...`
-        addLog(`${getColoredName(attacker)} nutzt ${ability.name}: ${ability.msg}`)
+        attacker.status = t('battle.status.using', { ability: ability.name })
+        addLog(`${getColoredName(attacker)} ${t('battle.status.using', { ability: ability.name })} ${ability.msg}`)
 
         if (ability.cooldown) {
           ability.currentCD = ability.cooldown
@@ -311,8 +293,8 @@ export const useBattle = () => {
 
           if (isDodged) {
             target.evadeNext = false
-            addLog(`${getColoredName(target)} weicht dem Angriff von ${getColoredName(attacker)} aus!`, 'evade')
-            target.status = 'Ausgewichen!'
+            addLog(t('battle.evadeLog', { target: getColoredName(target), attacker: getColoredName(attacker) }), 'evade')
+            target.status = t('battle.status.evade') || 'Evaded!'
           } else {
             let finalDamage = ability.damage
             
@@ -328,10 +310,10 @@ export const useBattle = () => {
               // Prüfe auf Mega-Krit
               if (Math.random() < BALANCE.megaCritChance) {
                 finalDamage = Math.floor(finalDamage * BALANCE.megaCritMult)
-                addLog(`MEGA-KRIT von ${getColoredName(attacker)}!`, 'important')
+                addLog(t('battle.megaCritLog', { attacker: getColoredName(attacker) }), 'important')
               } else {
                 finalDamage = Math.floor(finalDamage * BALANCE.critMult)
-                addLog(`KRITISCHER TREFFER von ${getColoredName(attacker)}!`, 'important')
+                addLog(t('battle.critLog', { attacker: getColoredName(attacker) }), 'important')
               }
             }
 

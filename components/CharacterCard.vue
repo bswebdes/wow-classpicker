@@ -24,7 +24,7 @@ const hpBarColor = computed(() => {
       <img :src="character.icon" :alt="character.className" class="w-full h-full object-contain" />
     </div>
     <div class="font-bold text-sm text-center line-clamp-1" :title="character.name">{{ character.name }}</div>
-    <div v-if="character.name !== character.className" class="text-[0.6rem] text-neutral-500 uppercase font-bold">{{ character.className }}</div>
+    <div v-if="character.name !== character.className" class="text-[0.6rem] text-neutral-500 uppercase font-bold">{{ $t(`classes.${character.classId}.name`) }}</div>
     <div class="text-neutral-400 text-xs h-5">{{ character.status }}</div>
   </div>
 </template>

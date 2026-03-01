@@ -24,7 +24,7 @@ const getPlayerIndex = (id) => {
     
     <div class="mb-6">
       <h3 class="text-4xl font-black italic tracking-tighter text-yellow-400 drop-shadow-[2px_2px_0px_rgba(0,0,0,1)] uppercase mb-2" style="font-family: 'Permanent Marker', cursive;">
-        SELECT YOUR FIGHTER
+        {{ $t('selection.title') }}
       </h3>
       <div class="h-0.5 w-48 mx-auto bg-red-600 shadow-[0_0_10px_rgba(220,38,38,0.8)]"></div>
     </div>
@@ -35,7 +35,7 @@ const getPlayerIndex = (id) => {
         @click="emit('selectAll')" 
         :disabled="isBattleInProgress"
       >
-        <span class="relative z-10">ALL IN</span>
+        <span class="relative z-10">{{ $t('selection.allIn') }}</span>
         <div class="absolute inset-0 bg-green-700 transform skew-x-[-12deg] group-hover:bg-green-600 transition-colors"></div>
       </button>
       
@@ -44,7 +44,7 @@ const getPlayerIndex = (id) => {
         @click="emit('deselectAll')" 
         :disabled="isBattleInProgress"
       >
-        <span class="relative z-10">CLEAR</span>
+        <span class="relative z-10">{{ $t('selection.clear') }}</span>
         <div class="absolute inset-0 bg-neutral-700 transform skew-x-[-12deg] group-hover:bg-neutral-600 transition-colors"></div>
       </button>
 
@@ -53,7 +53,7 @@ const getPlayerIndex = (id) => {
         @click="emit('randomize-all')" 
         :disabled="isBattleInProgress"
       >
-        <span class="relative z-10">RANDOM NAMES</span>
+        <span class="relative z-10">{{ $t('selection.randomNames') }}</span>
         <div class="absolute inset-0 bg-blue-700 transform skew-x-[-12deg] group-hover:bg-blue-600 transition-colors"></div>
       </button>
     </div>
@@ -83,7 +83,7 @@ const getPlayerIndex = (id) => {
           :class="selectedClasses.has(id) ? `text-c-${id}` : 'text-neutral-500'"
           style="font-family: 'Press Start 2P', cursive; font-size: 0.5rem;"
         >
-          {{ data.name }}
+          {{ $t(`classes.${id}.name`) }}
         </div>
         
         <!-- Custom Name Input Overlay -->
@@ -91,7 +91,7 @@ const getPlayerIndex = (id) => {
           <input 
             v-model="customNames[id]"
             type="text"
-            placeholder="NAME"
+            :placeholder="$t('selection.namePlaceholder')"
             class="min-w-0 w-full text-[0.6rem] p-1 bg-black/60 border border-white/20 rounded-sm text-white text-center focus:outline-none focus:border-yellow-500 font-bold uppercase"
             @click.stop
           />
@@ -107,9 +107,9 @@ const getPlayerIndex = (id) => {
           class="stats-popup"
         >
           <div class="font-black text-yellow-400 mb-1 border-b border-yellow-400/30 pb-1 italic uppercase text-xs">
-            {{ data.name }}
+            {{ $t(`classes.${id}.name`) }}
           </div>
-          <div class="text-[0.6rem] text-neutral-300 italic mb-2 leading-tight">"{{ data.description }}"</div>
+          <div class="text-[0.6rem] text-neutral-300 italic mb-2 leading-tight">"{{ $t(`classes.${id}.description`) }}"</div>
           <div class="grid grid-cols-1 gap-1 font-mono text-[0.6rem]">
             <div class="flex justify-between border-b border-white/5"><span>HP</span> <span class="text-white font-bold">{{ data.stats.hp }}</span></div>
             <div class="flex justify-between border-b border-white/5"><span>CRT</span> <span class="text-white font-bold">{{ data.stats.crit * 100 }}%</span></div>

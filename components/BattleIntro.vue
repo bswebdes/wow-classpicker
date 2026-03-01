@@ -14,6 +14,8 @@ const words = ref([])
 const currentWordIndex = ref(-1)
 const visible = ref(false)
 
+const { t, tm, rt } = useI18n()
+
 watch(() => props.show, (newVal) => {
   if (newVal) {
     runSequence()
@@ -24,9 +26,9 @@ async function runSequence() {
   visible.value = true
   
   if (props.mode === 'selection') {
-    words.value = ['WÄHLE', 'DEINE', 'KÄMPFER']
+    words.value = tm('battle.selectionWords').map(w => rt(w))
   } else {
-    words.value = ['READY', 'FIGHT']
+    words.value = [t('battle.ready'), t('battle.fight')]
   }
 
   for (let i = 0; i < words.value.length; i++) {
@@ -60,7 +62,7 @@ async function runSequence() {
         
         <div 
           class="relative text-8xl md:text-9xl font-black italic tracking-tighter uppercase drop-shadow-[0_10px_10px_rgba(0,0,0,0.8)]"
-          :class="stage === 'READY' ? 'text-yellow-400' : 'text-red-600'"
+          :class="stage === t('battle.ready') ? 'text-yellow-400' : 'text-red-600'"
           style="font-family: 'Permanent Marker', cursive;"
         >
           <Transition
