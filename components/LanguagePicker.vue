@@ -17,6 +17,8 @@ const onLocaleChange = (code) => {
       class="arcade-btn group !px-3 !py-2 !min-w-[50px] transition-all"
       :class="{ 'scale-110 ring-2 ring-yellow-400': locale === l.code, 'opacity-70 hover:opacity-100': locale !== l.code }"
       :title="l.name"
+      data-umami-event="Language - Change"
+      :data-umami-event-lang="l.code"
     >
       <span class="relative z-10 flex items-center justify-center">
         <!-- SVG Flagge statt Emoji -->

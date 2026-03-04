@@ -34,6 +34,7 @@ const getPlayerIndex = (id) => {
         class="arcade-btn group" 
         @click="emit('selectAll')" 
         :disabled="isBattleInProgress"
+        data-umami-event="Selection - Select All"
       >
         <span class="relative z-10">{{ $t('selection.allIn') }}</span>
         <div class="absolute inset-0 bg-green-700 transform skew-x-[-12deg] group-hover:bg-green-600 transition-colors"></div>
@@ -43,6 +44,7 @@ const getPlayerIndex = (id) => {
         class="arcade-btn group" 
         @click="emit('deselectAll')" 
         :disabled="isBattleInProgress"
+        data-umami-event="Selection - Clear All"
       >
         <span class="relative z-10">{{ $t('selection.clear') }}</span>
         <div class="absolute inset-0 bg-neutral-700 transform skew-x-[-12deg] group-hover:bg-neutral-600 transition-colors"></div>
@@ -52,6 +54,7 @@ const getPlayerIndex = (id) => {
         class="arcade-btn group" 
         @click="emit('randomize-all')" 
         :disabled="isBattleInProgress"
+        data-umami-event="Selection - Randomize All Names"
       >
         <span class="relative z-10">{{ $t('selection.randomNames') }}</span>
         <div class="absolute inset-0 bg-blue-700 transform skew-x-[-12deg] group-hover:bg-blue-600 transition-colors"></div>
@@ -68,6 +71,8 @@ const getPlayerIndex = (id) => {
           selectedClasses.has(id) ? `border-c-${id}` : 'border-neutral-700'
         ]"
         @click="emit('toggle', id)"
+        data-umami-event="Selection - Toggle Class"
+        :data-umami-event-class="id"
       >
         <!-- Background Pattern -->
         <div class="absolute inset-0 opacity-10 pointer-events-none overflow-hidden rounded-lg">
@@ -98,6 +103,8 @@ const getPlayerIndex = (id) => {
           <button 
             class="shrink-0 p-1 text-[0.6rem] rounded-sm border border-white/20 bg-neutral-800 hover:bg-red-600 transition-colors"
             @click.stop="emit('randomize-name', id)"
+            data-umami-event="Selection - Randomize Single Name"
+            :data-umami-event-class="id"
           >🎲</button>
         </div>
         

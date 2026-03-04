@@ -4,6 +4,15 @@ const props = defineProps({
 })
 
 const emit = defineEmits(['close'])
+
+onMounted(() => {
+  if (typeof window !== 'undefined' && window.umami && props.winner) {
+    window.umami.track('Battle - Victory', { 
+      winner: props.winner.classId, 
+      name: props.winner.name 
+    })
+  }
+})
 </script>
 
 <template>
@@ -27,6 +36,7 @@ const emit = defineEmits(['close'])
       <button 
         class="arcade-btn group relative overflow-hidden mt-8 w-full"
         @click="emit('close')"
+        data-umami-event="Victory - Play Again"
       >
         <span class="relative z-10">{{ $t('victory.again') }}</span>
         <div class="absolute inset-0 bg-yellow-600 transform skew-x-[-12deg] group-hover:bg-yellow-500 transition-colors"></div>

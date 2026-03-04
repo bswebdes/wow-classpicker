@@ -69,10 +69,24 @@ const handleStart = () => {
     alert(t('minTwoClasses'))
     return
   }
+  
+  // Umami Tracking
+  if (typeof window !== 'undefined' && window.umami) {
+    window.umami.track('Battle - Start', { 
+      classesCount: selectedClasses.value.size, 
+      classes: Array.from(selectedClasses.value).join(',') 
+    })
+  }
+
   showBattleIntro.value = true
 }
 
 const handleReset = () => {
+  // Umami Tracking
+  if (typeof window !== 'undefined' && window.umami) {
+    window.umami.track('Battle - Reset')
+  }
+
   resetBattle()
   // kurze Verzögerung, damit UI zurückspringt, dann Intro zeigen
   setTimeout(() => { showSelectionIntro.value = true }, 50)
