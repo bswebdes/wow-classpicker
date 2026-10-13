@@ -11,13 +11,13 @@ updated: "2026-10-13"
 
 Der Hexenmeister hat sich der verbotenen Magie verschrieben: Er belegt Gegner mit Flüchen, beschwört Dämonen und schleudert Teufelsfeuer. Neben **Mana** sammelt er **Seelensplitter**, mit denen er seine stärksten Zauber wirkt.
 
-Ein dämonischer Diener ist immer an seiner Seite, vom Wichtel bis zum Leerwandler, der Gegner auf sich zieht. Für die Gruppe hat der Hexenmeister einzigartige Werkzeuge: **Gesundheitssteine** zum Heilen, einen **Seelenstein**, der einen Verbündeten im Kampf wiederbeleben kann, ein **Ritual der Beschwörung**, das Mitspieler herbeiholt, und das **Dämonische Tor** zum schnellen Positionswechsel.
+Ein dämonischer Diener ist immer an seiner Seite, vom Wichtel bis zum Leerwandler, der Gegner auf sich zieht. Für die Gruppe hat der Hexenmeister einzigartige Werkzeuge: **Gesundheitssteine** zum Heilen, einen [**Seelenstein**](https://www.wowhead.com/de/spell=20707){target="_blank" rel="noopener"}, der einen Verbündeten im Kampf wiederbeleben kann, ein [**Ritual der Beschwörung**](https://www.wowhead.com/de/spell=698){target="_blank" rel="noopener"}, das Mitspieler herbeiholt, und das **Dämonische Tor** zum schnellen Positionswechsel.
 
 ## Die Spezialisierungen
 
 - **Gebrechen** verteilt Flüche und Schaden über Zeit auf viele Gegner und lässt sie langsam vergehen. Stark, wenn mehrere Ziele lange leben.
 - **Dämonologie** beschwört eine ganze Armee kleiner Dämonen und führt sie mit einer Teufelswache an. Die Pet-Fantasy pur.
-- **Zerstörung** setzt auf direkte, wuchtige Feuerzauber wie den **Chaosblitz**, der riesige Treffer erzielt.
+- **Zerstörung** setzt auf direkte, wuchtige Feuerzauber wie den [**Chaosblitz**](https://www.wowhead.com/de/spell=116858){target="_blank" rel="noopener"}, der riesige Treffer erzielt.
 
 ## Für wen ist der Hexenmeister geeignet?
 

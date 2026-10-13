@@ -9,7 +9,7 @@ updated: "2026-10-13"
 
 ## Playstyle
 
-The Druid shifts into **Bear**, **Cat**, **Travel** and **Aquatic Form**. In caster form it casts nature spells and heals mostly with effects over time. **Rebirth** brings allies back in combat, and **Innervate** helps healers with mana.
+The Druid shifts into **Bear**, **Cat**, **Travel** and **Aquatic Form**. In caster form it casts nature spells and heals mostly with effects over time. [**Rebirth**](https://www.wowhead.com/classic/spell=20484){target="_blank" rel="noopener"} brings allies back in combat, and [**Innervate**](https://www.wowhead.com/classic/spell=29166){target="_blank" rel="noopener"} helps healers with mana.
 
 ## Talent trees
 

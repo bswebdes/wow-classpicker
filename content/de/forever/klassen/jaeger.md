@@ -9,7 +9,7 @@ updated: "2026-10-13"
 
 ## Spielweise
 
-Der Jäger kämpft mit Bogen oder Gewehr aus der Distanz und hat einen **gezähmten Begleiter** an seiner Seite. Mit **Aspekten** passt er seinen Stil an, etwa für mehr Angriffskraft oder schnelleres Reisen. **Totstellen** und **Fallen** helfen, wenn es eng wird.
+Der Jäger kämpft mit Bogen oder Gewehr aus der Distanz und hat einen **gezähmten Begleiter** an seiner Seite. Mit **Aspekten** passt er seinen Stil an, etwa für mehr Angriffskraft oder schnelleres Reisen. [**Totstellen**](https://www.wowhead.com/classic/de/spell=5384){target="_blank" rel="noopener"} und **Fallen** helfen, wenn es eng wird.
 
 ## Die Talentbäume
 

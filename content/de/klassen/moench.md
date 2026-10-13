@@ -9,13 +9,13 @@ updated: "2026-10-13"
 
 ## Spielweise
 
-Der Mönch ist ein Meister der Kampfkunst, der Fäuste, Füße und die Energie des Chi einsetzt. In Lederrüstung ist er wendig und schnell: Mit **Rollen** und **Transzendenz** wechselt er blitzschnell die Position, und kaum eine Klasse kommt so leicht an einen Gegner heran oder von ihm weg.
+Der Mönch ist ein Meister der Kampfkunst, der Fäuste, Füße und die Energie des Chi einsetzt. In Lederrüstung ist er wendig und schnell: Mit [**Rollen**](https://www.wowhead.com/de/spell=109132){target="_blank" rel="noopener"} und [**Transzendenz**](https://www.wowhead.com/de/spell=101643){target="_blank" rel="noopener"} wechselt er blitzschnell die Position, und kaum eine Klasse kommt so leicht an einen Gegner heran oder von ihm weg.
 
-Neben Energie bzw. Mana nutzt der Mönch **Chi** als Ressource für seine stärksten Techniken. Zu seinen bekanntesten Fähigkeiten gehören **Berührung des Todes**, die angeschlagene Gegner sofort erledigen kann, und **Paralyse** zur Kontrolle.
+Neben Energie bzw. Mana nutzt der Mönch **Chi** als Ressource für seine stärksten Techniken. Zu seinen bekanntesten Fähigkeiten gehören [**Berührung des Todes**](https://www.wowhead.com/de/spell=322109){target="_blank" rel="noopener"}, die angeschlagene Gegner sofort erledigen kann, und [**Paralyse**](https://www.wowhead.com/de/spell=115078){target="_blank" rel="noopener"} zur Kontrolle.
 
 ## Die Spezialisierungen
 
-- **Braumeister** ist ein ungewöhnlicher Tank: Statt Schaden komplett zu blocken, verteilt er ihn mit **Staffeln** über Zeit und reinigt ihn mit seinen Gebräuen. Torkeln inklusive.
+- **Braumeister** ist ein ungewöhnlicher Tank: Statt Schaden komplett zu blocken, verteilt er ihn mit [**Staffeln**](https://www.wowhead.com/de/spell=115069){target="_blank" rel="noopener"} über Zeit und reinigt ihn mit seinen Gebräuen. Torkeln inklusive.
 - **Nebelwirker** heilt mit Nebeln und kann dabei im Nahkampf mitkämpfen, um über Schläge Verbündete zu heilen.
 - **Windläufer** ist ein schneller Nahkämpfer, der Kombinationen aus Tritten und Schlägen aneinanderreiht und mit Wirbelattacken ganze Gruppen trifft.
 

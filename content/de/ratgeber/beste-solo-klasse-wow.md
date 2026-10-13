@@ -27,11 +27,11 @@ Nicht jeder will jeden Abend in Gruppen unterwegs sein. Quests, Tiefen, Weltques
 
 ### Jäger
 
-Der [Jäger](/klassen/jaeger) ist der Solo-Klassiker. Sein Begleiter tankt für dich, du teilst aus der Distanz Schaden aus, und mit **Totstellen** kommst du aus fast jeder Situation heraus. Tierherrschaft ist dabei besonders entspannt.
+Der [Jäger](/klassen/jaeger) ist der Solo-Klassiker. Sein Begleiter tankt für dich, du teilst aus der Distanz Schaden aus, und mit [**Totstellen**](https://www.wowhead.com/de/spell=5384){target="_blank" rel="noopener"} kommst du aus fast jeder Situation heraus. Tierherrschaft ist dabei besonders entspannt.
 
 ### Todesritter
 
-Als **Blut** ist der [Todesritter](/klassen/todesritter) kaum totzukriegen: **Todesstoß** heilt umso stärker, je mehr Schaden du eingesteckt hast. Damit lassen sich auch große Gegnergruppen und schwere Elitegegner allein bezwingen. Unheilig bringt zusätzlich untote Diener mit.
+Als **Blut** ist der [Todesritter](/klassen/todesritter) kaum totzukriegen: [**Todesstoß**](https://www.wowhead.com/de/spell=49998){target="_blank" rel="noopener"} heilt umso stärker, je mehr Schaden du eingesteckt hast. Damit lassen sich auch große Gegnergruppen und schwere Elitegegner allein bezwingen. Unheilig bringt zusätzlich untote Diener mit.
 
 ### Paladin
 
@@ -39,7 +39,7 @@ Der [Paladin](/klassen/paladin) hat Selbstheilung, Plattenrüstung und gleich me
 
 ### Hexenmeister
 
-Für eine Stoffklasse ist der [Hexenmeister](/klassen/hexenmeister) erstaunlich solo-tauglich. Ein Leerwandler zieht Gegner auf sich, **Blutsauger** heilt dich, und Gesundheitssteine sind immer dabei. Besonders Gebrechen und Dämonologie fühlen sich allein sehr sicher an.
+Für eine Stoffklasse ist der [Hexenmeister](/klassen/hexenmeister) erstaunlich solo-tauglich. Ein Leerwandler zieht Gegner auf sich, [**Blutsauger**](https://www.wowhead.com/de/spell=234153){target="_blank" rel="noopener"} heilt dich, und Gesundheitssteine sind immer dabei. Besonders Gebrechen und Dämonologie fühlen sich allein sehr sicher an.
 
 ### Dämonenjäger
 

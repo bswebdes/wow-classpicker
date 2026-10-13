@@ -9,9 +9,9 @@ updated: "2026-10-13"
 
 ## Playstyle
 
-The Rogue is the master of the shadows. It sneaks up in **Stealth**, opens with a surprise attack and is gone before the enemy can react. Its resources are **Energy** and **Combo Points**: quick attacks build points, and strong finishers spend them.
+The Rogue is the master of the shadows. It sneaks up in [**Stealth**](https://www.wowhead.com/spell=1784){target="_blank" rel="noopener"}, opens with a surprise attack and is gone before the enemy can react. Its resources are **Energy** and **Combo Points**: quick attacks build points, and strong finishers spend them.
 
-On top of that comes a huge toolbox of crowd control: **Sap**, **Blind**, **Kick** to interrupt and **Vanish** as an escape button. In dungeons, **Shroud of Concealment** can even stealth the whole group for a short time.
+On top of that comes a huge toolbox of crowd control: [**Sap**](https://www.wowhead.com/spell=6770){target="_blank" rel="noopener"}, [**Blind**](https://www.wowhead.com/spell=2094){target="_blank" rel="noopener"}, [**Kick**](https://www.wowhead.com/spell=1766){target="_blank" rel="noopener"} to interrupt and [**Vanish**](https://www.wowhead.com/spell=1856){target="_blank" rel="noopener"} as an escape button. In dungeons, [**Shroud of Concealment**](https://www.wowhead.com/spell=114018){target="_blank" rel="noopener"} can even stealth the whole group for a short time.
 
 ## Specializations
 

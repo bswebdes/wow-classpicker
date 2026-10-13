@@ -80,6 +80,11 @@ Stand: 13.10.2026 · live auf [findyourmain.com](https://findyourmain.com), Bran
 - [x] Name bleibt nach außen „Klassen-Quiz“ (Suchbegriff „wow class quiz“), die Quest ist die Darstellung im Fenster
 - [ ] Idee: Thalgrim auch an anderen Stellen auftauchen lassen (z. B. Tipps auf Klassenseiten, 404-Seite)
 
+### Wowhead
+- [x] 152 Fähigkeiten in den Texten (DE/EN, Retail/Forever) mit Wowhead verlinkt, Forever auf die Classic-Datenbank, öffnen im neuen Tab
+- [x] Original-Tooltips von Wowhead beim Überfahren, nur mit Einwilligung (neue Banner-Kategorie „Wowhead-Tooltips“, Revision 1, Widerruf lädt die Seite neu), Datenschutz ergänzt
+- [ ] Idee: Fähigkeiten auch im Kampflog und in den Unit-Frames der Arena verlinken
+
 ### Mobil & Barrierefreiheit
 - [x] Mobile Navigation neu: kompakter Header mit Menü-Button, Retail/Forever als zwei gleich breite Reiter, aufklappbares Menü (schließt bei Seitenwechsel und mit Escape)
 - [x] axe-core-Audit (WCAG 2.1 AA + Best Practices) über 14 Seiten Desktop und Mobil: 0 Verstöße

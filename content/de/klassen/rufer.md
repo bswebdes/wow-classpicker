@@ -11,7 +11,7 @@ updated: "2026-10-13"
 
 Der Rufer, im Englischen **Evoker**, ist die jüngste Klasse in WoW und eng mit dem Drachenvolk der Dracthyr verbunden. Er beherrscht die Magie der Drachenschwärme: Feuer, Leben, Zeit und Traum. In Kettenrüstung kämpft er auf **mittlere Distanz** von rund 25 Metern, also näher als andere Zauberer.
 
-Besonders sind die **ermächtigten Zauber**: Du hältst die Taste gedrückt, lädst den Zauber in mehreren Stufen auf und lässt ihn im richtigen Moment los. Neben Mana nutzt der Rufer **Essenz** als Ressource. Mit **Segeln** und **Schweben** ist er zudem ausgesprochen beweglich.
+Besonders sind die **ermächtigten Zauber**: Du hältst die Taste gedrückt, lädst den Zauber in mehreren Stufen auf und lässt ihn im richtigen Moment los. Neben Mana nutzt der Rufer **Essenz** als Ressource. Mit [**Segeln**](https://www.wowhead.com/de/spell=369536){target="_blank" rel="noopener"} und [**Schweben**](https://www.wowhead.com/de/spell=358267){target="_blank" rel="noopener"} ist er zudem ausgesprochen beweglich.
 
 ## Die Spezialisierungen
 

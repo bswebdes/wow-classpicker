@@ -9,7 +9,7 @@ updated: "2026-10-13"
 
 ## Playstyle
 
-The Hunter fights from range with a bow or gun and has a **tamed companion** at its side. **Aspects** adjust its style, for more attack power or faster travel, and **Feign Death** and **traps** help when things get tight.
+The Hunter fights from range with a bow or gun and has a **tamed companion** at its side. **Aspects** adjust its style, for more attack power or faster travel, and [**Feign Death**](https://www.wowhead.com/classic/spell=5384){target="_blank" rel="noopener"} and **traps** help when things get tight.
 
 ## Talent trees
 

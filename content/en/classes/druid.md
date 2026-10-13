@@ -11,7 +11,7 @@ updated: "2026-10-13"
 
 The Druid is Azeroth's shapeshifter and the only class with **four specializations**. Depending on the situation, it becomes a bear, a cat or a moonkin, or stays in its normal form to heal. Travel forms for land, water and air make getting around very convenient.
 
-The Druid brings lots of group utility: **Rebirth** brings an ally back in combat, **Innervate** helps healers with Mana, and **Stampeding Roar** speeds up the whole group for a short time.
+The Druid brings lots of group utility: [**Rebirth**](https://www.wowhead.com/spell=20484){target="_blank" rel="noopener"} brings an ally back in combat, [**Innervate**](https://www.wowhead.com/spell=29166){target="_blank" rel="noopener"} helps healers with Mana, and **Stampeding Roar** speeds up the whole group for a short time.
 
 ## Specializations
 

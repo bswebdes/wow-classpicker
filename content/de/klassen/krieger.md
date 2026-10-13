@@ -11,7 +11,7 @@ updated: "2026-10-13"
 
 Der Krieger ist der Inbegriff des Nahkämpfers: schwere Plattenrüstung, große Waffen und kein Zauberbuch. Seine Ressource ist **Wut**, die er aufbaut, indem er Schaden austeilt und einsteckt. Je länger der Kampf läuft, desto mehr Fähigkeiten stehen ihm zur Verfügung.
 
-Mit **Sturmangriff** und **Heldenhafter Sprung** ist der Krieger schnell am Gegner. Fähigkeiten wie **Siegesrausch** heilen ihn nebenbei, was das Solo-Spiel deutlich entspannter macht, als man einer Klasse ohne Heilzauber zutraut.
+Mit [**Sturmangriff**](https://www.wowhead.com/de/spell=100){target="_blank" rel="noopener"} und [**Heldenhafter Sprung**](https://www.wowhead.com/de/spell=6544){target="_blank" rel="noopener"} ist der Krieger schnell am Gegner. Fähigkeiten wie [**Siegesrausch**](https://www.wowhead.com/de/spell=34428){target="_blank" rel="noopener"} heilen ihn nebenbei, was das Solo-Spiel deutlich entspannter macht, als man einer Klasse ohne Heilzauber zutraut.
 
 ## Die Spezialisierungen
 
@@ -34,6 +34,6 @@ Mit **Sturmangriff** und **Heldenhafter Sprung** ist der Krieger schnell am Gegn
 
 ## Stärken und Schwächen
 
-Die größte Stärke ist die Einfachheit im Kern: Die Grundrotation ist schnell verstanden, und Plattenrüstung verzeiht Fehler. Dazu kommt mit **Schlachtruf** ein Gruppenbuff, den jede Gruppe gerne sieht. Schwierig wird es, wenn Gegner auf Distanz bleiben, denn der Krieger hat kaum Fernkampf-Optionen.
+Die größte Stärke ist die Einfachheit im Kern: Die Grundrotation ist schnell verstanden, und Plattenrüstung verzeiht Fehler. Dazu kommt mit [**Schlachtruf**](https://www.wowhead.com/de/spell=6673){target="_blank" rel="noopener"} ein Gruppenbuff, den jede Gruppe gerne sieht. Schwierig wird es, wenn Gegner auf Distanz bleiben, denn der Krieger hat kaum Fernkampf-Optionen.
 
 Unsicher, ob der Krieger dein Main wird? Mach das [Klassen-Quiz](/welche-klasse-passt-zu-mir) oder schick ihn in der [Arena](/) gegen andere Klassen ins Rennen.

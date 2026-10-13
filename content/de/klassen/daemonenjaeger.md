@@ -9,13 +9,13 @@ updated: "2026-10-13"
 
 ## Spielweise
 
-Der Dämonenjäger hat dämonische Kräfte in sich aufgenommen, um die Brennende Legion mit ihren eigenen Waffen zu schlagen. Er trägt Leder, kämpft mit Kriegsgleven und ist die vielleicht mobilste Klasse im Spiel: **Teufelsrausch**, **Rachsüchtiger Rückzug**, Doppelsprung und Gleiten bringen ihn überall hin.
+Der Dämonenjäger hat dämonische Kräfte in sich aufgenommen, um die Brennende Legion mit ihren eigenen Waffen zu schlagen. Er trägt Leder, kämpft mit Kriegsgleven und ist die vielleicht mobilste Klasse im Spiel: [**Teufelsrausch**](https://www.wowhead.com/de/spell=195072){target="_blank" rel="noopener"}, [**Rachsüchtiger Rückzug**](https://www.wowhead.com/de/spell=198793){target="_blank" rel="noopener"}, Doppelsprung und Gleiten bringen ihn überall hin.
 
-Seine Ressource ist **Zorn**. Mit **Metamorphose** verwandelt er sich in einen Dämon und wird für kurze Zeit deutlich stärker. Die **Geistersicht** lässt ihn Gegner sogar durch Wände sehen.
+Seine Ressource ist **Zorn**. Mit [**Metamorphose**](https://www.wowhead.com/de/spell=191427){target="_blank" rel="noopener"} verwandelt er sich in einen Dämon und wird für kurze Zeit deutlich stärker. Die [**Geistersicht**](https://www.wowhead.com/de/spell=188501){target="_blank" rel="noopener"} lässt ihn Gegner sogar durch Wände sehen.
 
 ## Die Spezialisierungen
 
-- **Verwüstung** ist der klassische Nahkampf-Dämonenjäger: schnell, flüssig und mit dem **Augenstrahl** als Markenzeichen. Gilt als vergleichsweise leicht zu lernen.
+- **Verwüstung** ist der klassische Nahkampf-Dämonenjäger: schnell, flüssig und mit dem [**Augenstrahl**](https://www.wowhead.com/de/spell=198013){target="_blank" rel="noopener"} als Markenzeichen. Gilt als vergleichsweise leicht zu lernen.
 - **Rachsucht** tankt mit Seelenfragmenten und Siegeln, die Gegner kontrollieren. Viel Selbstheilung und Mobilität für einen Tank.
 - **Verschlinger** ist die neue Spezialisierung aus Midnight. Statt Teufelsmagie nutzt sie die **Leere** und kämpft aus mittlerer Distanz, behält dabei aber die volle Mobilität eines Dämonenjägers.
 

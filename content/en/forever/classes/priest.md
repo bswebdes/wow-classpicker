@@ -9,7 +9,7 @@ updated: "2026-10-13"
 
 ## Playstyle
 
-The Priest heals with big spells, protects with **Power Word: Shield** and buffs the group with **Power Word: Fortitude**. In **Shadowform** it becomes a damage dealer with damage over time. **Mind Control** and **Psychic Scream** provide control.
+The Priest heals with big spells, protects with [**Power Word: Shield**](https://www.wowhead.com/classic/spell=17){target="_blank" rel="noopener"} and buffs the group with [**Power Word: Fortitude**](https://www.wowhead.com/classic/spell=1243){target="_blank" rel="noopener"}. In [**Shadowform**](https://www.wowhead.com/classic/spell=15473){target="_blank" rel="noopener"} it becomes a damage dealer with damage over time. [**Mind Control**](https://www.wowhead.com/classic/spell=605){target="_blank" rel="noopener"} and [**Psychic Scream**](https://www.wowhead.com/classic/spell=8122){target="_blank" rel="noopener"} provide control.
 
 ## Talent trees
 

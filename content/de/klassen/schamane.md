@@ -11,7 +11,7 @@ updated: "2026-10-13"
 
 Der Schamane spricht mit den Elementen: Erde, Feuer, Wasser und Luft kämpfen an seiner Seite. In Kettenrüstung steht er zwischen Zauberer und Kämpfer, und mit drei völlig unterschiedlichen Spezialisierungen ist er eine der vielseitigsten Klassen im Spiel.
 
-Markenzeichen sind die **Totems**, die er auf den Boden stellt, um Verbündete zu stärken oder Gegner zu behindern. Dazu kommt **Kampfrausch** bzw. **Heldentum**, ein mächtiger Gruppenbuff für den entscheidenden Moment. Und wenn doch alles schiefgeht, kann sich der Schamane mit **Reinkarnation** selbst wiederbeleben.
+Markenzeichen sind die **Totems**, die er auf den Boden stellt, um Verbündete zu stärken oder Gegner zu behindern. Dazu kommt [**Kampfrausch**](https://www.wowhead.com/de/spell=2825){target="_blank" rel="noopener"} bzw. [**Heldentum**](https://www.wowhead.com/de/spell=32182){target="_blank" rel="noopener"}, ein mächtiger Gruppenbuff für den entscheidenden Moment. Und wenn doch alles schiefgeht, kann sich der Schamane mit [**Reinkarnation**](https://www.wowhead.com/de/spell=20608){target="_blank" rel="noopener"} selbst wiederbeleben.
 
 ## Die Spezialisierungen
 

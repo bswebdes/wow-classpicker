@@ -11,7 +11,7 @@ updated: "2026-10-13"
 
 The Mage is the classic spellcaster: robe, staff and an arsenal of arcane, fire and frost spells. It fights from range and deals enormous damage in short burst windows. Its main resource is **Mana**.
 
-Mages are loved for their comfort tools: **Portals** take them and others to the capital cities, they conjure food and drink, and **Arcane Intellect** buffs the whole group. In combat, **Blink** and **Ice Block** get them out of trouble, and **Polymorph** takes an enemy out of the fight for a while.
+Mages are loved for their comfort tools: **Portals** take them and others to the capital cities, they conjure food and drink, and [**Arcane Intellect**](https://www.wowhead.com/spell=1459){target="_blank" rel="noopener"} buffs the whole group. In combat, [**Blink**](https://www.wowhead.com/spell=1953){target="_blank" rel="noopener"} and [**Ice Block**](https://www.wowhead.com/spell=45438){target="_blank" rel="noopener"} get them out of trouble, and [**Polymorph**](https://www.wowhead.com/spell=118){target="_blank" rel="noopener"} takes an enemy out of the fight for a while.
 
 ## Specializations
 

@@ -3,7 +3,7 @@ export const consentTranslations = (privacyPath: { de: string, en: string }) => 
   de: {
     consentModal: {
       title: 'Kurz zu Cookies',
-      description: `Diese Seite funktioniert auch ohne Tracking. Wenn du magst, kannst du erlauben, dass deine Erfolge gespeichert werden und dass ich mit Google Analytics pseudonymisiert sehe, welche Seiten genutzt werden. Mehr in der <a href="${privacyPath.de}">Datenschutzerklärung</a>.`,
+      description: `Diese Seite funktioniert auch ohne Tracking. Wenn du magst, kannst du erlauben, dass deine Erfolge gespeichert werden, Wowhead-Tooltips angezeigt werden und ich mit Google Analytics pseudonymisiert sehe, welche Seiten genutzt werden. Mehr in der <a href="${privacyPath.de}">Datenschutzerklärung</a>.`,
       acceptAllBtn: 'Alle erlauben',
       acceptNecessaryBtn: 'Nur notwendige',
       showPreferencesBtn: 'Einstellungen'
@@ -31,6 +31,11 @@ export const consentTranslations = (privacyPath: { de: string, en: string }) => 
           linkedCategory: 'analytics'
         },
         {
+          title: 'Wowhead-Tooltips',
+          description: 'Zeigt beim Überfahren von Fähigkeiten die Original-Tooltips von Wowhead. Dafür wird ein Script von Wowhead (ZAM Network LLC, USA) geladen und deine IP-Adresse an Wowhead übertragen. Ohne Zustimmung bleiben es einfache Links zu Wowhead.',
+          linkedCategory: 'external'
+        },
+        {
           title: 'Mehr Informationen',
           description: `Alles Weitere steht in der <a href="${privacyPath.de}">Datenschutzerklärung</a>.`
         }
@@ -40,7 +45,7 @@ export const consentTranslations = (privacyPath: { de: string, en: string }) => 
   en: {
     consentModal: {
       title: 'A quick word on cookies',
-      description: `This site also works without tracking. If you like, you can allow your achievements to be saved and let me see in pseudonymous form with Google Analytics which pages are used. More in the <a href="${privacyPath.en}">privacy policy</a>.`,
+      description: `This site also works without tracking. If you like, you can allow your achievements to be saved, Wowhead tooltips to be shown and let me see in pseudonymous form with Google Analytics which pages are used. More in the <a href="${privacyPath.en}">privacy policy</a>.`,
       acceptAllBtn: 'Allow all',
       acceptNecessaryBtn: 'Necessary only',
       showPreferencesBtn: 'Settings'
@@ -66,6 +71,11 @@ export const consentTranslations = (privacyPath: { de: string, en: string }) => 
           title: 'Statistics',
           description: 'Google Tag Manager and Google Analytics 4 show me in pseudonymous form which pages and features are used. Provider: Google Ireland Ltd., Ireland. Data may be transferred to the USA (EU-US Data Privacy Framework). Cookies: _ga, _ga_* (2 years).',
           linkedCategory: 'analytics'
+        },
+        {
+          title: 'Wowhead tooltips',
+          description: 'Shows the original Wowhead tooltips when you hover over abilities. This loads a script from Wowhead (ZAM Network LLC, USA) and transfers your IP address to Wowhead. Without consent, they stay plain links to Wowhead.',
+          linkedCategory: 'external'
         },
         {
           title: 'More information',

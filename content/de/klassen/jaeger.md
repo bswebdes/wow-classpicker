@@ -11,7 +11,7 @@ updated: "2026-10-13"
 
 Der Jäger kämpft mit Bogen, Gewehr oder Speer und hat oft einen tierischen Begleiter an seiner Seite. Seine Ressource ist **Fokus**, die sich mit der Zeit von selbst auffüllt. Weil er aus der Distanz angreift, steht er selten dort, wo es wehtut.
 
-Mit **Totstellen**, **Rückzug** und **Aspekt der Schildkröte** hat der Jäger starke Werkzeuge, um gefährlichen Situationen zu entkommen. Das macht ihn zu einer der sichersten Klassen beim Leveln und in Solo-Inhalten.
+Mit [**Totstellen**](https://www.wowhead.com/de/spell=5384){target="_blank" rel="noopener"}, [**Rückzug**](https://www.wowhead.com/de/spell=781){target="_blank" rel="noopener"} und [**Aspekt der Schildkröte**](https://www.wowhead.com/de/spell=186265){target="_blank" rel="noopener"} hat der Jäger starke Werkzeuge, um gefährlichen Situationen zu entkommen. Das macht ihn zu einer der sichersten Klassen beim Leveln und in Solo-Inhalten.
 
 ## Die Spezialisierungen
 

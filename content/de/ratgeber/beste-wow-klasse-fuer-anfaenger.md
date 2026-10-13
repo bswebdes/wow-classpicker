@@ -31,13 +31,13 @@ Der [Jäger](/klassen/jaeger) gilt seit Jahren als die einfachste Klasse in WoW,
 
 ## 2. Paladin
 
-Der [Paladin](/klassen/paladin) ist robust wie kaum eine andere Klasse. Plattenrüstung, Selbstheilung und Notfallknöpfe wie **Gottesschild** retten dich aus fast jeder Lage. Als Vergeltung spielst du Schaden mit einer überschaubaren Rotation, und später kannst du als Heiliger oder Schutzpaladin heilen oder tanken.
+Der [Paladin](/klassen/paladin) ist robust wie kaum eine andere Klasse. Plattenrüstung, Selbstheilung und Notfallknöpfe wie [**Gottesschild**](https://www.wowhead.com/de/spell=642){target="_blank" rel="noopener"} retten dich aus fast jeder Lage. Als Vergeltung spielst du Schaden mit einer überschaubaren Rotation, und später kannst du als Heiliger oder Schutzpaladin heilen oder tanken.
 
 **Ideal für:** Einsteiger, die sich alle Rollen offen halten wollen.
 
 ## 3. Todesritter
 
-Der [Todesritter](/klassen/todesritter) kombiniert schwere Rüstung mit starker Selbstheilung über **Todesstoß**. Als **Blut** ist er einer der verzeihendsten Tanks, als Frost oder Unheilig ein solider Schadensausteiler. Bonus: Er startet mit einer eigenen, stimmungsvollen Story.
+Der [Todesritter](/klassen/todesritter) kombiniert schwere Rüstung mit starker Selbstheilung über [**Todesstoß**](https://www.wowhead.com/de/spell=49998){target="_blank" rel="noopener"}. Als **Blut** ist er einer der verzeihendsten Tanks, als Frost oder Unheilig ein solider Schadensausteiler. Bonus: Er startet mit einer eigenen, stimmungsvollen Story.
 
 **Ideal für:** Spieler, die robust sein und vielleicht tanken lernen wollen.
 

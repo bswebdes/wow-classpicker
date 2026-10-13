@@ -11,7 +11,7 @@ updated: "2026-10-13"
 
 The Shaman speaks with the elements: earth, fire, water and air fight at its side. In mail armor it stands between caster and fighter, and with three completely different specs it is one of the most versatile classes in the game.
 
-Its trademark is **totems**, placed on the ground to empower allies or hinder enemies. Then there is **Bloodlust** or **Heroism**, a powerful group buff for the decisive moment. And if everything goes wrong, the Shaman can bring itself back with **Reincarnation**.
+Its trademark is **totems**, placed on the ground to empower allies or hinder enemies. Then there is [**Bloodlust**](https://www.wowhead.com/spell=2825){target="_blank" rel="noopener"} or [**Heroism**](https://www.wowhead.com/spell=32182){target="_blank" rel="noopener"}, a powerful group buff for the decisive moment. And if everything goes wrong, the Shaman can bring itself back with [**Reincarnation**](https://www.wowhead.com/spell=20608){target="_blank" rel="noopener"}.
 
 ## Specializations
 

@@ -11,7 +11,7 @@ updated: "2026-10-13"
 
 The Warrior is melee in its purest form: heavy plate, big weapons and no spellbook. Its resource is **Rage**, which builds as you deal and take damage. The longer a fight goes, the more of your toolkit opens up.
 
-**Charge** and **Heroic Leap** get you into the fight fast, and abilities like **Victory Rush** heal you along the way. That makes solo play much smoother than you would expect from a class without healing spells.
+[**Charge**](https://www.wowhead.com/spell=100){target="_blank" rel="noopener"} and [**Heroic Leap**](https://www.wowhead.com/spell=6544){target="_blank" rel="noopener"} get you into the fight fast, and abilities like [**Victory Rush**](https://www.wowhead.com/spell=34428){target="_blank" rel="noopener"} heal you along the way. That makes solo play much smoother than you would expect from a class without healing spells.
 
 ## Specializations
 
@@ -34,6 +34,6 @@ The Warrior is melee in its purest form: heavy plate, big weapons and no spellbo
 
 ## Strengths and weaknesses
 
-Its biggest strength is a simple core: the basic rotation clicks quickly, and plate armor forgives mistakes. **Battle Shout** is a group buff every party is happy to have. Things get harder when enemies stay at range, since the Warrior has very few ranged options.
+Its biggest strength is a simple core: the basic rotation clicks quickly, and plate armor forgives mistakes. [**Battle Shout**](https://www.wowhead.com/spell=6673){target="_blank" rel="noopener"} is a group buff every party is happy to have. Things get harder when enemies stay at range, since the Warrior has very few ranged options.
 
 Not sure if the Warrior should be your main? Take the [class quiz](/en/wow-class-quiz) or send it into the [arena](/en) against other classes.

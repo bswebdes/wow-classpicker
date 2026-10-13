@@ -11,7 +11,7 @@ updated: "2026-10-13"
 
 Der Magier ist der klassische Zauberer: Robe, Stab und ein Arsenal an arkanen, feurigen und eisigen Zaubern. Er kämpft aus der Distanz und richtet besonders in kurzen Fenstern enormen Schaden an. Seine Hauptressource ist **Mana**.
 
-Magier sind beliebt für ihre Komfort-Fähigkeiten: Mit **Portalen** bringen sie sich und andere in die Hauptstädte, sie zaubern Essen und Trinken herbei, und **Arkane Intelligenz** stärkt die ganze Gruppe. Im Kampf retten **Blinzeln** und **Eisblock** sie aus brenzligen Situationen, **Verwandlung** schaltet einen Gegner vorübergehend aus.
+Magier sind beliebt für ihre Komfort-Fähigkeiten: Mit **Portalen** bringen sie sich und andere in die Hauptstädte, sie zaubern Essen und Trinken herbei, und [**Arkane Intelligenz**](https://www.wowhead.com/de/spell=1459){target="_blank" rel="noopener"} stärkt die ganze Gruppe. Im Kampf retten [**Blinzeln**](https://www.wowhead.com/de/spell=1953){target="_blank" rel="noopener"} und [**Eisblock**](https://www.wowhead.com/de/spell=45438){target="_blank" rel="noopener"} sie aus brenzligen Situationen, [**Verwandlung**](https://www.wowhead.com/de/spell=118){target="_blank" rel="noopener"} schaltet einen Gegner vorübergehend aus.
 
 ## Die Spezialisierungen
 

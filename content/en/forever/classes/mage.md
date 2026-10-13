@@ -9,7 +9,7 @@ updated: "2026-10-13"
 
 ## Playstyle
 
-The Mage casts arcane, fire and frost spells from range. It conjures **food and water**, later opens **portals** to the capital cities and takes enemies out with **Polymorph**. **Frost Nova** and **Blink** keep enemies at a distance.
+The Mage casts arcane, fire and frost spells from range. It conjures **food and water**, later opens **portals** to the capital cities and takes enemies out with [**Polymorph**](https://www.wowhead.com/classic/spell=118){target="_blank" rel="noopener"}. [**Frost Nova**](https://www.wowhead.com/classic/spell=122){target="_blank" rel="noopener"} and [**Blink**](https://www.wowhead.com/classic/spell=1953){target="_blank" rel="noopener"} keep enemies at a distance.
 
 ## Talent trees
 

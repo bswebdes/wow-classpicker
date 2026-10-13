@@ -17,6 +17,24 @@ const loadGtm = () => {
   document.head.appendChild(script)
 }
 
+// Wowhead-Tooltips erst nach Einwilligung laden
+const loadWowhead = () => {
+  const w = window as unknown as { whTooltips?: object, __whLoaded?: boolean }
+  if (w.__whLoaded) return
+  w.__whLoaded = true
+  w.whTooltips = { colorLinks: false, iconizeLinks: false, renameLinks: false }
+  const script = document.createElement('script')
+  script.src = 'https://wow.zamimg.com/js/tooltips.js'
+  script.async = true
+  document.head.appendChild(script)
+}
+
+// Nach Seitenwechseln neue Wowhead-Links erkennen
+const refreshWowhead = () => {
+  const w = window as unknown as { $WowheadPower?: { refreshLinks?: () => void } }
+  w.$WowheadPower?.refreshLinks?.()
+}
+
 export default defineNuxtPlugin((nuxtApp) => {
   const i18n = nuxtApp.$i18n as { locale: { value: string }, t: (key: string) => string }
   const localePath = useLocalePath()
@@ -31,9 +49,14 @@ export default defineNuxtPlugin((nuxtApp) => {
     if (preferences) achievements.load()
     else achievements.clearStorage()
     if (analytics) loadGtm()
+    if (CookieConsent.acceptedCategory('external')) loadWowhead()
+    // Widerruf: bereits geladenes Wowhead-Script nur durch Neuladen wieder los
+    else if ((window as unknown as { __whLoaded?: boolean }).__whLoaded) window.location.reload()
   }
 
   CookieConsent.run({
+    // Revision erhöhen, wenn neue Kategorien dazukommen: Bestehende Besucher werden dann erneut gefragt
+    revision: 1,
     cookie: { name: 'cc_cookie', expiresAfterDays: 182 },
     guiOptions: {
       consentModal: { layout: 'box', position: 'bottom left', equalWeightButtons: true },
@@ -42,6 +65,7 @@ export default defineNuxtPlugin((nuxtApp) => {
     categories: {
       necessary: { enabled: true, readOnly: true },
       preferences: {},
+      external: {},
       analytics: {
         autoClear: { cookies: [{ name: /^_ga/ }] }
       }
@@ -56,6 +80,8 @@ export default defineNuxtPlugin((nuxtApp) => {
     onConsent: applyConsent,
     onChange: applyConsent
   })
+
+  nuxtApp.hook('page:finish', () => setTimeout(refreshWowhead, 300))
 
   // Banner-Sprache mit der Seitensprache wechseln
   nuxtApp.hook('i18n:localeSwitched', ({ oldLocale, newLocale }: { oldLocale: string, newLocale: string }) => {

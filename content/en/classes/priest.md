@@ -11,11 +11,11 @@ updated: "2026-10-13"
 
 The Priest is the classic healer of Azeroth, but it can just as easily choose the dark side. Wearing cloth, it stands at the back of the group and keeps everyone alive with heals and shields, or it wears enemies down with shadow magic.
 
-Priests bring unique group tools: **Leap of Faith** pulls an ally out of danger, **Mass Dispel** removes effects from many targets, and **Power Word: Fortitude** is a buff every group wants.
+Priests bring unique group tools: [**Leap of Faith**](https://www.wowhead.com/spell=73325){target="_blank" rel="noopener"} pulls an ally out of danger, [**Mass Dispel**](https://www.wowhead.com/spell=32375){target="_blank" rel="noopener"} removes effects from many targets, and [**Power Word: Fortitude**](https://www.wowhead.com/spell=21562){target="_blank" rel="noopener"} is a buff every group wants.
 
 ## Specializations
 
-- **Discipline** heals in an unusual way: **Power Word: Shield** prevents damage before it happens, and **Atonement** turns damage dealt to enemies into healing for the group.
+- **Discipline** heals in an unusual way: [**Power Word: Shield**](https://www.wowhead.com/spell=17){target="_blank" rel="noopener"} prevents damage before it happens, and [**Atonement**](https://www.wowhead.com/spell=81749){target="_blank" rel="noopener"} turns damage dealt to enemies into healing for the group.
 - **Holy** is the pure healer with big heals, area healing and strong emergency abilities.
 - **Shadow** is the damage spec. Shadow Priests apply damage over time and build **Insanity** to unleash their strongest spells.
 

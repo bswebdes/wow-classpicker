@@ -9,7 +9,7 @@ updated: "2026-10-13"
 
 ## Playstyle
 
-The Paladin fights with **Seals** and **Judgements**, empowers allies with **Blessings** and gives the group **Auras**. Thanks to **Divine Shield** and **Lay on Hands** it is extremely hard to kill, even if its leveling damage is on the slow side.
+The Paladin fights with **Seals** and **Judgements**, empowers allies with **Blessings** and gives the group **Auras**. Thanks to [**Divine Shield**](https://www.wowhead.com/classic/spell=642){target="_blank" rel="noopener"} and [**Lay on Hands**](https://www.wowhead.com/classic/spell=633){target="_blank" rel="noopener"} it is extremely hard to kill, even if its leveling damage is on the slow side.
 
 ## Talent trees
 

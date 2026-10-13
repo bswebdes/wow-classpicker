@@ -11,7 +11,7 @@ updated: "2026-10-13"
 
 The Death Knight is a fallen hero who returned as one of the undead. It fights in plate with runeblades and dark magic of frost, blood and plague. Its resources are **Runes**, which recharge on their own, and **Runic Power**, which you earn by spending runes.
 
-Signature tools are **Death Grip**, which pulls enemies to you, and **Death Strike**, which heals more the more damage you have recently taken. **Anti-Magic Shell** protects against spells. Death Knights start their journey in their own starting zone with a strong story.
+Signature tools are [**Death Grip**](https://www.wowhead.com/spell=49576){target="_blank" rel="noopener"}, which pulls enemies to you, and [**Death Strike**](https://www.wowhead.com/spell=49998){target="_blank" rel="noopener"}, which heals more the more damage you have recently taken. [**Anti-Magic Shell**](https://www.wowhead.com/spell=48707){target="_blank" rel="noopener"} protects against spells. Death Knights start their journey in their own starting zone with a strong story.
 
 ## Specializations
 

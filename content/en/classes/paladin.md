@@ -11,11 +11,11 @@ updated: "2026-10-13"
 
 The Paladin is a holy knight in plate who wields the Light as a weapon. It builds **Holy Power**, a resource with only a few charges, and spends it on strong attacks, heals or protective effects.
 
-Few classes have this many panic buttons: **Divine Shield** makes you briefly immune, **Lay on Hands** fully heals a target, and **Blessing of Protection** or **Blessing of Freedom** save your teammates. That makes the Paladin extremely forgiving.
+Few classes have this many panic buttons: [**Divine Shield**](https://www.wowhead.com/spell=642){target="_blank" rel="noopener"} makes you briefly immune, [**Lay on Hands**](https://www.wowhead.com/spell=633){target="_blank" rel="noopener"} fully heals a target, and [**Blessing of Protection**](https://www.wowhead.com/spell=1022){target="_blank" rel="noopener"} or [**Blessing of Freedom**](https://www.wowhead.com/spell=1044){target="_blank" rel="noopener"} save your teammates. That makes the Paladin extremely forgiving.
 
 ## Specializations
 
-- **Retribution** is the two-handed damage spec. It plays directly and has a spectacular burst window with **Avenging Wrath**, better known as "wings".
+- **Retribution** is the two-handed damage spec. It plays directly and has a spectacular burst window with [**Avenging Wrath**](https://www.wowhead.com/spell=31884){target="_blank" rel="noopener"}, better known as "wings".
 - **Holy** is a healer that can still fight in melee range. With **Beacon of Light**, part of its healing is copied to a marked target, usually the tank, so it heals two targets at once.
 - **Protection** tanks with a shield and holy light. Protection Paladins bring a lot of self-healing and group utility.
 

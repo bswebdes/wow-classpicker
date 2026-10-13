@@ -9,13 +9,13 @@ updated: "2026-10-13"
 
 ## Playstyle
 
-The Demon Hunter took demonic power into itself to fight the Burning Legion with its own weapons. It wears leather, fights with warglaives and may be the most mobile class in the game: **Fel Rush**, **Vengeful Retreat**, double jump and glide take it anywhere.
+The Demon Hunter took demonic power into itself to fight the Burning Legion with its own weapons. It wears leather, fights with warglaives and may be the most mobile class in the game: [**Fel Rush**](https://www.wowhead.com/spell=195072){target="_blank" rel="noopener"}, [**Vengeful Retreat**](https://www.wowhead.com/spell=198793){target="_blank" rel="noopener"}, double jump and glide take it anywhere.
 
-Its resource is **Fury**. With **Metamorphosis** it turns into a demon and becomes much stronger for a short time. **Spectral Sight** even lets it see enemies through walls.
+Its resource is **Fury**. With [**Metamorphosis**](https://www.wowhead.com/spell=191427){target="_blank" rel="noopener"} it turns into a demon and becomes much stronger for a short time. [**Spectral Sight**](https://www.wowhead.com/spell=188501){target="_blank" rel="noopener"} even lets it see enemies through walls.
 
 ## Specializations
 
-- **Havoc** is the classic melee Demon Hunter: fast, fluid and known for its **Eye Beam**. It is considered relatively easy to learn.
+- **Havoc** is the classic melee Demon Hunter: fast, fluid and known for its [**Eye Beam**](https://www.wowhead.com/spell=198013){target="_blank" rel="noopener"}. It is considered relatively easy to learn.
 - **Vengeance** tanks with Soul Fragments and Sigils that control enemies. Lots of self-healing and mobility for a tank.
 - **Devourer** is the new spec added in Midnight. Instead of fel magic it uses the **Void** and fights from mid-range, while keeping the full mobility of a Demon Hunter.
 

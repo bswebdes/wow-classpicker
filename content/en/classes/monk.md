@@ -9,13 +9,13 @@ updated: "2026-10-13"
 
 ## Playstyle
 
-The Monk is a martial arts master who fights with fists, feet and the energy of Chi. In leather armor it is nimble and fast: with **Roll** and **Transcendence** it repositions in a flash, and few classes get to an enemy or away from one this easily.
+The Monk is a martial arts master who fights with fists, feet and the energy of Chi. In leather armor it is nimble and fast: with [**Roll**](https://www.wowhead.com/spell=109132){target="_blank" rel="noopener"} and [**Transcendence**](https://www.wowhead.com/spell=101643){target="_blank" rel="noopener"} it repositions in a flash, and few classes get to an enemy or away from one this easily.
 
-Alongside Energy or Mana, the Monk uses **Chi** as a resource for its strongest techniques. Well-known abilities include **Touch of Death**, which can finish off weakened enemies instantly, and **Paralysis** for crowd control.
+Alongside Energy or Mana, the Monk uses **Chi** as a resource for its strongest techniques. Well-known abilities include [**Touch of Death**](https://www.wowhead.com/spell=322109){target="_blank" rel="noopener"}, which can finish off weakened enemies instantly, and [**Paralysis**](https://www.wowhead.com/spell=115078){target="_blank" rel="noopener"} for crowd control.
 
 ## Specializations
 
-- **Brewmaster** is an unusual tank: instead of blocking damage outright, it spreads it over time with **Stagger** and clears it with its brews. Stumbling included.
+- **Brewmaster** is an unusual tank: instead of blocking damage outright, it spreads it over time with [**Stagger**](https://www.wowhead.com/spell=115069){target="_blank" rel="noopener"} and clears it with its brews. Stumbling included.
 - **Mistweaver** heals with mists and can fight in melee, turning its strikes into healing for allies.
 - **Windwalker** is a fast melee fighter that chains kicks and punches and hits whole packs with spinning attacks.
 

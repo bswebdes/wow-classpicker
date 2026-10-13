@@ -27,11 +27,11 @@ Not everyone wants to group up every evening. Quests, delves, world quests, prof
 
 ### Hunter
 
-The [Hunter](/en/classes/hunter) is the solo classic. Your pet tanks for you, you deal damage from range, and **Feign Death** gets you out of almost anything. Beast Mastery is especially relaxed.
+The [Hunter](/en/classes/hunter) is the solo classic. Your pet tanks for you, you deal damage from range, and [**Feign Death**](https://www.wowhead.com/spell=5384){target="_blank" rel="noopener"} gets you out of almost anything. Beast Mastery is especially relaxed.
 
 ### Death Knight
 
-As **Blood**, the [Death Knight](/en/classes/death-knight) is nearly unkillable: **Death Strike** heals more the more damage you have taken. That lets you take on big packs and tough elites alone. Unholy adds undead minions on top.
+As **Blood**, the [Death Knight](/en/classes/death-knight) is nearly unkillable: [**Death Strike**](https://www.wowhead.com/spell=49998){target="_blank" rel="noopener"} heals more the more damage you have taken. That lets you take on big packs and tough elites alone. Unholy adds undead minions on top.
 
 ### Paladin
 
@@ -39,7 +39,7 @@ The [Paladin](/en/classes/paladin) has self-healing, plate armor and several pan
 
 ### Warlock
 
-For a cloth class, the [Warlock](/en/classes/warlock) is surprisingly good solo. A Voidwalker holds enemies, **Drain Life** heals you, and Healthstones are always on hand. Affliction and Demonology feel especially safe on your own.
+For a cloth class, the [Warlock](/en/classes/warlock) is surprisingly good solo. A Voidwalker holds enemies, [**Drain Life**](https://www.wowhead.com/spell=234153){target="_blank" rel="noopener"} heals you, and Healthstones are always on hand. Affliction and Demonology feel especially safe on your own.
 
 ### Demon Hunter
 

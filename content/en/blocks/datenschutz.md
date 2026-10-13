@@ -37,7 +37,7 @@ Fonts, images and all other files are loaded directly from this website. There i
 
 ## Cookies, local storage and consent
 
-On your first visit, a cookie banner asks whether you want to allow optional features: saving your achievements and statistics with Google Analytics. Without your consent, none of this is stored or loaded, and no connection to Google is made.
+On your first visit, a cookie banner asks whether you want to allow optional features: saving your achievements, Wowhead tooltips and statistics with Google Analytics. Without your consent, none of this is stored or loaded, and no connection to Google or Wowhead is made.
 
 **Technically necessary** are two cookies:
 
@@ -75,6 +75,14 @@ Google Analytics 4 does not store full IP addresses: the IP address is only used
 The data is processed on Google servers, including in the USA. Google LLC is certified under the EU-US Data Privacy Framework (adequacy decision, Art. 45 GDPR). Google's data processing terms for Google advertising products apply. The data is deleted automatically after the retention period set in Google Analytics, at most 14 months.
 
 The legal basis is your consent under Art. 6(1)(a) GDPR and § 25(1) TDDDG, which you can withdraw at any time via the cookie settings. I also use Google Consent Mode, so Google services automatically follow your choice. More: [policies.google.com/privacy](https://policies.google.com/privacy).
+
+## Wowhead tooltips
+
+Abilities in the texts are linked to the Wowhead database. These are simple links: only when you click one are you taken to Wowhead.
+
+If you allow "Wowhead tooltips" in the cookie banner, I additionally load a script from Wowhead (wow.zamimg.com) that shows the original ability tooltip when you hover over a link. This transfers your IP address, browser information and the page you are viewing to Wowhead. Wowhead is operated by ZAM Network LLC (Fanbyte), 12777 West Jefferson Blvd, Building E, Los Angeles, CA 90066, USA. The data is processed in the USA. I cannot reliably determine whether ZAM Network is certified under the EU-US Data Privacy Framework; the transfer is therefore based on your explicit consent (Art. 49(1)(a) GDPR).
+
+The legal basis is your consent under Art. 6(1)(a) GDPR and § 25(1) TDDDG. Without consent, the script is not loaded. You can withdraw your consent at any time in the cookie settings.
 
 ## Contact by email
 

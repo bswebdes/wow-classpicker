@@ -37,7 +37,7 @@ Schriftarten, Bilder und alle übrigen Dateien dieser Website werden direkt von 
 
 ## Cookies, lokaler Speicher und Einwilligung
 
-Beim ersten Besuch fragt dich ein Cookie-Banner, ob du optionale Funktionen zulassen möchtest: das Speichern deiner Erfolge und Statistik mit Google Analytics. Ohne deine Zustimmung wird nichts davon gespeichert oder geladen, und es wird keine Verbindung zu Google aufgebaut.
+Beim ersten Besuch fragt dich ein Cookie-Banner, ob du optionale Funktionen zulassen möchtest: das Speichern deiner Erfolge, Wowhead-Tooltips und Statistik mit Google Analytics. Ohne deine Zustimmung wird nichts davon gespeichert oder geladen, und es wird keine Verbindung zu Google oder Wowhead aufgebaut.
 
 **Technisch notwendig** sind zwei Cookies:
 
@@ -75,6 +75,14 @@ Google Analytics 4 speichert keine vollständigen IP-Adressen: Die IP-Adresse wi
 Die Daten werden auf Servern von Google verarbeitet, auch in den USA. Google LLC ist unter dem EU-US Data Privacy Framework zertifiziert (Angemessenheitsbeschluss, Art. 45 DSGVO). Es gelten die Bedingungen zur Auftragsverarbeitung für Google-Werbeprodukte. Die Daten werden nach Ablauf der in Google Analytics eingestellten Aufbewahrungsdauer, höchstens 14 Monate, automatisch gelöscht.
 
 Rechtsgrundlage ist deine Einwilligung nach Art. 6 Abs. 1 lit. a DSGVO und § 25 Abs. 1 TDDDG, die du jederzeit über die Cookie-Einstellungen widerrufen kannst. Zusätzlich nutze ich den Google Consent Mode: Google-Dienste richten sich damit automatisch nach deiner Auswahl. Mehr dazu: [policies.google.com/privacy](https://policies.google.com/privacy).
+
+## Wowhead-Tooltips
+
+Fähigkeiten in den Texten sind mit der Datenbank von Wowhead verlinkt. Das sind einfache Links: Erst beim Anklicken wirst du zu Wowhead weitergeleitet.
+
+Wenn du im Cookie-Banner „Wowhead-Tooltips“ erlaubst, lade ich zusätzlich ein Script von Wowhead (wow.zamimg.com), das beim Überfahren eines Links den Original-Tooltip der Fähigkeit anzeigt. Dabei werden deine IP-Adresse, Browserinformationen und die aufgerufene Seite an Wowhead übertragen. Wowhead wird betrieben von ZAM Network LLC (Fanbyte), 12777 West Jefferson Blvd, Building E, Los Angeles, CA 90066, USA. Die Daten werden in den USA verarbeitet. Ob ZAM Network unter dem EU-US Data Privacy Framework zertifiziert ist, kann ich nicht verlässlich feststellen; die Übermittlung erfolgt daher auf Grundlage deiner ausdrücklichen Einwilligung (Art. 49 Abs. 1 lit. a DSGVO).
+
+Rechtsgrundlage ist deine Einwilligung nach Art. 6 Abs. 1 lit. a DSGVO und § 25 Abs. 1 TDDDG. Ohne Einwilligung wird das Script nicht geladen. Du kannst die Einwilligung jederzeit in den Cookie-Einstellungen widerrufen.
 
 ## Kontakt per E-Mail
 

@@ -31,13 +31,13 @@ The [Hunter](/en/classes/hunter) has been called the easiest class in WoW for ye
 
 ## 2. Paladin
 
-The [Paladin](/en/classes/paladin) is as sturdy as it gets. Plate armor, self-healing and panic buttons like **Divine Shield** save you from almost anything. As Retribution you deal damage with a simple rotation, and later you can heal as Holy or tank as Protection.
+The [Paladin](/en/classes/paladin) is as sturdy as it gets. Plate armor, self-healing and panic buttons like [**Divine Shield**](https://www.wowhead.com/spell=642){target="_blank" rel="noopener"} save you from almost anything. As Retribution you deal damage with a simple rotation, and later you can heal as Holy or tank as Protection.
 
 **Best for:** beginners who want to keep all roles open.
 
 ## 3. Death Knight
 
-The [Death Knight](/en/classes/death-knight) combines heavy armor with strong self-healing through **Death Strike**. As **Blood** it is one of the most forgiving tanks, and as Frost or Unholy a solid damage dealer. Bonus: it starts with its own atmospheric story.
+The [Death Knight](/en/classes/death-knight) combines heavy armor with strong self-healing through [**Death Strike**](https://www.wowhead.com/spell=49998){target="_blank" rel="noopener"}. As **Blood** it is one of the most forgiving tanks, and as Frost or Unholy a solid damage dealer. Bonus: it starts with its own atmospheric story.
 
 **Best for:** players who want to be tough and maybe learn to tank.
 

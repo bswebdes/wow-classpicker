@@ -11,7 +11,7 @@ updated: "2026-10-13"
 
 Der Todesritter ist ein gefallener Held, der als Untoter zurückgekehrt ist. Er kämpft in Plattenrüstung mit Runenklingen und dunkler Magie aus Frost, Blut und Seuchen. Seine Ressourcen sind **Runen**, die sich von selbst aufladen, und **Runenmacht**, die er durch den Einsatz von Runen gewinnt.
 
-Typisch für den Todesritter ist **Todesgriff**, mit dem er Gegner zu sich heranzieht, und **Todesstoß**, der umso stärker heilt, je mehr Schaden er zuvor erlitten hat. **Antimagische Hülle** schützt ihn vor Zaubern. Todesritter beginnen ihr Abenteuer in einem eigenen Startgebiet mit einer starken Story.
+Typisch für den Todesritter ist [**Todesgriff**](https://www.wowhead.com/de/spell=49576){target="_blank" rel="noopener"}, mit dem er Gegner zu sich heranzieht, und [**Todesstoß**](https://www.wowhead.com/de/spell=49998){target="_blank" rel="noopener"}, der umso stärker heilt, je mehr Schaden er zuvor erlitten hat. [**Antimagische Hülle**](https://www.wowhead.com/de/spell=48707){target="_blank" rel="noopener"} schützt ihn vor Zaubern. Todesritter beginnen ihr Abenteuer in einem eigenen Startgebiet mit einer starken Story.
 
 ## Die Spezialisierungen
 

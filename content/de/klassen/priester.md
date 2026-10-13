@@ -11,11 +11,11 @@ updated: "2026-10-13"
 
 Der Priester ist der klassische Heiler von Azeroth, kann aber genauso gut die dunkle Seite wählen. In Stoffrüstung steht er hinten in der Gruppe und hält mit Heilzaubern und Schilden alle am Leben, oder er zermürbt Gegner mit Schattenmagie.
 
-Priester bringen besondere Gruppenwerkzeuge mit: **Glaubenssprung** zieht einen Mitspieler aus der Gefahr, **Massenbannung** entfernt Effekte von vielen Zielen, und **Machtwort: Seelenstärke** ist ein Buff, den jede Gruppe will.
+Priester bringen besondere Gruppenwerkzeuge mit: [**Glaubenssprung**](https://www.wowhead.com/de/spell=73325){target="_blank" rel="noopener"} zieht einen Mitspieler aus der Gefahr, [**Massenbannung**](https://www.wowhead.com/de/spell=32375){target="_blank" rel="noopener"} entfernt Effekte von vielen Zielen, und [**Machtwort: Seelenstärke**](https://www.wowhead.com/de/spell=21562){target="_blank" rel="noopener"} ist ein Buff, den jede Gruppe will.
 
 ## Die Spezialisierungen
 
-- **Disziplin** heilt auf ungewöhnliche Art: Mit **Machtwort: Schild** verhindert sie Schaden, bevor er entsteht, und über **Abbitte** wird Schaden an Gegnern zu Heilung für die Gruppe.
+- **Disziplin** heilt auf ungewöhnliche Art: Mit [**Machtwort: Schild**](https://www.wowhead.com/de/spell=17){target="_blank" rel="noopener"} verhindert sie Schaden, bevor er entsteht, und über [**Abbitte**](https://www.wowhead.com/de/spell=81749){target="_blank" rel="noopener"} wird Schaden an Gegnern zu Heilung für die Gruppe.
 - **Heilig** ist der reine Heiler mit großen Heilzaubern, Flächenheilung und starken Notfall-Fähigkeiten.
 - **Schatten** ist die Schadens-Spezialisierung. Schattenpriester belegen Gegner mit Schaden über Zeit und bauen **Wahnsinn** auf, um ihre stärksten Zauber zu entfesseln.
 
