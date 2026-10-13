@@ -297,6 +297,10 @@
       "killcommand": {
         "name": "Mehrfachschuss",
         "msg": "schießt drei Pfeile gleichzeitig. Einer trifft bestimmt."
+      },
+      "turtle": {
+        "name": "Totstellen",
+        "msg": "fällt um und stellt sich tot. Sehr überzeugend."
       }
     },
     "priest": {

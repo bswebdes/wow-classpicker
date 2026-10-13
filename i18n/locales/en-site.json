@@ -297,6 +297,10 @@
       "killcommand": {
         "name": "Multi-Shot",
         "msg": "fires three arrows at once. One of them will hit."
+      },
+      "turtle": {
+        "name": "Feign Death",
+        "msg": "drops to the ground and plays dead. Very convincing."
       }
     },
     "priest": {

@@ -99,7 +99,7 @@ Stand: 13.10.2026 · live auf [findyourmain.com](https://findyourmain.com), Bran
 - [ ] Nach dem Forever-Start am 4.11.2026: Forever-Fakten prüfen (Meilenstein-Talente, Skyborne-Fraktionen „High Order“/„Windshaper“, Talentbaum-Namen), `updated`-Datum setzen
 
 ### Fachlich
-- [ ] Forever-Arena: eigene Classic-Fähigkeiten statt Retail-Fähigkeiten (z. B. hat der Paladin aktuell „Zornige Vergeltung“, gab es in Classic nicht)
+- [x] Forever-Arena: Classic-Fähigkeiten statt späterer Retail-Fähigkeiten (u. a. Hammer des Zorns, Schattenblitz, Totstellen)
 - [ ] Bewertungen (Einstieg, Solo) und Quiz-Gewichtung gegenlesen (`app/utils/classInfo.ts`, `foreverInfo.ts`, `quiz.ts`)
 - [ ] Deutschen Namen der Skyborne-Fraktionen klären, falls Blizzard einen veröffentlicht
 
@@ -125,7 +125,7 @@ Stand: 13.10.2026 · live auf [findyourmain.com](https://findyourmain.com), Bran
 - [ ] Klassen-Vergleich (zwei Klassen nebeneinander)
 - [ ] Arena-Modi: 1 gegen 1, Turnier-Baum
 - [ ] Sound-Effekte im Kampf (optional, standardmäßig aus)
-- [ ] „Reduzierte Bewegung“ respektieren (Intro-Animationen und Wackeln abschalten)
+- [x] „Reduzierte Bewegung“ respektieren (Intro-Animationen und Wackeln abschalten)
 
 ### Technik
 - [ ] Original-Logos (15 MB) aus dem Git-Repo nehmen oder verkleinert ablegen
