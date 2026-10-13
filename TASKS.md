@@ -71,6 +71,9 @@ Stand: 13.10.2026 · live auf [findyourmain.com](https://findyourmain.com), Bran
 - [ ] Noch per Wowhead prüfen (wurde gedrosselt): Chaosblitz, Augenstrahl, Staffelung, Wiedergeburt, Rufer-Fähigkeiten (Emporschwingen, Schweben, Feueratem, Desintegration), Classic-Priester (Gedankenkontrolle, Psychischer Schrei, Schattengestalt), Windzorn
 - [x] Zufallsklasse im Loot-Stil: Beutefenster mit Qualität und Wurf (1–100), „Bedarf!“, Verlauf der letzten Würfe, Link zur Klassenseite
 - [x] Zufallsklasse: Filter als Ingame-Buttons statt Dropdowns, Ergebnis und Verlauf in Klassenfarben statt einheitlich episch-lila
+- [x] Zufallsklasse: Walzen-Animation (Loot-Roll), Ergebnis als Item-Tooltip mit Werten, Flavor-Text und „Benutzen“-Link, gezielt „Nur Spezialisierung/Volk neu“
+- [x] Sprachwechsel: „DE | EN“-Umschalter statt Länderflaggen, im Mobil-Menü ausgeschrieben
+- [x] Bugfix: Logo-Wappen fehlte auf dem Desktop (doppelte SVG-IDs), Akkusativ „den Druiden/Schamanen/Schurken“
 - [x] Klassen-Quiz im Quest-Stil: Quest-Angebot mit Questzielen, Fragen als Dialog-Optionen, Ergebnis als „Quest abgeschlossen“ mit Belohnungen (Top 3) zur Klassenseite
 - [x] Questgeber „Thalgrim Eichenhorn <Lehrmeister aller Klassen>“ (eigene Figur, kein Blizzard-Charakter) mit RP-Questtext, Belohnungen, Kommentar vor jeder Frage und zum Ergebnis
 - [x] Quest ablehnen: drei immer frechere Reaktionen, danach Weg zum Zufallsgenerator; „Quest angenommen/abgeschlossen“-Einblendung wie im Spiel

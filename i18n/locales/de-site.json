@@ -192,7 +192,19 @@
     "need": "Bedarf!",
     "rollText": "Du würfelst {n} (1–100)",
     "history": "Zuletzt gewürfelt",
-    "emptyLoot": "Noch nichts gewürfelt. Klick auf „Bedarf!“ und lass den Zufall entscheiden."
+    "emptyLoot": "Noch nichts gewürfelt. Klick auf „Bedarf!“ und lass den Zufall entscheiden.",
+    "bound": "Gebunden beim Aufheben",
+    "use": "Benutzen: Zeigt dir alles über diese Klasse.",
+    "statRole": "Rolle",
+    "statRange": "Kampfstil",
+    "statArmor": "Rüstung",
+    "statRace": "Volk",
+    "statFaction": "Fraktion",
+    "rollLabel": "Bedarf-Wurf: {n}",
+    "rerollSpec": "Nur Spezialisierung neu",
+    "rerollRace": "Nur Volk neu",
+    "rolling": "Es wird gewürfelt …",
+    "filtersTitle": "Was darf rausfallen?"
   },
   "siteSeo": {
     "homeOgSubtitle": "Arena-Kampf, Quiz und Zufallsgenerator für die Klassenwahl"
@@ -438,5 +450,31 @@
       }
     },
     "pointsShort": "Punkte"
+  },
+  "language": {
+    "switchTo": "Sprache wechseln",
+    "short": {
+      "de": "DE",
+      "en": "EN"
+    },
+    "full": {
+      "de": "Deutsch",
+      "en": "English"
+    }
+  },
+  "classAccusative": {
+    "warrior": "Krieger",
+    "paladin": "Paladin",
+    "hunter": "Jäger",
+    "rogue": "Schurken",
+    "priest": "Priester",
+    "deathknight": "Todesritter",
+    "shaman": "Schamanen",
+    "mage": "Magier",
+    "warlock": "Hexenmeister",
+    "monk": "Mönch",
+    "druid": "Druiden",
+    "demonhunter": "Dämonenjäger",
+    "evoker": "Rufer"
   }
 }

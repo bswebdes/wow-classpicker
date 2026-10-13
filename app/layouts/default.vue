@@ -140,7 +140,7 @@ const modes = computed(() => [
           </ul>
         </nav>
         <div class="flex items-center justify-between gap-3 px-5 py-3">
-          <LanguagePicker class="flex" />
+          <LanguagePicker class="flex" full />
           <button class="text-[15px] text-neutral-400 underline underline-offset-2" @click="$showCookieSettings?.()">{{ $t('footer.cookies') }}</button>
         </div>
       </div>

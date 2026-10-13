@@ -192,7 +192,19 @@
     "need": "Need!",
     "rollText": "You roll {n} (1–100)",
     "history": "Recent rolls",
-    "emptyLoot": "Nothing rolled yet. Hit \"Need!\" and let fate decide."
+    "emptyLoot": "Nothing rolled yet. Hit \"Need!\" and let fate decide.",
+    "bound": "Binds when picked up",
+    "use": "Use: Shows you everything about this class.",
+    "statRole": "Role",
+    "statRange": "Combat style",
+    "statArmor": "Armor",
+    "statRace": "Race",
+    "statFaction": "Faction",
+    "rollLabel": "Need roll: {n}",
+    "rerollSpec": "Reroll spec only",
+    "rerollRace": "Reroll race only",
+    "rolling": "Rolling …",
+    "filtersTitle": "What can drop?"
   },
   "siteSeo": {
     "homeOgSubtitle": "Arena battle, quiz and random generator for choosing your class"
@@ -438,5 +450,31 @@
       }
     },
     "pointsShort": "points"
+  },
+  "language": {
+    "switchTo": "Change language",
+    "short": {
+      "de": "DE",
+      "en": "EN"
+    },
+    "full": {
+      "de": "Deutsch",
+      "en": "English"
+    }
+  },
+  "classAccusative": {
+    "warrior": "Warrior",
+    "paladin": "Paladin",
+    "hunter": "Hunter",
+    "rogue": "Rogue",
+    "priest": "Priest",
+    "deathknight": "Death Knight",
+    "shaman": "Shaman",
+    "mage": "Mage",
+    "warlock": "Warlock",
+    "monk": "Monk",
+    "druid": "Druid",
+    "demonhunter": "Demon Hunter",
+    "evoker": "Evoker"
   }
 }

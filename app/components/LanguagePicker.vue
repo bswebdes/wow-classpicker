@@ -1,49 +1,37 @@
 <script setup>
+// Sprachumschalter als Segment-Schalter (Sprachen statt Länderflaggen)
+defineProps({
+  full: { type: Boolean, default: false }
+})
 const { locale, locales } = useI18n()
 </script>
 
 <template>
-  <div class="items-center gap-1.5">
-    <SwitchLocalePathLink
-      v-for="l in locales"
-      :key="l.code"
-      :locale="l.code"
-      class="flex items-center rounded-xs p-1 transition-opacity"
-      :class="locale === l.code ? 'ring-2 ring-gold' : 'opacity-60 hover:opacity-100'"
-      :title="l.name"
-      :aria-label="l.name"
-    >
-      <svg v-if="l.code === 'de'" class="w-6 h-4 shadow-xs" viewBox="0 0 5 3">
-        <rect width="5" height="3" y="0" fill="#000"/>
-        <rect width="5" height="2" y="1" fill="#D00"/>
-        <rect width="5" height="1" y="2" fill="#FFCE00"/>
-      </svg>
-      <svg v-else-if="l.code === 'en'" class="w-6 h-4 shadow-xs" viewBox="0 0 7410 3900">
-        <rect width="7410" height="3900" fill="#3C3B6E"/>
-        <path d="M0,450H7410M0,1050H7410M0,1650H7410M0,2250H7410M0,2850H7410M0,3450H7410" stroke="#FFF" stroke-width="300"/>
-        <path d="M0,150H7410M0,750H7410M0,1350H7410M0,1950H7410M0,2550H7410M0,3150H7410M0,3750H7410" stroke="#B22234" stroke-width="300"/>
-        <rect width="2964" height="2100" fill="#3C3B6E"/>
-        <g fill="#FFF">
-          <g id="s18">
-            <g id="s9">
-              <g id="s5">
-                <g id="s">
-                  <path id="v" d="M247,90 317.53423,307.08204 132.87322,172.91796H361.12678L176.46577,307.08204z"/>
-                </g>
-                <use xlink:href="#s" x="494"/>
-                <use xlink:href="#s" x="988"/>
-                <use xlink:href="#s" x="1482"/>
-                <use xlink:href="#s" x="1976"/>
-              </g>
-              <use xlink:href="#s5" x="247" y="150"/>
-            </g>
-            <use xlink:href="#s9" y="300"/>
-          </g>
-          <use xlink:href="#s18" y="600"/>
-          <use xlink:href="#s9" y="1200"/>
-          <use xlink:href="#s5" y="1350"/>
-        </g>
-      </svg>
-    </SwitchLocalePathLink>
-  </div>
+  <nav :aria-label="$t('language.switchTo')" class="items-center">
+    <div class="inline-flex overflow-hidden rounded-[4px] border border-gold-border/70 bg-black/60">
+      <SwitchLocalePathLink
+        v-for="(l, i) in locales"
+        :key="l.code"
+        :locale="l.code"
+        class="font-display font-bold tracking-wider transition-colors"
+        :class="[
+          full ? 'px-4 py-2 text-[15px]' : 'px-2.5 py-1 text-[13px]',
+          i > 0 ? 'border-l border-gold-border/50' : '',
+          locale === l.code
+            ? 'bg-gradient-to-b from-[#3a2a12] to-[#1a120a] text-gold'
+            : 'text-neutral-400 hover:bg-white/5 hover:text-neutral-100'
+        ]"
+        :lang="l.code"
+        :hreflang="l.code"
+        :aria-current="locale === l.code ? 'true' : undefined"
+        :title="$t(`language.full.${l.code}`)"
+      >
+        <template v-if="full">{{ $t(`language.full.${l.code}`) }}</template>
+        <template v-else>
+          <span aria-hidden="true">{{ $t(`language.short.${l.code}`) }}</span>
+          <span class="sr-only">{{ $t(`language.full.${l.code}`) }}</span>
+        </template>
+      </SwitchLocalePathLink>
+    </div>
+  </nav>
 </template>
