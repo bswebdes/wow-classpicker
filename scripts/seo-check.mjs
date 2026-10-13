@@ -1,16 +1,17 @@
-// SEO-Check nach dem Build: prüft alle vorgerenderten Seiten in .output/public.
+// SEO-Check nach dem Build: prüft alle vorgerenderten Seiten
+// (lokal in .output/public, mit dem Netlify-Preset in dist).
 // Fehler brechen den Build ab (z. B. fehlende H1 oder kaputte hreflang-Links),
 // Warnungen (z. B. zu lange Titel) werden nur ausgegeben.
 import { readFileSync, readdirSync, existsSync, statSync } from 'node:fs'
 import { join, relative } from 'node:path'
 
-const root = '.output/public'
+const root = ['.output/public', 'dist'].find(dir => existsSync(join(dir, 'index.html')))
 const site = 'https://findyourmain.com'
 // Deutsche Titel sind länger, Google kürzt nach Pixelbreite (etwa 60–70 Zeichen)
 const limits = { title: [25, 70], description: [70, 165] }
 
-if (!existsSync(root)) {
-  console.error('[seo-check] .output/public fehlt, zuerst bauen.')
+if (!root) {
+  console.error('[seo-check] Weder .output/public noch dist gefunden, zuerst bauen.')
   process.exit(1)
 }
 
