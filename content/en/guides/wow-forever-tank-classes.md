@@ -8,18 +8,18 @@ order: 13
 game: forever
 date: "2026-10-14"
 updated: "2026-10-14"
-summary: "In WoW Forever, Warrior, Druid and Paladin can tank. From Classic experience, the Protection Warrior is the classic main tank for dungeons and raids, the Guardian Druid is a sturdy and flexible tank in bear form, and the Protection Paladin is a niche with strong area tanking. Forever reworks the talent trees, so we will check this at launch on November 4, 2026."
+summary: "In WoW Forever, Warrior, Druid and Paladin can tank. Based on WoW Classic, the Protection Warrior is expected to be the main tank for dungeons and raids, the Guardian Druid is a sturdy and flexible tank in bear form, and the Protection Paladin is a niche with strong area tanking. Forever reworks the talent trees, so we will check this at launch on November 4, 2026."
 faq:
   - q: "What is the best tank class in WoW Forever?"
-    a: "From Classic experience, the Warrior is the classic tank, especially in raids. The Druid in bear form is sturdy and flexible, the Paladin is a niche. Since Forever reworks the talent trees, we will check this after launch."
-  - q: "Can Paladins tank in WoW Classic?"
-    a: "Yes, but in Classic the Protection Paladin was a niche. It holds many enemies well, but had no taunt. WoW Forever reworks the talent trees with new milestone talents, which could strengthen the Paladin tank."
-  - q: "Is tanking harder in Classic than in current WoW?"
-    a: "Yes. In Classic, tanks build threat more slowly and the group has to be more careful. Good marking, calm pulls and communication matter more than in current WoW."
+    a: "Most likely the Warrior, especially in raids, just like in WoW Classic. The Druid in bear form is sturdy and flexible, the Paladin is a niche. Since Forever reworks the talent trees, we will check this after launch."
+  - q: "Can Paladins tank in WoW Forever?"
+    a: "Yes. In WoW Classic the Protection Paladin was a niche, because it had no taunt. WoW Forever reworks the talent trees with new milestone talents, which could strengthen the Paladin tank."
+  - q: "Is tanking harder in WoW Forever than in current WoW?"
+    a: "Most likely yes. As in WoW Classic, tanks build threat more slowly and the group has to be more careful. Good marking, calm pulls and communication matter more than in current WoW."
 classes: [warrior, druid, paladin]
 ---
 
-Tanks keep enemies away from the group. In Classic this is an especially responsible role: threat builds more slowly, mistakes are punished harder, and good tanks are always in demand. In WoW Forever, three classes can tank.
+Tanks keep enemies away from the group. In WoW Forever this is an especially responsible role: threat builds more slowly, mistakes are punished harder, and good tanks are always in demand. In WoW Forever, three classes can tank.
 
 > **Our basis:** WoW Forever launches on November 4, 2026 and builds on WoW Classic. This guide is based on Classic experience. Forever reworks the talent trees with new milestone talents, so the balance between the tanks may shift. We will check after launch.
 
@@ -28,7 +28,7 @@ Tanks keep enemies away from the group. In Classic this is an especially respons
 
 ## Warrior: the classic tank
 
-The [Warrior](/en/forever/classes/warrior) was the tank in Classic, especially in raids. In Defensive Stance it blocks with its shield, builds threat with [**Sunder Armor**](https://www.wowhead.com/forever/spell=7386){target="_blank" rel="noopener"} and [**Revenge**](https://www.wowhead.com/forever/spell=6572){target="_blank" rel="noopener"} and pulls enemies back with [**Taunt**](https://www.wowhead.com/forever/spell=355){target="_blank" rel="noopener"}. In emergencies [**Shield Wall**](https://www.wowhead.com/forever/spell=871){target="_blank" rel="noopener"} helps, and talents add [**Shield Slam**](https://www.wowhead.com/forever/spell=23922){target="_blank" rel="noopener"}.
+The [Warrior](/en/forever/classes/warrior) is the tank, especially in raids. That is how it was in Classic, and we expect the same in Forever. In Defensive Stance it blocks with its shield, builds threat with [**Sunder Armor**](https://www.wowhead.com/forever/spell=7386){target="_blank" rel="noopener"} and [**Revenge**](https://www.wowhead.com/forever/spell=6572){target="_blank" rel="noopener"} and pulls enemies back with [**Taunt**](https://www.wowhead.com/forever/spell=355){target="_blank" rel="noopener"}. In emergencies [**Shield Wall**](https://www.wowhead.com/forever/spell=871){target="_blank" rel="noopener"} helps, and talents add [**Shield Slam**](https://www.wowhead.com/forever/spell=23922){target="_blank" rel="noopener"}.
 
 **A good fit if** you want to lead the group and are keen on the classic tank experience. The Warrior levels slowly solo, but as a tank you will always find a group.
 
@@ -40,11 +40,11 @@ The [Druid](/en/forever/classes/druid) tanks in [**Bear Form**](https://www.wowh
 
 ## Paladin: the niche with potential
 
-The [Paladin](/en/forever/classes/paladin) tanks with shield and holy light. [**Righteous Fury**](https://www.wowhead.com/forever/spell=25780){target="_blank" rel="noopener"} increases its threat, and with [**Consecration**](https://www.wowhead.com/forever/spell=26573){target="_blank" rel="noopener"} and [**Holy Shield**](https://www.wowhead.com/forever/spell=20925){target="_blank" rel="noopener"} it holds many enemies at once. In Classic, however, it had no taunt, which made it a niche.
+The [Paladin](/en/forever/classes/paladin) tanks with shield and holy light. [**Righteous Fury**](https://www.wowhead.com/forever/spell=25780){target="_blank" rel="noopener"} increases its threat, and with [**Consecration**](https://www.wowhead.com/forever/spell=26573){target="_blank" rel="noopener"} and [**Holy Shield**](https://www.wowhead.com/forever/spell=20925){target="_blank" rel="noopener"} it holds many enemies at once. In Classic, however, it had no taunt, which made it a niche there.
 
 **A good fit if** you want to play something special. Exciting in Forever: the new milestone talents could strengthen the Protection Paladin, and with the **Undead Paladin** it is available to the Horde for the first time.
 
-## Tips for new Classic tanks
+## Tips for new tanks in WoW Forever
 
 1. **Mark your targets.** Skull first, cross next: clear targets help the whole group.
 2. **Pull calmly.** One group at a time is better than too many at once.

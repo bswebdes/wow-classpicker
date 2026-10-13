@@ -1,6 +1,6 @@
 ---
 title: "WoW Forever Heiler-Klassen: Priester, Paladin, Schamane und Druide"
-description: "Welche Klasse ist der beste Heiler in WoW Forever? Priester, Paladin, Schamane und Druide im Vergleich, auf Basis von WoW Classic, mit Stärken und Spielgefühl."
+description: "Welche Klasse ist der beste Heiler in WoW Forever? Priester, Paladin, Schamane und Druide im Vergleich, basierend auf WoW Classic, mit Stärken und Spielgefühl."
 key: forever-healers
 image: ashenvale
 imageAlt: "Das Eschental im klassischen Azeroth: ein Wald in violettem Abendlicht"
@@ -8,18 +8,18 @@ order: 14
 game: forever
 date: "2026-10-14"
 updated: "2026-10-14"
-summary: "In WoW Forever heilen Priester, Paladin, Schamane und Druide. Nach Classic-Erfahrung ist der Priester der vielseitigste Heiler, der Paladin besonders sparsam beim Einzelziel, der Schamane mit Kettenheilung stark für Gruppen und der Druide mit Heilung über Zeit und Wiederbelebung im Kampf. Neu: Paladin und Schamane gibt es in Forever auf beiden Seiten."
+summary: "In WoW Forever heilen Priester, Paladin, Schamane und Druide. Auf Basis von WoW Classic ist der Priester voraussichtlich der vielseitigste Heiler, der Paladin besonders sparsam beim Einzelziel, der Schamane mit Kettenheilung stark für Gruppen und der Druide mit Heilung über Zeit und Wiederbelebung im Kampf. Neu: Paladin und Schamane gibt es in Forever auf beiden Seiten."
 faq:
   - q: "Welche Klasse ist der beste Heiler in WoW Forever?"
-    a: "Nach Classic-Erfahrung ist der Priester der vielseitigste Heiler. Paladin, Schamane und Druide haben jeweils eigene Stärken: sparsame Einzelheilung, Kettenheilung für Gruppen und Heilung über Zeit. Da Forever die Talentbäume überarbeitet, prüfen wir das nach dem Start."
+    a: "Voraussichtlich der Priester als vielseitigster Heiler, so wie in WoW Classic. Paladin, Schamane und Druide haben jeweils eigene Stärken: sparsame Einzelheilung, Kettenheilung für Gruppen und Heilung über Zeit. Da Forever die Talentbäume überarbeitet, prüfen wir das nach dem Start."
   - q: "Kann die Horde in WoW Forever Paladine spielen?"
-    a: "Ja. In Classic gab es Paladine nur bei der Allianz. In WoW Forever können Untote Paladine werden, damit hat auch die Horde Paladin-Heiler. Umgekehrt bekommt die Allianz mit dem Zwergen-Schamanen ihren ersten Schamanen."
-  - q: "Sind Heiler in WoW Classic gefragt?"
-    a: "Sehr. Heiler sind in Classic in Dungeons und Schlachtzügen immer gesucht, und wer heilen kann, findet schnell eine Gruppe."
+    a: "Ja. In WoW Classic gab es Paladine nur bei der Allianz. In WoW Forever können Untote Paladine werden, damit hat auch die Horde Paladin-Heiler. Umgekehrt bekommt die Allianz mit dem Zwergen-Schamanen ihren ersten Schamanen."
+  - q: "Sind Heiler in WoW Forever gefragt?"
+    a: "Sehr wahrscheinlich. Wie in WoW Classic werden Heiler für Dungeons und Schlachtzüge immer gesucht, und wer heilen kann, findet schnell eine Gruppe."
 classes: [priest, paladin, shaman, druid]
 ---
 
-Ohne Heiler kommt in Classic keine Gruppe weit. Heilen ist dort eine Frage von Übersicht und Mana: Wer sparsam heilt und vorausschaut, hält auch lange Kämpfe durch. In WoW Forever können vier Klassen heilen, und jede fühlt sich anders an.
+Ohne Heiler kommt in WoW Forever keine Gruppe weit. Heilen ist eine Frage von Übersicht und Mana: Wer sparsam heilt und vorausschaut, hält auch lange Kämpfe durch. In WoW Forever können vier Klassen heilen, und jede fühlt sich anders an.
 
 > **Unsere Grundlage:** WoW Forever startet am 4. November 2026 und baut auf WoW Classic auf. Dieser Ratgeber stützt sich auf die Erfahrungen aus Classic. Forever überarbeitet die Talentbäume mit neuen Meilenstein-Talenten, deshalb kann sich das Kräfteverhältnis ändern. Nach dem Start prüfen wir das.
 
@@ -28,7 +28,7 @@ Ohne Heiler kommt in Classic keine Gruppe weit. Heilen ist dort eine Frage von �
 
 ## Priester: der Allrounder
 
-Der [Priester](/forever/klassen/priester) hat das größte Heil-Werkzeug: [**Große Heilung**](https://www.wowhead.com/forever/de/spell=2060){target="_blank" rel="noopener"} für den Tank, [**Blitzheilung**](https://www.wowhead.com/forever/de/spell=2061){target="_blank" rel="noopener"} für Notfälle, [**Gebet der Heilung**](https://www.wowhead.com/forever/de/spell=596){target="_blank" rel="noopener"} für die Gruppe und [**Machtwort: Schild**](https://www.wowhead.com/forever/de/spell=17){target="_blank" rel="noopener"}, um Schaden abzufangen. In Classic war er das Rückgrat jedes Schlachtzugs.
+Der [Priester](/forever/klassen/priester) hat das größte Heil-Werkzeug: [**Große Heilung**](https://www.wowhead.com/forever/de/spell=2060){target="_blank" rel="noopener"} für den Tank, [**Blitzheilung**](https://www.wowhead.com/forever/de/spell=2061){target="_blank" rel="noopener"} für Notfälle, [**Gebet der Heilung**](https://www.wowhead.com/forever/de/spell=596){target="_blank" rel="noopener"} für die Gruppe und [**Machtwort: Schild**](https://www.wowhead.com/forever/de/spell=17){target="_blank" rel="noopener"}, um Schaden abzufangen. In Classic war er das Rückgrat jedes Schlachtzugs, und das dürfte er in Forever wieder sein.
 
 **Passt zu dir, wenn** du der klassische Heiler sein willst und gern für jede Lage den passenden Zauber hast.
 
@@ -50,7 +50,7 @@ Der [Druide](/forever/klassen/druide) heilt vor allem mit Effekten über Zeit: [
 
 **Passt zu dir, wenn** du gern vorausplanst und zwischendurch auch mal als Bär oder Katze unterwegs sein willst.
 
-## Tipps für angehende Classic-Heiler
+## Tipps für angehende Heiler in WoW Forever
 
 1. **Achte auf dein Mana.** Kleine, gezielte Heilungen bringen dich weiter als große Zauber auf volle Lebenspunkte.
 2. **Trink zwischen den Kämpfen.** Sag der Gruppe Bescheid, wenn du Mana brauchst.

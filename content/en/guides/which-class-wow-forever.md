@@ -11,9 +11,9 @@ updated: "2026-10-13"
 summary: "For the WoW Forever launch, Hunter and Warlock are the most relaxed classes to level, Priest, Paladin, Shaman and Druid are in high demand as healers, and the Warrior is the classic tank. Decide by role, solo or group play and your favorite race."
 faq:
   - q: "Which class levels fastest in WoW Forever?"
-    a: "Based on Classic experience, Hunter and Warlock level most comfortably, because their pet holds enemies and they need few breaks. The Mage is also fast thanks to area damage."
+    a: "Most likely Hunter and Warlock level most comfortably, just like in WoW Classic, because their pet holds enemies and they need few breaks. The Mage is also fast thanks to area damage."
   - q: "What is the best tank class in WoW Forever?"
-    a: "The Warrior is the classic tank in Classic. Druid (Feral Combat) and Paladin (Protection) are also possible, and Forever reworks the trees with new milestone talents."
+    a: "Most likely the Warrior, as in WoW Classic. Druid (Feral Combat) and Paladin (Protection) are also possible, and Forever reworks the trees with new milestone talents."
   - q: "When does WoW Forever launch?"
     a: "WoW Forever launches on 4 November 2026. A beta is running until then, so details can still change."
 classes: [hunter, warlock, priest, paladin, warrior, druid]
@@ -23,7 +23,7 @@ WoW Forever launches on **4 November 2026** and brings classic Azeroth back: a l
 
 ## What is different from retail?
 
-Coming from modern WoW, you will need to adjust. Classic classes have fewer abilities per rotation, but resources, positioning and preparation matter much more. Leveling takes far longer, and classes without self-healing need regular breaks. Not every role is equally open to every class either, as talent trees are built around one main job.
+Coming from modern WoW, you will need to adjust. Classes in Forever have fewer abilities per rotation, but resources, positioning and preparation matter much more. Leveling takes far longer, and classes without self-healing need regular breaks. Not every role is equally open to every class either, as talent trees are built around one main job.
 
 ## The 9 classes by role
 
@@ -41,9 +41,9 @@ Coming from modern WoW, you will need to adjust. Classic classes have fewer abil
 
 **Lots of solo play:** Hunter and Warlock are the classics. Their pet holds enemies, and they get far without a group. The Mage levels quickly with area damage but takes practice. More in the guide [fastest leveling class in WoW Forever](/en/guides/fastest-leveling-class-wow-forever).
 
-**Prefer groups:** healers and tanks are worth their weight in gold in Classic. As a Priest, Paladin, Shaman or Druid healer you will always find a group. The Warrior is the most sought-after tank but levels slowly alone.
+**Prefer groups:** healers and tanks are likely to be worth their weight in gold in Forever, just as in Classic. As a Priest, Paladin, Shaman or Druid healer you will always find a group. The Warrior is the most sought-after tank but levels slowly alone.
 
-**PvP:** Rogue, Warrior, Mage and Priest have a long PvP tradition in Classic.
+**PvP:** Rogue, Warrior, Mage and Priest have a long PvP tradition from Classic that they are likely to continue in Forever.
 
 ## Use the new combinations
 
@@ -51,4 +51,4 @@ Forever allows combinations that didn't exist before, such as **Undead Paladins*
 
 ## Our tip
 
-Pick a class whose fantasy carries you. Classic is a long journey, and a class you enjoy will still be fun after 50 hours. If you can't decide, let your favorites fight it out in the [Forever arena](/en/forever).
+Pick a class whose fantasy carries you. WoW Forever is a long journey, and a class you enjoy will still be fun after 50 hours. If you can't decide, let your favorites fight it out in the [Forever arena](/en/forever).

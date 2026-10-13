@@ -11,9 +11,9 @@ updated: "2026-10-13"
 summary: "Für den Start von WoW Forever sind Jäger und Hexenmeister die entspanntesten Klassen zum Leveln, Priester, Paladin, Schamane und Druide sind als Heiler in Gruppen sehr gefragt, und der Krieger ist der klassische Tank. Entscheide nach Rolle, Solo- oder Gruppenspiel und Lieblingsvolk."
 faq:
   - q: "Welche Klasse levelt in WoW Forever am schnellsten?"
-    a: "Nach Classic-Erfahrung leveln Jäger und Hexenmeister am entspanntesten, weil ihr Begleiter Gegner festhält und sie wenig Pausen brauchen. Auch der Magier ist dank Flächenschaden schnell."
+    a: "Voraussichtlich leveln Jäger und Hexenmeister am entspanntesten, so wie in WoW Classic, weil ihr Begleiter Gegner festhält und sie wenig Pausen brauchen. Auch der Magier ist dank Flächenschaden schnell."
   - q: "Welche Klasse ist in WoW Forever als Tank am besten?"
-    a: "Der Krieger ist der klassische Tank in Classic. Druide (Wilder Kampf) und Paladin (Schutz) sind ebenfalls möglich, Forever überarbeitet dafür die Talentbäume mit neuen Meilenstein-Talenten."
+    a: "Voraussichtlich der Krieger, wie in WoW Classic. Druide (Wilder Kampf) und Paladin (Schutz) sind ebenfalls möglich, Forever überarbeitet dafür die Talentbäume mit neuen Meilenstein-Talenten."
   - q: "Wann startet WoW Forever?"
     a: "WoW Forever startet am 4. November 2026. Bis dahin läuft eine Beta, Details können sich noch ändern."
 classes: [hunter, warlock, priest, paladin, warrior, druid]
@@ -23,7 +23,7 @@ WoW Forever startet am **4. November 2026** und bringt das klassische Azeroth zu
 
 ## Was ist anders als in Retail?
 
-Wer aus dem aktuellen WoW kommt, muss umdenken. Classic-Klassen haben weniger Fähigkeiten pro Rotation, dafür zählen Ressourcen, Positionierung und Vorbereitung viel mehr. Das Leveln dauert deutlich länger, und Klassen ohne Selbstheilung brauchen regelmäßig Pausen. Zudem stehen nicht alle Rollen jeder Klasse gleich gut offen: Die Talentbäume sind auf eine Hauptaufgabe ausgelegt.
+Wer aus dem aktuellen WoW kommt, muss umdenken. Die Klassen in Forever haben weniger Fähigkeiten pro Rotation, dafür zählen Ressourcen, Positionierung und Vorbereitung viel mehr. Das Leveln dauert deutlich länger, und Klassen ohne Selbstheilung brauchen regelmäßig Pausen. Zudem stehen nicht alle Rollen jeder Klasse gleich gut offen: Die Talentbäume sind auf eine Hauptaufgabe ausgelegt.
 
 ## Die 9 Klassen nach Rolle
 
@@ -41,9 +41,9 @@ Wer aus dem aktuellen WoW kommt, muss umdenken. Classic-Klassen haben weniger F�
 
 **Viel solo unterwegs:** Jäger und Hexenmeister sind die Klassiker. Ihr Begleiter hält Gegner fest, und sie kommen ohne Gruppe weit. Der Magier levelt mit Flächenschaden schnell, verlangt aber Übung. Mehr dazu im Ratgeber [WoW Forever schnell leveln](/ratgeber/wow-forever-schnell-leveln).
 
-**Lieber in der Gruppe:** Heiler und Tanks sind in Classic Gold wert. Wer als Priester, Paladin, Schamane oder Druide heilt, findet jederzeit eine Gruppe. Der Krieger ist der gefragteste Tank, levelt allein aber langsam.
+**Lieber in der Gruppe:** Heiler und Tanks dürften in Forever wie schon in Classic Gold wert sein. Wer als Priester, Paladin, Schamane oder Druide heilt, findet jederzeit eine Gruppe. Der Krieger ist der gefragteste Tank, levelt allein aber langsam.
 
-**PvP:** Schurke, Krieger, Magier und Priester haben in Classic eine lange PvP-Tradition.
+**PvP:** Schurke, Krieger, Magier und Priester haben eine lange PvP-Tradition aus Classic, die sie in Forever fortsetzen dürften.
 
 ## Die neuen Kombinationen nutzen
 
@@ -51,4 +51,4 @@ Forever erlaubt Kombinationen, die es früher nicht gab, etwa **Untote Paladine*
 
 ## Unser Tipp
 
-Nimm dir für den Start eine Klasse, deren Fantasy dich trägt. Classic ist eine lange Reise, und die Klasse, die dir Spaß macht, spielst du auch nach 50 Stunden noch gern. Wenn du dich nicht entscheiden kannst: Lass deine Favoriten in der [Forever-Arena](/forever) gegeneinander kämpfen.
+Nimm dir für den Start eine Klasse, deren Fantasy dich trägt. WoW Forever ist eine lange Reise, und die Klasse, die dir Spaß macht, spielst du auch nach 50 Stunden noch gern. Wenn du dich nicht entscheiden kannst: Lass deine Favoriten in der [Forever-Arena](/forever) gegeneinander kämpfen.

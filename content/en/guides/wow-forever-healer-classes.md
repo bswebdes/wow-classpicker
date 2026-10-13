@@ -8,18 +8,18 @@ order: 14
 game: forever
 date: "2026-10-14"
 updated: "2026-10-14"
-summary: "In WoW Forever, Priest, Paladin, Shaman and Druid can heal. From Classic experience, the Priest is the most versatile healer, the Paladin especially mana efficient on single targets, the Shaman strong for groups with Chain Heal and the Druid with healing over time and an in-combat resurrection. New: Paladin and Shaman are available to both factions in Forever."
+summary: "In WoW Forever, Priest, Paladin, Shaman and Druid can heal. Based on WoW Classic, the Priest is expected to be the most versatile healer, the Paladin especially mana efficient on single targets, the Shaman strong for groups with Chain Heal and the Druid with healing over time and an in-combat resurrection. New: Paladin and Shaman are available to both factions in Forever."
 faq:
   - q: "What is the best healer class in WoW Forever?"
-    a: "From Classic experience, the Priest is the most versatile healer. Paladin, Shaman and Druid each have their own strengths: efficient single-target healing, Chain Heal for groups and healing over time. Since Forever reworks the talent trees, we will check this after launch."
+    a: "Most likely the Priest as the most versatile healer, just like in WoW Classic. Paladin, Shaman and Druid each have their own strengths: efficient single-target healing, Chain Heal for groups and healing over time. Since Forever reworks the talent trees, we will check this after launch."
   - q: "Can the Horde play Paladins in WoW Forever?"
-    a: "Yes. In Classic, Paladins were Alliance only. In WoW Forever, Undead can become Paladins, so the Horde gets Paladin healers too. In turn, the Alliance gets its first Shaman with the Dwarf Shaman."
-  - q: "Are healers in demand in WoW Classic?"
-    a: "Very much. Healers are always wanted for dungeons and raids in Classic, and anyone who can heal finds a group quickly."
+    a: "Yes. In WoW Classic, Paladins were Alliance only. In WoW Forever, Undead can become Paladins, so the Horde gets Paladin healers too. In turn, the Alliance gets its first Shaman with the Dwarf Shaman."
+  - q: "Are healers in demand in WoW Forever?"
+    a: "Very likely. As in WoW Classic, healers are always wanted for dungeons and raids, and anyone who can heal finds a group quickly."
 classes: [priest, paladin, shaman, druid]
 ---
 
-No group gets far in Classic without a healer. Healing there is about awareness and mana: if you heal efficiently and think ahead, you will last through long fights. In WoW Forever, four classes can heal, and each feels different.
+No group gets far in WoW Forever without a healer. Healing is about awareness and mana: if you heal efficiently and think ahead, you will last through long fights. In WoW Forever, four classes can heal, and each feels different.
 
 > **Our basis:** WoW Forever launches on November 4, 2026 and builds on WoW Classic. This guide is based on Classic experience. Forever reworks the talent trees with new milestone talents, so the balance between the healers may shift. We will check after launch.
 
@@ -28,7 +28,7 @@ No group gets far in Classic without a healer. Healing there is about awareness 
 
 ## Priest: the all-rounder
 
-The [Priest](/en/forever/classes/priest) has the biggest healing toolkit: [**Greater Heal**](https://www.wowhead.com/forever/spell=2060){target="_blank" rel="noopener"} for the tank, [**Flash Heal**](https://www.wowhead.com/forever/spell=2061){target="_blank" rel="noopener"} for emergencies, [**Prayer of Healing**](https://www.wowhead.com/forever/spell=596){target="_blank" rel="noopener"} for the group and [**Power Word: Shield**](https://www.wowhead.com/forever/spell=17){target="_blank" rel="noopener"} to absorb damage. In Classic it was the backbone of every raid.
+The [Priest](/en/forever/classes/priest) has the biggest healing toolkit: [**Greater Heal**](https://www.wowhead.com/forever/spell=2060){target="_blank" rel="noopener"} for the tank, [**Flash Heal**](https://www.wowhead.com/forever/spell=2061){target="_blank" rel="noopener"} for emergencies, [**Prayer of Healing**](https://www.wowhead.com/forever/spell=596){target="_blank" rel="noopener"} for the group and [**Power Word: Shield**](https://www.wowhead.com/forever/spell=17){target="_blank" rel="noopener"} to absorb damage. In Classic it was the backbone of every raid, and it is likely to be again in Forever.
 
 **A good fit if** you want to be the classic healer and like having the right spell for every situation.
 
@@ -50,7 +50,7 @@ The [Druid](/en/forever/classes/druid) heals mostly with effects over time: [**R
 
 **A good fit if** you like to plan ahead and want to roam as a bear or cat now and then.
 
-## Tips for new Classic healers
+## Tips for new healers in WoW Forever
 
 1. **Watch your mana.** Small, targeted heals get you further than big spells on full health.
 2. **Drink between fights.** Let your group know when you need mana.

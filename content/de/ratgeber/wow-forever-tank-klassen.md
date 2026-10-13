@@ -1,6 +1,6 @@
 ---
 title: "WoW Forever Tank-Klassen: Krieger, Druide und Paladin im Vergleich"
-description: "Welche Klasse ist der beste Tank in WoW Forever? Krieger, Druide und Paladin im Vergleich, auf Basis von WoW Classic: Stärken, Spielgefühl und wo jeder Tank glänzt."
+description: "Welche Klasse ist der beste Tank in WoW Forever? Krieger, Druide und Paladin im Vergleich, basierend auf WoW Classic: Stärken, Spielgefühl und wo jeder Tank glänzt."
 key: forever-tanks
 image: dustwallow
 imageAlt: "Ein Holzsteg führt durch die nebligen Düstermarschen im klassischen Azeroth"
@@ -8,18 +8,18 @@ order: 13
 game: forever
 date: "2026-10-14"
 updated: "2026-10-14"
-summary: "In WoW Forever können Krieger, Druide und Paladin tanken. Nach Classic-Erfahrung ist der Schutzkrieger der klassische Haupttank für Dungeons und Schlachtzüge, der Wächter-Druide als Bär ein robuster und flexibler Tank, der Schutzpaladin eine Nische mit starkem Flächentanken. Forever überarbeitet die Talentbäume, deshalb prüfen wir das zum Start am 4. November 2026."
+summary: "In WoW Forever können Krieger, Druide und Paladin tanken. Auf Basis von WoW Classic ist der Schutzkrieger voraussichtlich der klassische Haupttank für Dungeons und Schlachtzüge, der Wächter-Druide als Bär ein robuster und flexibler Tank, der Schutzpaladin eine Nische mit starkem Flächentanken. Forever überarbeitet die Talentbäume, deshalb prüfen wir das zum Start am 4. November 2026."
 faq:
   - q: "Welche Klasse ist der beste Tank in WoW Forever?"
-    a: "Nach Classic-Erfahrung ist der Krieger der klassische Tank, vor allem im Schlachtzug. Der Druide als Bär ist robust und flexibel, der Paladin eine Nische. Da Forever die Talentbäume überarbeitet, prüfen wir das nach dem Start."
-  - q: "Kann der Paladin in WoW Classic tanken?"
-    a: "Ja, aber in Classic war der Schutzpaladin eine Nische. Er hält viele Gegner gut fest, hatte aber keine Spott-Fähigkeit. WoW Forever überarbeitet die Talentbäume mit neuen Meilenstein-Talenten, das könnte den Paladin-Tank stärken."
-  - q: "Ist Tanken in Classic schwerer als im aktuellen WoW?"
-    a: "Ja. In Classic bauen Tanks Bedrohung langsamer auf, und die Gruppe muss mehr Rücksicht nehmen. Gutes Markieren, ruhige Pulls und Kommunikation sind wichtiger als im aktuellen WoW."
+    a: "Voraussichtlich der Krieger, vor allem im Schlachtzug, so wie in WoW Classic. Der Druide als Bär ist robust und flexibel, der Paladin eine Nische. Da Forever die Talentbäume überarbeitet, prüfen wir das nach dem Start."
+  - q: "Kann der Paladin in WoW Forever tanken?"
+    a: "Ja. In WoW Classic war der Schutzpaladin eine Nische, weil ihm eine Spott-Fähigkeit fehlte. WoW Forever überarbeitet die Talentbäume mit neuen Meilenstein-Talenten, das könnte den Paladin-Tank stärken."
+  - q: "Ist Tanken in WoW Forever schwerer als im aktuellen WoW?"
+    a: "Voraussichtlich ja. Wie in WoW Classic bauen Tanks Bedrohung langsamer auf, und die Gruppe muss mehr Rücksicht nehmen. Gutes Markieren, ruhige Pulls und Kommunikation sind wichtiger als im aktuellen WoW."
 classes: [warrior, druid, paladin]
 ---
 
-Tanks halten die Gegner von der Gruppe fern. In Classic ist das eine besonders verantwortungsvolle Rolle: Bedrohung baut sich langsamer auf, Fehler werden härter bestraft, und gute Tanks sind immer gefragt. In WoW Forever können drei Klassen tanken.
+Tanks halten die Gegner von der Gruppe fern. In WoW Forever ist das eine besonders verantwortungsvolle Rolle: Bedrohung baut sich langsamer auf, Fehler werden härter bestraft, und gute Tanks sind immer gefragt. In WoW Forever können drei Klassen tanken.
 
 > **Unsere Grundlage:** WoW Forever startet am 4. November 2026 und baut auf WoW Classic auf. Dieser Ratgeber stützt sich auf die Erfahrungen aus Classic. Forever überarbeitet die Talentbäume mit neuen Meilenstein-Talenten, deshalb kann sich das Kräfteverhältnis ändern. Nach dem Start prüfen wir das.
 
@@ -28,7 +28,7 @@ Tanks halten die Gegner von der Gruppe fern. In Classic ist das eine besonders v
 
 ## Krieger: der klassische Tank
 
-Der [Krieger](/forever/klassen/krieger) war in Classic der Tank schlechthin, besonders im Schlachtzug. In der Verteidigungshaltung blockt er mit dem Schild, baut mit [**Rüstung zerreißen**](https://www.wowhead.com/forever/de/spell=7386){target="_blank" rel="noopener"} und [**Rache**](https://www.wowhead.com/forever/de/spell=6572){target="_blank" rel="noopener"} Bedrohung auf und holt sich Gegner mit [**Spott**](https://www.wowhead.com/forever/de/spell=355){target="_blank" rel="noopener"} zurück. Im Notfall hilft [**Schildwall**](https://www.wowhead.com/forever/de/spell=871){target="_blank" rel="noopener"}, und mit Talenten kommt [**Schildschlag**](https://www.wowhead.com/forever/de/spell=23922){target="_blank" rel="noopener"} dazu.
+Der [Krieger](/forever/klassen/krieger) ist der Tank schlechthin, besonders im Schlachtzug. So war es in Classic, und so erwarten wir es auch in Forever. In der Verteidigungshaltung blockt er mit dem Schild, baut mit [**Rüstung zerreißen**](https://www.wowhead.com/forever/de/spell=7386){target="_blank" rel="noopener"} und [**Rache**](https://www.wowhead.com/forever/de/spell=6572){target="_blank" rel="noopener"} Bedrohung auf und holt sich Gegner mit [**Spott**](https://www.wowhead.com/forever/de/spell=355){target="_blank" rel="noopener"} zurück. Im Notfall hilft [**Schildwall**](https://www.wowhead.com/forever/de/spell=871){target="_blank" rel="noopener"}, und mit Talenten kommt [**Schildschlag**](https://www.wowhead.com/forever/de/spell=23922){target="_blank" rel="noopener"} dazu.
 
 **Passt zu dir, wenn** du die Gruppe führen willst und Lust auf die klassische Tank-Erfahrung hast. Allein levelt der Krieger langsam, als Tank findest du dafür jederzeit eine Gruppe.
 
@@ -40,11 +40,11 @@ Der [Druide](/forever/klassen/druide) tankt in der [**Bärengestalt**](https://w
 
 ## Paladin: die Nische mit Potenzial
 
-Der [Paladin](/forever/klassen/paladin) tankt mit Schild und heiligem Licht. [**Zorn der Gerechtigkeit**](https://www.wowhead.com/forever/de/spell=25780){target="_blank" rel="noopener"} erhöht seine Bedrohung, und mit [**Weihe**](https://www.wowhead.com/forever/de/spell=26573){target="_blank" rel="noopener"} und [**Heiliger Schild**](https://www.wowhead.com/forever/de/spell=20925){target="_blank" rel="noopener"} hält er viele Gegner auf einmal fest. In Classic fehlte ihm aber eine Spott-Fähigkeit, deshalb war er eine Nische.
+Der [Paladin](/forever/klassen/paladin) tankt mit Schild und heiligem Licht. [**Zorn der Gerechtigkeit**](https://www.wowhead.com/forever/de/spell=25780){target="_blank" rel="noopener"} erhöht seine Bedrohung, und mit [**Weihe**](https://www.wowhead.com/forever/de/spell=26573){target="_blank" rel="noopener"} und [**Heiliger Schild**](https://www.wowhead.com/forever/de/spell=20925){target="_blank" rel="noopener"} hält er viele Gegner auf einmal fest. In Classic fehlte ihm aber eine Spott-Fähigkeit, deshalb war er dort eine Nische.
 
 **Passt zu dir, wenn** du etwas Besonderes spielen willst. Spannend in Forever: Die neuen Meilenstein-Talente könnten den Schutzpaladin stärken, und mit dem **Untoten Paladin** gibt es ihn erstmals auch auf Seiten der Horde.
 
-## Tipps für angehende Classic-Tanks
+## Tipps für angehende Tanks in WoW Forever
 
 1. **Markiere die Gegner.** Totenkopf zuerst, Kreuz danach: Klare Ziele helfen der ganzen Gruppe.
 2. **Ziehe ruhig.** Lieber eine Gruppe nach der anderen als zu viele auf einmal.
