@@ -13,11 +13,29 @@ The Priest is the classic healer of Azeroth, but it can just as easily choose th
 
 Priests bring unique group tools: [**Leap of Faith**](https://www.wowhead.com/spell=73325){target="_blank" rel="noopener"} pulls an ally out of danger, [**Mass Dispel**](https://www.wowhead.com/spell=32375){target="_blank" rel="noopener"} removes effects from many targets, and [**Power Word: Fortitude**](https://www.wowhead.com/spell=21562){target="_blank" rel="noopener"} is a buff every group wants.
 
+## Background and lore
+
+Priests serve the Light, the moon goddess **Elune** or the shadows. Humans and dwarves follow the Church of the Holy Light, night elf priestesses like **Tyrande Whisperwind** pray to Elune, and the Forsaken have their own, darker faith. The best known priest is **Anduin Wrynn**, the young King of Stormwind, who would rather heal than fight. Shadow priests show that faith can also lead into the Void.
+
 ## Specializations
 
-- **Discipline** heals in an unusual way: [**Power Word: Shield**](https://www.wowhead.com/spell=17){target="_blank" rel="noopener"} prevents damage before it happens, and [**Atonement**](https://www.wowhead.com/spell=81749){target="_blank" rel="noopener"} turns damage dealt to enemies into healing for the group.
-- **Holy** is the pure healer with big heals, area healing and strong emergency abilities.
-- **Shadow** is the damage spec. Shadow Priests apply damage over time and build **Insanity** to unleash their strongest spells.
+### Discipline
+
+Discipline heals in an unusual way: [**Power Word: Shield**](https://www.wowhead.com/spell=17){target="_blank" rel="noopener"} prevents damage before it happens, and through [**Atonement**](https://www.wowhead.com/spell=81749){target="_blank" rel="noopener"} damage to enemies turns into healing for the group. So you heal by attacking. It is a mindset of its own that many players love. PvP lists often call Discipline beginner friendly.
+
+**Signature abilities:** [**Penance**](https://www.wowhead.com/spell=47540){target="_blank" rel="noopener"}, [**Power Word: Radiance**](https://www.wowhead.com/spell=194509){target="_blank" rel="noopener"}
+
+### Holy
+
+Holy is the classic healer: big heals, area healing and strong emergency buttons when things get tight. The playstyle is reactive and easy to follow. Beginner guides often name Holy Priest a good first healer.
+
+**Signature abilities:** [**Holy Word: Serenity**](https://www.wowhead.com/spell=2050){target="_blank" rel="noopener"}, [**Guardian Spirit**](https://www.wowhead.com/spell=47788){target="_blank" rel="noopener"}, [**Divine Hymn**](https://www.wowhead.com/spell=64843){target="_blank" rel="noopener"}
+
+### Shadow
+
+Shadow is the priest who got too close to the Void. You apply damage over time, build up **Insanity** and then unleash tentacles and dark visions. Grim, atmospheric and moderately demanding.
+
+**Signature abilities:** [**Mind Flay**](https://www.wowhead.com/spell=15407){target="_blank" rel="noopener"}, [**Vampiric Touch**](https://www.wowhead.com/spell=34914){target="_blank" rel="noopener"}, [**Shadow Word: Pain**](https://www.wowhead.com/spell=589){target="_blank" rel="noopener"}
 
 ## Who is the Priest for?
 

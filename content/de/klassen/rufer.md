@@ -13,11 +13,29 @@ Der Rufer, im Englischen **Evoker**, ist die jüngste Klasse in WoW und eng mit 
 
 Besonders sind die **ermächtigten Zauber**: Du hältst die Taste gedrückt, lädst den Zauber in mehreren Stufen auf und lässt ihn im richtigen Moment los. Neben Mana nutzt der Rufer **Essenz** als Ressource. Mit [**Segeln**](https://www.wowhead.com/de/spell=369536){target="_blank" rel="noopener"} und [**Schweben**](https://www.wowhead.com/de/spell=358267){target="_blank" rel="noopener"} ist er zudem ausgesprochen beweglich.
 
+## Hintergrund und Lore
+
+Rufer sind **Dracthyr**, eine Drachenvolk-Schöpfung des schwarzen Drachenaspekts **Neltharion**, bevor er zu Todesschwinge wurde. Sie wurden lange versiegelt und erwachten erst mit „Dragonflight“ wieder. Rufer vereinen die Magie aller fünf Drachenschwärme: Rot für Leben und Feuer, Blau für Magie, Grün für den Traum, Bronze für die Zeit und Schwarz für die Erde. Sie kämpfen auf mittlere Distanz und können Zauber aufladen, um sie zu verstärken.
+
 ## Die Spezialisierungen
 
-- **Verheerung** ist die Schadens-Spezialisierung mit Feueratem und Desintegration. Stark gegen Gegnergruppen und mit viel Burst.
-- **Bewahrung** heilt mit Traum- und Zeitmagie. Mit ermächtigten Heilungen und Zeitzaubern kann der Rufer Schaden sogar rückgängig machen.
-- **Verstärkung** ist eine Besonderheit: eine Schadens-Spezialisierung, die vor allem andere Spieler stärker macht. Ihr Beitrag taucht im Damage-Meter oft gar nicht richtig auf.
+### Verheerung
+
+Verheerung ist der Schadens-Rufer mit roter und blauer Drachenmagie: Feueratem, Desintegration und aufgeladene Zauber, die ganze Gruppen treffen. Kurze Reichweite, viel Burst und ein starkes Drachen-Feeling. Einige Ratgeber zählen Verheerung zu den einsteigerfreundlichen Fernkämpfern.
+
+**Typische Fähigkeiten:** [**Ewigkeitswoge**](https://www.wowhead.com/de/spell=359073){target="_blank" rel="noopener"}, [**Drachenwut**](https://www.wowhead.com/de/spell=375087){target="_blank" rel="noopener"}
+
+### Bewahrung
+
+Bewahrung heilt mit grüner Traum- und bronzener Zeitmagie. Mit ermächtigten Heilungen und Echos verdoppelst du Zauber, und mit Zeitzaubern kannst du Schaden sogar rückgängig machen. Ein kreativer Heiler für alle, die gern experimentieren.
+
+**Typische Fähigkeiten:** [**Traumatem**](https://www.wowhead.com/de/spell=355936){target="_blank" rel="noopener"}, [**Echo**](https://www.wowhead.com/de/spell=364343){target="_blank" rel="noopener"}
+
+### Verstärkung
+
+Verstärkung ist eine Besonderheit: eine Schadens-Spezialisierung mit schwarzer und bronzener Magie, die vor allem andere Spieler stärker macht. Ihr Beitrag taucht im Damage-Meter oft gar nicht richtig auf. Perfekt, wenn du gern im Hintergrund die Fäden ziehst, in Gruppen aber anspruchsvoll.
+
+**Typische Fähigkeiten:** [**Schwarzmacht**](https://www.wowhead.com/de/spell=395152){target="_blank" rel="noopener"}, [**Voraussicht**](https://www.wowhead.com/de/spell=409311){target="_blank" rel="noopener"}, [**Atem der Äonen**](https://www.wowhead.com/de/spell=403631){target="_blank" rel="noopener"}
 
 ## Für wen ist der Rufer geeignet?
 

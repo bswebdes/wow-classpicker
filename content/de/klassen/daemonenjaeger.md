@@ -13,11 +13,27 @@ Der Dämonenjäger hat dämonische Kräfte in sich aufgenommen, um die Brennende
 
 Seine Ressource ist **Zorn**. Mit [**Metamorphose**](https://www.wowhead.com/de/spell=191427){target="_blank" rel="noopener"} verwandelt er sich in einen Dämon und wird für kurze Zeit deutlich stärker. Die [**Geistersicht**](https://www.wowhead.com/de/spell=188501){target="_blank" rel="noopener"} lässt ihn Gegner sogar durch Wände sehen.
 
+## Hintergrund und Lore
+
+Dämonenjäger sind Elfen, die Dämonenmagie in sich aufnehmen, um die Brennende Legion mit ihren eigenen Waffen zu schlagen. Ihr Anführer war **Illidan Sturmgrimm**, der Verräter, der für seine Ziele alles opferte. Seine Anhänger, die **Illidari**, opferten ihr Augenlicht und sehen seitdem mit dämonischer Sicht. Spielbar wurde die Klasse mit „Legion“, wo jede Dämonenjäger-Geschichte auf der Dämonenwelt **Mardum** beginnt.
+
 ## Die Spezialisierungen
 
-- **Verwüstung** ist der klassische Nahkampf-Dämonenjäger: schnell, flüssig und mit dem [**Augenstrahl**](https://www.wowhead.com/de/spell=198013){target="_blank" rel="noopener"} als Markenzeichen. Gilt als vergleichsweise leicht zu lernen.
-- **Rachsucht** tankt mit Seelenfragmenten und Siegeln, die Gegner kontrollieren. Viel Selbstheilung und Mobilität für einen Tank.
-- **Verschlinger** ist die neue Spezialisierung aus Midnight. Statt Teufelsmagie nutzt sie die **Leere** und kämpft aus mittlerer Distanz, behält dabei aber die volle Mobilität eines Dämonenjägers.
+### Verwüstung
+
+Verwüstung ist der klassische Nahkampf-Dämonenjäger: schnell, flüssig und mit dem [**Augenstrahl**](https://www.wowhead.com/de/spell=198013){target="_blank" rel="noopener"} als Markenzeichen. Doppelsprung, Gleiten und Teufelsrausch machen ihn zur mobilsten Klasse im Spiel. Gilt als vergleichsweise leicht zu lernen.
+
+**Typische Fähigkeiten:** [**Klingentanz**](https://www.wowhead.com/de/spell=188499){target="_blank" rel="noopener"}
+
+### Rachsucht
+
+Rachsucht tankt mit Seelenfragmenten und Siegeln, die Gegner kontrollieren. Viel Selbstheilung und Mobilität für einen Tank. Solo kommt der Rachsucht-Dämonenjäger sehr gut zurecht und taucht in vielen Solo-Ratgebern auf.
+
+**Typische Fähigkeiten:** [**Seelenbombe**](https://www.wowhead.com/de/spell=247454){target="_blank" rel="noopener"}, [**Zeichen der Flamme**](https://www.wowhead.com/de/spell=204596){target="_blank" rel="noopener"}, [**Dämonenstachel**](https://www.wowhead.com/de/spell=203720){target="_blank" rel="noopener"}
+
+### Verschlinger
+
+Verschlinger ist die neue Spezialisierung aus Midnight. Statt Teufelsmagie nutzt sie die **Leere** und kämpft aus mittlerer Distanz, behält dabei aber die volle Mobilität eines Dämonenjägers. Das passt zur Geschichte von Midnight, in der die Leere eine große Rolle spielt. Einige Ratgeber nennen den Verschlinger bereits als guten Einstieg in den Fernkampf.
 
 ## Für wen ist der Dämonenjäger geeignet?
 

@@ -13,11 +13,29 @@ The Rogue is the master of the shadows. It sneaks up in [**Stealth**](https://ww
 
 On top of that comes a huge toolbox of crowd control: [**Sap**](https://www.wowhead.com/spell=6770){target="_blank" rel="noopener"}, [**Blind**](https://www.wowhead.com/spell=2094){target="_blank" rel="noopener"}, [**Kick**](https://www.wowhead.com/spell=1766){target="_blank" rel="noopener"} to interrupt and [**Vanish**](https://www.wowhead.com/spell=1856){target="_blank" rel="noopener"} as an escape button. In dungeons, [**Shroud of Concealment**](https://www.wowhead.com/spell=114018){target="_blank" rel="noopener"} can even stealth the whole group for a short time.
 
+## Background and lore
+
+Rogues work in the shadows. The Alliance has its own spy network, **SI:7**, led by **Mathias Shaw**. The blood elf **Valeera Sanguinar**, Varian's companion from his gladiator days, is one of the best known rogues. And **Garona Halforcen** made history as an assassin when she killed King Llane. Rogues fight with **Energy** and **Combo Points**: first they build pressure, then they land the finisher.
+
 ## Specializations
 
-- **Assassination** coats its blades in poison and kills slowly but surely with bleeds and poisons.
-- **Outlaw** is the pirate of the Rogues: sabers, pistol shots and a gamble with **Roll the Bones**.
-- **Subtlety** keeps slipping back into the shadows and deals enormous burst damage in short windows.
+### Assassination
+
+Assassination is the poisoner among rogues. You coat your daggers in poison, apply bleeds and watch enemies slowly fade. Calmer than the other specs, but you need to keep an eye on your effects.
+
+**Signature abilities:** [**Mutilate**](https://www.wowhead.com/spell=1329){target="_blank" rel="noopener"}, [**Envenom**](https://www.wowhead.com/spell=32645){target="_blank" rel="noopener"}, [**Deathmark**](https://www.wowhead.com/spell=360194){target="_blank" rel="noopener"}
+
+### Outlaw
+
+Outlaw is the pirate: sabers, pistol shots and a roll of the dice that hands out random buffs. That makes the spec lively and a little chaotic. Many guides list it among the more demanding specs, because you are constantly reacting to new effects.
+
+**Signature abilities:** [**Roll the Bones**](https://www.wowhead.com/spell=315508){target="_blank" rel="noopener"}, [**Between the Eyes**](https://www.wowhead.com/spell=315341){target="_blank" rel="noopener"}, [**Adrenaline Rush**](https://www.wowhead.com/spell=13750){target="_blank" rel="noopener"}
+
+### Subtlety
+
+Subtlety is the ninja. You keep slipping into the shadows and deal huge damage in short windows. When a burst window lines up perfectly, it feels amazing. If you love timing, you will be happy here.
+
+**Signature abilities:** [**Shadow Dance**](https://www.wowhead.com/spell=185313){target="_blank" rel="noopener"}, [**Shadowstrike**](https://www.wowhead.com/spell=185438){target="_blank" rel="noopener"}, [**Shadow Blades**](https://www.wowhead.com/spell=121471){target="_blank" rel="noopener"}
 
 ## Who is the Rogue for?
 

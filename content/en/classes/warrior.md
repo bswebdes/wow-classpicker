@@ -13,11 +13,29 @@ The Warrior is melee in its purest form: heavy plate, big weapons and no spellbo
 
 [**Charge**](https://www.wowhead.com/spell=100){target="_blank" rel="noopener"} and [**Heroic Leap**](https://www.wowhead.com/spell=6544){target="_blank" rel="noopener"} get you into the fight fast, and abilities like [**Victory Rush**](https://www.wowhead.com/spell=34428){target="_blank" rel="noopener"} heal you along the way. That makes solo play much smoother than you would expect from a class without healing spells.
 
+## Background and lore
+
+Almost every race in Azeroth has warriors, because every army needs weapons and courage. Many of the best known characters in the game's story are warriors: **Varian Wrynn**, King of Stormwind, who fought in the arenas as the gladiator "Lo'Gosh", or **Garrosh Hellscream**, Warchief of the Horde, who later became a final boss himself. Warriors need no magic. Their power is **Rage**, which grows with every hit they deal or take.
+
 ## Specializations
 
-- **Arms** swings one big two-handed weapon and lands heavy single hits. It plays in a planned, rhythmic way: apply your debuffs, then hit as hard as you can.
-- **Fury** wields two weapons and plays fast and frantic. While enraged, the Warrior hits nonstop and heals in the process.
-- **Protection** is the shield-and-board tank spec. Protection Warriors block, absorb and hold packs of enemies in place with taunts and area damage.
+### Arms
+
+Arms is the warrior with the big two-handed weapon and the spec for people who like rhythm. You set the enemy up, wait for the right window and then strike with full force. The fantasy: a seasoned veteran whose every swing lands. A bit more planning than Fury, but easy to learn.
+
+**Signature abilities:** [**Mortal Strike**](https://www.wowhead.com/spell=12294){target="_blank" rel="noopener"}, [**Colossus Smash**](https://www.wowhead.com/spell=167105){target="_blank" rel="noopener"}, [**Bladestorm**](https://www.wowhead.com/spell=227847){target="_blank" rel="noopener"}
+
+### Fury
+
+Fury wields two weapons and plays like a frenzy. You keep the warrior Enraged, swing almost nonstop and heal yourself along the way. Few buttons, lots of speed, lots of fun. Many community lists name Fury as one of the easiest melee specs.
+
+**Signature abilities:** [**Bloodthirst**](https://www.wowhead.com/spell=23881){target="_blank" rel="noopener"}, [**Rampage**](https://www.wowhead.com/spell=184367){target="_blank" rel="noopener"}, [**Recklessness**](https://www.wowhead.com/spell=1719){target="_blank" rel="noopener"}
+
+### Protection
+
+Protection is the shield tank that gathers enemies with leaps and taunts and then simply holds the line. You block, absorb damage and hit back with your shield. If you like standing between your group and danger, you will feel at home here.
+
+**Signature abilities:** [**Shield Slam**](https://www.wowhead.com/spell=23922){target="_blank" rel="noopener"}, [**Ignore Pain**](https://www.wowhead.com/spell=190456){target="_blank" rel="noopener"}, [**Last Stand**](https://www.wowhead.com/spell=12975){target="_blank" rel="noopener"}
 
 ## Who is the Warrior for?
 

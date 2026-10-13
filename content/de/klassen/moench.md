@@ -13,11 +13,29 @@ Der Mönch ist ein Meister der Kampfkunst, der Fäuste, Füße und die Energie d
 
 Neben Energie bzw. Mana nutzt der Mönch **Chi** als Ressource für seine stärksten Techniken. Zu seinen bekanntesten Fähigkeiten gehören [**Berührung des Todes**](https://www.wowhead.com/de/spell=322109){target="_blank" rel="noopener"}, die angeschlagene Gegner sofort erledigen kann, und [**Paralyse**](https://www.wowhead.com/de/spell=115078){target="_blank" rel="noopener"} zur Kontrolle.
 
+## Hintergrund und Lore
+
+Mönche stammen aus **Pandaria**, dem Kontinent, der mit „Mists of Pandaria“ ins Spiel kam. Sie kämpfen mit Fäusten, Stäben und innerer Kraft, dem **Chi**. Die vier **Erhabenen** Pandarias stehen für ihre Wege: der Tiger **Xuen**, der Kranich **Chi-Ji**, der Ochse **Niuzao** und die Schlange **Yu'lon**. Der bekannteste Mönch ist der Braumeister **Chen Sturmbräu**, der auch schon in Warcraft III unterwegs war.
+
 ## Die Spezialisierungen
 
-- **Braumeister** ist ein ungewöhnlicher Tank: Statt Schaden komplett zu blocken, verteilt er ihn mit [**Staffeln**](https://www.wowhead.com/de/spell=115069){target="_blank" rel="noopener"} über Zeit und reinigt ihn mit seinen Gebräuen. Torkeln inklusive.
-- **Nebelwirker** heilt mit Nebeln und kann dabei im Nahkampf mitkämpfen, um über Schläge Verbündete zu heilen.
-- **Windläufer** ist ein schneller Nahkämpfer, der Kombinationen aus Tritten und Schlägen aneinanderreiht und mit Wirbelattacken ganze Gruppen trifft.
+### Braumeister
+
+Braumeister ist ein ungewöhnlicher Tank: Statt Schaden komplett zu blocken, verteilt er ihn mit [**Staffeln**](https://www.wowhead.com/de/spell=115069){target="_blank" rel="noopener"} über Zeit und reinigt ihn mit seinen Gebräuen. Dazu torkelt er betrunken durch Angriffe. Viel Aktivität und viele Knöpfe, aber eine einzigartige Fantasy, die Niuzao gewidmet ist.
+
+**Typische Fähigkeiten:** [**Fasshieb**](https://www.wowhead.com/de/spell=121253){target="_blank" rel="noopener"}, [**Reinigendes Gebräu**](https://www.wowhead.com/de/spell=119582){target="_blank" rel="noopener"}
+
+### Nebelwirker
+
+Nebelwirker heilt mit Nebeln und kann dabei im Nahkampf mitkämpfen, um über Schläge Verbündete zu heilen. Du entscheidest, ob du lieber klassisch aus der Distanz heilst oder mitten ins Getümmel springst. Die Schlange Yu'lon begleitet diesen Weg.
+
+**Typische Fähigkeiten:** [**Erneuernder Nebel**](https://www.wowhead.com/de/spell=115151){target="_blank" rel="noopener"}, [**Beleben**](https://www.wowhead.com/de/spell=116670){target="_blank" rel="noopener"}, [**Belebung**](https://www.wowhead.com/de/spell=115310){target="_blank" rel="noopener"}
+
+### Windläufer
+
+Windläufer ist der Kung-Fu-Kämpfer, der Kombinationen aus Tritten und Schlägen aneinanderreiht und mit Wirbelattacken ganze Gruppen trifft. Du solltest Fähigkeiten nicht direkt hintereinander wiederholen, das hält dich auf Trab. Schnell, mobil und ein Fest für alle, die Kampfkunst lieben.
+
+**Typische Fähigkeiten:** [**Tritt der aufgehenden Sonne**](https://www.wowhead.com/de/spell=107428){target="_blank" rel="noopener"}, [**Tigerklaue**](https://www.wowhead.com/de/spell=100780){target="_blank" rel="noopener"}
 
 ## Für wen ist der Mönch geeignet?
 

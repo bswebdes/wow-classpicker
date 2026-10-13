@@ -13,11 +13,29 @@ Der Schamane spricht mit den Elementen: Erde, Feuer, Wasser und Luft kämpfen an
 
 Markenzeichen sind die **Totems**, die er auf den Boden stellt, um Verbündete zu stärken oder Gegner zu behindern. Dazu kommt [**Kampfrausch**](https://www.wowhead.com/de/spell=2825){target="_blank" rel="noopener"} bzw. [**Heldentum**](https://www.wowhead.com/de/spell=32182){target="_blank" rel="noopener"}, ein mächtiger Gruppenbuff für den entscheidenden Moment. Und wenn doch alles schiefgeht, kann sich der Schamane mit [**Reinkarnation**](https://www.wowhead.com/de/spell=20608){target="_blank" rel="noopener"} selbst wiederbeleben.
 
+## Hintergrund und Lore
+
+Schamanen sprechen mit den **Elementen**: Erde, Feuer, Wasser und Luft. Sie bitten die Geister um Hilfe, statt sie zu beherrschen. Der berühmteste Schamane ist **Thrall**, der die Horde nach Kalimdor führte und später dem **Irdenen Ring** half, die Welt zusammenzuhalten. Schamanen stellen Totems auf, die Verbündeten helfen, und tragen Kettenrüstung.
+
 ## Die Spezialisierungen
 
-- **Elementar** wirft Blitze und Lava aus der Distanz. Kettenblitzschlag und Erdbeben machen ihn stark gegen Gegnergruppen.
-- **Verstärkung** ist der Nahkampf-Schamane mit zwei Waffen, der Elementarmagie in seine Schläge legt und sie per Sofortzauber entlädt.
-- **Wiederherstellung** heilt mit Wellen, Regen und Totems. Besonders stark ist der Heiler, wenn die Gruppe eng beieinandersteht.
+### Elementar
+
+Elementar wirft Blitze und Lava aus der Distanz. Kettenblitzschlag und Erdbeben machen den Schamanen stark gegen Gruppen, und wenn eine Lavaeruption kritisch trifft, rummst es ordentlich. Gut verständlich, mit einigen Zaubern, für die du kurz stillstehen musst.
+
+**Typische Fähigkeiten:** [**Lavaeruption**](https://www.wowhead.com/de/spell=51505){target="_blank" rel="noopener"}, [**Sturmhüter**](https://www.wowhead.com/de/spell=191634){target="_blank" rel="noopener"}
+
+### Verstärkung
+
+Verstärkung ist der Sturm im Nahkampf: zwei Waffen, Elementarmagie in jedem Schlag und Geisterwölfe an deiner Seite. Viele Effekte greifen ineinander, deshalb zählt Verstärkung in vielen Listen zu den anspruchsvollsten Specs. Wenn es aber läuft, fühlt sie sich großartig an.
+
+**Typische Fähigkeiten:** [**Lavapeitsche**](https://www.wowhead.com/de/spell=60103){target="_blank" rel="noopener"}, [**Wildgeist**](https://www.wowhead.com/de/spell=51533){target="_blank" rel="noopener"}
+
+### Wiederherstellung
+
+Wiederherstellung heilt mit Wellen, Regen und Totems. Besonders stark ist der Schamane, wenn die Gruppe eng beieinandersteht. Mit einem Totem kannst du sogar die Lebenspunkte der Gruppe angleichen und so Mitspieler retten.
+
+**Typische Fähigkeiten:** [**Springflut**](https://www.wowhead.com/de/spell=61295){target="_blank" rel="noopener"}, [**Totem der Heilungsflut**](https://www.wowhead.com/de/spell=108280){target="_blank" rel="noopener"}, [**Totem der Geistverbindung**](https://www.wowhead.com/de/spell=98008){target="_blank" rel="noopener"}
 
 ## Für wen ist der Schamane geeignet?
 

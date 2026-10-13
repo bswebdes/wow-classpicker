@@ -11,11 +11,29 @@ updated: "2026-10-13"
 
 Der Schurke schleicht sich in [**Verstohlenheit**](https://www.wowhead.com/forever/de/spell=1784){target="_blank" rel="noopener"} an, eröffnet mit einem Überraschungsangriff und baut mit **Energie** und **Combopunkten** auf starke Finisher hin. Mit [**Kopfnuss**](https://www.wowhead.com/forever/de/spell=6770){target="_blank" rel="noopener"}, [**Blenden**](https://www.wowhead.com/forever/de/spell=2094){target="_blank" rel="noopener"} und [**Verschwinden**](https://www.wowhead.com/forever/de/spell=1856){target="_blank" rel="noopener"} kontrolliert er den Kampf. Dazu kommen **Gifte**, Taschendiebstahl und das Knacken von Schlössern.
 
+## Hintergrund und Lore
+
+In der klassischen Welt lernen Schurken ihr Handwerk im Verborgenen: Gifte gibt es erst nach einer eigenen Klassenquest, und das Schlossknacken öffnet Truhen, die anderen verschlossen bleiben. Die Schurkengilde **Rabenholdt** in den Alteracbergen ist neutral und nimmt Diebe beider Fraktionen auf. Schurken schleichen, lauern und schlagen aus der Verstohlenheit zu.
+
 ## Die Talentbäume
 
-- **Meucheln** verstärkt Gifte und kritische Treffer.
-- **Kampf** ist der klassische Baum für konstanten Schaden mit Schwertern oder Dolchen, beliebt beim Leveln und im Schlachtzug.
-- **Täuschung** baut die Tarnung aus und ist im PvP stark.
+### Meucheln
+
+Meucheln verstärkt Gifte und kritische Treffer. Mit Kaltblütigkeit wird dein nächster Finisher garantiert kritisch. Ideal für alle, die gern einen großen Treffer planen.
+
+**Typische Fähigkeiten:** [**Kaltblütigkeit**](https://www.wowhead.com/forever/de/spell=14177){target="_blank" rel="noopener"}
+
+### Kampf
+
+Kampf ist der klassische Baum für konstanten Schaden mit Schwertern oder Dolchen, beliebt beim Leveln und im Schlachtzug. Klingenwirbel trifft zwei Gegner gleichzeitig, und Adrenalinrausch gibt dir Energie im Überfluss.
+
+**Typische Fähigkeiten:** [**Klingenwirbel**](https://www.wowhead.com/forever/de/spell=13877){target="_blank" rel="noopener"}, [**Adrenalinrausch**](https://www.wowhead.com/forever/de/spell=13750){target="_blank" rel="noopener"}
+
+### Täuschung
+
+Täuschung baut die Tarnung aus und ist im PvP stark. Mit Konzentration startest du mit zusätzlichen Combopunkten, Vorbereitung setzt deine Abklingzeiten zurück, und Blutsturz verstärkt die Treffer deiner Gruppe.
+
+**Typische Fähigkeiten:** [**Konzentration**](https://www.wowhead.com/forever/de/spell=14183){target="_blank" rel="noopener"}, [**Vorbereitung**](https://www.wowhead.com/forever/de/spell=14185){target="_blank" rel="noopener"}, [**Blutsturz**](https://www.wowhead.com/forever/de/spell=16511){target="_blank" rel="noopener"}
 
 ## Für wen ist der Schurke in Forever geeignet?
 

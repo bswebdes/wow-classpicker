@@ -13,11 +13,29 @@ Der Paladin ist ein heiliger Ritter in Plattenrüstung, der das Licht als Waffe 
 
 Kaum eine Klasse hat so viele Notfallknöpfe: [**Gottesschild**](https://www.wowhead.com/de/spell=642){target="_blank" rel="noopener"} macht ihn kurzzeitig unverwundbar, [**Handauflegung**](https://www.wowhead.com/de/spell=633){target="_blank" rel="noopener"} heilt ein Ziel komplett, und mit [**Segen des Schutzes**](https://www.wowhead.com/de/spell=1022){target="_blank" rel="noopener"} oder [**Segen der Freiheit**](https://www.wowhead.com/de/spell=1044){target="_blank" rel="noopener"} rettet er Mitspieler. Das macht den Paladin extrem verzeihend.
 
+## Hintergrund und Lore
+
+Die ersten Paladine Azeroths gehörten zum **Orden der Silbernen Hand**, den **Uther der Lichtbringer** nach dem Zweiten Krieg gründete. Sein berühmtester Schüler war ausgerechnet **Arthas Menethil**, der später zum Lichkönig wurde. Heute schöpfen viele Völker aus dem Licht: Draenei-Verteidiger, Blutritter der Blutelfen und Sonnenläufer der Tauren, die ihre Kraft aus der Sonne ziehen. Ihre Ressource ist **Heilige Kraft**, die sie aufbauen und in starke Fähigkeiten stecken.
+
 ## Die Spezialisierungen
 
-- **Vergeltung** ist die Schadens-Spezialisierung mit Zweihandwaffe. Sie spielt sich direkt und hat mit den **Schwingen** (Zornige Vergeltung) einen spektakulären Burst.
-- **Heilig** ist ein Heiler, der auch im Nahkampf mitmischen kann. Über ein markiertes Ziel, meist den Tank, wird ein Teil seiner Heilung automatisch weitergeleitet, so versorgt er zwei Ziele gleichzeitig.
-- **Schutz** tankt mit Schild und heiligem Licht. Schutzpaladine bringen viel Selbstheilung und Gruppen-Werkzeuge mit.
+### Heilig
+
+Heilig ist der Heiler, der gern in der ersten Reihe steht. Über die **Flamme des Glaubens** wird ein Teil deiner Heilung automatisch an ein zweites Ziel weitergeleitet, meist den Tank. Viele Heilungen sind direkt und sofort, was sich in hektischen Momenten gut anfühlt. In Einsteiger-Ratgebern wird Heilig-Paladin oft als zugänglicher Heiler empfohlen.
+
+**Typische Fähigkeiten:** [**Heiliger Schock**](https://www.wowhead.com/de/spell=20473){target="_blank" rel="noopener"}, [**Flamme des Glaubens**](https://www.wowhead.com/de/spell=53563){target="_blank" rel="noopener"}
+
+### Schutz
+
+Schutz ist der Ritter in glänzender Rüstung, der einen Schild nach Gegnern wirft und sich und die Gruppe mit Licht heilt. Viele Notfall-Knöpfe machen den Schutzpaladin sehr fehlertolerant. Er gilt in vielen Listen als einer der einfachsten Tanks für den Einstieg.
+
+**Typische Fähigkeiten:** [**Schild des Rächers**](https://www.wowhead.com/de/spell=31935){target="_blank" rel="noopener"}, [**Wächter der Uralten Könige**](https://www.wowhead.com/de/spell=86659){target="_blank" rel="noopener"}
+
+### Vergeltung
+
+Vergeltung ist das Schwert des Lichts: große Zweihandwaffe, goldene Flügel und Heiliger Schaden, der in Wellen auf Gegner niedergeht. Du baust Heilige Kraft auf und gibst sie in wuchtigen Schlägen wieder aus. Direkt, verständlich und gerade solo sehr angenehm.
+
+**Typische Fähigkeiten:** [**Urteil des Templers**](https://www.wowhead.com/de/spell=85256){target="_blank" rel="noopener"}, [**Aschewelle**](https://www.wowhead.com/de/spell=255937){target="_blank" rel="noopener"}, [**Göttlicher Sturm**](https://www.wowhead.com/de/spell=53385){target="_blank" rel="noopener"}
 
 ## Für wen ist der Paladin geeignet?
 

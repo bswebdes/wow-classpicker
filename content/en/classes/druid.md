@@ -13,12 +13,35 @@ The Druid is Azeroth's shapeshifter and the only class with **four specializatio
 
 The Druid brings lots of group utility: [**Rebirth**](https://www.wowhead.com/spell=20484){target="_blank" rel="noopener"} brings an ally back in combat, [**Innervate**](https://www.wowhead.com/spell=29166){target="_blank" rel="noopener"} helps healers with Mana, and **Stampeding Roar** speeds up the whole group for a short time.
 
+## Background and lore
+
+Druids guard the balance of nature. The first mortal druid was the night elf **Malfurion Stormrage**, trained by the demigod **Cenarius**. Druids walk the **Emerald Dream**, a primal version of Azeroth, and gather at **Moonglade**, home of the **Cenarion Circle**. Tauren, trolls and worgen have their own druidic traditions too. No other class changes so visibly: bear, cat, moonkin, tree, seal, bird.
+
 ## Specializations
 
-- **Balance** fights from range as a moonkin and switches between solar and lunar magic. Strong against groups and in longer fights.
-- **Feral** prowls as a cat, rakes and makes enemies bleed. A spec for players who enjoy resources and timing.
-- **Guardian** tanks in bear form with lots of armor, a big health pool and self-healing.
-- **Restoration** heals mainly with effects over time, rewarding players who plan ahead.
+### Balance
+
+Balance fights as a moonkin from range and switches between solar and lunar magic. You build **Astral Power** and then make the stars rain down. Strong against groups and with a cosmic look all its own.
+
+**Signature abilities:** [**Starsurge**](https://www.wowhead.com/spell=78674){target="_blank" rel="noopener"}, [**Starfall**](https://www.wowhead.com/spell=191034){target="_blank" rel="noopener"}, [**Celestial Alignment**](https://www.wowhead.com/spell=194223){target="_blank" rel="noopener"}
+
+### Feral
+
+Feral prowls as a cat, tears wounds and makes enemies bleed. You manage energy, combo points and several bleeds at once. Many community lists call Feral one of the hardest specs, but fans find it extremely rewarding.
+
+**Signature abilities:** [**Shred**](https://www.wowhead.com/spell=5221){target="_blank" rel="noopener"}, [**Rip**](https://www.wowhead.com/spell=1079){target="_blank" rel="noopener"}, [**Ferocious Bite**](https://www.wowhead.com/spell=22568){target="_blank" rel="noopener"}
+
+### Guardian
+
+Guardian tanks in bear form with lots of armor, huge health and self-healing. The playstyle is cozy and sturdy. Solo the bear is a very safe choice, and as a tank it is considered easy to learn.
+
+**Signature abilities:** [**Mangle**](https://www.wowhead.com/spell=33917){target="_blank" rel="noopener"}, [**Ironfur**](https://www.wowhead.com/spell=192081){target="_blank" rel="noopener"}, [**Frenzied Regeneration**](https://www.wowhead.com/spell=22842){target="_blank" rel="noopener"}
+
+### Restoration
+
+Restoration heals mostly with effects over time. You spread Rejuvenations ahead of time and let your healing work before the damage arrives. That takes practice and awareness, but it is fun if you like planning ahead.
+
+**Signature abilities:** [**Rejuvenation**](https://www.wowhead.com/spell=774){target="_blank" rel="noopener"}, [**Lifebloom**](https://www.wowhead.com/spell=33763){target="_blank" rel="noopener"}, [**Wild Growth**](https://www.wowhead.com/spell=48438){target="_blank" rel="noopener"}, [**Tranquility**](https://www.wowhead.com/spell=740){target="_blank" rel="noopener"}
 
 ## Who is the Druid for?
 

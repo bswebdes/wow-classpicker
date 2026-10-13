@@ -11,11 +11,29 @@ updated: "2026-10-13"
 
 The Warrior fights with **Rage**, which builds as it deals and takes damage. Classic Warriors are defined by **stances**: Battle, Defensive and Berserker Stance each unlock different abilities, and good Warriors switch between them constantly.
 
+## Background and lore
+
+In the classic world, the warrior is the soldier of the first hour: guards, mercenaries and gladiators of every race. Warriors learn their stances step by step through class quests, Defensive Stance early and Berserker Stance later. Warriors need no spells, only **Rage** and good gear. In Classic especially, leveling was slow with weak gear, but well geared the warrior became the star of every raid.
+
 ## Talent trees
 
-- **Arms** focuses on two-handed weapons and big single hits, popular for leveling and PvP.
-- **Fury** dual-wields and, with good gear, is one of the strongest damage dealers in raids.
-- **Protection** turns the Warrior into a tank with shield, taunts and lots of armor.
+### Arms
+
+Arms is the leveling tree: a big two-handed weapon, Sweeping Strikes against groups and Mortal Strike at the end. In Classic, Arms was also the top choice in PvP, because Mortal Strike weakens healing.
+
+**Signature abilities:** [**Sweeping Strikes**](https://www.wowhead.com/forever/spell=12292){target="_blank" rel="noopener"}, [**Mortal Strike**](https://www.wowhead.com/forever/spell=12294){target="_blank" rel="noopener"}
+
+### Fury
+
+Fury is the damage tree for groups and raids, often with two weapons. With Death Wish and Bloodthirst the warrior hits brutally hard, but needs healers in the back.
+
+**Signature abilities:** [**Death Wish**](https://www.wowhead.com/forever/spell=12328){target="_blank" rel="noopener"}, [**Bloodthirst**](https://www.wowhead.com/forever/spell=23881){target="_blank" rel="noopener"}
+
+### Protection
+
+Protection is the tank tree. In Classic, warriors were the tanks, because hardly any other class could take as much. Shield Slam, Last Stand and Shield Wall make the warrior a rock in the storm.
+
+**Signature abilities:** [**Shield Slam**](https://www.wowhead.com/forever/spell=23922){target="_blank" rel="noopener"}, [**Last Stand**](https://www.wowhead.com/forever/spell=12975){target="_blank" rel="noopener"}, [**Shield Wall**](https://www.wowhead.com/forever/spell=871){target="_blank" rel="noopener"}
 
 ## Who is the Warrior for in Forever?
 

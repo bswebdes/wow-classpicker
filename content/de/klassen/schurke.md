@@ -13,11 +13,29 @@ Der Schurke ist der Meister aus dem Schatten. Er schleicht sich in [**Verstohlen
 
 Dazu kommt ein riesiger Werkzeugkasten aus Kontrolleffekten: [**Kopfnuss**](https://www.wowhead.com/de/spell=6770){target="_blank" rel="noopener"}, [**Blenden**](https://www.wowhead.com/de/spell=2094){target="_blank" rel="noopener"}, [**Tritt**](https://www.wowhead.com/de/spell=1766){target="_blank" rel="noopener"} zum Unterbrechen und [**Verschwinden**](https://www.wowhead.com/de/spell=1856){target="_blank" rel="noopener"} als Fluchtknopf. In Dungeons kann ein Schurke mit [**Verhüllender Nebel**](https://www.wowhead.com/de/spell=114018){target="_blank" rel="noopener"} sogar die ganze Gruppe kurzzeitig tarnen.
 
+## Hintergrund und Lore
+
+Schurken arbeiten im Verborgenen. Die Allianz hat mit **SI:7** einen eigenen Geheimdienst, angeführt von **Mathias Shaw**. Die Blutelfe **Valeera Sanguinar**, Varians Gefährtin aus den Gladiatorentagen, ist eine der bekanntesten Schurkinnen. Und **Garona Halforcen** schrieb als Assassinin Geschichte, als sie König Llane tötete. Schurken kämpfen mit **Energie** und **Combopunkten**: Erst bauen sie Druck auf, dann setzen sie den Finisher.
+
 ## Die Spezialisierungen
 
-- **Meucheln** vergiftet seine Klingen und tötet langsam, aber sicher mit Blutungen und Giften.
-- **Gesetzlosigkeit** ist der Pirat unter den Schurken: Säbel, Pistolenschüsse und eine Prise Würfelglück, die zufällige Buffs verteilt.
-- **Täuschung** springt immer wieder in die Schatten und teilt in kurzen Fenstern enormen Burst-Schaden aus.
+### Meucheln
+
+Meucheln ist die Giftmischerin unter den Schurken. Du vergiftest deine Dolche, legst Blutungen und siehst zu, wie Gegner langsam vergehen. Ruhiger als die anderen Specs, dafür musst du deine Effekte im Blick behalten.
+
+**Typische Fähigkeiten:** [**Verstümmeln**](https://www.wowhead.com/de/spell=1329){target="_blank" rel="noopener"}, [**Vergiften**](https://www.wowhead.com/de/spell=32645){target="_blank" rel="noopener"}, [**Todesmal**](https://www.wowhead.com/de/spell=360194){target="_blank" rel="noopener"}
+
+### Gesetzlosigkeit
+
+Gesetzlosigkeit ist der Pirat: Säbel, Pistolenschüsse und ein Würfelwurf, der zufällige Buffs verteilt. Das macht die Spec lebendig und ein wenig chaotisch. Viele Ratgeber zählen sie zu den anspruchsvolleren Specs, weil du ständig auf neue Effekte reagierst.
+
+**Typische Fähigkeiten:** [**Schicksalswürfel**](https://www.wowhead.com/de/spell=315508){target="_blank" rel="noopener"}, [**Zwischen die Augen**](https://www.wowhead.com/de/spell=315341){target="_blank" rel="noopener"}, [**Adrenalinrausch**](https://www.wowhead.com/de/spell=13750){target="_blank" rel="noopener"}
+
+### Täuschung
+
+Täuschung ist der Ninja. Du tauchst immer wieder in die Schatten ab und teilst in kurzen Fenstern enormen Schaden aus. Wenn ein Burst-Fenster perfekt sitzt, fühlt sich das großartig an. Wer Timing liebt, wird hier glücklich.
+
+**Typische Fähigkeiten:** [**Schattentanz**](https://www.wowhead.com/de/spell=185313){target="_blank" rel="noopener"}, [**Schattenschlag**](https://www.wowhead.com/de/spell=185438){target="_blank" rel="noopener"}, [**Schattenklingen**](https://www.wowhead.com/de/spell=121471){target="_blank" rel="noopener"}
 
 ## Für wen ist der Schurke geeignet?
 

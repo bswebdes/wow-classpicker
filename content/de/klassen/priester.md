@@ -13,11 +13,29 @@ Der Priester ist der klassische Heiler von Azeroth, kann aber genauso gut die du
 
 Priester bringen besondere Gruppenwerkzeuge mit: [**Glaubenssprung**](https://www.wowhead.com/de/spell=73325){target="_blank" rel="noopener"} zieht einen Mitspieler aus der Gefahr, [**Massenbannung**](https://www.wowhead.com/de/spell=32375){target="_blank" rel="noopener"} entfernt Effekte von vielen Zielen, und [**Machtwort: Seelenstärke**](https://www.wowhead.com/de/spell=21562){target="_blank" rel="noopener"} ist ein Buff, den jede Gruppe will.
 
+## Hintergrund und Lore
+
+Priester dienen dem Licht, der Mondgöttin **Elune** oder den Schatten. Menschen und Zwerge folgen der Kirche des Heiligen Lichts, Nachtelfen-Priesterinnen wie **Tyrande Wisperwind** beten zu Elune, und die Verlassenen haben einen eigenen, dunkleren Glauben. Der bekannteste Priester ist **Anduin Wrynn**, der junge König von Sturmwind, der lieber heilt als kämpft. Schattenpriester zeigen, dass Glaube auch in die Leere führen kann.
+
 ## Die Spezialisierungen
 
-- **Disziplin** heilt auf ungewöhnliche Art: Mit [**Machtwort: Schild**](https://www.wowhead.com/de/spell=17){target="_blank" rel="noopener"} verhindert sie Schaden, bevor er entsteht, und über [**Abbitte**](https://www.wowhead.com/de/spell=81749){target="_blank" rel="noopener"} wird Schaden an Gegnern zu Heilung für die Gruppe.
-- **Heilig** ist der reine Heiler mit großen Heilzaubern, Flächenheilung und starken Notfall-Fähigkeiten.
-- **Schatten** ist die Schadens-Spezialisierung. Schattenpriester belegen Gegner mit Schaden über Zeit und bauen **Wahnsinn** auf, um ihre stärksten Zauber zu entfesseln.
+### Disziplin
+
+Disziplin heilt auf ungewöhnliche Art: Mit [**Machtwort: Schild**](https://www.wowhead.com/de/spell=17){target="_blank" rel="noopener"} verhindert sie Schaden, bevor er entsteht, und über [**Abbitte**](https://www.wowhead.com/de/spell=81749){target="_blank" rel="noopener"} wird Schaden an Gegnern zu Heilung für die Gruppe. Du heilst also, indem du angreifst. Das ist eine eigene Denkweise, die vielen sehr viel Spaß macht. In PvP-Listen gilt Disziplin oft als einsteigerfreundlich.
+
+**Typische Fähigkeiten:** [**Sühne**](https://www.wowhead.com/de/spell=47540){target="_blank" rel="noopener"}, [**Machtwort: Glanz**](https://www.wowhead.com/de/spell=194509){target="_blank" rel="noopener"}
+
+### Heilig
+
+Heilig ist der klassische Heiler: große Heilzauber, Flächenheilung und starke Notfall-Knöpfe, wenn es eng wird. Das Spielgefühl ist reaktiv und übersichtlich. Heilig-Priester wird in Einsteiger-Ratgebern oft als guter erster Heiler genannt.
+
+**Typische Fähigkeiten:** [**Segenswort: Epiphanie**](https://www.wowhead.com/de/spell=2050){target="_blank" rel="noopener"}, [**Schutzgeist**](https://www.wowhead.com/de/spell=47788){target="_blank" rel="noopener"}, [**Gotteshymne**](https://www.wowhead.com/de/spell=64843){target="_blank" rel="noopener"}
+
+### Schatten
+
+Schatten ist der Priester, der der Leere zu nahe gekommen ist. Du belegst Gegner mit Schaden über Zeit, baust **Wahnsinn** auf und entfesselst dann Tentakel und dunkle Visionen. Düster, stimmungsvoll und mittel anspruchsvoll.
+
+**Typische Fähigkeiten:** [**Gedankenschinden**](https://www.wowhead.com/de/spell=15407){target="_blank" rel="noopener"}, [**Vampirberührung**](https://www.wowhead.com/de/spell=34914){target="_blank" rel="noopener"}, [**Schattenwort: Schmerz**](https://www.wowhead.com/de/spell=589){target="_blank" rel="noopener"}
 
 ## Für wen ist der Priester geeignet?
 

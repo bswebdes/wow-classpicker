@@ -13,11 +13,29 @@ Der Krieger ist der Inbegriff des Nahkämpfers: schwere Plattenrüstung, große 
 
 Mit [**Sturmangriff**](https://www.wowhead.com/de/spell=100){target="_blank" rel="noopener"} und [**Heldenhafter Sprung**](https://www.wowhead.com/de/spell=6544){target="_blank" rel="noopener"} ist der Krieger schnell am Gegner. Fähigkeiten wie [**Siegesrausch**](https://www.wowhead.com/de/spell=34428){target="_blank" rel="noopener"} heilen ihn nebenbei, was das Solo-Spiel deutlich entspannter macht, als man einer Klasse ohne Heilzauber zutraut.
 
+## Hintergrund und Lore
+
+Krieger gibt es bei fast jedem Volk Azeroths, denn Waffen und Mut braucht jede Armee. Viele der bekanntesten Figuren der Spielgeschichte sind Krieger: **Varian Wrynn**, der König von Sturmwind, der als Gladiator „Lo'Gosh“ in den Arenen kämpfte, oder **Garrosh Höllschrei**, der Kriegshäuptling der Horde, der später selbst zum Endboss wurde. Krieger brauchen keine Magie. Ihre Kraft ist **Wut**, die mit jedem Treffer wächst, den sie austeilen oder einstecken.
+
 ## Die Spezialisierungen
 
-- **Waffen** setzt auf eine große Zweihandwaffe und wuchtige Einzelschläge. Das Spielgefühl ist geplant und rhythmisch: Debuffs setzen, dann mit voller Wucht zuschlagen.
-- **Furor** führt zwei Waffen gleichzeitig und spielt sich schnell und hektisch. Im Wutanfall schlägt der Krieger ununterbrochen zu und heilt sich dabei.
-- **Schutz** ist die Tank-Spezialisierung mit Schild. Schutzkrieger blocken, absorbieren und halten Gegnergruppen mit Spott und Flächenschaden fest.
+### Waffen
+
+Waffen ist der Krieger mit der großen Zweihandwaffe und der Spec für Leute, die Rhythmus mögen. Du bereitest den Gegner vor, wartest auf das richtige Fenster und schlägst dann mit voller Wucht zu. Die Fantasy: ein erfahrener Veteran, bei dem jeder Hieb sitzt. Etwas mehr Planung als Furor, aber gut zu lernen.
+
+**Typische Fähigkeiten:** [**Tödlicher Stoß**](https://www.wowhead.com/de/spell=12294){target="_blank" rel="noopener"}, [**Kolossales Schmettern**](https://www.wowhead.com/de/spell=167105){target="_blank" rel="noopener"}, [**Klingensturm**](https://www.wowhead.com/de/spell=227847){target="_blank" rel="noopener"}
+
+### Furor
+
+Furor führt zwei Waffen und spielt sich wie ein Rausch. Du hältst den Krieger im **Wutanfall**, schlägst fast ununterbrochen zu und heilst dich dabei. Wenige Knöpfe, viel Tempo, viel Spaß. Furor wird in vielen Community-Listen als einer der leichtesten Nahkämpfer genannt.
+
+**Typische Fähigkeiten:** [**Blutdurst**](https://www.wowhead.com/de/spell=23881){target="_blank" rel="noopener"}, [**Toben**](https://www.wowhead.com/de/spell=184367){target="_blank" rel="noopener"}, [**Tollkühnheit**](https://www.wowhead.com/de/spell=1719){target="_blank" rel="noopener"}
+
+### Schutz
+
+Schutz ist der Tank mit Schild, der Gegner mit Sprüngen und Spott sammelt und dann einfach stehen bleibt. Du blockst, fängst Schaden ab und haust mit dem Schild zurück. Wer sich gern zwischen Gruppe und Gefahr stellt, fühlt sich hier zu Hause.
+
+**Typische Fähigkeiten:** [**Schildschlag**](https://www.wowhead.com/de/spell=23922){target="_blank" rel="noopener"}, [**Zähne zusammenbeißen**](https://www.wowhead.com/de/spell=190456){target="_blank" rel="noopener"}, [**Letztes Gefecht**](https://www.wowhead.com/de/spell=12975){target="_blank" rel="noopener"}
 
 ## Für wen ist der Krieger geeignet?
 

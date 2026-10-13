@@ -13,11 +13,29 @@ The Evoker is WoW's newest class and closely tied to the draconic Dracthyr. It w
 
 Its standout feature is **empowered spells**: you hold the key, charge the spell through several stages and release it at the right moment. Besides Mana, the Evoker uses **Essence** as a resource. With [**Soar**](https://www.wowhead.com/spell=369536){target="_blank" rel="noopener"} and [**Hover**](https://www.wowhead.com/spell=358267){target="_blank" rel="noopener"} it is also very mobile.
 
+## Background and lore
+
+Evokers are **dracthyr**, a draconic race created by the black Dragon Aspect **Neltharion** before he became Deathwing. They were sealed away for ages and only awakened in Dragonflight. Evokers combine the magic of all five dragonflights: red for life and fire, blue for magic, green for the Dream, bronze for time and black for earth. They fight at mid range and can charge up spells to empower them.
+
 ## Specializations
 
-- **Devastation** is the damage spec with Fire Breath and Disintegrate. Strong against groups of enemies and full of burst.
-- **Preservation** heals with dream and time magic. With empowered heals and time spells, the Evoker can even rewind damage.
-- **Augmentation** is unique: a damage spec that mainly makes other players stronger. Its contribution often doesn't show up properly on damage meters.
+### Devastation
+
+Devastation is the damage evoker with red and blue dragon magic: Fire Breath, Disintegrate and empowered spells that hit whole groups. Short range, lots of burst and a strong dragon feel. Some guides list Devastation among the beginner friendly ranged specs.
+
+**Signature abilities:** [**Eternity Surge**](https://www.wowhead.com/spell=359073){target="_blank" rel="noopener"}, [**Dragonrage**](https://www.wowhead.com/spell=375087){target="_blank" rel="noopener"}
+
+### Preservation
+
+Preservation heals with green Dream magic and bronze time magic. Empowered heals and Echoes double up your spells, and time spells can even undo damage. A creative healer for everyone who likes to experiment.
+
+**Signature abilities:** [**Dream Breath**](https://www.wowhead.com/spell=355936){target="_blank" rel="noopener"}, [**Echo**](https://www.wowhead.com/spell=364343){target="_blank" rel="noopener"}
+
+### Augmentation
+
+Augmentation is special: a damage specialization with black and bronze magic that mostly makes other players stronger. Its contribution often barely shows on the damage meter. Perfect if you like pulling strings in the background, but demanding in groups.
+
+**Signature abilities:** [**Ebon Might**](https://www.wowhead.com/spell=395152){target="_blank" rel="noopener"}, [**Prescience**](https://www.wowhead.com/spell=409311){target="_blank" rel="noopener"}, [**Breath of Eons**](https://www.wowhead.com/spell=403631){target="_blank" rel="noopener"}
 
 ## Who is the Evoker for?
 

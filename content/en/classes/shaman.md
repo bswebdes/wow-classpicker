@@ -13,11 +13,29 @@ The Shaman speaks with the elements: earth, fire, water and air fight at its sid
 
 Its trademark is **totems**, placed on the ground to empower allies or hinder enemies. Then there is [**Bloodlust**](https://www.wowhead.com/spell=2825){target="_blank" rel="noopener"} or [**Heroism**](https://www.wowhead.com/spell=32182){target="_blank" rel="noopener"}, a powerful group buff for the decisive moment. And if everything goes wrong, the Shaman can bring itself back with [**Reincarnation**](https://www.wowhead.com/spell=20608){target="_blank" rel="noopener"}.
 
+## Background and lore
+
+Shamans speak with the **elements**: earth, fire, water and air. They ask the spirits for help rather than commanding them. The most famous shaman is **Thrall**, who led the Horde to Kalimdor and later helped the **Earthen Ring** hold the world together. Shamans place totems that help their allies, and they wear mail armor.
+
 ## Specializations
 
-- **Elemental** hurls lightning and lava from range. Chain Lightning and Earthquake make it strong against groups of enemies.
-- **Enhancement** is the melee Shaman with two weapons, channeling elemental magic into its strikes and unleashing it as instant spells.
-- **Restoration** heals with waves, rain and totems. It shines when the group stands close together.
+### Elemental
+
+Elemental hurls lightning and lava from range. Chain Lightning and Earthquake make the shaman strong against groups, and when a Lava Burst crits, it hits hard. Easy to understand, with some spells that need you to stand still briefly.
+
+**Signature abilities:** [**Lava Burst**](https://www.wowhead.com/spell=51505){target="_blank" rel="noopener"}, [**Stormkeeper**](https://www.wowhead.com/spell=191634){target="_blank" rel="noopener"}
+
+### Enhancement
+
+Enhancement is a storm in melee: two weapons, elemental magic in every strike and spirit wolves at your side. Many effects interlock, which is why many lists rank Enhancement among the most demanding specs. When it flows, though, it feels fantastic.
+
+**Signature abilities:** [**Lava Lash**](https://www.wowhead.com/spell=60103){target="_blank" rel="noopener"}, [**Feral Spirit**](https://www.wowhead.com/spell=51533){target="_blank" rel="noopener"}
+
+### Restoration
+
+Restoration heals with waves, rain and totems. The shaman shines when the group stands close together. One totem can even equalize the group's health and save allies that way.
+
+**Signature abilities:** [**Riptide**](https://www.wowhead.com/spell=61295){target="_blank" rel="noopener"}, [**Healing Tide Totem**](https://www.wowhead.com/spell=108280){target="_blank" rel="noopener"}, [**Spirit Link Totem**](https://www.wowhead.com/spell=98008){target="_blank" rel="noopener"}
 
 ## Who is the Shaman for?
 

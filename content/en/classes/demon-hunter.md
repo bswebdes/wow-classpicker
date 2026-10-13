@@ -13,11 +13,27 @@ The Demon Hunter took demonic power into itself to fight the Burning Legion with
 
 Its resource is **Fury**. With [**Metamorphosis**](https://www.wowhead.com/spell=191427){target="_blank" rel="noopener"} it turns into a demon and becomes much stronger for a short time. [**Spectral Sight**](https://www.wowhead.com/spell=188501){target="_blank" rel="noopener"} even lets it see enemies through walls.
 
+## Background and lore
+
+Demon hunters are elves who take demonic magic into themselves to beat the Burning Legion with its own weapons. Their leader was **Illidan Stormrage**, the Betrayer, who sacrificed everything for his goals. His followers, the **Illidari**, gave up their eyesight and have seen with demonic sight ever since. The class became playable in Legion, where every demon hunter's story begins on the demon world **Mardum**.
+
 ## Specializations
 
-- **Havoc** is the classic melee Demon Hunter: fast, fluid and known for its [**Eye Beam**](https://www.wowhead.com/spell=198013){target="_blank" rel="noopener"}. It is considered relatively easy to learn.
-- **Vengeance** tanks with Soul Fragments and Sigils that control enemies. Lots of self-healing and mobility for a tank.
-- **Devourer** is the new spec added in Midnight. Instead of fel magic it uses the **Void** and fights from mid-range, while keeping the full mobility of a Demon Hunter.
+### Havoc
+
+Havoc is the classic melee demon hunter: fast, fluid and with [**Eye Beam**](https://www.wowhead.com/spell=198013){target="_blank" rel="noopener"} as its signature. Double jump, glide and Fel Rush make it the most mobile class in the game. Considered relatively easy to learn.
+
+**Signature abilities:** [**Blade Dance**](https://www.wowhead.com/spell=188499){target="_blank" rel="noopener"}
+
+### Vengeance
+
+Vengeance tanks with soul fragments and sigils that control enemies. Lots of self-healing and mobility for a tank. Vengeance does very well solo and shows up in many solo guides.
+
+**Signature abilities:** [**Spirit Bomb**](https://www.wowhead.com/spell=247454){target="_blank" rel="noopener"}, [**Sigil of Flame**](https://www.wowhead.com/spell=204596){target="_blank" rel="noopener"}, [**Demon Spikes**](https://www.wowhead.com/spell=203720){target="_blank" rel="noopener"}
+
+### Devourer
+
+Devourer is the new specialization from Midnight. Instead of fel magic it draws on the **Void** and fights from mid range, while keeping a demon hunter's full mobility. That fits Midnight's story, in which the Void plays a big role. Some guides already name Devourer a good entry into ranged combat.
 
 ## Who is the Demon Hunter for?
 

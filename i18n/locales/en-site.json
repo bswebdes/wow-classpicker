@@ -1,4 +1,9 @@
 {
+  "colors": {
+    "copy": "Click to copy",
+    "copied": "Copied!",
+    "gridLabel": "All class colors"
+  },
   "nav": {
     "picker": "Arena",
     "classes": "Classes",
@@ -50,6 +55,7 @@
     "soloHint": "How well the class handles content on its own",
     "ourRating": "Our take",
     "ratingNote": "These ratings help you pick a class. They are not a DPS ranking, and balance shifts with every patch.",
+    "ratingMethod": "How we rate",
     "fightInPicker": "Send it into the arena",
     "allClasses": "All classes",
     "otherClasses": "More classes",

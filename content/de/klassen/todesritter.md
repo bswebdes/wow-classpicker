@@ -13,11 +13,29 @@ Der Todesritter ist ein gefallener Held, der als Untoter zurückgekehrt ist. Er 
 
 Typisch für den Todesritter ist [**Todesgriff**](https://www.wowhead.com/de/spell=49576){target="_blank" rel="noopener"}, mit dem er Gegner zu sich heranzieht, und [**Todesstoß**](https://www.wowhead.com/de/spell=49998){target="_blank" rel="noopener"}, der umso stärker heilt, je mehr Schaden er zuvor erlitten hat. [**Antimagische Hülle**](https://www.wowhead.com/de/spell=48707){target="_blank" rel="noopener"} schützt ihn vor Zaubern. Todesritter beginnen ihr Abenteuer in einem eigenen Startgebiet mit einer starken Story.
 
+## Hintergrund und Lore
+
+Todesritter sind gefallene Helden, die der **Lichkönig** als untote Krieger zurückholte. Ihre Festung war die Nekropole **Acherus**. Unter **Darion Mograine** sagten sie sich in der Kapelle des Hoffnungslichts von ihm los und gründeten die **Ritter der Schwarzen Klinge**. Seitdem kämpfen sie aus eigenem Willen. Todesritter nutzen **Runen** und **Runenmacht** und sind die einzige Klasse mit Blut-, Frost- und Unheilig-Magie.
+
 ## Die Spezialisierungen
 
-- **Blut** ist eine der beliebtesten Tank-Spezialisierungen: enorme Selbstheilung, viel Kontrolle und ein ausgesprochen robustes Spielgefühl.
-- **Frost** führt zwei Waffen oder eine große Zweihandwaffe und haut mit eisigen Schlägen zu. Die Spielweise ist schnell und direkt.
-- **Unheilig** befehligt untote Diener, verbreitet Seuchen und ruft im richtigen Moment eine ganze Armee herbei.
+### Blut
+
+Blut ist der Vampir unter den Tanks: Je mehr Schaden du nimmst, desto stärker heilst du dich. Du baust Knochenschilde auf, saugst Gegnern das Leben aus und lässt im Notfall eine Runenwaffe für dich tanzen. Solo kaum totzukriegen, deshalb in Solo-Ratgebern fast immer weit oben.
+
+**Typische Fähigkeiten:** [**Markzerfetzer**](https://www.wowhead.com/de/spell=195182){target="_blank" rel="noopener"}, [**Herzstoß**](https://www.wowhead.com/de/spell=206930){target="_blank" rel="noopener"}, [**Tanzende Runenwaffe**](https://www.wowhead.com/de/spell=49028){target="_blank" rel="noopener"}
+
+### Frost
+
+Frost führt zwei Waffen oder eine große Zweihandwaffe und schlägt mit eisigen Hieben zu. Die Spielweise ist schnell und direkt. Die Fantasy: der kalte, gnadenlose Ritter aus Nordend.
+
+**Typische Fähigkeiten:** [**Auslöschen**](https://www.wowhead.com/de/spell=49020){target="_blank" rel="noopener"}, [**Säule des Frosts**](https://www.wowhead.com/de/spell=51271){target="_blank" rel="noopener"}
+
+### Unheilig
+
+Unheilig ist der Nekromant im Plattenpanzer. Ein Ghul begleitet dich immer, du verbreitest Seuchen und rufst im richtigen Moment Untote herbei. Mehr zu verwalten als Frost, dafür eine sehr starke Pet-Fantasy.
+
+**Typische Fähigkeiten:** [**Schwärender Stoß**](https://www.wowhead.com/de/spell=85948){target="_blank" rel="noopener"}, [**Apokalypse**](https://www.wowhead.com/de/spell=275699){target="_blank" rel="noopener"}, [**Dunkle Transformation**](https://www.wowhead.com/de/spell=63560){target="_blank" rel="noopener"}
 
 ## Für wen ist der Todesritter geeignet?
 

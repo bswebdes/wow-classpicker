@@ -25,6 +25,9 @@ Stand: 13.10.2026 · live auf [findyourmain.com](https://findyourmain.com), Bran
 - [x] Forever: 9 Klassenseiten, Völker-Klassen-Matrix (56 Kombinationen), Quiz, Zufall mit Volk und Fraktion
 - [x] 8 Ratgeber: Klassenwahl, Anfänger, Solo, Tanks, Heiler, Klassenfarben, Forever-Klassenwahl, Forever-Völker
 - [x] Über-uns-Seite mit Quellen und Bewertungsmethode
+- [x] Bewertungsmethodik (Einstieg: Fehlertoleranz, Rotation, Ressourcen, Positionierung; Solo) auf der Über-uns-Seite, mit Community-Quellen abgeglichen, aus der Bewertungsbox jeder Klassenseite verlinkt
+- [x] Klassenseiten erweitert (Retail und Forever, DE/EN): Lore-Abschnitt und eigener Abschnitt je Spezialisierung bzw. Talentbaum mit Spielgefühl und typischen Fähigkeiten (alle IDs per Wowhead-Tooltip-API geprüft)
+- [x] Klassenfarben-Ratgeber: Farbkacheln und Farbfelder in der Tabelle, Klick kopiert den Hex-Code
 - [x] Arena übernimmt Klassen per `?classes=` (aus Quiz, Klassenseiten, Ratgebern)
 
 ### SEO & GEO
@@ -105,7 +108,9 @@ Stand: 13.10.2026 · live auf [findyourmain.com](https://findyourmain.com), Bran
 
 ### Fachlich
 - [x] Forever-Arena: Classic-Fähigkeiten statt späterer Retail-Fähigkeiten (u. a. Hammer des Zorns, Schattenblitz, Totstellen)
-- [ ] Bewertungen (Einstieg, Solo) und Quiz-Gewichtung gegenlesen (`app/utils/classInfo.ts`, `foreverInfo.ts`, `quiz.ts`)
+- [x] Bewertungen (Einstieg, Solo) mit Community-Quellen abgeglichen: Werte passen, keine Änderung nötig
+- [ ] Quiz-Gewichtung gegenlesen (`app/utils/quiz.ts`)
+- [ ] Forever-Lore nach dem Start prüfen: Übernimmt Forever die Classic-Klassenquests (Haltungen, Totems, Dämonen, Reittiere)?
 - [ ] Deutschen Namen der Skyborne-Fraktionen klären, falls Blizzard einen veröffentlicht
 
 ## 💡 Ideen / Ausbau

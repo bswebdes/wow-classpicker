@@ -1,4 +1,9 @@
 {
+  "colors": {
+    "copy": "Klicken zum Kopieren",
+    "copied": "Kopiert!",
+    "gridLabel": "Alle Klassenfarben"
+  },
   "nav": {
     "picker": "Arena",
     "classes": "Klassen",
@@ -50,6 +55,7 @@
     "soloHint": "Wie gut die Klasse allein zurechtkommt",
     "ourRating": "Unsere Einschätzung",
     "ratingNote": "Die Bewertungen sind eine Orientierung für die Klassenwahl, keine DPS-Rangliste. Die aktuelle Balance ändert sich mit jedem Patch.",
+    "ratingMethod": "Wie wir bewerten",
     "fightInPicker": "In der Arena antreten lassen",
     "allClasses": "Alle Klassen",
     "otherClasses": "Weitere Klassen",

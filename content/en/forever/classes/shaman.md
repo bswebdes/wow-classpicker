@@ -11,11 +11,29 @@ updated: "2026-10-13"
 
 The Shaman places **totems** of the four elements that empower the group or hinder enemies. It heals with [**Chain Heal**](https://www.wowhead.com/forever/spell=1064){target="_blank" rel="noopener"}, throws lightning and empowers its weapon, for example with [**Windfury Weapon**](https://www.wowhead.com/forever/spell=8232){target="_blank" rel="noopener"}. [**Reincarnation**](https://www.wowhead.com/forever/spell=20608){target="_blank" rel="noopener"} lets it bring itself back to life.
 
+## Background and lore
+
+In the classic world, the shaman earns each element one at a time: class quests grant the totems for earth, fire, water and air in turn. In Classic the shaman belonged only to the Horde, just as the paladin belonged to the Alliance. Shamans heal, fight with lightning and weapon, and wear leather at first, mail later.
+
 ## Talent trees
 
-- **Elemental** focuses on lightning and fire spells from range.
-- **Enhancement** turns the Shaman into a melee fighter with heavy weapon strikes.
-- **Restoration** is the healing tree with strong group healing.
+### Elemental
+
+Elemental hurls lightning from range. Chain Lightning jumps from enemy to enemy, and with the right talents your spells crit hard. The fantasy of the lord of storm and thunder.
+
+**Signature abilities:** [**Chain Lightning**](https://www.wowhead.com/forever/spell=421){target="_blank" rel="noopener"}
+
+### Enhancement
+
+Enhancement fights in melee with a two-handed weapon. Stormstrike and Windfury make for big, random hits that are a lot of fun while leveling.
+
+**Signature abilities:** [**Stormstrike**](https://www.wowhead.com/forever/spell=17364){target="_blank" rel="noopener"}
+
+### Restoration
+
+Restoration is the healing tree. Mana Tide Totem keeps the group's mana up, and Nature's Swiftness saves the day with an instant big heal. Chain Heal is the classic for groups.
+
+**Signature abilities:** [**Mana Tide Totem**](https://www.wowhead.com/forever/spell=16190){target="_blank" rel="noopener"}, [**Nature's Swiftness**](https://www.wowhead.com/forever/spell=16188){target="_blank" rel="noopener"}
 
 ## Who is the Shaman for in Forever?
 

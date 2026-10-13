@@ -18,21 +18,26 @@ Every class in World of Warcraft has a fixed color you see in party frames, chat
 
 ## All class colors at a glance
 
+Click a color to copy its hex code.
+
+::class-color-grid
+::
+
 | Class | Hex | RGB | RGB (0–1, for addons) |
 | --- | --- | --- | --- |
-| [Death Knight](/en/classes/death-knight) | `#C41E3A` | 196, 30, 58 | 0.769, 0.118, 0.227 |
-| [Demon Hunter](/en/classes/demon-hunter) | `#A330C9` | 163, 48, 201 | 0.639, 0.188, 0.788 |
-| [Druid](/en/classes/druid) | `#FF7C0A` | 255, 124, 10 | 1.000, 0.486, 0.039 |
-| [Evoker](/en/classes/evoker) | `#33937F` | 51, 147, 127 | 0.200, 0.576, 0.498 |
-| [Hunter](/en/classes/hunter) | `#AAD372` | 170, 211, 114 | 0.667, 0.827, 0.447 |
-| [Mage](/en/classes/mage) | `#3FC7EB` | 63, 199, 235 | 0.247, 0.780, 0.922 |
-| [Monk](/en/classes/monk) | `#00FF98` | 0, 255, 152 | 0.000, 1.000, 0.596 |
-| [Paladin](/en/classes/paladin) | `#F48CBA` | 244, 140, 186 | 0.957, 0.549, 0.729 |
-| [Priest](/en/classes/priest) | `#FFFFFF` | 255, 255, 255 | 1.000, 1.000, 1.000 |
-| [Rogue](/en/classes/rogue) | `#FFF468` | 255, 244, 104 | 1.000, 0.957, 0.408 |
-| [Shaman](/en/classes/shaman) | `#0070DD` | 0, 112, 221 | 0.000, 0.439, 0.867 |
-| [Warlock](/en/classes/warlock) | `#8788EE` | 135, 136, 238 | 0.529, 0.533, 0.933 |
-| [Warrior](/en/classes/warrior) | `#C69B6D` | 198, 155, 109 | 0.776, 0.608, 0.427 |
+| [Death Knight](/en/classes/death-knight) | :color-swatch{hex="#C41E3A"} | 196, 30, 58 | 0.769, 0.118, 0.227 |
+| [Demon Hunter](/en/classes/demon-hunter) | :color-swatch{hex="#A330C9"} | 163, 48, 201 | 0.639, 0.188, 0.788 |
+| [Druid](/en/classes/druid) | :color-swatch{hex="#FF7C0A"} | 255, 124, 10 | 1.000, 0.486, 0.039 |
+| [Evoker](/en/classes/evoker) | :color-swatch{hex="#33937F"} | 51, 147, 127 | 0.200, 0.576, 0.498 |
+| [Hunter](/en/classes/hunter) | :color-swatch{hex="#AAD372"} | 170, 211, 114 | 0.667, 0.827, 0.447 |
+| [Mage](/en/classes/mage) | :color-swatch{hex="#3FC7EB"} | 63, 199, 235 | 0.247, 0.780, 0.922 |
+| [Monk](/en/classes/monk) | :color-swatch{hex="#00FF98"} | 0, 255, 152 | 0.000, 1.000, 0.596 |
+| [Paladin](/en/classes/paladin) | :color-swatch{hex="#F48CBA"} | 244, 140, 186 | 0.957, 0.549, 0.729 |
+| [Priest](/en/classes/priest) | :color-swatch{hex="#FFFFFF"} | 255, 255, 255 | 1.000, 1.000, 1.000 |
+| [Rogue](/en/classes/rogue) | :color-swatch{hex="#FFF468"} | 255, 244, 104 | 1.000, 0.957, 0.408 |
+| [Shaman](/en/classes/shaman) | :color-swatch{hex="#0070DD"} | 0, 112, 221 | 0.000, 0.439, 0.867 |
+| [Warlock](/en/classes/warlock) | :color-swatch{hex="#8788EE"} | 135, 136, 238 | 0.529, 0.533, 0.933 |
+| [Warrior](/en/classes/warrior) | :color-swatch{hex="#C69B6D"} | 198, 155, 109 | 0.776, 0.608, 0.427 |
 
 ## What are class colors used for?
 

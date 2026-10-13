@@ -11,11 +11,29 @@ updated: "2026-10-13"
 
 Der Priester heilt mit großen Heilzaubern, schützt mit [**Machtwort: Schild**](https://www.wowhead.com/forever/de/spell=17){target="_blank" rel="noopener"} und stärkt die Gruppe mit [**Machtwort: Seelenstärke**](https://www.wowhead.com/forever/de/spell=1243){target="_blank" rel="noopener"}. In der [**Schattengestalt**](https://www.wowhead.com/forever/de/spell=15473){target="_blank" rel="noopener"} wird er zum Schadensausteiler mit Schaden über Zeit. [**Gedankenkontrolle**](https://www.wowhead.com/forever/de/spell=605){target="_blank" rel="noopener"} und [**Psychischer Schrei**](https://www.wowhead.com/forever/de/spell=8122){target="_blank" rel="noopener"} sorgen für Kontrolle.
 
+## Hintergrund und Lore
+
+In der klassischen Welt hatte jedes Priester-Volk eigene Zauber: Zwerge schützten mit **Furchtzauberschutz** vor Furcht, Nachtelfen riefen Sternensplitter herab, Untote verbreiteten eine verschlingende Seuche. So fühlte sich derselbe Priester bei jedem Volk ein wenig anders an. Wer bis zum Ende spielte, konnte über eine Questreihe aus dem Geschmolzenen Kern einen epischen Stab für Licht oder Schatten erhalten.
+
 ## Die Talentbäume
 
-- **Disziplin** verbessert Schilde, Mana-Effizienz und Unterstützung.
-- **Heilig** ist der Baum des reinen Heilers.
-- **Schatten** schaltet die Schattengestalt frei und ist die beste Wahl zum Leveln.
+### Disziplin
+
+Disziplin stärkt Schilde, Mana und Unterstützung. Mit Seele der Macht machst du einen Verbündeten kurzzeitig stärker, und Innerer Fokus macht deinen nächsten Zauber kostenlos. Ein Baum für Spieler, die andere glänzen lassen.
+
+**Typische Fähigkeiten:** [**Seele der Macht**](https://www.wowhead.com/forever/de/spell=10060){target="_blank" rel="noopener"}, [**Innerer Fokus**](https://www.wowhead.com/forever/de/spell=14751){target="_blank" rel="noopener"}
+
+### Heilig
+
+Heilig ist der reine Heiler. Mit dem Brunnen des Lichts stellst du eine Heilquelle auf, und selbst nach dem Tod heilt der Geist der Erlösung noch weiter. Der klassische Schlachtzugsheiler.
+
+**Typische Fähigkeiten:** [**Brunnen des Lichts**](https://www.wowhead.com/forever/de/spell=724){target="_blank" rel="noopener"}, [**Geist der Erlösung**](https://www.wowhead.com/forever/de/spell=20711){target="_blank" rel="noopener"}
+
+### Schatten
+
+Schatten ist der Schadensbaum. In der Schattengestalt schindest du Gedanken, belegst Gegner mit Schmerz und heilst dich über die Vampirumarmung. Beim Leveln die angenehmste Wahl für Priester.
+
+**Typische Fähigkeiten:** [**Schattengestalt**](https://www.wowhead.com/forever/de/spell=15473){target="_blank" rel="noopener"}, [**Gedankenschinden**](https://www.wowhead.com/forever/de/spell=15407){target="_blank" rel="noopener"}, [**Vampirumarmung**](https://www.wowhead.com/forever/de/spell=15286){target="_blank" rel="noopener"}
 
 ## Für wen ist der Priester in Forever geeignet?
 

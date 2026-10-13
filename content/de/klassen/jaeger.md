@@ -13,11 +13,29 @@ Der Jäger kämpft mit Bogen, Gewehr oder Speer und hat oft einen tierischen Beg
 
 Mit [**Totstellen**](https://www.wowhead.com/de/spell=5384){target="_blank" rel="noopener"}, [**Rückzug**](https://www.wowhead.com/de/spell=781){target="_blank" rel="noopener"} und [**Aspekt der Schildkröte**](https://www.wowhead.com/de/spell=186265){target="_blank" rel="noopener"} hat der Jäger starke Werkzeuge, um gefährlichen Situationen zu entkommen. Das macht ihn zu einer der sichersten Klassen beim Leveln und in Solo-Inhalten.
 
+## Hintergrund und Lore
+
+Jäger sind Fährtenleser, Schützen und Tierfreunde. Die bekanntesten kommen aus dem Haus **Windläufer**: **Sylvanas** war Waldläufer-Generalin von Quel'Thalas, bevor sie zur Bansheekönigin wurde, und ihre Schwester **Alleria** gehört zu den besten Bogenschützen der Allianz. Auf der Seite der Horde ist der Halboger **Rexxar** mit seinem Bären Misha der Inbegriff des Tierherrn. Fast jedes Volk kann Jäger werden, und Begleiter zähmst du in der ganzen Welt.
+
 ## Die Spezialisierungen
 
-- **Tierherrschaft** ist die Pet-Spezialisierung schlechthin. Dein Tier macht einen großen Teil des Schadens, und fast alle Fähigkeiten kannst du in der Bewegung einsetzen. Gilt als eine der einfachsten Specs im ganzen Spiel.
-- **Treffsicherheit** setzt auf präzise, wuchtige Schüsse und lange Reichweite. Hier zählt Positionierung, weil einige Schüsse einen Moment Zeit brauchen.
-- **Überleben** ist die Ausnahme: ein Nahkämpfer mit Speer und Begleiter, der Fallen und Bomben einsetzt.
+### Tierherrschaft
+
+Tierherrschaft ist die Pet-Spezialisierung schlechthin. Dein Tier macht einen großen Teil des Schadens, und fast alle Fähigkeiten kannst du in der Bewegung einsetzen. Die Fantasy ist klar: Du und dein Rudel gegen den Rest. In fast jeder Community-Liste ist Tierherrschaft die meistempfohlene Spec für Einsteiger.
+
+**Typische Fähigkeiten:** [**Zorn des Wildtiers**](https://www.wowhead.com/de/spell=19574){target="_blank" rel="noopener"}, [**Stachelpfeil**](https://www.wowhead.com/de/spell=217200){target="_blank" rel="noopener"}
+
+### Treffsicherheit
+
+Treffsicherheit ist der Scharfschütze mit Bogen oder Gewehr, der aus großer Entfernung wuchtige Schüsse abgibt. Einige Schüsse brauchen einen Moment, deshalb zählt die richtige Position. Wer gern den perfekten Moment für den großen Treffer abwartet, ist hier richtig.
+
+**Typische Fähigkeiten:** [**Schnellfeuer**](https://www.wowhead.com/de/spell=257044){target="_blank" rel="noopener"}, [**Volltreffer**](https://www.wowhead.com/de/spell=288613){target="_blank" rel="noopener"}
+
+### Überleben
+
+Überleben ist die Ausnahme unter den Jägern: ein Nahkämpfer mit Speer, Fallen und Bomben, der Seite an Seite mit seinem Tier kämpft. Wildnis-Feeling statt Schießstand. Etwas ungewöhnlich, dafür mit eigener Persönlichkeit.
+
+**Typische Fähigkeiten:** [**Raptorstoß**](https://www.wowhead.com/de/spell=186270){target="_blank" rel="noopener"}, [**Lauffeuerbombe**](https://www.wowhead.com/de/spell=259495){target="_blank" rel="noopener"}, [**Harpune**](https://www.wowhead.com/de/spell=190925){target="_blank" rel="noopener"}
 
 ## Für wen ist der Jäger geeignet?
 

@@ -140,7 +140,10 @@ const formatDate = (date) => new Date(date).toLocaleDateString(locale.value === 
             <dd><RatingDots :value="info.solo" :color="info.color" /></dd>
           </div>
         </dl>
-        <p class="mt-4 text-[13px] text-neutral-500">{{ $t('common.ratingNote') }}</p>
+        <p class="mt-4 text-[13px] text-neutral-500">
+          {{ $t('common.ratingNote') }}
+          <NuxtLink :to="`${localePath('ueber')}#${locale === 'en' ? 'how-we-rate-classes' : 'wie-wir-klassen-bewerten'}`" class="text-neutral-300 underline decoration-dotted underline-offset-2 hover:text-gold">{{ $t('common.ratingMethod') }} ›</NuxtLink>
+        </p>
       </div>
     </section>
 
