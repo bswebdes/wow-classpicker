@@ -4,12 +4,15 @@ import { classData } from '~/composables/useBattle'
 const props = defineProps({
   selectedClasses: Set,
   customNames: Object,
-  isBattleInProgress: Boolean
+  isBattleInProgress: Boolean,
+  classIds: { type: Array, default: () => Object.keys(classData) }
 })
 
 const emit = defineEmits(['toggle', 'selectAll', 'deselectAll', 'randomize-name', 'randomize-all'])
 
-// Ermittelt die Reihenfolge der Auswahl (P1, P2, P3 ...)
+const fighters = computed(() => props.classIds.map(id => ({ id, data: classData[id] })).filter(f => f.data))
+
+// Reihenfolge der Auswahl (P1, P2, P3 ...)
 const selectionOrder = computed(() => Array.from(props.selectedClasses))
 const getPlayerIndex = (id) => {
   const idx = selectionOrder.value.indexOf(id)
@@ -18,157 +21,85 @@ const getPlayerIndex = (id) => {
 </script>
 
 <template>
-  <div id="selection-screen" class="section mb-6 relative overflow-hidden">
-    <!-- Dekorative Arcade-Elemente -->
-    <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-red-600 to-transparent opacity-50"></div>
-    
-    <div class="mb-6">
-      <h3 class="text-4xl font-black italic tracking-tighter text-yellow-400 drop-shadow-[2px_2px_0px_rgba(0,0,0,1)] uppercase mb-2" style="font-family: 'Permanent Marker', cursive;">
-        {{ $t('selection.title') }}
-      </h3>
-      <div class="h-0.5 w-48 mx-auto bg-red-600 shadow-[0_0_10px_rgba(220,38,38,0.8)]"></div>
-    </div>
+  <section id="selection-screen" class="wow-frame">
+    <h2 class="wow-title text-center text-2xl sm:text-3xl uppercase">{{ $t('selection.title') }}</h2>
+    <div class="wow-divider !my-4" />
 
-    <div class="flex justify-center flex-wrap gap-3 mb-8">
-      <button 
-        class="arcade-btn group" 
-        @click="emit('selectAll')" 
-        :disabled="isBattleInProgress"
-        data-umami-event="Selection - Select All"
-      >
-        <span class="relative z-10">{{ $t('selection.allIn') }}</span>
-        <div class="absolute inset-0 bg-green-700 transform skew-x-[-12deg] group-hover:bg-green-600 transition-colors"></div>
+    <div class="flex justify-center flex-wrap gap-3 mb-6">
+      <button class="wow-btn wow-btn-sm" :disabled="isBattleInProgress" data-umami-event="Selection - Select All" @click="emit('selectAll')">
+        {{ $t('selection.allIn') }}
       </button>
-      
-      <button 
-        class="arcade-btn group" 
-        @click="emit('deselectAll')" 
-        :disabled="isBattleInProgress"
-        data-umami-event="Selection - Clear All"
-      >
-        <span class="relative z-10">{{ $t('selection.clear') }}</span>
-        <div class="absolute inset-0 bg-neutral-700 transform skew-x-[-12deg] group-hover:bg-neutral-600 transition-colors"></div>
+      <button class="wow-btn wow-btn-sm wow-btn-stone" :disabled="isBattleInProgress" data-umami-event="Selection - Clear All" @click="emit('deselectAll')">
+        {{ $t('selection.clear') }}
       </button>
-
-      <button 
-        class="arcade-btn group" 
-        @click="emit('randomize-all')" 
-        :disabled="isBattleInProgress"
-        data-umami-event="Selection - Randomize All Names"
-      >
-        <span class="relative z-10">{{ $t('selection.randomNames') }}</span>
-        <div class="absolute inset-0 bg-blue-700 transform skew-x-[-12deg] group-hover:bg-blue-600 transition-colors"></div>
+      <button class="wow-btn wow-btn-sm wow-btn-stone" :disabled="isBattleInProgress" data-umami-event="Selection - Randomize All Names" @click="emit('randomize-all')">
+        🎲 {{ $t('selection.randomNames') }}
       </button>
     </div>
 
-    <div id="class-grid" class="flex flex-wrap justify-center gap-4 px-2">
-      <div 
-        v-for="(data, id) in classData" 
+    <div id="class-grid" class="flex flex-wrap justify-center gap-3 sm:gap-4">
+      <div
+        v-for="{ id, data } in fighters"
         :key="id"
-        class="fighter-card group"
-        :class="[
-          { 'is-selected': selectedClasses.has(id) },
-          selectedClasses.has(id) ? `border-c-${id}` : 'border-neutral-700'
-        ]"
-        @click="emit('toggle', id)"
-        data-umami-event="Selection - Toggle Class"
-        :data-umami-event-class="id"
+        class="group relative flex w-[92px] flex-col items-center"
       >
-        <!-- Background Pattern -->
-        <div class="absolute inset-0 opacity-10 pointer-events-none overflow-hidden rounded-lg">
-          <div class="absolute inset-0 rotate-45 scale-150 bg-[repeating-linear-gradient(0deg,#000,#000_1px,transparent_1px,transparent_4px)]"></div>
-        </div>
-
-        <div class="absolute inset-0 z-0 transition-transform duration-500 group-hover:scale-125">
-          <img :src="data.icon" :alt="$t(`classes.${id}.name`)" class="w-full h-full object-cover" />
-        </div>
-
-        <div 
-          class="relative z-10 text-[0.65rem] mt-auto font-black uppercase tracking-tighter bg-black/60 w-full py-1 backdrop-blur-xs" 
-          :class="selectedClasses.has(id) ? `text-c-${id}` : 'text-neutral-500'"
-          style="font-family: 'Press Start 2P', cursive; font-size: 0.5rem;"
+        <button
+          type="button"
+          class="wow-slot fighter-slot h-[72px] w-[72px] transition-all duration-150"
+          :class="selectedClasses.has(id) ? 'is-selected' : 'grayscale-[85%] opacity-70 hover:grayscale-0 hover:opacity-100'"
+          :aria-pressed="selectedClasses.has(id)"
+          :aria-label="$t(`classes.${id}.name`)"
+          data-umami-event="Selection - Toggle Class"
+          :data-umami-event-class="id"
+          @click="emit('toggle', id)"
         >
-          {{ $t(`classes.${id}.name`) }}
-        </div>
-        
-        <!-- Custom Name Input Overlay -->
-        <div v-if="selectedClasses.has(id)" class="mt-3 w-full relative z-20 flex items-center gap-1 px-1">
-          <input 
+          <img :src="data.icon" :alt="$t(`classes.${id}.name`)" width="72" height="72" class="h-full w-full object-cover" />
+          <span
+            v-if="selectedClasses.has(id)"
+            class="absolute right-0.5 top-0.5 rounded-[3px] bg-black/80 px-1 font-display text-[11px] font-bold text-gold"
+          >P{{ getPlayerIndex(id) }}</span>
+        </button>
+
+        <span
+          class="mt-1.5 text-center font-display text-[12px] font-bold leading-tight"
+          :class="selectedClasses.has(id) ? `text-c-${id}` : 'text-neutral-500'"
+        >{{ $t(`classes.${id}.name`) }}</span>
+
+        <div v-if="selectedClasses.has(id)" class="mt-1 flex w-full items-center gap-1">
+          <input
             v-model="customNames[id]"
             type="text"
             :placeholder="$t('selection.namePlaceholder')"
-            class="min-w-0 w-full text-[0.6rem] p-1 bg-black/60 border border-white/20 rounded-xs text-white text-center focus:outline-hidden focus:border-yellow-500 font-bold uppercase"
-            @click.stop
+            :aria-label="$t('selection.namePlaceholder')"
+            class="min-w-0 w-full rounded-[3px] border border-gold-border/60 bg-black/70 px-1 py-0.5 text-center text-[12px] text-white focus:border-gold focus:outline-hidden"
           />
-          <button 
-            class="shrink-0 p-1 text-[0.6rem] rounded-xs border border-white/20 bg-neutral-800 hover:bg-red-600 transition-colors"
-            @click.stop="emit('randomize-name', id)"
+          <button
+            class="shrink-0 rounded-[3px] border border-gold-border/60 bg-black/70 px-1 text-[12px] hover:border-gold"
+            :aria-label="$t('selection.randomNames')"
             data-umami-event="Selection - Randomize Single Name"
             :data-umami-event-class="id"
+            @click="emit('randomize-name', id)"
           >🎲</button>
         </div>
-        
-        <!-- Tooltip / Stats -->
-        <div 
-          v-if="selectedClasses.has(id)"
-          class="stats-popup"
-        >
-          <div class="font-black text-yellow-400 mb-1 border-b border-yellow-400/30 pb-1 italic uppercase text-xs">
-            {{ $t(`classes.${id}.name`) }}
-          </div>
-          <div class="text-[0.6rem] text-neutral-300 italic mb-2 leading-tight">"{{ $t(`classes.${id}.description`) }}"</div>
-          <div class="grid grid-cols-1 gap-1 font-mono text-[0.6rem]">
-            <div class="flex justify-between border-b border-white/5"><span>HP</span> <span class="text-white font-bold">{{ data.stats.hp }}</span></div>
-            <div class="flex justify-between border-b border-white/5"><span>CRT</span> <span class="text-white font-bold">{{ data.stats.crit * 100 }}%</span></div>
-            <div v-if="data.stats.dodge" class="flex justify-between border-b border-white/5"><span>DDG</span> <span class="text-white font-bold">{{ data.stats.dodge * 100 }}%</span></div>
-          </div>
-        </div>
 
-        <!-- Selection Marker mit dynamischem P-Index -->
-        <div v-if="selectedClasses.has(id)" class="absolute -top-1 -right-1 min-w-5 h-5 px-1 bg-yellow-400 text-black text-[0.6rem] flex items-center justify-center font-black rounded-xs shadow-lg z-30 tracking-tighter" :style="{ fontFamily: `'Permanent Marker', cursive` }">
-          P{{ getPlayerIndex(id) }}
+        <!-- Tooltip wie im Spiel -->
+        <div class="wow-tooltip pointer-events-none absolute bottom-full left-1/2 z-50 mb-2 hidden w-52 -translate-x-1/2 text-left group-hover:block">
+          <div class="font-display font-bold" :class="`text-c-${id}`">{{ $t(`classes.${id}.name`) }}</div>
+          <div class="mt-1 text-[13px] italic text-gold">"{{ $t(`classes.${id}.description`) }}"</div>
+          <div class="mt-2 space-y-0.5 text-[13px] text-white">
+            <div>{{ data.stats.hp }} {{ $t('fighter.hp') }}</div>
+            <div class="text-quality-uncommon">{{ $t('fighter.crit', { value: Math.round(data.stats.crit * 100) }) }}</div>
+            <div v-if="data.stats.dodge" class="text-quality-uncommon">{{ $t('fighter.dodge', { value: Math.round(data.stats.dodge * 100) }) }}</div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <style scoped>
-@reference "~/assets/css/tailwind.css";
-
-.fighter-card {
-  @apply relative w-28 h-36 p-0 bg-neutral-900 border-2 rounded-lg cursor-pointer transition-all duration-300 flex flex-col items-center opacity-60 grayscale scale-95 overflow-hidden;
-}
-
-.fighter-card:hover {
-  @apply opacity-90 grayscale-0 scale-100 border-neutral-500 shadow-[0_0_15px_rgba(255,255,255,0.1)];
-}
-
-.fighter-card.is-selected {
-  @apply opacity-100 grayscale-0 scale-105 bg-neutral-800 shadow-[0_0_20px_rgba(0,0,0,0.6)];
-  border-color: inherit; /* Nutzt die Border-Class für Farben */
-  box-shadow: 0 0 15px currentColor;
-}
-
-.is-selected::after {
-  content: '';
-  @apply absolute inset-0 border-2 border-white/20 rounded-lg animate-pulse;
-}
-
-.stats-popup {
-  @apply hidden group-hover:block absolute bottom-full mb-3 p-3 bg-neutral-900 border-2 border-yellow-500/50 z-[100] rounded-sm shadow-[0_10px_30px_rgba(0,0,0,0.8)] w-44 text-left pointer-events-none backdrop-blur-xs;
-}
-
-/* Scanline Effect */
-.fighter-card::before {
-  content: " ";
-  display: block;
-  position: absolute;
-  top: 0; left: 0; bottom: 0; right: 0;
-  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
-  z-index: 5;
-  background-size: 100% 2px, 3px 100%;
-  pointer-events: none;
-  opacity: 0.3;
+.fighter-slot.is-selected {
+  border-color: var(--color-gold);
+  box-shadow: inset 0 0 0 1px #000, 0 0 0 1px var(--color-gold-border), 0 0 14px rgba(255, 209, 0, 0.55);
 }
 </style>

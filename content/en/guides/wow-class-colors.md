@@ -2,6 +2,13 @@
 title: "WoW Class Colors – All Hex Codes and RGB Values"
 description: "All official WoW class colors with hex codes and RGB values to copy. For Discord roles, addons, graphics and guild websites."
 key: colors
+summary: "The official WoW class colors: Death Knight #C41E3A, Demon Hunter #A330C9, Druid #FF7C0A, Evoker #33937F, Hunter #AAD372, Mage #3FC7EB, Monk #00FF98, Paladin #F48CBA, Priest #FFFFFF, Rogue #FFF468, Shaman #0070DD, Warlock #8788EE, Warrior #C69B6D."
+updated: "2026-10-13"
+faq:
+  - q: "What color is the Paladin in WoW?"
+    a: "The Paladin's official class color is pink with the hex code #F48CBA (RGB 244, 140, 186)."
+  - q: "How do I use a class color for a Discord role?"
+    a: "Copy the hex code from the table, for example #3FC7EB for the Mage, and paste it as the color in your Discord server's role settings."
 order: 6
 date: "2026-10-13"
 classes: [warrior, paladin, hunter, rogue, priest, deathknight, shaman, mage, warlock, monk, druid, demonhunter, evoker]

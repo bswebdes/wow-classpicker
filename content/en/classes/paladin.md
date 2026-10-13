@@ -2,6 +2,9 @@
 title: "Paladin in WoW Midnight – Playstyle, Specs and Who It Suits"
 description: "The Paladin in WoW Midnight explained: Holy, Protection and Retribution, how it plays, strengths and weaknesses. The most versatile plate class for beginners."
 classId: paladin
+summary: "The Paladin is a plate wearer wielding holy Light and, alongside Druid and Monk, can play all three roles: Holy heals, Protection tanks, Retribution deals damage. Plenty of emergency abilities make it very beginner friendly."
+date: "2026-10-13"
+updated: "2026-10-13"
 ---
 
 ## Playstyle

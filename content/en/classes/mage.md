@@ -2,6 +2,9 @@
 title: "Mage in WoW Midnight – Playstyle, Specs and Who It Suits"
 description: "The Mage in WoW Midnight explained: Arcane, Fire and Frost, portals, Blink, how it plays, strengths and weaknesses. The classic ranged spellcaster."
 classId: mage
+summary: "The Mage is the classic ranged caster with arcane, fire and frost magic and big burst damage. It only deals damage, brings portals and food and is fragile in cloth."
+date: "2026-10-13"
+updated: "2026-10-13"
 ---
 
 ## Playstyle

@@ -58,12 +58,11 @@ async function runSequence() {
     <div v-if="visible" class="fixed inset-0 z-[100] flex items-center justify-center pointer-events-none overflow-hidden">
       <div class="relative">
         <!-- Background Glow -->
-        <div class="absolute inset-0 bg-red-600 blur-[100px] opacity-30 scale-150"></div>
+        <div class="absolute inset-0 bg-amber-500 blur-[100px] opacity-25 scale-150"></div>
         
         <div 
-          class="relative text-8xl md:text-9xl font-black italic tracking-tighter uppercase drop-shadow-[0_10px_10px_rgba(0,0,0,0.8)]"
-          :class="stage === t('battle.ready') ? 'text-yellow-400' : 'text-red-600'"
-          style="font-family: 'Permanent Marker', cursive;"
+          class="relative font-display text-6xl md:text-8xl font-black uppercase tracking-wide drop-shadow-[0_10px_10px_rgba(0,0,0,0.8)]"
+          :class="stage === t('battle.fight') ? 'text-[#ff2a2a]' : 'wow-title'"
         >
           <Transition
             mode="out-in"
@@ -81,9 +80,3 @@ async function runSequence() {
     </div>
   </Transition>
 </template>
-
-<style scoped>
-span {
-  text-shadow: 4px 4px 0px #000, -2px -2px 0px #000, 2px -2px 0px #000, -2px 2px 0px #000;
-}
-</style>

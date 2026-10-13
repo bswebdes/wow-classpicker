@@ -2,6 +2,9 @@
 title: "Mönch in WoW Midnight – Spielweise, Specs und für wen er passt"
 description: "Der Mönch in WoW Midnight erklärt: Braumeister, Nebelwirker und Windläufer, Mobilität, Spielgefühl, Stärken und Schwächen. Kampfkunst für Fortgeschrittene."
 classId: monk
+summary: "Der Mönch ist ein extrem mobiler Kampfkünstler in Leder, der alle drei Rollen spielen kann: Braumeister tankt, Nebelwirker heilt, Windläufer macht Nahkampf-Schaden. Seine Mechaniken sind eher etwas für Spieler mit Erfahrung."
+date: "2026-10-13"
+updated: "2026-10-13"
 ---
 
 ## Spielweise

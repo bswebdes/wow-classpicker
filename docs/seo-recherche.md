@@ -58,9 +58,20 @@ SD = SEO Difficulty (0–100, unter 30 ist für eine junge Seite realistisch).
 
 ## Nächste Schritte (Vorschlag)
 
-1. **WoW-Forever-Ratgeber** vor dem 4. November: „Welche Klasse in WoW Forever?“ (DE/EN). Fakten erst nach offizieller Klassenliste schreiben.
+1. ~~WoW-Forever-Ratgeber~~ umgesetzt (13.10.2026): Forever-Modus mit Klassenseiten, Völker-Matrix, Quiz, Zufall und zwei Ratgebern. Nach dem Start am 4. November Fakten (Talente, Skyborne) gegen die finale Version prüfen.
 2. **PvP-Ratgeber**: „best wow class for pvp“ ist mit 880/SD 23 das größte offene Keyword. Evergreen schreiben (Spielstil statt Meta).
-3. **Klassen & Völker**: „wow class race combos“ (US 170), „wow klassen und rassen“ (DE 140). Braucht eine verlässliche Datentabelle.
+3. **Klassen & Völker (Retail)**: „wow class race combos“ (US 170), „wow klassen und rassen“ (DE 140). Für Forever umgesetzt, für Retail fehlt noch eine verlässliche Datentabelle.
 4. **Eigene Domain** statt `netlify.app`-Subdomain (z. B. `classpicker.frysch.studio`, war in der alten Config schon vorgesehen). Stärkt die Marke und macht Backlinks wertvoller.
 5. **Google Search Console**: Sitemap `/sitemap_index.xml` einreichen (die alte Sitemap zeigte auf eine Vercel-Domain).
 6. **Backlinks**: In Reddit (r/wow, r/wownoob), Discord-Communities und bei Gilden-Seiten das Quiz und den Picker teilen. Die Quiz-Ergebnisse und Klassenfarben sind gut teilbar.
+
+## GEO (Sichtbarkeit in KI-Antworten), Stand 13.10.2026
+
+- `llms.txt`, `llms-full.txt` und Markdown-Versionen aller Seiten (aus dem gerenderten HTML, inkl. Kurzantwort, Klassendaten und FAQ)
+- Content Signals in der `robots.txt` (`search=yes, ai-input=yes`)
+- Kurzantwort-Box („Kurz gesagt“) oben auf jeder Klassen- und Ratgeberseite
+- FAQPage-Schema auf Klassenseiten (aus Daten erzeugt), Ratgebern und Tool-Seiten
+- VideoGame-Entität (Wikidata Q131007) als `about` jeder Seite, Organization mit Logo
+- Über-uns-Seite mit Betreiber, Quellen und Bewertungsmethode (E-E-A-T)
+
+Nächster Schritt: Mit Ubersuggest AI Search Visibility prüfen, ob die Marke in ChatGPT/Perplexity-Antworten zur Klassenwahl auftaucht (der Account hat aktuell 1 Brand-Slot, der für frysch.studio belegt ist).

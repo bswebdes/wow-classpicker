@@ -2,6 +2,9 @@
 title: "Druide in WoW Midnight – Spielweise, Specs und für wen er passt"
 description: "Der Druide in WoW Midnight erklärt: Gleichgewicht, Wildheit, Wächter und Wiederherstellung, Gestaltwandel, Spielgefühl. Die einzige Klasse mit vier Specs."
 classId: druid
+summary: "Der Druide ist der Gestaltwandler von WoW und die einzige Klasse mit vier Spezialisierungen: Gleichgewicht (Fernkampf), Wildheit (Nahkampf), Wächter (Tank) und Wiederherstellung (Heilung). Maximal flexibel, aber mit Lernkurve."
+date: "2026-10-13"
+updated: "2026-10-13"
 ---
 
 ## Spielweise

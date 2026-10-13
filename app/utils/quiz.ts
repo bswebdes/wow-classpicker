@@ -1,5 +1,5 @@
 // Klassen-Quiz: Jede Antwort vergibt Punkte an Klassen, am Ende gewinnen die Top 3.
-import { classInfo, classRoles, type ClassInfo, type Role } from './classInfo'
+import { classRoles, getClassList, type ClassInfo, type GameMode, type Role } from './classInfo'
 
 export interface QuizQuestion {
   id: string
@@ -76,9 +76,17 @@ export const quizQuestions: QuizQuestion[] = [
   }
 ]
 
-export const scoreQuiz = (answers: Record<string, string>) => {
+// Fragen für einen Spielmodus: Fantasy-Optionen nur für Klassen, die es dort gibt
+export const quizQuestionsFor = (mode: GameMode): QuizQuestion[] => {
+  const ids = getClassList(mode).map(c => c.id)
+  return quizQuestions.map(q => q.id === 'theme'
+    ? { ...q, options: q.options.filter(o => ids.includes(themeMap[o]!)) }
+    : q)
+}
+
+export const scoreQuiz = (answers: Record<string, string>, mode: GameMode = 'retail') => {
   const maxTotal = quizQuestions.reduce((sum, q) => sum + (answers[q.id] ? q.max(answers[q.id]!) : 0), 0) || 1
-  return classInfo
+  return getClassList(mode)
     .map(c => {
       const score = quizQuestions.reduce((sum, q) => sum + (answers[q.id] ? q.score(c, answers[q.id]!, answers) : 0), 0)
       return { id: c.id, percent: Math.max(0, Math.min(100, Math.round((score / maxTotal) * 100))) }

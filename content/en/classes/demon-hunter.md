@@ -2,6 +2,9 @@
 title: "Demon Hunter in WoW Midnight – Playstyle, Specs and Devourer"
 description: "The Demon Hunter in WoW Midnight explained: Havoc, Vengeance and the new Devourer spec. Mobility, how it plays, strengths and weaknesses."
 classId: demonhunter
+summary: "The Demon Hunter is the most mobile class in WoW. Havoc deals melee damage, Vengeance tanks, and the new Devourer spec from Midnight fights with Void magic from mid-range."
+date: "2026-10-13"
+updated: "2026-10-13"
 ---
 
 ## Playstyle

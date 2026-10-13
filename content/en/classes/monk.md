@@ -2,6 +2,9 @@
 title: "Monk in WoW Midnight – Playstyle, Specs and Who It Suits"
 description: "The Monk in WoW Midnight explained: Brewmaster, Mistweaver and Windwalker, mobility, how it plays, strengths and weaknesses. Martial arts for experienced players."
 classId: monk
+summary: "The Monk is a highly mobile martial artist in leather that can play all three roles: Brewmaster tanks, Mistweaver heals, Windwalker deals melee damage. Its mechanics suit players with some experience."
+date: "2026-10-13"
+updated: "2026-10-13"
 ---
 
 ## Playstyle

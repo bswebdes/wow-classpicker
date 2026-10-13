@@ -23,5 +23,3 @@ Du kannst dich nicht entscheiden, welche Klasse du in **World of Warcraft: Midni
 4. **Main gefunden:** Der letzte Überlebende ist deine Klasse für Midnight.
 
 Lieber eine fundierte Entscheidung? Dann wirf einen Blick auf die [Übersicht aller WoW-Klassen](/klassen) oder unseren Ratgeber [Welche Klasse soll ich in Midnight spielen?](/ratgeber/welche-klasse-spielen-midnight).
-
-## Häufige Fragen

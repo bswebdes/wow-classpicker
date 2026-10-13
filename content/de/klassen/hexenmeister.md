@@ -2,6 +2,9 @@
 title: "Hexenmeister in WoW Midnight – Spielweise, Specs und für wen er passt"
 description: "Der Hexenmeister in WoW Midnight erklärt: Gebrechen, Dämonologie und Zerstörung, Dämonen, Seelensplitter, Spielgefühl, Stärken und Schwächen."
 classId: warlock
+summary: "Der Hexenmeister ist ein Fernkampf-Zauberer mit Flüchen und Dämonen als Begleitern. Er spielt nur Schaden, ist für eine Stoffklasse aber sehr zäh und solo angenehm zu spielen."
+date: "2026-10-13"
+updated: "2026-10-13"
 ---
 
 ## Spielweise

@@ -1,33 +1,33 @@
 import { defineCollection, defineContentConfig, z } from '@nuxt/content'
-import { defineSitemapSchema } from '@nuxtjs/sitemap/content'
 
-// Klassenseiten: Daten (Specs, Rollen, Rüstung) kommen aus app/utils/classInfo.ts,
-// im Markdown steht nur der redaktionelle Text.
-const classSchema = (name: string, localePrefix = '') => z.object({
+const faqSchema = z.array(z.object({ q: z.string(), a: z.string() })).optional()
+
+// Klassenseiten: Daten (Specs, Rollen, Rüstung) kommen aus app/utils/classInfo.ts
+// bzw. foreverInfo.ts, im Markdown steht nur der redaktionelle Text.
+const classSchema = z.object({
   classId: z.string(),
-  sitemap: defineSitemapSchema({
-    name,
-    onUrl: localePrefix ? (url) => { url.loc = `/en${url.loc}` } : undefined
-  })
+  // Kurzantwort, die oben auf der Seite steht (Antwort zuerst für Leser und KI-Suche)
+  summary: z.string().optional(),
+  date: z.string().optional(),
+  updated: z.string().optional()
 })
 
-const guideSchema = (name: string, localePrefix = '') => z.object({
+const guideSchema = z.object({
   // Gemeinsamer Schlüssel, um DE- und EN-Version eines Ratgebers zu verknüpfen
   key: z.string(),
   // Reihenfolge in der Ratgeber-Übersicht
   order: z.number().default(99),
+  game: z.enum(['retail', 'forever']).default('retail'),
+  summary: z.string().optional(),
+  faq: faqSchema,
   date: z.string(),
   updated: z.string().optional(),
-  classes: z.array(z.string()).optional(),
-  sitemap: defineSitemapSchema({
-    name,
-    onUrl: localePrefix ? (url) => { url.loc = `/en${url.loc}` } : undefined
-  })
+  classes: z.array(z.string()).optional()
 })
 
 // Textblöcke für bestehende Seiten (z. B. Startseite), ohne eigene Route
 const blockSchema = z.object({
-  faq: z.array(z.object({ q: z.string(), a: z.string() })).optional()
+  faq: faqSchema
 })
 
 export default defineContentConfig({
@@ -35,22 +35,32 @@ export default defineContentConfig({
     classes_de: defineCollection({
       type: 'page',
       source: { include: 'de/klassen/*.md', prefix: '/klassen' },
-      schema: classSchema('classes_de')
+      schema: classSchema
     }),
     classes_en: defineCollection({
       type: 'page',
       source: { include: 'en/classes/*.md', prefix: '/classes' },
-      schema: classSchema('classes_en', '/en')
+      schema: classSchema
+    }),
+    forever_classes_de: defineCollection({
+      type: 'page',
+      source: { include: 'de/forever/klassen/*.md', prefix: '/forever/klassen' },
+      schema: classSchema
+    }),
+    forever_classes_en: defineCollection({
+      type: 'page',
+      source: { include: 'en/forever/classes/*.md', prefix: '/forever/classes' },
+      schema: classSchema
     }),
     guides_de: defineCollection({
       type: 'page',
       source: { include: 'de/ratgeber/*.md', prefix: '/ratgeber' },
-      schema: guideSchema('guides_de')
+      schema: guideSchema
     }),
     guides_en: defineCollection({
       type: 'page',
       source: { include: 'en/guides/*.md', prefix: '/guides' },
-      schema: guideSchema('guides_en', '/en')
+      schema: guideSchema
     }),
     blocks_de: defineCollection({
       type: 'page',

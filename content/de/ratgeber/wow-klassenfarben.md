@@ -2,6 +2,13 @@
 title: "WoW Klassenfarben – alle Hex-Codes und RGB-Werte"
 description: "Alle offiziellen WoW-Klassenfarben mit Hex-Code und RGB-Werten zum Kopieren. Für Discord-Rollen, Addons, Grafiken und Gilden-Webseiten."
 key: colors
+summary: "Die offiziellen WoW-Klassenfarben: Todesritter #C41E3A, Dämonenjäger #A330C9, Druide #FF7C0A, Rufer #33937F, Jäger #AAD372, Magier #3FC7EB, Mönch #00FF98, Paladin #F48CBA, Priester #FFFFFF, Schurke #FFF468, Schamane #0070DD, Hexenmeister #8788EE, Krieger #C69B6D."
+updated: "2026-10-13"
+faq:
+  - q: "Welche Farbe hat der Paladin in WoW?"
+    a: "Die offizielle Klassenfarbe des Paladins ist Rosa mit dem Hex-Code #F48CBA (RGB 244, 140, 186)."
+  - q: "Wie trage ich die Klassenfarbe als Discord-Rolle ein?"
+    a: "Kopiere den Hex-Code aus der Tabelle, zum Beispiel #3FC7EB für den Magier, und füge ihn in den Rolleneinstellungen deines Discord-Servers als Farbe ein."
 order: 6
 date: "2026-10-13"
 classes: [warrior, paladin, hunter, rogue, priest, deathknight, shaman, mage, warlock, monk, druid, demonhunter, evoker]

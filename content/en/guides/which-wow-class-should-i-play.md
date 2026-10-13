@@ -2,6 +2,15 @@
 title: "Which WoW Class Should I Play in Midnight? A Decision Guide"
 description: "Which WoW class should you play? Find the right class for Midnight in 5 steps, with picks by role, playstyle and experience."
 key: which-class
+summary: "Pick your WoW class in five steps: role (tank, healer, damage), melee or ranged, favorite content, desired complexity and fantasy. If you are undecided, Paladin, Druid and Monk are ideal because they can play all three roles."
+updated: "2026-10-13"
+faq:
+  - q: "Which WoW class should I play first?"
+    a: "Hunter, Paladin, Death Knight, Demon Hunter and Warrior are the best classes to start with. They are sturdy and have manageable rotations."
+  - q: "Which classes can play all three roles?"
+    a: "Paladin, Druid and Monk can tank, heal and deal damage, so you keep every option open."
+  - q: "Should I pick my class based on the tier list?"
+    a: "No. Balance changes with every patch. Outside world-first competition every class is good enough, and enjoying your class matters more."
 order: 1
 date: "2026-10-13"
 classes: [paladin, hunter, demonhunter, druid, deathknight, mage]

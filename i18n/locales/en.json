@@ -147,6 +147,8 @@
   "victory": {
     "champion": "CHAMPION!",
     "playInMidnight": "You will play in Midnight:",
+    "achievement": "Achievement earned",
+    "playInForever": "You will play in WoW Forever:",
     "again": "AGAIN!"
   },
   "meter": {
@@ -161,6 +163,8 @@
     "startLog": "The battle begins with {count} classes!",
     "evadeLog": "{target} dodges the attack from {attacker}!",
     "critLog": "CRITICAL HIT by {attacker}!",
+    "logEmpty": "Pick at least two classes and start the battle. Everything that happens in the arena will show up here.",
+    "logTitle": "Combat log",
     "megaCritLog": "MEGA-CRIT by {attacker}!",
     "eliminatedLog": "{target} was eliminated by {attacker}!",
     "winnerLog": "{winner} WINS THE ARENA!",

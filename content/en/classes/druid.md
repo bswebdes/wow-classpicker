@@ -2,6 +2,9 @@
 title: "Druid in WoW Midnight – Playstyle, Specs and Who It Suits"
 description: "The Druid in WoW Midnight explained: Balance, Feral, Guardian and Restoration, shapeshifting and how it plays. The only class with four specs."
 classId: druid
+summary: "The Druid is WoW's shapeshifter and the only class with four specs: Balance (ranged), Feral (melee), Guardian (tank) and Restoration (healing). Maximum flexibility, with a learning curve."
+date: "2026-10-13"
+updated: "2026-10-13"
 ---
 
 ## Playstyle

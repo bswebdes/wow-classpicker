@@ -1,5 +1,6 @@
 // Zentrale Klassendaten für Klassenseiten, Quiz und Zufallsgenerator.
 // Spielwerte für den Arena-Kampf liegen weiterhin in composables/useBattle.ts.
+import { foreverClassInfo } from './foreverInfo'
 
 export type Role = 'tank' | 'healer' | 'dps'
 export type Range = 'melee' | 'ranged'
@@ -149,10 +150,16 @@ export const classInfo: ClassInfo[] = [
   }
 ]
 
-export const getClassInfo = (id: string) => classInfo.find(c => c.id === id)
+export type GameMode = 'retail' | 'forever'
 
-export const getClassBySlug = (slug: string, locale: Locale) =>
-  classInfo.find(c => c.slug[locale] === slug)
+export const getClassList = (mode: GameMode = 'retail'): ClassInfo[] =>
+  mode === 'forever' ? foreverClassInfo : classInfo
+
+export const getClassInfo = (id: string, mode: GameMode = 'retail') =>
+  getClassList(mode).find(c => c.id === id)
+
+export const getClassBySlug = (slug: string, locale: Locale, mode: GameMode = 'retail') =>
+  getClassList(mode).find(c => c.slug[locale] === slug)
 
 export const classRoles = (c: ClassInfo): Role[] =>
   (['tank', 'healer', 'dps'] as Role[]).filter(r => c.specs.some(s => s.role === r))

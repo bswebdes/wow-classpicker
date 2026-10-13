@@ -2,6 +2,9 @@
 title: "Hunter in WoW Midnight – Playstyle, Specs and Who It Suits"
 description: "The Hunter in WoW Midnight explained: Beast Mastery, Marksmanship and Survival, pets, playstyle and why it is often called the easiest WoW class."
 classId: hunter
+summary: "The Hunter is a ranged fighter with an animal companion and is widely seen as the easiest class in WoW, especially as Beast Mastery. It can only deal damage but is extremely strong solo."
+date: "2026-10-13"
+updated: "2026-10-13"
 ---
 
 ## Playstyle

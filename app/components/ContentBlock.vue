@@ -8,6 +8,14 @@ const { locale } = useI18n()
 const { data: block } = await useAsyncData(() => `block-${props.name}-${locale.value}`, () =>
   queryCollection(locale.value === 'en' ? 'blocks_en' : 'blocks_de').path(`/${props.name}`).first()
 )
+
+// FAQ als strukturierte Daten, damit Suchmaschinen und KI-Systeme die Antworten zuordnen können
+if (block.value?.faq?.length) {
+  useSchemaOrg([
+    defineWebPage({ '@type': ['WebPage', 'FAQPage'] }),
+    ...block.value.faq.map(item => defineQuestion({ name: item.q, acceptedAnswer: item.a }))
+  ])
+}
 </script>
 
 <template>
@@ -15,11 +23,9 @@ const { data: block } = await useAsyncData(() => `block-${props.name}-${locale.v
     <ContentProse>
       <ContentRenderer :value="block" />
     </ContentProse>
-    <div v-if="block.faq?.length" class="mt-8 space-y-3">
-      <details v-for="item in block.faq" :key="item.q" class="section">
-        <summary class="cursor-pointer font-bold text-white">{{ item.q }}</summary>
-        <p class="mt-2 text-neutral-300">{{ item.a }}</p>
-      </details>
-    </div>
+    <section v-if="block.faq?.length" class="mt-10">
+      <h2 class="wow-title text-2xl">{{ $t('common.faqTitle') }}</h2>
+      <FaqList :items="block.faq" class="mt-4" />
+    </section>
   </div>
 </template>

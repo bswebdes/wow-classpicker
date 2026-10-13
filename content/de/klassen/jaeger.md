@@ -2,6 +2,9 @@
 title: "Jäger in WoW Midnight – Spielweise, Specs und für wen er passt"
 description: "Der Jäger in WoW Midnight erklärt: Tierherrschaft, Treffsicherheit und Überleben, Pets, Spielgefühl und warum er als einfachste Klasse für Anfänger gilt."
 classId: hunter
+summary: "Der Jäger ist ein Fernkämpfer mit tierischem Begleiter und gilt als einfachste Klasse in WoW, besonders als Tierherrschaft. Er kann nur Schaden machen, ist aber solo extrem stark."
+date: "2026-10-13"
+updated: "2026-10-13"
 ---
 
 ## Spielweise

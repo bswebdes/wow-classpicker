@@ -2,6 +2,9 @@
 title: "Evoker in WoW Midnight – Playstyle, Specs and Who It Suits"
 description: "The Evoker in WoW Midnight explained: Devastation, Preservation and Augmentation, empowered spells, how it plays, strengths and weaknesses."
 classId: evoker
+summary: "The Evoker is a draconic caster in mail that fights at about 25 yards and charges up its spells. It plays damage (Devastation), healing (Preservation) or support (Augmentation), but no tank."
+date: "2026-10-13"
+updated: "2026-10-13"
 ---
 
 ## Playstyle

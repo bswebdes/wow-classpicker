@@ -2,6 +2,9 @@
 title: "Warrior in WoW Midnight – Playstyle, Specs and Who It Suits"
 description: "The Warrior in WoW Midnight explained: Arms, Fury and Protection, how it plays, strengths and weaknesses. A great pick for new players who love melee."
 classId: warrior
+summary: "The Warrior is a sturdy plate melee fighter that can deal damage (Arms, Fury) or tank (Protection). It is easy to learn and ideal for beginners who want melee without a spellbook."
+date: "2026-10-13"
+updated: "2026-10-13"
 ---
 
 ## Playstyle

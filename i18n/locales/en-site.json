@@ -5,18 +5,34 @@
     "guides": "Guides",
     "quiz": "Class Quiz",
     "random": "Random Class",
-    "menu": "Menu"
+    "menu": "Menu",
+    "gameMode": "Choose game",
+    "about": "About"
   },
   "footer": {
-    "tagline": "WoW Class Picker helps you choose your class in World of Warcraft: Midnight, with an arena battle, a quiz and a random class generator.",
+    "tagline": "WoW Class Picker helps you choose your class in World of Warcraft: Midnight and WoW Forever, with an arena battle, a quiz and a random class generator.",
     "disclaimer": "Fan project, not affiliated with Blizzard Entertainment. World of Warcraft and Blizzard Entertainment are trademarks of Blizzard Entertainment, Inc.",
     "tools": "Tools",
-    "content": "Content"
+    "content": "Content",
+    "imprint": "Imprint",
+    "privacy": "Privacy"
   },
   "common": {
-    "roles": { "tank": "Tank", "healer": "Healer", "dps": "DPS" },
-    "range": { "melee": "Melee", "ranged": "Ranged" },
-    "armor": { "plate": "Plate", "mail": "Mail", "leather": "Leather", "cloth": "Cloth" },
+    "roles": {
+      "tank": "Tank",
+      "healer": "Healer",
+      "dps": "DPS"
+    },
+    "range": {
+      "melee": "Melee",
+      "ranged": "Ranged"
+    },
+    "armor": {
+      "plate": "Plate",
+      "mail": "Mail",
+      "leather": "Leather",
+      "cloth": "Cloth"
+    },
     "role": "Role",
     "roles_label": "Roles",
     "armorType": "Armor",
@@ -37,7 +53,9 @@
     "published": "Published",
     "relatedClasses": "Related classes",
     "notFound": "Page not found",
-    "any": "Any"
+    "any": "Any",
+    "summary": "In short",
+    "faqTitle": "Frequently asked questions"
   },
   "home": {
     "toolsTitle": "Still undecided?",
@@ -75,31 +93,72 @@
     "q": {
       "role": {
         "title": "Which role appeals to you most?",
-        "options": { "tank": "Tank: I hold the enemies", "healer": "Healer: I keep the group alive", "dps": "DPS: I want big numbers", "any": "Not sure yet" }
+        "options": {
+          "tank": "Tank: I hold the enemies",
+          "healer": "Healer: I keep the group alive",
+          "dps": "DPS: I want big numbers",
+          "any": "Not sure yet"
+        }
       },
       "range": {
         "title": "Do you prefer fighting up close or from afar?",
-        "options": { "melee": "Right in the thick of melee", "ranged": "From range with spells or a bow", "any": "Either" }
+        "options": {
+          "melee": "Right in the thick of melee",
+          "ranged": "From range with spells or a bow",
+          "any": "Either"
+        }
       },
       "content": {
         "title": "What do you enjoy playing most?",
-        "options": { "solo": "Quests, delves and solo content", "dungeons": "Mythic+ dungeons", "raids": "Raids with my guild", "pvp": "PvP, arena and battlegrounds" }
+        "options": {
+          "solo": "Quests and solo content",
+          "dungeons": "Dungeons with a group",
+          "raids": "Raids with my guild",
+          "pvp": "PvP, arena and battlegrounds"
+        }
       },
       "complexity": {
         "title": "How complex can your rotation be?",
-        "options": { "simple": "Simple, I want to relax", "medium": "A bit of challenge is good", "complex": "Give me everything to master" }
+        "options": {
+          "simple": "Simple, I want to relax",
+          "medium": "A bit of challenge is good",
+          "complex": "Give me everything to master"
+        }
       },
       "theme": {
         "title": "Which fantasy speaks to you?",
-        "options": { "might": "Raw strength and weapons", "holy": "Holy light", "beasts": "Beasts and bows", "shadow": "Poison, daggers and shadows", "undead": "Undeath and frost", "elements": "The elements", "arcane": "Arcane magic", "dark": "Curses and demons", "martial": "Martial arts and brews", "nature": "Nature and shapeshifting", "fel": "Fel magic and the Void", "dragons": "Dragons and time magic" }
+        "options": {
+          "might": "Raw strength and weapons",
+          "holy": "Holy light",
+          "beasts": "Beasts and bows",
+          "shadow": "Poison, daggers and shadows",
+          "undead": "Undeath and frost",
+          "elements": "The elements",
+          "arcane": "Arcane magic",
+          "dark": "Curses and demons",
+          "martial": "Martial arts and brews",
+          "nature": "Nature and shapeshifting",
+          "fel": "Fel magic and the Void",
+          "dragons": "Dragons and time magic"
+        }
       },
       "pets": {
         "title": "Would you like a constant companion?",
-        "options": { "yes": "Yes, a pet is a must", "no": "No, I fight alone", "any": "Either" }
+        "options": {
+          "yes": "Yes, a pet is a must",
+          "no": "No, I fight alone",
+          "any": "Either"
+        }
       },
       "armor": {
         "title": "Which look do you like?",
-        "options": { "plate": "Heavy plate", "mail": "Mail armor", "leather": "Light leather", "cloth": "Robes and cloth", "any": "Any" }
+        "options": {
+          "plate": "Heavy plate",
+          "mail": "Mail armor",
+          "leather": "Light leather",
+          "cloth": "Robes and cloth",
+          "any": "Any"
+        }
       }
     }
   },
@@ -118,5 +177,74 @@
   },
   "siteSeo": {
     "homeOgSubtitle": "Arena battle, quiz and random generator for choosing your class"
+  },
+  "fighter": {
+    "hp": "Health",
+    "crit": "+{value}% critical strike chance",
+    "dodge": "+{value}% dodge chance"
+  },
+  "classFaq": {
+    "rolesQ": "Which roles can the {class} play in {game}?",
+    "rolesA": "The {class} can play {roles}. Its {specsLabel}: {specs}.",
+    "armorQ": "What armor does the {class} wear?",
+    "armorA": "The {class} wears {armor}.",
+    "beginnerQ": "Is the {class} good for beginners?",
+    "beginnerA": {
+      "easy": "Yes. The {class} is considered beginner friendly: it is sturdy and easy to understand.",
+      "medium": "Somewhat. The {class} is easy to learn but needs a bit more practice than the simplest classes.",
+      "hard": "It is better for experienced players. The {class} has lots of tools and rewards experience, so the learning curve is steeper."
+    },
+    "soloQ": "Is the {class} good for solo players?",
+    "soloA": {
+      "good": "Yes. The {class} does very well on its own, thanks to self-healing, sturdiness or a companion.",
+      "medium": "Yes, with some practice. The {class} handles solo play well but needs care with bigger groups of enemies.",
+      "weak": "Not really. The {class} is slower or more vulnerable alone and shines mostly in groups."
+    },
+    "racesQ": "Which races can be a {class} in WoW Forever?",
+    "racesA": "In WoW Forever, these races can be a {class}: {races}."
+  },
+  "about": {
+    "title": "About WoW Class Picker: Who We Are and How We Rate Classes",
+    "description": "WoW Class Picker is a fan project about choosing a class in World of Warcraft. Learn who is behind it, where our information comes from and how the ratings work.",
+    "heading": "About WoW Class Picker"
+  },
+  "forever": {
+    "talentTrees": "Talent trees",
+    "race": "Race",
+    "faction": "Faction",
+    "factions": {
+      "alliance": "Alliance",
+      "horde": "Horde"
+    },
+    "newCombo": "New combination in WoW Forever",
+    "betaNote": "Based on the beta, changes possible before launch on 4 November 2026.",
+    "playableRaces": "Playable races",
+    "home": {
+      "title": "WoW Forever Class Picker – Which Class Will You Play in Forever?",
+      "description": "Which class will you play in WoW Forever? Let the 9 Classic classes fight in the arena, take the quiz or roll a race and class. Launch: 4 November 2026.",
+      "heading": "Which class will you play in WoW Forever?",
+      "intro": "WoW Forever brings classic Azeroth back, with new race and class combinations and the new Skyborne race. Pick your favorites among the 9 classes and let them fight.",
+      "classesTeaser": "All 9 classes in WoW Forever with talent trees, roles and races."
+    },
+    "classes": {
+      "title": "WoW Forever Classes and Races: All 56 Combinations",
+      "description": "All 9 classes in WoW Forever with talent trees and roles, plus the full race and class table with all 56 combinations and the new Skyborne.",
+      "heading": "Classes in WoW Forever",
+      "intro": "WoW Forever launches on 4 November 2026 with the 9 classes from Classic and classic talent trees. New are several race and class combinations and the Skyborne race, playable on both sides.",
+      "matrixTitle": "Races and classes in WoW Forever",
+      "matrixIntro": "Which race can play which class? There are {count} combinations of 10 races and 9 classes in total."
+    },
+    "quiz": {
+      "title": "WoW Forever Class Quiz: Which Class Should I Play?",
+      "description": "Which class suits you in WoW Forever? 7 questions about role, playstyle and fantasy reveal your top 3 of the 9 Classic classes.",
+      "heading": "Which WoW Forever class should I play?",
+      "intro": "Seven quick questions, then we show you the three Forever classes that fit your playstyle best."
+    },
+    "random": {
+      "title": "WoW Forever Random Class Generator: Roll a Race and Class",
+      "description": "Roll a random race, class and talent tree for WoW Forever, filtered by faction, role and armor.",
+      "heading": "Roll a race and class for WoW Forever",
+      "intro": "Let chance pick your next WoW Forever character: race, class and talent tree, optionally for Alliance or Horde only."
+    }
   }
 }

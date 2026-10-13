@@ -15,18 +15,23 @@ watch(() => props.logEntries.length, () => {
 </script>
 
 <template>
-  <div ref="logRef" id="battle-log" class="mt-5 bg-black text-green-400 font-mono p-4 h-40 overflow-y-auto text-left border border-neutral-800 rounded-sm">
-    <div 
-      v-for="entry in logEntries" 
-      :key="entry.id" 
-      class="py-1 border-b border-neutral-900 last:border-b-0"
-      :class="{
-        'text-yellow-300 font-bold': entry.type === 'important',
-        'text-cyan-400': entry.type === 'evade',
-        'text-red-400': entry.type === 'damage',
-        'text-green-400': entry.type === 'heal',
-      }"
-      v-html="'> ' + entry.message"
-    ></div>
+  <!-- Kampflog im Stil des Chatfensters -->
+  <div class="rounded-md border border-gold-border/50 bg-black/60 text-left">
+    <div class="border-b border-gold-border/40 bg-black/50 px-3 py-1 font-display text-[12px] font-bold uppercase tracking-wider text-gold">{{ $t('battle.logTitle') }}</div>
+    <div ref="logRef" id="battle-log" class="h-44 overflow-y-auto px-3 py-2 text-[14px] leading-snug text-[#ffd100]/90" aria-live="polite">
+      <p v-if="!logEntries.length" class="italic text-neutral-500">{{ $t('battle.logEmpty') }}</p>
+      <div
+        v-for="entry in logEntries"
+        :key="entry.id"
+        class="py-0.5"
+        :class="{
+          '!text-[#ff7f3f] font-bold': entry.type === 'important',
+          '!text-[#69ccf0]': entry.type === 'evade',
+          '!text-[#ff4040]': entry.type === 'damage',
+          '!text-[#40ff40]': entry.type === 'heal'
+        }"
+        v-html="entry.message"
+      ></div>
+    </div>
   </div>
 </template>

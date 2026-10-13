@@ -2,6 +2,9 @@
 title: "Todesritter in WoW Midnight – Spielweise, Specs und für wen er passt"
 description: "Der Todesritter in WoW Midnight erklärt: Blut, Frost und Unheilig, Runen, Spielgefühl, Stärken und Schwächen. Robuster Plattenkämpfer mit starker Selbstheilung."
 classId: deathknight
+summary: "Der Todesritter ist ein Plattenkämpfer mit dunkler Magie, der als Blut einer der verzeihendsten Tanks ist und als Frost oder Unheilig Nahkampf-Schaden macht. Starke Selbstheilung macht ihn solo sehr robust."
+date: "2026-10-13"
+updated: "2026-10-13"
 ---
 
 ## Spielweise

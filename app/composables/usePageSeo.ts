@@ -1,3 +1,7 @@
+import type { GameMode } from '~/utils/classInfo'
+
+interface FaqItem { q: string, a: string }
+
 interface PageSeoOptions {
   title: MaybeRefOrGetter<string>
   description: MaybeRefOrGetter<string>
@@ -6,7 +10,35 @@ interface PageSeoOptions {
   ogSubtitle?: MaybeRefOrGetter<string | undefined>
   // Klassen-IDs, deren Icons im OG-Bild erscheinen
   classes?: MaybeRefOrGetter<string[] | undefined>
+  // Spiel, um das es auf der Seite geht (für Schema.org "about")
+  mode?: GameMode
+  // Schema.org-Typ der Seite
+  pageType?: 'WebPage' | 'CollectionPage' | 'AboutPage' | 'FAQPage'
+  faq?: MaybeRefOrGetter<FaqItem[] | undefined>
+  dateModified?: MaybeRefOrGetter<string | undefined>
 }
+
+// Entitäten für Suchmaschinen und KI-Systeme: Worum geht es auf der Seite?
+export const gameEntity = (mode: GameMode = 'retail') => mode === 'forever'
+  ? {
+      '@type': 'VideoGame',
+      'name': 'World of Warcraft: Forever',
+      'gamePlatform': 'PC',
+      'publisher': { '@type': 'Organization', 'name': 'Blizzard Entertainment' },
+      'isBasedOn': { '@type': 'VideoGame', 'name': 'World of Warcraft', 'sameAs': ['https://www.wikidata.org/wiki/Q131007'] }
+    }
+  : {
+      '@type': 'VideoGame',
+      'name': 'World of Warcraft',
+      'alternateName': 'World of Warcraft: Midnight',
+      'gamePlatform': 'PC',
+      'publisher': { '@type': 'Organization', 'name': 'Blizzard Entertainment' },
+      'sameAs': [
+        'https://www.wikidata.org/wiki/Q131007',
+        'https://en.wikipedia.org/wiki/World_of_Warcraft',
+        'https://de.wikipedia.org/wiki/World_of_Warcraft'
+      ]
+    }
 
 export const usePageSeo = (options: PageSeoOptions) => {
   useSeoMeta({
@@ -20,6 +52,17 @@ export const usePageSeo = (options: PageSeoOptions) => {
   defineOgImage('ClassPicker', {
     title: toValue(options.ogTitle) || toValue(options.title),
     subtitle: toValue(options.ogSubtitle) || toValue(options.description),
-    classes: toValue(options.classes) || []
+    classes: toValue(options.classes) || [],
+    mode: options.mode || 'retail'
   })
+
+  const faq = toValue(options.faq) || []
+  useSchemaOrg([
+    defineWebPage({
+      '@type': faq.length ? ['WebPage', 'FAQPage'] : (options.pageType || 'WebPage'),
+      'about': gameEntity(options.mode),
+      ...(toValue(options.dateModified) ? { dateModified: toValue(options.dateModified) } : {})
+    }),
+    ...faq.map(item => defineQuestion({ name: item.q, acceptedAnswer: item.a }))
+  ])
 }

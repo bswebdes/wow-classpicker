@@ -1,44 +1,90 @@
 <script setup>
 const localePath = useLocalePath()
 const { t } = useI18n()
+const { mode, modeBase, routeName } = useGameMode()
 
 // hreflang, canonical und lang-Attribut für alle Seiten
 const i18nHead = useLocaleHead({ seo: true })
 useHead(() => ({
-  htmlAttrs: { lang: i18nHead.value.htmlAttrs.lang },
+  htmlAttrs: { lang: i18nHead.value.htmlAttrs.lang, 'data-game': mode.value },
   link: [...(i18nHead.value.link || [])],
   meta: [...(i18nHead.value.meta || [])]
 }))
 
 const navItems = computed(() => [
-  { to: localePath('index'), label: t('nav.picker') },
-  { to: localePath('klassen'), label: t('nav.classes') },
-  { to: localePath('quiz'), label: t('nav.quiz') },
-  { to: localePath('zufall'), label: t('nav.random') },
+  { to: localePath(routeName('index')), label: t('nav.picker') },
+  { to: localePath(routeName('klassen')), label: t('nav.classes') },
+  { to: localePath(routeName('quiz')), label: t('nav.quiz') },
+  { to: localePath(routeName('zufall')), label: t('nav.random') },
   { to: localePath('ratgeber'), label: t('nav.guides') }
+])
+
+// Ziel im anderen Modus: gleiche Seite, falls es sie dort gibt, sonst Startseite
+const route = useRoute()
+const switchTarget = (target) => {
+  const base = modeBase.value
+  if (!base) return localePath(routeNameFor('index', target))
+  if (base === 'klassen-slug') {
+    const exists = getClassList(target).some(c => Object.values(c.slug).includes(String(route.params.slug)))
+    return exists
+      ? localePath({ name: routeNameFor('klassen-slug', target), params: { slug: route.params.slug } })
+      : localePath(routeNameFor('klassen', target))
+  }
+  return localePath(routeNameFor(base, target))
+}
+
+const modes = computed(() => [
+  { id: 'retail', label: 'Retail', sub: 'Midnight', to: switchTarget('retail') },
+  { id: 'forever', label: 'Forever', sub: 'Classic+', to: switchTarget('forever') }
 ])
 </script>
 
 <template>
   <div class="min-h-screen flex flex-col">
-    <header class="border-b border-neutral-800 bg-neutral-950/80 backdrop-blur-xs sticky top-0 z-40">
-      <div class="max-w-5xl w-[90%] mx-auto flex flex-wrap items-center justify-between gap-3 py-3">
-        <NuxtLink :to="localePath('index')" class="flex items-center gap-2 text-yellow-400 font-black tracking-tight" style="font-family: 'Permanent Marker', cursive;">
-          <img src="/favicon.png" alt="" width="28" height="28" class="w-7 h-7" />
-          <span>WoW Class Picker</span>
+    <header class="md:sticky md:top-0 z-40 border-b-2 border-gold-border/70 bg-[#0b0805]/90 backdrop-blur-sm shadow-[0_4px_16px_rgba(0,0,0,0.7)]">
+      <div class="max-w-6xl w-[92%] mx-auto flex flex-wrap items-center justify-between gap-x-6 gap-y-3 pt-3">
+        <NuxtLink :to="localePath(routeName('index'))" class="flex items-center gap-3 pb-3" aria-label="WoW Class Picker">
+          <SiteLogo :mode="mode" />
         </NuxtLink>
-        <nav :aria-label="$t('nav.menu')" class="flex flex-wrap items-center gap-x-4 gap-y-1 text-sm font-semibold">
+
+        <!-- Umschalter Retail / Forever im Stil der Reiter am Charakterfenster -->
+        <div class="flex items-end gap-3 self-end">
+        <LanguagePicker class="mb-2 flex md:hidden" />
+        <nav :aria-label="$t('nav.gameMode')" class="flex items-end gap-1">
           <NuxtLink
-            v-for="item in navItems"
-            :key="item.to"
-            :to="item.to"
-            class="text-neutral-300 hover:text-yellow-400 transition-colors"
-            active-class="!text-yellow-400"
+            v-for="m in modes"
+            :key="m.id"
+            :to="m.to"
+            class="flex flex-col items-center rounded-t-md border-2 border-b-0 px-2.5 pt-1 pb-0.5 transition-all"
+            :class="mode === m.id
+              ? 'border-gold-border bg-gradient-to-b from-[#3a2a12] to-[#1a120a] text-gold'
+              : 'border-neutral-700 bg-neutral-900/80 text-neutral-400 hover:text-gold-light'"
+            :aria-current="mode === m.id ? 'page' : undefined"
+            :title="m.label + ' · ' + m.sub"
+            :data-umami-event="'Mode - ' + m.id"
           >
-            {{ item.label }}
+            <GameLogo :mode="m.id" :width="64" eager :class="mode === m.id ? '' : 'opacity-60 grayscale-[60%]'" />
+            <span class="font-display text-[11px] font-bold uppercase tracking-widest">{{ m.label }}</span>
           </NuxtLink>
-          <LanguagePicker />
         </nav>
+        </div>
+      </div>
+
+      <div class="border-t border-gold-border/40 bg-black/50">
+        <div class="max-w-6xl w-[92%] mx-auto flex flex-wrap items-center justify-between gap-3 py-2">
+          <nav :aria-label="$t('nav.menu')" class="-mx-1 flex flex-nowrap items-center gap-x-5 overflow-x-auto px-1 font-display text-[15px] font-semibold whitespace-nowrap md:flex-wrap">
+            <NuxtLink
+              v-for="item in navItems"
+              :key="item.to"
+              :to="item.to"
+              class="text-neutral-300 hover:text-gold transition-colors"
+              active-class="!text-gold"
+            >
+              {{ item.label }}
+            </NuxtLink>
+          </nav>
+          <LanguagePicker class="hidden md:flex" />
+        </div>
       </div>
     </header>
 
@@ -46,29 +92,41 @@ const navItems = computed(() => [
       <slot />
     </div>
 
-    <footer class="mt-16 border-t border-neutral-800 bg-neutral-950/60 text-sm text-neutral-400">
-      <div class="max-w-5xl w-[90%] mx-auto py-8 grid gap-8 sm:grid-cols-3">
+    <footer class="mt-20 border-t-2 border-gold-border/60 bg-black/60 text-neutral-400">
+      <div class="max-w-6xl w-[92%] mx-auto py-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
         <div>
-          <p class="font-bold text-neutral-200 mb-2">WoW Class Picker</p>
-          <p>{{ $t('footer.tagline') }}</p>
+          <SiteLogo :mode="mode" small />
+          <p class="mt-3 text-[15px]">{{ $t('footer.tagline') }}</p>
         </div>
         <div>
-          <p class="font-bold text-neutral-200 mb-2">{{ $t('footer.tools') }}</p>
+          <p class="font-display font-bold text-gold mb-2">Retail · Midnight</p>
           <ul class="space-y-1">
-            <li><NuxtLink :to="localePath('index')" class="hover:text-yellow-400">{{ $t('nav.picker') }}</NuxtLink></li>
-            <li><NuxtLink :to="localePath('quiz')" class="hover:text-yellow-400">{{ $t('nav.quiz') }}</NuxtLink></li>
-            <li><NuxtLink :to="localePath('zufall')" class="hover:text-yellow-400">{{ $t('nav.random') }}</NuxtLink></li>
+            <li><NuxtLink :to="localePath('index')" class="hover:text-gold">{{ $t('nav.picker') }}</NuxtLink></li>
+            <li><NuxtLink :to="localePath('klassen')" class="hover:text-gold">{{ $t('nav.classes') }}</NuxtLink></li>
+            <li><NuxtLink :to="localePath('quiz')" class="hover:text-gold">{{ $t('nav.quiz') }}</NuxtLink></li>
+            <li><NuxtLink :to="localePath('zufall')" class="hover:text-gold">{{ $t('nav.random') }}</NuxtLink></li>
           </ul>
         </div>
         <div>
-          <p class="font-bold text-neutral-200 mb-2">{{ $t('footer.content') }}</p>
+          <p class="font-display font-bold text-gold mb-2">WoW Forever</p>
           <ul class="space-y-1">
-            <li><NuxtLink :to="localePath('klassen')" class="hover:text-yellow-400">{{ $t('nav.classes') }}</NuxtLink></li>
-            <li><NuxtLink :to="localePath('ratgeber')" class="hover:text-yellow-400">{{ $t('nav.guides') }}</NuxtLink></li>
+            <li><NuxtLink :to="localePath('forever')" class="hover:text-gold">{{ $t('nav.picker') }}</NuxtLink></li>
+            <li><NuxtLink :to="localePath('forever-klassen')" class="hover:text-gold">{{ $t('nav.classes') }}</NuxtLink></li>
+            <li><NuxtLink :to="localePath('forever-quiz')" class="hover:text-gold">{{ $t('nav.quiz') }}</NuxtLink></li>
+            <li><NuxtLink :to="localePath('forever-zufall')" class="hover:text-gold">{{ $t('nav.random') }}</NuxtLink></li>
+          </ul>
+        </div>
+        <div>
+          <p class="font-display font-bold text-gold mb-2">{{ $t('footer.content') }}</p>
+          <ul class="space-y-1">
+            <li><NuxtLink :to="localePath('ratgeber')" class="hover:text-gold">{{ $t('nav.guides') }}</NuxtLink></li>
+            <li><NuxtLink :to="localePath('ueber')" class="hover:text-gold">{{ $t('nav.about') }}</NuxtLink></li>
+            <li><a href="https://frysch.studio/impressum/" class="hover:text-gold">{{ $t('footer.imprint') }}</a></li>
+            <li><a href="https://frysch.studio/datenschutz/" class="hover:text-gold">{{ $t('footer.privacy') }}</a></li>
           </ul>
         </div>
       </div>
-      <p class="max-w-5xl w-[90%] mx-auto pb-8 text-xs text-neutral-500">{{ $t('footer.disclaimer') }}</p>
+      <p class="max-w-6xl w-[92%] mx-auto pb-10 text-xs text-neutral-500">{{ $t('footer.disclaimer') }}</p>
     </footer>
   </div>
 </template>

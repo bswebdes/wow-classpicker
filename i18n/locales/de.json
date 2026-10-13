@@ -6,7 +6,7 @@
   "arenaStatus": "Gesamt-Status der Arena",
   "minTwoClasses": "Wähle mindestens 2 Klassen aus, um den Kampf zu starten!",
   "selection": {
-    "title": "SELECT YOUR FIGHTER",
+    "title": "WÄHLE DEINE KÄMPFER",
     "allIn": "ALLE REIN",
     "clear": "LÖSCHEN",
     "randomNames": "ZUFALLS-NAMEN",
@@ -147,6 +147,8 @@
   "victory": {
     "champion": "CHAMPION!",
     "playInMidnight": "Du spielst in Midnight:",
+    "achievement": "Erfolg errungen",
+    "playInForever": "Du spielst in WoW Forever:",
     "again": "NOCHMAL!"
   },
   "meter": {
@@ -161,6 +163,8 @@
     "startLog": "Der Kampf beginnt mit {count} Klassen!",
     "evadeLog": "{target} weicht dem Angriff von {attacker} aus!",
     "critLog": "KRITISCHER TREFFER von {attacker}!",
+    "logEmpty": "Wähle mindestens zwei Klassen und starte den Kampf. Hier erscheint dann alles, was in der Arena passiert.",
+    "logTitle": "Kampflog",
     "megaCritLog": "MEGA-KRIT von {attacker}!",
     "eliminatedLog": "{target} wurde von {attacker} eliminiert!",
     "winnerLog": "{winner} GEWINNT DIE ARENA!",

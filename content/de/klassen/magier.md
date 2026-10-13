@@ -2,6 +2,9 @@
 title: "Magier in WoW Midnight – Spielweise, Specs und für wen er passt"
 description: "Der Magier in WoW Midnight erklärt: Arkan, Feuer und Frost, Portale, Blinzeln, Spielgefühl, Stärken und Schwächen. Der klassische Fernkampf-Zauberer."
 classId: mage
+summary: "Der Magier ist der klassische Fernkampf-Zauberer mit Arkan-, Feuer- und Frostmagie und großem Burst-Schaden. Er spielt nur Schaden, bringt Portale und Essen mit und ist in Stoff eher zerbrechlich."
+date: "2026-10-13"
+updated: "2026-10-13"
 ---
 
 ## Spielweise

@@ -1,6 +1,6 @@
 # ⚔️ Midnight Class Picker ⚔️
 
-Ein witziger "Pokémon-artiger" Arena-Kampf-Simulator, der dir die schwere Entscheidung abnimmt, welche WoW-Klasse du in der Erweiterung **Midnight** spielen sollst!
+Ein Arena-Kampf-Simulator mit Klassen-Quiz, Zufallsgenerator und Ratgebern, der dir die schwere Entscheidung abnimmt, welche WoW-Klasse du in **Midnight** oder **WoW Forever** spielen sollst!
 
 ## 🎮 Was ist das?
 Du kannst dich nicht entscheiden, ob du deinen Schurken, Druiden oder doch den neuen Rufer spielen willst? Lass sie einfach gegeneinander antreten! Der Champion, der als Letztes in der Arena steht, wird dein Main für Midnight.
@@ -35,14 +35,17 @@ npm run dev
 - **@nuxtjs/i18n**: Deutsch & Englisch (`i18n/locales/`).
 - **TypeScript**: Typisierte Logik (Composables).
 
-## 📈 SEO & Pflege
-Die Seite wird beim Build vorgerendert (statisch ausgeliefert) und ist zweisprachig (Deutsch ohne Prefix, Englisch unter `/en`).
+## 📈 SEO, GEO & Pflege
+Die Seite wird beim Build vorgerendert (statisch ausgeliefert) und ist zweisprachig (Deutsch ohne Prefix, Englisch unter `/en`). Es gibt zwei Spielmodi: **Retail (Midnight)** und **WoW Forever** unter `/forever`, umschaltbar über die Reiter im Header.
 
-- **Inhalte (`content/`)**: Klassenseiten (`de/klassen`, `en/classes`), Ratgeber (`de/ratgeber`, `en/guides`) und Textblöcke für Startseite, Quiz und Zufallsgenerator (`*/blocks`) als Markdown über Nuxt Content. DE- und EN-Ratgeber werden über das Feld `key` verknüpft.
-- **Klassendaten (`app/utils/classInfo.ts`)**: Specs, Rollen, Rüstung, Slugs und unsere Bewertungen. Wird von Klassenseiten, Quiz und Zufallsgenerator genutzt. Kampfwerte für die Arena liegen in `app/composables/useBattle.ts`.
-- **UI-Texte (`i18n/locales/`)**: `de.json`/`en.json` für die Arena, `*-site.json` für Navigation und neue Seiten.
-- **SEO-Module**: Sitemap (`/sitemap_index.xml`), `robots.txt`, Schema.org und automatisch generierte OG-Bilder (`app/components/OgImage/`).
-- **Titel & Beschreibungen**: Für Inhaltsseiten im Frontmatter (`title`, `description`), sonst in den i18n-Dateien. Werte mit Doppelpunkt immer in Anführungszeichen setzen.
+- **Seiten (`app/pages/`)** sind dünne Wrapper. Die eigentlichen Ansichten liegen in `app/components/*View.vue` und bekommen den Modus als Prop (`retail` / `forever`). `useGameMode()` ermittelt den Modus aus der Route.
+- **Klassendaten**: `app/utils/classInfo.ts` (Retail) und `app/utils/foreverInfo.ts` (Forever inkl. Völker-Matrix). Daraus entstehen Klassenseiten, Quiz, Zufallsgenerator und die automatisch erzeugten FAQs auf den Klassenseiten. Kampfwerte für die Arena liegen in `app/composables/useBattle.ts`.
+- **Inhalte (`content/`)**: Klassenseiten (`de/klassen`, `en/classes`, `*/forever/...`), Ratgeber (`de/ratgeber`, `en/guides`, mit `game: forever` für Forever-Ratgeber) und Textblöcke (`*/blocks`). Frontmatter: `summary` (Kurzantwort oben auf der Seite), `faq`, `date`/`updated`. DE- und EN-Ratgeber werden über `key` verknüpft. Werte mit Doppelpunkt immer in Anführungszeichen setzen.
+- **UI-Texte (`i18n/locales/`)**: `de.json`/`en.json` für die Arena, `*-site.json` für alles andere.
+- **Design**: Tokens und Komponenten-Klassen (`wow-frame`, `wow-btn`, `wow-tooltip`, `wow-parchment`, `wow-title` …) in `app/assets/css/tailwind.css`. Schriften (Cinzel, Alegreya Sans) werden über `@nuxt/fonts` selbst gehostet.
+- **Bilder**: Spiellogos liegen als Original in `app/assets/images` und werden über `@nuxt/image` beim Build zu kleinen WebP-Dateien. Die Originale werden nicht ausgeliefert.
+- **SEO-Module**: Sitemap (`/sitemap_index.xml`, Inhaltsseiten mit Sprachalternativen über `server/api/__sitemap__/urls.ts`), `robots.txt`, Schema.org (WebPage/FAQPage, Article, Breadcrumb, ItemList, SoftwareApplication, VideoGame-Bezug), OG-Bilder pro Seite (`app/components/OgImage/`).
+- **GEO / KI-Suche**: `nuxt-ai-ready` erzeugt `/llms.txt`, `/llms-full.txt` und Markdown-Versionen jeder Seite (z. B. `/klassen/magier.md`) und setzt Content Signals in der `robots.txt`.
 - **Netlify**: Die Node.js-Version (24) ist in `netlify.toml` festgelegt, Nuxt Content braucht für native SQLite mindestens 22.5.
 
 ## 📜 Lizenz

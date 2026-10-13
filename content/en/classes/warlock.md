@@ -2,6 +2,9 @@
 title: "Warlock in WoW Midnight – Playstyle, Specs and Who It Suits"
 description: "The Warlock in WoW Midnight explained: Affliction, Demonology and Destruction, demons, Soul Shards, how it plays, strengths and weaknesses."
 classId: warlock
+summary: "The Warlock is a ranged caster with curses and demon companions. It only deals damage but is very tough for a cloth class and comfortable to play solo."
+date: "2026-10-13"
+updated: "2026-10-13"
 ---
 
 ## Playstyle

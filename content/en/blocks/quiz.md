@@ -9,10 +9,8 @@ faq:
     a: Yes. With one click you send your top 3 into the WoW Class Picker arena and let them fight each other.
 ---
 
-## Which WoW class should I play?
+## How the class quiz works
 
 The question comes up with every new expansion at the latest: stick with your main or start fresh? This quiz helps you find out honestly what you enjoy in WoW. It asks about your favorite role, whether you prefer melee or range, what content you play, how complex your rotation can be and which fantasy speaks to you.
 
 The result isn't a verdict but a starting point. Read up on your top picks on the [class pages](/en/classes) or dig deeper in our guide [Which WoW class should I play in Midnight?](/en/guides/which-wow-class-should-i-play).
-
-## Frequently asked questions

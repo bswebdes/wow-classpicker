@@ -2,6 +2,9 @@
 title: "Krieger in WoW Midnight – Spielweise, Specs und für wen er passt"
 description: "Der Krieger in WoW Midnight erklärt: Waffen, Furor und Schutz, Spielgefühl, Stärken und Schwächen. Ideal für Einsteiger, die Nahkampf lieben."
 classId: warrior
+summary: "Der Krieger ist ein robuster Nahkämpfer in Plattenrüstung, der Schaden machen (Waffen, Furor) oder tanken (Schutz) kann. Er ist leicht zu lernen und ideal für Einsteiger, die Nahkampf ohne Zauberbuch mögen."
+date: "2026-10-13"
+updated: "2026-10-13"
 ---
 
 ## Spielweise

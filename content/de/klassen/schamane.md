@@ -2,6 +2,9 @@
 title: "Schamane in WoW Midnight – Spielweise, Specs und für wen er passt"
 description: "Der Schamane in WoW Midnight erklärt: Elementar, Verstärkung und Wiederherstellung, Totems, Kampfrausch, Spielgefühl, Stärken und Schwächen."
 classId: shaman
+summary: "Der Schamane nutzt Totems und Elementarmagie und kann Fernkampf-Schaden (Elementar), Nahkampf-Schaden (Verstärkung) oder Heilung (Wiederherstellung) spielen. Er bringt Kampfrausch und viele Gruppenwerkzeuge mit."
+date: "2026-10-13"
+updated: "2026-10-13"
 ---
 
 ## Spielweise

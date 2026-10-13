@@ -2,6 +2,9 @@
 title: "Schurke in WoW Midnight – Spielweise, Specs und für wen er passt"
 description: "Der Schurke in WoW Midnight erklärt: Meucheln, Gesetzlosigkeit und Täuschung, Tarnung, Spielgefühl, Stärken und Schwächen. Für Spieler, die Kontrolle lieben."
 classId: rogue
+summary: "Der Schurke ist ein Nahkämpfer mit Tarnung, Giften und vielen Kontrolleffekten. Er spielt nur Schaden, ist stark im PvP und belohnt Erfahrung, ist für Einsteiger aber anspruchsvoller."
+date: "2026-10-13"
+updated: "2026-10-13"
 ---
 
 ## Spielweise

@@ -2,6 +2,9 @@
 title: "Rogue in WoW Midnight – Playstyle, Specs and Who It Suits"
 description: "The Rogue in WoW Midnight explained: Assassination, Outlaw and Subtlety, stealth, playstyle, strengths and weaknesses. For players who love control."
 classId: rogue
+summary: "The Rogue is a melee fighter with stealth, poisons and lots of crowd control. It only deals damage, is strong in PvP and rewards experience, but it is more demanding for beginners."
+date: "2026-10-13"
+updated: "2026-10-13"
 ---
 
 ## Playstyle

@@ -2,6 +2,9 @@
 title: "Dämonenjäger in WoW Midnight – Spielweise, Specs und Verschlinger"
 description: "Der Dämonenjäger in WoW Midnight erklärt: Verwüstung, Rachsucht und der neue Verschlinger. Mobilität, Spielgefühl, Stärken und Schwächen."
 classId: demonhunter
+summary: "Der Dämonenjäger ist die mobilste Klasse in WoW. Verwüstung macht Nahkampf-Schaden, Rachsucht tankt, und der neue Verschlinger aus Midnight kämpft mit Leeremagie aus mittlerer Distanz."
+date: "2026-10-13"
+updated: "2026-10-13"
 ---
 
 ## Spielweise

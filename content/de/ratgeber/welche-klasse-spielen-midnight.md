@@ -2,6 +2,15 @@
 title: "Welche Klasse soll ich in WoW Midnight spielen? Guide"
 description: "Welche WoW-Klasse passt zu mir? In 5 Schritten zur richtigen Klasse für Midnight, mit Empfehlungen nach Rolle, Spielstil und Erfahrung."
 key: which-class
+summary: "Wähle deine WoW-Klasse in fünf Schritten: Rolle (Tank, Heiler, Schaden), Nah- oder Fernkampf, Lieblingsinhalte, gewünschte Komplexität und Fantasy. Für Unentschlossene sind Paladin, Druide und Mönch ideal, weil sie alle drei Rollen spielen können."
+updated: "2026-10-13"
+faq:
+  - q: "Welche WoW-Klasse soll ich als Erstes spielen?"
+    a: "Für den Einstieg eignen sich Jäger, Paladin, Todesritter, Dämonenjäger und Krieger am besten. Sie sind robust und haben überschaubare Rotationen."
+  - q: "Welche Klassen können alle drei Rollen spielen?"
+    a: "Paladin, Druide und Mönch können tanken, heilen und Schaden machen. Damit hältst du dir alle Möglichkeiten offen."
+  - q: "Sollte ich die Klasse nach der Tier-Liste wählen?"
+    a: "Nein. Die Balance ändert sich mit jedem Patch. Außerhalb der Weltspitze ist jede Klasse gut genug, wichtiger ist, dass dir die Klasse Spaß macht."
 order: 1
 date: "2026-10-13"
 classes: [paladin, hunter, demonhunter, druid, deathknight, mage]

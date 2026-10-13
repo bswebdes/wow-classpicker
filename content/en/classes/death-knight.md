@@ -2,6 +2,9 @@
 title: "Death Knight in WoW Midnight – Playstyle, Specs and Who It Suits"
 description: "The Death Knight in WoW Midnight explained: Blood, Frost and Unholy, runes, playstyle, strengths and weaknesses. A tough plate fighter with strong self-healing."
 classId: deathknight
+summary: "The Death Knight is a plate fighter with dark magic, one of the most forgiving tanks as Blood and a melee damage dealer as Frost or Unholy. Strong self-healing makes it very sturdy solo."
+date: "2026-10-13"
+updated: "2026-10-13"
 ---
 
 ## Playstyle

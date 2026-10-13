@@ -2,6 +2,9 @@
 title: "Rufer (Evoker) in WoW Midnight – Spielweise und Specs"
 description: "Der Rufer (Evoker) in WoW Midnight erklärt: Verheerung, Bewahrung und Verstärkung, ermächtigte Zauber, Spielgefühl, Stärken und Schwächen."
 classId: evoker
+summary: "Der Rufer (Evoker) ist ein Drachenmagier in Kettenrüstung, der auf rund 25 Meter kämpft und Zauber auflädt. Er spielt Schaden (Verheerung), Heilung (Bewahrung) oder Support (Verstärkung), aber keinen Tank."
+date: "2026-10-13"
+updated: "2026-10-13"
 ---
 
 ## Spielweise

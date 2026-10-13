@@ -2,6 +2,9 @@
 title: "Paladin in WoW Midnight – Spielweise, Specs und für wen er passt"
 description: "Der Paladin in WoW Midnight erklärt: Heilig, Schutz und Vergeltung, Spielgefühl, Stärken und Schwächen. Die vielseitigste Plattenklasse für Einsteiger."
 classId: paladin
+summary: "Der Paladin ist ein Plattenträger mit heiligem Licht, der als einzige Klasse neben Druide und Mönch alle drei Rollen spielen kann: Heilig heilt, Schutz tankt, Vergeltung macht Schaden. Viele Notfallfähigkeiten machen ihn sehr einsteigerfreundlich."
+date: "2026-10-13"
+updated: "2026-10-13"
 ---
 
 ## Spielweise

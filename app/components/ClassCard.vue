@@ -1,23 +1,24 @@
 <script setup>
 const props = defineProps({
-  classId: { type: String, required: true }
+  classId: { type: String, required: true },
+  mode: { type: String, default: 'retail' }
 })
 
 const { locale } = useI18n()
 const localePath = useLocalePath()
-const info = computed(() => getClassInfo(props.classId))
+const info = computed(() => getClassInfo(props.classId, props.mode))
 </script>
 
 <template>
   <NuxtLink
     v-if="info"
-    :to="localePath({ name: 'klassen-slug', params: { slug: info.slug[locale] } })"
-    class="group flex items-center gap-3 rounded-lg border border-neutral-800 bg-neutral-900/70 p-3 transition-colors hover:border-neutral-600"
+    :to="localePath({ name: routeNameFor('klassen-slug', mode), params: { slug: info.slug[locale] } })"
+    class="wow-tooltip group flex items-center gap-3 !p-2.5 transition-colors hover:border-gold"
   >
-    <img :src="info.icon" :alt="$t(`classes.${info.id}.name`)" width="48" height="48" class="w-12 h-12 rounded-md" :style="{ outline: `2px solid ${info.color}` }" />
+    <img :src="info.icon" :alt="$t(`classes.${info.id}.name`)" width="48" height="48" class="wow-slot h-12 w-12 group-hover:!border-gold-border" />
     <span class="flex flex-col text-left">
-      <span class="font-bold" :style="{ color: info.color }">{{ $t(`classes.${info.id}.name`) }}</span>
-      <span class="text-xs text-neutral-400">{{ classRoles(info).map(r => $t(`common.roles.${r}`)).join(' · ') }}</span>
+      <span class="font-display font-bold" :style="{ color: info.color }">{{ $t(`classes.${info.id}.name`) }}</span>
+      <span class="text-[13px] text-neutral-400">{{ classRoles(info).map(r => $t(`common.roles.${r}`)).join(' · ') }}</span>
     </span>
   </NuxtLink>
 </template>

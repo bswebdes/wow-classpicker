@@ -3,13 +3,13 @@ const { locale, locales } = useI18n()
 </script>
 
 <template>
-  <div class="flex items-center gap-1.5">
+  <div class="items-center gap-1.5">
     <SwitchLocalePathLink
       v-for="l in locales"
       :key="l.code"
       :locale="l.code"
       class="flex items-center rounded-xs p-1 transition-opacity"
-      :class="locale === l.code ? 'ring-2 ring-yellow-400' : 'opacity-60 hover:opacity-100'"
+      :class="locale === l.code ? 'ring-2 ring-gold' : 'opacity-60 hover:opacity-100'"
       :title="l.name"
       :aria-label="l.name"
       data-umami-event="Language - Change"

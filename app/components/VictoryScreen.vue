@@ -1,56 +1,46 @@
 <script setup>
 const props = defineProps({
-  winner: Object
+  winner: Object,
+  mode: { type: String, default: 'retail' }
 })
 
 const emit = defineEmits(['close'])
 
 onMounted(() => {
   if (typeof window !== 'undefined' && window.umami && props.winner) {
-    window.umami.track('Battle - Victory', { 
-      winner: props.winner.classId, 
-      name: props.winner.name 
+    window.umami.track('Battle - Victory', {
+      winner: props.winner.classId,
+      name: props.winner.name,
+      mode: props.mode
     })
   }
 })
 </script>
 
 <template>
-  <div v-if="winner" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-xs">
-    <div 
-      id="victory-screen" 
-      class="max-w-sm w-full p-8 border-4 border-yellow-400 bg-neutral-900 rounded-2xl shadow-2xl shadow-yellow-500/20 text-center animate-bounce-subtle"
-    >
-      <div class="text-6xl mb-4">🏆</div>
-      <h2 class="text-3xl font-extrabold text-yellow-400 drop-shadow-md">{{ $t('victory.champion') }}</h2>
-      
-      <div class="mt-6 flex flex-col items-center">
-        <div class="w-24 h-24 mb-2">
-          <img :src="winner.icon" :alt="winner.className" class="w-full h-full object-contain" />
-        </div>
-        <p class="text-xl">{{ $t('victory.playInMidnight') }}</p>
-        <p class="text-2xl font-bold mt-1" :class="`text-c-${winner.id}`">{{ winner.name }}</p>
-        <p v-if="winner.name !== winner.className" class="text-sm text-neutral-500 uppercase font-bold">{{ $t(`classes.${winner.classId}.name`) }}</p>
+  <div v-if="winner" class="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4 backdrop-blur-xs" role="dialog" aria-modal="true">
+    <!-- Erfolgs-Meldung im Stil eines Achievements -->
+    <div id="victory-screen" class="wow-frame w-full max-w-sm text-center !border-gold animate-[victory-pop_0.4s_ease-out]">
+      <div class="font-display text-[13px] font-bold uppercase tracking-[0.3em] text-neutral-400">{{ $t('victory.achievement') }}</div>
+      <h2 class="wow-title mt-1 text-4xl uppercase">{{ $t('victory.champion') }}</h2>
+      <div class="wow-divider !my-4" />
+      <div class="flex flex-col items-center">
+        <img :src="winner.icon" :alt="winner.className" width="96" height="96" class="wow-slot h-24 w-24 !border-gold" />
+        <p class="mt-4 text-neutral-300">{{ mode === 'forever' ? $t('victory.playInForever') : $t('victory.playInMidnight') }}</p>
+        <p class="mt-1 font-display text-2xl font-bold" :class="`text-c-${winner.classId}`">{{ winner.name }}</p>
+        <p v-if="winner.name !== winner.className" class="text-sm font-bold uppercase text-neutral-500">{{ $t(`classes.${winner.classId}.name`) }}</p>
       </div>
-
-      <button 
-        class="arcade-btn group relative overflow-hidden mt-8 w-full"
-        @click="emit('close')"
-        data-umami-event="Victory - Play Again"
-      >
-        <span class="relative z-10">{{ $t('victory.again') }}</span>
-        <div class="absolute inset-0 bg-yellow-600 transform skew-x-[-12deg] group-hover:bg-yellow-500 transition-colors"></div>
+      <button class="wow-btn wow-btn-lg mt-8 w-full" data-umami-event="Victory - Play Again" @click="emit('close')">
+        {{ $t('victory.again') }}
       </button>
     </div>
   </div>
 </template>
 
 <style scoped>
-@keyframes bounce-subtle {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
-}
-.animate-bounce-subtle {
-  animation: bounce-subtle 2s infinite ease-in-out;
+@keyframes victory-pop {
+  0% { transform: scale(0.6); opacity: 0; }
+  70% { transform: scale(1.05); opacity: 1; }
+  100% { transform: scale(1); }
 }
 </style>

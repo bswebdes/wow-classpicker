@@ -29,12 +29,17 @@ setI18nParams({
   ...(alternate.value ? { [otherLocale.value]: { slug: alternate.value.path.split('/').pop() } } : {})
 })
 
+const mode = computed(() => page.value.game === 'forever' ? 'forever' : 'retail')
+
 usePageSeo({
   title: () => page.value.seo?.title || page.value.title,
   description: () => page.value.seo?.description || page.value.description,
   ogTitle: () => page.value.title,
   ogSubtitle: () => page.value.description,
-  classes: page.value.classes
+  classes: page.value.classes,
+  mode: mode.value,
+  faq: page.value.faq,
+  dateModified: page.value.updated || page.value.date
 })
 
 useSchemaOrg([
@@ -56,29 +61,46 @@ const formatDate = (date) => new Date(date).toLocaleDateString(locale.value === 
 </script>
 
 <template>
-  <main class="max-w-3xl w-[90%] mx-auto mt-8">
-    <nav class="text-sm text-neutral-500 mb-4">
-      <NuxtLink :to="localePath('ratgeber')" class="hover:text-yellow-400">{{ $t('nav.guides') }}</NuxtLink>
+  <main class="max-w-3xl w-[92%] mx-auto mt-10">
+    <nav class="mb-4 text-[14px] text-neutral-400" aria-label="Breadcrumb">
+      <NuxtLink :to="localePath('ratgeber')" class="hover:text-gold">{{ $t('nav.guides') }}</NuxtLink>
+      <span class="mx-2">›</span>
+      <span>{{ mode === 'forever' ? 'WoW Forever' : 'WoW Midnight' }}</span>
     </nav>
 
-    <h1 class="text-3xl font-extrabold text-yellow-400">{{ page.title }}</h1>
-    <p class="mt-2 text-sm text-neutral-500">
-      {{ page.updated ? $t('common.updated') : $t('common.published') }}: {{ formatDate(page.updated || page.date) }}
-    </p>
+    <article>
+      <header>
+        <h1 class="wow-title text-3xl sm:text-4xl">{{ page.title }}</h1>
+        <p class="mt-2 text-[14px] text-neutral-500">
+          {{ page.updated ? $t('common.updated') : $t('common.published') }}:
+          <time :datetime="page.updated || page.date">{{ formatDate(page.updated || page.date) }}</time>
+        </p>
+      </header>
 
-    <ContentProse class="mt-8">
-      <ContentRenderer :value="page" />
-    </ContentProse>
+      <!-- Kurzantwort zuerst: hilft Lesern und KI-Antworten -->
+      <section v-if="page.summary" class="wow-objective mt-6">
+        <h2 class="font-display text-[15px] font-bold uppercase tracking-wider text-gold">{{ $t('common.summary') }}</h2>
+        <p class="mt-1 text-neutral-100">{{ page.summary }}</p>
+      </section>
+
+      <ContentProse class="mt-6">
+        <ContentRenderer :value="page" />
+      </ContentProse>
+    </article>
+
+    <section v-if="page.faq?.length" class="mt-12">
+      <h2 class="wow-title text-2xl">{{ $t('common.faqTitle') }}</h2>
+      <FaqList :items="page.faq" class="mt-4" />
+    </section>
 
     <section v-if="page.classes?.length" class="mt-12">
-      <h2 class="text-2xl font-extrabold text-yellow-400 mb-4">{{ $t('common.relatedClasses') }}</h2>
+      <h2 class="wow-title mb-4 text-2xl">{{ $t('common.relatedClasses') }}</h2>
       <div class="grid gap-3 sm:grid-cols-2">
-        <ClassCard v-for="id in page.classes" :key="id" :class-id="id" />
+        <ClassCard v-for="id in page.classes" :key="id" :class-id="id" :mode="mode" />
       </div>
       <div class="mt-8">
-        <NuxtLink :to="localePath({ name: 'index', query: { classes: page.classes.join(',') } })" class="arcade-btn group relative overflow-hidden">
-          <span class="relative z-10">{{ $t('common.fightInPicker') }}</span>
-          <div class="absolute inset-0 bg-red-700 transform skew-x-[-12deg] group-hover:bg-red-600 transition-colors"></div>
+        <NuxtLink :to="localePath({ name: routeNameFor('index', mode), query: { classes: page.classes.join(',') } })" class="wow-btn wow-btn-lg">
+          ⚔ {{ $t('common.fightInPicker') }}
         </NuxtLink>
       </div>
     </section>

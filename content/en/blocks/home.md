@@ -23,5 +23,3 @@ Can't decide which class to play in **World of Warcraft: Midnight**? Then let th
 4. **Main found:** the last survivor is your class for Midnight.
 
 Prefer a more informed decision? Check out the [overview of all WoW classes](/en/classes) or our guide [Which WoW class should I play in Midnight?](/en/guides/which-wow-class-should-i-play).
-
-## Frequently asked questions

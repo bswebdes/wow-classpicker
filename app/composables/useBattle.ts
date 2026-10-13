@@ -365,8 +365,8 @@ export const useBattle = () => {
     selectedClasses.value = new Set(selectedClasses.value)
   }
 
-  const selectAll = () => {
-    selectedClasses.value = new Set(Object.keys(classData))
+  const selectAll = (ids = Object.keys(classData)) => {
+    selectedClasses.value = new Set(ids)
     selectedClasses.value.forEach(id => {
       if (!customNames[id]) {
         customNames[id] = getRandomName()

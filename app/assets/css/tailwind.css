@@ -2,19 +2,138 @@
 @plugin "@tailwindcss/typography";
 @import "./main.css";
 
-/* Custom Tailwind layers if needed */
+/* Design-Tokens im Stil des klassischen WoW-Interfaces */
+@theme {
+  --font-display: "Cinzel", "Times New Roman", serif;
+  --font-sans: "Alegreya Sans", ui-sans-serif, system-ui, sans-serif;
+
+  --color-gold: #ffd100;          /* GameFontNormal */
+  --color-gold-light: #fff3b0;
+  --color-gold-dark: #a0731d;
+  --color-gold-border: #8a6d2b;
+  --color-blood: #8b0f0f;
+  --color-blood-dark: #4a0606;
+  --color-parchment: #ead9b0;
+  --color-parchment-dark: #c9b27c;
+  --color-ink: #3b2a14;
+  --color-tooltip: #0b0b1d;
+  --color-quality-epic: #a335ee;
+  --color-quality-rare: #0070dd;
+  --color-quality-uncommon: #1eff00;
+}
+
 @layer base {
   html { @apply scroll-smooth; }
-  body { @apply bg-neutral-900 text-neutral-200 min-h-screen antialiased; }
+  body {
+    @apply min-h-screen antialiased font-sans text-neutral-200 text-[18px];
+    background-color: #0b0805;
+    background-image:
+      radial-gradient(ellipse at top, rgba(120, 70, 20, 0.18), transparent 60%),
+      radial-gradient(ellipse at bottom, rgba(70, 20, 90, 0.12), transparent 60%);
+    background-attachment: fixed;
+  }
+  [data-game="forever"] body {
+    background-image:
+      radial-gradient(ellipse at top, rgba(160, 110, 30, 0.22), transparent 60%),
+      radial-gradient(ellipse at bottom, rgba(30, 80, 50, 0.14), transparent 60%);
+  }
+  h1, h2, h3 { @apply font-display; }
 }
 
 @layer components {
-  .btn-primary { @apply inline-flex items-center justify-center rounded-md bg-red-600 px-5 py-3 text-base font-semibold uppercase tracking-wide text-white shadow-sm transition hover:bg-red-500 focus:outline-hidden focus:ring-2 focus:ring-red-400 disabled:opacity-60; }
-  .btn-secondary { @apply inline-flex items-center justify-center rounded-full border border-neutral-600 bg-neutral-800 px-3 py-1.5 text-sm font-semibold text-neutral-300 transition hover:border-neutral-500 hover:text-white; }
-  .card { @apply rounded-xl border border-neutral-800 bg-neutral-800/60 shadow-lg; }
-  .section { @apply rounded-xl border border-neutral-800 bg-neutral-800/60 p-5; }
-}
+  /* Rahmen wie die Fenster im Classic-Interface: dunkler Grund, goldene Kante */
+  .wow-frame {
+    @apply relative rounded-md p-5;
+    background: linear-gradient(180deg, rgba(28, 22, 14, 0.96), rgba(12, 9, 6, 0.96));
+    border: 2px solid var(--color-gold-border);
+    box-shadow:
+      inset 0 0 0 1px #000,
+      inset 0 0 24px rgba(0, 0, 0, 0.8),
+      0 6px 20px rgba(0, 0, 0, 0.6);
+  }
 
-@layer utilities {
-  .text-glow { text-shadow: 0 0 10px rgba(255,255,255,0.15); }
+  /* Tooltip-Box wie im Spiel */
+  .wow-tooltip {
+    @apply rounded-md p-4;
+    background: rgba(9, 9, 26, 0.94);
+    border: 1px solid #8f8f8f;
+    box-shadow: inset 0 0 0 1px #000, 0 4px 14px rgba(0, 0, 0, 0.7);
+  }
+
+  /* Pergament wie im Questlog */
+  .wow-parchment {
+    @apply rounded-sm p-6 text-ink;
+    background:
+      radial-gradient(ellipse at center, rgba(255, 248, 225, 0.55), transparent 70%),
+      linear-gradient(180deg, var(--color-parchment), var(--color-parchment-dark));
+    box-shadow: inset 0 0 40px rgba(90, 60, 20, 0.45), 0 4px 16px rgba(0, 0, 0, 0.6);
+    border: 1px solid #6b5023;
+  }
+
+  /* Ingame-Button: rot mit Goldkante */
+  .wow-btn {
+    @apply relative inline-flex items-center justify-center gap-2 select-none whitespace-nowrap rounded-[4px] px-5 py-2 font-display text-[15px] font-bold tracking-wide transition-[filter,transform] duration-100 cursor-pointer;
+    color: var(--color-gold);
+    text-shadow: 1px 1px 0 #000;
+    background: linear-gradient(180deg, #b52020 0%, #7a0c0c 48%, #5a0707 52%, #3e0404 100%);
+    border: 1px solid #000;
+    box-shadow:
+      0 0 0 1px var(--color-gold-border),
+      inset 0 1px 0 rgba(255, 210, 160, 0.35),
+      inset 0 -2px 4px rgba(0, 0, 0, 0.5),
+      0 2px 4px rgba(0, 0, 0, 0.6);
+  }
+  .wow-btn:hover { filter: brightness(1.25); color: #fff; box-shadow: 0 0 0 1px var(--color-gold), inset 0 0 10px rgba(255, 209, 0, 0.35), 0 2px 4px rgba(0, 0, 0, 0.6); }
+  .wow-btn:active { transform: translateY(1px); filter: brightness(0.9); }
+  .wow-btn:focus-visible { outline: 2px solid var(--color-gold); outline-offset: 2px; }
+  .wow-btn:disabled, .wow-btn[aria-disabled="true"] {
+    @apply cursor-not-allowed;
+    color: #8a8a8a;
+    filter: grayscale(1) brightness(0.8);
+  }
+  .wow-btn-lg { @apply px-8 py-3 text-lg; }
+  .wow-btn-sm { @apply px-3 py-1 text-[13px]; }
+
+  /* Zweitrangiger Button im Stein-Look */
+  .wow-btn-stone {
+    background: linear-gradient(180deg, #5b5b5b 0%, #353535 50%, #262626 52%, #1a1a1a 100%);
+  }
+
+  /* Überschrift in Gold mit Prägung */
+  .wow-title {
+    @apply font-display font-bold tracking-wide;
+    background: linear-gradient(180deg, var(--color-gold-light) 0%, var(--color-gold) 45%, var(--color-gold-dark) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    filter: drop-shadow(0 2px 0 rgba(0, 0, 0, 0.9));
+  }
+
+  /* Goldene Trennlinie mit Raute */
+  .wow-divider {
+    @apply relative my-8 h-px;
+    background: linear-gradient(90deg, transparent, var(--color-gold-border), transparent);
+  }
+  .wow-divider::after {
+    content: '';
+    @apply absolute left-1/2 top-1/2 h-2.5 w-2.5 -translate-x-1/2 -translate-y-1/2 rotate-45;
+    background: var(--color-gold-dark);
+    border: 1px solid var(--color-gold);
+  }
+
+  /* Icon-Slot wie in der Aktionsleiste */
+  .wow-slot {
+    @apply relative overflow-hidden rounded-[4px];
+    border: 2px solid #2a2a2a;
+    box-shadow: inset 0 0 0 1px #000, 0 0 0 1px #5c5c5c;
+  }
+
+  /* Kurzantwort-Box im Questlog-Stil ("Questziel") */
+  .wow-objective {
+    @apply rounded-sm px-5 py-4;
+    background: rgba(255, 209, 0, 0.06);
+    border-left: 3px solid var(--color-gold);
+  }
+
+  .wow-link { @apply text-gold underline decoration-gold/40 underline-offset-2 hover:decoration-gold; }
 }

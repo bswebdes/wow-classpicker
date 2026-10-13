@@ -2,6 +2,9 @@
 title: "Priester in WoW Midnight – Spielweise, Specs und für wen er passt"
 description: "Der Priester in WoW Midnight erklärt: Disziplin, Heilig und Schatten, Spielgefühl, Stärken und Schwächen. Die Klasse für alle, die heilen wollen."
 classId: priest
+summary: "Der Priester ist die klassische Heilerklasse mit gleich zwei Heiler-Spezialisierungen (Disziplin, Heilig) und dem Schattenpriester als Fernkampf-Schaden. In Stoffrüstung ist er in Gruppen stark, solo aber verwundbar."
+date: "2026-10-13"
+updated: "2026-10-13"
 ---
 
 ## Spielweise

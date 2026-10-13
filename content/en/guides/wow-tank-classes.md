@@ -2,6 +2,13 @@
 title: "WoW Tank Classes in Midnight – All 6 Tanks Compared"
 description: "Which tank class suits you? All 6 tanks in WoW Midnight compared: Warrior, Paladin, Death Knight, Monk, Druid and Demon Hunter."
 key: tanks
+summary: "Six classes can tank in WoW Midnight: Warrior (Protection), Paladin (Protection), Death Knight (Blood), Monk (Brewmaster), Druid (Guardian) and Demon Hunter (Vengeance). Blood Death Knight and Protection Paladin are the most forgiving for beginners."
+updated: "2026-10-13"
+faq:
+  - q: "Which classes can tank in WoW?"
+    a: "Warrior, Paladin, Death Knight, Monk, Druid and Demon Hunter each have a tank spec."
+  - q: "What is the easiest tank?"
+    a: "Blood Death Knight and Protection Paladin are considered the most beginner friendly thanks to strong self-healing and emergency abilities."
 order: 4
 date: "2026-10-13"
 classes: [warrior, paladin, deathknight, monk, druid, demonhunter]

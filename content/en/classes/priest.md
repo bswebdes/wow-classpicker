@@ -2,6 +2,9 @@
 title: "Priest in WoW Midnight – Playstyle, Specs and Who It Suits"
 description: "The Priest in WoW Midnight explained: Discipline, Holy and Shadow, how it plays, strengths and weaknesses. The class for everyone who wants to heal."
 classId: priest
+summary: "The Priest is the classic healing class with two healing specs (Discipline, Holy) and Shadow as a ranged damage spec. In cloth it is strong in groups but vulnerable solo."
+date: "2026-10-13"
+updated: "2026-10-13"
 ---
 
 ## Playstyle

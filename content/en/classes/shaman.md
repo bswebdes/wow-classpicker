@@ -2,6 +2,9 @@
 title: "Shaman in WoW Midnight – Playstyle, Specs and Who It Suits"
 description: "The Shaman in WoW Midnight explained: Elemental, Enhancement and Restoration, totems, Bloodlust, how it plays, strengths and weaknesses."
 classId: shaman
+summary: "The Shaman uses totems and elemental magic and can play ranged damage (Elemental), melee damage (Enhancement) or healing (Restoration). It brings Bloodlust and lots of group utility."
+date: "2026-10-13"
+updated: "2026-10-13"
 ---
 
 ## Playstyle

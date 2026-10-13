@@ -5,18 +5,34 @@
     "guides": "Ratgeber",
     "quiz": "Klassen-Quiz",
     "random": "Zufallsklasse",
-    "menu": "Menü"
+    "menu": "Menü",
+    "gameMode": "Spiel wählen",
+    "about": "Über uns"
   },
   "footer": {
-    "tagline": "Der WoW Class Picker hilft dir bei der Klassenwahl in World of Warcraft: Midnight. Mit Arena-Kampf, Quiz und Zufallsgenerator.",
+    "tagline": "Der WoW Class Picker hilft dir bei der Klassenwahl in World of Warcraft: Midnight und WoW Forever. Mit Arena-Kampf, Quiz und Zufallsgenerator.",
     "disclaimer": "Fanprojekt, keine Verbindung zu Blizzard Entertainment. World of Warcraft und Blizzard Entertainment sind Marken von Blizzard Entertainment, Inc.",
     "tools": "Tools",
-    "content": "Inhalte"
+    "content": "Inhalte",
+    "imprint": "Impressum",
+    "privacy": "Datenschutz"
   },
   "common": {
-    "roles": { "tank": "Tank", "healer": "Heiler", "dps": "Schaden" },
-    "range": { "melee": "Nahkampf", "ranged": "Fernkampf" },
-    "armor": { "plate": "Platte", "mail": "Kette", "leather": "Leder", "cloth": "Stoff" },
+    "roles": {
+      "tank": "Tank",
+      "healer": "Heiler",
+      "dps": "Schaden"
+    },
+    "range": {
+      "melee": "Nahkampf",
+      "ranged": "Fernkampf"
+    },
+    "armor": {
+      "plate": "Platte",
+      "mail": "Kette",
+      "leather": "Leder",
+      "cloth": "Stoff"
+    },
     "role": "Rolle",
     "roles_label": "Rollen",
     "armorType": "Rüstung",
@@ -37,7 +53,9 @@
     "published": "Veröffentlicht",
     "relatedClasses": "Passende Klassen",
     "notFound": "Seite nicht gefunden",
-    "any": "Egal"
+    "any": "Egal",
+    "summary": "Kurz gesagt",
+    "faqTitle": "Häufige Fragen"
   },
   "home": {
     "toolsTitle": "Noch unentschlossen?",
@@ -75,31 +93,72 @@
     "q": {
       "role": {
         "title": "Welche Rolle reizt dich am meisten?",
-        "options": { "tank": "Tank: Ich halte die Gegner fest", "healer": "Heiler: Ich halte die Gruppe am Leben", "dps": "Schaden: Ich will Zahlen sehen", "any": "Weiß ich noch nicht" }
+        "options": {
+          "tank": "Tank: Ich halte die Gegner fest",
+          "healer": "Heiler: Ich halte die Gruppe am Leben",
+          "dps": "Schaden: Ich will Zahlen sehen",
+          "any": "Weiß ich noch nicht"
+        }
       },
       "range": {
         "title": "Kämpfst du lieber aus der Nähe oder auf Distanz?",
-        "options": { "melee": "Mittendrin im Nahkampf", "ranged": "Mit Abstand per Zauber oder Bogen", "any": "Egal" }
+        "options": {
+          "melee": "Mittendrin im Nahkampf",
+          "ranged": "Mit Abstand per Zauber oder Bogen",
+          "any": "Egal"
+        }
       },
       "content": {
         "title": "Was spielst du am liebsten?",
-        "options": { "solo": "Quests, Tiefen und Solo-Inhalte", "dungeons": "Mythisch+-Dungeons", "raids": "Schlachtzüge mit der Gilde", "pvp": "PvP, Arena und Schlachtfelder" }
+        "options": {
+          "solo": "Quests und Solo-Inhalte",
+          "dungeons": "Dungeons mit der Gruppe",
+          "raids": "Schlachtzüge mit der Gilde",
+          "pvp": "PvP, Arena und Schlachtfelder"
+        }
       },
       "complexity": {
         "title": "Wie komplex darf deine Rotation sein?",
-        "options": { "simple": "Einfach, ich will entspannt spielen", "medium": "Ein bisschen Anspruch ist gut", "complex": "Gib mir alles, ich will meistern" }
+        "options": {
+          "simple": "Einfach, ich will entspannt spielen",
+          "medium": "Ein bisschen Anspruch ist gut",
+          "complex": "Gib mir alles, ich will meistern"
+        }
       },
       "theme": {
         "title": "Welche Fantasy spricht dich an?",
-        "options": { "might": "Rohe Kraft und Waffen", "holy": "Heiliges Licht", "beasts": "Tiere und Bogen", "shadow": "Gift, Dolche und Schatten", "undead": "Untod und Frost", "elements": "Die Elemente", "arcane": "Arkane Magie", "dark": "Flüche und Dämonen", "martial": "Kampfkunst und Braukunst", "nature": "Natur und Gestaltwandel", "fel": "Teufelsmagie und Leere", "dragons": "Drachen und Zeitmagie" }
+        "options": {
+          "might": "Rohe Kraft und Waffen",
+          "holy": "Heiliges Licht",
+          "beasts": "Tiere und Bogen",
+          "shadow": "Gift, Dolche und Schatten",
+          "undead": "Untod und Frost",
+          "elements": "Die Elemente",
+          "arcane": "Arkane Magie",
+          "dark": "Flüche und Dämonen",
+          "martial": "Kampfkunst und Braukunst",
+          "nature": "Natur und Gestaltwandel",
+          "fel": "Teufelsmagie und Leere",
+          "dragons": "Drachen und Zeitmagie"
+        }
       },
       "pets": {
         "title": "Hättest du gern einen ständigen Begleiter?",
-        "options": { "yes": "Ja, ein Pet gehört dazu", "no": "Nein, ich kämpfe allein", "any": "Egal" }
+        "options": {
+          "yes": "Ja, ein Pet gehört dazu",
+          "no": "Nein, ich kämpfe allein",
+          "any": "Egal"
+        }
       },
       "armor": {
         "title": "Welcher Look gefällt dir?",
-        "options": { "plate": "Schwere Platte", "mail": "Kettenrüstung", "leather": "Leichtes Leder", "cloth": "Roben und Stoff", "any": "Egal" }
+        "options": {
+          "plate": "Schwere Platte",
+          "mail": "Kettenrüstung",
+          "leather": "Leichtes Leder",
+          "cloth": "Roben und Stoff",
+          "any": "Egal"
+        }
       }
     }
   },
@@ -118,5 +177,74 @@
   },
   "siteSeo": {
     "homeOgSubtitle": "Arena-Kampf, Quiz und Zufallsgenerator für die Klassenwahl"
+  },
+  "fighter": {
+    "hp": "Lebenspunkte",
+    "crit": "+{value} % kritische Trefferchance",
+    "dodge": "+{value} % Ausweichchance"
+  },
+  "classFaq": {
+    "rolesQ": "Welche Rollen kann der {class} in {game} spielen?",
+    "rolesA": "Der {class} kann {roles} spielen. Seine {specsLabel}: {specs}.",
+    "armorQ": "Welche Rüstung trägt der {class}?",
+    "armorA": "Der {class} trägt {armor}.",
+    "beginnerQ": "Ist der {class} gut für Anfänger?",
+    "beginnerA": {
+      "easy": "Ja. Der {class} gilt als einsteigerfreundlich: Er ist robust und hat eine gut verständliche Spielweise.",
+      "medium": "Bedingt. Der {class} ist gut lernbar, verlangt aber etwas mehr Übung als die einfachsten Klassen.",
+      "hard": "Eher für Fortgeschrittene. Der {class} hat viele Werkzeuge und belohnt Erfahrung, die Lernkurve ist steiler."
+    },
+    "soloQ": "Ist der {class} gut für Solo-Spieler?",
+    "soloA": {
+      "good": "Ja. Der {class} kommt allein sehr gut zurecht, etwa durch Selbstheilung, Robustheit oder einen Begleiter.",
+      "medium": "Ja, mit etwas Übung. Der {class} kommt solo gut zurecht, braucht aber Aufmerksamkeit bei größeren Gegnergruppen.",
+      "weak": "Eher nicht. Der {class} ist allein langsamer oder verwundbarer und spielt seine Stärken vor allem in der Gruppe aus."
+    },
+    "racesQ": "Welche Völker können in WoW Forever {class} werden?",
+    "racesA": "In WoW Forever können folgende Völker {class} werden: {races}."
+  },
+  "about": {
+    "title": "Über WoW Class Picker: Wer dahintersteckt und wie wir bewerten",
+    "description": "WoW Class Picker ist ein Fanprojekt zur Klassenwahl in World of Warcraft: wer dahintersteckt, woher die Infos kommen und wie die Bewertungen entstehen.",
+    "heading": "Über WoW Class Picker"
+  },
+  "forever": {
+    "talentTrees": "Talentbäume",
+    "race": "Volk",
+    "faction": "Fraktion",
+    "factions": {
+      "alliance": "Allianz",
+      "horde": "Horde"
+    },
+    "newCombo": "Neue Kombination in WoW Forever",
+    "betaNote": "Stand der Beta, Änderungen bis zum Start am 4. November 2026 möglich.",
+    "playableRaces": "Spielbare Völker",
+    "home": {
+      "title": "WoW Forever Class Picker – Welche Klasse spielst du in Forever?",
+      "description": "Welche Klasse spielst du in WoW Forever? Lass die 9 Classic-Klassen in der Arena kämpfen, mach das Quiz oder würfle Volk und Klasse. Start: 4. November 2026.",
+      "heading": "Welche Klasse spielst du in WoW Forever?",
+      "intro": "WoW Forever bringt das klassische Azeroth zurück, mit neuen Völker-Klassen-Kombinationen und dem neuen Volk der Skyborne. Wähle deine Favoriten unter den 9 Klassen und lass sie gegeneinander antreten.",
+      "classesTeaser": "Alle 9 Klassen in WoW Forever mit Talentbäumen, Rollen und Völkern."
+    },
+    "classes": {
+      "title": "WoW Forever Klassen und Völker: Alle 56 Kombinationen",
+      "description": "Alle 9 Klassen in WoW Forever mit Talentbäumen und Rollen, dazu die komplette Völker-Klassen-Tabelle mit allen 56 Kombinationen und den neuen Skyborne.",
+      "heading": "Klassen in WoW Forever",
+      "intro": "WoW Forever startet am 4. November 2026 mit den 9 Klassen aus Classic und klassischen Talentbäumen. Neu sind mehrere Völker-Klassen-Kombinationen und das Volk der Skyborne, das auf beiden Seiten spielbar ist.",
+      "matrixTitle": "Völker und Klassen in WoW Forever",
+      "matrixIntro": "Welches Volk kann welche Klasse spielen? Insgesamt gibt es {count} Kombinationen aus 10 Völkern und 9 Klassen."
+    },
+    "quiz": {
+      "title": "WoW Forever Klassen-Quiz: Welche Klasse passt zu mir?",
+      "description": "Welche Klasse passt in WoW Forever zu dir? 7 Fragen zu Rolle, Spielstil und Fantasy, dann kennst du deine Top 3 unter den 9 Classic-Klassen.",
+      "heading": "Welche Klasse passt in WoW Forever zu mir?",
+      "intro": "Sieben kurze Fragen, dann zeigen wir dir die drei Forever-Klassen, die am besten zu deinem Spielstil passen."
+    },
+    "random": {
+      "title": "WoW Forever Random Class Generator: Volk und Klasse würfeln",
+      "description": "Würfle eine zufällige Kombination aus Volk, Klasse und Talentbaum für WoW Forever, gefiltert nach Fraktion, Rolle und Rüstung.",
+      "heading": "Volk und Klasse für WoW Forever würfeln",
+      "intro": "Lass den Zufall deinen nächsten Charakter in WoW Forever bestimmen: Volk, Klasse und Talentbaum, auf Wunsch nur für Allianz oder Horde."
+    }
   }
 }

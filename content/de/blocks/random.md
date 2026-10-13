@@ -14,5 +14,3 @@ faq:
 Manchmal ist die beste Entscheidung, nicht selbst zu entscheiden. Der Generator würfelt dir eine zufällige Klasse samt Spezialisierung aus allen 40 Specs in Midnight. Mit den Filtern grenzt du das Ergebnis auf eine Rolle oder einen Rüstungstyp ein, perfekt, wenn deine Gruppe noch einen Heiler braucht.
 
 Gefällt dir das Ergebnis? Auf der jeweiligen [Klassenseite](/klassen) erfährst du, wie sich die Klasse spielt. Und wenn dir zwei Würfe gefallen, lass sie in der [Arena](/) gegeneinander antreten.
-
-## Häufige Fragen
