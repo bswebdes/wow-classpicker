@@ -35,3 +35,9 @@ node_modules/
 *.zip
 *.tar
 *.gz
+
+# Nuxt
+.nuxt/
+.output/
+.data/
+.nitro/

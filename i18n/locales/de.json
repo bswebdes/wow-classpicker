@@ -162,9 +162,14 @@
     "evadeLog": "{target} weicht dem Angriff von {attacker} aus!",
     "critLog": "KRITISCHER TREFFER von {attacker}!",
     "megaCritLog": "MEGA-KRIT von {attacker}!",
+    "eliminatedLog": "{target} wurde von {attacker} eliminiert!",
+    "winnerLog": "{winner} GEWINNT DIE ARENA!",
+    "resetLog": "Bereit für die nächste Runde? Wähle deine Klassen!",
     "status": {
       "ready": "Bereit!",
-      "using": "Nutzt {ability}..."
+      "using": "Nutzt {ability}...",
+      "evade": "Ausgewichen!",
+      "defeated": "BESIEGT"
     }
   },
   "seo": {

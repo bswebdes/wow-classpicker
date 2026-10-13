@@ -1,7 +1,16 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import tailwindcss from '@tailwindcss/vite'
+
+const siteUrl = 'https://wow-classpicker.netlify.app'
+
 export default defineNuxtConfig({
+  compatibilityDate: '2026-10-13',
   devtools: { enabled: true },
-  css: ['~/assets/css/tailwind.css', '~/assets/css/main.css'],
+  css: ['~/assets/css/tailwind.css'],
+
+  vite: {
+    plugins: [tailwindcss()]
+  },
 
   app: {
     head: {
@@ -36,14 +45,41 @@ export default defineNuxtConfig({
     }
   },
 
-  modules: ['@nuxtjs/tailwindcss', '@nuxtjs/i18n'],
+  // Reihenfolge wichtig: @nuxtjs/sitemap muss vor @nuxt/content geladen werden
+  modules: ['@nuxtjs/i18n', '@nuxtjs/robots', '@nuxtjs/sitemap', 'nuxt-schema-org', 'nuxt-og-image', '@nuxt/content'],
+
+  site: {
+    url: siteUrl,
+    name: 'WoW Midnight Class Picker',
+    defaultLocale: 'de'
+  },
+
+  content: {
+    experimental: {
+      sqliteConnector: 'native'
+    }
+  },
+
+  schemaOrg: {
+    identity: {
+      type: 'Organization',
+      name: 'WoW Midnight Class Picker'
+    }
+  },
+
+  // Seiten werden beim Build vorgerendert (statisch auf Netlify ausgeliefert)
+  nitro: {
+    prerender: {
+      crawlLinks: true,
+      routes: ['/', '/en', '/robots.txt', '/sitemap_index.xml']
+    }
+  },
 
   i18n: {
-    baseUrl: 'https://classpicker.frysch.studio', // Empfohlen für SEO (Metatags wie og:url)
-    lazy: true,
-    langDir: 'locales',
+    baseUrl: siteUrl,
     defaultLocale: 'de',
     strategy: 'prefix_except_default',
+    customRoutes: 'meta',
     locales: [
       { code: 'de', language: 'de-DE', name: 'Deutsch', file: 'de.json' },
       { code: 'en', language: 'en-US', name: 'English', file: 'en.json' }

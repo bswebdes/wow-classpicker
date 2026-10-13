@@ -14,7 +14,7 @@ Du kannst dich nicht entscheiden, ob du deinen Schurken, Druiden oder doch den n
 - **Farbiger Kampflog**: Verfolge das Geschehen live in einem übersichtlichen, farblich hervorgehobenen Log.
 
 ## 🚀 Installation & Start
-Dieses Projekt ist jetzt eine **Nuxt 3 App**!
+Dieses Projekt ist eine **Nuxt 4 App** (Quellcode liegt in `app/`).
 
 1. Clone das Repository.
 2. Installiere die Abhängigkeiten:
@@ -28,17 +28,18 @@ npm run dev
 4. Öffne `http://localhost:3000` im Browser.
 
 ## 🛠 Technologien
-- **Nuxt 3**: Das Framework für die Web-App.
+- **Nuxt 4**: Das Framework für die Web-App.
 - **Vue 3**: Komponentenbasiertes UI (Composition API).
 - **Vite**: Superschneller Bundler.
-- **Tailwind CSS**: Utility-First Styling der kompletten App (über `@nuxtjs/tailwindcss`).
+- **Tailwind CSS 4**: Utility-First Styling der kompletten App (über `@tailwindcss/vite`).
+- **@nuxtjs/i18n**: Deutsch & Englisch (`i18n/locales/`).
 - **TypeScript**: Typisierte Logik (Composables).
 
 ## 📈 SEO & Pflege
 Die Seite ist für Suchmaschinen (SEO) optimiert. Du kannst die wichtigsten Texte an zwei Stellen pflegen:
 
 1.  **Zentrale Einstellungen (`nuxt.config.ts`):** Unter `runtimeConfig.public` und `app.head` findest du den Seitentitel und die allgemeine Beschreibung.
-2.  **Seiten-spezifisch (`pages/index.vue`):** In der `useSeoMeta` Funktion kannst du den Titel, die Beschreibung und Open-Graph Tags (für Social Media Vorschauen) anpassen.
+2.  **Seiten-spezifisch (`app/pages/index.vue`):** In der `useSeoMeta` Funktion kannst du den Titel, die Beschreibung und Open-Graph Tags (für Social Media Vorschauen) anpassen.
 3.  **Suchmaschinen:** Eine `robots.txt` und `sitemap.xml` befinden sich im `public/` Ordner.
 
 ## 📜 Lizenz

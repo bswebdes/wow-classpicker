@@ -162,9 +162,14 @@
     "evadeLog": "{target} dodges the attack from {attacker}!",
     "critLog": "CRITICAL HIT by {attacker}!",
     "megaCritLog": "MEGA-CRIT by {attacker}!",
+    "eliminatedLog": "{target} was eliminated by {attacker}!",
+    "winnerLog": "{winner} WINS THE ARENA!",
+    "resetLog": "Ready for the next round? Choose your classes!",
     "status": {
       "ready": "Ready!",
-      "using": "Using {ability}..."
+      "using": "Using {ability}...",
+      "evade": "Evaded!",
+      "defeated": "DEFEATED"
     }
   },
   "seo": {
