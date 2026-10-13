@@ -16,7 +16,9 @@
     "content": "Content",
     "imprint": "Imprint",
     "privacy": "Privacy",
-    "madeBy": "Website by"
+    "madeBy": "Website by",
+    "cookies": "Cookie settings",
+    "achievements": "Achievements"
   },
   "common": {
     "roles": {
@@ -364,5 +366,72 @@
       "armor": "\"Last question. And yes, looks matter. Transmog is the true endgame, after all.\""
     },
     "completeText": "Thalgrim nods, satisfied: \"I knew it from the very first moment. There is a true {class} in you. But take a look at the other two as well, Azeroth rewards curiosity.\""
+  },
+  "achievements": {
+    "earned": "Achievement earned!",
+    "points": "{n} points",
+    "pageTitle": "Achievements – Find Your Main",
+    "heading": "Achievements",
+    "intro": "Little rewards for browsing around. Completely useless, but nice.",
+    "progress": "{earned} of {total} achievements · {points} of {maxPoints} points",
+    "secret": "Hidden achievement",
+    "notSaved": "Your achievements currently only last for this visit. To keep them, allow \"Save achievements\" in the cookie settings.",
+    "saved": "Your achievements are saved in your browser.",
+    "openSettings": "Cookie settings",
+    "close": "Close",
+    "list": {
+      "first_steps": {
+        "name": "The First Step",
+        "desc": "Visit a second page. Curiosity is where every journey begins."
+      },
+      "class_tourist": {
+        "name": "Class Tourist",
+        "desc": "Look at 5 class pages."
+      },
+      "all_classes": {
+        "name": "Forever Undecided",
+        "desc": "Look at all 13 class pages in Midnight. Time to make up your mind."
+      },
+      "quest_done": {
+        "name": "Main Found?",
+        "desc": "Complete Thalgrim's quest in the class quiz."
+      },
+      "murloc": {
+        "name": "Mrglglgl!",
+        "desc": "Decline Thalgrim's quest three times."
+      },
+      "arena_win": {
+        "name": "Arena Champion",
+        "desc": "Finish a battle in the arena."
+      },
+      "battle_royale": {
+        "name": "Free for All",
+        "desc": "Send every class into the arena at once."
+      },
+      "gambler": {
+        "name": "Gambler",
+        "desc": "Roll a random class 10 times."
+      },
+      "forever": {
+        "name": "Back to the Roots",
+        "desc": "Visit WoW Forever."
+      },
+      "polyglot": {
+        "name": "Globetrotter",
+        "desc": "Switch the language."
+      },
+      "reader": {
+        "name": "Bookworm",
+        "desc": "Read 3 guides."
+      },
+      "fine_print": {
+        "name": "The Fine Print",
+        "desc": "Open the imprint or privacy policy. Nobody reads those. Except you."
+      },
+      "night_owl": {
+        "name": "Night Owl",
+        "desc": "Visit the site between midnight and 4 am. Go to sleep, hero."
+      }
+    }
   }
 }

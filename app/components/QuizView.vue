@@ -33,6 +33,7 @@ const finished = computed(() => step.value >= questions.value.length)
 const results = computed(() => finished.value ? scoreQuiz(answers, props.mode).slice(0, 3) : [])
 
 const track = (event, data = {}) => trackEvent(event, { ...data, game_mode: props.mode })
+const { unlock } = useAchievements()
 
 const answer = (option) => {
   answers[current.value.id] = option
@@ -60,6 +61,7 @@ const finalDecline = computed(() => declineCount.value >= declineLines.value.len
 
 const decline = () => {
   declineCount.value++
+  if (declineCount.value >= achievementThresholds.declines) unlock('murloc')
   track('quiz_decline', { count: declineCount.value })
 }
 
@@ -79,7 +81,10 @@ const start = () => {
 }
 
 watch(finished, (done) => {
-  if (done) showToast(t('quest.completedToast'))
+  if (done) {
+    showToast(t('quest.completedToast'))
+    unlock('quest_done')
+  }
 })
 
 const questParagraphs = computed(() => t('quest.questText').split('\n\n'))

@@ -27,6 +27,14 @@ const {
 } = useBattle()
 
 const { t } = useI18n()
+const { unlock } = useAchievements()
+
+// Erfolge nach dem Kampf
+watch(() => winner.value, (w) => {
+  if (!w) return
+  unlock('arena_win')
+  if (characters.value.length >= classIds.value.length) unlock('battle_royale')
+})
 const localePath = useLocalePath()
 
 const classIds = computed(() => getClassList(props.mode).map(c => c.id).filter(id => id in classData))

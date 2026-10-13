@@ -16,7 +16,9 @@
     "content": "Inhalte",
     "imprint": "Impressum",
     "privacy": "Datenschutz",
-    "madeBy": "Website von"
+    "madeBy": "Website von",
+    "cookies": "Cookie-Einstellungen",
+    "achievements": "Erfolge"
   },
   "common": {
     "roles": {
@@ -364,5 +366,72 @@
       "armor": "„Letzte Frage. Und ja, Aussehen zählt. Transmog ist schließlich das wahre Endgame.“"
     },
     "completeText": "Thalgrim nickt zufrieden: „Ich wusste es vom ersten Moment an. In dir steckt ein echter {class}. Aber wirf auch einen Blick auf die anderen beiden, Azeroth belohnt Neugier.“"
+  },
+  "achievements": {
+    "earned": "Erfolg errungen!",
+    "points": "{n} Punkte",
+    "pageTitle": "Erfolge – Find Your Main",
+    "heading": "Erfolge",
+    "intro": "Kleine Belohnungen fürs Stöbern. Völlig nutzlos, aber schön.",
+    "progress": "{earned} von {total} Erfolgen · {points} von {maxPoints} Punkten",
+    "secret": "Versteckter Erfolg",
+    "notSaved": "Deine Erfolge gelten gerade nur für diesen Besuch. Wenn du sie behalten willst, erlaube „Erfolge speichern“ in den Cookie-Einstellungen.",
+    "saved": "Deine Erfolge werden in deinem Browser gespeichert.",
+    "openSettings": "Cookie-Einstellungen",
+    "close": "Schließen",
+    "list": {
+      "first_steps": {
+        "name": "Der erste Schritt",
+        "desc": "Besuche eine zweite Seite. Neugier ist der Anfang jeder Reise."
+      },
+      "class_tourist": {
+        "name": "Klassentourist",
+        "desc": "Sieh dir 5 Klassenseiten an."
+      },
+      "all_classes": {
+        "name": "Der ewig Unentschlossene",
+        "desc": "Sieh dir alle 13 Klassenseiten in Midnight an. Jetzt aber mal entscheiden."
+      },
+      "quest_done": {
+        "name": "Main gefunden?",
+        "desc": "Schließe Thalgrims Quest im Klassen-Quiz ab."
+      },
+      "murloc": {
+        "name": "Mrglglgl!",
+        "desc": "Lehne Thalgrims Quest dreimal ab."
+      },
+      "arena_win": {
+        "name": "Champion der Arena",
+        "desc": "Bring einen Kampf in der Arena zu Ende."
+      },
+      "battle_royale": {
+        "name": "Alle gegen alle",
+        "desc": "Schick alle Klassen gleichzeitig in die Arena."
+      },
+      "gambler": {
+        "name": "Glücksspieler",
+        "desc": "Würfle 10-mal eine Zufallsklasse."
+      },
+      "forever": {
+        "name": "Zurück zu den Wurzeln",
+        "desc": "Besuche WoW Forever."
+      },
+      "polyglot": {
+        "name": "Weltenbummler",
+        "desc": "Wechsle die Sprache."
+      },
+      "reader": {
+        "name": "Bücherwurm",
+        "desc": "Lies 3 Ratgeber."
+      },
+      "fine_print": {
+        "name": "Das Kleingedruckte",
+        "desc": "Öffne Impressum oder Datenschutz. Niemand liest das. Außer dir."
+      },
+      "night_owl": {
+        "name": "Nachtschwärmer",
+        "desc": "Besuche die Seite zwischen Mitternacht und 4 Uhr. Geh schlafen, Held."
+      }
+    }
   }
 }

@@ -46,12 +46,11 @@ Stand: 13.10.2026 · Branch `chore/upgrade-nuxt4` (nicht gepusht)
   - [x] Domain registrieren
   - [x] DNS auf Netlify, Primary Domain eingetragen, HTTPS aktiv
   - [ ] Google Search Console: Domain-Property per DNS bestätigen, Adressänderung von der alten Property melden, Sitemap einreichen
-- [ ] **Cookie-Banner mit Google Tag Manager und GA4** (Setup wie auf frysch.studio)
-  - vanilla-cookieconsent v3, Opt-in, Cookie `cc_cookie`, schwebender Button zum erneuten Öffnen der Einstellungen
-  - GTM erst nach Einwilligung laden, Dienste-Beschreibung (GA4, Anbieter, Cookies `_ga`/`_ga_*`, Laufzeit) als Konfiguration
-  - Google Consent Mode v2 (Standard: alles `denied`, Update bei Zustimmung)
-  - Banner-Texte DE/EN, Design passend zum Classic-Look
-  - In GTM die vorhandenen `dataLayer`-Events als GA4-Events anlegen
+- [x] **Cookie-Banner** (vanilla-cookieconsent v3, Opt-in, `cc_cookie`, Cookie-Button unten links und Link im Footer), Kategorien Notwendig / Erfolge speichern / Statistik, Design im Classic-Look
+- [x] Google Consent Mode v2 (Standard `denied` im `<head>`), GTM `GTM-MSF6PT29` wird erst nach Zustimmung zu „Statistik“ geladen, `_ga`-Cookies werden beim Widerruf gelöscht
+- [x] Datenschutz um Einwilligung, Erfolge (localStorage), Google Tag Manager und GA4 erweitert
+- [ ] **GTM/GA4 einrichten** (später): GA4-Konfiguration im GTM, `dataLayer`-Events als GA4-Events anlegen (`battle_start`, `battle_victory`, `battle_reset`, `quiz_start`, `quiz_decline`, `quiz_complete`, `random_roll`, `achievement_unlocked`), Google-Signale und Werbefunktionen aus, Aufbewahrung max. 14 Monate (so steht es in der Datenschutzerklärung)
+
 - [x] **Eigenes Impressum und eigene Datenschutzerklärung** (`/impressum`, `/datenschutz`, EN als Übersetzung) für eine private, nicht kommerzielle Seite: nur Name, Anschrift, E-Mail `findyourmain@pm.me`, frysch.studio nur als Ersteller, `noindex`, nicht in der Sitemap
   - [ ] Anschrift prüfen: Im Impressum steht aktuell die Adresse aus dem frysch.studio-Impressum (Hofstelle 10, Gemmingen). Falls privat eine andere gilt, austauschen
   - [ ] Datenschutz um Cookie-Banner, Google Tag Manager und GA4 erweitern, sobald diese eingebaut sind (Textbausteine von frysch.studio übernehmen)
@@ -74,6 +73,11 @@ Stand: 13.10.2026 · Branch `chore/upgrade-nuxt4` (nicht gepusht)
 - [x] Quest ablehnen: drei immer frechere Reaktionen, danach Weg zum Zufallsgenerator; „Quest angenommen/abgeschlossen“-Einblendung wie im Spiel
 - [x] Name bleibt nach außen „Klassen-Quiz“ (Suchbegriff „wow class quiz“), die Quest ist die Darstellung im Fenster
 - [ ] Idee: Thalgrim auch an anderen Stellen auftauchen lassen (z. B. Tipps auf Klassenseiten, 404-Seite)
+
+### Erfolge
+- [x] 13 Erfolge (u. a. Klassentourist, Mrglglgl!, Das Kleingedruckte, Nachtschwärmer), Popup im WoW-Stil unten mittig, Erfolgsliste unter `/erfolge` (nur im Footer verlinkt, `noindex`)
+- [x] Ohne Einwilligung nur für den aktuellen Besuch, mit „Erfolge speichern“ dauerhaft im localStorage, beim Widerruf gelöscht
+- [ ] Ideen für weitere Erfolge: Forever-Quiz abschließen, alle Völker-Kombis gewürfelt, Arena-Sieg mit einem selbst benannten Kämpfer
 
 ### Zeitkritisch
 - [ ] Nach dem Forever-Start am 4.11.2026: Forever-Fakten prüfen (Meilenstein-Talente, Skyborne-Fraktionen „High Order“/„Windshaper“, Talentbaum-Namen), `updated`-Datum setzen

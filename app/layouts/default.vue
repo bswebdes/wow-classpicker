@@ -122,6 +122,8 @@ const modes = computed(() => [
             <li><NuxtLink :to="localePath('ueber')" class="hover:text-gold">{{ $t('nav.about') }}</NuxtLink></li>
             <li><NuxtLink :to="localePath('impressum')" class="hover:text-gold">{{ $t('footer.imprint') }}</NuxtLink></li>
             <li><NuxtLink :to="localePath('datenschutz')" class="hover:text-gold">{{ $t('footer.privacy') }}</NuxtLink></li>
+            <li><button class="hover:text-gold" @click="$showCookieSettings?.()">{{ $t('footer.cookies') }}</button></li>
+            <li><NuxtLink :to="localePath('erfolge')" class="hover:text-gold">{{ $t('footer.achievements') }}</NuxtLink></li>
           </ul>
         </div>
       </div>
@@ -130,5 +132,20 @@ const modes = computed(() => [
         {{ $t('footer.madeBy') }} <a href="https://frysch.studio" class="underline hover:text-gold">frysch.studio</a>.
       </p>
     </footer>
+
+    <ClientOnly>
+      <AchievementToast />
+      <!-- Cookie-Einstellungen jederzeit wieder öffnen -->
+      <button
+        class="fixed bottom-4 left-4 z-40 flex h-11 w-11 items-center justify-center rounded-full border-2 border-gold-border bg-[#120d07]/90 text-gold shadow-[0_4px_12px_rgba(0,0,0,0.7)] transition-colors hover:border-gold"
+        :aria-label="$t('footer.cookies')"
+        :title="$t('footer.cookies')"
+        @click="$showCookieSettings?.()"
+      >
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true">
+          <path d="M12 2a10 10 0 1 0 10 10 4 4 0 0 1-5-5 4 4 0 0 1-5-5Zm-3.5 7a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm-1 5a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm6 2a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm3-4a1 1 0 1 1 0 2 1 1 0 0 1 0-2Z" />
+        </svg>
+      </button>
+    </ClientOnly>
   </div>
 </template>

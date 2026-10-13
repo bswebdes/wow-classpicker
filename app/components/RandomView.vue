@@ -40,6 +40,7 @@ const pool = computed(() => getClassList(props.mode).flatMap(c =>
     })
 ))
 
+const { unlock, increment } = useAchievements()
 const result = ref(null)
 const rolling = ref(false)
 const history = ref([])
@@ -57,6 +58,7 @@ const roll = async () => {
   result.value = { ...pick(), roll: Math.ceil(Math.random() * 100) }
   rolling.value = false
   history.value = [result.value, ...history.value].slice(0, 5)
+  if (increment('rolls') >= achievementThresholds.rolls) unlock('gambler')
   trackEvent('random_roll', { class_id: result.value.classId, spec: result.value.spec.id, race: result.value.race?.id, game_mode: props.mode })
 }
 

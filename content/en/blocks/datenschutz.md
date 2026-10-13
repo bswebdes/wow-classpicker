@@ -4,7 +4,7 @@ title: "Privacy policy"
 
 As of 13 October 2026. This is a courtesy translation; the German version is legally binding.
 
-Protecting your personal data matters to me. Find Your Main is a private, non-commercial fan project. Here you can find out which data is processed when you visit this website, for what purpose and on what legal basis, and what rights you have. I keep data processing deliberately lean: this website currently uses no analytics or marketing services, and fonts are not loaded from Google.
+Protecting your personal data matters to me. Find Your Main is a private, non-commercial fan project. Here you can find out which data is processed when you visit this website, for what purpose and on what legal basis, and what rights you have. I keep data processing deliberately lean: analytics only runs with your consent, and fonts are not loaded from Google.
 
 ## Controller
 
@@ -35,11 +35,46 @@ Netlify processes the data under its Data Processing Addendum. Netlify is certif
 
 Fonts, images and all other files are loaded directly from this website. There is no connection to third-party servers such as Google Fonts.
 
-## Cookies
+## Cookies, local storage and consent
 
-This website only sets one technically necessary cookie called "i18n_redirected". It stores the language (German or English) detected from your browser settings or chosen by you on your first visit, so you are not redirected again on every visit. The cookie only contains the language code. The legal basis is § 25(2) no. 2 TDDDG and Art. 6(1)(f) GDPR; my legitimate interest lies in showing you the website in your language.
+On your first visit, a cookie banner asks whether you want to allow optional features: saving your achievements and statistics with Google Analytics. Without your consent, none of this is stored or loaded, and no connection to Google is made.
 
-No analytics, statistics or marketing cookies are currently used. If that changes, I will ask for your consent beforehand via a cookie banner and update this privacy policy.
+**Technically necessary** are two cookies:
+
+- "cc_cookie" stores your choice in the cookie banner (decision and time) so the banner does not reappear on every page view. Lifetime: 6 months.
+- "i18n_redirected" stores the language (German or English) so you are not redirected again on every visit.
+
+The legal basis is § 25(2) no. 2 TDDDG and Art. 6(1)(f) GDPR (language) or Art. 6(1)(c) GDPR in conjunction with Art. 7(1) GDPR (proof of consent).
+
+**Withdrawing or changing consent:** use the cookie icon at the bottom left or the "Cookie settings" link in the footer to change your choice at any time with effect for the future. When you withdraw consent, the related data is deleted.
+
+## Achievements (local storage)
+
+For fun, you can collect achievements on this website, for example by viewing several class pages or completing the class quiz. Without consent, your achievements only last for the current visit. If you allow "Save achievements", they are stored in your browser's local storage (localStorage, entry "fym_achievements"): which achievements you earned and when, plus simple counters such as the number of random classes rolled. This data stays on your device and is not transferred to me or third parties.
+
+The legal basis is your consent under § 25(1) TDDDG. You can withdraw it at any time in the cookie settings; the entry is then deleted. You can also remove it via your browser settings.
+
+## Google Tag Manager
+
+If you have consented to statistics, I use Google Tag Manager from Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Ireland ("Google"). Tag Manager is a tool I use to embed and control services such as Google Analytics on the website. It does not set cookies itself, but your IP address is transmitted to Google when it loads. This may include a transfer to Google LLC in the USA.
+
+The legal basis is your consent under Art. 6(1)(a) GDPR and § 25(1) TDDDG. Without consent, Tag Manager is not loaded.
+
+## Google Analytics 4
+
+With your consent, I use Google Analytics 4, a web analytics service from Google, to understand how the website is used and improve it. It records in particular:
+
+- pages viewed, time on page and scroll depth
+- use of features, such as battles started, quizzes completed, random rolls and achievements earned
+- where the visit came from (e.g. search engine or referring website)
+- technical information such as device type, browser, operating system and screen resolution
+- approximate location (country, region, city), derived from the IP address
+
+Google Analytics 4 does not store full IP addresses: the IP address is only used to determine location and then discarded. To recognize returning visitors, Google Analytics sets the cookies "_ga" and "_ga_*" with a lifetime of 2 years. The data is processed in pseudonymous form and is not combined with your name. Google signals and personalized advertising features are disabled.
+
+The data is processed on Google servers, including in the USA. Google LLC is certified under the EU-US Data Privacy Framework (adequacy decision, Art. 45 GDPR). Google's data processing terms for Google advertising products apply. The data is deleted automatically after the retention period set in Google Analytics, at most 14 months.
+
+The legal basis is your consent under Art. 6(1)(a) GDPR and § 25(1) TDDDG, which you can withdraw at any time via the cookie settings. I also use Google Consent Mode, so Google services automatically follow your choice. More: [policies.google.com/privacy](https://policies.google.com/privacy).
 
 ## Contact by email
 

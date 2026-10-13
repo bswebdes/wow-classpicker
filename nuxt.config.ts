@@ -22,6 +22,12 @@ export default defineNuxtConfig({
       ],
       link: [
         { rel: 'icon', type: 'image/png', href: '/favicon.png' }
+      ],
+      script: [
+        {
+          // Google Consent Mode v2: alles verweigert, bis im Cookie-Banner zugestimmt wird
+          innerHTML: "window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',functionality_storage:'denied',personalization_storage:'denied',security_storage:'granted',wait_for_update:500});"
+        }
       ]
     }
   },
@@ -85,8 +91,8 @@ export default defineNuxtConfig({
   sitemap: {
     // Inhaltsseiten mit lastmod und Sprachalternativen (unterschiedliche Slugs je Sprache)
     sources: ['/api/__sitemap__/urls'],
-    // Rechtstexte nicht in die Sitemap
-    exclude: ['/impressum', '/datenschutz', '/en/imprint', '/en/privacy']
+    // Rechtstexte und Erfolge nicht in die Sitemap
+    exclude: ['/impressum', '/datenschutz', '/en/imprint', '/en/privacy', '/erfolge', '/en/achievements']
   },
 
   content: {
