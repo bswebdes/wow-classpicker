@@ -490,6 +490,34 @@
       "night_owl": {
         "name": "Night Owl",
         "desc": "Visit the site between midnight and 4 am. Go to sleep, hero."
+      },
+      "mirror_match": {
+        "name": "Mirror, Mirror",
+        "desc": "Compare a class with itself. Spoiler: it wins."
+      },
+      "comparer": {
+        "name": "Spoiled for Choice",
+        "desc": "Compare 3 different class pairs."
+      },
+      "herald": {
+        "name": "Herald of Azeroth",
+        "desc": "Share your quiz result or your arena winner."
+      },
+      "color_theory": {
+        "name": "Color Theory",
+        "desc": "Copy a class color."
+      },
+      "forever_quest": {
+        "name": "Back to Azeroth",
+        "desc": "Complete Thalgrim's quest in the Forever quiz."
+      },
+      "named_champion": {
+        "name": "A Name to Remember",
+        "desc": "Win the arena with a fighter you named yourself."
+      },
+      "bookworm": {
+        "name": "Bookworm",
+        "desc": "Read 10 guides. Thalgrim is impressed."
       }
     },
     "pointsShort": "points"

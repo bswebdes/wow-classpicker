@@ -21,7 +21,6 @@ Stand: 13.10.2026 · live auf [findyourmain.com](https://findyourmain.com), Bran
 - [ ] Arena-Modi: 1 gegen 1, Turnier-Baum
 - [ ] Sound-Effekte im Kampf (optional, standardmäßig aus)
 - [ ] Thalgrim auch an anderen Stellen auftauchen lassen (z. B. Tipps auf Klassenseiten, 404-Seite), ggf. im Quest-Text als Zwerg erkennbar machen („bei meinem Bart“)
-- [ ] Weitere Erfolge: Forever-Quiz abschließen, alle Völker-Kombis gewürfelt, Arena-Sieg mit einem selbst benannten Kämpfer
 
 ### Technik
 - [ ] Weitere Vergleichspaare indexieren, sobald Ubersuggest dafür Suchvolumen zeigt (`indexedPairs` in `app/utils/compare.ts`)
@@ -75,7 +74,7 @@ Stand: 13.10.2026 · live auf [findyourmain.com](https://findyourmain.com), Bran
 - [x] Zufallsklasse im Loot-Stil mit Walzen-Animation, Item-Tooltip und gezieltem Neuwürfeln von Spec/Volk
 
 ### Klassenvergleich
-- [x] Klassenvergleich für Retail und Forever (`/klassen/vergleich`, `/forever/klassen/vergleich`, EN `/classes/compare`): Auswahl zweier Klassen, jede Paarung mit eigener URL (`magier-vs-hexenmeister`, 78 Retail + 36 Forever), Unterschiede als Sätze, Übersichtstabelle, Kurzantworten der Klassenseiten, FAQ, Arena-Link; nur Paare mit Suchvolumen indexierbar (Magier vs. Hexenmeister US 210, Krieger vs. Paladin US 90, Forever Magier vs. Hexenmeister), Rest `noindex` und nicht in der Sitemap; umgekehrte Reihenfolge leitet um; verlinkt von Klassenübersicht, Klassenseiten und Footer
+- [x] Klassenvergleich für Retail und Forever (`/klassen/vergleich`, `/forever/klassen/vergleich`, EN `/classes/compare`): Auswahl zweier Klassen, jede Paarung mit eigener URL (`magier-vs-hexenmeister`, 78 Retail + 36 Forever), Unterschiede als Sätze, Übersichtstabelle, Kurzantworten der Klassenseiten, FAQ, Arena-Link; nur Paare mit Suchvolumen indexierbar (Magier vs. Hexenmeister US 210, Krieger vs. Paladin US 90, Schamane vs. Druide US 30, Forever Magier vs. Hexenmeister US 30), Rest `noindex` und nicht in der Sitemap; umgekehrte Reihenfolge leitet um; verlinkt von Klassenübersicht, Klassenseiten und Footer
 
 ### Unterstützung
 - [x] Freiwilliger PayPal-Link („Heiltrank spendieren“) als Band über dem Footer und Absatz auf der Über-uns-Seite, nur ein Link ohne PayPal-Skript, Datenschutz ergänzt
@@ -85,7 +84,7 @@ Stand: 13.10.2026 · live auf [findyourmain.com](https://findyourmain.com), Bran
 - [x] Arena: große Intro-Texte („Wähle deine Kämpfer“, READY/FIGHT) entfernt, der Kampf startet sofort
 
 ### Erfolge
-- [x] 13 Erfolge mit Popup, Punktezähler im Header und Erfolgsliste unter `/erfolge`, dauerhaft nur mit Einwilligung
+- [x] 20 Erfolge (neu u. a. Spieglein, Spieglein, Herold von Azeroth, Bücherwurm, Zurück nach Azeroth, Ein Name, den man sich merkt) mit Popup, Punktezähler im Header und Erfolgsliste unter `/erfolge`, dauerhaft nur mit Einwilligung
 
 ### Mobil & Barrierefreiheit
 - [x] Mobile Navigation mit Menü-Button, Skip-Link, sichtbarer Fokus, „Bewegung reduzieren“ wird respektiert

@@ -58,9 +58,12 @@ onMounted(() => {
     selB.value = ''
   }
 })
+const { unlock } = useAchievements()
 const pick = (side, id) => {
   if (side === 'a') selA.value = selA.value === id ? '' : id
   else selB.value = selB.value === id ? '' : id
+  // Geheimer Erfolg: eine Klasse mit sich selbst vergleichen
+  if (selA.value && selA.value === selB.value) unlock('mirror_match')
   if (selA.value && selB.value && selA.value !== selB.value) {
     router.push(localePath({ name: pairRoute.value, params: { pair: pairSlug(selA.value, selB.value, props.mode, locale.value) } }))
   }

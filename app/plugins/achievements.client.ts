@@ -16,7 +16,12 @@ export default defineNuxtPlugin((nuxtApp) => {
     }
     if (name === 'forever-klassen-slug' && addToSet('retailClasses', `forever:${to.params.slug}`) >= t.classPages) unlock('class_tourist')
     if (name === 'forever' || name.startsWith('forever-')) unlock('forever')
-    if (name === 'ratgeber-slug' && addToSet('guides', String(to.params.slug)) >= t.guides) unlock('reader')
+    if (name === 'ratgeber-slug') {
+      const guides = addToSet('guides', String(to.params.slug))
+      if (guides >= t.guides) unlock('reader')
+      if (guides >= t.guidesMany) unlock('bookworm')
+    }
+    if ((name === 'klassen-vergleich-pair' || name === 'forever-klassen-vergleich-pair') && addToSet('comparisons', `${name}:${to.params.pair}`) >= t.comparisons) unlock('comparer')
     if (name === 'impressum' || name === 'datenschutz') unlock('fine_print')
   }
 

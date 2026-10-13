@@ -34,6 +34,8 @@ watch(() => winner.value, (w) => {
   if (!w) return
   unlock('arena_win')
   if (characters.value.length >= classIds.value.length) unlock('battle_royale')
+  // Sieger mit selbst vergebenem Namen (weder Zufallsname noch Klassenname)
+  if (!randomNames.includes(w.name) && w.name !== w.className) unlock('named_champion')
 })
 const localePath = useLocalePath()
 

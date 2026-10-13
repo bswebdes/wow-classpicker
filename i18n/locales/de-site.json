@@ -490,6 +490,34 @@
       "night_owl": {
         "name": "Nachtschwärmer",
         "desc": "Besuche die Seite zwischen Mitternacht und 4 Uhr. Geh schlafen, Held."
+      },
+      "mirror_match": {
+        "name": "Spieglein, Spieglein",
+        "desc": "Vergleiche eine Klasse mit sich selbst. Überraschung: Sie gewinnt."
+      },
+      "comparer": {
+        "name": "Wer die Wahl hat …",
+        "desc": "Vergleiche 3 verschiedene Klassenpaare."
+      },
+      "herald": {
+        "name": "Herold von Azeroth",
+        "desc": "Teile dein Quiz-Ergebnis oder deinen Arena-Sieger."
+      },
+      "color_theory": {
+        "name": "Farbenlehre",
+        "desc": "Kopiere eine Klassenfarbe."
+      },
+      "forever_quest": {
+        "name": "Zurück nach Azeroth",
+        "desc": "Schließe Thalgrims Quest im Forever-Quiz ab."
+      },
+      "named_champion": {
+        "name": "Ein Name, den man sich merkt",
+        "desc": "Gewinne die Arena mit einem Kämpfer, dem du selbst einen Namen gegeben hast."
+      },
+      "bookworm": {
+        "name": "Bücherwurm",
+        "desc": "Lies 10 Ratgeber. Thalgrim ist beeindruckt."
       }
     },
     "pointsShort": "Punkte"

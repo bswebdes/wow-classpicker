@@ -9,18 +9,21 @@ const props = defineProps({
   itemId: { type: String, required: true }
 })
 const { copied, copy } = useCopyText()
+const { unlock } = useAchievements()
 
 const share = async () => {
   if (navigator.share) {
     try {
       await navigator.share({ text: props.text, url: props.url })
       trackEvent('share', { method: 'native', content_type: props.contentType, item_id: props.itemId })
+      unlock('herald')
     }
     catch { /* abgebrochen */ }
     return
   }
   await copy(`${props.text} ${props.url}`)
   trackEvent('share', { method: 'copy_link', content_type: props.contentType, item_id: props.itemId })
+  unlock('herald')
 }
 </script>
 

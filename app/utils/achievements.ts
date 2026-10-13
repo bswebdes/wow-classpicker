@@ -20,7 +20,14 @@ export const achievementDefs: AchievementDef[] = [
   { id: 'polyglot', points: 5, icon: '/class-icons/ClassIcon_evoker.webp' },
   { id: 'reader', points: 10, icon: '/class-icons/ClassIcon_monk.webp' },
   { id: 'fine_print', points: 5, icon: '/class-icons/ClassIcon_warlock.webp', secret: true },
-  { id: 'night_owl', points: 5, icon: '/class-icons/ClassIcon_demon_hunter.webp', secret: true }
+  { id: 'night_owl', points: 5, icon: '/class-icons/ClassIcon_demon_hunter.webp', secret: true },
+  { id: 'mirror_match', points: 10, icon: '/class-icons/ClassIcon_mage.webp', secret: true },
+  { id: 'comparer', points: 10, icon: '/class-icons/ClassIcon_paladin.webp' },
+  { id: 'herald', points: 10, icon: '/class-icons/ClassIcon_warrior.webp' },
+  { id: 'color_theory', points: 5, icon: '/class-icons/ClassIcon_priest.webp' },
+  { id: 'forever_quest', points: 10, icon: '/class-icons/ClassIcon_hunter.webp' },
+  { id: 'named_champion', points: 10, icon: '/class-icons/ClassIcon_rogue.webp' },
+  { id: 'bookworm', points: 15, icon: '/class-icons/ClassIcon_monk.webp' }
 ]
 
 export const achievementTotalPoints = achievementDefs.reduce((sum, a) => sum + a.points, 0)
@@ -30,6 +37,8 @@ export const achievementThresholds = {
   pages: 2,
   classPages: 5,
   guides: 3,
+  guidesMany: 10,
+  comparisons: 3,
   rolls: 10,
   declines: 3
 }

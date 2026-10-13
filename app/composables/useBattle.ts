@@ -160,7 +160,8 @@ export const foreverSpells = {
   druid: { convoke: 5176, regrowth: 8936, bear: 5487, moonfire: 8921 }
 }
 
-const randomNames = [
+// Zufallsnamen der Kämpfer (exportiert für den Erfolg „Ein Name, den man sich merkt“)
+export const randomNames = [
   'Aldren', 'Seraphine', 'Borin', 'Lyra', 'Cedric', 'Kaela', 'Dorian', 'Mira', 'Thorin', 'Elara',
   'Garruk', 'Nyra', 'Roland', 'Isolde', 'Fenric', 'Talia', 'Rurik', 'Selene', 'Kael', 'Ysolda',
   'Bram', 'Aveline', 'Corin', 'Neriah', 'Elden', 'Vesper', 'Oren', 'Melia', 'Kellan', 'Rhea',

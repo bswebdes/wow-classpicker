@@ -111,8 +111,13 @@ Grundlage wie beim Leveln: Classic-Erfahrung als Annahme für Forever, Hinweis-K
 | mage vs warlock wow | US | 210 | 24 | `/en/classes/compare/mage-vs-warlock` (indexiert) |
 | paladin vs warrior wow | US | 90 | 29 | `/en/classes/compare/warrior-vs-paladin` (indexiert) |
 | mage vs warlock wow classic | US | 30 | 25 | `/en/forever/classes/compare/mage-vs-warlock` (indexiert) |
+| druid vs shaman wow | US | 30 | 23 | `/en/classes/compare/shaman-vs-druid` (indexiert) |
+| demon hunter vs rogue | US | 10 | 5 | noindex (zu wenig Volumen) |
 | magier oder hexenmeister (wow) | DE | 10 | 5–13 | `/klassen/vergleich/magier-vs-hexenmeister` |
 | death knight vs paladin wow | US | 0 | 4 | noindex |
+| death knight vs warrior wow | US | 0 | 4 | noindex |
+
+Ohne Daten (14.10.2026 geprüft): rogue vs warrior, hunter vs mage, priest vs druid, evoker vs mage, monk vs druid, warlock vs priest, shaman vs paladin, rogue vs mage, hunter vs warlock (classic).
 
 Alle übrigen Paare ohne messbares Volumen: erreichbar und teilbar, aber `noindex`, damit keine dünnen Massenseiten im Index landen.
 

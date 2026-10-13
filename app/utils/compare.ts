@@ -5,7 +5,7 @@ import { racesForClass } from './races'
 
 // Paare mit Suchvolumen (Ubersuggest, Oktober 2026) kommen in den Index, alle anderen sind noindex
 export const indexedPairs: Record<GameMode, [string, string][]> = {
-  retail: [['mage', 'warlock'], ['warrior', 'paladin']],
+  retail: [['mage', 'warlock'], ['warrior', 'paladin'], ['shaman', 'druid']],
   forever: [['mage', 'warlock']]
 }
 

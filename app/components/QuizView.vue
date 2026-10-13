@@ -93,6 +93,7 @@ watch(finished, (done) => {
   if (done) {
     showToast(t('quest.completedToast'))
     unlock('quest_done')
+    if (props.mode === 'forever') unlock('forever_quest')
   }
 })
 
