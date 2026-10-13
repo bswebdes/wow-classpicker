@@ -4,6 +4,8 @@
   "type": "module",
   "scripts": {
     "build": "nuxt build",
+    "postbuild": "node scripts/seo-check.mjs",
+    "seo:check": "node scripts/seo-check.mjs",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
@@ -30,5 +32,8 @@
   },
   "devDependencies": {
     "@nuxt/a11y": "^1.0.0-alpha.1"
+  },
+  "overrides": {
+    "postcss-selector-parser": "^7.1.6"
   }
 }

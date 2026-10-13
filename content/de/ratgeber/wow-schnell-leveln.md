@@ -1,6 +1,6 @@
 ---
 title: "WoW schnell leveln: Welche Klasse levelt in Midnight am schnellsten?"
-description: "Welche Klasse levelt in WoW Midnight am schnellsten? Warum die Route mehr zählt als die Klasse, welche Klassen sich flott anfühlen und Tipps, mit denen du wirklich Zeit sparst."
+description: "Welche Klasse levelt in WoW Midnight am schnellsten? Warum die Route mehr zählt als die Klasse, welche Klassen flott sind und Tipps, die wirklich Zeit sparen."
 key: leveling
 image: neighborhoods
 imageAlt: "Ein gepflasterter Weg führt durch ein Dorf mit blauen Dächern und grünen Bäumen"

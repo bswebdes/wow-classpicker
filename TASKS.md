@@ -26,9 +26,7 @@ Stand: 13.10.2026 · live auf [findyourmain.com](https://findyourmain.com), Bran
 - [ ] Weitere Erfolge: Forever-Quiz abschließen, alle Völker-Kombis gewürfelt, Arena-Sieg mit einem selbst benannten Kämpfer
 
 ### Technik
-- [ ] Original-Logos (15 MB) aus dem Git-Repo nehmen oder verkleinert ablegen
-- [ ] Verbleibende `npm audit`-Meldungen beobachten (nur Dev-/Build-Tooling)
-- [ ] Automatischer SEO-Check im Build (Titel-/Beschreibungslängen, H1, hreflang)
+- [ ] `npm audit` beobachten: 24 Meldungen (node-forge, braces/micromatch, simple-git) stecken nur im Build- und Dev-Werkzeug von Nuxt, ohne passenden Fix für Nuxt 4. Bei Nuxt-Updates erneut prüfen
 
 ## ✅ Erledigt
 
@@ -45,6 +43,9 @@ Stand: 13.10.2026 · live auf [findyourmain.com](https://findyourmain.com), Bran
 ### Technik
 - [x] Nuxt 4, Tailwind CSS 4, @nuxtjs/i18n 10, Nuxt Content (DE/EN), Vorrendern, Node 24 auf Netlify
 - [x] Schriften selbst gehostet, Logos als WebP über `@nuxt/image`, URLs ohne Schrägstrich am Ende (`autoSubfolderIndex: false`)
+- [x] Logo-Originale von 15 MB auf 1,9 MB verkleinert (960 px Breite, reicht für 2x bei 240 px); alte Versionen bleiben in der Git-Historie
+- [x] `npm audit`: `postcss-selector-parser` per `overrides` auf 7.1.6 gehoben (CSS-Ausgabe identisch); `simple-git` 4 bricht die Nuxt DevTools, bleibt deshalb
+- [x] Automatischer SEO-Check nach jedem Build (`scripts/seo-check.mjs`, auch `npm run seo:check`): Fehler bei fehlendem Titel/Beschreibung/Canonical/OG-Bild, ≠ 1 H1 oder kaputten hreflang-Links brechen den Build ab; Warnungen bei Titeln über 70 und Beschreibungen über 165 Zeichen
 
 ### SEO & GEO
 - [x] Keyword-Recherche mit Ubersuggest (`docs/seo-recherche.md`), Ubersuggest-Projekt „Find Your Main“ mit 20 Keywords (DE/US) für das Ranking-Tracking (wöchentlich)

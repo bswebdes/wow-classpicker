@@ -1,5 +1,5 @@
 ---
-title: "Best WoW Class for Solo Play in Midnight – Classes for Lone Wolves"
+title: "Best WoW Class for Solo Play in Midnight: Lone Wolf Picks"
 description: "What is the best WoW class for solo players? The strongest classes for quests, delves and open world in Midnight, no group needed."
 key: solo
 image: harandar
