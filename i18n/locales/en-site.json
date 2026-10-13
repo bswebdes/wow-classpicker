@@ -516,11 +516,17 @@
         "desc": "Win the arena with a fighter you named yourself."
       },
       "bookworm": {
-        "name": "Bookworm",
+        "name": "Librarian of Dalaran",
         "desc": "Read 10 guides. Thalgrim is impressed."
+      },
+      "completionist": {
+        "name": "Legend of Azeroth",
+        "desc": "Earn every other achievement. You have truly earned your main."
       }
     },
-    "pointsShort": "points"
+    "pointsShort": "points",
+    "recent": "Recently earned",
+    "all": "All achievements"
   },
   "language": {
     "switchTo": "Change language",

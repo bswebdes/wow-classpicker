@@ -516,11 +516,17 @@
         "desc": "Gewinne die Arena mit einem Kämpfer, dem du selbst einen Namen gegeben hast."
       },
       "bookworm": {
-        "name": "Bücherwurm",
+        "name": "Bibliothekar von Dalaran",
         "desc": "Lies 10 Ratgeber. Thalgrim ist beeindruckt."
+      },
+      "completionist": {
+        "name": "Legende von Azeroth",
+        "desc": "Erringe alle anderen Erfolge. Jetzt hast du dir deinen Main wirklich verdient."
       }
     },
-    "pointsShort": "Punkte"
+    "pointsShort": "Punkte",
+    "recent": "Zuletzt errungen",
+    "all": "Alle Erfolge"
   },
   "language": {
     "switchTo": "Sprache wechseln",

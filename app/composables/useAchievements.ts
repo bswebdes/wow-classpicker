@@ -51,6 +51,8 @@ export const useAchievements = () => {
     queue.value = [...queue.value, id]
     save()
     trackEvent('achievement_unlocked', { achievement_id: id })
+    // Alle anderen geschafft? Dann die Krönung hinterher
+    if (id !== 'completionist' && achievementDefs.every(a => a.id === 'completionist' || state.value.unlocked[a.id])) unlock('completionist')
   }
 
   const increment = (counter: string, amount = 1) => {

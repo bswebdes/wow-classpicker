@@ -27,7 +27,9 @@ export const achievementDefs: AchievementDef[] = [
   { id: 'color_theory', points: 5, icon: '/class-icons/ClassIcon_priest.webp' },
   { id: 'forever_quest', points: 10, icon: '/class-icons/ClassIcon_hunter.webp' },
   { id: 'named_champion', points: 10, icon: '/class-icons/ClassIcon_rogue.webp' },
-  { id: 'bookworm', points: 15, icon: '/class-icons/ClassIcon_monk.webp' }
+  { id: 'bookworm', points: 15, icon: '/class-icons/ClassIcon_monk.webp' },
+  // Krönung: schaltet sich frei, sobald alle anderen errungen sind
+  { id: 'completionist', points: 25, icon: '/class-icons/ClassIcon_evoker.webp', secret: true }
 ]
 
 export const achievementTotalPoints = achievementDefs.reduce((sum, a) => sum + a.points, 0)

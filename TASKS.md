@@ -84,7 +84,7 @@ Stand: 13.10.2026 · live auf [findyourmain.com](https://findyourmain.com), Bran
 - [x] Arena: große Intro-Texte („Wähle deine Kämpfer“, READY/FIGHT) entfernt, der Kampf startet sofort
 
 ### Erfolge
-- [x] 20 Erfolge (neu u. a. Spieglein, Spieglein, Herold von Azeroth, Bücherwurm, Zurück nach Azeroth, Ein Name, den man sich merkt) mit Popup, Punktezähler im Header und Erfolgsliste unter `/erfolge`, dauerhaft nur mit Einwilligung
+- [x] 21 Erfolge inkl. geheimem Abschluss „Legende von Azeroth“ (neu u. a. Spieglein, Spieglein, Herold von Azeroth, Bibliothekar von Dalaran, Zurück nach Azeroth, Ein Name, den man sich merkt) mit Popup, Punktezähler im Header und Erfolgsliste unter `/erfolge` (oben die drei zuletzt errungenen, wie im WoW-Interface), dauerhaft nur mit Einwilligung
 
 ### Mobil & Barrierefreiheit
 - [x] Mobile Navigation mit Menü-Button, Skip-Link, sichtbarer Fokus, „Bewegung reduzieren“ wird respektiert

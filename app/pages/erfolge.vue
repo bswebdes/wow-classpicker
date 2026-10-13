@@ -16,6 +16,18 @@ useSeoMeta({
 
 const earnedCount = computed(() => achievementDefs.filter(a => state.value.unlocked[a.id]).length)
 const formatDate = (iso) => new Date(iso).toLocaleDateString()
+
+// Wie im WoW-Interface: die drei neuesten oben, darunter der Rest (weitere errungene, dann offene)
+const byDate = computed(() => achievementDefs
+  .filter(a => state.value.unlocked[a.id])
+  .sort((x, y) => state.value.unlocked[y.id].localeCompare(state.value.unlocked[x.id])))
+const recent = computed(() => byDate.value.slice(0, 3))
+const rest = computed(() => [
+  ...byDate.value.slice(3),
+  ...achievementDefs.filter(a => !state.value.unlocked[a.id])
+])
+const nameOf = a => a.secret && !state.value.unlocked[a.id] ? '???' : t(`achievements.list.${a.id}.name`)
+const descOf = a => a.secret && !state.value.unlocked[a.id] ? t('achievements.secret') : t(`achievements.list.${a.id}.desc`)
 </script>
 
 <template>
@@ -38,21 +50,31 @@ const formatDate = (iso) => new Date(iso).toLocaleDateString()
       </div>
 
       <ClientOnly>
-        <ul class="mt-6 space-y-2">
+        <!-- Zuletzt errungen -->
+        <template v-if="recent.length">
+          <h2 class="mt-6 font-display text-[15px] font-bold uppercase tracking-wider text-gold">{{ $t('achievements.recent') }}</h2>
+          <ul class="mt-3 grid gap-2 sm:grid-cols-3">
+            <li v-for="a in recent" :key="a.id" class="flex flex-col items-center rounded-md border border-gold bg-gradient-to-b from-[#3a2a12] to-[#1a120a] p-3 text-center shadow-[0_0_14px_rgba(255,209,0,0.15)]">
+              <img :src="a.icon" alt="" width="56" height="56" class="wow-slot h-14 w-14 !border-gold" />
+              <div class="mt-2 font-display font-bold leading-tight text-white">{{ nameOf(a) }}</div>
+              <div class="mt-1 text-[13px] text-neutral-300">{{ descOf(a) }}</div>
+              <div class="mt-auto pt-2 text-[12px] text-neutral-500"><span class="font-display font-black text-gold">{{ a.points }}</span> · {{ formatDate(state.unlocked[a.id]) }}</div>
+            </li>
+          </ul>
+          <h2 class="mt-8 font-display text-[15px] font-bold uppercase tracking-wider text-gold">{{ $t('achievements.all') }}</h2>
+        </template>
+
+        <ul class="mt-3 space-y-2" :class="recent.length ? '' : 'mt-6'">
           <li
-            v-for="a in achievementDefs"
+            v-for="a in rest"
             :key="a.id"
             class="flex items-center gap-3 rounded-md border p-2.5"
             :class="state.unlocked[a.id] ? 'border-gold-border bg-gradient-to-r from-[#2a2014] to-transparent' : 'border-neutral-800 bg-black/40'"
           >
             <img :src="a.icon" alt="" width="44" height="44" class="wow-slot h-11 w-11 shrink-0" :class="state.unlocked[a.id] ? '!border-gold-border' : 'grayscale opacity-40'" />
             <div class="min-w-0 flex-1">
-              <div class="font-display font-bold" :class="state.unlocked[a.id] ? 'text-white' : 'text-neutral-500'">
-                {{ a.secret && !state.unlocked[a.id] ? '???' : $t(`achievements.list.${a.id}.name`) }}
-              </div>
-              <div class="text-[14px]" :class="state.unlocked[a.id] ? 'text-neutral-300' : 'text-neutral-600'">
-                {{ a.secret && !state.unlocked[a.id] ? $t('achievements.secret') : $t(`achievements.list.${a.id}.desc`) }}
-              </div>
+              <div class="font-display font-bold" :class="state.unlocked[a.id] ? 'text-white' : 'text-neutral-500'">{{ nameOf(a) }}</div>
+              <div class="text-[14px]" :class="state.unlocked[a.id] ? 'text-neutral-300' : 'text-neutral-600'">{{ descOf(a) }}</div>
             </div>
             <div class="shrink-0 text-right">
               <div class="font-display font-black" :class="state.unlocked[a.id] ? 'text-gold' : 'text-neutral-600'">{{ a.points }}</div>
