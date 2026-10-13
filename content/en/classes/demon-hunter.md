@@ -33,7 +33,9 @@ Vengeance tanks with soul fragments and sigils that control enemies. Lots of sel
 
 ### Devourer
 
-Devourer is the new specialization from Midnight. Instead of fel magic it draws on the **Void** and fights from mid range, while keeping a demon hunter's full mobility. That fits Midnight's story, in which the Void plays a big role. Some guides already name Devourer a good entry into ranged combat.
+Devourer is the new specialization from Midnight. Instead of fel magic it draws on the **Void** and fights from mid range, while keeping a demon hunter's full mobility. With [**Consume**](https://www.wowhead.com/spell=473662){target="_blank" rel="noopener"} you drain the essence from enemies, even on the move, and build Fury. [**Reap**](https://www.wowhead.com/spell=1226019){target="_blank" rel="noopener"} gathers souls, and with enough Soul Fragments you ascend into [**Void Metamorphosis**](https://www.wowhead.com/spell=1217605){target="_blank" rel="noopener"}, which substantially empowers your abilities. That fits Midnight's story, in which the Void plays a big role. Some guides already name Devourer a good entry into ranged combat.
+
+**Signature abilities:** [**Void Ray**](https://www.wowhead.com/spell=473728){target="_blank" rel="noopener"}, [**Collapsing Star**](https://www.wowhead.com/spell=1221167){target="_blank" rel="noopener"}
 
 ## Who is the Demon Hunter for?
 

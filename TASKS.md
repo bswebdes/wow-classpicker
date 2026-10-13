@@ -10,9 +10,9 @@ Stand: 13.10.2026 · live auf [findyourmain.com](https://findyourmain.com), Bran
 - [ ] Deutschen Namen der Skyborne-Fraktionen klären, sobald Blizzard einen veröffentlicht
 
 ### Fachlich
-- [ ] Quiz-Gewichtung gegenlesen (`app/utils/quiz.ts`)
-- [ ] Lore-Texte der Klassenseiten gegenlesen (Benny)
-- [ ] Verschlinger-Dämonenjäger: typische Fähigkeiten ergänzen, sobald die Namen bei Wowhead prüfbar sind
+- [x] Quiz-Gewichtung gegenlesen (`app/utils/quiz.ts`)
+- [x] Lore-Texte der Klassenseiten gegenlesen (Benny)
+- [x] Verschlinger-Dämonenjäger: Fähigkeiten ergänzt (Verzehren, Ernten, Leerenmetamorphose, Leerenstrahl, Kollabierender Stern; IDs über die Wowhead-Suche gefunden und per Tooltip-API geprüft)
 
 ### SEO-Inhalte (nach Suchvolumen)
 - [ ] PvP-Ratgeber „Beste Klasse für PvP“ (US 880 Suchen, SD 23, größtes offenes Keyword)

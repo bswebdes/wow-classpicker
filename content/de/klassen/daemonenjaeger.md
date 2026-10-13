@@ -33,7 +33,9 @@ Rachsucht tankt mit Seelenfragmenten und Siegeln, die Gegner kontrollieren. Viel
 
 ### Verschlinger
 
-Verschlinger ist die neue Spezialisierung aus Midnight. Statt Teufelsmagie nutzt sie die **Leere** und kämpft aus mittlerer Distanz, behält dabei aber die volle Mobilität eines Dämonenjägers. Das passt zur Geschichte von Midnight, in der die Leere eine große Rolle spielt. Einige Ratgeber nennen den Verschlinger bereits als guten Einstieg in den Fernkampf.
+Verschlinger ist die neue Spezialisierung aus Midnight. Statt Teufelsmagie nutzt sie die **Leere** und kämpft aus mittlerer Distanz, behält dabei aber die volle Mobilität eines Dämonenjägers. Mit [**Verzehren**](https://www.wowhead.com/de/spell=473662){target="_blank" rel="noopener"} saugst du Gegnern die Essenz aus, auch in der Bewegung, und baust so Jähzorn auf. [**Ernten**](https://www.wowhead.com/de/spell=1226019){target="_blank" rel="noopener"} sammelt Seelen ein, und mit genug Seelenfragmenten steigst du in die [**Leerenmetamorphose**](https://www.wowhead.com/de/spell=1217605){target="_blank" rel="noopener"} auf, die deine Fähigkeiten deutlich verstärkt. Das passt zur Geschichte von Midnight, in der die Leere eine große Rolle spielt. Einige Ratgeber nennen den Verschlinger bereits als guten Einstieg in den Fernkampf.
+
+**Typische Fähigkeiten:** [**Leerenstrahl**](https://www.wowhead.com/de/spell=473728){target="_blank" rel="noopener"}, [**Kollabierender Stern**](https://www.wowhead.com/de/spell=1221167){target="_blank" rel="noopener"}
 
 ## Für wen ist der Dämonenjäger geeignet?
 
