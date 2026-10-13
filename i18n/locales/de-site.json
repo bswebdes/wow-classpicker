@@ -396,6 +396,7 @@
   "quest": {
     "npcName": "Thalgrim Eichenhorn",
     "npcTitle": "Lehrmeister aller Klassen",
+    "npcAlt": "Thalgrim Eichenhorn: ein Zwerg mit Stirnband und langem, geflochtenem rotem Bart",
     "questText": "Ah, ein neues Gesicht! Ich sehe es in deinen Augen, Reisender: zu viele Twinks, kein Main. Glaub mir, ich habe Hunderte wie dich ausgebildet. Krieger, die heimlich heilen wollten. Magier, die sich nach Plattenrüstung sehnten. Druiden, die sich bis heute nicht für eine Gestalt entscheiden können.\n\nBeantworte mir sieben Fragen. Ehrlich, und ohne an Tier-Listen zu denken. Dann sage ich dir, welcher Weg wirklich für dich bestimmt ist.",
     "objective": "Beantworte Thalgrim Eichenhorn 7 Fragen über deinen Spielstil.",
     "rewardsLabel": "Belohnungen",

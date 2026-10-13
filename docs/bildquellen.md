@@ -84,3 +84,9 @@ Die Hauptbilder liegen in `public/images/hero/` (1600 px und `-800` mit 800 px B
 | `public/images/hero/haranir.webp` | https://blz-contentstack-images.akamaized.net/v3/assets/blt3452e3b114fab0cd/blt6deccde0ccd8d4bb/689e2f90c823af5b80bca982/2600_Haranir.jpg |
 | `public/images/hero/mulgore.webp` | https://blz-contentstack-images.akamaized.net/v3/assets/blt9c12f249ac15c7ec/bltf8ea7f909345c09b/6a985e23203da3e3fcf0e10e/Updates_Mulgore.jpg |
 | `public/images/hero/skyborne.webp` | https://blz-contentstack-images.akamaized.net/v3/assets/blt9c12f249ac15c7ec/blta3214baff005e0a5/6a99ff662924f5c4358aa988/Skyborne-BG-sm.jpg |
+
+## Thalgrim (Klassen-Quiz)
+
+| Datei | Original |
+| --- | --- |
+| `public/images/thalgrim.webp` | https://blz-contentstack-images.akamaized.net/v3/assets/blt3452e3b114fab0cd/bltc92a0bff9c62bb4f/616a002f9f3ef74e02a20d14/MD54JEPJ4K5R1603475588880.jpg (Zwergenseite, https://worldofwarcraft.blizzard.com/en-us/game/races/dwarf). Das Rundporträt zeigt per CSS nur den linken Zwerg, die Datei selbst ist nur verkleinert. |

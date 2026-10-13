@@ -396,6 +396,7 @@
   "quest": {
     "npcName": "Thalgrim Oakhorn",
     "npcTitle": "Trainer of All Classes",
+    "npcAlt": "Thalgrim Oakhorn: a dwarf with a headband and a long, braided red beard",
     "questText": "Ah, a new face! I can see it in your eyes, traveler: too many alts, no main. Believe me, I have trained hundreds like you. Warriors who secretly wanted to heal. Mages who longed for plate armor. Druids who still can't pick a form.\n\nAnswer me seven questions. Honestly, and without thinking about tier lists. Then I will tell you which path is truly meant for you.",
     "objective": "Answer Thalgrim Oakhorn 7 questions about your playstyle.",
     "rewardsLabel": "Rewards",
