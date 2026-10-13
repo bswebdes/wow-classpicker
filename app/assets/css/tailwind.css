@@ -103,6 +103,10 @@
       0 2px 4px rgba(0, 0, 0, 0.6);
   }
   .wow-btn > svg, .wow-btn > img { flex-shrink: 0; }
+  /* Mobil volle Breite, damit kurze und umbrechende Buttons einheitlich wirken */
+  @media (width < 40rem) {
+    .wow-btn:not(.wow-btn-sm) { width: 100%; }
+  }
   .wow-btn:hover { filter: brightness(1.25); color: #fff; box-shadow: 0 0 0 1px var(--color-gold), inset 0 0 10px rgba(255, 209, 0, 0.35), 0 2px 4px rgba(0, 0, 0, 0.6); }
   .wow-btn:active { transform: translateY(1px); filter: brightness(0.9); }
   .wow-btn:focus-visible { outline: 2px solid var(--color-gold); outline-offset: 2px; }
