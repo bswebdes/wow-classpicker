@@ -87,7 +87,7 @@ const quality = ['text-quality-epic border-quality-epic', 'text-quality-rare bor
           <h2 class="mt-6 font-display text-lg font-bold text-[#4a2408]">{{ $t('quiz.objectivesTitle') }}</h2>
           <p class="mt-1">{{ $t('quiz.objective') }}</p>
           <div class="mt-5 flex flex-wrap gap-1.5">
-            <img v-for="c in getClassList(mode)" :key="c.id" :src="c.icon" alt="" width="36" height="36" class="h-9 w-9 rounded-[3px] border border-[#6b5023]" />
+            <img v-for="c in getClassList(mode)" :key="c.id" :src="c.icon" alt="" width="40" height="40" class="wow-slot h-10 w-10 !border-[#4a3415]" />
           </div>
         </div>
 
@@ -119,7 +119,7 @@ const quality = ['text-quality-epic border-quality-epic', 'text-quality-rare bor
           <ol class="mt-3 grid gap-2 sm:grid-cols-3">
             <li v-for="(r, i) in results" :key="r.id">
               <NuxtLink :to="classLink(r.id)" class="flex items-center gap-3 rounded-md border bg-[#0b0b1d]/90 p-2 transition-transform hover:-translate-y-0.5" :class="quality[i].split(' ')[1]">
-                <img :src="getClassInfo(r.id, mode)?.icon" :alt="$t(`classes.${r.id}.name`)" width="44" height="44" class="h-11 w-11 rounded-[3px] border-2" :class="quality[i].split(' ')[1]" />
+                <img :src="getClassInfo(r.id, mode)?.icon" :alt="$t(`classes.${r.id}.name`)" width="44" height="44" class="wow-slot h-11 w-11 !border-2" :class="quality[i].split(' ')[1]" />
                 <span class="flex flex-col">
                   <span class="font-display font-bold" :class="quality[i].split(' ')[0]">{{ $t(`classes.${r.id}.name`) }}</span>
                   <span class="text-[13px] text-neutral-300">{{ $t('quiz.match', { percent: r.percent }) }}</span>

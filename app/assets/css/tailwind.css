@@ -124,6 +124,8 @@
   /* Icon-Slot wie in der Aktionsleiste */
   .wow-slot {
     @apply relative overflow-hidden rounded-[4px];
+    /* Dunkler Grund, damit die transparenten Klassen-Icons auch auf hellem Pergament lesbar sind */
+    background: radial-gradient(circle at 50% 40%, #2b2b2b, #0d0d0d);
     border: 2px solid #2a2a2a;
     box-shadow: inset 0 0 0 1px #000, 0 0 0 1px #5c5c5c;
   }
