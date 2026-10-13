@@ -313,6 +313,10 @@
       "bloodlust": {
         "name": "Stormstrike",
         "msg": "strikes with the power of the storm."
+      },
+      "totem": {
+        "name": "Strength of Earth Totem",
+        "msg": "plants a wooden post that somehow makes you stronger."
       }
     },
     "warlock": {

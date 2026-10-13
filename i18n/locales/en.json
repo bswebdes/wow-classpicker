@@ -80,7 +80,7 @@
         "chainlightning": { "name": "Chain Lightning", "msg": "ZAPP! A bolt for you!" },
         "healingrain": { "name": "Healing Rain", "msg": "makes it rain in the room. Indoor wellness." },
         "bloodlust": { "name": "Bloodlust", "msg": "gets very red in the face and swings wildly!" },
-        "totem": { "name": "Strength of Earth Totem", "msg": "places a wooden post on the ground." }
+        "totem": { "name": "Earthbind Totem", "msg": "places a wooden post on the ground." }
       }
     },
     "mage": {

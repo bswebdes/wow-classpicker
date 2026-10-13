@@ -15,7 +15,7 @@ Neben Energie bzw. Mana nutzt der Mönch **Chi** als Ressource für seine stärk
 
 ## Die Spezialisierungen
 
-- **Braumeister** ist ein ungewöhnlicher Tank: Statt Schaden komplett zu blocken, verteilt er ihn mit **Staffelung** über Zeit und reinigt ihn mit seinen Gebräuen. Torkeln inklusive.
+- **Braumeister** ist ein ungewöhnlicher Tank: Statt Schaden komplett zu blocken, verteilt er ihn mit **Staffeln** über Zeit und reinigt ihn mit seinen Gebräuen. Torkeln inklusive.
 - **Nebelwirker** heilt mit Nebeln und kann dabei im Nahkampf mitkämpfen, um über Schläge Verbündete zu heilen.
 - **Windläufer** ist ein schneller Nahkämpfer, der Kombinationen aus Tritten und Schlägen aneinanderreiht und mit Wirbelattacken ganze Gruppen trifft.
 
@@ -34,6 +34,6 @@ Neben Energie bzw. Mana nutzt der Mönch **Chi** als Ressource für seine stärk
 
 ## Stärken und Schwächen
 
-Der Mönch ist eine der mobilsten Klassen und in allen Rollen spielbar. Seine Spezialisierungen haben aber eigene, teils ungewöhnliche Mechaniken, etwa die Staffelung des Braumeisters. Das macht ihn eher zur Klasse für Spieler mit etwas Erfahrung.
+Der Mönch ist eine der mobilsten Klassen und in allen Rollen spielbar. Seine Spezialisierungen haben aber eigene, teils ungewöhnliche Mechaniken, etwa das Staffeln des Braumeisters. Das macht ihn eher zur Klasse für Spieler mit etwas Erfahrung.
 
 Im Picker kämpft der Mönch mit Furorfäusten und Stärkendem Gebräu. Probier ihn in der [Arena](/) aus oder finde im [Klassen-Quiz](/welche-klasse-passt-zu-mir) heraus, ob er zu dir passt.

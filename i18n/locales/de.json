@@ -80,7 +80,7 @@
         "chainlightning": { "name": "Kettenblitzschlag", "msg": "ZAPP! Ein Blitz für dich!" },
         "healingrain": { "name": "Heilender Regen", "msg": "lässt es im Raum regnen. Indoor-Wellness." },
         "bloodlust": { "name": "Kampfrausch", "msg": "wird ganz rot im Gesicht und schlägt wild um sich!" },
-        "totem": { "name": "Erdstärketotem", "msg": "stellt einen Holzpfosten auf den Boden." }
+        "totem": { "name": "Totem der Erdbindung", "msg": "stellt einen Holzpfosten auf den Boden." }
       }
     },
     "mage": {

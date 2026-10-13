@@ -9,7 +9,7 @@ updated: "2026-10-13"
 
 ## Spielweise
 
-Der Schamane stellt **Totems** der vier Elemente auf, die die Gruppe stärken oder Gegner behindern. Er heilt mit **Kettenheilung**, wirft Blitze und verstärkt seine Waffe, etwa mit **Windzorn**. Mit **Reinkarnation** kann er sich selbst wiederbeleben.
+Der Schamane stellt **Totems** der vier Elemente auf, die die Gruppe stärken oder Gegner behindern. Er heilt mit **Kettenheilung**, wirft Blitze und verstärkt seine Waffe, etwa mit der **Waffe des Windzorns**. Mit **Reinkarnation** kann er sich selbst wiederbeleben.
 
 ## Die Talentbäume
 

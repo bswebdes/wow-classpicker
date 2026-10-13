@@ -313,6 +313,10 @@
       "bloodlust": {
         "name": "Sturmschlag",
         "msg": "schlägt mit der Kraft des Sturms zu."
+      },
+      "totem": {
+        "name": "Totem der Erdstärke",
+        "msg": "stellt einen Holzpfosten auf, der irgendwie stärker macht."
       }
     },
     "warlock": {

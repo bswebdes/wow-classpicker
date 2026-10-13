@@ -68,7 +68,7 @@ Stand: 13.10.2026 · live auf [findyourmain.com](https://findyourmain.com), Bran
 - [x] Nach dem Kampf: Haupt-CTA zur Klassenseite des Siegers, Links zu Platz 2 und 3, „Nochmal kämpfen“ zweitrangig, Auswertung schließbar
 - [x] Echte Fähigkeitsnamen (DE/EN, per Wowhead-Spell-ID geprüft), Forever-Arena mit Classic-Fähigkeiten statt Retail-Fähigkeiten
 - [x] Falsche deutsche Fähigkeitsnamen in den Klassentexten korrigiert (z. B. Abbitte, Paralyse, Teufelsrausch, Blutsauger)
-- [ ] Noch per Wowhead prüfen (wurde gedrosselt): Chaosblitz, Augenstrahl, Staffelung, Wiedergeburt, Rufer-Fähigkeiten (Emporschwingen, Schweben, Feueratem, Desintegration), Classic-Priester (Gedankenkontrolle, Psychischer Schrei, Schattengestalt), Windzorn
+- [x] Alle deutschen/englischen Fähigkeitsnamen in Arena und Texten über die Wowhead-Tooltip-Schnittstelle geprüft (korrigiert: Staffeln, Segeln, Waffe des Windzorns; Retail-Schamane nutzt Totem der Erdbindung, Forever Totem der Erdstärke)
 - [x] Zufallsklasse im Loot-Stil: Beutefenster mit Qualität und Wurf (1–100), „Bedarf!“, Verlauf der letzten Würfe, Link zur Klassenseite
 - [x] Zufallsklasse: Filter als Ingame-Buttons statt Dropdowns, Ergebnis und Verlauf in Klassenfarben statt einheitlich episch-lila
 - [x] Zufallsklasse: Walzen-Animation (Loot-Roll), Ergebnis als Item-Tooltip mit Werten, Flavor-Text und „Benutzen“-Link, gezielt „Nur Spezialisierung/Volk neu“

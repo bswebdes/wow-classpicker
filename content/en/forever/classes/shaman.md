@@ -9,7 +9,7 @@ updated: "2026-10-13"
 
 ## Playstyle
 
-The Shaman places **totems** of the four elements that empower the group or hinder enemies. It heals with **Chain Heal**, throws lightning and empowers its weapon, for example with **Windfury**. **Reincarnation** lets it bring itself back to life.
+The Shaman places **totems** of the four elements that empower the group or hinder enemies. It heals with **Chain Heal**, throws lightning and empowers its weapon, for example with **Windfury Weapon**. **Reincarnation** lets it bring itself back to life.
 
 ## Talent trees
 
