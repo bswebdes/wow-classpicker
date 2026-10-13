@@ -40,10 +40,13 @@ const medal = { 1: 'text-[#ffd100] border-[#ffd100]', 2: 'text-[#d8d8e0] border-
 
 // Fokus in den Dialog, Escape schließt ihn
 const dialogRef = ref(null)
+const modalOpen = useState('modal-open', () => false)
+onBeforeUnmount(() => { modalOpen.value = false })
 const onKey = (e) => { if (e.key === 'Escape') emit('close') }
 onBeforeUnmount(() => window.removeEventListener('keydown', onKey))
 
 onMounted(() => {
+  modalOpen.value = true
   window.addEventListener('keydown', onKey)
   nextTick(() => dialogRef.value?.focus())
   if (props.winner) {
@@ -53,11 +56,11 @@ onMounted(() => {
 </script>
 
 <template>
-  <div v-if="winner" class="fixed inset-0 z-50 overflow-y-auto bg-black/85 p-4 backdrop-blur-xs" role="dialog" aria-modal="true" :aria-label="$t('victory.champion')">
-    <div id="victory-screen" ref="dialogRef" tabindex="-1" class="outline-none wow-frame mx-auto my-6 w-full max-w-2xl !border-gold animate-[victory-pop_0.4s_ease-out]">
+  <div v-if="winner" class="fixed inset-0 z-50 flex items-center justify-center bg-black/85 p-3 backdrop-blur-xs sm:p-4" role="dialog" aria-modal="true" :aria-label="$t('victory.champion')">
+    <div id="victory-screen" ref="dialogRef" tabindex="-1" class="outline-none wow-frame flex max-h-[calc(100dvh-1.5rem)] w-full max-w-2xl flex-col !border-gold animate-[victory-pop_0.4s_ease-out] sm:max-h-[calc(100dvh-2rem)]">
       <button class="absolute right-3 top-2 text-2xl leading-none text-neutral-400 hover:text-gold" :aria-label="$t('result.close')" @click="emit('close')">×</button>
 
-      <header class="text-center">
+      <header class="shrink-0 text-center">
         <div class="font-display text-[13px] font-bold uppercase tracking-[0.3em] text-neutral-400">{{ $t('victory.achievement') }}</div>
         <h2 class="wow-title mt-1 text-4xl uppercase">{{ $t('victory.champion') }}</h2>
         <p class="mt-2 text-neutral-300">
@@ -68,30 +71,30 @@ onMounted(() => {
       </header>
 
       <!-- Siegertreppchen -->
-      <ol class="mt-6 flex items-end justify-center gap-3 sm:gap-5" :aria-label="$t('result.statsTitle')">
+      <ol class="mt-4 flex shrink-0 items-end justify-center gap-3 sm:mt-6 sm:gap-5" :aria-label="$t('result.statsTitle')">
         <li v-for="f in podiumOrder" :key="f.id" class="flex w-[30%] max-w-[160px] flex-col items-center text-center">
           <img
             :src="f.icon"
             :alt="className(f.classId)"
-            :width="f.place === 1 ? 88 : 64"
-            :height="f.place === 1 ? 88 : 64"
+            :width="f.place === 1 ? 72 : 52"
+            :height="f.place === 1 ? 72 : 52"
             class="wow-slot"
-            :class="f.place === 1 ? 'h-[88px] w-[88px] !border-gold shadow-[0_0_24px_rgba(255,209,0,0.5)]' : 'h-16 w-16'"
+            :class="f.place === 1 ? 'h-14 w-14 sm:h-[72px] sm:w-[72px] !border-gold shadow-[0_0_24px_rgba(255,209,0,0.5)]' : 'h-11 w-11 sm:h-[52px] sm:w-[52px]'"
           />
-          <span class="mt-2 font-display font-bold leading-tight" :class="`text-c-${f.classId}`">{{ f.name }}</span>
-          <span class="text-[13px] text-neutral-400">{{ className(f.classId) }}</span>
+          <span class="mt-1.5 font-display text-[15px] font-bold leading-tight" :class="`text-c-${f.classId}`">{{ f.name }}</span>
+          <span class="text-[12px] text-neutral-400">{{ className(f.classId) }}</span>
           <div
-            class="mt-2 flex w-full items-start justify-center rounded-t-md border-2 border-b-0 bg-gradient-to-b from-[#2a2010] to-[#120d07] pt-2 font-display text-2xl font-black"
-            :class="[medal[f.place], f.place === 1 ? 'h-24' : f.place === 2 ? 'h-16' : 'h-11']"
+            class="mt-1.5 flex w-full items-start justify-center rounded-t-md border-2 border-b-0 bg-gradient-to-b from-[#2a2010] to-[#120d07] pt-1 font-display text-xl font-black"
+            :class="[medal[f.place], f.place === 1 ? 'h-12' : f.place === 2 ? 'h-9' : 'h-7']"
           >
             {{ f.place }}
           </div>
         </li>
       </ol>
-      <div class="h-1 bg-gradient-to-r from-transparent via-gold-border to-transparent" />
+      <div class="h-1 shrink-0 bg-gradient-to-r from-transparent via-gold-border to-transparent" />
 
       <!-- Weiter zu den Klassenseiten -->
-      <div class="mt-6 flex flex-col items-center gap-3">
+      <div class="mt-4 flex shrink-0 flex-col items-center gap-3 sm:mt-6">
         <NuxtLink v-if="classLink(winner.classId)" :to="classLink(winner.classId)" class="wow-btn wow-btn-lg w-full sm:w-auto" @click="trackEvent('result_class_click', { source: 'arena', class_id: winner.classId, place: 1, game_mode: mode }); emit('close')">
           {{ $t('result.learnMore', { class: $t(`classAccusative.${winner.classId}`) }) }} ›
         </NuxtLink>
@@ -105,23 +108,23 @@ onMounted(() => {
       </div>
 
       <!-- Kampfauswertung -->
-      <section class="mt-8">
-        <div class="flex items-baseline justify-between">
+      <section class="mt-5 flex min-h-0 flex-1 flex-col sm:mt-6">
+        <div class="flex shrink-0 items-baseline justify-between">
           <h3 class="font-display text-lg font-bold text-gold">{{ $t('result.statsTitle') }}</h3>
           <span class="text-[14px] text-neutral-400">{{ $t('result.rounds', { n: rounds }) }}</span>
         </div>
 
-        <ul v-if="awards.length" class="mt-3 flex flex-wrap gap-2" :aria-label="$t('result.awards')">
-          <li v-for="a in awards" :key="a.key" class="wow-tooltip !px-3 !py-1.5 text-[13px]">
+        <ul v-if="awards.length" class="wow-scroll mt-3 flex shrink-0 gap-2 overflow-x-auto pb-1" :aria-label="$t('result.awards')">
+          <li v-for="a in awards" :key="a.key" class="wow-tooltip shrink-0 whitespace-nowrap !px-2.5 !py-1 text-[13px]">
             <span class="text-gold">{{ $t(`result.award.${a.key}`) }}:</span>
             <span class="font-semibold" :class="`text-c-${a.fighter.classId}`"> {{ a.fighter.name }}</span>
             <span class="text-neutral-400"> ({{ a.value }})</span>
           </li>
         </ul>
 
-        <div class="mt-3 wow-scroll overflow-x-auto rounded-md border border-gold-border/50" tabindex="0" role="region" :aria-label="$t('result.statsTitle')">
+        <div class="wow-scroll mt-3 min-h-[7.5rem] flex-1 overflow-auto rounded-md border border-gold-border/50" tabindex="0" role="region" :aria-label="$t('result.statsTitle')">
           <table class="w-full text-left text-[14px]">
-            <thead class="bg-black/50 font-display text-[12px] uppercase tracking-wide text-gold">
+            <thead class="sticky top-0 z-10 bg-[#120d07] font-display text-[12px] uppercase tracking-wide text-gold shadow-[0_1px_0_rgba(138,109,43,0.6)]">
               <tr>
                 <th class="p-2">#</th>
                 <th class="p-2">{{ $t('result.fighter') }}</th>
@@ -150,7 +153,7 @@ onMounted(() => {
         </div>
       </section>
 
-      <div class="mt-6 flex flex-wrap justify-center gap-3">
+      <div class="mt-4 flex shrink-0 flex-wrap justify-center gap-3 sm:mt-6">
         <button class="wow-btn wow-btn-stone" @click="emit('again')">⚔ {{ $t('result.again') }}</button>
         <button class="wow-btn wow-btn-stone" @click="emit('close')">{{ $t('result.viewFight') }}</button>
       </div>

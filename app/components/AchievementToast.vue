@@ -2,6 +2,8 @@
 // Zeigt neu errungene Erfolge nacheinander unten mittig an, wie im Spiel
 const { queue } = useAchievements()
 const localePath = useLocalePath()
+// Während ein Dialog offen ist (z. B. Siegerauswertung), oben statt unten einblenden
+const modalOpen = useState('modal-open', () => false)
 const current = ref(null)
 let timer
 
@@ -24,7 +26,7 @@ watch(queue, () => setTimeout(showNext, 600), { deep: true })
 </script>
 
 <template>
-  <div class="pointer-events-none fixed inset-x-0 bottom-20 z-[60] sm:bottom-5 flex justify-center px-4" aria-live="polite">
+  <div class="pointer-events-none fixed inset-x-0 z-[60] flex justify-center px-4" :class="modalOpen ? 'top-4' : 'bottom-20 sm:bottom-5'" aria-live="polite">
     <Transition
       enter-active-class="transition duration-300 ease-out"
       enter-from-class="opacity-0 translate-y-6 scale-95"
