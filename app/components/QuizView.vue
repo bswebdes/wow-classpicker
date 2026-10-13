@@ -211,7 +211,8 @@ const quality = ['text-quality-epic border-quality-epic', 'text-quality-rare bor
 
       <div class="flex flex-wrap items-center justify-between gap-3 border-t border-gold-border/60 bg-black/40 px-5 py-3">
         <span class="text-[13px] text-neutral-400">{{ started ? $t('quiz.progress', { current: Math.min(step, questions.length), total: questions.length }) : '' }}</span>
-        <div class="flex flex-wrap gap-2">
+        <!-- Mobil untereinander in voller Breite, ab sm nebeneinander -->
+        <div class="flex w-full flex-col gap-2 sm:w-auto sm:flex-row sm:flex-wrap [&>*]:w-full sm:[&>*]:w-auto">
           <template v-if="!started">
             <button class="wow-btn" @click="start">{{ declineCount ? $t('quest.declineAccept') : $t('quiz.accept') }}</button>
             <button v-if="!finalDecline" class="wow-btn wow-btn-stone" @click="decline">{{ $t('quest.decline') }}</button>

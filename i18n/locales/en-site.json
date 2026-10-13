@@ -101,7 +101,7 @@
     "resultIntro": "These classes match your answers best:",
     "match": "{percent}% match",
     "toClass": "View class",
-    "fightResult": "Send your top 3 into the arena",
+    "fightResult": "Top 3 to the arena",
     "q": {
       "role": {
         "title": "Which role appeals to you most?",
