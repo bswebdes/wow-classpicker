@@ -36,6 +36,10 @@ Eine Klasse hat mehrere Spezialisierungen, die sich unterschiedlich schwer spiel
 
 Die Einschätzungen bleiben subjektiv. Wenn dir eine Klasse Spaß macht, ist sie die richtige, egal was eine Tabelle sagt.
 
+## Find Your Main unterstützen
+
+Find Your Main ist kostenlos, ohne Werbung und ohne Anmeldung, und das bleibt auch so. Wer trotzdem etwas zurückgeben möchte, kann mir freiwillig einen Heiltrank spendieren. Es gibt dafür keine Gegenleistung und keine Vorteile auf der Seite. Den Link findest du ganz unten auf jeder Seite.
+
 ## Wie aktuell ist die Seite?
 
 Jede Klassenseite und jeder Ratgeber zeigt, wann er zuletzt aktualisiert wurde. Nach großen Patches und zum Start von WoW Forever prüfen wir die Inhalte.

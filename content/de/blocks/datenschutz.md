@@ -92,7 +92,7 @@ Mein Postfach liegt bei Proton AG, Route de la Galaise 32, 1228 Plan-les-Ouates,
 
 ## Externe Links
 
-Diese Website enthält Links zu anderen Websites. Es handelt sich um einfache Links: Erst wenn du einen anklickst, wirst du zur jeweiligen Seite weitergeleitet und deren Betreiber erhält Daten von dir. Für die Verarbeitung dort gilt die Datenschutzerklärung des jeweiligen Anbieters.
+Diese Website enthält Links zu anderen Websites. Es handelt sich um einfache Links: Erst wenn du einen anklickst, wirst du zur jeweiligen Seite weitergeleitet und deren Betreiber erhält Daten von dir. Für die Verarbeitung dort gilt die Datenschutzerklärung des jeweiligen Anbieters. Das gilt auch für den Link „Heiltrank spendieren“ zu PayPal (PayPal (Europe) S.à r.l. et Cie, S.C.A., 22-24 Boulevard Royal, L-2449 Luxemburg): Auf dieser Website ist kein PayPal-Skript eingebunden, Daten erhält PayPal erst, wenn du den Link anklickst und dort eine Zahlung ausführst.
 
 ## SSL- bzw. TLS-Verschlüsselung
 

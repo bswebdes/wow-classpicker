@@ -18,13 +18,13 @@ Stand: 13.10.2026 · live auf [findyourmain.com](https://findyourmain.com), Bran
 - [ ] In Communitys teilen: r/wow, r/wownoob, r/classicwow, Discord, Gilden-Seiten
 
 ### Features & Ideen
-- [ ] Klassen-Vergleich (zwei Klassen nebeneinander)
 - [ ] Arena-Modi: 1 gegen 1, Turnier-Baum
 - [ ] Sound-Effekte im Kampf (optional, standardmäßig aus)
 - [ ] Thalgrim auch an anderen Stellen auftauchen lassen (z. B. Tipps auf Klassenseiten, 404-Seite), ggf. im Quest-Text als Zwerg erkennbar machen („bei meinem Bart“)
 - [ ] Weitere Erfolge: Forever-Quiz abschließen, alle Völker-Kombis gewürfelt, Arena-Sieg mit einem selbst benannten Kämpfer
 
 ### Technik
+- [ ] Weitere Vergleichspaare indexieren, sobald Ubersuggest dafür Suchvolumen zeigt (`indexedPairs` in `app/utils/compare.ts`)
 - [ ] `npm audit` beobachten: 24 Meldungen (node-forge, braces/micromatch, simple-git) stecken nur im Build- und Dev-Werkzeug von Nuxt, ohne passenden Fix für Nuxt 4. Bei Nuxt-Updates erneut prüfen
 
 ## ✅ Erledigt
@@ -73,6 +73,12 @@ Stand: 13.10.2026 · live auf [findyourmain.com](https://findyourmain.com), Bran
 - [x] Arena: Unit-Frames, Kampflog, Damage-Meter, eindeutige Kämpfernamen, Siegerauswertung mit Podium, Statistik und Auszeichnungen
 - [x] Klassen-Quiz als Quest mit Questgeber Thalgrim Eichenhorn (Zwerg, eigenes Porträt im Questfenster), inklusive Ablehnen-Reaktionen, Quiz-Gewichtung gegengelesen
 - [x] Zufallsklasse im Loot-Stil mit Walzen-Animation, Item-Tooltip und gezieltem Neuwürfeln von Spec/Volk
+
+### Klassenvergleich
+- [x] Klassenvergleich für Retail und Forever (`/klassen/vergleich`, `/forever/klassen/vergleich`, EN `/classes/compare`): Auswahl zweier Klassen, jede Paarung mit eigener URL (`magier-vs-hexenmeister`, 78 Retail + 36 Forever), Unterschiede als Sätze, Übersichtstabelle, Kurzantworten der Klassenseiten, FAQ, Arena-Link; nur Paare mit Suchvolumen indexierbar (Magier vs. Hexenmeister US 210, Krieger vs. Paladin US 90, Forever Magier vs. Hexenmeister), Rest `noindex` und nicht in der Sitemap; umgekehrte Reihenfolge leitet um; verlinkt von Klassenübersicht, Klassenseiten und Footer
+
+### Unterstützung
+- [x] Freiwilliger PayPal-Link („Heiltrank spendieren“) als Band über dem Footer und Absatz auf der Über-uns-Seite, nur ein Link ohne PayPal-Skript, Datenschutz ergänzt
 
 ### Teilen
 - [x] Quiz-Ergebnis und Arena-Sieger teilbar: Seite „Mein Main“ je Klasse und Modus (`/mein-main/<klasse>`, `/en/my-main/<class>`, Forever analog) mit eigenem OG-Bild, Top 3 bzw. Kämpfername in der URL, `noindex`, nicht in der Sitemap; Teilen-Knopf nutzt das System-Menü oder kopiert den Link, GA4-Ereignis `share`

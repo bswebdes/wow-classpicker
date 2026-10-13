@@ -600,5 +600,72 @@
     "yourTurn": "Und welche Klasse passt zu dir?",
     "ctaQuiz": "Klassen-Quiz starten",
     "ctaArena": "Ab in die Arena"
+  },
+  "compare": {
+    "nav": "Klassen vergleichen",
+    "title": "WoW Klassen vergleichen: Zwei Klassen im direkten Vergleich",
+    "titleForever": "WoW Forever Klassen vergleichen: Zwei Klassen im Vergleich",
+    "heading": "Klassen vergleichen",
+    "description": "Vergleiche zwei WoW-Klassen direkt: Rollen, Rüstung, Spezialisierungen, Einstieg, Solo-Spiel und Völker auf einen Blick, für Midnight und WoW Forever.",
+    "intro": "Du schwankst zwischen zwei Klassen? Wähle beide aus und sieh auf einen Blick, worin sie sich unterscheiden.",
+    "pickA": "Erste Klasse",
+    "pickB": "Zweite Klasse",
+    "choose": "Wähle oben zwei Klassen aus, dann erscheint der Vergleich.",
+    "popular": "Beliebte Vergleiche",
+    "all": "Alle Vergleiche",
+    "pairTitle": "{a} vs. {b} in {game}: Klassenvergleich",
+    "pairHeading": "{a} vs. {b}",
+    "pairDescription": "{a} oder {b}? Rollen, Rüstung, Spezialisierungen, Einstieg und Solo-Spiel im direkten Vergleich, damit du die passende Klasse findest.",
+    "differences": "Die wichtigsten Unterschiede",
+    "overview": "Im Überblick",
+    "row": {
+      "roles": "Rollen",
+      "armor": "Rüstung",
+      "range": "Kampfweise",
+      "difficulty": "Einstieg",
+      "solo": "Solo-Spiel",
+      "races": "Spielbare Völker"
+    },
+    "how": {
+      "melee": "im Nahkampf",
+      "ranged": "aus der Distanz",
+      "both": "je nach Spezialisierung im Nahkampf oder aus der Distanz"
+    },
+    "rangeShort": {
+      "melee": "Nahkampf",
+      "ranged": "Fernkampf",
+      "both": "Nah- und Fernkampf"
+    },
+    "roleVerb": {
+      "tank": "tanken",
+      "healer": "heilen",
+      "dps": "Schaden machen"
+    },
+    "sameRoles": "Beide können {roles}.",
+    "onlyRole": "Nur der {class} kann {roles}.",
+    "rangeSame": "Beide kämpfen {how}.",
+    "rangeOne": "Der {class} kämpft {how}.",
+    "armorSame": "Beide tragen {armor}.",
+    "armorDiff": "Der {a} trägt {armorA}, der {b} {armorB}.",
+    "easier": "Der {class} ist einsteigerfreundlicher.",
+    "sameDifficulty": "Beide sind ähnlich einsteigerfreundlich.",
+    "betterSolo": "Solo kommt der {class} besser zurecht.",
+    "sameSolo": "Solo kommen beide ähnlich gut zurecht.",
+    "racesDiff": "Den {classAcc} können mehr Völker spielen ({n} statt {m}).",
+    "racesSame": "Beide stehen gleich vielen Völkern offen ({n}).",
+    "summaries": "Die Klassen in Kürze",
+    "fight": "In der Arena gegeneinander antreten lassen",
+    "faqBetterQ": "Was ist besser: {a} oder {b}?",
+    "faqBetterA": "Keine der beiden Klassen ist grundsätzlich besser. {facts} Am Ende zählt, welche Spielweise dir mehr Spaß macht.",
+    "faqDiffQ": "Was ist der Unterschied zwischen {a} und {b}?",
+    "stillUnsure": "Noch unentschlossen? Das Klassen-Quiz fragt nach deinem Spielstil.",
+    "compareWith": "Mit einer anderen Klasse vergleichen"
+  },
+  "support": {
+    "title": "Gefällt dir Find Your Main?",
+    "text": "Die Seite ist kostenlos und ohne Werbung. Wenn du magst, spendier mir einen Heiltrank.",
+    "button": "Heiltrank spendieren",
+    "newTab": "PayPal, öffnet in neuem Tab",
+    "note": "Freiwillig über PayPal, ohne Gegenleistung."
   }
 }

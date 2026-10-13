@@ -2,10 +2,18 @@
 import tailwindcss from '@tailwindcss/vite'
 import { classInfo } from './app/utils/classInfo'
 import { foreverClassInfo } from './app/utils/foreverInfo'
+import { allPairs, isIndexedPair, pairSlug } from './app/utils/compare'
 
 const siteUrl = 'https://findyourmain.com'
 
 // Teilen-Seiten „Mein Main“ sind nirgends verlinkt, deshalb explizit vorrendern
+// Klassenvergleiche ohne Suchvolumen sind noindex und gehören nicht in die Sitemap
+const noindexComparePaths = (['retail', 'forever'] as const).flatMap(mode => allPairs(mode)
+  .filter(([a, b]) => !isIndexedPair(a, b, mode))
+  .flatMap(([a, b]) => mode === 'forever'
+    ? [`/forever/klassen/vergleich/${pairSlug(a, b, mode, 'de')}`, `/en/forever/classes/compare/${pairSlug(a, b, mode, 'en')}`]
+    : [`/klassen/vergleich/${pairSlug(a, b, mode, 'de')}`, `/en/classes/compare/${pairSlug(a, b, mode, 'en')}`]))
+
 const shareRoutes = [
   ...classInfo.flatMap(c => [`/mein-main/${c.slug.de}`, `/en/my-main/${c.slug.en}`]),
   ...foreverClassInfo.flatMap(c => [`/forever/mein-main/${c.slug.de}`, `/en/forever/my-main/${c.slug.en}`])
@@ -100,7 +108,7 @@ export default defineNuxtConfig({
     // Inhaltsseiten mit lastmod und Sprachalternativen (unterschiedliche Slugs je Sprache)
     sources: ['/api/__sitemap__/urls'],
     // Rechtstexte und Erfolge nicht in die Sitemap
-    exclude: ['/impressum', '/datenschutz', '/en/imprint', '/en/privacy', '/erfolge', '/en/achievements', '/mein-main/**', '/en/my-main/**', '/forever/mein-main/**', '/en/forever/my-main/**']
+    exclude: ['/impressum', '/datenschutz', '/en/imprint', '/en/privacy', '/erfolge', '/en/achievements', '/mein-main/**', '/en/my-main/**', '/forever/mein-main/**', '/en/forever/my-main/**', ...noindexComparePaths]
   },
 
   content: {

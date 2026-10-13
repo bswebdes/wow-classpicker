@@ -600,5 +600,72 @@
     "yourTurn": "Which class suits you?",
     "ctaQuiz": "Take the class quiz",
     "ctaArena": "Go to the arena"
+  },
+  "compare": {
+    "nav": "Compare classes",
+    "title": "Compare WoW Classes: Two Classes Side by Side",
+    "titleForever": "Compare WoW Forever Classes: Two Classes Side by Side",
+    "heading": "Compare classes",
+    "description": "Compare two WoW classes directly: roles, armor, specializations, beginner friendliness, solo play and races at a glance, for Midnight and WoW Forever.",
+    "intro": "Torn between two classes? Pick both and see at a glance how they differ.",
+    "pickA": "First class",
+    "pickB": "Second class",
+    "choose": "Pick two classes above to see the comparison.",
+    "popular": "Popular comparisons",
+    "all": "All comparisons",
+    "pairTitle": "{a} vs {b} in {game}: Class Comparison",
+    "pairHeading": "{a} vs {b}",
+    "pairDescription": "{a} or {b}? Roles, armor, specializations, beginner friendliness and solo play compared side by side, so you find the class that suits you.",
+    "differences": "Key differences",
+    "overview": "At a glance",
+    "row": {
+      "roles": "Roles",
+      "armor": "Armor",
+      "range": "Combat style",
+      "difficulty": "Beginner friendly",
+      "solo": "Solo play",
+      "races": "Playable races"
+    },
+    "how": {
+      "melee": "in melee",
+      "ranged": "at range",
+      "both": "in melee or at range, depending on the specialization"
+    },
+    "rangeShort": {
+      "melee": "Melee",
+      "ranged": "Ranged",
+      "both": "Melee and ranged"
+    },
+    "roleVerb": {
+      "tank": "tank",
+      "healer": "heal",
+      "dps": "deal damage"
+    },
+    "sameRoles": "Both can {roles}.",
+    "onlyRole": "Only the {class} can {roles}.",
+    "rangeSame": "Both fight {how}.",
+    "rangeOne": "The {class} fights {how}.",
+    "armorSame": "Both wear {armor}.",
+    "armorDiff": "The {a} wears {armorA}, the {b} {armorB}.",
+    "easier": "The {class} is more beginner friendly.",
+    "sameDifficulty": "Both are similarly beginner friendly.",
+    "betterSolo": "The {class} does better solo.",
+    "sameSolo": "Both do similarly well solo.",
+    "racesDiff": "More races can play the {classAcc} ({n} instead of {m}).",
+    "racesSame": "Both are open to the same number of races ({n}).",
+    "summaries": "The classes in short",
+    "fight": "Let them fight in the arena",
+    "faqBetterQ": "Which is better: {a} or {b}?",
+    "faqBetterA": "Neither class is better in general. {facts} In the end, what matters is which playstyle you enjoy more.",
+    "faqDiffQ": "What is the difference between {a} and {b}?",
+    "stillUnsure": "Still undecided? The class quiz asks about your playstyle.",
+    "compareWith": "Compare with another class"
+  },
+  "support": {
+    "title": "Enjoying Find Your Main?",
+    "text": "The site is free and ad-free. If you like, buy me a healing potion.",
+    "button": "Buy a healing potion",
+    "newTab": "PayPal, opens in a new tab",
+    "note": "Voluntary via PayPal, nothing in return."
   }
 }

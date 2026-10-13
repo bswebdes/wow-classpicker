@@ -171,7 +171,12 @@ const modes = computed(() => [
       <slot />
     </div>
 
-    <footer class="mt-20 border-t-2 border-gold-border/60 bg-black/60 text-neutral-400">
+    <!-- Freiwillige Unterstützung: eigenes, ruhiges Band über dem Footer -->
+    <aside class="max-w-4xl w-[92%] mx-auto mt-20" :aria-label="$t('support.title')">
+      <SupportBox band />
+    </aside>
+
+    <footer class="mt-10 border-t-2 border-gold-border/60 bg-black/60 text-neutral-400">
       <div class="max-w-6xl w-[92%] mx-auto py-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
         <div>
           <SiteLogo :mode="mode" small />
@@ -184,6 +189,7 @@ const modes = computed(() => [
             <li><NuxtLink :to="localePath('klassen')" class="hover:text-gold">{{ $t('nav.classes') }}</NuxtLink></li>
             <li><NuxtLink :to="localePath('quiz')" class="hover:text-gold">{{ $t('nav.quiz') }}</NuxtLink></li>
             <li><NuxtLink :to="localePath('zufall')" class="hover:text-gold">{{ $t('nav.random') }}</NuxtLink></li>
+            <li><NuxtLink :to="localePath('klassen-vergleich')" class="hover:text-gold">{{ $t('compare.nav') }}</NuxtLink></li>
           </ul>
         </div>
         <div>
@@ -193,6 +199,7 @@ const modes = computed(() => [
             <li><NuxtLink :to="localePath('forever-klassen')" class="hover:text-gold">{{ $t('nav.classes') }}</NuxtLink></li>
             <li><NuxtLink :to="localePath('forever-quiz')" class="hover:text-gold">{{ $t('nav.quiz') }}</NuxtLink></li>
             <li><NuxtLink :to="localePath('forever-zufall')" class="hover:text-gold">{{ $t('nav.random') }}</NuxtLink></li>
+            <li><NuxtLink :to="localePath('forever-klassen-vergleich')" class="hover:text-gold">{{ $t('compare.nav') }}</NuxtLink></li>
           </ul>
         </div>
         <div>

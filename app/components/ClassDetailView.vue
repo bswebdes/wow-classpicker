@@ -180,6 +180,9 @@ const formatDate = (date) => new Date(date).toLocaleDateString(locale.value === 
       <NuxtLink :to="localePath({ name: routeNameFor('index', mode), query: { classes: info.id } })" class="wow-btn wow-btn-lg">
         ⚔ {{ $t('common.fightInPicker') }}
       </NuxtLink>
+      <NuxtLink :to="localePath({ name: routeNameFor('klassen-vergleich', mode), query: { klasse: info.id } })" class="wow-btn wow-btn-stone wow-btn-lg">
+        {{ $t('compare.compareWith') }}
+      </NuxtLink>
       <NuxtLink :to="localePath(routeNameFor('quiz', mode))" class="wow-btn wow-btn-stone wow-btn-lg">
         {{ $t('nav.quiz') }}
       </NuxtLink>

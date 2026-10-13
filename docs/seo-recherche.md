@@ -104,3 +104,15 @@ Erkenntnis: Im Deutschen wird nach „schnell leveln“ gesucht, nicht nach der 
 
 Grundlage wie beim Leveln: Classic-Erfahrung als Annahme für Forever, Hinweis-Kasten auf der Seite, nach dem Start prüfen.
 
+## Nachtrag 14.10.2026: Klassenvergleich
+
+| Keyword | Markt | Volumen | SD | Umsetzung |
+| --- | --- | --- | --- | --- |
+| mage vs warlock wow | US | 210 | 24 | `/en/classes/compare/mage-vs-warlock` (indexiert) |
+| paladin vs warrior wow | US | 90 | 29 | `/en/classes/compare/warrior-vs-paladin` (indexiert) |
+| mage vs warlock wow classic | US | 30 | 25 | `/en/forever/classes/compare/mage-vs-warlock` (indexiert) |
+| magier oder hexenmeister (wow) | DE | 10 | 5–13 | `/klassen/vergleich/magier-vs-hexenmeister` |
+| death knight vs paladin wow | US | 0 | 4 | noindex |
+
+Alle übrigen Paare ohne messbares Volumen: erreichbar und teilbar, aber `noindex`, damit keine dünnen Massenseiten im Index landen.
+

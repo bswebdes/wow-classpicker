@@ -92,7 +92,7 @@ My inbox is hosted by Proton AG, Route de la Galaise 32, 1228 Plan-les-Ouates, S
 
 ## External links
 
-This website contains links to other websites. These are simple links: only when you click one are you taken to the respective site, and its operator receives data from you. The privacy policy of the respective provider applies there.
+This website contains links to other websites. These are simple links: only when you click one are you taken to the respective site, and its operator receives data from you. The privacy policy of the respective provider applies there. This also applies to the "Buy a healing potion" link to PayPal (PayPal (Europe) S.à r.l. et Cie, S.C.A., 22-24 Boulevard Royal, L-2449 Luxembourg): no PayPal script is embedded on this website, PayPal only receives data once you click the link and make a payment there.
 
 ## SSL/TLS encryption
 

@@ -36,6 +36,10 @@ A class has several specializations that differ in difficulty. The rating follow
 
 The ratings remain subjective. If a class is fun for you, it is the right one, no matter what a table says.
 
+## Support Find Your Main
+
+Find Your Main is free, ad-free and needs no sign-up, and it will stay that way. If you still want to give something back, you can buy me a healing potion. There is nothing in return and no perks on the site. You will find the link at the bottom of every page.
+
 ## How up to date is the site?
 
 Every class page and guide shows when it was last updated. We review the content after major patches and for the WoW Forever launch.
