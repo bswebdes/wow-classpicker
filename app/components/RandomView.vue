@@ -136,7 +136,7 @@ const titleOf = (r) => {
           <button v-if="pool.length" class="wow-btn wow-btn-lg" :disabled="rolling" @click="roll">
             🎲 {{ $t('random.need') }}
           </button>
-          <NuxtLink v-if="result && !rolling" :to="classLink(result)" class="wow-btn wow-btn-stone wow-btn-lg">
+          <NuxtLink v-if="result && !rolling" :to="classLink(result)" class="wow-btn wow-btn-stone wow-btn-lg" @click="trackEvent('result_class_click', { source: 'random', class_id: result.classId, game_mode: mode })">
             {{ $t('result.learnMore', { class: $t(`classes.${result.classId}.name`) }) }} ›
           </NuxtLink>
         </div>

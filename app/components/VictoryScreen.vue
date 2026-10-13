@@ -85,14 +85,14 @@ onMounted(() => {
 
       <!-- Weiter zu den Klassenseiten -->
       <div class="mt-6 flex flex-col items-center gap-3">
-        <NuxtLink v-if="classLink(winner.classId)" :to="classLink(winner.classId)" class="wow-btn wow-btn-lg w-full sm:w-auto" @click="emit('close')">
+        <NuxtLink v-if="classLink(winner.classId)" :to="classLink(winner.classId)" class="wow-btn wow-btn-lg w-full sm:w-auto" @click="trackEvent('result_class_click', { source: 'arena', class_id: winner.classId, place: 1, game_mode: mode }); emit('close')">
           {{ $t('result.learnMore', { class: className(winner.classId) }) }} ›
         </NuxtLink>
         <p v-if="podium.length > 1" class="text-[15px] text-neutral-400">
           {{ $t('result.alsoOnPodium') }}:
           <template v-for="(f, i) in podium.slice(1)" :key="f.id">
             <span v-if="i > 0"> · </span>
-            <NuxtLink :to="classLink(f.classId)" class="font-semibold underline decoration-dotted underline-offset-2 hover:text-gold" :class="`text-c-${f.classId}`" @click="emit('close')">{{ className(f.classId) }}</NuxtLink>
+            <NuxtLink :to="classLink(f.classId)" class="font-semibold underline decoration-dotted underline-offset-2 hover:text-gold" :class="`text-c-${f.classId}`" @click="trackEvent('result_class_click', { source: 'arena', class_id: f.classId, place: f.place, game_mode: mode }); emit('close')">{{ className(f.classId) }}</NuxtLink>
           </template>
         </p>
       </div>

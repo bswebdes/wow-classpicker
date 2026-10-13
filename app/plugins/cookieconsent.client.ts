@@ -27,6 +27,7 @@ export default defineNuxtPlugin((nuxtApp) => {
     const preferences = CookieConsent.acceptedCategory('preferences')
     const analytics = CookieConsent.acceptedCategory('analytics')
     consent.value = { preferences, analytics }
+    ;(window as unknown as { __fymAnalytics?: boolean }).__fymAnalytics = analytics
     if (preferences) achievements.load()
     else achievements.clearStorage()
     if (analytics) loadGtm()
@@ -57,8 +58,9 @@ export default defineNuxtPlugin((nuxtApp) => {
   })
 
   // Banner-Sprache mit der Seitensprache wechseln
-  nuxtApp.hook('i18n:localeSwitched', ({ newLocale }: { newLocale: string }) => {
+  nuxtApp.hook('i18n:localeSwitched', ({ oldLocale, newLocale }: { oldLocale: string, newLocale: string }) => {
     CookieConsent.setLanguage(newLocale === 'en' ? 'en' : 'de', true)
+    trackEvent('language_switch', { from_language: oldLocale, to_language: newLocale })
   })
 
   return {

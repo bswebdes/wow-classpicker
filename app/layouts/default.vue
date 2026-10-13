@@ -64,6 +64,7 @@ const modes = computed(() => [
               : 'border-neutral-700 bg-neutral-900/80 text-neutral-400 hover:text-gold-light'"
             :aria-current="mode === m.id ? 'page' : undefined"
             :title="m.label + ' · ' + m.sub"
+            @click="mode !== m.id && trackEvent('mode_switch', { from_mode: mode, to_mode: m.id })"
           >
             <GameLogo :mode="m.id" :height="46" eager :class="mode === m.id ? '' : 'opacity-60 grayscale-[60%]'" />
             <span class="font-display text-[11px] font-bold uppercase tracking-widest">{{ m.label }}</span>

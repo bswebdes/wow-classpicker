@@ -49,7 +49,9 @@ Stand: 13.10.2026 · live auf [findyourmain.com](https://findyourmain.com), Bran
 - [x] **Cookie-Banner** (vanilla-cookieconsent v3, Opt-in, `cc_cookie`, Cookie-Button unten links und Link im Footer), Kategorien Notwendig / Erfolge speichern / Statistik, Design im Classic-Look
 - [x] Google Consent Mode v2 (Standard `denied` im `<head>`), GTM `GTM-MSF6PT29` wird erst nach Zustimmung zu „Statistik“ geladen, `_ga`-Cookies werden beim Widerruf gelöscht
 - [x] Datenschutz um Einwilligung, Erfolge (localStorage), Google Tag Manager und GA4 erweitert
-- [ ] **GTM/GA4 einrichten** (später): GA4-Konfiguration im GTM, `dataLayer`-Events als GA4-Events anlegen (`battle_start`, `battle_victory`, `battle_reset`, `quiz_start`, `quiz_decline`, `quiz_complete`, `random_roll`, `achievement_unlocked`), Google-Signale und Werbefunktionen aus, Aufbewahrung max. 14 Monate (so steht es in der Datenschutzerklärung)
+- [ ] **GTM/GA4 einrichten** nach der Anleitung `docs/gtm-ga4-setup.md` (Schritt für Schritt, inkl. Datenschutz-Einstellungen, Tests und Auswertungen)
+- [x] Events werden erst nach Einwilligung in den `dataLayer` geschrieben (keine nachträgliche Übermittlung von Ereignissen vor der Zustimmung)
+- [x] Zusätzliche Events: `result_class_click` (Ergebnis → Klassenseite), `mode_switch`, `language_switch`, `faq_open`
 
 - [x] **Eigenes Impressum und eigene Datenschutzerklärung** (`/impressum`, `/datenschutz`, EN als Übersetzung) für eine private, nicht kommerzielle Seite: nur Name, Anschrift, E-Mail `findyourmain@pm.me`, frysch.studio nur als Ersteller, `noindex`, nicht in der Sitemap
   - [x] Anschrift prüfen: Im Impressum steht aktuell die Adresse aus dem frysch.studio-Impressum (Hofstelle 10, Gemmingen). Falls privat eine andere gilt, austauschen

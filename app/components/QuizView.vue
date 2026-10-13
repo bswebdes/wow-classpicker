@@ -175,7 +175,7 @@ const quality = ['text-quality-epic border-quality-epic', 'text-quality-rare bor
           <h2 class="mt-5 font-display text-lg font-bold text-[#4a2408]">{{ $t('quiz.rewardsTitle') }}</h2>
           <ol class="mt-3 grid gap-2 sm:grid-cols-3">
             <li v-for="(r, i) in results" :key="r.id">
-              <NuxtLink :to="classLink(r.id)" class="flex items-center gap-3 rounded-md border bg-[#0b0b1d]/90 p-2 transition-transform hover:-translate-y-0.5" :class="quality[i].split(' ')[1]">
+              <NuxtLink :to="classLink(r.id)" @click="track('result_class_click', { source: 'quiz', class_id: r.id, place: i + 1 })" class="flex items-center gap-3 rounded-md border bg-[#0b0b1d]/90 p-2 transition-transform hover:-translate-y-0.5" :class="quality[i].split(' ')[1]">
                 <img :src="getClassInfo(r.id, mode)?.icon" :alt="$t(`classes.${r.id}.name`)" width="44" height="44" class="wow-slot h-11 w-11 !border-2" :class="quality[i].split(' ')[1]" />
                 <span class="flex flex-col">
                   <span class="font-display font-bold" :class="quality[i].split(' ')[0]">{{ $t(`classes.${r.id}.name`) }}</span>
