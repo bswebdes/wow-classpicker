@@ -47,7 +47,7 @@ Im Nahkampf stehst du direkt am Gegner, musst aber mehr auf Mechaniken am Boden 
 - **Viel solo, Quests und Tiefen**: Klassen mit Selbstheilung oder Begleiter sind im Vorteil. Siehe [beste Solo-Klassen](/ratgeber/beste-solo-klasse-wow).
 - **Mythisch+-Dungeons**: Mobilität und Gruppenwerkzeuge zahlen sich aus, etwa beim Dämonenjäger, Mönch oder Magier.
 - **Schlachtzüge**: Hier zählen Konstanz und Buffs, die dem Raid helfen.
-- **PvP**: Kontrolleffekte und Überlebensfähigkeiten sind entscheidend, Schurke, Magier und Priester haben hier eine lange Tradition.
+- **PvP**: Kontrolleffekte und Überlebensfähigkeiten sind entscheidend, Schurke, Magier und Priester haben hier eine lange Tradition. Mehr dazu im Ratgeber [beste Klasse für PvP](/ratgeber/beste-pvp-klasse-wow).
 
 ## Schritt 4: Wie komplex darf es sein?
 

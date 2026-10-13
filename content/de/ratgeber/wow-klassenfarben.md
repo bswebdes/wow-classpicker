@@ -9,7 +9,7 @@ faq:
     a: "Die offizielle Klassenfarbe des Paladins ist Rosa mit dem Hex-Code #F48CBA (RGB 244, 140, 186)."
   - q: "Wie trage ich die Klassenfarbe als Discord-Rolle ein?"
     a: "Kopiere den Hex-Code aus der Tabelle, zum Beispiel #3FC7EB für den Magier, und füge ihn in den Rolleneinstellungen deines Discord-Servers als Farbe ein."
-order: 6
+order: 7
 date: "2026-10-13"
 classes: [warrior, paladin, hunter, rogue, priest, deathknight, shaman, mage, warlock, monk, druid, demonhunter, evoker]
 ---

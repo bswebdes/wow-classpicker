@@ -47,7 +47,7 @@ In melee you stand right next to the enemy but have to watch more ground mechani
 - **Lots of solo play, quests and delves**: classes with self-healing or a pet have the edge. See [best solo classes](/en/guides/best-wow-class-for-solo).
 - **Mythic+ dungeons**: mobility and group utility pay off, for example with the Demon Hunter, Monk or Mage.
 - **Raids**: consistency and buffs that help the raid matter most.
-- **PvP**: crowd control and survivability are key, and the Rogue, Mage and Priest have a long PvP tradition.
+- **PvP**: crowd control and survivability are key, and the Rogue, Mage and Priest have a long PvP tradition. More in our guide to the [best class for PvP](/en/guides/best-wow-class-for-pvp).
 
 ## Step 4: How complex can it be?
 

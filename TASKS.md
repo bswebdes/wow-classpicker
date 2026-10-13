@@ -15,7 +15,7 @@ Stand: 13.10.2026 · live auf [findyourmain.com](https://findyourmain.com), Bran
 - [x] Verschlinger-Dämonenjäger: Fähigkeiten ergänzt (Verzehren, Ernten, Leerenmetamorphose, Leerenstrahl, Kollabierender Stern; IDs über die Wowhead-Suche gefunden und per Tooltip-API geprüft)
 
 ### SEO-Inhalte (nach Suchvolumen)
-- [ ] PvP-Ratgeber „Beste Klasse für PvP“ (US 880 Suchen, SD 23, größtes offenes Keyword)
+- [x] PvP-Ratgeber „Beste Klasse für PvP“ (US 880 Suchen, SD 23): `/ratgeber/beste-pvp-klasse-wow`, `/en/guides/best-wow-class-for-pvp`, nach Spielstil statt Tier-List
 - [ ] Retail-Völker und Klassen-Kombinationen („wow class race combos“ US 170, „wow klassen und rassen“ DE 140)
 - [ ] „Welche Klasse levelt am schnellsten“ (Forever + Retail)
 - [ ] Ratgeber pro Rolle für Forever (Tank, Heiler)
@@ -69,7 +69,7 @@ Stand: 13.10.2026 · live auf [findyourmain.com](https://findyourmain.com), Bran
 - [x] Retail: 13 Klassenseiten, Forever: 9 Klassenseiten mit Völker-Matrix (56 Kombinationen), jeweils Quiz und Zufallsgenerator
 - [x] Klassenseiten mit Lore-Abschnitt und eigenem Abschnitt je Spezialisierung bzw. Talentbaum (Spielgefühl, typische Fähigkeiten)
 - [x] Bewertungsmethodik (Einstieg und Solo) auf der Über-uns-Seite, mit Community-Quellen abgeglichen, aus jeder Bewertungsbox verlinkt
-- [x] 8 Ratgeber: Klassenwahl, Anfänger, Solo, Tanks, Heiler, Klassenfarben (mit Farbkacheln zum Kopieren), Forever-Klassenwahl, Forever-Völker
+- [x] 9 Ratgeber: Klassenwahl, Anfänger, Solo, Tanks, Heiler, PvP, Klassenfarben (mit Farbkacheln zum Kopieren), Forever-Klassenwahl, Forever-Völker
 
 ### Wowhead
 - [x] Fähigkeiten in Texten, Kampflog und Unit-Frames verlinkt (Retail- bzw. Forever-Datenbank), alle Namen und IDs über die Wowhead-Tooltip-API geprüft

@@ -46,7 +46,7 @@ SD = SEO Difficulty (0–100, unter 30 ist für eine junge Seite realistisch).
 
 | Keyword | Markt | Volumen | SD | Seite |
 | --- | --- | --- | --- | --- |
-| best wow class for pvp | US | 880 | 23 | noch offen |
+| best wow class for pvp | US | 880 | 23 | PvP-Ratgeber |
 | best wow healer | US | 720 | 21 | Heiler-Klassen |
 | best tank wow | US | 590 | 28 | Tank-Klassen |
 | best wow class for solo | US | 390 | 23 | Solo-Klassen |
