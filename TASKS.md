@@ -70,6 +70,10 @@ Stand: 13.10.2026 · Branch `chore/upgrade-nuxt4` (nicht gepusht)
 - [ ] Noch per Wowhead prüfen (wurde gedrosselt): Chaosblitz, Augenstrahl, Staffelung, Wiedergeburt, Rufer-Fähigkeiten (Emporschwingen, Schweben, Feueratem, Desintegration), Classic-Priester (Gedankenkontrolle, Psychischer Schrei, Schattengestalt), Windzorn
 - [x] Zufallsklasse im Loot-Stil: Beutefenster mit Qualität und Wurf (1–100), „Bedarf!“, Verlauf der letzten Würfe, Link zur Klassenseite
 - [x] Klassen-Quiz im Quest-Stil: Quest-Angebot mit Questzielen, Fragen als Dialog-Optionen, Ergebnis als „Quest abgeschlossen“ mit Belohnungen (Top 3) zur Klassenseite
+- [x] Questgeber „Thalgrim Eichenhorn <Lehrmeister aller Klassen>“ (eigene Figur, kein Blizzard-Charakter) mit RP-Questtext, Belohnungen, Kommentar vor jeder Frage und zum Ergebnis
+- [x] Quest ablehnen: drei immer frechere Reaktionen, danach Weg zum Zufallsgenerator; „Quest angenommen/abgeschlossen“-Einblendung wie im Spiel
+- [x] Name bleibt nach außen „Klassen-Quiz“ (Suchbegriff „wow class quiz“), die Quest ist die Darstellung im Fenster
+- [ ] Idee: Thalgrim auch an anderen Stellen auftauchen lassen (z. B. Tipps auf Klassenseiten, 404-Seite)
 
 ### Zeitkritisch
 - [ ] Nach dem Forever-Start am 4.11.2026: Forever-Fakten prüfen (Meilenstein-Talente, Skyborne-Fraktionen „High Order“/„Windshaper“, Talentbaum-Namen), `updated`-Datum setzen

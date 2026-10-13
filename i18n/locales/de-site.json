@@ -164,9 +164,7 @@
     },
     "questLabel": "Quest",
     "questTitle": "Finde deinen Main",
-    "questText": "Reisender, du wirkst unentschlossen. Beantworte mir sieben Fragen, und ich verrate dir, welche Klasse wirklich zu dir passt.",
     "objectivesTitle": "Questziele",
-    "objective": "Beantworte 7 Fragen über deinen Spielstil",
     "accept": "Annehmen",
     "completeTitle": "Quest abgeschlossen!",
     "rewardsTitle": "Wähle deine Belohnung",
@@ -336,5 +334,35 @@
       "kills": "Meiste Kills"
     },
     "close": "Schließen"
+  },
+  "quest": {
+    "npcName": "Thalgrim Eichenhorn",
+    "npcTitle": "Lehrmeister aller Klassen",
+    "questText": "Ah, ein neues Gesicht! Ich sehe es in deinen Augen, Reisender: zu viele Twinks, kein Main. Glaub mir, ich habe Hunderte wie dich ausgebildet. Krieger, die heimlich heilen wollten. Magier, die sich nach Plattenrüstung sehnten. Druiden, die sich bis heute nicht für eine Gestalt entscheiden können.\n\nBeantworte mir sieben Fragen. Ehrlich, und ohne an Tier-Listen zu denken. Dann sage ich dir, welcher Weg wirklich für dich bestimmt ist.",
+    "objective": "Beantworte Thalgrim Eichenhorn 7 Fragen über deinen Spielstil.",
+    "rewardsLabel": "Belohnungen",
+    "rewardInsight": "Gewissheit über deinen Main",
+    "rewardXp": "Erfahrung: 1.337 EP",
+    "rewardGold": "Gold: 0 (Thalgrim ist knapp bei Kasse)",
+    "decline": "Ablehnen",
+    "acceptedToast": "Quest angenommen: Finde deinen Main",
+    "completedToast": "Quest abgeschlossen: Finde deinen Main",
+    "declineLines": [
+      "Ablehnen? Hm. Ich werde so tun, als hätte ich das nicht gehört. Die Frage bleibt ja trotzdem: Welche Klasse spielst du?",
+      "Du erinnerst mich an einen Murloc vor dem Spiegel. Viel Lärm, keine Entscheidung. Mrglglgl.",
+      "Na schön. Wer Thalgrim nicht fragt, den fragt eben das Schicksal. Geh würfeln, Reisender."
+    ],
+    "declineAccept": "Na gut, ich nehme an",
+    "declineRandom": "Lieber das Schicksal würfeln lassen",
+    "npcLines": {
+      "role": "Thalgrim verschränkt die Arme: „Fangen wir mit dem Wichtigsten an.“",
+      "range": "„Nah ran oder lieber auf Abstand? Keine Sorge, ich halte dich nicht für feige.“",
+      "content": "„Und wo verbringst du deine Abende in Azeroth?“",
+      "complexity": "„Wie viele Tasten verträgst du, bevor sich deine Finger verknoten?“",
+      "theme": "Thalgrims Augen funkeln: „Jetzt das Herzstück. Was lässt dein Herz schneller schlagen?“",
+      "pets": "„Kuscheltier oder einsamer Wolf?“",
+      "armor": "„Letzte Frage. Und ja, Aussehen zählt. Transmog ist schließlich das wahre Endgame.“"
+    },
+    "completeText": "Thalgrim nickt zufrieden: „Ich wusste es vom ersten Moment an. In dir steckt ein echter {class}. Aber wirf auch einen Blick auf die anderen beiden, Azeroth belohnt Neugier.“"
   }
 }

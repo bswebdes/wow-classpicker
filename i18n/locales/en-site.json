@@ -164,9 +164,7 @@
     },
     "questLabel": "Quest",
     "questTitle": "Find Your Main",
-    "questText": "Traveler, you seem undecided. Answer me seven questions, and I will tell you which class truly suits you.",
     "objectivesTitle": "Objectives",
-    "objective": "Answer 7 questions about your playstyle",
     "accept": "Accept",
     "completeTitle": "Quest complete!",
     "rewardsTitle": "Choose your reward",
@@ -336,5 +334,35 @@
       "kills": "Most kills"
     },
     "close": "Close"
+  },
+  "quest": {
+    "npcName": "Thalgrim Oakhorn",
+    "npcTitle": "Trainer of All Classes",
+    "questText": "Ah, a new face! I can see it in your eyes, traveler: too many alts, no main. Believe me, I have trained hundreds like you. Warriors who secretly wanted to heal. Mages who longed for plate armor. Druids who still can't pick a form.\n\nAnswer me seven questions. Honestly, and without thinking about tier lists. Then I will tell you which path is truly meant for you.",
+    "objective": "Answer Thalgrim Oakhorn 7 questions about your playstyle.",
+    "rewardsLabel": "Rewards",
+    "rewardInsight": "Certainty about your main",
+    "rewardXp": "Experience: 1,337 XP",
+    "rewardGold": "Gold: 0 (Thalgrim is a bit short on coin)",
+    "decline": "Decline",
+    "acceptedToast": "Quest accepted: Find Your Main",
+    "completedToast": "Quest completed: Find Your Main",
+    "declineLines": [
+      "Decline? Hm. I will pretend I didn't hear that. The question remains, though: which class do you play?",
+      "You remind me of a murloc in front of a mirror. Lots of noise, no decision. Mrglglgl.",
+      "Fine. Those who won't ask Thalgrim must ask fate. Go roll the dice, traveler."
+    ],
+    "declineAccept": "Fine, I accept",
+    "declineRandom": "Let fate roll the dice instead",
+    "npcLines": {
+      "role": "Thalgrim crosses his arms: \"Let's start with the most important part.\"",
+      "range": "\"Up close or from a distance? Don't worry, I won't call you a coward.\"",
+      "content": "\"And where do you spend your evenings in Azeroth?\"",
+      "complexity": "\"How many buttons can you handle before your fingers tie themselves in knots?\"",
+      "theme": "Thalgrim's eyes sparkle: \"Now the heart of it. What makes your heart beat faster?\"",
+      "pets": "\"Cuddly companion or lone wolf?\"",
+      "armor": "\"Last question. And yes, looks matter. Transmog is the true endgame, after all.\""
+    },
+    "completeText": "Thalgrim nods, satisfied: \"I knew it from the very first moment. There is a true {class} in you. But take a look at the other two as well, Azeroth rewards curiosity.\""
   }
 }
