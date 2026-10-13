@@ -238,25 +238,49 @@
       "medium": "Yes, with some practice. The {class} handles solo play well but needs care with bigger groups of enemies.",
       "weak": "Not really. The {class} is slower or more vulnerable alone and shines mostly in groups."
     },
-    "racesQ": "Which races can be a {class} in WoW Forever?",
-    "racesA": "In WoW Forever, these races can be a {class}: {races}."
+    "racesQ": "Which races can be a {class} in {game}?",
+    "racesA": "In {game}, these races can be a {class}: {races}."
   },
   "about": {
     "title": "About Find Your Main: Who We Are and How We Rate Classes",
     "description": "Find Your Main is a fan project about choosing a class in World of Warcraft. Learn who is behind it, where our information comes from and how the ratings work.",
     "heading": "About Find Your Main"
   },
+  "races": {
+    "race": "Race",
+    "playable": "Playable races",
+    "factions": {
+      "alliance": "Alliance",
+      "horde": "Horde",
+      "neutral": "Neutral (choose your faction)"
+    },
+    "matrixTitle": {
+      "retail": "Races and classes in WoW Midnight",
+      "forever": "Races and classes in WoW Forever"
+    },
+    "matrixIntro": {
+      "retail": "Which race can play which class? There are currently {count} combinations across {races} races and 13 classes.",
+      "forever": "Which race can play which class? There are {count} combinations across {races} races and 9 classes in total."
+    },
+    "newCombo": {
+      "retail": "New in Midnight",
+      "forever": "New combination in WoW Forever"
+    },
+    "upcoming": "Announced for patch 12.2, not yet playable",
+    "available": "playable",
+    "unavailable": "not playable",
+    "note": {
+      "retail": "Source: Warcraft Wiki and Blizzard announcements, as of October 2026.",
+      "forever": "Based on the beta, changes possible before launch on 4 November 2026."
+    }
+  },
   "forever": {
     "talentTrees": "Talent trees",
-    "race": "Race",
     "faction": "Faction",
     "factions": {
       "alliance": "Alliance",
       "horde": "Horde"
     },
-    "newCombo": "New combination in WoW Forever",
-    "betaNote": "Based on the beta, changes possible before launch on 4 November 2026.",
-    "playableRaces": "Playable races",
     "home": {
       "title": "WoW Forever Class Picker – Which Class Will You Play in Forever?",
       "description": "Which class will you play in WoW Forever? Let the 9 Classic classes fight in the arena, take the quiz or roll a race and class. Launch: 4 November 2026.",
@@ -269,9 +293,7 @@
       "title": "WoW Forever Classes and Races: All 56 Combinations",
       "description": "All 9 classes in WoW Forever with talent trees and roles, plus the full race and class table with all 56 combinations and the new Skyborne.",
       "heading": "Classes in WoW Forever",
-      "intro": "WoW Forever launches on 4 November 2026 with the 9 classes from Classic and classic talent trees. New are several race and class combinations and the Skyborne race, playable on both sides.",
-      "matrixTitle": "Races and classes in WoW Forever",
-      "matrixIntro": "Which race can play which class? There are {count} combinations of 10 races and 9 classes in total."
+      "intro": "WoW Forever launches on 4 November 2026 with the 9 classes from Classic and classic talent trees. New are several race and class combinations and the Skyborne race, playable on both sides."
     },
     "quiz": {
       "title": "WoW Forever Class Quiz: Which Class Should I Play?",

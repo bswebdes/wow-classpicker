@@ -8,6 +8,7 @@ Stand: 13.10.2026 · live auf [findyourmain.com](https://findyourmain.com), Bran
 - [ ] Nach dem Forever-Start am 4.11.2026: Forever-Fakten prüfen (Meilenstein-Talente, Skyborne-Fraktionen „High Order“/„Windshaper“, Talentbaum-Namen), `updated`-Datum setzen
 - [ ] Ebenfalls nach dem Start: Übernimmt Forever die Classic-Klassenquests (Haltungen, Totems, Dämonen, Reittiere)? Lore-Abschnitte der Forever-Klassenseiten anpassen
 - [ ] Deutschen Namen der Skyborne-Fraktionen klären, sobald Blizzard einen veröffentlicht
+- [ ] Mit Patch 12.2: Paladin für Nachtelf, Troll und Untote von `upcomingClasses` nach `classes` verschieben (`app/utils/retailRaces.ts`), Ratgeber „Klassen & Völker“ anpassen
 
 ### Fachlich
 - [x] Quiz-Gewichtung gegenlesen (`app/utils/quiz.ts`)
@@ -16,7 +17,7 @@ Stand: 13.10.2026 · live auf [findyourmain.com](https://findyourmain.com), Bran
 
 ### SEO-Inhalte (nach Suchvolumen)
 - [x] PvP-Ratgeber „Beste Klasse für PvP“ (US 880 Suchen, SD 23): `/ratgeber/beste-pvp-klasse-wow`, `/en/guides/best-wow-class-for-pvp`, nach Spielstil statt Tier-List
-- [ ] Retail-Völker und Klassen-Kombinationen („wow class race combos“ US 170, „wow klassen und rassen“ DE 140)
+- [x] Retail-Völker und Klassen-Kombinationen („wow class race combos“ US 170, „wow klassen und rassen“ DE 140): Ratgeber `/ratgeber/wow-klassen-rassen` + `/en/guides/wow-class-race-combos`, Matrix auf `/klassen#voelker`, spielbare Völker auf jeder Klassenseite (Quelle: Warcraft Wiki, 240 Kombis, Paladin-Kombis für 12.2 als angekündigt markiert)
 - [ ] „Welche Klasse levelt am schnellsten“ (Forever + Retail)
 - [ ] Ratgeber pro Rolle für Forever (Tank, Heiler)
 - [ ] Spezialisierungs-Seiten (z. B. „Verschlinger Dämonenjäger“), sobald die Klassenseiten ranken
@@ -69,7 +70,7 @@ Stand: 13.10.2026 · live auf [findyourmain.com](https://findyourmain.com), Bran
 - [x] Retail: 13 Klassenseiten, Forever: 9 Klassenseiten mit Völker-Matrix (56 Kombinationen), jeweils Quiz und Zufallsgenerator
 - [x] Klassenseiten mit Lore-Abschnitt und eigenem Abschnitt je Spezialisierung bzw. Talentbaum (Spielgefühl, typische Fähigkeiten)
 - [x] Bewertungsmethodik (Einstieg und Solo) auf der Über-uns-Seite, mit Community-Quellen abgeglichen, aus jeder Bewertungsbox verlinkt
-- [x] 9 Ratgeber: Klassenwahl, Anfänger, Solo, Tanks, Heiler, PvP, Klassenfarben (mit Farbkacheln zum Kopieren), Forever-Klassenwahl, Forever-Völker
+- [x] 10 Ratgeber: Klassenwahl, Anfänger, Solo, Tanks, Heiler, PvP, Klassen & Völker, Klassenfarben (mit Farbkacheln zum Kopieren), Forever-Klassenwahl, Forever-Völker
 
 ### Wowhead
 - [x] Fähigkeiten in Texten, Kampflog und Unit-Frames verlinkt (Retail- bzw. Forever-Datenbank), alle Namen und IDs über die Wowhead-Tooltip-API geprüft

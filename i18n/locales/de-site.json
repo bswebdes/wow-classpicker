@@ -238,25 +238,49 @@
       "medium": "Ja, mit etwas Übung. Der {class} kommt solo gut zurecht, braucht aber Aufmerksamkeit bei größeren Gegnergruppen.",
       "weak": "Eher nicht. Der {class} ist allein langsamer oder verwundbarer und spielt seine Stärken vor allem in der Gruppe aus."
     },
-    "racesQ": "Welche Völker können in WoW Forever {class} werden?",
-    "racesA": "In WoW Forever können folgende Völker {class} werden: {races}."
+    "racesQ": "Welche Völker können in {game} {class} werden?",
+    "racesA": "In {game} können folgende Völker {class} werden: {races}."
   },
   "about": {
     "title": "Über Find Your Main: Wer dahintersteckt und wie wir bewerten",
     "description": "Find Your Main ist ein Fanprojekt zur Klassenwahl in World of Warcraft: wer dahintersteckt, woher die Infos kommen und wie die Bewertungen entstehen.",
     "heading": "Über Find Your Main"
   },
+  "races": {
+    "race": "Volk",
+    "playable": "Spielbare Völker",
+    "factions": {
+      "alliance": "Allianz",
+      "horde": "Horde",
+      "neutral": "Neutral (Fraktion frei wählbar)"
+    },
+    "matrixTitle": {
+      "retail": "Völker und Klassen in WoW Midnight",
+      "forever": "Völker und Klassen in WoW Forever"
+    },
+    "matrixIntro": {
+      "retail": "Welches Volk kann welche Klasse spielen? Aktuell gibt es {count} Kombinationen aus {races} Völkern und 13 Klassen.",
+      "forever": "Welches Volk kann welche Klasse spielen? Insgesamt gibt es {count} Kombinationen aus {races} Völkern und 9 Klassen."
+    },
+    "newCombo": {
+      "retail": "Neu in Midnight",
+      "forever": "Neue Kombination in WoW Forever"
+    },
+    "upcoming": "Angekündigt für Patch 12.2, noch nicht spielbar",
+    "available": "spielbar",
+    "unavailable": "nicht spielbar",
+    "note": {
+      "retail": "Quelle: Warcraft Wiki und Blizzard-Ankündigungen, Stand Oktober 2026.",
+      "forever": "Stand der Beta, Änderungen bis zum Start am 4. November 2026 möglich."
+    }
+  },
   "forever": {
     "talentTrees": "Talentbäume",
-    "race": "Volk",
     "faction": "Fraktion",
     "factions": {
       "alliance": "Allianz",
       "horde": "Horde"
     },
-    "newCombo": "Neue Kombination in WoW Forever",
-    "betaNote": "Stand der Beta, Änderungen bis zum Start am 4. November 2026 möglich.",
-    "playableRaces": "Spielbare Völker",
     "home": {
       "title": "WoW Forever Class Picker – Welche Klasse spielst du in Forever?",
       "description": "Welche Klasse spielst du in WoW Forever? Lass die 9 Classic-Klassen in der Arena kämpfen, mach das Quiz oder würfle Volk und Klasse. Start: 4. November 2026.",
@@ -269,9 +293,7 @@
       "title": "WoW Forever Klassen und Völker: Alle 56 Kombinationen",
       "description": "Alle 9 Klassen in WoW Forever mit Talentbäumen und Rollen, dazu die komplette Völker-Klassen-Tabelle mit allen 56 Kombinationen und den neuen Skyborne.",
       "heading": "Klassen in WoW Forever",
-      "intro": "WoW Forever startet am 4. November 2026 mit den 9 Klassen aus Classic und klassischen Talentbäumen. Neu sind mehrere Völker-Klassen-Kombinationen und das Volk der Skyborne, das auf beiden Seiten spielbar ist.",
-      "matrixTitle": "Völker und Klassen in WoW Forever",
-      "matrixIntro": "Welches Volk kann welche Klasse spielen? Insgesamt gibt es {count} Kombinationen aus 10 Völkern und 9 Klassen."
+      "intro": "WoW Forever startet am 4. November 2026 mit den 9 Klassen aus Classic und klassischen Talentbäumen. Neu sind mehrere Völker-Klassen-Kombinationen und das Volk der Skyborne, das auf beiden Seiten spielbar ist."
     },
     "quiz": {
       "title": "WoW Forever Klassen-Quiz: Welche Klasse passt zu mir?",

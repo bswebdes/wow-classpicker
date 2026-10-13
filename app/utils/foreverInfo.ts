@@ -2,15 +2,18 @@
 // Klassen nutzen Classic-Talentbäume, Völker-Klassen-Kombinationen laut Blizzard-Ankündigung.
 import type { ClassInfo, Locale, Role, Range } from './classInfo'
 
-export type Faction = 'alliance' | 'horde'
+// Neutrale Völker (z. B. Pandaren) wählen ihre Fraktion selbst
+export type Faction = 'alliance' | 'horde' | 'neutral'
 
 export interface RaceInfo {
   id: string
   faction: Faction
   name: Record<Locale, string>
   classes: string[]
-  // Kombinationen, die es im ursprünglichen Classic nicht gab
+  // Neue Kombinationen (Forever: gegenüber Classic, Retail: neu in Midnight)
   newClasses?: string[]
+  // Angekündigt, aber noch nicht spielbar (nicht in classes enthalten)
+  upcomingClasses?: string[]
 }
 
 const tree = (id: string, role: Role, range: Range, de: string, en: string) =>
@@ -116,6 +119,3 @@ export const foreverRaces: RaceInfo[] = [
   { id: 'skyborne-horde', faction: 'horde', name: { de: 'Skyborne (Windshaper)', en: 'Skyborne (Windshaper)' }, classes: ['warrior', 'hunter', 'rogue', 'shaman', 'druid'], newClasses: ['warrior', 'hunter', 'rogue', 'shaman', 'druid'] }
 ]
 
-export const racesForClass = (classId: string) => foreverRaces.filter(r => r.classes.includes(classId))
-
-export const foreverComboCount = foreverRaces.reduce((sum, r) => sum + r.classes.length, 0)

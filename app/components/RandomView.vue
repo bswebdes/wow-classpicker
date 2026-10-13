@@ -37,7 +37,7 @@ const pool = computed(() => getClassList(props.mode).flatMap(c =>
     .filter(() => armorFilter.value === 'any' || c.armor === armorFilter.value)
     .flatMap(s => {
       if (props.mode !== 'forever') return [{ classId: c.id, spec: s }]
-      return racesForClass(c.id).filter(raceMatches).map(r => ({ classId: c.id, spec: s, race: r }))
+      return racesForClass(c.id, 'forever').filter(raceMatches).map(r => ({ classId: c.id, spec: s, race: r }))
     })
 ))
 
@@ -91,7 +91,7 @@ const roll = async () => {
 // Gezielt nachwürfeln: Klasse behalten, nur Spezialisierung bzw. Volk neu
 const info = (r) => getClassInfo(r.classId, props.mode)
 const otherSpecs = computed(() => result.value ? info(result.value).specs.filter(s => specMatches(s) && s.id !== result.value.spec.id) : [])
-const otherRaces = computed(() => result.value?.race ? racesForClass(result.value.classId).filter(r => raceMatches(r) && r.id !== result.value.race.id) : [])
+const otherRaces = computed(() => result.value?.race ? racesForClass(result.value.classId, 'forever').filter(r => raceMatches(r) && r.id !== result.value.race.id) : [])
 const rerollSpec = () => { if (otherSpecs.value.length) finish({ ...result.value, spec: pick(otherSpecs.value), roll: d100() }) }
 const rerollRace = () => { if (otherRaces.value.length) finish({ ...result.value, race: pick(otherRaces.value), roll: d100() }) }
 

@@ -33,7 +33,8 @@ setI18nParams({
 })
 
 const className = computed(() => t(`classes.${info.value.id}.name`))
-const races = computed(() => props.mode === 'forever' ? racesForClass(info.value.id) : [])
+const races = computed(() => racesForClass(info.value.id, props.mode))
+const upcomingRaces = computed(() => getRaces(props.mode).filter(r => r.upcomingClasses?.includes(info.value.id)))
 const specsLabel = computed(() => props.mode === 'forever' ? t('forever.talentTrees') : t('common.specs'))
 const gameName = computed(() => props.mode === 'forever' ? 'WoW Forever' : 'WoW Midnight')
 
@@ -51,7 +52,7 @@ const faq = computed(() => {
     { q: t('classFaq.soloQ', { class: className.value }), a: t(c.solo >= 4 ? 'classFaq.soloA.good' : c.solo === 3 ? 'classFaq.soloA.medium' : 'classFaq.soloA.weak', { class: className.value }) }
   ]
   if (races.value.length) {
-    items.push({ q: t('classFaq.racesQ', { class: className.value }), a: t('classFaq.racesA', { class: className.value, races: list(races.value.map(r => r.name[locale.value])) }) })
+    items.push({ q: t('classFaq.racesQ', { class: className.value, game: gameName.value }), a: t('classFaq.racesA', { class: className.value, game: gameName.value, races: list(races.value.map(r => r.name[locale.value])) }) })
   }
   return items
 })
@@ -148,17 +149,20 @@ const formatDate = (date) => new Date(date).toLocaleDateString(locale.value === 
     </section>
 
     <section v-if="races.length" class="wow-tooltip mt-4">
-      <h2 class="mb-3 font-display font-bold text-gold">{{ $t('forever.playableRaces') }}</h2>
+      <h2 class="mb-3 font-display font-bold text-gold">{{ $t('races.playable') }}</h2>
       <ul class="flex flex-wrap gap-2">
         <li
           v-for="r in races"
           :key="r.id"
           class="rounded-[3px] border px-2.5 py-1 text-[14px]"
-          :class="r.faction === 'alliance' ? 'border-[#4a8cff]/50 text-[#9cc2ff]' : 'border-[#e83a3a]/50 text-[#ff9c9c]'"
+          :class="{ alliance: 'border-[#4a8cff]/50 text-[#9cc2ff]', horde: 'border-[#e83a3a]/50 text-[#ff9c9c]', neutral: 'border-neutral-500/60 text-neutral-200' }[r.faction]"
         >
-          {{ r.name[locale] }}<span v-if="r.newClasses?.includes(info.id)" class="ml-1 text-quality-uncommon" :title="$t('forever.newCombo')"><span aria-hidden="true">✦</span><span class="sr-only"> ({{ $t('forever.newCombo') }})</span></span>
+          {{ r.name[locale] }}<span v-if="r.newClasses?.includes(info.id)" class="ml-1 text-quality-uncommon" :title="$t(`races.newCombo.${mode}`)"><span aria-hidden="true">✦</span><span class="sr-only"> ({{ $t(`races.newCombo.${mode}`) }})</span></span>
         </li>
       </ul>
+      <p v-if="upcomingRaces.length" class="mt-3 text-[13px] text-neutral-400">
+        <span aria-hidden="true">◇</span> {{ $t('races.upcoming') }}: {{ upcomingRaces.map(r => r.name[locale]).join(', ') }}
+      </p>
     </section>
 
     <article class="mt-10">
