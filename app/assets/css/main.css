@@ -148,28 +148,28 @@ h1 {
 }
 
 /* WoW Class Colors */
-.c-warrior, .warrior .name, .text-c-warrior, .border-c-warrior { color: #C79C6E; }
-.bg-c-warrior { background-color: #C79C6E; }
-.c-paladin, .paladin .name, .text-c-paladin, .border-c-paladin { color: #F58CBA; }
-.bg-c-paladin { background-color: #F58CBA; }
-.c-hunter, .hunter .name, .text-c-hunter, .border-c-hunter { color: #ABD473; }
-.bg-c-hunter { background-color: #ABD473; }
-.c-rogue, .rogue .name, .text-c-rogue, .border-c-rogue { color: #FFF569; }
-.bg-c-rogue { background-color: #FFF569; }
+.c-warrior, .warrior .name, .text-c-warrior, .border-c-warrior { color: #C69B6D; }
+.bg-c-warrior { background-color: #C69B6D; }
+.c-paladin, .paladin .name, .text-c-paladin, .border-c-paladin { color: #F48CBA; }
+.bg-c-paladin { background-color: #F48CBA; }
+.c-hunter, .hunter .name, .text-c-hunter, .border-c-hunter { color: #AAD372; }
+.bg-c-hunter { background-color: #AAD372; }
+.c-rogue, .rogue .name, .text-c-rogue, .border-c-rogue { color: #FFF468; }
+.bg-c-rogue { background-color: #FFF468; }
 .c-priest, .priest .name, .text-c-priest, .border-c-priest { color: #FFFFFF; }
 .bg-c-priest { background-color: #FFFFFF; }
-.c-deathknight, .deathknight .name, .text-c-deathknight, .border-c-deathknight { color: #C41F3B; }
-.bg-c-deathknight { background-color: #C41F3B; }
-.c-shaman, .shaman .name, .text-c-shaman, .border-c-shaman { color: #0070DE; }
-.bg-c-shaman { background-color: #0070DE; }
-.c-mage, .mage .name, .text-c-mage, .border-c-mage { color: #40C7EB; }
-.bg-c-mage { background-color: #40C7EB; }
-.c-warlock, .warlock .name, .text-c-warlock, .border-c-warlock { color: #8787ED; }
-.bg-c-warlock { background-color: #8787ED; }
-.c-monk, .monk .name, .text-c-monk, .border-c-monk { color: #00FF96; }
-.bg-c-monk { background-color: #00FF96; }
-.c-druid, .druid .name, .text-c-druid, .border-c-druid { color: #FF7D0A; }
-.bg-c-druid { background-color: #FF7D0A; }
+.c-deathknight, .deathknight .name, .text-c-deathknight, .border-c-deathknight { color: #C41E3A; }
+.bg-c-deathknight { background-color: #C41E3A; }
+.c-shaman, .shaman .name, .text-c-shaman, .border-c-shaman { color: #0070DD; }
+.bg-c-shaman { background-color: #0070DD; }
+.c-mage, .mage .name, .text-c-mage, .border-c-mage { color: #3FC7EB; }
+.bg-c-mage { background-color: #3FC7EB; }
+.c-warlock, .warlock .name, .text-c-warlock, .border-c-warlock { color: #8788EE; }
+.bg-c-warlock { background-color: #8788EE; }
+.c-monk, .monk .name, .text-c-monk, .border-c-monk { color: #00FF98; }
+.bg-c-monk { background-color: #00FF98; }
+.c-druid, .druid .name, .text-c-druid, .border-c-druid { color: #FF7C0A; }
+.bg-c-druid { background-color: #FF7C0A; }
 .c-demonhunter, .demonhunter .name, .text-c-demonhunter, .border-c-demonhunter { color: #A330C9; }
 .bg-c-demonhunter { background-color: #A330C9; }
 .c-evoker, .evoker .name, .text-c-evoker, .border-c-evoker { color: #33937F; }

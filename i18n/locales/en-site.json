@@ -1,0 +1,122 @@
+{
+  "nav": {
+    "picker": "Arena",
+    "classes": "Classes",
+    "guides": "Guides",
+    "quiz": "Class Quiz",
+    "random": "Random Class",
+    "menu": "Menu"
+  },
+  "footer": {
+    "tagline": "WoW Class Picker helps you choose your class in World of Warcraft: Midnight, with an arena battle, a quiz and a random class generator.",
+    "disclaimer": "Fan project, not affiliated with Blizzard Entertainment. World of Warcraft and Blizzard Entertainment are trademarks of Blizzard Entertainment, Inc.",
+    "tools": "Tools",
+    "content": "Content"
+  },
+  "common": {
+    "roles": { "tank": "Tank", "healer": "Healer", "dps": "DPS" },
+    "range": { "melee": "Melee", "ranged": "Ranged" },
+    "armor": { "plate": "Plate", "mail": "Mail", "leather": "Leather", "cloth": "Cloth" },
+    "role": "Role",
+    "roles_label": "Roles",
+    "armorType": "Armor",
+    "specs": "Specializations",
+    "spec": "Specialization",
+    "difficulty": "Beginner friendly",
+    "difficultyHint": "How much practice the class needs",
+    "solo": "Solo play",
+    "soloHint": "How well the class handles content on its own",
+    "ourRating": "Our take",
+    "ratingNote": "These ratings help you pick a class. They are not a DPS ranking, and balance shifts with every patch.",
+    "fightInPicker": "Send it into the arena",
+    "allClasses": "All classes",
+    "otherClasses": "More classes",
+    "allGuides": "All guides",
+    "readMore": "Read more",
+    "updated": "Updated",
+    "published": "Published",
+    "relatedClasses": "Related classes",
+    "notFound": "Page not found",
+    "any": "Any"
+  },
+  "home": {
+    "toolsTitle": "Still undecided?",
+    "quizTeaser": "Answer 7 questions and find the WoW class that fits your playstyle.",
+    "randomTeaser": "One click, one random class and spec. For the brave and for alts.",
+    "classesTeaser": "All 13 classes in Midnight with roles, armor and playstyle at a glance.",
+    "ogTitle": "Which WoW class will you play in Midnight?"
+  },
+  "classesPage": {
+    "title": "WoW Classes in Midnight: All 13 Classes Explained",
+    "heading": "All WoW classes at a glance",
+    "description": "All 13 WoW classes in Midnight: roles, specializations, armor type and how beginner friendly they are. Find your main.",
+    "intro": "World of Warcraft has 13 classes with 40 specializations in Midnight. This overview shows which roles each class can fill, what armor it wears and how easy it is to pick up. Click a class for details.",
+    "tableTitle": "Classes, roles and armor"
+  },
+  "guidesPage": {
+    "title": "WoW Guides: Choosing a Class, Roles and Tips for Midnight",
+    "heading": "Class choice guides",
+    "description": "Guides on choosing a class in WoW Midnight: beginner classes, solo classes, tanks, healers and the official class colors."
+  },
+  "quiz": {
+    "title": "WoW Class Quiz: Which WoW Class Should I Play in Midnight?",
+    "heading": "Which WoW class should I play?",
+    "description": "Take the WoW class quiz: 7 questions about role, playstyle and fantasy reveal which class fits you in Midnight. Free, no sign-up.",
+    "intro": "Seven quick questions, then we show you the three classes that fit your playstyle best. Honest picks, no meta talk.",
+    "start": "Start the quiz",
+    "question": "Question {current} of {total}",
+    "back": "Back",
+    "restart": "Restart quiz",
+    "resultTitle": "Your top classes",
+    "resultIntro": "These classes match your answers best:",
+    "match": "{percent}% match",
+    "toClass": "View class",
+    "fightResult": "Send your top 3 into the arena",
+    "q": {
+      "role": {
+        "title": "Which role appeals to you most?",
+        "options": { "tank": "Tank: I hold the enemies", "healer": "Healer: I keep the group alive", "dps": "DPS: I want big numbers", "any": "Not sure yet" }
+      },
+      "range": {
+        "title": "Do you prefer fighting up close or from afar?",
+        "options": { "melee": "Right in the thick of melee", "ranged": "From range with spells or a bow", "any": "Either" }
+      },
+      "content": {
+        "title": "What do you enjoy playing most?",
+        "options": { "solo": "Quests, delves and solo content", "dungeons": "Mythic+ dungeons", "raids": "Raids with my guild", "pvp": "PvP, arena and battlegrounds" }
+      },
+      "complexity": {
+        "title": "How complex can your rotation be?",
+        "options": { "simple": "Simple, I want to relax", "medium": "A bit of challenge is good", "complex": "Give me everything to master" }
+      },
+      "theme": {
+        "title": "Which fantasy speaks to you?",
+        "options": { "might": "Raw strength and weapons", "holy": "Holy light", "beasts": "Beasts and bows", "shadow": "Poison, daggers and shadows", "undead": "Undeath and frost", "elements": "The elements", "arcane": "Arcane magic", "dark": "Curses and demons", "martial": "Martial arts and brews", "nature": "Nature and shapeshifting", "fel": "Fel magic and the Void", "dragons": "Dragons and time magic" }
+      },
+      "pets": {
+        "title": "Would you like a constant companion?",
+        "options": { "yes": "Yes, a pet is a must", "no": "No, I fight alone", "any": "Either" }
+      },
+      "armor": {
+        "title": "Which look do you like?",
+        "options": { "plate": "Heavy plate", "mail": "Mail armor", "leather": "Light leather", "cloth": "Robes and cloth", "any": "Any" }
+      }
+    }
+  },
+  "random": {
+    "title": "Random WoW Class Generator for Midnight",
+    "heading": "Roll a random WoW class",
+    "description": "Random WoW class generator for Midnight: roll a random class and spec, filtered by role and armor type. Perfect for alts and challenges.",
+    "intro": "Can't decide, or looking for a challenge for your next alt? Let chance decide. Use the filters to narrow down role and armor type.",
+    "roll": "Roll!",
+    "rollAgain": "Roll again",
+    "filterRole": "Role",
+    "filterArmor": "Armor",
+    "result": "Your random class",
+    "noResult": "No class matches these filters. Loosen one of them.",
+    "toClass": "More about this class"
+  },
+  "siteSeo": {
+    "homeOgSubtitle": "Arena battle, quiz and random generator for choosing your class"
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "nav": {
+    "picker": "Arena",
+    "classes": "Klassen",
+    "guides": "Ratgeber",
+    "quiz": "Klassen-Quiz",
+    "random": "Zufallsklasse",
+    "menu": "Menü"
+  },
+  "footer": {
+    "tagline": "Der WoW Class Picker hilft dir bei der Klassenwahl in World of Warcraft: Midnight. Mit Arena-Kampf, Quiz und Zufallsgenerator.",
+    "disclaimer": "Fanprojekt, keine Verbindung zu Blizzard Entertainment. World of Warcraft und Blizzard Entertainment sind Marken von Blizzard Entertainment, Inc.",
+    "tools": "Tools",
+    "content": "Inhalte"
+  },
+  "common": {
+    "roles": { "tank": "Tank", "healer": "Heiler", "dps": "Schaden" },
+    "range": { "melee": "Nahkampf", "ranged": "Fernkampf" },
+    "armor": { "plate": "Platte", "mail": "Kette", "leather": "Leder", "cloth": "Stoff" },
+    "role": "Rolle",
+    "roles_label": "Rollen",
+    "armorType": "Rüstung",
+    "specs": "Spezialisierungen",
+    "spec": "Spezialisierung",
+    "difficulty": "Einstieg",
+    "difficultyHint": "Wie viel Übung die Klasse braucht",
+    "solo": "Solo-Spiel",
+    "soloHint": "Wie gut die Klasse allein zurechtkommt",
+    "ourRating": "Unsere Einschätzung",
+    "ratingNote": "Die Bewertungen sind eine Orientierung für die Klassenwahl, keine DPS-Rangliste. Die aktuelle Balance ändert sich mit jedem Patch.",
+    "fightInPicker": "In der Arena antreten lassen",
+    "allClasses": "Alle Klassen",
+    "otherClasses": "Weitere Klassen",
+    "allGuides": "Alle Ratgeber",
+    "readMore": "Weiterlesen",
+    "updated": "Aktualisiert",
+    "published": "Veröffentlicht",
+    "relatedClasses": "Passende Klassen",
+    "notFound": "Seite nicht gefunden",
+    "any": "Egal"
+  },
+  "home": {
+    "toolsTitle": "Noch unentschlossen?",
+    "quizTeaser": "Beantworte 7 Fragen und finde die WoW-Klasse, die zu deinem Spielstil passt.",
+    "randomTeaser": "Ein Klick, eine zufällige Klasse samt Spezialisierung. Für Mutige und Twinks.",
+    "classesTeaser": "Alle 13 Klassen in Midnight mit Rollen, Rüstung und Spielgefühl im Überblick.",
+    "ogTitle": "Welche WoW-Klasse spielst du in Midnight?"
+  },
+  "classesPage": {
+    "title": "WoW Klassen in Midnight: Alle 13 Klassen im Überblick",
+    "heading": "Alle WoW-Klassen im Überblick",
+    "description": "Alle 13 WoW-Klassen in Midnight: Rollen, Spezialisierungen, Rüstungstyp und wie einsteigerfreundlich sie sind. Finde deine Main-Klasse.",
+    "intro": "World of Warcraft hat in Midnight 13 Klassen mit insgesamt 40 Spezialisierungen. Hier siehst du auf einen Blick, welche Rollen jede Klasse spielen kann, welche Rüstung sie trägt und wie leicht der Einstieg fällt. Klick auf eine Klasse für Details.",
+    "tableTitle": "Klassen, Rollen und Rüstung"
+  },
+  "guidesPage": {
+    "title": "WoW Ratgeber: Klassenwahl, Rollen und Tipps für Midnight",
+    "heading": "Ratgeber zur Klassenwahl",
+    "description": "Ratgeber rund um die Klassenwahl in WoW Midnight: Anfänger-Klassen, Solo-Klassen, Tanks, Heiler und die offiziellen Klassenfarben."
+  },
+  "quiz": {
+    "title": "Welche WoW-Klasse passt zu mir? Das Klassen-Quiz für Midnight",
+    "heading": "Welche WoW-Klasse passt zu mir?",
+    "description": "Mach den Test: 7 Fragen zu Rolle, Spielstil und Fantasy und du weißt, welche WoW-Klasse in Midnight zu dir passt. Kostenlos und ohne Anmeldung.",
+    "intro": "Sieben kurze Fragen, dann zeigen wir dir die drei Klassen, die am besten zu deinem Spielstil passen. Ehrlich gemeint, ohne Meta-Gerede.",
+    "start": "Quiz starten",
+    "question": "Frage {current} von {total}",
+    "back": "Zurück",
+    "restart": "Quiz neu starten",
+    "resultTitle": "Deine Top-Klassen",
+    "resultIntro": "Diese Klassen passen am besten zu deinen Antworten:",
+    "match": "{percent} % Übereinstimmung",
+    "toClass": "Zur Klasse",
+    "fightResult": "Lass deine Top 3 in der Arena kämpfen",
+    "q": {
+      "role": {
+        "title": "Welche Rolle reizt dich am meisten?",
+        "options": { "tank": "Tank: Ich halte die Gegner fest", "healer": "Heiler: Ich halte die Gruppe am Leben", "dps": "Schaden: Ich will Zahlen sehen", "any": "Weiß ich noch nicht" }
+      },
+      "range": {
+        "title": "Kämpfst du lieber aus der Nähe oder auf Distanz?",
+        "options": { "melee": "Mittendrin im Nahkampf", "ranged": "Mit Abstand per Zauber oder Bogen", "any": "Egal" }
+      },
+      "content": {
+        "title": "Was spielst du am liebsten?",
+        "options": { "solo": "Quests, Tiefen und Solo-Inhalte", "dungeons": "Mythisch+-Dungeons", "raids": "Schlachtzüge mit der Gilde", "pvp": "PvP, Arena und Schlachtfelder" }
+      },
+      "complexity": {
+        "title": "Wie komplex darf deine Rotation sein?",
+        "options": { "simple": "Einfach, ich will entspannt spielen", "medium": "Ein bisschen Anspruch ist gut", "complex": "Gib mir alles, ich will meistern" }
+      },
+      "theme": {
+        "title": "Welche Fantasy spricht dich an?",
+        "options": { "might": "Rohe Kraft und Waffen", "holy": "Heiliges Licht", "beasts": "Tiere und Bogen", "shadow": "Gift, Dolche und Schatten", "undead": "Untod und Frost", "elements": "Die Elemente", "arcane": "Arkane Magie", "dark": "Flüche und Dämonen", "martial": "Kampfkunst und Braukunst", "nature": "Natur und Gestaltwandel", "fel": "Teufelsmagie und Leere", "dragons": "Drachen und Zeitmagie" }
+      },
+      "pets": {
+        "title": "Hättest du gern einen ständigen Begleiter?",
+        "options": { "yes": "Ja, ein Pet gehört dazu", "no": "Nein, ich kämpfe allein", "any": "Egal" }
+      },
+      "armor": {
+        "title": "Welcher Look gefällt dir?",
+        "options": { "plate": "Schwere Platte", "mail": "Kettenrüstung", "leather": "Leichtes Leder", "cloth": "Roben und Stoff", "any": "Egal" }
+      }
+    }
+  },
+  "random": {
+    "title": "Zufällige WoW-Klasse: Der Random Class Generator",
+    "heading": "Zufällige WoW-Klasse würfeln",
+    "description": "Random Class Generator für WoW Midnight: Würfle eine zufällige Klasse samt Spezialisierung, gefiltert nach Rolle und Rüstung. Perfekt für Twinks und Challenges.",
+    "intro": "Du kannst dich nicht entscheiden oder suchst eine Herausforderung für deinen nächsten Twink? Lass den Zufall entscheiden. Mit den Filtern kannst du Rolle und Rüstungstyp eingrenzen.",
+    "roll": "Würfeln!",
+    "rollAgain": "Nochmal würfeln",
+    "filterRole": "Rolle",
+    "filterArmor": "Rüstung",
+    "result": "Deine Zufallsklasse",
+    "noResult": "Mit diesen Filtern gibt es keine Klasse. Lockere einen Filter.",
+    "toClass": "Mehr über die Klasse"
+  },
+  "siteSeo": {
+    "homeOgSubtitle": "Arena-Kampf, Quiz und Zufallsgenerator für die Klassenwahl"
+  }
+}

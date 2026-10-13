@@ -21,7 +21,7 @@ Dieses Projekt ist eine **Nuxt 4 App** (Quellcode liegt in `app/`).
 ```bash
 npm install
 ```
-3. Starte den Development-Server:
+3. Starte den Development-Server (Node.js 22.5+ wegen nativer SQLite für Nuxt Content):
 ```bash
 npm run dev
 ```
@@ -36,11 +36,14 @@ npm run dev
 - **TypeScript**: Typisierte Logik (Composables).
 
 ## 📈 SEO & Pflege
-Die Seite ist für Suchmaschinen (SEO) optimiert. Du kannst die wichtigsten Texte an zwei Stellen pflegen:
+Die Seite wird beim Build vorgerendert (statisch ausgeliefert) und ist zweisprachig (Deutsch ohne Prefix, Englisch unter `/en`).
 
-1.  **Zentrale Einstellungen (`nuxt.config.ts`):** Unter `runtimeConfig.public` und `app.head` findest du den Seitentitel und die allgemeine Beschreibung.
-2.  **Seiten-spezifisch (`app/pages/index.vue`):** In der `useSeoMeta` Funktion kannst du den Titel, die Beschreibung und Open-Graph Tags (für Social Media Vorschauen) anpassen.
-3.  **Suchmaschinen:** Eine `robots.txt` und `sitemap.xml` befinden sich im `public/` Ordner.
+- **Inhalte (`content/`)**: Klassenseiten (`de/klassen`, `en/classes`), Ratgeber (`de/ratgeber`, `en/guides`) und Textblöcke für Startseite, Quiz und Zufallsgenerator (`*/blocks`) als Markdown über Nuxt Content. DE- und EN-Ratgeber werden über das Feld `key` verknüpft.
+- **Klassendaten (`app/utils/classInfo.ts`)**: Specs, Rollen, Rüstung, Slugs und unsere Bewertungen. Wird von Klassenseiten, Quiz und Zufallsgenerator genutzt. Kampfwerte für die Arena liegen in `app/composables/useBattle.ts`.
+- **UI-Texte (`i18n/locales/`)**: `de.json`/`en.json` für die Arena, `*-site.json` für Navigation und neue Seiten.
+- **SEO-Module**: Sitemap (`/sitemap_index.xml`), `robots.txt`, Schema.org und automatisch generierte OG-Bilder (`app/components/OgImage/`).
+- **Titel & Beschreibungen**: Für Inhaltsseiten im Frontmatter (`title`, `description`), sonst in den i18n-Dateien. Werte mit Doppelpunkt immer in Anführungszeichen setzen.
+- **Netlify**: Die Node.js-Version (24) ist in `netlify.toml` festgelegt, Nuxt Content braucht für native SQLite mindestens 22.5.
 
 ## 📜 Lizenz
 Dieses Projekt ist zum Spaß erstellt worden. Nutze es, wie du möchtest!

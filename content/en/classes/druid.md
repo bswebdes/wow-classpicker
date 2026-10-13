@@ -1,0 +1,37 @@
+---
+title: "Druid in WoW Midnight – Playstyle, Specs and Who It Suits"
+description: "The Druid in WoW Midnight explained: Balance, Feral, Guardian and Restoration, shapeshifting and how it plays. The only class with four specs."
+classId: druid
+---
+
+## Playstyle
+
+The Druid is Azeroth's shapeshifter and the only class with **four specializations**. Depending on the situation, it becomes a bear, a cat or a moonkin, or stays in its normal form to heal. Travel forms for land, water and air make getting around very convenient.
+
+The Druid brings lots of group utility: **Rebirth** brings an ally back in combat, **Innervate** helps healers with Mana, and **Stampeding Roar** speeds up the whole group for a short time.
+
+## Specializations
+
+- **Balance** fights from range as a moonkin and switches between solar and lunar magic. Strong against groups and in longer fights.
+- **Feral** prowls as a cat, rakes and makes enemies bleed. A spec for players who enjoy resources and timing.
+- **Guardian** tanks in bear form with lots of armor, a big health pool and self-healing.
+- **Restoration** heals mainly with effects over time, rewarding players who plan ahead.
+
+## Who is the Druid for?
+
+**A good fit if you …**
+
+- don't want to commit to one role or fighting style,
+- want melee and ranged in a single class,
+- love nature, animals and shapeshifting.
+
+**Not ideal if you …**
+
+- want a lean class that is quick to learn, since four specs mean a lot to know,
+- want to show off weapons and armor sets, as you see little of them in animal form.
+
+## Strengths and weaknesses
+
+No other class covers as many roles and playstyles as the Druid. If you don't like leveling alts, it is ideal: one character for everything. The downside is the learning curve, as mastering every form takes time.
+
+Also check out our guides to [tank classes](/en/guides/wow-tank-classes) and [healer classes](/en/guides/wow-healer-classes), or send the Druid straight into the [arena](/en).

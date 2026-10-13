@@ -1,10 +1,5 @@
 <template>
-  <div>
-    <LanguagePicker />
+  <NuxtLayout>
     <NuxtPage />
-  </div>
+  </NuxtLayout>
 </template>
-
-<style>
-/* Global styles if needed, but we use main.css */
-</style>

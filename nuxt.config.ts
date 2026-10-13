@@ -81,8 +81,8 @@ export default defineNuxtConfig({
     strategy: 'prefix_except_default',
     customRoutes: 'meta',
     locales: [
-      { code: 'de', language: 'de-DE', name: 'Deutsch', file: 'de.json' },
-      { code: 'en', language: 'en-US', name: 'English', file: 'en.json' }
+      { code: 'de', language: 'de-DE', name: 'Deutsch', files: ['de.json', 'de-site.json'] },
+      { code: 'en', language: 'en-US', name: 'English', files: ['en.json', 'en-site.json'] }
     ],
     detectBrowserLanguage: {
       useCookie: true,

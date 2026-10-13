@@ -1,0 +1,3 @@
+[build.environment]
+  # Nuxt Content braucht Node.js 22.5+ (native SQLite)
+  NODE_VERSION = "24"

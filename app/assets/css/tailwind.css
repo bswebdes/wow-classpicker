@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
 @import "./main.css";
 
 /* Custom Tailwind layers if needed */

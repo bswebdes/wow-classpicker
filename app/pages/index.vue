@@ -1,4 +1,6 @@
 <script setup>
+import { classData } from '~/composables/useBattle'
+
 const {
   selectedClasses,
   characters,
@@ -18,31 +20,23 @@ const {
   randomizeAllNames
 } = useBattle()
 
-const config = useRuntimeConfig()
+const { t } = useI18n()
+const localePath = useLocalePath()
 
-const { locale, t } = useI18n()
-const head = useLocaleHead({
-  addDirAttribute: true,
-  identifierAttribute: 'id',
-  addSeoAttributes: true
-})
-
-useHead({
-  htmlAttrs: {
-    lang: head.value.htmlAttrs.lang,
-    dir: head.value.htmlAttrs.dir
-  },
-  link: [...(head.value.link || [])],
-  meta: [...(head.value.meta || [])]
-})
-
-useSeoMeta({
+usePageSeo({
   title: () => t('seo.title'),
-  ogTitle: () => t('seo.title'),
   description: () => t('seo.description'),
-  ogDescription: () => t('seo.description'),
-  ogImage: '/og-image.png',
-  twitterCard: 'summary_large_image',
+  ogTitle: () => t('home.ogTitle'),
+  ogSubtitle: () => t('siteSeo.homeOgSubtitle')
+})
+
+// Vorauswahl über ?classes=mage,rogue (z. B. aus dem Quiz)
+const route = useRoute()
+onMounted(() => {
+  const preselect = String(route.query.classes || '').split(',').filter(id => id in classData)
+  preselect.forEach(id => {
+    if (!selectedClasses.value.has(id)) toggleClass(id)
+  })
 })
 
 // Arcade-Intro Steuerung
@@ -166,7 +160,24 @@ const handleReset = () => {
       </div>
     </main>
 
-    <footer class="mt-10 pt-6 border-t border-neutral-800 text-sm text-neutral-400">
-    </footer>
+    <section class="mt-12 pt-8 border-t border-neutral-800 text-left">
+      <h2 class="text-2xl font-extrabold text-yellow-400 mb-4">{{ $t('home.toolsTitle') }}</h2>
+      <div class="grid gap-4 sm:grid-cols-3">
+        <NuxtLink :to="localePath('quiz')" class="section block hover:border-yellow-500/60 transition-colors">
+          <span class="block font-bold text-white mb-1">{{ $t('nav.quiz') }}</span>
+          <span class="text-sm text-neutral-400">{{ $t('home.quizTeaser') }}</span>
+        </NuxtLink>
+        <NuxtLink :to="localePath('zufall')" class="section block hover:border-yellow-500/60 transition-colors">
+          <span class="block font-bold text-white mb-1">{{ $t('nav.random') }}</span>
+          <span class="text-sm text-neutral-400">{{ $t('home.randomTeaser') }}</span>
+        </NuxtLink>
+        <NuxtLink :to="localePath('klassen')" class="section block hover:border-yellow-500/60 transition-colors">
+          <span class="block font-bold text-white mb-1">{{ $t('nav.classes') }}</span>
+          <span class="text-sm text-neutral-400">{{ $t('home.classesTeaser') }}</span>
+        </NuxtLink>
+      </div>
+
+      <ContentBlock name="home" class="mt-10" />
+    </section>
   </div>
 </template>
