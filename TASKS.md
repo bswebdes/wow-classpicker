@@ -11,7 +11,6 @@ Stand: 13.10.2026 · live auf [findyourmain.com](https://findyourmain.com), Bran
 - [ ] Mit Patch 12.2: Paladin für Nachtelf, Troll und Untote von `upcomingClasses` nach `classes` verschieben (`app/utils/retailRaces.ts`), Ratgeber „Klassen & Völker“ anpassen
 
 ### SEO-Inhalte (nach Suchvolumen)
-- [ ] „Welche Klasse levelt am schnellsten“ (Forever + Retail)
 - [ ] Ratgeber pro Rolle für Forever (Tank, Heiler)
 - [ ] Spezialisierungs-Seiten (z. B. „Verschlinger Dämonenjäger“), sobald die Klassenseiten ranken
 
@@ -58,7 +57,7 @@ Stand: 13.10.2026 · live auf [findyourmain.com](https://findyourmain.com), Bran
 - [x] Klassenseiten mit Lore-Abschnitt und eigenem Abschnitt je Spezialisierung bzw. Talentbaum (Spielgefühl, typische Fähigkeiten), Lore von Benny gegengelesen; Verschlinger-Fähigkeiten über die Wowhead-Suche ergänzt
 - [x] Völker-Klassen-Matrix für Retail (26 Völker, 240 Kombis, Quelle: Warcraft Wiki) auf `/klassen#voelker`, spielbare Völker auf jeder Klassenseite
 - [x] Bewertungsmethodik (Einstieg und Solo) auf der Über-uns-Seite, mit Community-Quellen abgeglichen, aus jeder Bewertungsbox verlinkt
-- [x] 10 Ratgeber: Klassenwahl, Anfänger, Solo, Tanks, Heiler, PvP (US 880), Klassen & Völker (US 170 / DE 140), Klassenfarben (mit Farbkacheln zum Kopieren), Forever-Klassenwahl, Forever-Völker
+- [x] 11 Ratgeber: Klassenwahl, Anfänger, Solo, Tanks, Heiler, PvP (US 880), Klassen & Völker (US 170 / DE 140), Schnell leveln (DE „wow schnell leveln“ 210), Klassenfarben (mit Farbkacheln zum Kopieren), Forever-Klassenwahl, Forever-Völker
 
 ### Bilder
 - [x] Offizielle Blizzard-Bilder (Nutzung auf nicht kommerziellen Fanseiten laut Blizzard Legal FAQ, Nachweis unter jedem Ratgeber/jeder Klassenseite, Quellen in `docs/bildquellen.md`): Klassen-Artworks im Text, Klassen-Reihen und Völker-Porträts in den Ratgebern, Hauptbild auf jeder Klassenseite und jedem Ratgeber, auch als Hintergrund im OG-Bild

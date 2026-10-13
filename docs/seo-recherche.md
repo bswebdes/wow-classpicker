@@ -75,3 +75,18 @@ SD = SEO Difficulty (0–100, unter 30 ist für eine junge Seite realistisch).
 - Über-uns-Seite mit Betreiber, Quellen und Bewertungsmethode (E-E-A-T)
 
 Nächster Schritt: Mit Ubersuggest AI Search Visibility prüfen, ob die Marke in ChatGPT/Perplexity-Antworten zur Klassenwahl auftaucht (der Account hat aktuell 1 Brand-Slot, der für frysch.studio belegt ist).
+
+## Nachtrag 13.10.2026: Leveln
+
+| Keyword | Markt | Volumen | SD | Umsetzung |
+| --- | --- | --- | --- | --- |
+| wow schnell leveln | DE | 210 | 30 | Ratgeber `/ratgeber/wow-schnell-leveln` |
+| wow schnell leveln 1 80 | DE | 70 | 21 | dito |
+| wow schnell leveln 70 80 | DE | 50 | 22 | dito |
+| best leveling class wow classic | US | 40 | 31 | `/en/guides/fastest-leveling-class-wow` |
+| fastest leveling class wow classic | US | 40 | 26 | dito |
+| fastest leveling class wow | US | 30 | 27 | dito |
+| best leveling class wow | US | 30 | 26 | dito |
+
+Erkenntnis: Im Deutschen wird nach „schnell leveln“ gesucht, nicht nach der Klasse. Der Ratgeber verbindet deshalb Klassenwahl und Leveltipps.
+
