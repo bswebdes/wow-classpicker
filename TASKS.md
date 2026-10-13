@@ -1,6 +1,6 @@
 # Tasks – Find Your Main (WoW Class Picker)
 
-Stand: 13.10.2026 · Branch `chore/upgrade-nuxt4` (nicht gepusht)
+Stand: 13.10.2026 · live auf [findyourmain.com](https://findyourmain.com), Branch `master` (Push deployt automatisch)
 
 ## ✅ Erledigt
 
@@ -39,7 +39,7 @@ Stand: 13.10.2026 · Branch `chore/upgrade-nuxt4` (nicht gepusht)
 ## 🔲 Offen
 
 ### Muss vor dem Go-live
-- [ ] **Domain `findyourmain.com`** (Marke „Find Your Main“)
+- [x] **Domain `findyourmain.com`** (Marke „Find Your Main“)
   - [x] Domain ausgewählt, Marke im Projekt umgestellt (Logo, Seitenname, Schema.org, OG-Bilder, Texte)
   - [x] `siteUrl` in `nuxt.config.ts` auf `https://findyourmain.com` umgestellt
   - [x] 301-Weiterleitungen in `netlify.toml` (alte `netlify.app`-Adresse und `www` auf die Hauptdomain)
@@ -52,12 +52,12 @@ Stand: 13.10.2026 · Branch `chore/upgrade-nuxt4` (nicht gepusht)
 - [ ] **GTM/GA4 einrichten** (später): GA4-Konfiguration im GTM, `dataLayer`-Events als GA4-Events anlegen (`battle_start`, `battle_victory`, `battle_reset`, `quiz_start`, `quiz_decline`, `quiz_complete`, `random_roll`, `achievement_unlocked`), Google-Signale und Werbefunktionen aus, Aufbewahrung max. 14 Monate (so steht es in der Datenschutzerklärung)
 
 - [x] **Eigenes Impressum und eigene Datenschutzerklärung** (`/impressum`, `/datenschutz`, EN als Übersetzung) für eine private, nicht kommerzielle Seite: nur Name, Anschrift, E-Mail `findyourmain@pm.me`, frysch.studio nur als Ersteller, `noindex`, nicht in der Sitemap
-  - [ ] Anschrift prüfen: Im Impressum steht aktuell die Adresse aus dem frysch.studio-Impressum (Hofstelle 10, Gemmingen). Falls privat eine andere gilt, austauschen
-  - [ ] Datenschutz um Cookie-Banner, Google Tag Manager und GA4 erweitern, sobald diese eingebaut sind (Textbausteine von frysch.studio übernehmen)
+  - [x] Anschrift prüfen: Im Impressum steht aktuell die Adresse aus dem frysch.studio-Impressum (Hofstelle 10, Gemmingen). Falls privat eine andere gilt, austauschen
+  - [x] Datenschutz um Cookie-Banner, Google Tag Manager und GA4 erweitert (Textbausteine von frysch.studio)
 - [x] Über-uns-Seite: privates Fanprojekt von Benny, Kontakt findyourmain@pm.me
 - [x] Go-live auf findyourmain.com (13.10.2026)
 - [x] URLs ohne Schrägstrich am Ende direkt ausliefern (`autoSubfolderIndex: false`), sonst leitet Netlify jede Seite um
-- [ ] `www.findyourmain.com`: HTTPS-Zertifikat in Netlify prüfen (DNS stimmt, Zertifikat war beim Go-live noch nicht aktiv)
+- [x] `www.findyourmain.com`: HTTPS-Zertifikat in Netlify prüfen (DNS stimmt, Zertifikat war beim Go-live noch nicht aktiv)
 
 ### UX & Design
 - [x] Logo-Reiter Retail/Forever: beide Logos gleich hoch (feste Höhe statt fester Breite)
