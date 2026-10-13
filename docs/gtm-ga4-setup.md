@@ -165,9 +165,6 @@ Für **jede Zeile** der Tabelle unten:
 | 17 | `DLV - from_language` | `from_language` |
 | 18 | `DLV - to_language` | `to_language` |
 | 19 | `DLV - question` | `question` |
-| 20 | `DLV - method` | `method` |
-| 21 | `DLV - content_type` | `content_type` |
-| 22 | `DLV - item_id` | `item_id` |
 
 > Tipp: Achte auf exakte Schreibweise, Groß-/Kleinschreibung und Unterstriche. Ein Tippfehler bedeutet: Der Wert kommt nie an.
 
@@ -197,7 +194,7 @@ Statt zwölf einzelner Trigger reicht einer:
 4. **Ereignisname** (genau so kopieren):
 
    ```
-   ^(battle_start|battle_victory|battle_reset|quiz_start|quiz_decline|quiz_complete|random_roll|result_class_click|achievement_unlocked|mode_switch|language_switch|faq_open|share)$
+   ^(battle_start|battle_victory|battle_reset|quiz_start|quiz_decline|quiz_complete|random_roll|result_class_click|achievement_unlocked|mode_switch|language_switch|faq_open)$
    ```
 
 5. Häkchen bei **Übereinstimmung mit regulärem Ausdruck verwenden**.
@@ -234,9 +231,6 @@ Statt zwölf einzelner Trigger reicht einer:
    | `from_language` | `{{DLV - from_language}}` |
    | `to_language` | `{{DLV - to_language}}` |
    | `question` | `{{DLV - question}}` |
-   | `method` | `{{DLV - method}}` |
-   | `content_type` | `{{DLV - content_type}}` |
-   | `item_id` | `{{DLV - item_id}}` |
 
    Keine Sorge: Parameter, die ein Ereignis nicht hat, werden einfach nicht mitgeschickt.
 
@@ -351,7 +345,7 @@ Die FAQ-Auswertung ist übrigens auch für SEO wertvoll: Häufig geöffnete Frag
 - [ ] Datenaufbewahrung 14 Monate
 - [ ] Google Signale aus, personalisierte Werbung aus, Datenfreigabe aus
 - [ ] Interner Traffic gefiltert (optional)
-- [ ] GTM: 22 Datenschichtvariablen, Variable „Event“ aktiviert
+- [ ] GTM: 19 Datenschichtvariablen, Variable „Event“ aktiviert
 - [ ] GTM: Tag `GA4 - Google-Tag` (Initialization - All Pages)
 - [ ] GTM: Trigger `CE - App Events` und Tag `GA4 - App Events`
 - [ ] In der Vorschau getestet (mit „Alle erlauben“) und in der DebugView gesehen
@@ -362,3 +356,72 @@ Die FAQ-Auswertung ist übrigens auch für SEO wertvoll: Häufig geöffnete Frag
 ## Später erweitern
 
 Neue Ereignisse kommen im Code über `trackEvent('name', { parameter: wert })` dazu (`app/utils/trackEvent.ts`). Danach in GTM den Namen im Trigger `CE - App Events` ergänzen, neue Parameter als Datenschichtvariable anlegen, im Tag `GA4 - App Events` eintragen und in GA4 als Dimension registrieren.
+
+---
+
+## Erweiterung 1 (13.10.2026): Ergebnis teilen
+
+> **Neu.** Alles oberhalb ist unverändert. Diesen Abschnitt nur einmal abarbeiten, wenn die Grundeinrichtung schon steht.
+
+Quiz-Ergebnis und Arena-Sieger lassen sich jetzt teilen. Dafür gibt es ein neues Ereignis im `dataLayer`:
+
+| Ereignis | Wann | Parameter |
+| --- | --- | --- |
+| `share` | Klick auf „Ergebnis teilen“ (Quiz) oder „Sieger teilen“ (Arena) | `method` (`native` = Teilen-Menü des Handys, `copy_link` = Link kopiert), `content_type` (`quiz_result` oder `arena_winner`), `item_id` (Klassen-ID, z. B. `mage`) |
+
+`share` ist ein [empfohlenes GA4-Ereignis](https://support.google.com/analytics/answer/9267735), GA4 kennt den Namen also schon.
+
+### E1.1 Drei neue Datenschichtvariablen
+
+Wie in Schritt 3.1 (**Variablen** → **Benutzerdefinierte Variablen** → **Neu** → **Datenschichtvariable**):
+
+| # | Variablenname | Name der Datenschichtvariable |
+| --- | --- | --- |
+| 20 | `DLV - method` | `method` |
+| 21 | `DLV - content_type` | `content_type` |
+| 22 | `DLV - item_id` | `item_id` |
+
+### E1.2 Trigger erweitern
+
+1. **Trigger** → `CE - App Events` öffnen.
+2. Beim **Ereignisnamen** am Ende `|share` ergänzen. Der komplette Ausdruck lautet dann:
+
+   ```
+   ^(battle_start|battle_victory|battle_reset|quiz_start|quiz_decline|quiz_complete|random_roll|result_class_click|achievement_unlocked|mode_switch|language_switch|faq_open|share)$
+   ```
+
+3. **Speichern**.
+
+### E1.3 Tag erweitern
+
+1. **Tags** → `GA4 - App Events` öffnen.
+2. Unter **Ereignisparameter** drei Zeilen hinzufügen:
+
+   | Parametername | Wert |
+   | --- | --- |
+   | `method` | `{{DLV - method}}` |
+   | `content_type` | `{{DLV - content_type}}` |
+   | `item_id` | `{{DLV - item_id}}` |
+
+3. **Speichern**.
+
+### E1.4 In GA4 als Dimensionen registrieren
+
+**Verwalten** → **Benutzerdefinierte Definitionen** → **Benutzerdefinierte Dimension erstellen**, Bereich jeweils **Ereignis**:
+
+| Dimensionsname | Ereignisparameter |
+| --- | --- |
+| Teilen-Methode | `method` |
+| Geteilter Inhalt | `content_type` |
+| Geteilte Klasse | `item_id` |
+
+### E1.5 Testen und veröffentlichen
+
+1. GTM-**Vorschau** starten, Cookie-Banner „Statistik“ erlauben.
+2. Quiz durchspielen und **Ergebnis teilen** klicken (am PC wird der Link kopiert).
+3. In der Vorschau muss `share` erscheinen und `GA4 - App Events` ausgelöst werden, mit `method = copy_link`, `content_type = quiz_result` und der Klasse als `item_id`.
+4. Dasselbe in der Arena mit **Sieger teilen** (`content_type = arena_winner`).
+5. **Senden** → Version „Teilen-Ereignis“ veröffentlichen.
+
+**Auswertung:** Unter **Berichte** → **Interaktion** → **Ereignisse** → `share` siehst du nach ein bis zwei Tagen, wie oft geteilt wird und welche Klassen am häufigsten geteilt werden. Die Besuche über geteilte Links erkennst du an den Seiten `/mein-main/…` bzw. `/en/my-main/…`.
+

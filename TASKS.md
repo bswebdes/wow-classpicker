@@ -20,7 +20,7 @@ Stand: 13.10.2026 · live auf [findyourmain.com](https://findyourmain.com), Bran
 - [ ] Prüfen, ob ChatGPT/Perplexity die Seite bei „welche WoW Klasse passt zu mir“ nennen
 
 ### Reichweite
-- [ ] GTM: Ereignis `share` im Trigger `CE - App Events` ergänzen und Variablen `method`, `content_type`, `item_id` anlegen (Anleitung in `docs/gtm-ga4-setup.md`)
+- [ ] GTM/GA4: Ereignis `share` einrichten, Anleitung im Abschnitt „Erweiterung 1“ am Ende von `docs/gtm-ga4-setup.md`
 - [ ] In Communitys teilen: r/wow, r/wownoob, r/classicwow, Discord, Gilden-Seiten
 
 ### Features & Ideen
