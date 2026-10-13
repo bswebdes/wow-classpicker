@@ -84,9 +84,11 @@
     "tableTitle": "Klassen, Rollen und Rüstung"
   },
   "guidesPage": {
-    "title": "WoW Ratgeber: Klassenwahl, Rollen und Tipps für Midnight",
+    "title": "WoW Ratgeber: Klassenwahl für Midnight und WoW Forever",
     "heading": "Ratgeber zur Klassenwahl",
-    "description": "Ratgeber rund um die Klassenwahl in WoW Midnight: Anfänger-Klassen, Solo-Klassen, Tanks, Heiler und die offiziellen Klassenfarben."
+    "description": "Ratgeber zur Klassenwahl in WoW Midnight und WoW Forever: Anfänger-Klassen, Solo, Tanks, Heiler, PvP, schnell leveln, Völker und Klassenfarben.",
+    "filterLabel": "Spiel",
+    "filterAll": "Alle"
   },
   "quiz": {
     "title": "Welche WoW-Klasse passt zu mir? Das Klassen-Quiz für Midnight",

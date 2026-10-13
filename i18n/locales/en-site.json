@@ -84,9 +84,11 @@
     "tableTitle": "Classes, roles and armor"
   },
   "guidesPage": {
-    "title": "WoW Guides: Choosing a Class, Roles and Tips for Midnight",
+    "title": "WoW Guides: Choosing a Class in Midnight and WoW Forever",
     "heading": "Class choice guides",
-    "description": "Guides on choosing a class in WoW Midnight: beginner classes, solo classes, tanks, healers and the official class colors."
+    "description": "Guides on choosing a class in WoW Midnight and WoW Forever: beginner classes, solo, tanks, healers, PvP, fast leveling, races and class colors.",
+    "filterLabel": "Game",
+    "filterAll": "All"
   },
   "quiz": {
     "title": "WoW Class Quiz: Which WoW Class Should I Play in Midnight?",

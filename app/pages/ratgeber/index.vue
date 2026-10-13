@@ -5,6 +5,8 @@ definePageMeta({
 
 const { t, locale } = useI18n()
 const localePath = useLocalePath()
+const route = useRoute()
+const router = useRouter()
 
 usePageSeo({
   title: () => t('guidesPage.title'),
@@ -20,11 +22,30 @@ const { data: guides } = await useAsyncData(() => `guides-${locale.value}`, () =
     .all()
 )
 
-const slugOf = (path) => path.split('/').pop()
-const groups = computed(() => [
-  { game: 'retail', title: 'World of Warcraft: Midnight', items: (guides.value || []).filter(g => g.game !== 'forever') },
-  { game: 'forever', title: 'WoW Forever', items: (guides.value || []).filter(g => g.game === 'forever') }
-].filter(g => g.items.length))
+// Filter nach Spiel, steht in der URL (?spiel=forever), damit man ihn verlinken kann
+const games = ['retail', 'forever']
+const filter = ref('all')
+onMounted(() => {
+  if (games.includes(String(route.query.spiel))) filter.value = String(route.query.spiel)
+})
+watch(filter, (value) => {
+  router.replace({ query: value === 'all' ? {} : { spiel: value } })
+})
+const filterOptions = computed(() => [
+  { value: 'all', label: t('guidesPage.filterAll') },
+  { value: 'retail', label: 'Midnight', color: '#c9b3ff' },
+  { value: 'forever', label: 'Forever', color: '#f0c27a' }
+])
+
+const gameOf = g => g.game === 'forever' ? 'forever' : 'retail'
+const visible = computed(() => (guides.value || []).filter(g => filter.value === 'all' || gameOf(g) === filter.value))
+const slugOf = path => path.split('/').pop()
+
+// Sichtbarer Unterschied der Karten: Farbe, Flagge und Logo im Hintergrund
+const style = {
+  retail: { name: 'WoW Midnight', flag: 'border-[#7b5cd6]/70 bg-[#2a1d4a]/80 text-[#c9b3ff]', accent: 'before:bg-[#7b5cd6]' },
+  forever: { name: 'WoW Forever', flag: 'border-[#c08a3e]/70 bg-[#3a2610]/80 text-[#f0c27a]', accent: 'before:bg-[#c08a3e]' }
+}
 </script>
 
 <template>
@@ -32,22 +53,29 @@ const groups = computed(() => [
     <h1 class="wow-title text-3xl sm:text-4xl">{{ $t('guidesPage.heading') }}</h1>
     <p class="mt-3 max-w-3xl text-neutral-300">{{ $t('guidesPage.description') }}</p>
 
-    <section v-for="group in groups" :key="group.game" class="mt-10">
-      <h2 class="wow-title text-2xl">{{ group.title }}</h2>
-      <div class="mt-4 grid gap-4 md:grid-cols-2">
+    <FilterChips v-model="filter" :label="$t('guidesPage.filterLabel')" :options="filterOptions" class="mt-8" />
+
+    <ul class="mt-6 grid gap-4 md:grid-cols-2">
+      <li v-for="g in visible" :key="g.path">
         <NuxtLink
-          v-for="g in group.items"
-          :key="g.path"
           :to="localePath({ name: 'ratgeber-slug', params: { slug: slugOf(g.path) } })"
-          class="wow-tooltip block transition-colors hover:border-gold"
+          class="wow-tooltip relative flex h-full flex-col overflow-hidden !pl-6 transition-colors before:absolute before:inset-y-0 before:left-0 before:w-1.5 before:content-[''] hover:border-gold"
+          :class="style[gameOf(g)].accent"
         >
-          <h3 class="font-display text-lg font-bold text-gold">{{ g.title }}</h3>
-          <p class="mt-2 text-[15px] text-neutral-300">{{ g.description }}</p>
-          <div v-if="g.classes?.length" class="mt-3 flex gap-1.5">
-            <img v-for="id in g.classes.slice(0, 7)" :key="id" :src="getClassInfo(id)?.icon" alt="" width="26" height="26" class="h-[26px] w-[26px] rounded-[3px] border border-black" />
+          <!-- Spiellogo als Deko im Hintergrund -->
+          <span class="pointer-events-none absolute -right-20 top-1/2 w-80 -translate-y-1/2 opacity-[0.12]" aria-hidden="true">
+            <GameLogo :mode="gameOf(g)" :width="320" decorative />
+          </span>
+          <span class="relative self-start rounded-[3px] border px-2 py-0.5 font-display text-[11px] font-bold uppercase tracking-widest" :class="style[gameOf(g)].flag">
+            {{ style[gameOf(g)].name }}
+          </span>
+          <h2 class="relative mt-2 font-display text-lg font-bold text-gold">{{ g.title }}</h2>
+          <p class="relative mt-2 text-[15px] text-neutral-300">{{ g.description }}</p>
+          <div v-if="g.classes?.length" class="relative mt-auto flex gap-1.5 pt-3">
+            <img v-for="id in g.classes.slice(0, 7)" :key="id" :src="getClassInfo(id, gameOf(g))?.icon" alt="" width="26" height="26" class="h-[26px] w-[26px] rounded-[3px] border border-black" />
           </div>
         </NuxtLink>
-      </div>
-    </section>
+      </li>
+    </ul>
   </main>
 </template>

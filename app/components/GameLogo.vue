@@ -5,7 +5,9 @@ const props = defineProps({
   width: { type: Number, default: 120 },
   // Feste Höhe hat Vorrang vor der Breite (z. B. für gleich hohe Reiter)
   height: { type: Number, default: 0 },
-  eager: { type: Boolean, default: false }
+  eager: { type: Boolean, default: false },
+  // Nur Deko (z. B. im Kartenhintergrund): leerer Alt-Text
+  decorative: { type: Boolean, default: false }
 })
 
 const logos = {
@@ -21,7 +23,7 @@ const size = computed(() => props.height
 <template>
   <NuxtImg
     :src="logo.src"
-    :alt="logo.alt"
+    :alt="decorative ? '' : logo.alt"
     :width="size.width"
     :height="size.height"
     :style="height ? { height: `${height}px`, width: 'auto' } : undefined"
