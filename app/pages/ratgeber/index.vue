@@ -41,10 +41,10 @@ const gameOf = g => g.game === 'forever' ? 'forever' : 'retail'
 const visible = computed(() => (guides.value || []).filter(g => filter.value === 'all' || gameOf(g) === filter.value))
 const slugOf = path => path.split('/').pop()
 
-// Sichtbarer Unterschied der Karten: Farbe, Flagge und Logo im Hintergrund
+// Sichtbarer Unterschied der Karten: Farbe, Flagge und Landschaft im Hintergrund (Leerensturm bzw. Mulgore)
 const style = {
-  retail: { name: 'WoW Midnight', flag: 'border-[#7b5cd6]/70 bg-[#2a1d4a]/80 text-[#c9b3ff]', accent: 'before:bg-[#7b5cd6]' },
-  forever: { name: 'WoW Forever', flag: 'border-[#c08a3e]/70 bg-[#3a2610]/80 text-[#f0c27a]', accent: 'before:bg-[#c08a3e]' }
+  retail: { name: 'WoW Midnight', image: '/images/hero/voidstorm-800.webp', flag: 'border-[#7b5cd6]/70 bg-[#2a1d4a]/80 text-[#c9b3ff]', accent: 'before:bg-[#7b5cd6]' },
+  forever: { name: 'WoW Forever', image: '/images/hero/mulgore-800.webp', flag: 'border-[#c08a3e]/70 bg-[#3a2610]/80 text-[#f0c27a]', accent: 'before:bg-[#c08a3e]' }
 }
 </script>
 
@@ -62,10 +62,16 @@ const style = {
           class="wow-tooltip relative flex h-full flex-col overflow-hidden !pl-6 transition-colors before:absolute before:inset-y-0 before:left-0 before:w-1.5 before:content-[''] hover:border-gold"
           :class="style[gameOf(g)].accent"
         >
-          <!-- Spiellogo als Deko im Hintergrund -->
-          <span class="pointer-events-none absolute -right-20 top-1/2 w-80 -translate-y-1/2 opacity-[0.12]" aria-hidden="true">
-            <GameLogo :mode="gameOf(g)" :width="320" decorative />
-          </span>
+          <!-- Landschaft als Deko: nur rechts sichtbar, läuft nach links transparent aus -->
+          <img
+            :src="style[gameOf(g)].image"
+            alt=""
+            width="800"
+            height="450"
+            loading="lazy"
+            decoding="async"
+            class="pointer-events-none absolute inset-y-0 right-0 h-full w-3/5 object-cover opacity-40 [mask-image:linear-gradient(to_left,black_20%,transparent)]"
+          >
           <span class="relative self-start rounded-[3px] border px-2 py-0.5 font-display text-[11px] font-bold uppercase tracking-widest" :class="style[gameOf(g)].flag">
             {{ style[gameOf(g)].name }}
           </span>
