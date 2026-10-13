@@ -50,3 +50,5 @@ Heiler halten die Gruppe am Leben und sind in jedem Dungeon und Schlachtzug gefr
 3. **Hilf mit Schaden aus.** In ruhigen Phasen trägt jeder Heiler auch zum Schaden bei.
 
 Ob Heiler wirklich deine Rolle ist, verrät dir das [Klassen-Quiz](/welche-klasse-passt-zu-mir). Oder du lässt alle Heiler-Klassen in der [Arena](/?classes=priest,paladin,shaman,druid,monk,evoker) antreten.
+
+Du spielst WoW Forever? Dafür gibt es den Ratgeber [Heiler-Klassen in WoW Forever](/ratgeber/wow-forever-heiler-klassen).

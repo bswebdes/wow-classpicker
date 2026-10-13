@@ -91,3 +91,16 @@ Nächster Schritt: Mit Ubersuggest AI Search Visibility prüfen, ob die Marke in
 
 Erkenntnis: Im Deutschen wird nach „schnell leveln“ gesucht, nicht nach der Klasse. Die Ratgeber verbinden deshalb Klassenwahl und Leveltipps. Getrennt nach Retail (Midnight) und Forever, wobei Forever auf Classic-Erfahrung beruht (Annahme, zum Start prüfen).
 
+## Nachtrag 14.10.2026: Forever-Rollen
+
+| Keyword | Markt | Volumen | SD | Umsetzung |
+| --- | --- | --- | --- | --- |
+| wow classic tank | DE | 90 | 27 | `/ratgeber/wow-forever-tank-klassen` |
+| wow classic tank guide | DE | 70 | 28 | dito |
+| wow classic tank tier list | DE | 70 | 22 | dito (ohne Tier-List, nach Spielgefühl) |
+| wow classic best tank | US | 50 | 26 | `/en/guides/wow-forever-tank-classes` |
+| wow classic best healer | US | 50 | 23 | `/en/guides/wow-forever-healer-classes` |
+| wow classic best healer class | US | 30 | 25 | dito |
+
+Grundlage wie beim Leveln: Classic-Erfahrung als Annahme für Forever, Hinweis-Kasten auf der Seite, nach dem Start prüfen.
+

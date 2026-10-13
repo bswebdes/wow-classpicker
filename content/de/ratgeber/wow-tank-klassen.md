@@ -49,3 +49,5 @@ Tanks sind das Rückgrat jeder Gruppe: Sie ziehen die Aufmerksamkeit der Gegner 
 3. **Ruhig bleiben.** Ein Tank, der klar kommuniziert, macht jede Gruppe besser.
 
 Du bist dir noch unsicher, ob Tank deine Rolle ist? Das [Klassen-Quiz](/welche-klasse-passt-zu-mir) fragt genau danach. Oder lass alle sechs Tanks in der [Arena](/?classes=warrior,paladin,deathknight,monk,druid,demonhunter) aufeinander los.
+
+Du spielst WoW Forever? Dafür gibt es den Ratgeber [Tank-Klassen in WoW Forever](/ratgeber/wow-forever-tank-klassen).
