@@ -15,12 +15,7 @@ Stand: 13.10.2026 · live auf [findyourmain.com](https://findyourmain.com), Bran
 - [ ] Ratgeber pro Rolle für Forever (Tank, Heiler)
 - [ ] Spezialisierungs-Seiten (z. B. „Verschlinger Dämonenjäger“), sobald die Klassenseiten ranken
 
-### GEO / KI-Sichtbarkeit
-- [ ] Ubersuggest AI Search Visibility für die Marke einrichten (Brand-Slot ist aktuell für frysch.studio belegt)
-- [ ] Prüfen, ob ChatGPT/Perplexity die Seite bei „welche WoW Klasse passt zu mir“ nennen
-
 ### Reichweite
-- [ ] GTM/GA4: Ereignis `share` einrichten, Anleitung im Abschnitt „Erweiterung 1“ am Ende von `docs/gtm-ga4-setup.md`
 - [ ] In Communitys teilen: r/wow, r/wownoob, r/classicwow, Discord, Gilden-Seiten
 
 ### Features & Ideen
@@ -44,15 +39,15 @@ Stand: 13.10.2026 · live auf [findyourmain.com](https://findyourmain.com), Bran
 
 ### Tracking & Einwilligung
 - [x] Cookie-Banner (vanilla-cookieconsent v3, Opt-in) mit Kategorien Notwendig / Erfolge speichern / Wowhead-Tooltips / Statistik
-- [x] Google Consent Mode v2, GTM `GTM-MSF6PT29` erst nach Zustimmung, GA4 eingerichtet nach `docs/gtm-ga4-setup.md`
-- [x] Events nur nach Einwilligung: `battle_start/victory/reset`, `quiz_start/decline/complete`, `random_roll`, `result_class_click`, `achievement_unlocked`, `mode_switch`, `language_switch`, `faq_open`
+- [x] Google Consent Mode v2, GTM `GTM-MSF6PT29` erst nach Zustimmung, GA4 eingerichtet nach `docs/gtm-ga4-setup.md` inkl. „Erweiterung 1“ (Ereignis `share`)
+- [x] Events nur nach Einwilligung: `battle_start/victory/reset`, `quiz_start/decline/complete`, `random_roll`, `result_class_click`, `achievement_unlocked`, `mode_switch`, `language_switch`, `faq_open`, `share`
 
 ### Technik
 - [x] Nuxt 4, Tailwind CSS 4, @nuxtjs/i18n 10, Nuxt Content (DE/EN), Vorrendern, Node 24 auf Netlify
 - [x] Schriften selbst gehostet, Logos als WebP über `@nuxt/image`, URLs ohne Schrägstrich am Ende (`autoSubfolderIndex: false`)
 
 ### SEO & GEO
-- [x] Keyword-Recherche mit Ubersuggest (`docs/seo-recherche.md`)
+- [x] Keyword-Recherche mit Ubersuggest (`docs/seo-recherche.md`), Ubersuggest-Projekt „Find Your Main“ mit 20 Keywords (DE/US) für das Ranking-Tracking (wöchentlich)
 - [x] Sitemap-Index mit `lastmod` und hreflang-Paaren, `robots.txt` mit Content Signals, hreflang/Canonical auf allen Seiten
 - [x] Schema.org (WebPage/FAQPage, Article, Breadcrumb, ItemList, SoftwareApplication), OG-Bild pro Seite
 - [x] `llms.txt`, `llms-full.txt` und Markdown-Version jeder Seite, „Kurz gesagt“-Box und FAQs
