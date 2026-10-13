@@ -136,37 +136,35 @@ Sonst zählst du deine eigenen Testklicks mit.
 
 Damit GTM die Parameter der Ereignisse lesen kann, brauchst du für jeden Parameter eine Variable. Das ist der langweiligste Teil, danach wird es schnell.
 
-Für **jeden** Namen aus der Liste unten:
+Für **jede Zeile** der Tabelle unten:
 
 1. Links **Variablen** → unten bei *Benutzerdefinierte Variablen* auf **Neu**.
-2. Oben links den Namen eintragen: `DLV - <name>`, z. B. `DLV - game_mode`.
+2. Oben links den **Variablennamen** aus der mittleren Spalte eintragen, z. B. `DLV - game_mode`.
 3. **Variablenkonfiguration** → **Datenschichtvariable**.
-4. **Name der Datenschichtvariable**: genau der Name aus der Liste, z. B. `game_mode`.
+4. **Name der Datenschichtvariable**: den Wert aus der rechten Spalte eintragen, z. B. `game_mode`.
 5. Version 2 lassen. **Speichern**.
 
-Liste (19 Stück):
-
-```
-game_mode
-class_count
-classes
-winner
-rounds
-declined_before
-count
-top_classes
-class_id
-spec
-race
-source
-place
-achievement_id
-from_mode
-to_mode
-from_language
-to_language
-question
-```
+| # | Variablenname (oben links) | Name der Datenschichtvariable |
+| --- | --- | --- |
+| 1 | `DLV - game_mode` | `game_mode` |
+| 2 | `DLV - class_count` | `class_count` |
+| 3 | `DLV - classes` | `classes` |
+| 4 | `DLV - winner` | `winner` |
+| 5 | `DLV - rounds` | `rounds` |
+| 6 | `DLV - declined_before` | `declined_before` |
+| 7 | `DLV - count` | `count` |
+| 8 | `DLV - top_classes` | `top_classes` |
+| 9 | `DLV - class_id` | `class_id` |
+| 10 | `DLV - spec` | `spec` |
+| 11 | `DLV - race` | `race` |
+| 12 | `DLV - source` | `source` |
+| 13 | `DLV - place` | `place` |
+| 14 | `DLV - achievement_id` | `achievement_id` |
+| 15 | `DLV - from_mode` | `from_mode` |
+| 16 | `DLV - to_mode` | `to_mode` |
+| 17 | `DLV - from_language` | `from_language` |
+| 18 | `DLV - to_language` | `to_language` |
+| 19 | `DLV - question` | `question` |
 
 > Tipp: Achte auf exakte Schreibweise, Groß-/Kleinschreibung und Unterstriche. Ein Tippfehler bedeutet: Der Wert kommt nie an.
 
