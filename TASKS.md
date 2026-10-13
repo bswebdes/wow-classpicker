@@ -10,14 +10,7 @@ Stand: 13.10.2026 · live auf [findyourmain.com](https://findyourmain.com), Bran
 - [ ] Deutschen Namen der Skyborne-Fraktionen klären, sobald Blizzard einen veröffentlicht
 - [ ] Mit Patch 12.2: Paladin für Nachtelf, Troll und Untote von `upcomingClasses` nach `classes` verschieben (`app/utils/retailRaces.ts`), Ratgeber „Klassen & Völker“ anpassen
 
-### Fachlich
-- [x] Quiz-Gewichtung gegenlesen (`app/utils/quiz.ts`)
-- [x] Lore-Texte der Klassenseiten gegenlesen (Benny)
-- [x] Verschlinger-Dämonenjäger: Fähigkeiten ergänzt (Verzehren, Ernten, Leerenmetamorphose, Leerenstrahl, Kollabierender Stern; IDs über die Wowhead-Suche gefunden und per Tooltip-API geprüft)
-
 ### SEO-Inhalte (nach Suchvolumen)
-- [x] PvP-Ratgeber „Beste Klasse für PvP“ (US 880 Suchen, SD 23): `/ratgeber/beste-pvp-klasse-wow`, `/en/guides/best-wow-class-for-pvp`, nach Spielstil statt Tier-List
-- [x] Retail-Völker und Klassen-Kombinationen („wow class race combos“ US 170, „wow klassen und rassen“ DE 140): Ratgeber `/ratgeber/wow-klassen-rassen` + `/en/guides/wow-class-race-combos`, Matrix auf `/klassen#voelker`, spielbare Völker auf jeder Klassenseite (Quelle: Warcraft Wiki, 240 Kombis, Paladin-Kombis für 12.2 als angekündigt markiert)
 - [ ] „Welche Klasse levelt am schnellsten“ (Forever + Retail)
 - [ ] Ratgeber pro Rolle für Forever (Tank, Heiler)
 - [ ] Spezialisierungs-Seiten (z. B. „Verschlinger Dämonenjäger“), sobald die Klassenseiten ranken
@@ -36,7 +29,7 @@ Stand: 13.10.2026 · live auf [findyourmain.com](https://findyourmain.com), Bran
 - [ ] Klassen-Vergleich (zwei Klassen nebeneinander)
 - [ ] Arena-Modi: 1 gegen 1, Turnier-Baum
 - [ ] Sound-Effekte im Kampf (optional, standardmäßig aus)
-- [ ] Thalgrim auch an anderen Stellen auftauchen lassen (z. B. Tipps auf Klassenseiten, 404-Seite)
+- [ ] Thalgrim auch an anderen Stellen auftauchen lassen (z. B. Tipps auf Klassenseiten, 404-Seite), ggf. im Quest-Text als Zwerg erkennbar machen („bei meinem Bart“)
 - [ ] Weitere Erfolge: Forever-Quiz abschließen, alle Völker-Kombis gewürfelt, Arena-Sieg mit einem selbst benannten Kämpfer
 
 ### Technik
@@ -68,9 +61,10 @@ Stand: 13.10.2026 · live auf [findyourmain.com](https://findyourmain.com), Bran
 
 ### Inhalte
 - [x] Retail: 13 Klassenseiten, Forever: 9 Klassenseiten mit Völker-Matrix (56 Kombinationen), jeweils Quiz und Zufallsgenerator
-- [x] Klassenseiten mit Lore-Abschnitt und eigenem Abschnitt je Spezialisierung bzw. Talentbaum (Spielgefühl, typische Fähigkeiten)
+- [x] Klassenseiten mit Lore-Abschnitt und eigenem Abschnitt je Spezialisierung bzw. Talentbaum (Spielgefühl, typische Fähigkeiten), Lore von Benny gegengelesen; Verschlinger-Fähigkeiten über die Wowhead-Suche ergänzt
+- [x] Völker-Klassen-Matrix für Retail (26 Völker, 240 Kombis, Quelle: Warcraft Wiki) auf `/klassen#voelker`, spielbare Völker auf jeder Klassenseite
 - [x] Bewertungsmethodik (Einstieg und Solo) auf der Über-uns-Seite, mit Community-Quellen abgeglichen, aus jeder Bewertungsbox verlinkt
-- [x] 10 Ratgeber: Klassenwahl, Anfänger, Solo, Tanks, Heiler, PvP, Klassen & Völker, Klassenfarben (mit Farbkacheln zum Kopieren), Forever-Klassenwahl, Forever-Völker
+- [x] 10 Ratgeber: Klassenwahl, Anfänger, Solo, Tanks, Heiler, PvP (US 880), Klassen & Völker (US 170 / DE 140), Klassenfarben (mit Farbkacheln zum Kopieren), Forever-Klassenwahl, Forever-Völker
 
 ### Bilder
 - [x] Offizielle Blizzard-Bilder (Nutzung auf nicht kommerziellen Fanseiten laut Blizzard Legal FAQ, Nachweis unter jedem Ratgeber/jeder Klassenseite, Quellen in `docs/bildquellen.md`): Klassen-Artworks im Text, Klassen-Reihen und Völker-Porträts in den Ratgebern, Hauptbild auf jeder Klassenseite und jedem Ratgeber, auch als Hintergrund im OG-Bild
@@ -83,7 +77,7 @@ Stand: 13.10.2026 · live auf [findyourmain.com](https://findyourmain.com), Bran
 ### Design & UX
 - [x] Classic-WoW-Look, Header mit Wappen und Retail/Forever-Reitern, DE|EN-Umschalter
 - [x] Arena: Unit-Frames, Kampflog, Damage-Meter, eindeutige Kämpfernamen, Siegerauswertung mit Podium, Statistik und Auszeichnungen
-- [x] Klassen-Quiz als Quest mit Questgeber Thalgrim Eichenhorn, inklusive Ablehnen-Reaktionen
+- [x] Klassen-Quiz als Quest mit Questgeber Thalgrim Eichenhorn (Zwerg, eigenes Porträt im Questfenster), inklusive Ablehnen-Reaktionen, Quiz-Gewichtung gegengelesen
 - [x] Zufallsklasse im Loot-Stil mit Walzen-Animation, Item-Tooltip und gezieltem Neuwürfeln von Spec/Volk
 
 ### Erfolge
