@@ -37,7 +37,9 @@ export default defineNuxtConfig({
         { name: 'google-site-verification', content: 'LqBug-yqynPB2aX7EkNZrC9F-AzC-3HsbplFBhov7b8' }
       ],
       link: [
-        { rel: 'icon', type: 'image/png', href: '/favicon.png' }
+        { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
+        { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon.png' },
+        { rel: 'apple-touch-icon', href: '/apple-touch-icon.png' }
       ],
       script: [
         {
@@ -123,7 +125,7 @@ export default defineNuxtConfig({
       name: 'Find Your Main',
       alternateName: 'WoW Class Picker',
       url: siteUrl,
-      logo: `${siteUrl}/favicon.png`
+      logo: `${siteUrl}/logo.png`
     }
   },
 

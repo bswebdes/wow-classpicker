@@ -4,9 +4,16 @@ import 'vanilla-cookieconsent/dist/cookieconsent.css'
 const GTM_ID = 'GTM-MSF6PT29'
 
 // Google Tag Manager erst nach Einwilligung laden (Consent-Mode-Standard steht im <head>)
+// Nur auf der echten Domain messen: lokal (Dev-Server, Vorschau) und auf Testadressen wird GTM nie geladen
+const isProductionHost = () => window.location.hostname === 'findyourmain.com'
+
 const loadGtm = () => {
   const w = window as unknown as { dataLayer: unknown[], gtag?: (...args: unknown[]) => void, __gtmLoaded?: boolean }
   if (w.__gtmLoaded) return
+  if (!isProductionHost()) {
+    console.info('[GTM] nicht geladen: nur auf findyourmain.com aktiv')
+    return
+  }
   w.__gtmLoaded = true
   w.gtag?.('consent', 'update', { analytics_storage: 'granted' })
   w.dataLayer = w.dataLayer || []

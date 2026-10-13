@@ -35,7 +35,7 @@ Stand: 13.10.2026 · live auf [findyourmain.com](https://findyourmain.com), Bran
 
 ### Tracking & Einwilligung
 - [x] Cookie-Banner (vanilla-cookieconsent v3, Opt-in) mit Kategorien Notwendig / Erfolge speichern / Wowhead-Tooltips / Statistik
-- [x] Google Consent Mode v2, GTM `GTM-MSF6PT29` erst nach Zustimmung, GA4 eingerichtet nach `docs/gtm-ga4-setup.md` inkl. „Erweiterung 1“ (Ereignis `share`)
+- [x] Google Consent Mode v2, GTM `GTM-MSF6PT29` erst nach Zustimmung und nur auf `findyourmain.com` (lokal und auf Testadressen nie), GA4 eingerichtet nach `docs/gtm-ga4-setup.md` inkl. „Erweiterung 1“ (Ereignis `share`)
 - [x] Events nur nach Einwilligung: `battle_start/victory/reset`, `quiz_start/decline/complete`, `random_roll`, `result_class_click`, `achievement_unlocked`, `mode_switch`, `language_switch`, `faq_open`, `share`
 
 ### Technik
@@ -69,6 +69,7 @@ Stand: 13.10.2026 · live auf [findyourmain.com](https://findyourmain.com), Bran
 
 ### Design & UX
 - [x] Classic-WoW-Look, Header mit Wappen und Retail/Forever-Reitern, DE|EN-Umschalter
+- [x] Neues Wappen als SVG (`app/utils/crestSvg.ts`): Schild mit Goldrand, Edelstein, gekreuzt Schwert und Zauberstab, violett (Retail) bzw. rot/bernstein (Forever); Favicon (SVG, PNG 32, Apple-Touch-Icon) und Logo-PNG für Schema.org per `node scripts/generate-icons.mjs`
 - [x] Arena: Unit-Frames, Kampflog, Damage-Meter, eindeutige Kämpfernamen, Siegerauswertung mit Podium, Statistik und Auszeichnungen
 - [x] Klassen-Quiz als Quest mit Questgeber Thalgrim Eichenhorn (Zwerg, eigenes Porträt im Questfenster), inklusive Ablehnen-Reaktionen, Quiz-Gewichtung gegengelesen
 - [x] Zufallsklasse im Loot-Stil mit Walzen-Animation, Item-Tooltip und gezieltem Neuwürfeln von Spec/Volk
