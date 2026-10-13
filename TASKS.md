@@ -86,7 +86,7 @@ Stand: 13.10.2026 · live auf [findyourmain.com](https://findyourmain.com), Bran
 ### Wowhead
 - [x] 152 Fähigkeiten in den Texten (DE/EN, Retail/Forever) mit Wowhead verlinkt, Forever auf die Forever-Datenbank von Wowhead (alle 21 IDs dort geprüft), öffnen im neuen Tab
 - [x] Original-Tooltips von Wowhead beim Überfahren, nur mit Einwilligung (neue Banner-Kategorie „Wowhead-Tooltips“, Revision 1, Widerruf lädt die Seite neu), Datenschutz ergänzt
-- [ ] Idee: Fähigkeiten auch im Kampflog und in den Unit-Frames der Arena verlinken
+- [x] Fähigkeiten im Kampflog und in den Unit-Frames der Arena verlinkt (Retail- bzw. Forever-Datenbank, alle IDs geprüft). Retail-Krieger nutzt „Tödlicher Stoß“ statt „Heldenhafter Stoß“, den es in Midnight nicht mehr gibt
 
 ### Mobil & Barrierefreiheit
 - [x] Mobile Navigation neu: kompakter Header mit Menü-Button, Retail/Forever als zwei gleich breite Reiter, aufklappbares Menü (schließt bei Seitenwechsel und mit Escape)

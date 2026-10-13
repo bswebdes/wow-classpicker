@@ -19,7 +19,7 @@
       "abilities": {
         "execute": { "name": "Hinrichten", "msg": "haut mit dem dicken Schwert drauf! OVERKILL!" },
         "shieldblock": { "name": "Schildblock", "msg": "versteckt sich hinter seinem Schild." },
-        "heroicstrike": { "name": "Heldenhafter Stoß", "msg": "macht einen sehr... heldenhaften Stoß." },
+        "heroicstrike": { "name": "Tödlicher Stoß", "msg": "schlägt zu, und die Heiler schauen plötzlich sehr ernst." },
         "victoryrush": { "name": "Siegesrausch", "msg": "tötet eine imaginäre Ratte und heilt sich!" }
       }
     },

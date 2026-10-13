@@ -6,10 +6,10 @@ export const classData = {
         icon: '/class-icons/ClassIcon_warrior.webp',
         stats: { hp: 120, crit: 0.1 },
         abilities: {
-            execute: { damage: 45, cooldown: 0 },
-            shieldblock: { evade: true, cooldown: 3 },
-            heroicstrike: { damage: 25, cooldown: 0 },
-            victoryrush: { damage: 20, heal: 20, cooldown: 3 }
+            execute: { damage: 45, cooldown: 0, spell: 163201 },
+            shieldblock: { evade: true, cooldown: 3, spell: 2565 },
+            heroicstrike: { damage: 25, cooldown: 0, spell: 12294 },
+            victoryrush: { damage: 20, heal: 20, cooldown: 3, spell: 34428 }
         }
     },
     paladin: {
@@ -17,10 +17,10 @@ export const classData = {
         icon: '/class-icons/ClassIcon_paladin.webp',
         stats: { hp: 100, crit: 0.05 },
         abilities: {
-            divineshield: { evade: true, cooldown: 3 },
-            judgement: { damage: 25, heal: 10, cooldown: 3 },
-            avengingwrath: { damage: 40, cooldown: 0 },
-            flashoflight: { heal: 30, cooldown: 3 }
+            divineshield: { evade: true, cooldown: 3, spell: 642 },
+            judgement: { damage: 25, heal: 10, cooldown: 3, spell: 20271 },
+            avengingwrath: { damage: 40, cooldown: 0, spell: 31884 },
+            flashoflight: { heal: 30, cooldown: 3, spell: 19750 }
         }
     },
     hunter: {
@@ -28,10 +28,10 @@ export const classData = {
         icon: '/class-icons/ClassIcon_hunter.webp',
         stats: { hp: 90, crit: 0.15 },
         abilities: {
-            aimedshot: { damage: 35, cooldown: 0 },
-            turtle: { evade: true, cooldown: 3 },
-            killcommand: { damage: 30, cooldown: 0 },
-            freezingtrap: { damage: 15, cooldown: 0 }
+            aimedshot: { damage: 35, cooldown: 0, spell: 19434 },
+            turtle: { evade: true, cooldown: 3, spell: 186265 },
+            killcommand: { damage: 30, cooldown: 0, spell: 34026 },
+            freezingtrap: { damage: 15, cooldown: 0, spell: 187650 }
         }
     },
     rogue: {
@@ -39,10 +39,10 @@ export const classData = {
         icon: '/class-icons/ClassIcon_rogue.webp',
         stats: { hp: 80, crit: 0.2, dodge: 0.15 },
         abilities: {
-            kidneyshot: { damage: 25, cooldown: 0 },
-            eviscerate: { damage: 35, cooldown: 0 },
-            pickpocket: { damage: 10, heal: 15, cooldown: 3 },
-            vanish: { evade: true, cooldown: 3 }
+            kidneyshot: { damage: 25, cooldown: 0, spell: 408 },
+            eviscerate: { damage: 35, cooldown: 0, spell: 196819 },
+            pickpocket: { damage: 10, heal: 15, cooldown: 3, spell: 921 },
+            vanish: { evade: true, cooldown: 3, spell: 1856 }
         }
     },
     priest: {
@@ -50,10 +50,10 @@ export const classData = {
         icon: '/class-icons/ClassIcon_priest.webp',
         stats: { hp: 85, crit: 0.05 },
         abilities: {
-            mindblast: { damage: 30, cooldown: 0 },
-            shield: { evade: true, cooldown: 3 },
-            flashheal: { heal: 40, cooldown: 3 },
-            swdeath: { damage: 40, cooldown: 0 }
+            mindblast: { damage: 30, cooldown: 0, spell: 8092 },
+            shield: { evade: true, cooldown: 3, spell: 17 },
+            flashheal: { heal: 40, cooldown: 3, spell: 2061 },
+            swdeath: { damage: 40, cooldown: 0, spell: 32379 }
         }
     },
     deathknight: {
@@ -61,10 +61,10 @@ export const classData = {
         icon: '/class-icons/ClassIcon_deathknight.webp',
         stats: { hp: 115, crit: 0.08 },
         abilities: {
-            deathstrike: { damage: 25, heal: 20, cooldown: 3 },
-            deathsadvance: { evade: true, cooldown: 3 },
-            howlingblast: { damage: 30, cooldown: 0 },
-            army: { damage: 45, cooldown: 0 }
+            deathstrike: { damage: 25, heal: 20, cooldown: 3, spell: 49998 },
+            deathsadvance: { evade: true, cooldown: 3, spell: 48265 },
+            howlingblast: { damage: 30, cooldown: 0, spell: 49184 },
+            army: { damage: 45, cooldown: 0, spell: 42650 }
         }
     },
     shaman: {
@@ -72,10 +72,10 @@ export const classData = {
         icon: '/class-icons/ClassIcon_shaman.webp',
         stats: { hp: 100, crit: 0.12 },
         abilities: {
-            chainlightning: { damage: 35, cooldown: 0 },
-            healingrain: { heal: 30, cooldown: 3 },
-            bloodlust: { damage: 20, cooldown: 0 },
-            totem: { evade: true, cooldown: 3 }
+            chainlightning: { damage: 35, cooldown: 0, spell: 188443 },
+            healingrain: { heal: 30, cooldown: 3, spell: 73920 },
+            bloodlust: { damage: 20, cooldown: 0, spell: 2825 },
+            totem: { evade: true, cooldown: 3, spell: 2484 }
         }
     },
     mage: {
@@ -83,10 +83,10 @@ export const classData = {
         icon: '/class-icons/ClassIcon_mage.webp',
         stats: { hp: 80, crit: 0.25 },
         abilities: {
-            fireball: { damage: 40, cooldown: 0 },
-            iceblock: { evade: true, cooldown: 3 },
-            blink: { evade: true, cooldown: 3 },
-            polymorph: { damage: 10, cooldown: 0 }
+            fireball: { damage: 40, cooldown: 0, spell: 133 },
+            iceblock: { evade: true, cooldown: 3, spell: 45438 },
+            blink: { evade: true, cooldown: 3, spell: 1953 },
+            polymorph: { damage: 10, cooldown: 0, spell: 118 }
         }
     },
     warlock: {
@@ -94,10 +94,10 @@ export const classData = {
         icon: '/class-icons/ClassIcon_warlock.webp',
         stats: { hp: 100, crit: 0.08 },
         abilities: {
-            chaosbolt: { damage: 45, cooldown: 0 },
-            healthstone: { heal: 25, cooldown: 3 },
-            fear: { damage: 10, cooldown: 0 },
-            drainlife: { damage: 20, heal: 15, cooldown: 3 }
+            chaosbolt: { damage: 45, cooldown: 0, spell: 116858 },
+            healthstone: { heal: 25, cooldown: 3, spell: 6262 },
+            fear: { damage: 10, cooldown: 0, spell: 5782 },
+            drainlife: { damage: 20, heal: 15, cooldown: 3, spell: 234153 }
         }
     },
     monk: {
@@ -105,10 +105,10 @@ export const classData = {
         icon: '/class-icons/ClassIcon_monk.webp',
         stats: { hp: 95, crit: 0.15, dodge: 0.1 },
         abilities: {
-            fists: { damage: 35, cooldown: 0 },
-            brew: { heal: 20, evade: true, cooldown: 3 },
-            kick: { damage: 25, cooldown: 0 },
-            mist: { heal: 25, cooldown: 0 }
+            fists: { damage: 35, cooldown: 0, spell: 113656 },
+            brew: { heal: 20, evade: true, cooldown: 3, spell: 115203 },
+            kick: { damage: 25, cooldown: 0, spell: 100784 },
+            mist: { heal: 25, cooldown: 0, spell: 115175 }
         }
     },
     druid: {
@@ -116,10 +116,10 @@ export const classData = {
         icon: '/class-icons/ClassIcon_druid.webp',
         stats: { hp: 105, crit: 0.1 },
         abilities: {
-            convoke: { damage: 40, cooldown: 3 },
-            regrowth: { heal: 30, cooldown: 0 },
-            bear: { evade: true, cooldown: 3 },
-            moonfire: { damage: 20, cooldown: 0 }
+            convoke: { damage: 40, cooldown: 3, spell: 391528 },
+            regrowth: { heal: 30, cooldown: 0, spell: 8936 },
+            bear: { evade: true, cooldown: 3, spell: 5487 },
+            moonfire: { damage: 20, cooldown: 0, spell: 8921 }
         }
     },
     demonhunter: {
@@ -127,10 +127,10 @@ export const classData = {
         icon: '/class-icons/ClassIcon_demon_hunter.webp',
         stats: { hp: 95, crit: 0.15, dodge: 0.05 },
         abilities: {
-            eyebeam: { damage: 40, cooldown: 3 },
-            blur: { evade: true, cooldown: 3 },
-            chaosstrike: { damage: 30, cooldown: 0 },
-            metamorphosis: { damage: 35, heal: 15, cooldown: 3 }
+            eyebeam: { damage: 40, cooldown: 3, spell: 198013 },
+            blur: { evade: true, cooldown: 3, spell: 198589 },
+            chaosstrike: { damage: 30, cooldown: 0, spell: 162794 },
+            metamorphosis: { damage: 35, heal: 15, cooldown: 3, spell: 191427 }
         }
     },
     evoker: {
@@ -138,15 +138,28 @@ export const classData = {
         icon: '/class-icons/ClassIcon_evoker.webp',
         stats: { hp: 100, crit: 0.12 },
         abilities: {
-            disintegrate: { damage: 40, cooldown: 0 },
-            blossom: { heal: 30, cooldown: 0 },
-            deepbreath: { damage: 35, cooldown: 3 },
-            rewind: { heal: 40, cooldown: 3 }
+            disintegrate: { damage: 40, cooldown: 0, spell: 356995 },
+            blossom: { heal: 30, cooldown: 0, spell: 355913 },
+            deepbreath: { damage: 35, cooldown: 3, spell: 357210 },
+            rewind: { heal: 40, cooldown: 3, spell: 363534 }
         }
     }
 }
 
 // Zufällige, neutrale Fantasy-Namen (keine Streamer-Namen)
+// Wowhead-IDs der Fähigkeiten in WoW Forever (Classic-Datenbank); ohne Eintrag kein Link
+export const foreverSpells = {
+  warrior: { execute: 5308, shieldblock: 2565, heroicstrike: 78, victoryrush: 23881 },
+  paladin: { divineshield: 642, judgement: 20271, avengingwrath: 24275, flashoflight: 19750 },
+  hunter: { aimedshot: 19434, turtle: 5384, killcommand: 2643, freezingtrap: 1499 },
+  rogue: { kidneyshot: 408, eviscerate: 2098, pickpocket: 921, vanish: 1856 },
+  priest: { mindblast: 8092, shield: 17, flashheal: 2061, swdeath: 589 },
+  shaman: { chainlightning: 421, healingrain: 1064, bloodlust: 17364, totem: 8075 },
+  mage: { fireball: 133, iceblock: 11958, blink: 1953, polymorph: 118 },
+  warlock: { chaosbolt: 686, fear: 5782, drainlife: 689 },
+  druid: { convoke: 5176, regrowth: 8936, bear: 5487, moonfire: 8921 }
+}
+
 const randomNames = [
   'Aldren', 'Seraphine', 'Borin', 'Lyra', 'Cedric', 'Kaela', 'Dorian', 'Mira', 'Thorin', 'Elara',
   'Garruk', 'Nyra', 'Roland', 'Isolde', 'Fenric', 'Talia', 'Rurik', 'Selene', 'Kael', 'Ysolda',
@@ -204,7 +217,15 @@ export const useBattle = () => {
     })
   }
 
-    const { t, te } = useI18n()
+    const { t, te, locale } = useI18n()
+    let battleMode = 'retail'
+
+    // Wowhead-Link zur Fähigkeit (Retail- bzw. Forever-Datenbank), Tooltips nur mit Einwilligung
+    const spellUrl = (id) =>
+      `https://www.wowhead.com${battleMode === 'forever' ? '/forever' : ''}${locale.value === 'de' ? '/de' : ''}/spell=${id}`
+    const abilityHtml = (ability) => ability.spell
+      ? `<a href="${spellUrl(ability.spell)}" target="_blank" rel="noopener" class="underline decoration-dotted underline-offset-2 hover:text-white">${ability.name}</a>`
+      : ability.name
 
     const addLog = (message, type = '') => {
       battleLog.value.push({ id: Date.now() + Math.random(), message, type })
@@ -221,6 +242,7 @@ export const useBattle = () => {
         : `classes.${id}.abilities.${key}`
 
     const initBattle = (mode = 'retail') => {
+      battleMode = mode
       isStarted.value = true
       rounds.value = 0
       ranking.value = []
@@ -239,12 +261,14 @@ export const useBattle = () => {
           abilities: Object.keys(classData[id].abilities).map(key => ({ 
             ...classData[id].abilities[key], 
             key,
+            spell: mode === 'forever' ? foreverSpells[id]?.[key] : classData[id].abilities[key].spell,
             name: t(`${abilityKey(id, key, mode)}.name`),
             msg: t(`${abilityKey(id, key, mode)}.msg`)
           })).map(a => ({ ...a, currentCD: 0 })),
           alive: true,
           evadeNext: false,
           status: t('battle.status.ready'),
+          statusAbility: null,
           isShaking: false,
           stats: stats,
           damageDone: 0,
@@ -288,7 +312,8 @@ export const useBattle = () => {
         const target = potentialTargets[Math.floor(Math.random() * potentialTargets.length)]
 
         attacker.status = t('battle.status.using', { ability: ability.name })
-        addLog(`${getColoredName(attacker)} ${t('battle.status.using', { ability: ability.name })} ${ability.msg}`)
+        attacker.statusAbility = ability.spell ? { name: ability.name, url: spellUrl(ability.spell) } : null
+        addLog(`${getColoredName(attacker)} ${t('battle.status.using', { ability: abilityHtml(ability) })} ${ability.msg}`)
 
         if (ability.cooldown) {
           ability.currentCD = ability.cooldown
@@ -317,6 +342,7 @@ export const useBattle = () => {
             target.dodges++
             addLog(t('battle.evadeLog', { target: getColoredName(target), attacker: getColoredName(attacker) }), 'evade')
             target.status = t('battle.status.evade')
+            target.statusAbility = null
           } else {
             let finalDamage = ability.damage
             
@@ -353,6 +379,7 @@ export const useBattle = () => {
               attacker.kills++
               eliminated.push(target)
               target.status = t('battle.status.defeated')
+              target.statusAbility = null
               addLog(t('battle.eliminatedLog', { target: getColoredName(target), attacker: getColoredName(attacker) }), 'important')
             }
           }

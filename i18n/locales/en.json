@@ -19,7 +19,7 @@
       "abilities": {
         "execute": { "name": "Execute", "msg": "hits with the thick sword! OVERKILL!" },
         "shieldblock": { "name": "Shield Block", "msg": "hides behind their shield." },
-        "heroicstrike": { "name": "Heroic Strike", "msg": "makes a very... heroic strike." },
+        "heroicstrike": { "name": "Mortal Strike", "msg": "strikes, and the healers suddenly look very serious." },
         "victoryrush": { "name": "Victory Rush", "msg": "kills an imaginary rat and heals!" }
       }
     },

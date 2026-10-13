@@ -288,6 +288,10 @@
   },
   "foreverAbilities": {
     "warrior": {
+      "heroicstrike": {
+        "name": "Heroic Strike",
+        "msg": "makes a very... heroic strike."
+      },
       "victoryrush": {
         "name": "Bloodthirst",
         "msg": "bites into the fight and feels better right away."
