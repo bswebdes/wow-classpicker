@@ -432,6 +432,7 @@
         "name": "Night Owl",
         "desc": "Visit the site between midnight and 4 am. Go to sleep, hero."
       }
-    }
+    },
+    "pointsShort": "points"
   }
 }

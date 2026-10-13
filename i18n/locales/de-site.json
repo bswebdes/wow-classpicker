@@ -432,6 +432,7 @@
         "name": "Nachtschwärmer",
         "desc": "Besuche die Seite zwischen Mitternacht und 4 Uhr. Geh schlafen, Held."
       }
-    }
+    },
+    "pointsShort": "Punkte"
   }
 }

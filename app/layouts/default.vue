@@ -49,7 +49,10 @@ const modes = computed(() => [
 
         <!-- Umschalter Retail / Forever im Stil der Reiter am Charakterfenster -->
         <div class="flex items-end gap-3 self-end">
-        <LanguagePicker class="mb-2 flex md:hidden" />
+        <div class="mb-2 flex items-center gap-2 md:hidden">
+          <ClientOnly><AchievementCounter /></ClientOnly>
+          <LanguagePicker class="flex" />
+        </div>
         <nav :aria-label="$t('nav.gameMode')" class="flex items-end gap-1">
           <NuxtLink
             v-for="m in modes"
@@ -82,7 +85,10 @@ const modes = computed(() => [
               {{ item.label }}
             </NuxtLink>
           </nav>
-          <LanguagePicker class="hidden md:flex" />
+          <div class="hidden items-center gap-3 md:flex">
+            <ClientOnly><AchievementCounter /></ClientOnly>
+            <LanguagePicker class="flex" />
+          </div>
         </div>
       </div>
     </header>

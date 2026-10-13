@@ -45,7 +45,7 @@ Stand: 13.10.2026 · Branch `chore/upgrade-nuxt4` (nicht gepusht)
   - [x] 301-Weiterleitungen in `netlify.toml` (alte `netlify.app`-Adresse und `www` auf die Hauptdomain)
   - [x] Domain registrieren
   - [x] DNS auf Netlify, Primary Domain eingetragen, HTTPS aktiv
-  - [ ] Google Search Console: Domain-Property per DNS bestätigen, Adressänderung von der alten Property melden, Sitemap einreichen
+  - [x] Google Search Console: Domain-Property per DNS bestätigen, Adressänderung von der alten Property melden, Sitemap einreichen
 - [x] **Cookie-Banner** (vanilla-cookieconsent v3, Opt-in, `cc_cookie`, Cookie-Button unten links und Link im Footer), Kategorien Notwendig / Erfolge speichern / Statistik, Design im Classic-Look
 - [x] Google Consent Mode v2 (Standard `denied` im `<head>`), GTM `GTM-MSF6PT29` wird erst nach Zustimmung zu „Statistik“ geladen, `_ga`-Cookies werden beim Widerruf gelöscht
 - [x] Datenschutz um Einwilligung, Erfolge (localStorage), Google Tag Manager und GA4 erweitert
@@ -78,6 +78,7 @@ Stand: 13.10.2026 · Branch `chore/upgrade-nuxt4` (nicht gepusht)
 ### Erfolge
 - [x] 13 Erfolge (u. a. Klassentourist, Mrglglgl!, Das Kleingedruckte, Nachtschwärmer), Popup im WoW-Stil unten mittig, Erfolgsliste unter `/erfolge` (nur im Footer verlinkt, `noindex`)
 - [x] Ohne Einwilligung nur für den aktuellen Besuch, mit „Erfolge speichern“ dauerhaft im localStorage, beim Widerruf gelöscht
+- [x] Erfolge präsenter: Punktezähler mit Erfolgs-Schild im Header (pulsiert bei neuen Erfolgen), Popup klickbar und führt zur Erfolgsseite
 - [ ] Ideen für weitere Erfolge: Forever-Quiz abschließen, alle Völker-Kombis gewürfelt, Arena-Sieg mit einem selbst benannten Kämpfer
 
 ### Zeitkritisch
