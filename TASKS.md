@@ -16,13 +16,11 @@ Stand: 13.10.2026 · live auf [findyourmain.com](https://findyourmain.com), Bran
 - [ ] Spezialisierungs-Seiten (z. B. „Verschlinger Dämonenjäger“), sobald die Klassenseiten ranken
 
 ### GEO / KI-Sichtbarkeit
-- [ ] Sitemap (`/sitemap_index.xml`) in den Bing Webmaster Tools einreichen (Bing beliefert ChatGPT und Copilot)
 - [ ] Ubersuggest AI Search Visibility für die Marke einrichten (Brand-Slot ist aktuell für frysch.studio belegt)
 - [ ] Prüfen, ob ChatGPT/Perplexity die Seite bei „welche WoW Klasse passt zu mir“ nennen
 
 ### Reichweite
-- [ ] Quiz-Ergebnis teilbar machen (eigene URL + OG-Bild mit Top 3)
-- [ ] Arena-Sieger teilbar machen („Mein Main für Forever ist …“)
+- [ ] GTM: Ereignis `share` im Trigger `CE - App Events` ergänzen und Variablen `method`, `content_type`, `item_id` anlegen (Anleitung in `docs/gtm-ga4-setup.md`)
 - [ ] In Communitys teilen: r/wow, r/wownoob, r/classicwow, Discord, Gilden-Seiten
 
 ### Features & Ideen
@@ -58,6 +56,7 @@ Stand: 13.10.2026 · live auf [findyourmain.com](https://findyourmain.com), Bran
 - [x] Sitemap-Index mit `lastmod` und hreflang-Paaren, `robots.txt` mit Content Signals, hreflang/Canonical auf allen Seiten
 - [x] Schema.org (WebPage/FAQPage, Article, Breadcrumb, ItemList, SoftwareApplication), OG-Bild pro Seite
 - [x] `llms.txt`, `llms-full.txt` und Markdown-Version jeder Seite, „Kurz gesagt“-Box und FAQs
+- [x] Sitemap bei Google Search Console und Bing Webmaster Tools eingereicht
 
 ### Inhalte
 - [x] Retail: 13 Klassenseiten, Forever: 9 Klassenseiten mit Völker-Matrix (56 Kombinationen), jeweils Quiz und Zufallsgenerator
@@ -79,6 +78,10 @@ Stand: 13.10.2026 · live auf [findyourmain.com](https://findyourmain.com), Bran
 - [x] Arena: Unit-Frames, Kampflog, Damage-Meter, eindeutige Kämpfernamen, Siegerauswertung mit Podium, Statistik und Auszeichnungen
 - [x] Klassen-Quiz als Quest mit Questgeber Thalgrim Eichenhorn (Zwerg, eigenes Porträt im Questfenster), inklusive Ablehnen-Reaktionen, Quiz-Gewichtung gegengelesen
 - [x] Zufallsklasse im Loot-Stil mit Walzen-Animation, Item-Tooltip und gezieltem Neuwürfeln von Spec/Volk
+
+### Teilen
+- [x] Quiz-Ergebnis und Arena-Sieger teilbar: Seite „Mein Main“ je Klasse und Modus (`/mein-main/<klasse>`, `/en/my-main/<class>`, Forever analog) mit eigenem OG-Bild, Top 3 bzw. Kämpfername in der URL, `noindex`, nicht in der Sitemap; Teilen-Knopf nutzt das System-Menü oder kopiert den Link, GA4-Ereignis `share`
+- [x] Arena: große Intro-Texte („Wähle deine Kämpfer“, READY/FIGHT) entfernt, der Kampf startet sofort
 
 ### Erfolge
 - [x] 13 Erfolge mit Popup, Punktezähler im Header und Erfolgsliste unter `/erfolge`, dauerhaft nur mit Einwilligung

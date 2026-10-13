@@ -580,5 +580,23 @@
       "demonhunter": "Swirling green fel storm",
       "evoker": "Cloudy sky in purple and gold"
     }
+  },
+  "share": {
+    "button": "Share result",
+    "buttonArena": "Share winner",
+    "copied": "Link copied!",
+    "textQuiz": "Thalgrim has spoken: my main in {game} is the {class}! Which class suits you?",
+    "textArena": "The {class} won my arena. My main in {game} is settled! Who wins yours?",
+    "title": "My main in {game}: {class}",
+    "heading": "My main: {class}",
+    "description": "My main in {game} is the {class}. Find out which WoW class suits you with the class quiz or in the arena.",
+    "fromQuiz": "Thalgrim Oakhorn has spoken: this player is a true {class}.",
+    "fromArena": "{name} the {class} beat everyone else in the arena.",
+    "fromArenaNoName": "The {class} beat everyone else in the arena.",
+    "generic": "Someone found their main here: the {class}.",
+    "top3": "Top 3 from the quiz",
+    "yourTurn": "Which class suits you?",
+    "ctaQuiz": "Take the class quiz",
+    "ctaArena": "Go to the arena"
   }
 }

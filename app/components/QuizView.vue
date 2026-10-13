@@ -32,6 +32,15 @@ const current = computed(() => questions.value[step.value])
 const finished = computed(() => step.value >= questions.value.length)
 const results = computed(() => finished.value ? scoreQuiz(answers, props.mode).slice(0, 3) : [])
 
+// Ergebnis teilen: Link auf die Seite „Mein Main“ mit den Top 3 in der URL
+const shareLink = useShareLink()
+const shareUrl = computed(() => results.value.length
+  ? shareLink(results.value[0].id, props.mode, { from: 'quiz', top: results.value.map(r => `${r.id}.${r.percent}`).join(',') })
+  : '')
+const shareText = computed(() => results.value.length
+  ? t('share.textQuiz', { game: props.mode === 'forever' ? 'WoW Forever' : 'WoW Midnight', class: t(`classes.${results.value[0].id}.name`) })
+  : '')
+
 const track = (event, data = {}) => trackEvent(event, { ...data, game_mode: props.mode })
 const { unlock } = useAchievements()
 
@@ -211,6 +220,7 @@ const quality = ['text-quality-epic border-quality-epic', 'text-quality-rare bor
             <NuxtLink :to="localePath({ name: routeNameFor('index', mode), query: { classes: results.map(r => r.id).join(',') } })" class="wow-btn">
               ⚔ {{ $t('quiz.fightResult') }}
             </NuxtLink>
+            <ShareButton v-if="shareUrl" :url="shareUrl" :text="shareText" :label="$t('share.button')" content-type="quiz_result" :item-id="results[0].id" />
             <button class="wow-btn wow-btn-stone" @click="restart">{{ $t('quiz.restart') }}</button>
           </template>
         </div>

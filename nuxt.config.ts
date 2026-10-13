@@ -1,7 +1,15 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 import tailwindcss from '@tailwindcss/vite'
+import { classInfo } from './app/utils/classInfo'
+import { foreverClassInfo } from './app/utils/foreverInfo'
 
 const siteUrl = 'https://findyourmain.com'
+
+// Teilen-Seiten „Mein Main“ sind nirgends verlinkt, deshalb explizit vorrendern
+const shareRoutes = [
+  ...classInfo.flatMap(c => [`/mein-main/${c.slug.de}`, `/en/my-main/${c.slug.en}`]),
+  ...foreverClassInfo.flatMap(c => [`/forever/mein-main/${c.slug.de}`, `/en/forever/my-main/${c.slug.en}`])
+]
 
 export default defineNuxtConfig({
   compatibilityDate: '2026-10-13',
@@ -92,7 +100,7 @@ export default defineNuxtConfig({
     // Inhaltsseiten mit lastmod und Sprachalternativen (unterschiedliche Slugs je Sprache)
     sources: ['/api/__sitemap__/urls'],
     // Rechtstexte und Erfolge nicht in die Sitemap
-    exclude: ['/impressum', '/datenschutz', '/en/imprint', '/en/privacy', '/erfolge', '/en/achievements']
+    exclude: ['/impressum', '/datenschutz', '/en/imprint', '/en/privacy', '/erfolge', '/en/achievements', '/mein-main/**', '/en/my-main/**', '/forever/mein-main/**', '/en/forever/my-main/**']
   },
 
   content: {
@@ -118,7 +126,7 @@ export default defineNuxtConfig({
       // sonst leitet Netlify jede URL auf eine Variante mit Schrägstrich am Ende um
       autoSubfolderIndex: false,
       crawlLinks: true,
-      routes: ['/', '/en', '/forever', '/en/forever', '/robots.txt', '/sitemap_index.xml', '/llms.txt']
+      routes: ['/', '/en', '/forever', '/en/forever', '/robots.txt', '/sitemap_index.xml', '/llms.txt', ...shareRoutes]
     }
   },
 

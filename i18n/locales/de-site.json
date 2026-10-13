@@ -580,5 +580,23 @@
       "demonhunter": "Wirbelnder grüner Teufelssturm",
       "evoker": "Wolkenhimmel in Violett und Gold"
     }
+  },
+  "share": {
+    "button": "Ergebnis teilen",
+    "buttonArena": "Sieger teilen",
+    "copied": "Link kopiert!",
+    "textQuiz": "Thalgrim hat entschieden: Mein Main in {game} ist der {class}! Welche Klasse passt zu dir?",
+    "textArena": "Der {class} hat meine Arena gewonnen. Mein Main in {game} steht fest! Wer gewinnt bei dir?",
+    "title": "Mein Main in {game}: {class}",
+    "heading": "Mein Main: {class}",
+    "description": "Mein Main in {game} ist der {class}. Finde mit dem Klassen-Quiz oder in der Arena heraus, welche WoW-Klasse zu dir passt.",
+    "fromQuiz": "Thalgrim Eichenhorn hat entschieden: In dieser Person steckt ein echter {class}.",
+    "fromArena": "{name} der {class} hat sich in der Arena gegen alle anderen durchgesetzt.",
+    "fromArenaNoName": "Der {class} hat sich in der Arena gegen alle anderen durchgesetzt.",
+    "generic": "Hier hat jemand seinen Main gefunden: den {class}.",
+    "top3": "Die Top 3 aus dem Quiz",
+    "yourTurn": "Und welche Klasse passt zu dir?",
+    "ctaQuiz": "Klassen-Quiz starten",
+    "ctaArena": "Ab in die Arena"
   }
 }

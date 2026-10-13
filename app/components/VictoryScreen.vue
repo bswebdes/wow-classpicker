@@ -24,6 +24,11 @@ const classLink = (classId) => {
 }
 const className = (classId) => t(`classes.${classId}.name`)
 
+// Sieger teilen: Link auf die Seite „Mein Main“ mit dem Kämpfernamen
+const shareLink = useShareLink()
+const shareUrl = ref('')
+const shareText = computed(() => props.winner ? t('share.textArena', { class: className(props.winner.classId), game: props.mode === 'forever' ? 'WoW Forever' : 'WoW Midnight' }) : '')
+
 // Auszeichnungen für die besten Werte im Kampf (nur wenn jemand überhaupt etwas erreicht hat)
 const awards = computed(() => [
   { key: 'damage', field: 'damageDone' },
@@ -50,6 +55,7 @@ onMounted(() => {
   window.addEventListener('keydown', onKey)
   nextTick(() => dialogRef.value?.focus())
   if (props.winner) {
+    shareUrl.value = shareLink(props.winner.classId, props.mode, { from: 'arena', name: props.winner.name })
     trackEvent('battle_victory', { winner: props.winner.classId, game_mode: props.mode, rounds: props.rounds })
   }
 })
@@ -154,6 +160,7 @@ onMounted(() => {
       </section>
 
       <div class="mt-4 flex shrink-0 flex-wrap justify-center gap-3 sm:mt-6">
+        <ShareButton v-if="shareUrl" :url="shareUrl" :text="shareText" :label="$t('share.buttonArena')" content-type="arena_winner" :item-id="winner.classId" />
         <button class="wow-btn wow-btn-stone" @click="emit('again')">⚔ {{ $t('result.again') }}</button>
         <button class="wow-btn wow-btn-stone" @click="emit('close')">{{ $t('result.viewFight') }}</button>
       </div>

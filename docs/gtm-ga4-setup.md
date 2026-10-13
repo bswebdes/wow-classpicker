@@ -165,6 +165,9 @@ Für **jede Zeile** der Tabelle unten:
 | 17 | `DLV - from_language` | `from_language` |
 | 18 | `DLV - to_language` | `to_language` |
 | 19 | `DLV - question` | `question` |
+| 20 | `DLV - method` | `method` |
+| 21 | `DLV - content_type` | `content_type` |
+| 22 | `DLV - item_id` | `item_id` |
 
 > Tipp: Achte auf exakte Schreibweise, Groß-/Kleinschreibung und Unterstriche. Ein Tippfehler bedeutet: Der Wert kommt nie an.
 
@@ -194,7 +197,7 @@ Statt zwölf einzelner Trigger reicht einer:
 4. **Ereignisname** (genau so kopieren):
 
    ```
-   ^(battle_start|battle_victory|battle_reset|quiz_start|quiz_decline|quiz_complete|random_roll|result_class_click|achievement_unlocked|mode_switch|language_switch|faq_open)$
+   ^(battle_start|battle_victory|battle_reset|quiz_start|quiz_decline|quiz_complete|random_roll|result_class_click|achievement_unlocked|mode_switch|language_switch|faq_open|share)$
    ```
 
 5. Häkchen bei **Übereinstimmung mit regulärem Ausdruck verwenden**.
@@ -231,6 +234,9 @@ Statt zwölf einzelner Trigger reicht einer:
    | `from_language` | `{{DLV - from_language}}` |
    | `to_language` | `{{DLV - to_language}}` |
    | `question` | `{{DLV - question}}` |
+   | `method` | `{{DLV - method}}` |
+   | `content_type` | `{{DLV - content_type}}` |
+   | `item_id` | `{{DLV - item_id}}` |
 
    Keine Sorge: Parameter, die ein Ereignis nicht hat, werden einfach nicht mitgeschickt.
 
@@ -345,7 +351,7 @@ Die FAQ-Auswertung ist übrigens auch für SEO wertvoll: Häufig geöffnete Frag
 - [ ] Datenaufbewahrung 14 Monate
 - [ ] Google Signale aus, personalisierte Werbung aus, Datenfreigabe aus
 - [ ] Interner Traffic gefiltert (optional)
-- [ ] GTM: 19 Datenschichtvariablen, Variable „Event“ aktiviert
+- [ ] GTM: 22 Datenschichtvariablen, Variable „Event“ aktiviert
 - [ ] GTM: Tag `GA4 - Google-Tag` (Initialization - All Pages)
 - [ ] GTM: Trigger `CE - App Events` und Tag `GA4 - App Events`
 - [ ] In der Vorschau getestet (mit „Alle erlauben“) und in der DebugView gesehen
