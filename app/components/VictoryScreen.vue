@@ -7,12 +7,8 @@ const props = defineProps({
 const emit = defineEmits(['close'])
 
 onMounted(() => {
-  if (typeof window !== 'undefined' && window.umami && props.winner) {
-    window.umami.track('Battle - Victory', {
-      winner: props.winner.classId,
-      name: props.winner.name,
-      mode: props.mode
-    })
+  if (props.winner) {
+    trackEvent('battle_victory', { winner: props.winner.classId, game_mode: props.mode })
   }
 })
 </script>
@@ -30,7 +26,7 @@ onMounted(() => {
         <p class="mt-1 font-display text-2xl font-bold" :class="`text-c-${winner.classId}`">{{ winner.name }}</p>
         <p v-if="winner.name !== winner.className" class="text-sm font-bold uppercase text-neutral-500">{{ $t(`classes.${winner.classId}.name`) }}</p>
       </div>
-      <button class="wow-btn wow-btn-lg mt-8 w-full" data-umami-event="Victory - Play Again" @click="emit('close')">
+      <button class="wow-btn wow-btn-lg mt-8 w-full" @click="emit('close')">
         {{ $t('victory.again') }}
       </button>
     </div>

@@ -73,25 +73,21 @@ const onSelectionIntroFinished = () => {
   showSelectionIntro.value = false
 }
 
-const track = (event, data) => {
-  if (typeof window !== 'undefined' && window.umami) window.umami.track(event, data)
-}
-
 const handleStart = () => {
   if (selectedClasses.value.size < 2) {
     alert(t('minTwoClasses'))
     return
   }
-  track('Battle - Start', {
-    classesCount: selectedClasses.value.size,
+  trackEvent('battle_start', {
+    class_count: selectedClasses.value.size,
     classes: Array.from(selectedClasses.value).join(','),
-    mode: props.mode
+    game_mode: props.mode
   })
   showBattleIntro.value = true
 }
 
 const handleReset = () => {
-  track('Battle - Reset')
+  trackEvent('battle_reset', { game_mode: props.mode })
   resetBattle()
   // kurze Verzögerung, damit UI zurückspringt, dann Intro zeigen
   setTimeout(() => { showSelectionIntro.value = true }, 50)

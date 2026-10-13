@@ -54,9 +54,7 @@ const roll = async () => {
   }
   result.value = pick()
   rolling.value = false
-  if (typeof window !== 'undefined' && window.umami) {
-    window.umami.track('Random - Roll', { class: result.value.classId, spec: result.value.spec.id, race: result.value.race?.id, mode: props.mode })
-  }
+  trackEvent('random_roll', { class_id: result.value.classId, spec: result.value.spec.id, race: result.value.race?.id, game_mode: props.mode })
 }
 
 const resultInfo = computed(() => result.value ? getClassInfo(result.value.classId, props.mode) : null)

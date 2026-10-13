@@ -22,13 +22,6 @@ export default defineNuxtConfig({
       ],
       link: [
         { rel: 'icon', type: 'image/png', href: '/favicon.png' }
-      ],
-      script: [
-        {
-          src: 'https://stats.frysch.studio/script.js',
-          defer: true,
-          'data-website-id': 'f2e035dd-e124-4dcc-8d4b-728a20d74205'
-        }
       ]
     }
   },

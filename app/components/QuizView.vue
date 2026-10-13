@@ -32,15 +32,13 @@ const current = computed(() => questions.value[step.value])
 const finished = computed(() => step.value >= questions.value.length)
 const results = computed(() => finished.value ? scoreQuiz(answers, props.mode).slice(0, 3) : [])
 
-const track = (event, data) => {
-  if (typeof window !== 'undefined' && window.umami) window.umami.track(event, { ...data, mode: props.mode })
-}
+const track = (event, data = {}) => trackEvent(event, { ...data, game_mode: props.mode })
 
 const answer = (option) => {
   answers[current.value.id] = option
   step.value++
   if (finished.value) {
-    track('Quiz - Finished', { top: results.value.map(r => r.id).join(',') })
+    track('quiz_complete', { top_classes: results.value.map(r => r.id).join(',') })
   }
 }
 
@@ -56,7 +54,7 @@ const restart = () => {
 
 const start = () => {
   started.value = true
-  track('Quiz - Start')
+  track('quiz_start')
 }
 </script>
 

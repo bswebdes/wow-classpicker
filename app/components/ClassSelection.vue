@@ -26,13 +26,13 @@ const getPlayerIndex = (id) => {
     <div class="wow-divider !my-4" />
 
     <div class="flex justify-center flex-wrap gap-3 mb-6">
-      <button class="wow-btn wow-btn-sm" :disabled="isBattleInProgress" data-umami-event="Selection - Select All" @click="emit('selectAll')">
+      <button class="wow-btn wow-btn-sm" :disabled="isBattleInProgress" @click="emit('selectAll')">
         {{ $t('selection.allIn') }}
       </button>
-      <button class="wow-btn wow-btn-sm wow-btn-stone" :disabled="isBattleInProgress" data-umami-event="Selection - Clear All" @click="emit('deselectAll')">
+      <button class="wow-btn wow-btn-sm wow-btn-stone" :disabled="isBattleInProgress" @click="emit('deselectAll')">
         {{ $t('selection.clear') }}
       </button>
-      <button class="wow-btn wow-btn-sm wow-btn-stone" :disabled="isBattleInProgress" data-umami-event="Selection - Randomize All Names" @click="emit('randomize-all')">
+      <button class="wow-btn wow-btn-sm wow-btn-stone" :disabled="isBattleInProgress" @click="emit('randomize-all')">
         🎲 {{ $t('selection.randomNames') }}
       </button>
     </div>
@@ -49,8 +49,6 @@ const getPlayerIndex = (id) => {
           :class="selectedClasses.has(id) ? 'is-selected' : 'grayscale-[85%] opacity-70 hover:grayscale-0 hover:opacity-100'"
           :aria-pressed="selectedClasses.has(id)"
           :aria-label="$t(`classes.${id}.name`)"
-          data-umami-event="Selection - Toggle Class"
-          :data-umami-event-class="id"
           @click="emit('toggle', id)"
         >
           <img :src="data.icon" :alt="$t(`classes.${id}.name`)" width="72" height="72" class="h-full w-full object-cover" />
@@ -76,8 +74,6 @@ const getPlayerIndex = (id) => {
           <button
             class="shrink-0 rounded-[3px] border border-gold-border/60 bg-black/70 px-1 text-[12px] hover:border-gold"
             :aria-label="$t('selection.randomNames')"
-            data-umami-event="Selection - Randomize Single Name"
-            :data-umami-event-class="id"
             @click="emit('randomize-name', id)"
           >🎲</button>
         </div>

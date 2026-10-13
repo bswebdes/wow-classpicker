@@ -61,7 +61,6 @@ const modes = computed(() => [
               : 'border-neutral-700 bg-neutral-900/80 text-neutral-400 hover:text-gold-light'"
             :aria-current="mode === m.id ? 'page' : undefined"
             :title="m.label + ' · ' + m.sub"
-            :data-umami-event="'Mode - ' + m.id"
           >
             <GameLogo :mode="m.id" :width="64" eager :class="mode === m.id ? '' : 'opacity-60 grayscale-[60%]'" />
             <span class="font-display text-[11px] font-bold uppercase tracking-widest">{{ m.label }}</span>

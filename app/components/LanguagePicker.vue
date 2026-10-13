@@ -12,8 +12,6 @@ const { locale, locales } = useI18n()
       :class="locale === l.code ? 'ring-2 ring-gold' : 'opacity-60 hover:opacity-100'"
       :title="l.name"
       :aria-label="l.name"
-      data-umami-event="Language - Change"
-      :data-umami-event-lang="l.code"
     >
       <svg v-if="l.code === 'de'" class="w-6 h-4 shadow-xs" viewBox="0 0 5 3">
         <rect width="5" height="3" y="0" fill="#000"/>

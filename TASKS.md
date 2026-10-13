@@ -12,6 +12,7 @@ Stand: 13.10.2026 · Branch `chore/upgrade-nuxt4` (nicht gepusht)
 - [x] Schriften selbst gehostet (`@nuxt/fonts`), keine Google-Fonts-Requests mehr
 - [x] Spiellogos über `@nuxt/image` als kleine WebP-Dateien, Originale nicht ausgeliefert
 - [x] Hartcodierte deutsche Kampftexte in i18n verschoben
+- [x] Umami-Tracking entfernt. Events (`battle_start`, `battle_victory`, `battle_reset`, `quiz_start`, `quiz_complete`, `random_roll`) laufen über `trackEvent()` in den `dataLayer` und sind für GTM/GA4 vorbereitet
 
 ### Design
 - [x] Classic-WoW-Look: Goldrahmen, Ingame-Buttons, Tooltip-Boxen, Pergament für Texte
@@ -38,10 +39,21 @@ Stand: 13.10.2026 · Branch `chore/upgrade-nuxt4` (nicht gepusht)
 ## 🔲 Offen
 
 ### Muss vor dem Go-live
-- [ ] **Eigenes Impressum und eigene Datenschutzerklärung** (aktuell verlinkt der Footer auf frysch.studio). Datenschutz muss Umami-Tracking und Netlify-Hosting abdecken
+- [ ] **Eigene Top-Level-Domain** statt `wow-classpicker.netlify.app`
+  - Domain auswählen und registrieren. Achtung: Laut Blizzard Legal FAQ sind Domains mit Teilen von Produktnamen nicht erlaubt (Beispiel dort: „star-craft.com“). „warcraft“ also meiden, „wow“ ist ein Grenzfall und vor dem Kauf abzuwägen
+  - In Netlify als Primary Domain eintragen, HTTPS aktivieren, `netlify.app` per 301 auf die neue Domain weiterleiten
+  - `siteUrl` in `nuxt.config.ts` umstellen (steuert Canonical, hreflang, Sitemap, OG-Bilder, `llms.txt`, Schema.org)
+  - Google Search Console: neue Property anlegen, Adressänderung melden, Sitemap einreichen
+- [ ] **Cookie-Banner mit Google Tag Manager und GA4** (Setup wie auf frysch.studio)
+  - vanilla-cookieconsent v3, Opt-in, Cookie `cc_cookie`, schwebender Button zum erneuten Öffnen der Einstellungen
+  - GTM erst nach Einwilligung laden, Dienste-Beschreibung (GA4, Anbieter, Cookies `_ga`/`_ga_*`, Laufzeit) als Konfiguration
+  - Google Consent Mode v2 (Standard: alles `denied`, Update bei Zustimmung)
+  - Banner-Texte DE/EN, Design passend zum Classic-Look
+  - In GTM die vorhandenen `dataLayer`-Events als GA4-Events anlegen
+- [ ] **Eigenes Impressum und eigene Datenschutzerklärung** (aktuell verlinkt der Footer auf frysch.studio). Datenschutz muss GTM/GA4 inkl. Consent, Netlify-Hosting und selbst gehostete Schriften abdecken
 - [ ] Betreiber-Angabe auf der Über-uns-Seite final festlegen (aktuell „frysch.studio, das Webstudio von Benny Schey“)
 - [ ] Lokal testen, dann pushen (Netlify deployt automatisch)
-- [ ] Sitemap `/sitemap_index.xml` in der Google Search Console einreichen (alte Sitemap zeigte auf eine Vercel-Domain)
+- [ ] Sitemap `/sitemap_index.xml` in der Google Search Console einreichen (alte Sitemap zeigte auf eine Vercel-Domain, nach dem Domainwechsel für die neue Property)
 
 ### Zeitkritisch
 - [ ] Nach dem Forever-Start am 4.11.2026: Forever-Fakten prüfen (Meilenstein-Talente, Skyborne-Fraktionen „High Order“/„Windshaper“, Talentbaum-Namen), `updated`-Datum setzen
@@ -65,7 +77,6 @@ Stand: 13.10.2026 · Branch `chore/upgrade-nuxt4` (nicht gepusht)
 - [ ] Prüfen, ob ChatGPT/Perplexity die Seite bei „welche WoW Klasse passt zu mir“ nennen
 
 ### Reichweite
-- [ ] Eigene Domain statt `netlify.app`-Subdomain (z. B. `classpicker.frysch.studio`)
 - [ ] Quiz-Ergebnis teilbar machen (eigene URL + OG-Bild mit Top 3)
 - [ ] Arena-Sieger teilbar machen („Mein Main für Forever ist …“)
 - [ ] In Communitys teilen: r/wow, r/wownoob, r/classicwow, Discord, Gilden-Seiten
