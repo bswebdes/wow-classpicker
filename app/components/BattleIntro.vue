@@ -23,6 +23,11 @@ watch(() => props.show, (newVal) => {
 }, { immediate: true })
 
 async function runSequence() {
+  // Bei „Bewegung reduzieren“ kein Intro
+  if (window.matchMedia?.('(prefers-reduced-motion: reduce)').matches) {
+    emit('finished')
+    return
+  }
   visible.value = true
   
   if (props.mode === 'selection') {

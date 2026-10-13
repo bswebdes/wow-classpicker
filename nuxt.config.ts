@@ -42,7 +42,7 @@ export default defineNuxtConfig({
   },
 
   // Reihenfolge wichtig: @nuxtjs/sitemap muss vor @nuxt/content geladen werden
-  modules: ['@nuxtjs/i18n', '@nuxt/fonts', '@nuxtjs/robots', '@nuxtjs/sitemap', 'nuxt-schema-org', 'nuxt-og-image', 'nuxt-ai-ready', '@nuxt/image', '@nuxt/content'],
+  modules: ['@nuxtjs/i18n', '@nuxt/fonts', '@nuxtjs/robots', '@nuxtjs/sitemap', 'nuxt-schema-org', 'nuxt-og-image', 'nuxt-ai-ready', '@nuxt/image', '@nuxt/a11y', '@nuxt/content'],
 
   site: {
     url: siteUrl,

@@ -7,7 +7,10 @@
     "random": "Zufallsklasse",
     "menu": "Menü",
     "gameMode": "Spiel wählen",
-    "about": "Über uns"
+    "about": "Über uns",
+    "skip": "Zum Inhalt springen",
+    "openMenu": "Menü öffnen",
+    "closeMenu": "Menü schließen"
   },
   "footer": {
     "tagline": "Find Your Main ist der WoW Class Picker für deine Klassenwahl in World of Warcraft: Midnight und WoW Forever. Mit Arena-Kampf, Quiz und Zufallsgenerator.",
@@ -197,7 +200,8 @@
   "fighter": {
     "hp": "Lebenspunkte",
     "crit": "+{value} % kritische Trefferchance",
-    "dodge": "+{value} % Ausweichchance"
+    "dodge": "+{value} % Ausweichchance",
+    "rerollName": "Neuer Zufallsname für {class}"
   },
   "classFaq": {
     "rolesQ": "Welche Rollen kann der {class} in {game} spielen?",

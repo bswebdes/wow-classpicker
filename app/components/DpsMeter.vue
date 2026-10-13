@@ -29,7 +29,7 @@ const maxHealing = computed(() => Math.max(1, ...healingRanking.value.map(e => e
 
 <template>
   <!-- Damage-Meter im Stil bekannter Addons -->
-  <div class="rounded-md border border-gold-border/50 bg-black/60 text-left">
+  <div class="h-full rounded-md border border-gold-border/50 bg-black/60 text-left">
     <div class="border-b border-gold-border/40 bg-black/50 px-3 py-1 font-display text-[12px] font-bold uppercase tracking-wider text-gold">{{ $t('meter.performance') }}</div>
     <div class="grid grid-cols-1 gap-4 p-3 md:grid-cols-2">
       <div v-for="meter in [{ key: 'd', title: $t('meter.totalDamage'), list: damageRanking, field: 'damage', max: maxDamage }, { key: 'h', title: $t('meter.totalHealing'), list: healingRanking, field: 'healing', max: maxHealing }]" :key="meter.key">

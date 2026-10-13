@@ -170,10 +170,18 @@ export const useBattle = () => {
   const selectedClasses = ref(new Set())
   const customNames = reactive({})
 
-  // Initialize with some random names for default selected classes
+  // Zufallsname, den gerade kein anderer Kämpfer trägt (sonst weiß man im Log nicht, wer wer ist)
+  const getRandomName = (exceptId) => {
+    const taken = new Set(Object.entries(customNames).filter(([id]) => id !== exceptId).map(([, name]) => name))
+    const free = randomNames.filter(name => !taken.has(name))
+    const pool = free.length ? free : randomNames
+    return pool[Math.floor(Math.random() * pool.length)]
+  }
+
+  // Startnamen für alle Klassen, jeweils eindeutig
   Object.keys(classData).forEach(id => {
     if (!customNames[id]) {
-      customNames[id] = randomNames[Math.floor(Math.random() * randomNames.length)]
+      customNames[id] = getRandomName(id)
     }
   })
 
@@ -186,12 +194,8 @@ export const useBattle = () => {
   const rounds = ref(0)
   const ranking = ref([])
 
-  const getRandomName = () => {
-    return randomNames[Math.floor(Math.random() * randomNames.length)]
-  }
-
   const randomizeName = (id) => {
-    customNames[id] = getRandomName()
+    customNames[id] = getRandomName(id)
   }
 
   const randomizeAllNames = () => {
@@ -384,7 +388,7 @@ export const useBattle = () => {
     } else {
       selectedClasses.value.add(id)
       if (!customNames[id]) {
-        customNames[id] = getRandomName()
+        customNames[id] = getRandomName(id)
       }
     }
     // Vue 3 Set reactivity fix (triggering manual update or use array)
@@ -395,7 +399,7 @@ export const useBattle = () => {
     selectedClasses.value = new Set(ids)
     selectedClasses.value.forEach(id => {
       if (!customNames[id]) {
-        customNames[id] = getRandomName()
+        customNames[id] = getRandomName(id)
       }
     })
   }

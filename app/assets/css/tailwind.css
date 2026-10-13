@@ -38,6 +38,22 @@
       radial-gradient(ellipse at bottom, rgba(30, 80, 50, 0.14), transparent 60%);
   }
   h1, h2, h3 { @apply font-display; }
+
+  /* Gut sichtbarer Tastatur-Fokus */
+  :focus-visible {
+    outline: 2px solid var(--color-gold);
+    outline-offset: 2px;
+  }
+
+  /* Bewegung reduzieren, wenn im System eingestellt */
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
 }
 
 @layer components {
@@ -136,6 +152,16 @@
     background: rgba(255, 209, 0, 0.06);
     border-left: 3px solid var(--color-gold);
   }
+
+  /* Schmale Scrollbar im Gold-Look (Kampflog, Tabellen) */
+  .wow-scroll {
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-gold-border) rgba(0, 0, 0, 0.4);
+  }
+  .wow-scroll::-webkit-scrollbar { width: 8px; height: 8px; }
+  .wow-scroll::-webkit-scrollbar-track { background: rgba(0, 0, 0, 0.4); }
+  .wow-scroll::-webkit-scrollbar-thumb { background: var(--color-gold-border); border-radius: 4px; }
+  .wow-scroll::-webkit-scrollbar-thumb:hover { background: var(--color-gold-dark); }
 
   .wow-link { @apply text-gold underline decoration-gold/40 underline-offset-2 hover:decoration-gold; }
 }

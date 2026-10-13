@@ -38,7 +38,14 @@ const awards = computed(() => [
 
 const medal = { 1: 'text-[#ffd100] border-[#ffd100]', 2: 'text-[#d8d8e0] border-[#b8b8c8]', 3: 'text-[#e0a060] border-[#b87333]' }
 
+// Fokus in den Dialog, Escape schließt ihn
+const dialogRef = ref(null)
+const onKey = (e) => { if (e.key === 'Escape') emit('close') }
+onBeforeUnmount(() => window.removeEventListener('keydown', onKey))
+
 onMounted(() => {
+  window.addEventListener('keydown', onKey)
+  nextTick(() => dialogRef.value?.focus())
   if (props.winner) {
     trackEvent('battle_victory', { winner: props.winner.classId, game_mode: props.mode, rounds: props.rounds })
   }
@@ -47,7 +54,7 @@ onMounted(() => {
 
 <template>
   <div v-if="winner" class="fixed inset-0 z-50 overflow-y-auto bg-black/85 p-4 backdrop-blur-xs" role="dialog" aria-modal="true" :aria-label="$t('victory.champion')">
-    <div id="victory-screen" class="wow-frame mx-auto my-6 w-full max-w-2xl !border-gold animate-[victory-pop_0.4s_ease-out]">
+    <div id="victory-screen" ref="dialogRef" tabindex="-1" class="outline-none wow-frame mx-auto my-6 w-full max-w-2xl !border-gold animate-[victory-pop_0.4s_ease-out]">
       <button class="absolute right-3 top-2 text-2xl leading-none text-neutral-400 hover:text-gold" :aria-label="$t('result.close')" @click="emit('close')">×</button>
 
       <header class="text-center">
@@ -112,7 +119,7 @@ onMounted(() => {
           </li>
         </ul>
 
-        <div class="mt-3 overflow-x-auto rounded-md border border-gold-border/50">
+        <div class="mt-3 wow-scroll overflow-x-auto rounded-md border border-gold-border/50" tabindex="0" role="region" :aria-label="$t('result.statsTitle')">
           <table class="w-full text-left text-[14px]">
             <thead class="bg-black/50 font-display text-[12px] uppercase tracking-wide text-gold">
               <tr>

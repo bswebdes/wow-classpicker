@@ -77,6 +77,15 @@ Stand: 13.10.2026 · live auf [findyourmain.com](https://findyourmain.com), Bran
 - [x] Name bleibt nach außen „Klassen-Quiz“ (Suchbegriff „wow class quiz“), die Quest ist die Darstellung im Fenster
 - [ ] Idee: Thalgrim auch an anderen Stellen auftauchen lassen (z. B. Tipps auf Klassenseiten, 404-Seite)
 
+### Mobil & Barrierefreiheit
+- [x] Mobile Navigation neu: kompakter Header mit Menü-Button, Retail/Forever als zwei gleich breite Reiter, aufklappbares Menü (schließt bei Seitenwechsel und mit Escape)
+- [x] axe-core-Audit (WCAG 2.1 AA + Best Practices) über 14 Seiten Desktop und Mobil: 0 Verstöße
+- [x] „Zum Inhalt springen“-Link, sichtbarer Tastatur-Fokus, „Bewegung reduzieren“ wird respektiert (keine Intros/Animationen)
+- [x] Siegerauswertung: Fokus springt in den Dialog, Escape schließt; scrollbare Tabellen per Tastatur erreichbar; Würfel-Buttons eindeutig beschriftet
+- [x] `@nuxt/a11y` (Alpha) als Entwicklungshilfe, nur im Dev-Server aktiv
+- [x] Kampflog füllt den Kasten neben dem Damage-Meter, schmale Scrollbar im Gold-Look
+- [x] Zufallsnamen der Kämpfer sind jetzt eindeutig (vorher teils doppelt)
+
 ### Erfolge
 - [x] 13 Erfolge (u. a. Klassentourist, Mrglglgl!, Das Kleingedruckte, Nachtschwärmer), Popup im WoW-Stil unten mittig, Erfolgsliste unter `/erfolge` (nur im Footer verlinkt, `noindex`)
 - [x] Ohne Einwilligung nur für den aktuellen Besuch, mit „Erfolge speichern“ dauerhaft im localStorage, beim Widerruf gelöscht

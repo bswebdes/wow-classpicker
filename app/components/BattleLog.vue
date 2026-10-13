@@ -16,9 +16,11 @@ watch(() => props.logEntries.length, () => {
 
 <template>
   <!-- Kampflog im Stil des Chatfensters -->
-  <div class="rounded-md border border-gold-border/50 bg-black/60 text-left">
+  <div class="flex h-full flex-col rounded-md border border-gold-border/50 bg-black/60 text-left">
     <div class="border-b border-gold-border/40 bg-black/50 px-3 py-1 font-display text-[12px] font-bold uppercase tracking-wider text-gold">{{ $t('battle.logTitle') }}</div>
-    <div ref="logRef" id="battle-log" class="h-44 overflow-y-auto px-3 py-2 text-[14px] leading-snug text-[#ffd100]/90" aria-live="polite">
+    <!-- Füllt immer den ganzen Kasten (gleich hoch wie das Damage-Meter daneben), scrollt innen -->
+    <div class="relative min-h-44 flex-1">
+    <div ref="logRef" id="battle-log" class="wow-scroll absolute inset-0 overflow-y-auto px-3 py-2 text-[14px] leading-snug text-[#ffd100]/90" tabindex="0" role="region" :aria-label="$t('battle.logTitle')">
       <p v-if="!logEntries.length" class="italic text-neutral-500">{{ $t('battle.logEmpty') }}</p>
       <div
         v-for="entry in logEntries"
@@ -32,6 +34,7 @@ watch(() => props.logEntries.length, () => {
         }"
         v-html="entry.message"
       ></div>
+    </div>
     </div>
   </div>
 </template>

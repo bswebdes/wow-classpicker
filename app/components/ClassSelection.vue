@@ -73,7 +73,7 @@ const getPlayerIndex = (id) => {
           />
           <button
             class="shrink-0 rounded-[3px] border border-gold-border/60 bg-black/70 px-1 text-[12px] hover:border-gold"
-            :aria-label="$t('selection.randomNames')"
+            :aria-label="$t('fighter.rerollName', { class: $t(`classes.${id}.name`) })"
             @click="emit('randomize-name', id)"
           >🎲</button>
         </div>

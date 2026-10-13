@@ -33,6 +33,15 @@ const switchTarget = (target) => {
   return localePath(routeNameFor(base, target))
 }
 
+// Mobiles Menü: schließt bei Seitenwechsel und mit Escape
+const menuOpen = ref(false)
+watch(() => route.fullPath, () => { menuOpen.value = false })
+onMounted(() => {
+  window.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') menuOpen.value = false
+  })
+})
+
 const modes = computed(() => [
   { id: 'retail', label: 'Retail', sub: 'Midnight', to: switchTarget('retail') },
   { id: 'forever', label: 'Forever', sub: 'Classic+', to: switchTarget('forever') }
@@ -41,19 +50,18 @@ const modes = computed(() => [
 
 <template>
   <div class="min-h-screen flex flex-col">
-    <header class="md:sticky md:top-0 z-40 border-b-2 border-gold-border/70 bg-[#0b0805]/90 backdrop-blur-sm shadow-[0_4px_16px_rgba(0,0,0,0.7)]">
-      <div class="max-w-6xl w-[92%] mx-auto flex flex-wrap items-center justify-between gap-x-6 gap-y-3 pt-3">
-        <NuxtLink :to="localePath(routeName('index'))" class="flex items-center gap-3 pb-3" aria-label="Find Your Main">
-          <SiteLogo :mode="mode" />
+    <!-- Tastatur: direkt zum Inhalt springen -->
+    <a href="#inhalt" class="sr-only focus:not-sr-only focus:fixed focus:left-3 focus:top-3 focus:z-[100] focus:rounded-[4px] focus:border-2 focus:border-gold focus:bg-black focus:px-4 focus:py-2 focus:font-display focus:font-bold focus:text-gold">{{ $t('nav.skip') }}</a>
+
+    <header class="md:sticky md:top-0 z-40 border-b-2 border-gold-border/70 bg-[#0b0805]/95 backdrop-blur-sm shadow-[0_4px_16px_rgba(0,0,0,0.7)]">
+      <div class="max-w-6xl w-[92%] mx-auto flex items-center justify-between gap-x-6 pt-3 max-md:pb-3">
+        <NuxtLink :to="localePath(routeName('index'))" class="flex items-center md:pb-3" aria-label="Find Your Main">
+          <span class="md:hidden"><SiteLogo :mode="mode" small /></span>
+          <span class="hidden md:block"><SiteLogo :mode="mode" /></span>
         </NuxtLink>
 
-        <!-- Umschalter Retail / Forever im Stil der Reiter am Charakterfenster -->
-        <div class="flex items-end gap-3 self-end">
-        <div class="mb-2 flex items-center gap-2 md:hidden">
-          <ClientOnly><AchievementCounter /></ClientOnly>
-          <LanguagePicker class="flex" />
-        </div>
-        <nav :aria-label="$t('nav.gameMode')" class="flex items-end gap-1">
+        <!-- Desktop: Umschalter Retail / Forever im Stil der Reiter am Charakterfenster -->
+        <nav :aria-label="$t('nav.gameMode')" class="hidden items-end gap-1 self-end md:flex">
           <NuxtLink
             v-for="m in modes"
             :key="m.id"
@@ -70,12 +78,77 @@ const modes = computed(() => [
             <span class="font-display text-[11px] font-bold uppercase tracking-widest">{{ m.label }}</span>
           </NuxtLink>
         </nav>
+
+        <!-- Mobil: Erfolge und Menü-Button -->
+        <div class="flex items-center gap-2 md:hidden">
+          <ClientOnly><AchievementCounter /></ClientOnly>
+          <button
+            type="button"
+            class="flex h-10 w-10 items-center justify-center rounded-[4px] border border-gold-border/70 bg-black/60 text-gold"
+            :aria-expanded="menuOpen"
+            aria-controls="mobile-menu"
+            :aria-label="menuOpen ? $t('nav.closeMenu') : $t('nav.openMenu')"
+            @click="menuOpen = !menuOpen"
+          >
+            <svg v-if="!menuOpen" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" /></svg>
+            <svg v-else viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" /></svg>
+          </button>
         </div>
       </div>
 
-      <div class="border-t border-gold-border/40 bg-black/50">
+      <!-- Mobil: Spielmodus immer sichtbar, zwei gleich breite Reiter -->
+      <nav :aria-label="$t('nav.gameMode')" class="grid grid-cols-2 gap-1.5 px-3 md:hidden">
+        <NuxtLink
+          v-for="m in modes"
+          :key="m.id"
+          :to="m.to"
+          class="flex items-center justify-center gap-2 rounded-t-md border-2 border-b-0 py-1.5"
+          :class="mode === m.id
+            ? 'border-gold-border bg-gradient-to-b from-[#3a2a12] to-[#1a120a] text-gold'
+            : 'border-neutral-700 bg-neutral-900/80 text-neutral-400'"
+          :aria-current="mode === m.id ? 'page' : undefined"
+          @click="mode !== m.id && trackEvent('mode_switch', { from_mode: mode, to_mode: m.id })"
+        >
+          <GameLogo :mode="m.id" :height="30" eager :class="mode === m.id ? '' : 'opacity-60 grayscale-[60%]'" />
+          <span class="flex flex-col leading-tight">
+            <span class="font-display text-[13px] font-bold uppercase tracking-wider">{{ m.label }}</span>
+            <span class="text-[11px] uppercase tracking-widest opacity-70">{{ m.sub }}</span>
+          </span>
+        </NuxtLink>
+      </nav>
+
+      <!-- Mobil: aufklappbares Menü -->
+      <div v-if="menuOpen" id="mobile-menu" class="border-t border-gold-border/60 bg-[#0b0805] md:hidden">
+        <nav :aria-label="$t('nav.menu')">
+          <ul>
+            <li v-for="item in navItems" :key="item.to">
+              <NuxtLink
+                :to="item.to"
+                class="flex items-center justify-between border-b border-white/5 px-5 py-3.5 font-display text-[17px] font-semibold text-neutral-200"
+                active-class="!text-gold bg-gold/5"
+              >
+                {{ item.label }}
+                <span class="text-gold-dark" aria-hidden="true">›</span>
+              </NuxtLink>
+            </li>
+            <li>
+              <NuxtLink :to="localePath('erfolge')" class="flex items-center justify-between border-b border-white/5 px-5 py-3.5 font-display text-[17px] font-semibold text-neutral-200" active-class="!text-gold bg-gold/5">
+                {{ $t('footer.achievements') }}
+                <span class="text-gold-dark" aria-hidden="true">›</span>
+              </NuxtLink>
+            </li>
+          </ul>
+        </nav>
+        <div class="flex items-center justify-between gap-3 px-5 py-3">
+          <LanguagePicker class="flex" />
+          <button class="text-[15px] text-neutral-400 underline underline-offset-2" @click="$showCookieSettings?.()">{{ $t('footer.cookies') }}</button>
+        </div>
+      </div>
+
+      <!-- Desktop: Hauptnavigation -->
+      <div class="hidden border-t border-gold-border/40 bg-black/50 md:block">
         <div class="max-w-6xl w-[92%] mx-auto flex flex-wrap items-center justify-between gap-3 py-2">
-          <nav :aria-label="$t('nav.menu')" class="-mx-1 flex flex-nowrap items-center gap-x-5 overflow-x-auto px-1 font-display text-[15px] font-semibold whitespace-nowrap md:flex-wrap">
+          <nav :aria-label="$t('nav.menu')" class="flex flex-wrap items-center gap-x-5 font-display text-[15px] font-semibold">
             <NuxtLink
               v-for="item in navItems"
               :key="item.to"
@@ -86,7 +159,7 @@ const modes = computed(() => [
               {{ item.label }}
             </NuxtLink>
           </nav>
-          <div class="hidden items-center gap-3 md:flex">
+          <div class="flex items-center gap-3">
             <ClientOnly><AchievementCounter /></ClientOnly>
             <LanguagePicker class="flex" />
           </div>
@@ -94,7 +167,7 @@ const modes = computed(() => [
       </div>
     </header>
 
-    <div class="flex-1">
+    <div id="inhalt" class="flex-1" tabindex="-1">
       <slot />
     </div>
 

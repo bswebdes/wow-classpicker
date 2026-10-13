@@ -27,5 +27,8 @@
     "vanilla-cookieconsent": "^3.1.0",
     "vue": "^3.5.44",
     "vue-router": "^5.4.0"
+  },
+  "devDependencies": {
+    "@nuxt/a11y": "^1.0.0-alpha.1"
   }
 }

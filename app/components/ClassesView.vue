@@ -40,7 +40,7 @@ const factions = ['alliance', 'horde']
     </div>
 
     <h2 class="wow-title mt-14 text-2xl">{{ $t('classesPage.tableTitle') }}</h2>
-    <div class="wow-frame mt-4 overflow-x-auto !p-0">
+    <div class="wow-frame mt-4 wow-scroll overflow-x-auto !p-0" tabindex="0" role="region" :aria-label="$t('classesPage.tableTitle')">
       <table class="w-full text-left text-[15px]">
         <thead class="border-b border-gold-border/60 font-display text-gold">
           <tr>
@@ -72,7 +72,7 @@ const factions = ['alliance', 'horde']
     <template v-if="mode === 'forever'">
       <h2 id="voelker" class="wow-title mt-14 text-2xl">{{ $t('forever.classes.matrixTitle') }}</h2>
       <p class="mt-3 max-w-3xl text-neutral-300">{{ $t('forever.classes.matrixIntro', { count: foreverComboCount }) }}</p>
-      <div class="wow-frame mt-4 overflow-x-auto !p-0">
+      <div class="wow-frame mt-4 wow-scroll overflow-x-auto !p-0" tabindex="0" role="region" :aria-label="$t('forever.classes.matrixTitle')">
         <table class="w-full text-center text-[14px]">
           <thead class="border-b border-gold-border/60">
             <tr>
