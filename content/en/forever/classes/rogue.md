@@ -9,7 +9,7 @@ updated: "2026-10-13"
 
 ## Playstyle
 
-The Rogue sneaks up in [**Stealth**](https://www.wowhead.com/classic/spell=1784){target="_blank" rel="noopener"}, opens with a surprise attack and uses **Energy** and **Combo Points** to build toward strong finishers. [**Sap**](https://www.wowhead.com/classic/spell=6770){target="_blank" rel="noopener"}, [**Blind**](https://www.wowhead.com/classic/spell=2094){target="_blank" rel="noopener"} and [**Vanish**](https://www.wowhead.com/classic/spell=1856){target="_blank" rel="noopener"} let it control the fight, and it also has **poisons**, pickpocketing and lockpicking.
+The Rogue sneaks up in [**Stealth**](https://www.wowhead.com/forever/spell=1784){target="_blank" rel="noopener"}, opens with a surprise attack and uses **Energy** and **Combo Points** to build toward strong finishers. [**Sap**](https://www.wowhead.com/forever/spell=6770){target="_blank" rel="noopener"}, [**Blind**](https://www.wowhead.com/forever/spell=2094){target="_blank" rel="noopener"} and [**Vanish**](https://www.wowhead.com/forever/spell=1856){target="_blank" rel="noopener"} let it control the fight, and it also has **poisons**, pickpocketing and lockpicking.
 
 ## Talent trees
 

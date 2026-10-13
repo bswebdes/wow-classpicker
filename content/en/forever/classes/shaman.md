@@ -9,7 +9,7 @@ updated: "2026-10-13"
 
 ## Playstyle
 
-The Shaman places **totems** of the four elements that empower the group or hinder enemies. It heals with [**Chain Heal**](https://www.wowhead.com/classic/spell=1064){target="_blank" rel="noopener"}, throws lightning and empowers its weapon, for example with [**Windfury Weapon**](https://www.wowhead.com/classic/spell=8232){target="_blank" rel="noopener"}. [**Reincarnation**](https://www.wowhead.com/classic/spell=20608){target="_blank" rel="noopener"} lets it bring itself back to life.
+The Shaman places **totems** of the four elements that empower the group or hinder enemies. It heals with [**Chain Heal**](https://www.wowhead.com/forever/spell=1064){target="_blank" rel="noopener"}, throws lightning and empowers its weapon, for example with [**Windfury Weapon**](https://www.wowhead.com/forever/spell=8232){target="_blank" rel="noopener"}. [**Reincarnation**](https://www.wowhead.com/forever/spell=20608){target="_blank" rel="noopener"} lets it bring itself back to life.
 
 ## Talent trees
 

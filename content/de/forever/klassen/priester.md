@@ -9,7 +9,7 @@ updated: "2026-10-13"
 
 ## Spielweise
 
-Der Priester heilt mit großen Heilzaubern, schützt mit [**Machtwort: Schild**](https://www.wowhead.com/classic/de/spell=17){target="_blank" rel="noopener"} und stärkt die Gruppe mit [**Machtwort: Seelenstärke**](https://www.wowhead.com/classic/de/spell=1243){target="_blank" rel="noopener"}. In der [**Schattengestalt**](https://www.wowhead.com/classic/de/spell=15473){target="_blank" rel="noopener"} wird er zum Schadensausteiler mit Schaden über Zeit. [**Gedankenkontrolle**](https://www.wowhead.com/classic/de/spell=605){target="_blank" rel="noopener"} und [**Psychischer Schrei**](https://www.wowhead.com/classic/de/spell=8122){target="_blank" rel="noopener"} sorgen für Kontrolle.
+Der Priester heilt mit großen Heilzaubern, schützt mit [**Machtwort: Schild**](https://www.wowhead.com/forever/de/spell=17){target="_blank" rel="noopener"} und stärkt die Gruppe mit [**Machtwort: Seelenstärke**](https://www.wowhead.com/forever/de/spell=1243){target="_blank" rel="noopener"}. In der [**Schattengestalt**](https://www.wowhead.com/forever/de/spell=15473){target="_blank" rel="noopener"} wird er zum Schadensausteiler mit Schaden über Zeit. [**Gedankenkontrolle**](https://www.wowhead.com/forever/de/spell=605){target="_blank" rel="noopener"} und [**Psychischer Schrei**](https://www.wowhead.com/forever/de/spell=8122){target="_blank" rel="noopener"} sorgen für Kontrolle.
 
 ## Die Talentbäume
 

@@ -81,7 +81,7 @@ Stand: 13.10.2026 · live auf [findyourmain.com](https://findyourmain.com), Bran
 - [ ] Idee: Thalgrim auch an anderen Stellen auftauchen lassen (z. B. Tipps auf Klassenseiten, 404-Seite)
 
 ### Wowhead
-- [x] 152 Fähigkeiten in den Texten (DE/EN, Retail/Forever) mit Wowhead verlinkt, Forever auf die Classic-Datenbank, öffnen im neuen Tab
+- [x] 152 Fähigkeiten in den Texten (DE/EN, Retail/Forever) mit Wowhead verlinkt, Forever auf die Forever-Datenbank von Wowhead (alle 21 IDs dort geprüft), öffnen im neuen Tab
 - [x] Original-Tooltips von Wowhead beim Überfahren, nur mit Einwilligung (neue Banner-Kategorie „Wowhead-Tooltips“, Revision 1, Widerruf lädt die Seite neu), Datenschutz ergänzt
 - [ ] Idee: Fähigkeiten auch im Kampflog und in den Unit-Frames der Arena verlinken
 

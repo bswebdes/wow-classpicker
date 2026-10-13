@@ -9,7 +9,7 @@ updated: "2026-10-13"
 
 ## Spielweise
 
-Der Magier wirkt Arkan-, Feuer- und Frostzauber aus der Distanz. Er zaubert **Essen und Wasser** herbei, öffnet später **Portale** in die Hauptstädte und schaltet Gegner mit [**Verwandlung**](https://www.wowhead.com/classic/de/spell=118){target="_blank" rel="noopener"} aus. [**Frostnova**](https://www.wowhead.com/classic/de/spell=122){target="_blank" rel="noopener"} und [**Blinzeln**](https://www.wowhead.com/classic/de/spell=1953){target="_blank" rel="noopener"} halten Gegner auf Abstand.
+Der Magier wirkt Arkan-, Feuer- und Frostzauber aus der Distanz. Er zaubert **Essen und Wasser** herbei, öffnet später **Portale** in die Hauptstädte und schaltet Gegner mit [**Verwandlung**](https://www.wowhead.com/forever/de/spell=118){target="_blank" rel="noopener"} aus. [**Frostnova**](https://www.wowhead.com/forever/de/spell=122){target="_blank" rel="noopener"} und [**Blinzeln**](https://www.wowhead.com/forever/de/spell=1953){target="_blank" rel="noopener"} halten Gegner auf Abstand.
 
 ## Die Talentbäume
 
