@@ -85,6 +85,7 @@ Die Hauptbilder liegen in `public/images/hero/` (1600 px und `-800` mit 800 px B
 | `public/images/hero/mulgore.webp` | https://blz-contentstack-images.akamaized.net/v3/assets/blt9c12f249ac15c7ec/bltf8ea7f909345c09b/6a985e23203da3e3fcf0e10e/Updates_Mulgore.jpg |
 | `public/images/hero/skyborne.webp` | https://blz-contentstack-images.akamaized.net/v3/assets/blt9c12f249ac15c7ec/blta3214baff005e0a5/6a99ff662924f5c4358aa988/Skyborne-BG-sm.jpg |
 | `public/images/hero/barrens.webp` | https://blz-contentstack-images.akamaized.net/v3/assets/blt9c12f249ac15c7ec/blta4c0f5c59e8c1615/6a985e243ad3924af56f8e16/Updates_TheBarrens.jpg |
+| `public/images/hero/neighborhoods.webp` | https://blz-contentstack-images.akamaized.net/v3/assets/blt3452e3b114fab0cd/blt592bae22c3ce5339/689e2fad3cae6bfea6295c1e/2600_Neighborhoods.jpg |
 
 ## Thalgrim (Klassen-Quiz)
 

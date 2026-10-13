@@ -39,7 +39,7 @@ Coming from modern WoW, you will need to adjust. Classic classes have fewer abil
 
 ## Solo or group?
 
-**Lots of solo play:** Hunter and Warlock are the classics. Their pet holds enemies, and they get far without a group. The Mage levels quickly with area damage but takes practice.
+**Lots of solo play:** Hunter and Warlock are the classics. Their pet holds enemies, and they get far without a group. The Mage levels quickly with area damage but takes practice. More in the guide [fastest leveling class in WoW Forever](/en/guides/fastest-leveling-class-wow-forever).
 
 **Prefer groups:** healers and tanks are worth their weight in gold in Classic. As a Priest, Paladin, Shaman or Druid healer you will always find a group. The Warrior is the most sought-after tank but levels slowly alone.
 

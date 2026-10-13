@@ -39,7 +39,7 @@ Wer aus dem aktuellen WoW kommt, muss umdenken. Classic-Klassen haben weniger F�
 
 ## Solo oder Gruppe?
 
-**Viel solo unterwegs:** Jäger und Hexenmeister sind die Klassiker. Ihr Begleiter hält Gegner fest, und sie kommen ohne Gruppe weit. Der Magier levelt mit Flächenschaden schnell, verlangt aber Übung.
+**Viel solo unterwegs:** Jäger und Hexenmeister sind die Klassiker. Ihr Begleiter hält Gegner fest, und sie kommen ohne Gruppe weit. Der Magier levelt mit Flächenschaden schnell, verlangt aber Übung. Mehr dazu im Ratgeber [WoW Forever schnell leveln](/ratgeber/wow-forever-schnell-leveln).
 
 **Lieber in der Gruppe:** Heiler und Tanks sind in Classic Gold wert. Wer als Priester, Paladin, Schamane oder Druide heilt, findet jederzeit eine Gruppe. Der Krieger ist der gefragteste Tank, levelt allein aber langsam.
 

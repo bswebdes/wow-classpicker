@@ -83,10 +83,11 @@ Nächster Schritt: Mit Ubersuggest AI Search Visibility prüfen, ob die Marke in
 | wow schnell leveln | DE | 210 | 30 | Ratgeber `/ratgeber/wow-schnell-leveln` |
 | wow schnell leveln 1 80 | DE | 70 | 21 | dito |
 | wow schnell leveln 70 80 | DE | 50 | 22 | dito |
-| best leveling class wow classic | US | 40 | 31 | `/en/guides/fastest-leveling-class-wow` |
-| fastest leveling class wow classic | US | 40 | 26 | dito |
+| wow classic schnell leveln | DE | 90 | 21 | Forever-Ratgeber `/ratgeber/wow-forever-schnell-leveln` |
+| best leveling class wow classic | US | 40 | 31 | `/en/guides/fastest-leveling-class-wow-forever` |
+| fastest leveling class wow classic | US | 40 | 26 | Forever-Ratgeber |
 | fastest leveling class wow | US | 30 | 27 | dito |
 | best leveling class wow | US | 30 | 26 | dito |
 
-Erkenntnis: Im Deutschen wird nach „schnell leveln“ gesucht, nicht nach der Klasse. Der Ratgeber verbindet deshalb Klassenwahl und Leveltipps.
+Erkenntnis: Im Deutschen wird nach „schnell leveln“ gesucht, nicht nach der Klasse. Die Ratgeber verbinden deshalb Klassenwahl und Leveltipps. Getrennt nach Retail (Midnight) und Forever, wobei Forever auf Classic-Erfahrung beruht (Annahme, zum Start prüfen).
 
