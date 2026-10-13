@@ -9,6 +9,9 @@ updated: "2026-10-13"
 
 ## Playstyle
 
+::class-art{name="paladin"}
+::
+
 The Paladin is a holy knight in plate who wields the Light as a weapon. It builds **Holy Power**, a resource with only a few charges, and spends it on strong attacks, heals or protective effects.
 
 Few classes have this many panic buttons: [**Divine Shield**](https://www.wowhead.com/spell=642){target="_blank" rel="noopener"} makes you briefly immune, [**Lay on Hands**](https://www.wowhead.com/spell=633){target="_blank" rel="noopener"} fully heals a target, and [**Blessing of Protection**](https://www.wowhead.com/spell=1022){target="_blank" rel="noopener"} or [**Blessing of Freedom**](https://www.wowhead.com/spell=1044){target="_blank" rel="noopener"} save your teammates. That makes the Paladin extremely forgiving.

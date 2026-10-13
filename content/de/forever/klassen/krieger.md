@@ -9,6 +9,9 @@ updated: "2026-10-13"
 
 ## Spielweise
 
+::class-art{name="warrior"}
+::
+
 Der Krieger kämpft mit **Wut**, die er aufbaut, indem er Schaden austeilt und einsteckt. Typisch für Classic sind die **Haltungen**: Kampfhaltung, Verteidigungshaltung und Berserkerhaltung schalten jeweils andere Fähigkeiten frei, und gute Krieger wechseln ständig zwischen ihnen.
 
 ## Hintergrund und Lore

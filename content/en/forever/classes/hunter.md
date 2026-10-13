@@ -9,6 +9,9 @@ updated: "2026-10-13"
 
 ## Playstyle
 
+::class-art{name="hunter"}
+::
+
 The Hunter fights from range with a bow or gun and has a **tamed companion** at its side. **Aspects** adjust its style, for more attack power or faster travel, and [**Feign Death**](https://www.wowhead.com/forever/spell=5384){target="_blank" rel="noopener"} and **traps** help when things get tight.
 
 ## Background and lore

@@ -10,6 +10,10 @@ interface PageSeoOptions {
   ogSubtitle?: MaybeRefOrGetter<string | undefined>
   // Klassen-IDs, deren Icons im OG-Bild erscheinen
   classes?: MaybeRefOrGetter<string[] | undefined>
+  // Hauptbild (public/images/hero/<name>.webp) als Hintergrund im OG-Bild
+  image?: string
+  // Klassen-Artwork (public/images/classes/<id>.webp) rechts im OG-Bild
+  art?: string
   // Spiel, um das es auf der Seite geht (für Schema.org "about")
   mode?: GameMode
   // Schema.org-Typ der Seite
@@ -53,7 +57,9 @@ export const usePageSeo = (options: PageSeoOptions) => {
     title: toValue(options.ogTitle) || toValue(options.title),
     subtitle: toValue(options.ogSubtitle) || toValue(options.description),
     classes: toValue(options.classes) || [],
-    mode: options.mode || 'retail'
+    mode: options.mode || 'retail',
+    image: options.image ? `/images/hero/${options.image}.webp` : '',
+    art: options.art ? `/images/classes/${options.art}.webp` : ''
   })
 
   const faq = toValue(options.faq) || []

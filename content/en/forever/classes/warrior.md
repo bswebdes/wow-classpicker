@@ -9,6 +9,9 @@ updated: "2026-10-13"
 
 ## Playstyle
 
+::class-art{name="warrior"}
+::
+
 The Warrior fights with **Rage**, which builds as it deals and takes damage. Classic Warriors are defined by **stances**: Battle, Defensive and Berserker Stance each unlock different abilities, and good Warriors switch between them constantly.
 
 ## Background and lore

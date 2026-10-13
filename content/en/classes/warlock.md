@@ -9,6 +9,9 @@ updated: "2026-10-13"
 
 ## Playstyle
 
+::class-art{name="warlock"}
+::
+
 The Warlock has embraced forbidden magic: it curses enemies, summons demons and hurls fel fire. Besides **Mana**, it gathers **Soul Shards** to cast its strongest spells.
 
 A demonic servant is always at its side, from the Imp to the Voidwalker that holds enemies' attention. For the group, the Warlock brings unique tools: **Healthstones** for healing, a [**Soulstone**](https://www.wowhead.com/spell=20707){target="_blank" rel="noopener"} that can bring an ally back in combat, a [**Ritual of Summoning**](https://www.wowhead.com/spell=698){target="_blank" rel="noopener"} to pull teammates in, and the [**Demonic Gateway**](https://www.wowhead.com/spell=111771){target="_blank" rel="noopener"} for quick repositioning.

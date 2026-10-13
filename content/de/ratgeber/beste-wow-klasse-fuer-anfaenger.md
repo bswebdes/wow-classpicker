@@ -2,6 +2,8 @@
 title: "Beste WoW-Klasse für Anfänger in Midnight – die 5 einfachsten Klassen"
 description: "Welche WoW-Klasse ist am einfachsten? Die 5 besten Klassen für Anfänger und Wiedereinsteiger in Midnight, mit Tipps zu Spezialisierung und Spielstil."
 key: beginner
+image: new-players
+imageAlt: "Ein Greif mit Sattel steht vor einem Turm unter blauem Himmel"
 summary: "Die einfachsten WoW-Klassen für Anfänger in Midnight sind Jäger (Tierherrschaft), Paladin, Todesritter, Dämonenjäger (Verwüstung) und Krieger. Sie verzeihen Fehler, haben übersichtliche Rotationen und kommen solo gut zurecht."
 updated: "2026-10-13"
 faq:
@@ -25,11 +27,17 @@ Du startest gerade in World of Warcraft oder kehrst nach langer Pause zurück? D
 
 ## 1. Jäger (Tierherrschaft)
 
+::class-art{name="hunter"}
+::
+
 Der [Jäger](/klassen/jaeger) gilt seit Jahren als die einfachste Klasse in WoW, und das zu Recht. In der Spezialisierung **Tierherrschaft** übernimmt dein Begleiter einen großen Teil der Arbeit und hält Gegner von dir fern, während du fast alles in der Bewegung wirken kannst. Dazu kommt Fernkampf: Du stehst selten im Gefahrenbereich.
 
 **Ideal für:** absolute Neulinge, Solo-Spieler, alle, die Tiere sammeln wollen.
 
 ## 2. Paladin
+
+::class-art{name="paladin"}
+::
 
 Der [Paladin](/klassen/paladin) ist robust wie kaum eine andere Klasse. Plattenrüstung, Selbstheilung und Notfallknöpfe wie [**Gottesschild**](https://www.wowhead.com/de/spell=642){target="_blank" rel="noopener"} retten dich aus fast jeder Lage. Als Vergeltung spielst du Schaden mit einer überschaubaren Rotation, und später kannst du als Heiliger oder Schutzpaladin heilen oder tanken.
 
@@ -37,17 +45,26 @@ Der [Paladin](/klassen/paladin) ist robust wie kaum eine andere Klasse. Plattenr
 
 ## 3. Todesritter
 
+::class-art{name="deathknight"}
+::
+
 Der [Todesritter](/klassen/todesritter) kombiniert schwere Rüstung mit starker Selbstheilung über [**Todesstoß**](https://www.wowhead.com/de/spell=49998){target="_blank" rel="noopener"}. Als **Blut** ist er einer der verzeihendsten Tanks, als Frost oder Unheilig ein solider Schadensausteiler. Bonus: Er startet mit einer eigenen, stimmungsvollen Story.
 
 **Ideal für:** Spieler, die robust sein und vielleicht tanken lernen wollen.
 
 ## 4. Dämonenjäger (Verwüstung)
 
+::class-art{name="demonhunter"}
+::
+
 Der [Dämonenjäger](/klassen/daemonenjaeger) fühlt sich sofort schnell und mächtig an. **Verwüstung** hat eine flüssige, gut verständliche Rotation, und mit Doppelsprung, Gleiten und Teufelsrausch bist du überall schnell. Wer Action mag, wird hier glücklich.
 
 **Ideal für:** Einsteiger, die es actionreich mögen.
 
 ## 5. Krieger
+
+::class-art{name="warrior"}
+::
 
 Der [Krieger](/klassen/krieger) ist ehrlicher Nahkampf ohne Zauberbuch. Die Grundrotation ist schnell gelernt, die Plattenrüstung verzeiht Fehler, und Siegesrausch heilt dich zwischendurch. Ein guter Weg, das Spiel von der Pike auf zu lernen.
 

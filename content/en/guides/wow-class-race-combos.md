@@ -2,6 +2,8 @@
 title: "WoW Class Race Combos: Every Combination in Midnight"
 description: "Which race can play which class? All 240 race and class combos in WoW Midnight as a table, with rare classes, the Haranir and new combinations."
 key: races
+image: haranir
+imageAlt: "A Haranir stands in front of a purple landscape with giant mushrooms"
 order: 8
 date: "2026-10-13"
 updated: "2026-10-13"
@@ -52,6 +54,11 @@ So if you fell in love with a race first, you can hardly go wrong with these cla
 ## Neutral races
 
 **Pandaren, Dracthyr, Earthen and Haranir** do not belong to a fixed faction. You choose Alliance or Horde as you play. Handy if your friends play on a particular side.
+
+## All races in portraits
+
+::race-gallery{mode="retail"}
+::
 
 ## How to choose your race
 

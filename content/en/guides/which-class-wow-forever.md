@@ -2,6 +2,8 @@
 title: "Which Class Should I Play in WoW Forever? Launch Guide"
 description: "Which class suits you in WoW Forever? All 9 classes by role, solo strength and group demand, with tips for launch on 4 November 2026."
 key: forever-which-class
+image: mulgore
+imageAlt: "Mulgore in classic Azeroth: green hills and cliffs in the evening light"
 order: 10
 game: forever
 date: "2026-10-13"
@@ -24,6 +26,9 @@ WoW Forever launches on **4 November 2026** and brings classic Azeroth back: a l
 Coming from modern WoW, you will need to adjust. Classic classes have fewer abilities per rotation, but resources, positioning and preparation matter much more. Leveling takes far longer, and classes without self-healing need regular breaks. Not every role is equally open to every class either, as talent trees are built around one main job.
 
 ## The 9 classes by role
+
+::class-art-row{classes="warrior,paladin,hunter,rogue,priest,shaman,mage,warlock,druid" mode="forever"}
+::
 
 | Role | Classes in WoW Forever |
 | --- | --- |

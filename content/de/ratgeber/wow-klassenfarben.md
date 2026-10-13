@@ -2,6 +2,8 @@
 title: "WoW Klassenfarben – alle Hex-Codes und RGB-Werte"
 description: "Alle offiziellen WoW-Klassenfarben mit Hex-Code und RGB-Werten zum Kopieren. Für Discord-Rollen, Addons, Grafiken und Gilden-Webseiten."
 key: colors
+image: voidstorm
+imageAlt: "Leerensturm: eine Landschaft in leuchtendem Violett und Blau"
 summary: "Die offiziellen WoW-Klassenfarben: Todesritter #C41E3A, Dämonenjäger #A330C9, Druide #FF7C0A, Rufer #33937F, Jäger #AAD372, Magier #3FC7EB, Mönch #00FF98, Paladin #F48CBA, Priester #FFFFFF, Schurke #FFF468, Schamane #0070DD, Hexenmeister #8788EE, Krieger #C69B6D."
 updated: "2026-10-13"
 faq:

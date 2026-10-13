@@ -14,6 +14,7 @@ Find Your Main is a private, non-commercial fan project by Benny. The site is ma
 
 - **Classes, specializations and races** come from the game itself and from Blizzard's official announcements. For WoW Forever, information reflects the beta.
 - **Ratings** for beginner friendliness and solo play are our editorial assessment. They are meant to help you choose and are not a DPS ranking. See [how we rate classes](#how-we-rate-classes) below.
+- **Images** of classes and races come from the official World of Warcraft website and are © Blizzard Entertainment, Inc. Blizzard allows their use on non-commercial fan sites.
 - **Tuning numbers and tier lists** are deliberately left out, because they change with every patch.
 
 ## How we rate classes

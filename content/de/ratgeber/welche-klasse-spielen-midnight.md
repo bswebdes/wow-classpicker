@@ -2,6 +2,8 @@
 title: "Welche Klasse soll ich in WoW Midnight spielen? Guide"
 description: "Welche WoW-Klasse passt zu mir? In 5 Schritten zur richtigen Klasse für Midnight, mit Empfehlungen nach Rolle, Spielstil und Erfahrung."
 key: which-class
+image: midnight-heroes
+imageAlt: "Helden verschiedener Völker blicken auf eine Stadt unter violettem Abendhimmel"
 summary: "Wähle deine WoW-Klasse in fünf Schritten: Rolle (Tank, Heiler, Schaden), Nah- oder Fernkampf, Lieblingsinhalte, gewünschte Komplexität und Fantasy. Für Unentschlossene sind Paladin, Druide und Mönch ideal, weil sie alle drei Rollen spielen können."
 updated: "2026-10-13"
 faq:
@@ -23,6 +25,9 @@ Dreizehn Klassen, vierzig Spezialisierungen und jede Menge Meinungen im Internet
 Spiel, was dir Spaß macht, nicht was gerade oben in der Tier-Liste steht. Die Balance ändert sich mit jedem Patch, und in fast allen Inhalten außerhalb der absoluten Weltspitze ist jede Klasse gut genug. Eine Klasse, deren Fantasy und Spielgefühl dich begeistern, wirst du besser spielen als eine, die du nur wegen der Zahlen gewählt hast.
 
 ## Schritt 1: Welche Rolle willst du spielen?
+
+::class-art{name="paladin"}
+::
 
 In WoW gibt es drei Rollen, und nicht jede Klasse kann alle drei:
 
@@ -54,6 +59,9 @@ Im Nahkampf stehst du direkt am Gegner, musst aber mehr auf Mechaniken am Boden 
 Neu in WoW oder nach langer Pause zurück? Dann starte mit einer Klasse, die Fehler verzeiht: **Jäger (Tierherrschaft)**, **Paladin**, **Todesritter** oder **Dämonenjäger (Verwüstung)**. Die Details findest du im Ratgeber [beste Klasse für Anfänger](/ratgeber/beste-wow-klasse-fuer-anfaenger). Wer eine Herausforderung sucht, wird mit **Schurke**, **Mönch** oder **Druide** lange beschäftigt sein.
 
 ## Schritt 5: Welche Fantasy reizt dich?
+
+::class-art-row{classes="warrior,paladin,hunter,rogue,priest,deathknight,shaman,mage,warlock,monk,druid,demonhunter,evoker" mode="retail"}
+::
 
 Am Ende entscheidet oft das Bauchgefühl. Willst du ein heiliger Ritter sein, ein Dämonenbeschwörer, ein Drache oder ein Schatten in der Nacht? Schau dir die [Klassenübersicht](/klassen) an und lies dich bei den Klassen ein, die dich ansprechen.
 

@@ -2,6 +2,8 @@
 title: "WoW Tank-Klassen in Midnight – alle 6 Tanks im Vergleich"
 description: "Welche Tank-Klasse passt zu dir? Alle 6 Tanks in WoW Midnight im Vergleich: Krieger, Paladin, Todesritter, Mönch, Druide und Dämonenjäger."
 key: tanks
+image: dungeons-raids
+imageAlt: "Abenteurer kämpfen in einer Leerenwelt mit violetten Kristallen gegen Gegner"
 summary: "In WoW Midnight können sechs Klassen tanken: Krieger (Schutz), Paladin (Schutz), Todesritter (Blut), Mönch (Braumeister), Druide (Wächter) und Dämonenjäger (Rachsucht). Für Einsteiger gelten Blut-Todesritter und Schutzpaladin als besonders verzeihend."
 updated: "2026-10-13"
 faq:
@@ -17,6 +19,9 @@ classes: [warrior, paladin, deathknight, monk, druid, demonhunter]
 Tanks sind das Rückgrat jeder Gruppe: Sie ziehen die Aufmerksamkeit der Gegner auf sich, bestimmen das Tempo im Dungeon und halten im Schlachtzug den Boss in Position. Dafür findest du als Tank fast immer sofort eine Gruppe. Sechs Klassen können in WoW tanken, und jede fühlt sich anders an.
 
 ## Alle Tanks auf einen Blick
+
+::class-art-row{classes="warrior,paladin,deathknight,monk,druid,demonhunter" mode="retail"}
+::
 
 | Klasse | Spezialisierung | Spielgefühl |
 | --- | --- | --- |

@@ -9,6 +9,9 @@ updated: "2026-10-13"
 
 ## Spielweise
 
+::class-art{name="paladin"}
+::
+
 Der Paladin kämpft mit **Siegeln** und **Richturteilen**, stärkt Mitspieler mit **Segen** und gibt der Gruppe **Auren**. Dank [**Gottesschild**](https://www.wowhead.com/forever/de/spell=642){target="_blank" rel="noopener"} und [**Handauflegung**](https://www.wowhead.com/forever/de/spell=633){target="_blank" rel="noopener"} ist er extrem schwer zu besiegen, auch wenn sein Schaden beim Leveln eher gemächlich ist.
 
 ## Hintergrund und Lore

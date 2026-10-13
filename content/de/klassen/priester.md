@@ -9,6 +9,9 @@ updated: "2026-10-13"
 
 ## Spielweise
 
+::class-art{name="priest"}
+::
+
 Der Priester ist der klassische Heiler von Azeroth, kann aber genauso gut die dunkle Seite wählen. In Stoffrüstung steht er hinten in der Gruppe und hält mit Heilzaubern und Schilden alle am Leben, oder er zermürbt Gegner mit Schattenmagie.
 
 Priester bringen besondere Gruppenwerkzeuge mit: [**Glaubenssprung**](https://www.wowhead.com/de/spell=73325){target="_blank" rel="noopener"} zieht einen Mitspieler aus der Gefahr, [**Massenbannung**](https://www.wowhead.com/de/spell=32375){target="_blank" rel="noopener"} entfernt Effekte von vielen Zielen, und [**Machtwort: Seelenstärke**](https://www.wowhead.com/de/spell=21562){target="_blank" rel="noopener"} ist ein Buff, den jede Gruppe will.

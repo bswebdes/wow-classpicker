@@ -9,6 +9,9 @@ updated: "2026-10-13"
 
 ## Playstyle
 
+::class-art{name="priest"}
+::
+
 The Priest is the classic healer of Azeroth, but it can just as easily choose the dark side. Wearing cloth, it stands at the back of the group and keeps everyone alive with heals and shields, or it wears enemies down with shadow magic.
 
 Priests bring unique group tools: [**Leap of Faith**](https://www.wowhead.com/spell=73325){target="_blank" rel="noopener"} pulls an ally out of danger, [**Mass Dispel**](https://www.wowhead.com/spell=32375){target="_blank" rel="noopener"} removes effects from many targets, and [**Power Word: Fortitude**](https://www.wowhead.com/spell=21562){target="_blank" rel="noopener"} is a buff every group wants.

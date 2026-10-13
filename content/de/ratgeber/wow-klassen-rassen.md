@@ -2,6 +2,8 @@
 title: "WoW Klassen und Rassen: Alle Völker-Kombinationen in Midnight"
 description: "Welches Volk kann welche Klasse spielen? Alle 240 Klassen-Rassen-Kombinationen in WoW Midnight als Tabelle, mit seltenen Klassen, Haranir und neuen Kombis."
 key: races
+image: haranir
+imageAlt: "Ein Haranir steht vor einer violetten Landschaft mit riesigen Pilzen"
 order: 8
 date: "2026-10-13"
 updated: "2026-10-13"
@@ -52,6 +54,11 @@ Wenn du dich zuerst in ein Volk verliebt hast, kannst du mit diesen Klassen also
 ## Neutrale Völker
 
 **Pandaren, Dracthyr, Irdene und Haranir** gehören zu keiner festen Fraktion. Du entscheidest dich beim Spielen für Allianz oder Horde. Praktisch, wenn deine Freunde auf einer bestimmten Seite spielen.
+
+## Alle Völker im Porträt
+
+::race-gallery{mode="retail"}
+::
 
 ## Wie wählst du dein Volk?
 

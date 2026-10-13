@@ -2,6 +2,8 @@
 title: "Best WoW Class for PvP in Midnight – Which One Fits You?"
 description: "What is the best WoW class for PvP? Classes for arena, Solo Shuffle, battlegrounds and War Mode by playstyle, with easy picks for beginners and no tier list."
 key: pvp
+image: prey
+imageAlt: "Blood elf with red blades in a dark setting"
 order: 6
 date: "2026-10-13"
 updated: "2026-10-13"
@@ -50,21 +52,36 @@ Easy here means you can focus on opponents and positioning instead of your own k
 
 ### Control and tactics: Mage and Rogue
 
+::class-art{name="mage"}
+::
+
 The [Mage](/en/classes/mage) turns enemies into sheep with [**Polymorph**](https://www.wowhead.com/spell=118){target="_blank" rel="noopener"}, interrupts with [**Counterspell**](https://www.wowhead.com/spell=2139){target="_blank" rel="noopener"} and escapes with [**Blink**](https://www.wowhead.com/spell=1953){target="_blank" rel="noopener"}. The [Rogue](/en/classes/rogue) picks the moment a fight starts from stealth, locks enemies down with [**Kidney Shot**](https://www.wowhead.com/spell=408){target="_blank" rel="noopener"} and is gone again with [**Vanish**](https://www.wowhead.com/spell=1856){target="_blank" rel="noopener"}. Both are demanding, but nothing feels as good as a perfectly planned attack.
 
 ### Endurance and pressure: Warrior, Death Knight and Paladin
+
+::class-art{name="warrior"}
+::
 
 The [Warrior](/en/classes/warrior) pressures enemies with [**Mortal Strike**](https://www.wowhead.com/spell=12294){target="_blank" rel="noopener"} and weakens their healing. The [Death Knight](/en/classes/death-knight) pulls fleeing enemies back with [**Death Grip**](https://www.wowhead.com/spell=49576){target="_blank" rel="noopener"} and heals with [**Death Strike**](https://www.wowhead.com/spell=49998){target="_blank" rel="noopener"}. The [Paladin](/en/classes/paladin) protects allies with [**Blessing of Protection**](https://www.wowhead.com/spell=1022){target="_blank" rel="noopener"} and themselves with [**Divine Shield**](https://www.wowhead.com/spell=642){target="_blank" rel="noopener"}. All three wear plate and forgive mistakes.
 
 ### Always on the move: Demon Hunter, Monk and Evoker
 
+::class-art{name="demonhunter"}
+::
+
 The [Demon Hunter](/en/classes/demon-hunter) dashes across the battlefield with [**Fel Rush**](https://www.wowhead.com/spell=195072){target="_blank" rel="noopener"}, the [Monk](/en/classes/monk) rolls, kicks and separates enemies with [**Ring of Peace**](https://www.wowhead.com/spell=116844){target="_blank" rel="noopener"}, and the [Evoker](/en/classes/evoker) even casts on the move thanks to [**Hover**](https://www.wowhead.com/spell=358267){target="_blank" rel="noopener"}. Perfect for everyone who never wants to stand still.
 
 ### Ranged with a companion: Hunter and Warlock
 
+::class-art{name="hunter"}
+::
+
 [Hunters](/en/classes/hunter) and [Warlocks](/en/classes/warlock) never fight alone. The hunter keeps enemies at bay with traps, the warlock sends them running with [**Fear**](https://www.wowhead.com/spell=5782){target="_blank" rel="noopener"} and lets curses do their work. Both keep up the pressure even while they are under fire themselves.
 
 ### Healing under pressure: Shaman, Druid and more
+
+::class-art{name="shaman"}
+::
 
 Healing in PvP is a game of its own: you heal while enemies target you on purpose. The [Shaman](/en/classes/shaman) redirects enemy spells with [**Grounding Totem**](https://www.wowhead.com/spell=204336){target="_blank" rel="noopener"}, the [Druid](/en/classes/druid) heals with effects over time from any form, and the [Priest](/en/classes/priest) can even take over an enemy with [**Mind Control**](https://www.wowhead.com/spell=605){target="_blank" rel="noopener"}. Paladin, Monk and Evoker have strong PvP healers too.
 

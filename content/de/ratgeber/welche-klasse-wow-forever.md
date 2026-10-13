@@ -2,6 +2,8 @@
 title: "Welche Klasse soll ich in WoW Forever spielen? Guide zum Start"
 description: "Welche Klasse passt in WoW Forever zu dir? Alle 9 Klassen nach Rolle, Solo-Tauglichkeit und Gruppenbedarf, mit Tipps für den Start am 4. November 2026."
 key: forever-which-class
+image: mulgore
+imageAlt: "Mulgore im klassischen Azeroth: grüne Hügel und Felsen im Abendlicht"
 order: 10
 game: forever
 date: "2026-10-13"
@@ -24,6 +26,9 @@ WoW Forever startet am **4. November 2026** und bringt das klassische Azeroth zu
 Wer aus dem aktuellen WoW kommt, muss umdenken. Classic-Klassen haben weniger Fähigkeiten pro Rotation, dafür zählen Ressourcen, Positionierung und Vorbereitung viel mehr. Das Leveln dauert deutlich länger, und Klassen ohne Selbstheilung brauchen regelmäßig Pausen. Zudem stehen nicht alle Rollen jeder Klasse gleich gut offen: Die Talentbäume sind auf eine Hauptaufgabe ausgelegt.
 
 ## Die 9 Klassen nach Rolle
+
+::class-art-row{classes="warrior,paladin,hunter,rogue,priest,shaman,mage,warlock,druid" mode="forever"}
+::
 
 | Rolle | Klassen in WoW Forever |
 | --- | --- |

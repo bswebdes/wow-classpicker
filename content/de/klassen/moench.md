@@ -9,6 +9,9 @@ updated: "2026-10-13"
 
 ## Spielweise
 
+::class-art{name="monk"}
+::
+
 Der Mönch ist ein Meister der Kampfkunst, der Fäuste, Füße und die Energie des Chi einsetzt. In Lederrüstung ist er wendig und schnell: Mit [**Rollen**](https://www.wowhead.com/de/spell=109132){target="_blank" rel="noopener"} und [**Transzendenz**](https://www.wowhead.com/de/spell=101643){target="_blank" rel="noopener"} wechselt er blitzschnell die Position, und kaum eine Klasse kommt so leicht an einen Gegner heran oder von ihm weg.
 
 Neben Energie bzw. Mana nutzt der Mönch **Chi** als Ressource für seine stärksten Techniken. Zu seinen bekanntesten Fähigkeiten gehören [**Berührung des Todes**](https://www.wowhead.com/de/spell=322109){target="_blank" rel="noopener"}, die angeschlagene Gegner sofort erledigen kann, und [**Paralyse**](https://www.wowhead.com/de/spell=115078){target="_blank" rel="noopener"} zur Kontrolle.

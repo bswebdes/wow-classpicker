@@ -22,7 +22,10 @@ const guideSchema = z.object({
   faq: faqSchema,
   date: z.string(),
   updated: z.string().optional(),
-  classes: z.array(z.string()).optional()
+  classes: z.array(z.string()).optional(),
+  // Hauptbild (Datei in public/images/hero ohne Endung) mit Alt-Text, auch als OG-Bild genutzt
+  image: z.string().optional(),
+  imageAlt: z.string().optional()
 })
 
 // Textblöcke für bestehende Seiten (z. B. Startseite), ohne eigene Route

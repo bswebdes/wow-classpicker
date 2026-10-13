@@ -9,6 +9,9 @@ updated: "2026-10-13"
 
 ## Spielweise
 
+::class-art{name="druid"}
+::
+
 Der Druide verwandelt sich in **Bär**, **Katze**, **Reisegestalt** und **Wassergestalt**. In normaler Form wirkt er Naturzauber und heilt vor allem mit Effekten über Zeit. [**Wiedergeburt**](https://www.wowhead.com/forever/de/spell=20484){target="_blank" rel="noopener"} belebt Verbündete im Kampf wieder, [**Anregen**](https://www.wowhead.com/forever/de/spell=29166){target="_blank" rel="noopener"} hilft Heilern mit Mana.
 
 ## Hintergrund und Lore

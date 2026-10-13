@@ -9,6 +9,9 @@ updated: "2026-10-13"
 
 ## Spielweise
 
+::class-art{name="druid"}
+::
+
 Der Druide ist der Gestaltwandler von Azeroth und die einzige Klasse mit **vier Spezialisierungen**. Je nach Situation wird er zum Bären, zur Katze, zum Mondkin oder bleibt in seiner normalen Form, um zu heilen. Dazu kommen Reiseformen für Land, Wasser und Luft, die das Herumreisen sehr angenehm machen.
 
 Der Druide bringt viele Gruppenwerkzeuge mit: [**Wiedergeburt**](https://www.wowhead.com/de/spell=20484){target="_blank" rel="noopener"} belebt einen Verbündeten im Kampf wieder, [**Anregen**](https://www.wowhead.com/de/spell=29166){target="_blank" rel="noopener"} hilft Heilern mit Mana, und mit einem mächtigen Brüllen macht er die ganze Gruppe kurzzeitig schneller.

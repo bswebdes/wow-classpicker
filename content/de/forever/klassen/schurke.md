@@ -9,6 +9,9 @@ updated: "2026-10-13"
 
 ## Spielweise
 
+::class-art{name="rogue"}
+::
+
 Der Schurke schleicht sich in [**Verstohlenheit**](https://www.wowhead.com/forever/de/spell=1784){target="_blank" rel="noopener"} an, eröffnet mit einem Überraschungsangriff und baut mit **Energie** und **Combopunkten** auf starke Finisher hin. Mit [**Kopfnuss**](https://www.wowhead.com/forever/de/spell=6770){target="_blank" rel="noopener"}, [**Blenden**](https://www.wowhead.com/forever/de/spell=2094){target="_blank" rel="noopener"} und [**Verschwinden**](https://www.wowhead.com/forever/de/spell=1856){target="_blank" rel="noopener"} kontrolliert er den Kampf. Dazu kommen **Gifte**, Taschendiebstahl und das Knacken von Schlössern.
 
 ## Hintergrund und Lore

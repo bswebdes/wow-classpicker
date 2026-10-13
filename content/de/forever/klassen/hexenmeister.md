@@ -9,6 +9,9 @@ updated: "2026-10-13"
 
 ## Spielweise
 
+::class-art{name="warlock"}
+::
+
 Der Hexenmeister belegt Gegner mit **Flüchen** und Schaden über Zeit und beschwört **Dämonen** wie Wichtel, Leerwandler oder Sukkubus. Er sammelt **Seelensplitter**, erschafft **Gesundheitssteine** und **Seelensteine** und kann Mitspieler herbeirufen. [**Blutsauger**](https://www.wowhead.com/forever/de/spell=689){target="_blank" rel="noopener"} hält ihn am Leben.
 
 ## Hintergrund und Lore

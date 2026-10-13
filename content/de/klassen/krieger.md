@@ -9,6 +9,9 @@ updated: "2026-10-13"
 
 ## Spielweise
 
+::class-art{name="warrior"}
+::
+
 Der Krieger ist der Inbegriff des Nahkämpfers: schwere Plattenrüstung, große Waffen und kein Zauberbuch. Seine Ressource ist **Wut**, die er aufbaut, indem er Schaden austeilt und einsteckt. Je länger der Kampf läuft, desto mehr Fähigkeiten stehen ihm zur Verfügung.
 
 Mit [**Sturmangriff**](https://www.wowhead.com/de/spell=100){target="_blank" rel="noopener"} und [**Heldenhafter Sprung**](https://www.wowhead.com/de/spell=6544){target="_blank" rel="noopener"} ist der Krieger schnell am Gegner. Fähigkeiten wie [**Siegesrausch**](https://www.wowhead.com/de/spell=34428){target="_blank" rel="noopener"} heilen ihn nebenbei, was das Solo-Spiel deutlich entspannter macht, als man einer Klasse ohne Heilzauber zutraut.

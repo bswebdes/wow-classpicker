@@ -9,6 +9,9 @@ updated: "2026-10-13"
 
 ## Playstyle
 
+::class-art{name="druid"}
+::
+
 The Druid shifts into **Bear**, **Cat**, **Travel** and **Aquatic Form**. In caster form it casts nature spells and heals mostly with effects over time. [**Rebirth**](https://www.wowhead.com/forever/spell=20484){target="_blank" rel="noopener"} brings allies back in combat, and [**Innervate**](https://www.wowhead.com/forever/spell=29166){target="_blank" rel="noopener"} helps healers with mana.
 
 ## Background and lore

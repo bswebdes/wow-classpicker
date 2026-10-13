@@ -9,6 +9,9 @@ updated: "2026-10-13"
 
 ## Playstyle
 
+::class-art{name="warrior"}
+::
+
 The Warrior is melee in its purest form: heavy plate, big weapons and no spellbook. Its resource is **Rage**, which builds as you deal and take damage. The longer a fight goes, the more of your toolkit opens up.
 
 [**Charge**](https://www.wowhead.com/spell=100){target="_blank" rel="noopener"} and [**Heroic Leap**](https://www.wowhead.com/spell=6544){target="_blank" rel="noopener"} get you into the fight fast, and abilities like [**Victory Rush**](https://www.wowhead.com/spell=34428){target="_blank" rel="noopener"} heal you along the way. That makes solo play much smoother than you would expect from a class without healing spells.

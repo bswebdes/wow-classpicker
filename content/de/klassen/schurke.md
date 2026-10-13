@@ -9,6 +9,9 @@ updated: "2026-10-13"
 
 ## Spielweise
 
+::class-art{name="rogue"}
+::
+
 Der Schurke ist der Meister aus dem Schatten. Er schleicht sich in [**Verstohlenheit**](https://www.wowhead.com/de/spell=1784){target="_blank" rel="noopener"} an, eröffnet den Kampf mit einem Überraschungsangriff und ist verschwunden, bevor der Gegner reagiert. Seine Ressourcen sind **Energie** und **Combopunkte**: Mit schnellen Angriffen baut er Punkte auf und gibt sie für starke Finisher aus.
 
 Dazu kommt ein riesiger Werkzeugkasten aus Kontrolleffekten: [**Kopfnuss**](https://www.wowhead.com/de/spell=6770){target="_blank" rel="noopener"}, [**Blenden**](https://www.wowhead.com/de/spell=2094){target="_blank" rel="noopener"}, [**Tritt**](https://www.wowhead.com/de/spell=1766){target="_blank" rel="noopener"} zum Unterbrechen und [**Verschwinden**](https://www.wowhead.com/de/spell=1856){target="_blank" rel="noopener"} als Fluchtknopf. In Dungeons kann ein Schurke mit [**Verhüllender Nebel**](https://www.wowhead.com/de/spell=114018){target="_blank" rel="noopener"} sogar die ganze Gruppe kurzzeitig tarnen.

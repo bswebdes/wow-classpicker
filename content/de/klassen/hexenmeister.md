@@ -9,6 +9,9 @@ updated: "2026-10-13"
 
 ## Spielweise
 
+::class-art{name="warlock"}
+::
+
 Der Hexenmeister hat sich der verbotenen Magie verschrieben: Er belegt Gegner mit Flüchen, beschwört Dämonen und schleudert Teufelsfeuer. Neben **Mana** sammelt er **Seelensplitter**, mit denen er seine stärksten Zauber wirkt.
 
 Ein dämonischer Diener ist immer an seiner Seite, vom Wichtel bis zum Leerwandler, der Gegner auf sich zieht. Für die Gruppe hat der Hexenmeister einzigartige Werkzeuge: **Gesundheitssteine** zum Heilen, einen [**Seelenstein**](https://www.wowhead.com/de/spell=20707){target="_blank" rel="noopener"}, der einen Verbündeten im Kampf wiederbeleben kann, ein [**Ritual der Beschwörung**](https://www.wowhead.com/de/spell=698){target="_blank" rel="noopener"}, das Mitspieler herbeiholt, und das **Dämonische Tor** zum schnellen Positionswechsel.

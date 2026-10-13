@@ -9,6 +9,9 @@ updated: "2026-10-13"
 
 ## Spielweise
 
+::class-art{name="demonhunter"}
+::
+
 Der Dämonenjäger hat dämonische Kräfte in sich aufgenommen, um die Brennende Legion mit ihren eigenen Waffen zu schlagen. Er trägt Leder, kämpft mit Kriegsgleven und ist die vielleicht mobilste Klasse im Spiel: [**Teufelsrausch**](https://www.wowhead.com/de/spell=195072){target="_blank" rel="noopener"}, [**Rachsüchtiger Rückzug**](https://www.wowhead.com/de/spell=198793){target="_blank" rel="noopener"}, Doppelsprung und Gleiten bringen ihn überall hin.
 
 Seine Ressource ist **Zorn**. Mit [**Metamorphose**](https://www.wowhead.com/de/spell=191427){target="_blank" rel="noopener"} verwandelt er sich in einen Dämon und wird für kurze Zeit deutlich stärker. Die [**Geistersicht**](https://www.wowhead.com/de/spell=188501){target="_blank" rel="noopener"} lässt ihn Gegner sogar durch Wände sehen.

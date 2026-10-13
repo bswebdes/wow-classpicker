@@ -38,6 +38,7 @@ usePageSeo({
   ogSubtitle: () => page.value.description,
   classes: page.value.classes,
   mode: mode.value,
+  image: page.value.image,
   faq: page.value.faq,
   dateModified: page.value.updated || page.value.date
 })
@@ -57,6 +58,8 @@ useSchemaOrg([
   })
 ])
 
+// Bildnachweis nur, wenn der Ratgeber offizielle Blizzard-Bilder zeigt
+const hasBlizzardImages = computed(() => !!page.value?.image || /class-art|race-gallery/.test(JSON.stringify(page.value?.body || '')))
 const formatDate = (date) => new Date(date).toLocaleDateString(locale.value === 'en' ? 'en-US' : 'de-DE', { year: 'numeric', month: 'long', day: 'numeric' })
 </script>
 
@@ -70,7 +73,10 @@ const formatDate = (date) => new Date(date).toLocaleDateString(locale.value === 
 
     <article>
       <header>
-        <h1 class="wow-title text-3xl sm:text-4xl">{{ page.title }}</h1>
+        <PageHero v-if="page.image" :image="page.image" :alt="page.imageAlt || page.title">
+          <h1 class="wow-title text-3xl [filter:drop-shadow(0_2px_3px_#000)] sm:text-4xl">{{ page.title }}</h1>
+        </PageHero>
+        <h1 v-else class="wow-title text-3xl sm:text-4xl">{{ page.title }}</h1>
         <p class="mt-2 text-[14px] text-neutral-500">
           {{ page.updated ? $t('common.updated') : $t('common.published') }}:
           <time :datetime="page.updated || page.date">{{ formatDate(page.updated || page.date) }}</time>
@@ -86,6 +92,7 @@ const formatDate = (date) => new Date(date).toLocaleDateString(locale.value === 
       <ContentProse class="mt-6">
         <ContentRenderer :value="page" />
       </ContentProse>
+      <p v-if="hasBlizzardImages" class="mt-2 text-right text-[12px] text-neutral-500">{{ $t('art.credit') }}</p>
     </article>
 
     <section v-if="page.faq?.length" class="mt-12">

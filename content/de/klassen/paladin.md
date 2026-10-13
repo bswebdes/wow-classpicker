@@ -9,6 +9,9 @@ updated: "2026-10-13"
 
 ## Spielweise
 
+::class-art{name="paladin"}
+::
+
 Der Paladin ist ein heiliger Ritter in Plattenrüstung, der das Licht als Waffe nutzt. Er sammelt **Heilige Kraft**, eine Ressource mit wenigen Ladungen, und gibt sie für starke Angriffe, Heilungen oder Schutzeffekte aus.
 
 Kaum eine Klasse hat so viele Notfallknöpfe: [**Gottesschild**](https://www.wowhead.com/de/spell=642){target="_blank" rel="noopener"} macht ihn kurzzeitig unverwundbar, [**Handauflegung**](https://www.wowhead.com/de/spell=633){target="_blank" rel="noopener"} heilt ein Ziel komplett, und mit [**Segen des Schutzes**](https://www.wowhead.com/de/spell=1022){target="_blank" rel="noopener"} oder [**Segen der Freiheit**](https://www.wowhead.com/de/spell=1044){target="_blank" rel="noopener"} rettet er Mitspieler. Das macht den Paladin extrem verzeihend.

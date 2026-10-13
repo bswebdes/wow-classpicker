@@ -9,6 +9,9 @@ updated: "2026-10-13"
 
 ## Playstyle
 
+::class-art{name="evoker"}
+::
+
 The Evoker is WoW's newest class and closely tied to the draconic Dracthyr. It wields the magic of the dragonflights: fire, life, time and dreams. In mail armor it fights at **mid-range**, about 25 yards, closer than other casters.
 
 Its standout feature is **empowered spells**: you hold the key, charge the spell through several stages and release it at the right moment. Besides Mana, the Evoker uses **Essence** as a resource. With [**Soar**](https://www.wowhead.com/spell=369536){target="_blank" rel="noopener"} and [**Hover**](https://www.wowhead.com/spell=358267){target="_blank" rel="noopener"} it is also very mobile.

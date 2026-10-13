@@ -2,6 +2,8 @@
 title: "Which WoW Class Should I Play in Midnight? A Decision Guide"
 description: "Which WoW class should you play? Find the right class for Midnight in 5 steps, with picks by role, playstyle and experience."
 key: which-class
+image: midnight-heroes
+imageAlt: "Heroes of different races look out over a city under a purple evening sky"
 summary: "Pick your WoW class in five steps: role (tank, healer, damage), melee or ranged, favorite content, desired complexity and fantasy. If you are undecided, Paladin, Druid and Monk are ideal because they can play all three roles."
 updated: "2026-10-13"
 faq:
@@ -23,6 +25,9 @@ Thirteen classes, forty specializations and plenty of opinions online: picking a
 Play what you enjoy, not what tops the tier list right now. Balance shifts with every patch, and outside the very top of world-first competition every class is good enough. You will play a class whose fantasy and feel excite you better than one you picked for the numbers.
 
 ## Step 1: Which role do you want?
+
+::class-art{name="paladin"}
+::
 
 WoW has three roles, and not every class can fill all of them:
 
@@ -54,6 +59,9 @@ In melee you stand right next to the enemy but have to watch more ground mechani
 New to WoW or back after a long break? Start with a class that forgives mistakes: **Hunter (Beast Mastery)**, **Paladin**, **Death Knight** or **Demon Hunter (Havoc)**. Details in our guide to the [easiest classes for beginners](/en/guides/easiest-wow-class-for-beginners). If you want a challenge, **Rogue**, **Monk** or **Druid** will keep you busy for a long time.
 
 ## Step 5: Which fantasy speaks to you?
+
+::class-art-row{classes="warrior,paladin,hunter,rogue,priest,deathknight,shaman,mage,warlock,monk,druid,demonhunter,evoker" mode="retail"}
+::
 
 In the end, gut feeling often decides. Do you want to be a holy knight, a demon summoner, a dragon or a shadow in the night? Browse the [class overview](/en/classes) and read up on the classes that appeal to you.
 

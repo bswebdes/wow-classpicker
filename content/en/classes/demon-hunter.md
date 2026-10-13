@@ -9,6 +9,9 @@ updated: "2026-10-13"
 
 ## Playstyle
 
+::class-art{name="demonhunter"}
+::
+
 The Demon Hunter took demonic power into itself to fight the Burning Legion with its own weapons. It wears leather, fights with warglaives and may be the most mobile class in the game: [**Fel Rush**](https://www.wowhead.com/spell=195072){target="_blank" rel="noopener"}, [**Vengeful Retreat**](https://www.wowhead.com/spell=198793){target="_blank" rel="noopener"}, double jump and glide take it anywhere.
 
 Its resource is **Fury**. With [**Metamorphosis**](https://www.wowhead.com/spell=191427){target="_blank" rel="noopener"} it turns into a demon and becomes much stronger for a short time. [**Spectral Sight**](https://www.wowhead.com/spell=188501){target="_blank" rel="noopener"} even lets it see enemies through walls.

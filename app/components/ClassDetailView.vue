@@ -64,6 +64,8 @@ usePageSeo({
   ogSubtitle: () => page.value.description,
   classes: [info.value.id],
   mode: props.mode,
+  image: `class-${info.value.id}`,
+  art: info.value.id,
   faq: faq.value,
   dateModified: page.value.updated || page.value.date
 })
@@ -94,15 +96,17 @@ const formatDate = (date) => new Date(date).toLocaleDateString(locale.value === 
       <span :style="{ color: info.color }">{{ className }}</span>
     </nav>
 
-    <header class="flex flex-col items-start gap-5 sm:flex-row">
-      <img :src="info.icon" :alt="className" width="96" height="96" class="wow-slot h-24 w-24 !border-gold-border" />
-      <div>
-        <h1 class="font-display text-3xl font-bold sm:text-4xl" :style="{ color: info.color, textShadow: '0 2px 0 #000' }">{{ page.title }}</h1>
-        <p class="mt-2 max-w-3xl text-neutral-300">{{ page.description }}</p>
-        <p v-if="page.updated || page.date" class="mt-2 text-[13px] text-neutral-500">
-          {{ $t('common.updated') }}: <time :datetime="page.updated || page.date">{{ formatDate(page.updated || page.date) }}</time>
-        </p>
-      </div>
+    <header>
+      <PageHero :image="`class-${info.id}`" :alt="$t(`art.heroes.${info.id}`)">
+        <div class="flex items-center gap-4 sm:items-end">
+          <img :src="info.icon" :alt="className" width="96" height="96" class="wow-slot h-16 w-16 shrink-0 !border-gold-border sm:h-20 sm:w-20" />
+          <h1 class="font-display text-3xl font-bold sm:text-4xl" :style="{ color: info.color, textShadow: '0 2px 6px #000, 0 0 2px #000' }">{{ page.title }}</h1>
+        </div>
+      </PageHero>
+      <p class="mt-4 max-w-3xl text-neutral-300">{{ page.description }}</p>
+      <p v-if="page.updated || page.date" class="mt-2 text-[13px] text-neutral-500">
+        {{ $t('common.updated') }}: <time :datetime="page.updated || page.date">{{ formatDate(page.updated || page.date) }}</time>
+      </p>
     </header>
 
     <!-- Kurzantwort zuerst: hilft Lesern und KI-Antworten -->
@@ -169,6 +173,7 @@ const formatDate = (date) => new Date(date).toLocaleDateString(locale.value === 
       <ContentProse>
         <ContentRenderer :value="page" />
       </ContentProse>
+      <p class="mt-2 text-right text-[12px] text-neutral-500">{{ $t('art.credit') }}</p>
     </article>
 
     <div class="mt-8 flex flex-wrap gap-3">

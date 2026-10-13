@@ -9,6 +9,9 @@ updated: "2026-10-13"
 
 ## Playstyle
 
+::class-art{name="warlock"}
+::
+
 The Warlock applies **curses** and damage over time and summons **demons** such as the Imp, Voidwalker or Succubus. It collects **Soul Shards**, creates **Healthstones** and **Soulstones** and can summon teammates. [**Drain Life**](https://www.wowhead.com/forever/spell=689){target="_blank" rel="noopener"} keeps it alive.
 
 ## Background and lore

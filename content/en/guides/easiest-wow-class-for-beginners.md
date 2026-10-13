@@ -2,6 +2,8 @@
 title: "Easiest WoW Class for Beginners in Midnight – Top 5 Picks"
 description: "What is the easiest WoW class? The 5 best classes for new and returning players in Midnight, with tips on specs and playstyle."
 key: beginner
+image: new-players
+imageAlt: "A saddled gryphon stands in front of a tower under a blue sky"
 summary: "The easiest WoW classes for beginners in Midnight are Hunter (Beast Mastery), Paladin, Death Knight, Demon Hunter (Havoc) and Warrior. They forgive mistakes, have clear rotations and do well solo."
 updated: "2026-10-13"
 faq:
@@ -25,11 +27,17 @@ Just starting World of Warcraft or coming back after a long break? Then you want
 
 ## 1. Hunter (Beast Mastery)
 
+::class-art{name="hunter"}
+::
+
 The [Hunter](/en/classes/hunter) has been called the easiest class in WoW for years, and for good reason. As **Beast Mastery**, your pet does a large part of the work and keeps enemies off you, while you cast almost everything on the move. And at range, you rarely stand in danger.
 
 **Best for:** complete newcomers, solo players and anyone who wants to collect pets.
 
 ## 2. Paladin
+
+::class-art{name="paladin"}
+::
 
 The [Paladin](/en/classes/paladin) is as sturdy as it gets. Plate armor, self-healing and panic buttons like [**Divine Shield**](https://www.wowhead.com/spell=642){target="_blank" rel="noopener"} save you from almost anything. As Retribution you deal damage with a simple rotation, and later you can heal as Holy or tank as Protection.
 
@@ -37,17 +45,26 @@ The [Paladin](/en/classes/paladin) is as sturdy as it gets. Plate armor, self-he
 
 ## 3. Death Knight
 
+::class-art{name="deathknight"}
+::
+
 The [Death Knight](/en/classes/death-knight) combines heavy armor with strong self-healing through [**Death Strike**](https://www.wowhead.com/spell=49998){target="_blank" rel="noopener"}. As **Blood** it is one of the most forgiving tanks, and as Frost or Unholy a solid damage dealer. Bonus: it starts with its own atmospheric story.
 
 **Best for:** players who want to be tough and maybe learn to tank.
 
 ## 4. Demon Hunter (Havoc)
 
+::class-art{name="demonhunter"}
+::
+
 The [Demon Hunter](/en/classes/demon-hunter) feels fast and powerful right away. **Havoc** has a fluid, easy-to-grasp rotation, and with double jump, glide and Fel Rush you get anywhere quickly. If you like action, you will love it.
 
 **Best for:** beginners who want action.
 
 ## 5. Warrior
+
+::class-art{name="warrior"}
+::
 
 The [Warrior](/en/classes/warrior) is honest melee without a spellbook. The core rotation clicks quickly, plate armor forgives mistakes and Victory Rush heals you along the way. A great way to learn the game from the ground up.
 

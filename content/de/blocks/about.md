@@ -14,6 +14,7 @@ Find Your Main ist ein privates, nicht kommerzielles Fanprojekt von Benny. Die S
 
 - **Klassen, Spezialisierungen und Völker** stammen aus dem Spiel selbst und aus den offiziellen Ankündigungen von Blizzard. Für WoW Forever gilt der Stand der Beta.
 - **Bewertungen** zu Einstieg und Solo-Tauglichkeit sind unsere redaktionelle Einschätzung. Sie sollen bei der Wahl helfen und sind keine DPS-Rangliste. Wie wir bewerten, steht [weiter unten](#wie-wir-klassen-bewerten).
+- **Bilder** von Klassen und Völkern stammen von den offiziellen World-of-Warcraft-Seiten und sind © Blizzard Entertainment, Inc. Blizzard erlaubt die Nutzung auf nicht kommerziellen Fanseiten.
 - **Tuning-Zahlen und Tier-Listen** veröffentlichen wir bewusst nicht, weil sie sich mit jedem Patch ändern.
 
 ## Wie wir Klassen bewerten

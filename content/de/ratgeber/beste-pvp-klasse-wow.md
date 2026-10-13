@@ -2,6 +2,8 @@
 title: "Beste Klasse für PvP in WoW Midnight – welche passt zu dir?"
 description: "Welche WoW-Klasse ist die beste für PvP? Klassen für Arena, Solo-Shuffle, Schlachtfelder und Kriegsmodus nach Spielstil, mit leichtem Einstieg und ohne Tier-List."
 key: pvp
+image: prey
+imageAlt: "Blutelf mit roten Klingen in einer dunklen Umgebung"
 order: 6
 date: "2026-10-13"
 updated: "2026-10-13"
@@ -50,21 +52,36 @@ Leicht heißt hier: Du kannst dich auf Gegner und Positionierung konzentrieren, 
 
 ### Kontrolle und Taktik: Magier und Schurke
 
+::class-art{name="mage"}
+::
+
 Der [Magier](/klassen/magier) verwandelt Gegner mit [**Verwandlung**](https://www.wowhead.com/de/spell=118){target="_blank" rel="noopener"} in Schafe, unterbricht mit [**Gegenzauber**](https://www.wowhead.com/de/spell=2139){target="_blank" rel="noopener"} und entkommt per [**Blinzeln**](https://www.wowhead.com/de/spell=1953){target="_blank" rel="noopener"}. Der [Schurke](/klassen/schurke) wählt aus der Verstohlenheit, wann der Kampf beginnt, legt Gegner mit [**Nierenhieb**](https://www.wowhead.com/de/spell=408){target="_blank" rel="noopener"} lahm und ist mit [**Verschwinden**](https://www.wowhead.com/de/spell=1856){target="_blank" rel="noopener"} wieder weg. Beide sind anspruchsvoll, aber nichts fühlt sich so gut an wie ein perfekt geplanter Angriff.
 
 ### Durchhalten und Druck: Krieger, Todesritter und Paladin
+
+::class-art{name="warrior"}
+::
 
 Der [Krieger](/klassen/krieger) setzt mit [**Tödlicher Stoß**](https://www.wowhead.com/de/spell=12294){target="_blank" rel="noopener"} Gegner unter Druck und schwächt ihre Heilung. Der [Todesritter](/klassen/todesritter) zieht Fliehende per [**Todesgriff**](https://www.wowhead.com/de/spell=49576){target="_blank" rel="noopener"} zurück und heilt sich mit [**Todesstoß**](https://www.wowhead.com/de/spell=49998){target="_blank" rel="noopener"}. Der [Paladin](/klassen/paladin) beschützt Verbündete mit [**Segen des Schutzes**](https://www.wowhead.com/de/spell=1022){target="_blank" rel="noopener"} und sich selbst mit [**Gottesschild**](https://www.wowhead.com/de/spell=642){target="_blank" rel="noopener"}. Alle drei tragen Platte und verzeihen Fehler.
 
 ### Ständig in Bewegung: Dämonenjäger, Mönch und Rufer
 
+::class-art{name="demonhunter"}
+::
+
 Der [Dämonenjäger](/klassen/daemonenjaeger) springt mit [**Teufelsrausch**](https://www.wowhead.com/de/spell=195072){target="_blank" rel="noopener"} über das Schlachtfeld, der [Mönch](/klassen/moench) rollt, tritt und trennt Gegner mit dem [**Ring des Friedens**](https://www.wowhead.com/de/spell=116844){target="_blank" rel="noopener"}, und der [Rufer](/klassen/rufer) zaubert dank [**Schweben**](https://www.wowhead.com/de/spell=358267){target="_blank" rel="noopener"} sogar in der Bewegung. Perfekt für alle, die nie stillstehen wollen.
 
 ### Fernkampf mit Begleiter: Jäger und Hexenmeister
 
+::class-art{name="hunter"}
+::
+
 [Jäger](/klassen/jaeger) und [Hexenmeister](/klassen/hexenmeister) kämpfen nie allein. Der Jäger hält Gegner mit Fallen auf Abstand, der Hexenmeister schickt sie mit [**Furcht**](https://www.wowhead.com/de/spell=5782){target="_blank" rel="noopener"} davon und lässt Flüche wirken. Beide machen auch dann Druck, wenn sie gerade selbst unter Beschuss stehen.
 
 ### Heilen unter Druck: Schamane, Druide und Co.
+
+::class-art{name="shaman"}
+::
 
 Heilen im PvP ist ein eigenes Spiel: Du heilst, während Gegner gezielt dich angreifen. Der [Schamane](/klassen/schamane) lenkt mit dem [**Totem der Erdung**](https://www.wowhead.com/de/spell=204336){target="_blank" rel="noopener"} feindliche Zauber ab, der [Druide](/klassen/druide) heilt mit Effekten über Zeit aus jeder Gestalt heraus, und der [Priester](/klassen/priester) übernimmt mit [**Gedankenkontrolle**](https://www.wowhead.com/de/spell=605){target="_blank" rel="noopener"} sogar mal einen Gegner. Auch Paladin, Mönch und Rufer haben starke PvP-Heiler.
 

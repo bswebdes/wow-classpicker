@@ -2,6 +2,8 @@
 title: "WoW Forever Völker und Klassen: Alle 56 Kombinationen"
 description: "Welches Volk kann in WoW Forever welche Klasse spielen? Alle 56 Völker-Klassen-Kombinationen, die neuen Kombinationen und das neue Volk Skyborne."
 key: forever-races
+image: skyborne
+imageAlt: "Skyborne-Artwork: ein Gesicht im Nebel über einer verschneiten Landschaft"
 order: 11
 game: forever
 date: "2026-10-13"
@@ -40,6 +42,9 @@ Die **Skyborne** sind das neue Volk in WoW Forever. Je nach Fraktion schließen 
 - **Horde (Windshaper):** Krieger, Jäger, Schurke, Schamane, Druide
 
 ## Alle Völker und ihre Klassen
+
+::race-gallery{mode="forever"}
+::
 
 **Allianz**
 

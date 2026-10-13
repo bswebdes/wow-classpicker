@@ -9,6 +9,9 @@ updated: "2026-10-13"
 
 ## Playstyle
 
+::class-art{name="hunter"}
+::
+
 The Hunter fights with a bow, gun or spear and often has an animal companion at its side. Its resource is **Focus**, which refills on its own over time. Because it attacks from range, it rarely stands where the damage is.
 
 With [**Feign Death**](https://www.wowhead.com/spell=5384){target="_blank" rel="noopener"}, [**Disengage**](https://www.wowhead.com/spell=781){target="_blank" rel="noopener"} and [**Aspect of the Turtle**](https://www.wowhead.com/spell=186265){target="_blank" rel="noopener"}, the Hunter has strong tools to escape trouble. That makes it one of the safest classes for leveling and solo content.

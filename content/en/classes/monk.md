@@ -9,6 +9,9 @@ updated: "2026-10-13"
 
 ## Playstyle
 
+::class-art{name="monk"}
+::
+
 The Monk is a martial arts master who fights with fists, feet and the energy of Chi. In leather armor it is nimble and fast: with [**Roll**](https://www.wowhead.com/spell=109132){target="_blank" rel="noopener"} and [**Transcendence**](https://www.wowhead.com/spell=101643){target="_blank" rel="noopener"} it repositions in a flash, and few classes get to an enemy or away from one this easily.
 
 Alongside Energy or Mana, the Monk uses **Chi** as a resource for its strongest techniques. Well-known abilities include [**Touch of Death**](https://www.wowhead.com/spell=322109){target="_blank" rel="noopener"}, which can finish off weakened enemies instantly, and [**Paralysis**](https://www.wowhead.com/spell=115078){target="_blank" rel="noopener"} for crowd control.
