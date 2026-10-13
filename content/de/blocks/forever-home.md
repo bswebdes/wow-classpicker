@@ -11,7 +11,7 @@ faq:
     a: "Die Maximalstufe ist 60 und soll laut Blizzard dauerhaft bleiben."
 ---
 
-## Der Class Picker für WoW Forever
+## Der WoW Forever Class Picker
 
 WoW Forever ist Blizzards neue, dauerhafte Classic-Version: ein neu interpretiertes Azeroth mit Stufe 60 als Maximum, neuen Gebieten, Dungeons und Schlachtzügen. Damit stellt sich für viele die alte Frage neu: Welche Klasse spiele ich?
 

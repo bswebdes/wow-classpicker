@@ -70,4 +70,4 @@ Am Ende entscheidet oft das Bauchgefühl. Willst du ein heiliger Ritter sein, ei
 
 ## Immer noch unentschlossen?
 
-Dann lass es krachen: Wähle deine Favoriten im [WoW Class Picker](/) aus und lass sie in der Arena gegeneinander antreten. Wer am Ende steht, wird dein Main. Oder lass den [Zufallsgenerator](/zufaellige-klasse) eine Klasse samt Spezialisierung würfeln.
+Dann lass es krachen: Wähle deine Favoriten in der [Arena von Find Your Main](/) aus und lass sie in der Arena gegeneinander antreten. Wer am Ende steht, wird dein Main. Oder lass den [Zufallsgenerator](/zufaellige-klasse) eine Klasse samt Spezialisierung würfeln.

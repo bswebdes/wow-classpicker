@@ -2,13 +2,13 @@
 title: "Über uns"
 ---
 
-## Was ist WoW Class Picker?
+## Was ist Find Your Main?
 
-WoW Class Picker ist ein Fanprojekt für alle, die sich in World of Warcraft nicht für eine Klasse entscheiden können. Angefangen hat es als kleiner Arena-Kampf, in dem Klassen gegeneinander antreten. Inzwischen gibt es ein Klassen-Quiz, einen Zufallsgenerator und Ratgeber für das aktuelle WoW (Midnight) und WoW Forever.
+Find Your Main ist ein WoW Class Picker und Fanprojekt für alle, die sich in World of Warcraft nicht für eine Klasse entscheiden können. Angefangen hat es als kleiner Arena-Kampf, in dem Klassen gegeneinander antreten. Inzwischen gibt es ein Klassen-Quiz, einen Zufallsgenerator und Ratgeber für das aktuelle WoW (Midnight) und WoW Forever.
 
 ## Wer steckt dahinter?
 
-WoW Class Picker wird von [frysch.studio](https://frysch.studio) betrieben, dem Webstudio von Benny Schey. Die Seite entsteht aus Spaß am Spiel und ist kostenlos und ohne Anmeldung nutzbar.
+Find Your Main wird von [frysch.studio](https://frysch.studio) betrieben, dem Webstudio von Benny Schey. Die Seite entsteht aus Spaß am Spiel und ist kostenlos und ohne Anmeldung nutzbar.
 
 ## Woher kommen die Informationen?
 
@@ -22,4 +22,4 @@ Jede Klassenseite und jeder Ratgeber zeigt, wann er zuletzt aktualisiert wurde. 
 
 ## Hinweis
 
-WoW Class Picker ist ein Fanprojekt und steht in keiner Verbindung zu Blizzard Entertainment. World of Warcraft und Blizzard Entertainment sind Marken von Blizzard Entertainment, Inc.
+Find Your Main ist ein Fanprojekt und steht in keiner Verbindung zu Blizzard Entertainment. World of Warcraft und Blizzard Entertainment sind Marken von Blizzard Entertainment, Inc.

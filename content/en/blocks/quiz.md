@@ -6,7 +6,7 @@ faq:
   - q: Does the quiz take the current meta into account?
     a: No, on purpose. The quiz is based on feel and preferences, not tier lists. Balance changes with every patch, your preferences usually don't.
   - q: Can I try the result right away?
-    a: Yes. With one click you send your top 3 into the WoW Class Picker arena and let them fight each other.
+    a: Yes. With one click you send your top 3 into the Find Your Main arena and let them fight each other.
 ---
 
 ## How the class quiz works

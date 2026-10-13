@@ -38,7 +38,7 @@ usePageSeo({
 
 useSchemaOrg([
   defineSoftwareApp({
-    name: props.mode === 'forever' ? 'WoW Forever Class Picker' : 'WoW Class Picker',
+    name: props.mode === 'forever' ? 'Find Your Main – WoW Forever Class Picker' : 'Find Your Main – WoW Class Picker',
     applicationCategory: 'GameApplication',
     operatingSystem: 'Web',
     offers: { price: 0, priceCurrency: 'EUR' }

@@ -1,4 +1,4 @@
-# ⚔️ Midnight Class Picker ⚔️
+# ⚔️ Find Your Main – WoW Class Picker ⚔️
 
 Ein Arena-Kampf-Simulator mit Klassen-Quiz, Zufallsgenerator und Ratgebern, der dir die schwere Entscheidung abnimmt, welche WoW-Klasse du in **Midnight** oder **WoW Forever** spielen sollst!
 
@@ -12,6 +12,8 @@ Du kannst dich nicht entscheiden, ob du deinen Schurken, Druiden oder doch den n
 - **Strategische Tiefe (Light)**: Heil- und Ausweichfähigkeiten haben 3 Runden Abklingzeit (Cooldown), damit die Kämpfe dynamisch bleiben.
 - **Interaktive Auswahl**: Wähle gezielt deine Charaktere aus oder schicke mit einem Klick alle 13 in das Gemetzel.
 - **Farbiger Kampflog**: Verfolge das Geschehen live in einem übersichtlichen, farblich hervorgehobenen Log.
+
+Live: [findyourmain.com](https://findyourmain.com)
 
 ## 🚀 Installation & Start
 Dieses Projekt ist eine **Nuxt 4 App** (Quellcode liegt in `app/`).

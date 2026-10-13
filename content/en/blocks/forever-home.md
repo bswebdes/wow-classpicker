@@ -11,7 +11,7 @@ faq:
     a: "The level cap is 60, and Blizzard intends to keep it there permanently."
 ---
 
-## The class picker for WoW Forever
+## The WoW Forever class picker
 
 WoW Forever is Blizzard's new, permanent Classic version: a reimagined Azeroth with a level cap of 60 and new zones, dungeons and raids. That brings back the old question: which class should I play?
 

@@ -28,8 +28,8 @@ defineProps({
       <path d="M20 10 L23 21 L33 24 L23 27 L20 38 L17 27 L7 24 L17 21 Z" fill="url(#logo-gold)" />
     </svg>
     <span class="flex flex-col leading-none">
-      <span class="font-display text-[11px] font-bold uppercase tracking-[0.35em] text-neutral-400">World of Warcraft</span>
-      <span class="wow-title uppercase" :class="small ? 'text-lg' : 'text-2xl'">Class Picker</span>
+      <span class="font-display text-[11px] font-bold uppercase tracking-[0.3em] text-neutral-400">WoW Class Picker</span>
+      <span class="wow-title uppercase" :class="small ? 'text-lg' : 'text-2xl'">Find Your Main</span>
     </span>
   </span>
 </template>

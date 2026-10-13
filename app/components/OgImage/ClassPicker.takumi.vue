@@ -5,7 +5,7 @@ const props = withDefaults(defineProps<{
   classes?: string[]
   mode?: 'retail' | 'forever'
 }>(), {
-  title: 'WoW Class Picker',
+  title: 'Find Your Main',
   subtitle: '',
   classes: () => [],
   mode: 'retail'
@@ -22,7 +22,7 @@ const accent = computed(() => props.classes.length === 1 ? getClassInfo(props.cl
   <div class="w-full h-full flex flex-col justify-between p-16" style="color: #f5f5f5; border: 6px solid #8a6d2b;" :style="{ background: mode === 'forever' ? 'linear-gradient(135deg, #0b0805 0%, #1f160b 55%, #4a2a08 100%)' : 'linear-gradient(135deg, #0b0805 0%, #1a1020 55%, #2a0e3d 100%)' }">
     <div class="flex items-center gap-4">
       <div class="flex" style="width: 14px; height: 56px; background: #ffd100;" />
-      <span class="text-[34px] font-bold uppercase" style="letter-spacing: 0.08em; color: #d4c08a;">WoW Class Picker</span>
+      <span class="text-[34px] font-bold uppercase" style="letter-spacing: 0.08em; color: #d4c08a;">Find Your Main</span>
       <span class="text-[26px] font-bold uppercase" style="letter-spacing: 0.08em; color: #8a6d2b;">· {{ mode === 'forever' ? 'Forever' : 'Midnight' }}</span>
     </div>
 

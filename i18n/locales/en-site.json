@@ -10,7 +10,7 @@
     "about": "About"
   },
   "footer": {
-    "tagline": "WoW Class Picker helps you choose your class in World of Warcraft: Midnight and WoW Forever, with an arena battle, a quiz and a random class generator.",
+    "tagline": "Find Your Main is the WoW class picker that helps you choose your class in World of Warcraft: Midnight and WoW Forever, with an arena battle, a quiz and a random class generator.",
     "disclaimer": "Fan project, not affiliated with Blizzard Entertainment. World of Warcraft and Blizzard Entertainment are trademarks of Blizzard Entertainment, Inc.",
     "tools": "Tools",
     "content": "Content",
@@ -204,9 +204,9 @@
     "racesA": "In WoW Forever, these races can be a {class}: {races}."
   },
   "about": {
-    "title": "About WoW Class Picker: Who We Are and How We Rate Classes",
-    "description": "WoW Class Picker is a fan project about choosing a class in World of Warcraft. Learn who is behind it, where our information comes from and how the ratings work.",
-    "heading": "About WoW Class Picker"
+    "title": "About Find Your Main: Who We Are and How We Rate Classes",
+    "description": "Find Your Main is a fan project about choosing a class in World of Warcraft. Learn who is behind it, where our information comes from and how the ratings work.",
+    "heading": "About Find Your Main"
   },
   "forever": {
     "talentTrees": "Talent trees",

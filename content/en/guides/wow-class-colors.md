@@ -44,4 +44,4 @@ Every class in World of Warcraft has a fixed color you see in party frames, chat
 
 The class colors have been tweaked slightly over the years, so you will sometimes find slightly different values online, for example for the Paladin or Shaman. The values above match the current version of the game.
 
-WoW Class Picker uses these colors too: in the [arena](/en), every class glows in its official color.
+Find Your Main uses these colors too: in the [arena](/en), every class glows in its official color.

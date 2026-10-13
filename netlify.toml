@@ -1,3 +1,17 @@
 [build.environment]
   # Nuxt Content braucht Node.js 22.5+ (native SQLite)
   NODE_VERSION = "24"
+
+# Alte Netlify-Adresse dauerhaft auf die eigene Domain umleiten
+[[redirects]]
+  from = "https://wow-classpicker.netlify.app/*"
+  to = "https://findyourmain.com/:splat"
+  status = 301
+  force = true
+
+# www auf die Hauptdomain
+[[redirects]]
+  from = "https://www.findyourmain.com/*"
+  to = "https://findyourmain.com/:splat"
+  status = 301
+  force = true

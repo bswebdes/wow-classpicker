@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 import tailwindcss from '@tailwindcss/vite'
 
-const siteUrl = 'https://wow-classpicker.netlify.app'
+const siteUrl = 'https://findyourmain.com'
 
 export default defineNuxtConfig({
   compatibilityDate: '2026-10-13',
@@ -29,8 +29,8 @@ export default defineNuxtConfig({
   // Runtime Config für einfache Pflege
   runtimeConfig: {
     public: {
-      siteName: 'WoW Midnight Class Picker',
-      siteDescription: 'Der ultimative Class Picker für WoW Midnight.',
+      siteName: 'Find Your Main',
+      siteDescription: 'WoW Class Picker für Midnight und WoW Forever.',
       language: 'de'
     }
   },
@@ -40,7 +40,7 @@ export default defineNuxtConfig({
 
   site: {
     url: siteUrl,
-    name: 'WoW Class Picker',
+    name: 'Find Your Main',
     defaultLocale: 'de'
   },
 
@@ -75,7 +75,7 @@ export default defineNuxtConfig({
     contentSource: false,
     llmsTxt: {
       notes: [
-        'WoW Class Picker helps players choose a class in World of Warcraft. It covers retail WoW (Midnight, 13 classes, 40 specializations) and WoW Forever (Classic+, launching 4 November 2026, 9 classes, 10 races, 56 race-class combinations).',
+        'Find Your Main is a WoW class picker that helps players choose a class in World of Warcraft. It covers retail WoW (Midnight, 13 classes, 40 specializations) and WoW Forever (Classic+, launching 4 November 2026, 9 classes, 10 races, 56 race-class combinations).',
         'Tools: an arena battle simulator, a class quiz and a random class generator. Content: one page per class for each game, plus guides on beginner classes, solo classes, tanks, healers and class colors.',
         'German is the default language; English pages live under /en. Ratings for difficulty and solo play are editorial assessments, not DPS rankings.'
       ]
@@ -96,7 +96,8 @@ export default defineNuxtConfig({
   schemaOrg: {
     identity: {
       type: 'Organization',
-      name: 'WoW Class Picker',
+      name: 'Find Your Main',
+      alternateName: 'WoW Class Picker',
       url: siteUrl,
       logo: `${siteUrl}/favicon.png`
     }

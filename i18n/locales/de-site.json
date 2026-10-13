@@ -10,7 +10,7 @@
     "about": "Über uns"
   },
   "footer": {
-    "tagline": "Der WoW Class Picker hilft dir bei der Klassenwahl in World of Warcraft: Midnight und WoW Forever. Mit Arena-Kampf, Quiz und Zufallsgenerator.",
+    "tagline": "Find Your Main ist der WoW Class Picker für deine Klassenwahl in World of Warcraft: Midnight und WoW Forever. Mit Arena-Kampf, Quiz und Zufallsgenerator.",
     "disclaimer": "Fanprojekt, keine Verbindung zu Blizzard Entertainment. World of Warcraft und Blizzard Entertainment sind Marken von Blizzard Entertainment, Inc.",
     "tools": "Tools",
     "content": "Inhalte",
@@ -204,9 +204,9 @@
     "racesA": "In WoW Forever können folgende Völker {class} werden: {races}."
   },
   "about": {
-    "title": "Über WoW Class Picker: Wer dahintersteckt und wie wir bewerten",
-    "description": "WoW Class Picker ist ein Fanprojekt zur Klassenwahl in World of Warcraft: wer dahintersteckt, woher die Infos kommen und wie die Bewertungen entstehen.",
-    "heading": "Über WoW Class Picker"
+    "title": "Über Find Your Main: Wer dahintersteckt und wie wir bewerten",
+    "description": "Find Your Main ist ein Fanprojekt zur Klassenwahl in World of Warcraft: wer dahintersteckt, woher die Infos kommen und wie die Bewertungen entstehen.",
+    "heading": "Über Find Your Main"
   },
   "forever": {
     "talentTrees": "Talentbäume",

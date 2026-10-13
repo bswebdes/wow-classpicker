@@ -44,4 +44,4 @@ Jede Klasse in World of Warcraft hat eine feste Farbe, die du im Spiel in Gruppe
 
 Die Klassenfarben wurden im Laufe der Jahre leicht angepasst, deshalb findest du im Netz manchmal minimal abweichende Werte, etwa beim Paladin oder Schamanen. Die Werte oben entsprechen der aktuellen Version des Spiels.
 
-Auch der WoW Class Picker nutzt diese Farben: In der [Arena](/) leuchtet jede Klasse in ihrer offiziellen Farbe.
+Auch Find Your Main nutzt diese Farben: In der [Arena](/) leuchtet jede Klasse in ihrer offiziellen Farbe.

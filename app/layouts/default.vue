@@ -43,7 +43,7 @@ const modes = computed(() => [
   <div class="min-h-screen flex flex-col">
     <header class="md:sticky md:top-0 z-40 border-b-2 border-gold-border/70 bg-[#0b0805]/90 backdrop-blur-sm shadow-[0_4px_16px_rgba(0,0,0,0.7)]">
       <div class="max-w-6xl w-[92%] mx-auto flex flex-wrap items-center justify-between gap-x-6 gap-y-3 pt-3">
-        <NuxtLink :to="localePath(routeName('index'))" class="flex items-center gap-3 pb-3" aria-label="WoW Class Picker">
+        <NuxtLink :to="localePath(routeName('index'))" class="flex items-center gap-3 pb-3" aria-label="Find Your Main">
           <SiteLogo :mode="mode" />
         </NuxtLink>
 

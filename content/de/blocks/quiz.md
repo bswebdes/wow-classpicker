@@ -6,7 +6,7 @@ faq:
   - q: Berücksichtigt das Quiz die aktuelle Meta?
     a: Nein, bewusst nicht. Das Quiz richtet sich nach Spielgefühl und Vorlieben, nicht nach Tier-Listen. Die Balance ändert sich mit jedem Patch, deine Vorlieben eher nicht.
   - q: Kann ich das Ergebnis direkt ausprobieren?
-    a: Ja. Mit einem Klick schickst du deine Top 3 in die Arena des WoW Class Pickers und lässt sie gegeneinander kämpfen.
+    a: Ja. Mit einem Klick schickst du deine Top 3 in die Arena von Find Your Main und lässt sie gegeneinander kämpfen.
 ---
 
 ## So funktioniert das Klassen-Quiz
