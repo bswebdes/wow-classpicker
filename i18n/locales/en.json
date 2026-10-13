@@ -157,9 +157,6 @@
     "totalHealing": "Total Healing"
   },
   "battle": {
-    "ready": "READY",
-    "fight": "FIGHT",
-    "selectionWords": ["SELECT", "YOUR", "FIGHTER"],
     "startLog": "The battle begins with {count} classes!",
     "evadeLog": "{target} dodges the attack from {attacker}!",
     "critLog": "CRITICAL HIT by {attacker}!",

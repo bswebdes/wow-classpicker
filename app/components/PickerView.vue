@@ -65,26 +65,10 @@ onMounted(() => {
   preselect.forEach(id => {
     if (!selectedClasses.value.has(id)) toggleClass(id)
   })
-  showSelectionIntro.value = true
 })
 
-// Arcade-Intro Steuerung
-const showBattleIntro = ref(false)
-const onBattleIntroFinished = () => {
-  // Battle-Intro zurücksetzen, damit es beim nächsten Mal erneut ausgelöst werden kann
-  showBattleIntro.value = false
-  showResult.value = true
-  initBattle(props.mode)
-  startBattle()
-}
-
-// Selection-Intro beim Laden und nach Reset
-const showSelectionIntro = ref(false)
 // Siegerauswertung kann geschlossen werden, um den Kampfverlauf anzusehen
 const showResult = ref(true)
-const onSelectionIntroFinished = () => {
-  showSelectionIntro.value = false
-}
 
 const handleStart = () => {
   if (selectedClasses.value.size < 2) {
@@ -96,14 +80,14 @@ const handleStart = () => {
     classes: Array.from(selectedClasses.value).join(','),
     game_mode: props.mode
   })
-  showBattleIntro.value = true
+  showResult.value = true
+  initBattle(props.mode)
+  startBattle()
 }
 
 const handleReset = () => {
   trackEvent('battle_reset', { game_mode: props.mode })
   resetBattle()
-  // kurze Verzögerung, damit UI zurückspringt, dann Intro zeigen
-  setTimeout(() => { showSelectionIntro.value = true }, 50)
 }
 </script>
 
@@ -115,9 +99,6 @@ const handleReset = () => {
       <p class="mx-auto mt-3 max-w-3xl text-neutral-300">{{ intro }}</p>
     </header>
 
-    <!-- Street-Fighter-Style Intros -->
-    <BattleIntro :show="showSelectionIntro" mode="selection" @finished="onSelectionIntroFinished" />
-    <BattleIntro :show="showBattleIntro" mode="battle" @finished="onBattleIntroFinished" />
 
     <div class="mt-8">
       <ClassSelection
