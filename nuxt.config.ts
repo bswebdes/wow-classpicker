@@ -84,7 +84,9 @@ export default defineNuxtConfig({
 
   sitemap: {
     // Inhaltsseiten mit lastmod und Sprachalternativen (unterschiedliche Slugs je Sprache)
-    sources: ['/api/__sitemap__/urls']
+    sources: ['/api/__sitemap__/urls'],
+    // Rechtstexte nicht in die Sitemap
+    exclude: ['/impressum', '/datenschutz', '/en/imprint', '/en/privacy']
   },
 
   content: {
@@ -106,6 +108,9 @@ export default defineNuxtConfig({
   // Seiten werden beim Build vorgerendert (statisch auf Netlify ausgeliefert)
   nitro: {
     prerender: {
+      // Seiten als /klassen/magier.html statt /klassen/magier/index.html schreiben,
+      // sonst leitet Netlify jede URL auf eine Variante mit Schrägstrich am Ende um
+      autoSubfolderIndex: false,
       crawlLinks: true,
       routes: ['/', '/en', '/forever', '/en/forever', '/robots.txt', '/sitemap_index.xml', '/llms.txt']
     }

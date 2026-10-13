@@ -120,12 +120,15 @@ const modes = computed(() => [
           <ul class="space-y-1">
             <li><NuxtLink :to="localePath('ratgeber')" class="hover:text-gold">{{ $t('nav.guides') }}</NuxtLink></li>
             <li><NuxtLink :to="localePath('ueber')" class="hover:text-gold">{{ $t('nav.about') }}</NuxtLink></li>
-            <li><a href="https://frysch.studio/impressum/" class="hover:text-gold">{{ $t('footer.imprint') }}</a></li>
-            <li><a href="https://frysch.studio/datenschutz/" class="hover:text-gold">{{ $t('footer.privacy') }}</a></li>
+            <li><NuxtLink :to="localePath('impressum')" class="hover:text-gold">{{ $t('footer.imprint') }}</NuxtLink></li>
+            <li><NuxtLink :to="localePath('datenschutz')" class="hover:text-gold">{{ $t('footer.privacy') }}</NuxtLink></li>
           </ul>
         </div>
       </div>
-      <p class="max-w-6xl w-[92%] mx-auto pb-10 text-xs text-neutral-500">{{ $t('footer.disclaimer') }}</p>
+      <p class="max-w-6xl w-[92%] mx-auto pb-10 text-xs text-neutral-500">
+        {{ $t('footer.disclaimer') }}
+        {{ $t('footer.madeBy') }} <a href="https://frysch.studio" class="underline hover:text-gold">frysch.studio</a>.
+      </p>
     </footer>
   </div>
 </template>

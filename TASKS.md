@@ -43,8 +43,8 @@ Stand: 13.10.2026 · Branch `chore/upgrade-nuxt4` (nicht gepusht)
   - [x] Domain ausgewählt, Marke im Projekt umgestellt (Logo, Seitenname, Schema.org, OG-Bilder, Texte)
   - [x] `siteUrl` in `nuxt.config.ts` auf `https://findyourmain.com` umgestellt
   - [x] 301-Weiterleitungen in `netlify.toml` (alte `netlify.app`-Adresse und `www` auf die Hauptdomain)
-  - [ ] Domain registrieren
-  - [ ] DNS beim Registrar auf Netlify zeigen lassen, in Netlify als Primary Domain eintragen, HTTPS-Zertifikat prüfen
+  - [x] Domain registrieren
+  - [x] DNS auf Netlify, Primary Domain eingetragen, HTTPS aktiv
   - [ ] Google Search Console: Domain-Property per DNS bestätigen, Adressänderung von der alten Property melden, Sitemap einreichen
 - [ ] **Cookie-Banner mit Google Tag Manager und GA4** (Setup wie auf frysch.studio)
   - vanilla-cookieconsent v3, Opt-in, Cookie `cc_cookie`, schwebender Button zum erneuten Öffnen der Einstellungen
@@ -52,9 +52,12 @@ Stand: 13.10.2026 · Branch `chore/upgrade-nuxt4` (nicht gepusht)
   - Google Consent Mode v2 (Standard: alles `denied`, Update bei Zustimmung)
   - Banner-Texte DE/EN, Design passend zum Classic-Look
   - In GTM die vorhandenen `dataLayer`-Events als GA4-Events anlegen
-- [ ] **Eigenes Impressum und eigene Datenschutzerklärung** (aktuell verlinkt der Footer auf frysch.studio). Datenschutz muss GTM/GA4 inkl. Consent, Netlify-Hosting und selbst gehostete Schriften abdecken
+- [x] **Eigenes Impressum und eigene Datenschutzerklärung** (`/impressum`, `/datenschutz`, EN als Übersetzung), Basis frysch.studio, frysch.studio als Ersteller genannt, `noindex` und nicht in der Sitemap
+  - [ ] Datenschutz um Cookie-Banner, Google Tag Manager und GA4 erweitern, sobald diese eingebaut sind (Textbausteine von frysch.studio übernehmen)
 - [ ] Betreiber-Angabe auf der Über-uns-Seite final festlegen (aktuell „frysch.studio, das Webstudio von Benny Schey“)
-- [ ] Lokal testen, dann pushen (Netlify deployt automatisch)
+- [x] Go-live auf findyourmain.com (13.10.2026)
+- [x] URLs ohne Schrägstrich am Ende direkt ausliefern (`autoSubfolderIndex: false`), sonst leitet Netlify jede Seite um
+- [ ] `www.findyourmain.com`: HTTPS-Zertifikat in Netlify prüfen (DNS stimmt, Zertifikat war beim Go-live noch nicht aktiv)
 
 ### Zeitkritisch
 - [ ] Nach dem Forever-Start am 4.11.2026: Forever-Fakten prüfen (Meilenstein-Talente, Skyborne-Fraktionen „High Order“/„Windshaper“, Talentbaum-Namen), `updated`-Datum setzen

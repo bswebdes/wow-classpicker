@@ -15,7 +15,8 @@
     "tools": "Tools",
     "content": "Content",
     "imprint": "Imprint",
-    "privacy": "Privacy"
+    "privacy": "Privacy",
+    "madeBy": "Website by"
   },
   "common": {
     "roles": {
