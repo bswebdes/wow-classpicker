@@ -59,7 +59,7 @@ SD = SEO Difficulty (0–100, unter 30 ist für eine junge Seite realistisch).
 ## Nächste Schritte (Vorschlag)
 
 1. ~~WoW-Forever-Ratgeber~~ umgesetzt (13.10.2026): Forever-Modus mit Klassenseiten, Völker-Matrix, Quiz, Zufall und zwei Ratgebern. Nach dem Start am 4. November Fakten (Talente, Skyborne) gegen die finale Version prüfen.
-2. **PvP-Ratgeber**: „best wow class for pvp“ ist mit 880/SD 23 das größte offene Keyword. Evergreen schreiben (Spielstil statt Meta).
+2. ~~**PvP-Ratgeber**~~ umgesetzt (13.10.2026): „best wow class for pvp“ (880/SD 23), evergreen nach Spielstil statt Meta.
 3. **Klassen & Völker (Retail)**: „wow class race combos“ (US 170), „wow klassen und rassen“ (DE 140). Für Forever umgesetzt, für Retail fehlt noch eine verlässliche Datentabelle.
 4. ~~Eigene Domain~~ entschieden (13.10.2026): `findyourmain.com`, Marke „Find Your Main“. `classpicker.com` war vergeben, `.gg` zu teuer.
 5. **Google Search Console**: Sitemap `/sitemap_index.xml` einreichen (die alte Sitemap zeigte auf eine Vercel-Domain).
