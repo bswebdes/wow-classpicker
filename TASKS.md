@@ -52,12 +52,24 @@ Stand: 13.10.2026 · Branch `chore/upgrade-nuxt4` (nicht gepusht)
   - Google Consent Mode v2 (Standard: alles `denied`, Update bei Zustimmung)
   - Banner-Texte DE/EN, Design passend zum Classic-Look
   - In GTM die vorhandenen `dataLayer`-Events als GA4-Events anlegen
-- [x] **Eigenes Impressum und eigene Datenschutzerklärung** (`/impressum`, `/datenschutz`, EN als Übersetzung), Basis frysch.studio, frysch.studio als Ersteller genannt, `noindex` und nicht in der Sitemap
+- [x] **Eigenes Impressum und eigene Datenschutzerklärung** (`/impressum`, `/datenschutz`, EN als Übersetzung) für eine private, nicht kommerzielle Seite: nur Name, Anschrift, E-Mail `findyourmain@pm.me`, frysch.studio nur als Ersteller, `noindex`, nicht in der Sitemap
+  - [ ] Anschrift prüfen: Im Impressum steht aktuell die Adresse aus dem frysch.studio-Impressum (Hofstelle 10, Gemmingen). Falls privat eine andere gilt, austauschen
   - [ ] Datenschutz um Cookie-Banner, Google Tag Manager und GA4 erweitern, sobald diese eingebaut sind (Textbausteine von frysch.studio übernehmen)
-- [ ] Betreiber-Angabe auf der Über-uns-Seite final festlegen (aktuell „frysch.studio, das Webstudio von Benny Schey“)
+- [x] Über-uns-Seite: privates Fanprojekt von Benny, Kontakt findyourmain@pm.me
 - [x] Go-live auf findyourmain.com (13.10.2026)
 - [x] URLs ohne Schrägstrich am Ende direkt ausliefern (`autoSubfolderIndex: false`), sonst leitet Netlify jede Seite um
 - [ ] `www.findyourmain.com`: HTTPS-Zertifikat in Netlify prüfen (DNS stimmt, Zertifikat war beim Go-live noch nicht aktiv)
+
+### UX & Design
+- [x] Logo-Reiter Retail/Forever: beide Logos gleich hoch (feste Höhe statt fester Breite)
+- [x] Arena: Kampflog erst einblenden, wenn der Kampf startet
+- [x] Siegerauswertung: Podium Platz 1–3, Sieger hervorgehoben, Kampfstatistik (Schaden, Heilung, Krits, Ausweichen, Kills, Runden) und Auszeichnungen
+- [x] Nach dem Kampf: Haupt-CTA zur Klassenseite des Siegers, Links zu Platz 2 und 3, „Nochmal kämpfen“ zweitrangig, Auswertung schließbar
+- [x] Echte Fähigkeitsnamen (DE/EN, per Wowhead-Spell-ID geprüft), Forever-Arena mit Classic-Fähigkeiten statt Retail-Fähigkeiten
+- [x] Falsche deutsche Fähigkeitsnamen in den Klassentexten korrigiert (z. B. Abbitte, Paralyse, Teufelsrausch, Blutsauger)
+- [ ] Noch per Wowhead prüfen (wurde gedrosselt): Chaosblitz, Augenstrahl, Staffelung, Wiedergeburt, Rufer-Fähigkeiten (Emporschwingen, Schweben, Feueratem, Desintegration), Classic-Priester (Gedankenkontrolle, Psychischer Schrei, Schattengestalt), Windzorn
+- [x] Zufallsklasse im Loot-Stil: Beutefenster mit Qualität und Wurf (1–100), „Bedarf!“, Verlauf der letzten Würfe, Link zur Klassenseite
+- [x] Klassen-Quiz im Quest-Stil: Quest-Angebot mit Questzielen, Fragen als Dialog-Optionen, Ergebnis als „Quest abgeschlossen“ mit Belohnungen (Top 3) zur Klassenseite
 
 ### Zeitkritisch
 - [ ] Nach dem Forever-Start am 4.11.2026: Forever-Fakten prüfen (Meilenstein-Talente, Skyborne-Fraktionen „High Order“/„Windshaper“, Talentbaum-Namen), `updated`-Datum setzen

@@ -182,6 +182,9 @@ export const useBattle = () => {
   const isBattleInProgress = ref(false)
   const isStarted = ref(false)
   const winner = ref(null)
+  // Auswertung nach dem Kampf
+  const rounds = ref(0)
+  const ranking = ref([])
 
   const getRandomName = () => {
     return randomNames[Math.floor(Math.random() * randomNames.length)]
@@ -197,7 +200,7 @@ export const useBattle = () => {
     })
   }
 
-    const { t } = useI18n()
+    const { t, te } = useI18n()
 
     const addLog = (message, type = '') => {
       battleLog.value.push({ id: Date.now() + Math.random(), message, type })
@@ -207,8 +210,16 @@ export const useBattle = () => {
       return `<span class="c-${char.id}">${char.name}</span>`
     }
 
-    const initBattle = () => {
+    // In WoW Forever nutzen einige Klassen Classic-Fähigkeiten statt der Retail-Varianten
+    const abilityKey = (id, key, mode) =>
+      mode === 'forever' && te(`foreverAbilities.${id}.${key}.name`)
+        ? `foreverAbilities.${id}.${key}`
+        : `classes.${id}.abilities.${key}`
+
+    const initBattle = (mode = 'retail') => {
       isStarted.value = true
+      rounds.value = 0
+      ranking.value = []
       characters.value = Array.from(selectedClasses.value).map(id => {
         const stats = classData[id].stats || {}
         const startHp = stats.hp || 100
@@ -224,8 +235,8 @@ export const useBattle = () => {
           abilities: Object.keys(classData[id].abilities).map(key => ({ 
             ...classData[id].abilities[key], 
             key,
-            name: t(`classes.${id}.abilities.${key}.name`),
-            msg: t(`classes.${id}.abilities.${key}.msg`)
+            name: t(`${abilityKey(id, key, mode)}.name`),
+            msg: t(`${abilityKey(id, key, mode)}.msg`)
           })).map(a => ({ ...a, currentCD: 0 })),
           alive: true,
           evadeNext: false,
@@ -233,7 +244,11 @@ export const useBattle = () => {
           isShaking: false,
           stats: stats,
           damageDone: 0,
-          healingDone: 0
+          healingDone: 0,
+          crits: 0,
+          dodges: 0,
+          kills: 0,
+          eliminatedInRound: null
         }
       })
       battleLog.value = []
@@ -245,7 +260,9 @@ export const useBattle = () => {
     if (isBattleInProgress.value) return
     isBattleInProgress.value = true
 
+    const eliminated = []
     while (characters.value.filter(c => c.alive).length > 1) {
+      rounds.value++
       for (const attacker of characters.value) {
         if (!attacker.alive) continue
         if (characters.value.filter(c => c.alive).length <= 1) break
@@ -293,6 +310,7 @@ export const useBattle = () => {
 
           if (isDodged) {
             target.evadeNext = false
+            target.dodges++
             addLog(t('battle.evadeLog', { target: getColoredName(target), attacker: getColoredName(attacker) }), 'evade')
             target.status = t('battle.status.evade')
           } else {
@@ -307,6 +325,7 @@ export const useBattle = () => {
             const lowHpBonus = (attacker.hp / attacker.maxHp) < BALANCE.lowHpThreshold ? BALANCE.lowHpCritBonus : 0
             const critChance = Math.min(0.75, baseCrit + lowHpBonus)
             if (Math.random() < critChance) {
+              attacker.crits++
               // Prüfe auf Mega-Krit
               if (Math.random() < BALANCE.megaCritChance) {
                 finalDamage = Math.floor(finalDamage * BALANCE.megaCritMult)
@@ -326,6 +345,9 @@ export const useBattle = () => {
             
             if (target.hp <= 0 && target.alive) {
               target.alive = false
+              target.eliminatedInRound = rounds.value
+              attacker.kills++
+              eliminated.push(target)
               target.status = t('battle.status.defeated')
               addLog(t('battle.eliminatedLog', { target: getColoredName(target), attacker: getColoredName(attacker) }), 'important')
             }
@@ -336,6 +358,8 @@ export const useBattle = () => {
 
     const champion = characters.value.find(c => c.alive)
     if (champion) {
+      // Platzierung: Sieger vorn, danach in umgekehrter Reihenfolge des Ausscheidens
+      ranking.value = [champion, ...eliminated.slice().reverse()].map((c, i) => ({ ...c, place: i + 1 }))
       winner.value = champion
       addLog(t('battle.winnerLog', { winner: getColoredName(champion) }), 'important')
     }
@@ -347,9 +371,11 @@ export const useBattle = () => {
     isBattleInProgress.value = false
     characters.value = []
     winner.value = null
+    ranking.value = []
+    rounds.value = 0
+    battleLog.value = []
     // Auswahl wirklich zurücksetzen, damit beim Neustart nichts "hängen" bleibt
     selectedClasses.value = new Set()
-    addLog(t('battle.resetLog'))
   }
 
   const toggleClass = (id) => {
@@ -392,6 +418,8 @@ export const useBattle = () => {
     isBattleInProgress,
     isStarted,
     winner,
+    rounds,
+    ranking,
     globalHpPercent,
     customNames,
     initBattle,

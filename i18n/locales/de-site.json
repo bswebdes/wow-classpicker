@@ -161,7 +161,17 @@
           "any": "Egal"
         }
       }
-    }
+    },
+    "questLabel": "Quest",
+    "questTitle": "Finde deinen Main",
+    "questText": "Reisender, du wirkst unentschlossen. Beantworte mir sieben Fragen, und ich verrate dir, welche Klasse wirklich zu dir passt.",
+    "objectivesTitle": "Questziele",
+    "objective": "Beantworte 7 Fragen über deinen Spielstil",
+    "accept": "Annehmen",
+    "completeTitle": "Quest abgeschlossen!",
+    "rewardsTitle": "Wähle deine Belohnung",
+    "rewardHint": "Klick auf eine Klasse, um mehr über sie zu erfahren.",
+    "progress": "{current}/{total} beantwortet"
   },
   "random": {
     "title": "Zufällige WoW-Klasse: Der Random Class Generator",
@@ -174,7 +184,12 @@
     "filterArmor": "Rüstung",
     "result": "Deine Zufallsklasse",
     "noResult": "Mit diesen Filtern gibt es keine Klasse. Lockere einen Filter.",
-    "toClass": "Mehr über die Klasse"
+    "toClass": "Mehr über die Klasse",
+    "lootTitle": "Beute",
+    "need": "Bedarf!",
+    "rollText": "Du würfelst {n} (1–100)",
+    "history": "Zuletzt gewürfelt",
+    "emptyLoot": "Noch nichts gewürfelt. Klick auf „Bedarf!“ und lass den Zufall entscheiden."
   },
   "siteSeo": {
     "homeOgSubtitle": "Arena-Kampf, Quiz und Zufallsgenerator für die Klassenwahl"
@@ -225,7 +240,8 @@
       "description": "Welche Klasse spielst du in WoW Forever? Lass die 9 Classic-Klassen in der Arena kämpfen, mach das Quiz oder würfle Volk und Klasse. Start: 4. November 2026.",
       "heading": "Welche Klasse spielst du in WoW Forever?",
       "intro": "WoW Forever bringt das klassische Azeroth zurück, mit neuen Völker-Klassen-Kombinationen und dem neuen Volk der Skyborne. Wähle deine Favoriten unter den 9 Klassen und lass sie gegeneinander antreten.",
-      "classesTeaser": "Alle 9 Klassen in WoW Forever mit Talentbäumen, Rollen und Völkern."
+      "classesTeaser": "Alle 9 Klassen in WoW Forever mit Talentbäumen, Rollen und Völkern.",
+      "randomTeaser": "Volk, Klasse und Talentbaum per Zufall. Für Twinks und Mutige."
     },
     "classes": {
       "title": "WoW Forever Klassen und Völker: Alle 56 Kombinationen",
@@ -247,5 +263,78 @@
       "heading": "Volk und Klasse für WoW Forever würfeln",
       "intro": "Lass den Zufall deinen nächsten Charakter in WoW Forever bestimmen: Volk, Klasse und Talentbaum, auf Wunsch nur für Allianz oder Horde."
     }
+  },
+  "foreverAbilities": {
+    "warrior": {
+      "victoryrush": {
+        "name": "Blutdurst",
+        "msg": "beißt sich in den Kampf und fühlt sich gleich besser."
+      }
+    },
+    "paladin": {
+      "avengingwrath": {
+        "name": "Hammer des Zorns",
+        "msg": "wirft einen leuchtenden Hammer. Ganz klassisch."
+      }
+    },
+    "hunter": {
+      "killcommand": {
+        "name": "Mehrfachschuss",
+        "msg": "schießt drei Pfeile gleichzeitig. Einer trifft bestimmt."
+      }
+    },
+    "priest": {
+      "swdeath": {
+        "name": "Schattenwort: Schmerz",
+        "msg": "flüstert etwas Gemeines. Es tut weh."
+      }
+    },
+    "shaman": {
+      "healingrain": {
+        "name": "Kettenheilung",
+        "msg": "lässt die Heilung von Kopf zu Kopf springen."
+      },
+      "bloodlust": {
+        "name": "Sturmschlag",
+        "msg": "schlägt mit der Kraft des Sturms zu."
+      }
+    },
+    "warlock": {
+      "chaosbolt": {
+        "name": "Schattenblitz",
+        "msg": "castet Schattenblitz. Und noch einen. Und noch einen."
+      }
+    },
+    "druid": {
+      "convoke": {
+        "name": "Zorn",
+        "msg": "wirft mit einem kleinen grünen Naturball. Zorn!"
+      }
+    }
+  },
+  "result": {
+    "show": "Auswertung anzeigen",
+    "place": "Platz {n}",
+    "learnMore": "Mehr über den {class}",
+    "alsoOnPodium": "Auch auf dem Podium",
+    "again": "Nochmal kämpfen",
+    "viewFight": "Kampfverlauf ansehen",
+    "statsTitle": "Kampfauswertung",
+    "rounds": "{n} Runden",
+    "fighter": "Kämpfer",
+    "damage": "Schaden",
+    "healing": "Heilung",
+    "crits": "Krits",
+    "dodges": "Ausgewichen",
+    "kills": "Kills",
+    "awards": "Auszeichnungen",
+    "award": {
+      "damage": "Meister des Schadens",
+      "healing": "Bester Heiler",
+      "crits": "Krit-König",
+      "dodges": "Nicht zu treffen",
+      "kills": "Meiste Kills"
+    },
+    "close": "Schließen"
   }
 }

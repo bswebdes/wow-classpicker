@@ -4,36 +4,26 @@ title: "Impressum"
 
 Stand: 13. Oktober 2026
 
-## Angaben gemäß § 5 DDG
+Find Your Main ist ein privates, nicht kommerzielles Fanprojekt.
+
+## Angaben gemäß § 18 Abs. 1 MStV
 
 Benjamin Schey  
-frysch.studio  
 Hofstelle 10  
 75050 Gemmingen  
 Deutschland
 
 ## Kontakt
 
-E-Mail: [hello@frysch.studio](mailto:hello@frysch.studio)  
-Telefon: +49 152 34597905
-
-## Umsatzsteuer-ID
-
-Umsatzsteuer-Identifikationsnummer gemäß § 27a Umsatzsteuergesetz: DE353180265
+E-Mail: [findyourmain@pm.me](mailto:findyourmain@pm.me)
 
 ## Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV
 
-Benjamin Schey  
-Hofstelle 10  
-75050 Gemmingen
+Benjamin Schey, Anschrift wie oben
 
-## Konzept, Design und Umsetzung
+## Gestaltung und Umsetzung
 
-Diese Website wurde von [frysch.studio](https://frysch.studio) erstellt.
-
-## Verbraucherstreitbeilegung
-
-Ich bin nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
+Website erstellt von [frysch.studio](https://frysch.studio).
 
 ## Haftung für Inhalte
 

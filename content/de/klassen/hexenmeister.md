@@ -11,7 +11,7 @@ updated: "2026-10-13"
 
 Der Hexenmeister hat sich der verbotenen Magie verschrieben: Er belegt Gegner mit Flüchen, beschwört Dämonen und schleudert Teufelsfeuer. Neben **Mana** sammelt er **Seelensplitter**, mit denen er seine stärksten Zauber wirkt.
 
-Ein dämonischer Diener ist immer an seiner Seite, vom Wichtel bis zum Leerwandler, der Gegner auf sich zieht. Für die Gruppe hat der Hexenmeister einzigartige Werkzeuge: **Gesundheitssteine** zum Heilen, einen **Seelenstein**, der einen Verbündeten im Kampf wiederbeleben kann, ein **Beschwörungsritual**, das Mitspieler herbeiholt, und das **Dämonische Tor** zum schnellen Positionswechsel.
+Ein dämonischer Diener ist immer an seiner Seite, vom Wichtel bis zum Leerwandler, der Gegner auf sich zieht. Für die Gruppe hat der Hexenmeister einzigartige Werkzeuge: **Gesundheitssteine** zum Heilen, einen **Seelenstein**, der einen Verbündeten im Kampf wiederbeleben kann, ein **Ritual der Beschwörung**, das Mitspieler herbeiholt, und das **Dämonische Tor** zum schnellen Positionswechsel.
 
 ## Die Spezialisierungen
 
@@ -34,6 +34,6 @@ Ein dämonischer Diener ist immer an seiner Seite, vom Wichtel bis zum Leerwandl
 
 ## Stärken und Schwächen
 
-Für eine Stoffklasse ist der Hexenmeister erstaunlich zäh: Lebensentzug, Gesundheitssteine und ein Leerwandler machen ihn solo sehr angenehm. Dafür steht er oft still, um Zauber zu wirken, und ist gegen schnelle Gegner verwundbar.
+Für eine Stoffklasse ist der Hexenmeister erstaunlich zäh: Blutsauger, Gesundheitssteine und ein Leerwandler machen ihn solo sehr angenehm. Dafür steht er oft still, um Zauber zu wirken, und ist gegen schnelle Gegner verwundbar.
 
-Der Hexenmeister ist auch in unserer [Arena](/) mit Chaosblitz und Lebensentzug vertreten. Wer gewinnt?
+Der Hexenmeister ist auch in unserer [Arena](/) mit Chaosblitz und Blutsauger vertreten. Wer gewinnt?

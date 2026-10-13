@@ -62,7 +62,7 @@ const modes = computed(() => [
             :aria-current="mode === m.id ? 'page' : undefined"
             :title="m.label + ' · ' + m.sub"
           >
-            <GameLogo :mode="m.id" :width="64" eager :class="mode === m.id ? '' : 'opacity-60 grayscale-[60%]'" />
+            <GameLogo :mode="m.id" :height="46" eager :class="mode === m.id ? '' : 'opacity-60 grayscale-[60%]'" />
             <span class="font-display text-[11px] font-bold uppercase tracking-widest">{{ m.label }}</span>
           </NuxtLink>
         </nav>

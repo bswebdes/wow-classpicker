@@ -28,7 +28,7 @@
       "description": "Healing and invulnerability.",
       "abilities": {
         "divineshield": { "name": "Divine Shield", "msg": "turns on the bubble! Untouchable!" },
-        "judgement": { "name": "Judgement of Light", "msg": "judges the target and steals some life." },
+        "judgement": { "name": "Judgment", "msg": "judges the target and steals some life." },
         "avengingwrath": { "name": "Avenging Wrath", "msg": "gets wings! THE POWER OF LIGHT!" },
         "flashoflight": { "name": "Flash of Light", "msg": "blinds everyone with a bright light and heals." }
       }
@@ -39,7 +39,7 @@
       "abilities": {
         "aimedshot": { "name": "Aimed Shot", "msg": "aims for 3 hours... and HITS!" },
         "turtle": { "name": "Aspect of the Turtle", "msg": "becomes a turtle. For some reason." },
-        "killcommand": { "name": "Kill Command!", "msg": "sends their invisible pet. Bite!" },
+        "killcommand": { "name": "Kill Command", "msg": "sends their invisible pet. Bite!" },
         "freezingtrap": { "name": "Freezing Trap", "msg": "freezes the target's feet. Cold!" }
       }
     },

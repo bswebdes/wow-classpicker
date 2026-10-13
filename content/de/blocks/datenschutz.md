@@ -4,18 +4,16 @@ title: "Datenschutzerklärung"
 
 Stand: 13. Oktober 2026
 
-Der Schutz deiner persönlichen Daten ist mir wichtig. Hier erfährst du, welche Daten beim Besuch dieser Website verarbeitet werden, wofür und auf welcher Rechtsgrundlage, und welche Rechte du hast. Ich halte die Datenverarbeitung bewusst schlank: Diese Website nutzt derzeit keine Analyse- oder Marketing-Dienste, und Schriften werden nicht von Google geladen.
+Der Schutz deiner persönlichen Daten ist mir wichtig. Find Your Main ist ein privates, nicht kommerzielles Fanprojekt. Hier erfährst du, welche Daten beim Besuch dieser Website verarbeitet werden, wofür und auf welcher Rechtsgrundlage, und welche Rechte du hast. Ich halte die Datenverarbeitung bewusst schlank: Diese Website nutzt derzeit keine Analyse- oder Marketing-Dienste, und Schriften werden nicht von Google geladen.
 
 ## Verantwortlicher
 
 Benjamin Schey  
-frysch.studio  
 Hofstelle 10  
 75050 Gemmingen  
 Deutschland
 
-E-Mail: [hello@frysch.studio](mailto:hello@frysch.studio)  
-Telefon: +49 152 34597905
+E-Mail: [findyourmain@pm.me](mailto:findyourmain@pm.me)
 
 Einen Datenschutzbeauftragten habe ich nicht benannt, da hierzu keine gesetzliche Pflicht besteht.
 
@@ -31,7 +29,7 @@ Diese Website wird bei Netlify, Inc., 101 2nd Street, Suite 1500, San Francisco,
 
 Diese Daten sind technisch erforderlich, um die Website auszuliefern, ihre Stabilität und Sicherheit zu gewährleisten und Angriffe abzuwehren. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO; mein berechtigtes Interesse liegt in einer sicheren und zuverlässigen Bereitstellung der Website. Die Logfiles werden von Netlify nach kurzer Zeit automatisch gelöscht.
 
-Mit Netlify habe ich einen Vertrag zur Auftragsverarbeitung (Data Processing Agreement) abgeschlossen. Netlify ist unter dem EU-US Data Privacy Framework zertifiziert; damit besteht für die Übermittlung in die USA ein Angemessenheitsbeschluss der EU-Kommission (Art. 45 DSGVO). Mehr dazu: [netlify.com/privacy](https://www.netlify.com/privacy/).
+Netlify verarbeitet die Daten auf Grundlage seiner Bedingungen zur Auftragsverarbeitung (Data Processing Addendum). Netlify ist unter dem EU-US Data Privacy Framework zertifiziert; damit besteht für die Übermittlung in die USA ein Angemessenheitsbeschluss der EU-Kommission (Art. 45 DSGVO). Mehr dazu: [netlify.com/privacy](https://www.netlify.com/privacy/).
 
 ## Schriftarten und Bilder
 
@@ -43,11 +41,11 @@ Diese Website setzt nur ein technisch notwendiges Cookie namens „i18n_redirect
 
 Analyse-, Statistik- oder Marketing-Cookies werden derzeit nicht eingesetzt. Sollte sich das ändern, frage ich vorher über ein Cookie-Banner nach deiner Einwilligung und passe diese Datenschutzerklärung an.
 
-## Kontakt per E-Mail oder Telefon
+## Kontakt per E-Mail
 
-Wenn du mich per E-Mail oder telefonisch kontaktierst, verarbeite ich deine Angaben (z. B. Name, E-Mail-Adresse, Telefonnummer und Inhalt der Nachricht), um dein Anliegen zu bearbeiten. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO (mein berechtigtes Interesse an der Beantwortung von Anfragen) bzw. Art. 6 Abs. 1 lit. b DSGVO, wenn deine Anfrage auf einen Vertrag zielt. Ich lösche deine Daten, sobald deine Anfrage abschließend bearbeitet ist, spätestens nach 12 Monaten ohne weiteren Kontakt, es sei denn, gesetzliche Aufbewahrungspflichten stehen dem entgegen.
+Wenn du mir eine E-Mail schreibst, verarbeite ich deine Angaben (E-Mail-Adresse, gegebenenfalls Name und Inhalt der Nachricht), um dir zu antworten. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO; mein berechtigtes Interesse liegt in der Beantwortung deiner Nachricht. Ich lösche deine Nachricht, sobald sie erledigt ist, spätestens nach 12 Monaten ohne weiteren Kontakt.
 
-Mein E-Mail-Postfach betreibe ich mit Google Workspace der Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland. E-Mails werden auf Servern von Google gespeichert; dabei kann es auch zu einer Übermittlung an die Google LLC in den USA kommen, die unter dem EU-US Data Privacy Framework zertifiziert ist (Art. 45 DSGVO). Die Verarbeitung erfolgt auf Grundlage der Vereinbarung zur Auftragsverarbeitung von Google (Cloud Data Processing Addendum).
+Mein Postfach liegt bei Proton AG, Route de la Galaise 32, 1228 Plan-les-Ouates, Schweiz. Für die Schweiz besteht ein Angemessenheitsbeschluss der EU-Kommission (Art. 45 DSGVO).
 
 ## Externe Links
 
@@ -68,7 +66,7 @@ Du hast mir gegenüber folgende Rechte hinsichtlich deiner personenbezogenen Dat
 - Datenübertragbarkeit (Art. 20 DSGVO)
 - Widerruf einer erteilten Einwilligung mit Wirkung für die Zukunft (Art. 7 Abs. 3 DSGVO)
 
-Für die Ausübung deiner Rechte genügt eine formlose Nachricht an [hello@frysch.studio](mailto:hello@frysch.studio).
+Für die Ausübung deiner Rechte genügt eine formlose Nachricht an [findyourmain@pm.me](mailto:findyourmain@pm.me).
 
 ## Widerspruchsrecht nach Art. 21 DSGVO
 

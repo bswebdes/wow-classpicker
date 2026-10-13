@@ -12,6 +12,8 @@ const {
   isBattleInProgress,
   isStarted,
   winner,
+  rounds,
+  ranking,
   initBattle,
   startBattle,
   resetBattle,
@@ -63,12 +65,15 @@ const showBattleIntro = ref(false)
 const onBattleIntroFinished = () => {
   // Battle-Intro zurücksetzen, damit es beim nächsten Mal erneut ausgelöst werden kann
   showBattleIntro.value = false
-  initBattle()
+  showResult.value = true
+  initBattle(props.mode)
   startBattle()
 }
 
 // Selection-Intro beim Laden und nach Reset
 const showSelectionIntro = ref(false)
+// Siegerauswertung kann geschlossen werden, um den Kampfverlauf anzusehen
+const showResult = ref(true)
 const onSelectionIntroFinished = () => {
   showSelectionIntro.value = false
 }
@@ -142,12 +147,16 @@ const handleReset = () => {
         </button>
       </div>
 
-      <div class="mt-6 grid gap-4" :class="isStarted ? 'lg:grid-cols-2' : ''">
+      <!-- Kampflog und Meter erst, wenn gekämpft wird -->
+      <div v-if="isStarted" class="mt-6 grid gap-4 lg:grid-cols-2">
         <BattleLog :log-entries="battleLog" />
-        <DpsMeter v-if="isStarted" :characters="characters" />
+        <DpsMeter :characters="characters" />
       </div>
 
-      <VictoryScreen v-if="winner" :winner="winner" :mode="mode" @close="handleReset" />
+      <VictoryScreen v-if="winner && showResult" :winner="winner" :ranking="ranking" :rounds="rounds" :mode="mode" @close="showResult = false" @again="handleReset" />
+      <div v-if="winner && !showResult" class="mt-6 text-center">
+        <button class="wow-btn" @click="showResult = true">🏆 {{ $t('result.show') }}</button>
+      </div>
     </div>
 
     <section class="mt-14">
@@ -156,7 +165,7 @@ const handleReset = () => {
         <NuxtLink
           v-for="tool in [
             { to: localePath(routeNameFor('quiz', mode)), title: $t('nav.quiz'), text: $t('home.quizTeaser') },
-            { to: localePath(routeNameFor('zufall', mode)), title: $t('nav.random'), text: $t('home.randomTeaser') },
+            { to: localePath(routeNameFor('zufall', mode)), title: $t('nav.random'), text: mode === 'forever' ? $t('forever.home.randomTeaser') : $t('home.randomTeaser') },
             { to: localePath(routeNameFor('klassen', mode)), title: $t('nav.classes'), text: mode === 'forever' ? $t('forever.home.classesTeaser') : $t('home.classesTeaser') }
           ]"
           :key="tool.to"

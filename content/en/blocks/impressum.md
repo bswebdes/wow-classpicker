@@ -4,36 +4,26 @@ title: "Imprint"
 
 As of 13 October 2026. This is a courtesy translation; the German version is legally binding.
 
-## Information pursuant to § 5 DDG (German Digital Services Act)
+Find Your Main is a private, non-commercial fan project.
+
+## Information pursuant to § 18 (1) MStV (German Interstate Media Treaty)
 
 Benjamin Schey  
-frysch.studio  
 Hofstelle 10  
 75050 Gemmingen  
 Germany
 
 ## Contact
 
-Email: [hello@frysch.studio](mailto:hello@frysch.studio)  
-Phone: +49 152 34597905
-
-## VAT ID
-
-VAT identification number pursuant to § 27a of the German VAT Act: DE353180265
+Email: [findyourmain@pm.me](mailto:findyourmain@pm.me)
 
 ## Responsible for content pursuant to § 18 (2) MStV
 
-Benjamin Schey  
-Hofstelle 10  
-75050 Gemmingen, Germany
+Benjamin Schey, address as above
 
-## Concept, design and development
+## Design and development
 
-This website was created by [frysch.studio](https://frysch.studio).
-
-## Consumer dispute resolution
-
-I am neither willing nor obliged to participate in dispute resolution proceedings before a consumer arbitration board.
+Website by [frysch.studio](https://frysch.studio).
 
 ## Liability for content
 

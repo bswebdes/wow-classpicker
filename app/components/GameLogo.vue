@@ -3,6 +3,8 @@
 const props = defineProps({
   mode: { type: String, default: 'retail' },
   width: { type: Number, default: 120 },
+  // Feste Höhe hat Vorrang vor der Breite (z. B. für gleich hohe Reiter)
+  height: { type: Number, default: 0 },
   eager: { type: Boolean, default: false }
 })
 
@@ -11,14 +13,18 @@ const logos = {
   forever: { src: '/WoW_Forever_Logo.png', alt: 'World of Warcraft: Forever', ratio: 3850 / 4550 }
 }
 const logo = computed(() => logos[props.mode] || logos.retail)
+const size = computed(() => props.height
+  ? { width: Math.round(props.height / logo.value.ratio), height: props.height }
+  : { width: props.width, height: Math.round(props.width * logo.value.ratio) })
 </script>
 
 <template>
   <NuxtImg
     :src="logo.src"
     :alt="logo.alt"
-    :width="width"
-    :height="Math.round(width * logo.ratio)"
+    :width="size.width"
+    :height="size.height"
+    :style="height ? { height: `${height}px`, width: 'auto' } : undefined"
     :loading="eager ? 'eager' : 'lazy'"
     :fetchpriority="eager ? 'high' : undefined"
     format="webp"

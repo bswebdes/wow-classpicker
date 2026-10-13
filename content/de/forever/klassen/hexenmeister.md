@@ -9,7 +9,7 @@ updated: "2026-10-13"
 
 ## Spielweise
 
-Der Hexenmeister belegt Gegner mit **Flüchen** und Schaden über Zeit und beschwört **Dämonen** wie Wichtel, Leerwandler oder Sukkubus. Er sammelt **Seelensplitter**, erschafft **Gesundheitssteine** und **Seelensteine** und kann Mitspieler herbeirufen. **Lebensentzug** hält ihn am Leben.
+Der Hexenmeister belegt Gegner mit **Flüchen** und Schaden über Zeit und beschwört **Dämonen** wie Wichtel, Leerwandler oder Sukkubus. Er sammelt **Seelensplitter**, erschafft **Gesundheitssteine** und **Seelensteine** und kann Mitspieler herbeirufen. **Blutsauger** hält ihn am Leben.
 
 ## Die Talentbäume
 

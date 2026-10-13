@@ -8,7 +8,7 @@ Find Your Main ist ein WoW Class Picker und Fanprojekt für alle, die sich in Wo
 
 ## Wer steckt dahinter?
 
-Find Your Main wird von [frysch.studio](https://frysch.studio) betrieben, dem Webstudio von Benny Schey. Die Seite entsteht aus Spaß am Spiel und ist kostenlos und ohne Anmeldung nutzbar.
+Find Your Main ist ein privates, nicht kommerzielles Fanprojekt von Benny. Die Seite entsteht aus Spaß am Spiel und ist kostenlos und ohne Anmeldung nutzbar. Fragen, Ideen oder Fehler? Schreib an [findyourmain@pm.me](mailto:findyourmain@pm.me).
 
 ## Woher kommen die Informationen?
 

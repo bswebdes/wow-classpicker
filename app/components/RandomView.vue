@@ -4,6 +4,7 @@ const props = defineProps({
 })
 
 const { t, locale } = useI18n()
+const localePath = useLocalePath()
 const k = (key) => props.mode === 'forever' ? `forever.random.${key}` : `random.${key}`
 
 usePageSeo({
@@ -41,6 +42,7 @@ const pool = computed(() => getClassList(props.mode).flatMap(c =>
 
 const result = ref(null)
 const rolling = ref(false)
+const history = ref([])
 
 const pick = () => pool.value[Math.floor(Math.random() * pool.value.length)]
 
@@ -49,15 +51,28 @@ const roll = async () => {
   rolling.value = true
   // Kurzer Slot-Machine-Effekt
   for (let i = 0; i < 14; i++) {
-    result.value = pick()
+    result.value = { ...pick(), roll: Math.ceil(Math.random() * 100) }
     await new Promise(r => setTimeout(r, 50 + i * 12))
   }
-  result.value = pick()
+  result.value = { ...pick(), roll: Math.ceil(Math.random() * 100) }
   rolling.value = false
+  history.value = [result.value, ...history.value].slice(0, 5)
   trackEvent('random_roll', { class_id: result.value.classId, spec: result.value.spec.id, race: result.value.race?.id, game_mode: props.mode })
 }
 
-const resultInfo = computed(() => result.value ? getClassInfo(result.value.classId, props.mode) : null)
+const infoOf = (r) => getClassInfo(r.classId, props.mode)
+const resultInfo = computed(() => result.value ? infoOf(result.value) : null)
+const classLink = (r) => {
+  const info = infoOf(r)
+  return info ? localePath({ name: routeNameFor('klassen-slug', props.mode), params: { slug: info.slug[locale.value] } }) : null
+}
+// DE: „Priester – Disziplin“, EN: „Discipline Priest“
+const titleOf = (r) => {
+  const cls = t(`classes.${r.classId}.name`)
+  const spec = r.spec.name[locale.value]
+  const main = locale.value === 'de' ? `${cls} – ${spec}` : `${spec} ${cls}`
+  return r.race ? `${r.race.name[locale.value]} · ${main}` : main
+}
 </script>
 
 <template>
@@ -90,32 +105,51 @@ const resultInfo = computed(() => result.value ? getClassInfo(result.value.class
         </label>
       </div>
 
-      <div class="mt-8 flex min-h-[240px] flex-col items-center justify-center gap-5">
-        <p v-if="!pool.length" class="text-neutral-400">{{ $t('random.noResult') }}</p>
-
-        <div v-else-if="result" class="flex flex-col items-center gap-2 text-center" aria-live="polite">
-          <span class="font-display text-[12px] font-bold uppercase tracking-widest text-neutral-400">{{ $t('random.result') }}</span>
-          <img
-            :src="resultInfo.icon"
-            :alt="$t(`classes.${resultInfo.id}.name`)"
-            width="96"
-            height="96"
-            class="wow-slot h-24 w-24 !border-gold transition-transform"
-            :class="{ 'scale-95 opacity-80': rolling }"
-          />
-          <span class="font-display text-2xl font-bold" :style="{ color: resultInfo.color, textShadow: '0 2px 0 #000' }">
-            <template v-if="result.race">{{ result.race.name[locale] }} · </template>{{ result.spec.name[locale] }} {{ $t(`classes.${resultInfo.id}.name`) }}
-          </span>
-          <span class="text-[15px] text-neutral-400">
-            <template v-if="result.race"><span :class="result.race.faction === 'alliance' ? 'text-[#9cc2ff]' : 'text-[#ff9c9c]'">{{ $t(`forever.factions.${result.race.faction}`) }}</span> · </template>{{ $t(`common.roles.${result.spec.role}`) }} · {{ $t(`common.range.${result.spec.range}`) }} · {{ $t(`common.armor.${resultInfo.armor}`) }}
-          </span>
+      <!-- Beutefenster -->
+      <div class="mx-auto mt-8 max-w-md" aria-live="polite">
+        <div class="font-display text-[12px] font-bold uppercase tracking-[0.3em] text-neutral-400">{{ $t('random.lootTitle') }}</div>
+        <div class="wow-tooltip mt-2 !p-3">
+          <p v-if="!pool.length" class="text-neutral-400">{{ $t('random.noResult') }}</p>
+          <p v-else-if="!result" class="py-6 text-center italic text-neutral-500">{{ $t('random.emptyLoot') }}</p>
+          <div v-else class="flex items-center gap-4">
+            <img
+              :src="resultInfo.icon"
+              :alt="$t(`classes.${resultInfo.id}.name`)"
+              width="72"
+              height="72"
+              class="h-[72px] w-[72px] shrink-0 rounded-[4px] border-2 border-quality-epic shadow-[0_0_18px_rgba(163,53,238,0.55)] transition-transform"
+              :class="{ 'scale-95 opacity-80': rolling }"
+            />
+            <div class="min-w-0">
+              <div class="font-display text-xl font-bold leading-tight text-quality-epic">{{ titleOf(result) }}</div>
+              <div v-if="result.race" class="text-[14px]" :class="result.race.faction === 'alliance' ? 'text-[#9cc2ff]' : 'text-[#ff9c9c]'">{{ $t(`forever.factions.${result.race.faction}`) }}</div>
+              <div class="text-[14px] text-white">{{ $t(`common.roles.${result.spec.role}`) }} · {{ $t(`common.range.${result.spec.range}`) }}</div>
+              <div class="text-[14px] text-neutral-300">{{ $t(`common.armor.${resultInfo.armor}`) }}</div>
+              <div class="mt-1 text-[14px] text-gold">{{ $t('random.rollText', { n: result.roll }) }}</div>
+            </div>
+          </div>
         </div>
 
-        <button v-if="pool.length" class="wow-btn wow-btn-lg" :disabled="rolling" @click="roll">
-          🎲 {{ result ? $t('random.rollAgain') : $t('random.roll') }}
-        </button>
+        <div class="mt-4 flex flex-wrap justify-center gap-3">
+          <button v-if="pool.length" class="wow-btn wow-btn-lg" :disabled="rolling" @click="roll">
+            🎲 {{ $t('random.need') }}
+          </button>
+          <NuxtLink v-if="result && !rolling" :to="classLink(result)" class="wow-btn wow-btn-stone wow-btn-lg">
+            {{ $t('random.toClass') }} ›
+          </NuxtLink>
+        </div>
+      </div>
 
-        <ClassCard v-if="result && !rolling" :class-id="result.classId" :mode="mode" class="w-full sm:w-auto" />
+      <!-- Verlauf der letzten Würfe -->
+      <div v-if="history.length > 1" class="mx-auto mt-8 max-w-md">
+        <h2 class="font-display text-[13px] font-bold uppercase tracking-wider text-neutral-400">{{ $t('random.history') }}</h2>
+        <ul class="mt-2 space-y-1">
+          <li v-for="(h, i) in history.slice(1)" :key="i" class="flex items-center gap-2 text-[14px]">
+            <img :src="infoOf(h).icon" alt="" width="22" height="22" class="h-[22px] w-[22px] rounded-[2px] border border-black" />
+            <NuxtLink :to="classLink(h)" class="truncate text-quality-rare hover:underline">{{ titleOf(h) }}</NuxtLink>
+            <span class="ml-auto shrink-0 tabular-nums text-neutral-500">{{ h.roll }}</span>
+          </li>
+        </ul>
       </div>
     </section>
 

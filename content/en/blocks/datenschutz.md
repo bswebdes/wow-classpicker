@@ -4,18 +4,16 @@ title: "Privacy policy"
 
 As of 13 October 2026. This is a courtesy translation; the German version is legally binding.
 
-Protecting your personal data matters to me. Here you can find out which data is processed when you visit this website, for what purpose and on what legal basis, and what rights you have. I keep data processing deliberately lean: this website currently uses no analytics or marketing services, and fonts are not loaded from Google.
+Protecting your personal data matters to me. Find Your Main is a private, non-commercial fan project. Here you can find out which data is processed when you visit this website, for what purpose and on what legal basis, and what rights you have. I keep data processing deliberately lean: this website currently uses no analytics or marketing services, and fonts are not loaded from Google.
 
 ## Controller
 
 Benjamin Schey  
-frysch.studio  
 Hofstelle 10  
 75050 Gemmingen  
 Germany
 
-Email: [hello@frysch.studio](mailto:hello@frysch.studio)  
-Phone: +49 152 34597905
+Email: [findyourmain@pm.me](mailto:findyourmain@pm.me)
 
 I have not appointed a data protection officer, as there is no legal obligation to do so.
 
@@ -31,7 +29,7 @@ This website is hosted by Netlify, Inc., 101 2nd Street, Suite 1500, San Francis
 
 This data is technically necessary to deliver the website, ensure its stability and security and fend off attacks. The legal basis is Art. 6(1)(f) GDPR; my legitimate interest lies in providing the website securely and reliably. Netlify deletes the log files automatically after a short time.
 
-I have concluded a data processing agreement with Netlify. Netlify is certified under the EU-US Data Privacy Framework, so an adequacy decision of the EU Commission applies to transfers to the USA (Art. 45 GDPR). More: [netlify.com/privacy](https://www.netlify.com/privacy/).
+Netlify processes the data under its Data Processing Addendum. Netlify is certified under the EU-US Data Privacy Framework, so an adequacy decision of the EU Commission applies to transfers to the USA (Art. 45 GDPR). More: [netlify.com/privacy](https://www.netlify.com/privacy/).
 
 ## Fonts and images
 
@@ -43,11 +41,11 @@ This website only sets one technically necessary cookie called "i18n_redirected"
 
 No analytics, statistics or marketing cookies are currently used. If that changes, I will ask for your consent beforehand via a cookie banner and update this privacy policy.
 
-## Contact by email or phone
+## Contact by email
 
-If you contact me by email or phone, I process your information (e.g. name, email address, phone number and the content of your message) to handle your request. The legal basis is Art. 6(1)(f) GDPR (my legitimate interest in answering requests) or Art. 6(1)(b) GDPR if your request relates to a contract. I delete your data once your request has been fully handled, at the latest after 12 months without further contact, unless statutory retention obligations apply.
+If you send me an email, I process your information (email address, possibly your name and the content of your message) to reply to you. The legal basis is Art. 6(1)(f) GDPR; my legitimate interest lies in answering your message. I delete your message once it has been dealt with, at the latest after 12 months without further contact.
 
-I run my email inbox with Google Workspace from Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Ireland. Emails are stored on Google servers; this may include a transfer to Google LLC in the USA, which is certified under the EU-US Data Privacy Framework (Art. 45 GDPR). Processing is based on Google's data processing agreement (Cloud Data Processing Addendum).
+My inbox is hosted by Proton AG, Route de la Galaise 32, 1228 Plan-les-Ouates, Switzerland. An adequacy decision of the EU Commission applies to Switzerland (Art. 45 GDPR).
 
 ## External links
 
@@ -68,7 +66,7 @@ You have the following rights regarding your personal data:
 - data portability (Art. 20 GDPR)
 - withdrawal of consent with effect for the future (Art. 7(3) GDPR)
 
-An informal message to [hello@frysch.studio](mailto:hello@frysch.studio) is enough to exercise your rights.
+An informal message to [findyourmain@pm.me](mailto:findyourmain@pm.me) is enough to exercise your rights.
 
 ## Right to object under Art. 21 GDPR
 

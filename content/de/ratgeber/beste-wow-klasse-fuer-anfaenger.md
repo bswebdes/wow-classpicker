@@ -43,7 +43,7 @@ Der [Todesritter](/klassen/todesritter) kombiniert schwere Rüstung mit starker 
 
 ## 4. Dämonenjäger (Verwüstung)
 
-Der [Dämonenjäger](/klassen/daemonenjaeger) fühlt sich sofort schnell und mächtig an. **Verwüstung** hat eine flüssige, gut verständliche Rotation, und mit Doppelsprung, Gleiten und Teufelsansturm bist du überall schnell. Wer Action mag, wird hier glücklich.
+Der [Dämonenjäger](/klassen/daemonenjaeger) fühlt sich sofort schnell und mächtig an. **Verwüstung** hat eine flüssige, gut verständliche Rotation, und mit Doppelsprung, Gleiten und Teufelsrausch bist du überall schnell. Wer Action mag, wird hier glücklich.
 
 **Ideal für:** Einsteiger, die es actionreich mögen.
 

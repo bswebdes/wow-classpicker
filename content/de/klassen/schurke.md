@@ -11,7 +11,7 @@ updated: "2026-10-13"
 
 Der Schurke ist der Meister aus dem Schatten. Er schleicht sich in **Verstohlenheit** an, eröffnet den Kampf mit einem Überraschungsangriff und ist verschwunden, bevor der Gegner reagiert. Seine Ressourcen sind **Energie** und **Combopunkte**: Mit schnellen Angriffen baut er Punkte auf und gibt sie für starke Finisher aus.
 
-Dazu kommt ein riesiger Werkzeugkasten aus Kontrolleffekten: **Kopfnuss**, **Blenden**, **Tritt** zum Unterbrechen und **Verschwinden** als Fluchtknopf. In Dungeons kann ein Schurke mit **Schleier der Verhüllung** sogar die ganze Gruppe kurzzeitig tarnen.
+Dazu kommt ein riesiger Werkzeugkasten aus Kontrolleffekten: **Kopfnuss**, **Blenden**, **Tritt** zum Unterbrechen und **Verschwinden** als Fluchtknopf. In Dungeons kann ein Schurke mit **Verhüllender Nebel** sogar die ganze Gruppe kurzzeitig tarnen.
 
 ## Die Spezialisierungen
 

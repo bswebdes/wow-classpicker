@@ -15,7 +15,7 @@ Priester bringen besondere Gruppenwerkzeuge mit: **Glaubenssprung** zieht einen 
 
 ## Die Spezialisierungen
 
-- **Disziplin** heilt auf ungewöhnliche Art: Mit **Machtwort: Schild** verhindert sie Schaden, bevor er entsteht, und über **Sühne** wird Schaden an Gegnern zu Heilung für die Gruppe.
+- **Disziplin** heilt auf ungewöhnliche Art: Mit **Machtwort: Schild** verhindert sie Schaden, bevor er entsteht, und über **Abbitte** wird Schaden an Gegnern zu Heilung für die Gruppe.
 - **Heilig** ist der reine Heiler mit großen Heilzaubern, Flächenheilung und starken Notfall-Fähigkeiten.
 - **Schatten** ist die Schadens-Spezialisierung. Schattenpriester belegen Gegner mit Schaden über Zeit und bauen **Wahnsinn** auf, um ihre stärksten Zauber zu entfesseln.
 

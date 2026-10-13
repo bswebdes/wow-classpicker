@@ -9,7 +9,7 @@ updated: "2026-10-13"
 
 ## Spielweise
 
-Der Dämonenjäger hat dämonische Kräfte in sich aufgenommen, um die Brennende Legion mit ihren eigenen Waffen zu schlagen. Er trägt Leder, kämpft mit Kriegsgleven und ist die vielleicht mobilste Klasse im Spiel: **Teufelsansturm**, **Vergeltender Rückzug**, Doppelsprung und Gleiten bringen ihn überall hin.
+Der Dämonenjäger hat dämonische Kräfte in sich aufgenommen, um die Brennende Legion mit ihren eigenen Waffen zu schlagen. Er trägt Leder, kämpft mit Kriegsgleven und ist die vielleicht mobilste Klasse im Spiel: **Teufelsrausch**, **Rachsüchtiger Rückzug**, Doppelsprung und Gleiten bringen ihn überall hin.
 
 Seine Ressource ist **Zorn**. Mit **Metamorphose** verwandelt er sich in einen Dämon und wird für kurze Zeit deutlich stärker. Die **Geistersicht** lässt ihn Gegner sogar durch Wände sehen.
 

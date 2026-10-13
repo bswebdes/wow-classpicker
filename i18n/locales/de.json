@@ -28,7 +28,7 @@
       "description": "Heilung und Unverwundbarkeit.",
       "abilities": {
         "divineshield": { "name": "Gottesschild", "msg": "wirft die Angstblase an! Unantastbar!" },
-        "judgement": { "name": "Urteil des Lichts", "msg": "richtet über das Ziel und klaut ein bisschen Leben." },
+        "judgement": { "name": "Richturteil", "msg": "richtet über das Ziel und klaut ein bisschen Leben." },
         "avengingwrath": { "name": "Zornige Vergeltung", "msg": "bekommt Flügel! DIE MACHT DES LICHTS!" },
         "flashoflight": { "name": "Lichtblitz", "msg": "blendet alle mit einem hellen Licht und heilt sich." }
       }
@@ -39,7 +39,7 @@
       "abilities": {
         "aimedshot": { "name": "Gezielter Schuss", "msg": "zielt 3 Stunden lang... und TRIFFT!" },
         "turtle": { "name": "Aspekt der Schildkröte", "msg": "wird zu einer Schildkröte. Warum auch immer." },
-        "killcommand": { "name": "Fass!", "msg": "schickt sein unsichtbares Pet los. Beiß!" },
+        "killcommand": { "name": "Tötungsbefehl", "msg": "schickt sein unsichtbares Pet los. Beiß!" },
         "freezingtrap": { "name": "Eiskältefalle", "msg": "friert die Füße des Gegners ein. Kalt!" }
       }
     },
@@ -48,9 +48,9 @@
       "description": "Glaskanone mit hoher Ausweichchance.",
       "abilities": {
         "kidneyshot": { "name": "Nierenhieb", "msg": "betäubt das Ziel mit einem fiesen Nierenhieb!" },
-        "eviscerate": { "name": "Meucheln", "msg": "sticht hinterhältig zu! KRIT!" },
+        "eviscerate": { "name": "Ausweiden", "msg": "sticht hinterhältig zu! KRIT!" },
         "pickpocket": { "name": "Taschendiebstahl", "msg": "stiehlt einen Heiltrank und trinkt ihn selbst!" },
-        "vanish": { "name": "Vanish", "msg": "verschwindet im Schatten. Nächster Angriff geht ins Leere!" }
+        "vanish": { "name": "Verschwinden", "msg": "verschwindet im Schatten. Nächster Angriff geht ins Leere!" }
       }
     },
     "priest": {

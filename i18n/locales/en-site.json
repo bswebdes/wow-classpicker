@@ -161,7 +161,17 @@
           "any": "Any"
         }
       }
-    }
+    },
+    "questLabel": "Quest",
+    "questTitle": "Find Your Main",
+    "questText": "Traveler, you seem undecided. Answer me seven questions, and I will tell you which class truly suits you.",
+    "objectivesTitle": "Objectives",
+    "objective": "Answer 7 questions about your playstyle",
+    "accept": "Accept",
+    "completeTitle": "Quest complete!",
+    "rewardsTitle": "Choose your reward",
+    "rewardHint": "Click a class to learn more about it.",
+    "progress": "{current}/{total} answered"
   },
   "random": {
     "title": "Random WoW Class Generator for Midnight",
@@ -174,7 +184,12 @@
     "filterArmor": "Armor",
     "result": "Your random class",
     "noResult": "No class matches these filters. Loosen one of them.",
-    "toClass": "More about this class"
+    "toClass": "More about this class",
+    "lootTitle": "Loot",
+    "need": "Need!",
+    "rollText": "You roll {n} (1–100)",
+    "history": "Recent rolls",
+    "emptyLoot": "Nothing rolled yet. Hit \"Need!\" and let fate decide."
   },
   "siteSeo": {
     "homeOgSubtitle": "Arena battle, quiz and random generator for choosing your class"
@@ -225,7 +240,8 @@
       "description": "Which class will you play in WoW Forever? Let the 9 Classic classes fight in the arena, take the quiz or roll a race and class. Launch: 4 November 2026.",
       "heading": "Which class will you play in WoW Forever?",
       "intro": "WoW Forever brings classic Azeroth back, with new race and class combinations and the new Skyborne race. Pick your favorites among the 9 classes and let them fight.",
-      "classesTeaser": "All 9 classes in WoW Forever with talent trees, roles and races."
+      "classesTeaser": "All 9 classes in WoW Forever with talent trees, roles and races.",
+      "randomTeaser": "Race, class and talent tree at random. For alts and the brave."
     },
     "classes": {
       "title": "WoW Forever Classes and Races: All 56 Combinations",
@@ -247,5 +263,78 @@
       "heading": "Roll a race and class for WoW Forever",
       "intro": "Let chance pick your next WoW Forever character: race, class and talent tree, optionally for Alliance or Horde only."
     }
+  },
+  "foreverAbilities": {
+    "warrior": {
+      "victoryrush": {
+        "name": "Bloodthirst",
+        "msg": "bites into the fight and feels better right away."
+      }
+    },
+    "paladin": {
+      "avengingwrath": {
+        "name": "Hammer of Wrath",
+        "msg": "throws a glowing hammer. Old school."
+      }
+    },
+    "hunter": {
+      "killcommand": {
+        "name": "Multi-Shot",
+        "msg": "fires three arrows at once. One of them will hit."
+      }
+    },
+    "priest": {
+      "swdeath": {
+        "name": "Shadow Word: Pain",
+        "msg": "whispers something mean. It hurts."
+      }
+    },
+    "shaman": {
+      "healingrain": {
+        "name": "Chain Heal",
+        "msg": "bounces the healing from head to head."
+      },
+      "bloodlust": {
+        "name": "Stormstrike",
+        "msg": "strikes with the power of the storm."
+      }
+    },
+    "warlock": {
+      "chaosbolt": {
+        "name": "Shadow Bolt",
+        "msg": "casts Shadow Bolt. And another. And another."
+      }
+    },
+    "druid": {
+      "convoke": {
+        "name": "Wrath",
+        "msg": "throws a small green ball of nature. Wrath!"
+      }
+    }
+  },
+  "result": {
+    "show": "Show results",
+    "place": "Place {n}",
+    "learnMore": "Learn more about the {class}",
+    "alsoOnPodium": "Also on the podium",
+    "again": "Fight again",
+    "viewFight": "View the fight",
+    "statsTitle": "Battle report",
+    "rounds": "{n} rounds",
+    "fighter": "Fighter",
+    "damage": "Damage",
+    "healing": "Healing",
+    "crits": "Crits",
+    "dodges": "Dodged",
+    "kills": "Kills",
+    "awards": "Awards",
+    "award": {
+      "damage": "Damage dealer",
+      "healing": "Top healer",
+      "crits": "Crit king",
+      "dodges": "Untouchable",
+      "kills": "Most kills"
+    },
+    "close": "Close"
   }
 }

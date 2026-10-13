@@ -11,7 +11,7 @@ updated: "2026-10-13"
 
 Der Mönch ist ein Meister der Kampfkunst, der Fäuste, Füße und die Energie des Chi einsetzt. In Lederrüstung ist er wendig und schnell: Mit **Rollen** und **Transzendenz** wechselt er blitzschnell die Position, und kaum eine Klasse kommt so leicht an einen Gegner heran oder von ihm weg.
 
-Neben Energie bzw. Mana nutzt der Mönch **Chi** als Ressource für seine stärksten Techniken. Zu seinen bekanntesten Fähigkeiten gehören **Berührung des Todes**, die angeschlagene Gegner sofort erledigen kann, und **Lähmung** zur Kontrolle.
+Neben Energie bzw. Mana nutzt der Mönch **Chi** als Ressource für seine stärksten Techniken. Zu seinen bekanntesten Fähigkeiten gehören **Berührung des Todes**, die angeschlagene Gegner sofort erledigen kann, und **Paralyse** zur Kontrolle.
 
 ## Die Spezialisierungen
 

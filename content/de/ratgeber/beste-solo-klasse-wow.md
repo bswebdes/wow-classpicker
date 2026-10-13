@@ -39,7 +39,7 @@ Der [Paladin](/klassen/paladin) hat Selbstheilung, Plattenrüstung und gleich me
 
 ### Hexenmeister
 
-Für eine Stoffklasse ist der [Hexenmeister](/klassen/hexenmeister) erstaunlich solo-tauglich. Ein Leerwandler zieht Gegner auf sich, **Lebensentzug** heilt dich, und Gesundheitssteine sind immer dabei. Besonders Gebrechen und Dämonologie fühlen sich allein sehr sicher an.
+Für eine Stoffklasse ist der [Hexenmeister](/klassen/hexenmeister) erstaunlich solo-tauglich. Ein Leerwandler zieht Gegner auf sich, **Blutsauger** heilt dich, und Gesundheitssteine sind immer dabei. Besonders Gebrechen und Dämonologie fühlen sich allein sehr sicher an.
 
 ### Dämonenjäger
 
