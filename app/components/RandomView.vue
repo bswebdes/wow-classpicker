@@ -83,28 +83,27 @@ const titleOf = (r) => {
     <p class="mt-3 text-neutral-300">{{ $t(k('intro')) }}</p>
 
     <section class="wow-frame mt-8">
-      <div class="grid gap-4" :class="mode === 'forever' ? 'sm:grid-cols-3' : 'sm:grid-cols-2'">
-        <label v-if="mode === 'forever'" class="flex flex-col gap-1">
-          <span class="font-display text-[14px] font-bold text-gold">{{ $t('forever.faction') }}</span>
-          <select v-model="factionFilter" class="rounded-[4px] border border-gold-border/70 bg-black/70 px-3 py-2 text-white">
-            <option value="any">{{ $t('common.any') }}</option>
-            <option v-for="f in ['alliance', 'horde']" :key="f" :value="f">{{ $t(`forever.factions.${f}`) }}</option>
-          </select>
-        </label>
-        <label class="flex flex-col gap-1">
-          <span class="font-display text-[14px] font-bold text-gold">{{ $t('random.filterRole') }}</span>
-          <select v-model="roleFilter" class="rounded-[4px] border border-gold-border/70 bg-black/70 px-3 py-2 text-white">
-            <option value="any">{{ $t('common.any') }}</option>
-            <option v-for="r in ['tank', 'healer', 'dps']" :key="r" :value="r">{{ $t(`common.roles.${r}`) }}</option>
-          </select>
-        </label>
-        <label class="flex flex-col gap-1">
-          <span class="font-display text-[14px] font-bold text-gold">{{ $t('random.filterArmor') }}</span>
-          <select v-model="armorFilter" class="rounded-[4px] border border-gold-border/70 bg-black/70 px-3 py-2 text-white">
-            <option value="any">{{ $t('common.any') }}</option>
-            <option v-for="a in ['plate', 'mail', 'leather', 'cloth']" :key="a" :value="a">{{ $t(`common.armor.${a}`) }}</option>
-          </select>
-        </label>
+      <div class="flex flex-col gap-4">
+        <FilterChips
+          v-if="mode === 'forever'"
+          v-model="factionFilter"
+          :label="$t('forever.faction')"
+          :options="[
+            { value: 'any', label: $t('common.any') },
+            { value: 'alliance', label: $t('forever.factions.alliance'), color: '#6ea8ff' },
+            { value: 'horde', label: $t('forever.factions.horde'), color: '#ff5a5a' }
+          ]"
+        />
+        <FilterChips
+          v-model="roleFilter"
+          :label="$t('random.filterRole')"
+          :options="[{ value: 'any', label: $t('common.any') }, ...['tank', 'healer', 'dps'].map(r => ({ value: r, label: $t(`common.roles.${r}`) }))]"
+        />
+        <FilterChips
+          v-model="armorFilter"
+          :label="$t('random.filterArmor')"
+          :options="[{ value: 'any', label: $t('common.any') }, ...['plate', 'mail', 'leather', 'cloth'].map(a => ({ value: a, label: $t(`common.armor.${a}`) }))]"
+        />
       </div>
 
       <!-- Beutefenster -->
@@ -119,11 +118,12 @@ const titleOf = (r) => {
               :alt="$t(`classes.${resultInfo.id}.name`)"
               width="72"
               height="72"
-              class="h-[72px] w-[72px] shrink-0 rounded-[4px] border-2 border-quality-epic shadow-[0_0_18px_rgba(163,53,238,0.55)] transition-transform"
+              class="wow-slot h-[72px] w-[72px] shrink-0 !border-2 transition-transform"
+              :style="{ borderColor: resultInfo.color, boxShadow: `0 0 18px ${resultInfo.color}80` }"
               :class="{ 'scale-95 opacity-80': rolling }"
             />
             <div class="min-w-0">
-              <div class="font-display text-xl font-bold leading-tight text-quality-epic">{{ titleOf(result) }}</div>
+              <div class="font-display text-xl font-bold leading-tight [text-shadow:0_1px_0_#000]" :style="{ color: resultInfo.color }">{{ titleOf(result) }}</div>
               <div v-if="result.race" class="text-[14px]" :class="result.race.faction === 'alliance' ? 'text-[#9cc2ff]' : 'text-[#ff9c9c]'">{{ $t(`forever.factions.${result.race.faction}`) }}</div>
               <div class="text-[14px] text-white">{{ $t(`common.roles.${result.spec.role}`) }} · {{ $t(`common.range.${result.spec.range}`) }}</div>
               <div class="text-[14px] text-neutral-300">{{ $t(`common.armor.${resultInfo.armor}`) }}</div>
@@ -137,7 +137,7 @@ const titleOf = (r) => {
             🎲 {{ $t('random.need') }}
           </button>
           <NuxtLink v-if="result && !rolling" :to="classLink(result)" class="wow-btn wow-btn-stone wow-btn-lg">
-            {{ $t('random.toClass') }} ›
+            {{ $t('result.learnMore', { class: $t(`classes.${result.classId}.name`) }) }} ›
           </NuxtLink>
         </div>
       </div>
@@ -148,7 +148,7 @@ const titleOf = (r) => {
         <ul class="mt-2 space-y-1">
           <li v-for="(h, i) in history.slice(1)" :key="i" class="flex items-center gap-2 text-[14px]">
             <img :src="infoOf(h).icon" alt="" width="22" height="22" class="h-[22px] w-[22px] rounded-[2px] border border-black" />
-            <NuxtLink :to="classLink(h)" class="truncate text-quality-rare hover:underline">{{ titleOf(h) }}</NuxtLink>
+            <NuxtLink :to="classLink(h)" class="truncate hover:underline" :style="{ color: infoOf(h).color }">{{ titleOf(h) }}</NuxtLink>
             <span class="ml-auto shrink-0 tabular-nums text-neutral-500">{{ h.roll }}</span>
           </li>
         </ul>
