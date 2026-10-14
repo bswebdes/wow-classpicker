@@ -28,6 +28,13 @@ export const achievementDefs: AchievementDef[] = [
   { id: 'forever_quest', points: 10, icon: '/class-icons/ClassIcon_hunter.webp' },
   { id: 'named_champion', points: 10, icon: '/class-icons/ClassIcon_rogue.webp' },
   { id: 'bookworm', points: 15, icon: '/class-icons/ClassIcon_monk.webp' },
+  { id: 'tip_reader', points: 10, icon: '/spec-icons/priest-holy.webp' },
+  { id: 'spec_scholar', points: 10, icon: '/spec-icons/mage-arcane.webp' },
+  { id: 'shapeshifter', points: 10, icon: '/spec-icons/druid-feral.webp', secret: true },
+  { id: 'void_touched', points: 5, icon: '/spec-icons/demonhunter-devourer.webp', secret: true },
+  { id: 'regular', points: 10, icon: '/spec-icons/monk-brewmaster.webp' },
+  { id: 'duel', points: 5, icon: '/spec-icons/warrior-arms.webp' },
+  { id: 'curious', points: 5, icon: '/spec-icons/rogue-subtlety.webp' },
   // Krönung: schaltet sich frei, sobald alle anderen errungen sind
   { id: 'completionist', points: 25, icon: '/class-icons/ClassIcon_evoker.webp', secret: true }
 ]
@@ -42,5 +49,9 @@ export const achievementThresholds = {
   guidesMany: 10,
   comparisons: 3,
   rolls: 10,
-  declines: 3
+  declines: 3,
+  tips: 10,
+  specPages: 5,
+  faqs: 10,
+  days: 3
 }

@@ -34,6 +34,7 @@ watch(() => winner.value, (w) => {
   if (!w) return
   unlock('arena_win')
   if (characters.value.length >= classIds.value.length) unlock('battle_royale')
+  if (characters.value.length === 2) unlock('duel')
   // Sieger mit selbst vergebenem Namen (weder Zufallsname noch Klassenname)
   if (!randomNames.includes(w.name) && w.name !== w.className) unlock('named_champion')
 })
@@ -137,6 +138,11 @@ const handleReset = () => {
           {{ $t('backToSelection') }}
         </button>
       </div>
+
+      <!-- Thalgrims Tipps, solange gekämpft wird -->
+      <ClientOnly>
+        <BattleTips v-if="isStarted && !winner" :mode="mode" :class-ids="characters.map(c => c.classId)" class="mt-6" />
+      </ClientOnly>
 
       <!-- Kampflog und Meter erst, wenn gekämpft wird -->
       <div v-if="isStarted" class="mt-6 grid gap-4 lg:grid-cols-2">

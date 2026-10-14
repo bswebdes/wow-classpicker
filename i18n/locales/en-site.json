@@ -545,6 +545,34 @@
       "completionist": {
         "name": "Legend of Azeroth",
         "desc": "Earn every other achievement. You have truly earned your main."
+      },
+      "tip_reader": {
+        "name": "Knowledge Seeker",
+        "desc": "Read 10 of Thalgrim's tips during a tournament."
+      },
+      "spec_scholar": {
+        "name": "Master of Specs",
+        "desc": "Visit 5 spec pages."
+      },
+      "shapeshifter": {
+        "name": "Shapeshifter",
+        "desc": "Read all four Druid specializations."
+      },
+      "void_touched": {
+        "name": "Touched by the Void",
+        "desc": "Visit the Devourer page."
+      },
+      "regular": {
+        "name": "Tavern Regular",
+        "desc": "Drop by on 3 different days."
+      },
+      "duel": {
+        "name": "Duel of Honor",
+        "desc": "Let exactly two classes face off in the tournament."
+      },
+      "curious": {
+        "name": "Curious as a Gnome",
+        "desc": "Open 10 answers in the FAQs."
       }
     },
     "pointsShort": "points",
@@ -763,5 +791,14 @@
   "version": {
     "state": "Game version",
     "checked": "checked on {date}"
+  },
+  "tips": {
+    "title": "Thalgrim's tip",
+    "more": "More",
+    "prev": "Previous tip",
+    "next": "Next tip",
+    "pause": "Pause tips",
+    "resume": "Resume tips",
+    "newTab": "opens in a new tab"
   }
 }

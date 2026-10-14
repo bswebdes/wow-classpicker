@@ -545,6 +545,34 @@
       "completionist": {
         "name": "Legende von Azeroth",
         "desc": "Erringe alle anderen Erfolge. Jetzt hast du dir deinen Main wirklich verdient."
+      },
+      "tip_reader": {
+        "name": "Wissbegierig",
+        "desc": "Lies 10 Tipps von Thalgrim während eines Turniers."
+      },
+      "spec_scholar": {
+        "name": "Meister der Spezialisierungen",
+        "desc": "Besuche 5 Spec-Seiten."
+      },
+      "shapeshifter": {
+        "name": "Gestaltwandler",
+        "desc": "Lies alle vier Druiden-Spezialisierungen."
+      },
+      "void_touched": {
+        "name": "Von der Leere berührt",
+        "desc": "Besuche die Seite des Verschlingers."
+      },
+      "regular": {
+        "name": "Stammgast der Taverne",
+        "desc": "Schau an 3 verschiedenen Tagen vorbei."
+      },
+      "duel": {
+        "name": "Ehrenduell",
+        "desc": "Lass genau zwei Klassen im Turnier gegeneinander antreten."
+      },
+      "curious": {
+        "name": "Neugierig wie ein Gnom",
+        "desc": "Klappe 10 Antworten in den häufigen Fragen auf."
       }
     },
     "pointsShort": "Punkte",
@@ -763,5 +791,14 @@
   "version": {
     "state": "Spielstand",
     "checked": "geprüft am {date}"
+  },
+  "tips": {
+    "title": "Thalgrims Tipp",
+    "more": "Mehr",
+    "prev": "Vorheriger Tipp",
+    "next": "Nächster Tipp",
+    "pause": "Tipps anhalten",
+    "resume": "Tipps fortsetzen",
+    "newTab": "öffnet in neuem Tab"
   }
 }

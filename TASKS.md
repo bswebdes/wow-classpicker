@@ -20,6 +20,7 @@ Stand: 14.10.2026 · live auf [findyourmain.com](https://findyourmain.com), Bran
 - [ ] In Communitys teilen: r/wow, r/wownoob, r/classicwow, Discord, Gilden-Seiten
 
 ### Features & Ideen
+- [ ] Tipp-Datenbank (`app/data/tips.ts`) nach und nach erweitern, z. B. zu jeder Spec und nach dem Forever-Start
 - [ ] Turnier-Modi: 1 gegen 1, Turnierbaum
 - [ ] Sound-Effekte im Kampf (optional, standardmäßig aus)
 - [ ] Thalgrim auch an anderen Stellen auftauchen lassen (z. B. Tipps auf Klassenseiten, 404-Seite), ggf. im Quest-Text als Zwerg erkennbar machen („bei meinem Bart“)
@@ -87,6 +88,7 @@ Stand: 14.10.2026 · live auf [findyourmain.com](https://findyourmain.com), Bran
 - [x] Zufallsklasse im Loot-Stil mit Walzen-Animation, Item-Tooltip und gezieltem Neuwürfeln von Spec/Volk
 - [x] Sieg-Dialog mobil, Desktop-Navigation mit Klassen-Megamenü, Footer, Werkzeug-Karten als Item-Tooltips, FAQ im Questlog-Stil
 - [x] „Arena“ in „Klassen-Turnier“ umbenannt (keine Verwechslung mit der PvP-Arena)
+- [x] Thalgrims Tipps während des Turniers: 63 Tipps (DE/EN) in `app/data/tips.ts`, bevorzugt zu den kämpfenden Klassen, ohne Wiederholung pro Sitzung, mit Pause/Vor/Zurück und Links zu Klassen- und Spec-Seiten (neuer Tab)
 
 ### Klassenvergleich
 - [x] Klassenvergleich für Retail und Forever (`/klassen/vergleich`, `/forever/klassen/vergleich`, EN `/classes/compare`): Auswahl zweier Klassen, jede Paarung mit eigener URL (`magier-vs-hexenmeister`, 78 Retail + 36 Forever), Unterschiede als Sätze, Übersichtstabelle, Kurzantworten der Klassenseiten, FAQ, Turnier-Link; nur Paare mit Suchvolumen indexierbar (Magier vs. Hexenmeister US 210, Krieger vs. Paladin US 90, Schamane vs. Druide US 30, Forever Magier vs. Hexenmeister US 30), Rest `noindex` und nicht in der Sitemap; umgekehrte Reihenfolge leitet um; verlinkt von Klassenübersicht, Klassenseiten und Footer
@@ -100,6 +102,7 @@ Stand: 14.10.2026 · live auf [findyourmain.com](https://findyourmain.com), Bran
 - [x] Turnier: große Intro-Texte („Wähle deine Kämpfer“, READY/FIGHT) entfernt, der Kampf startet sofort
 
 ### Erfolge
+- [x] 7 neue Erfolge (14.10.2026): Wissbegierig (10 Tipps), Meister der Spezialisierungen (5 Spec-Seiten), Gestaltwandler (geheim, alle Druiden-Specs), Von der Leere berührt (geheim, Verschlinger), Stammgast der Taverne (3 Tage), Ehrenduell (Turnier mit genau 2 Klassen), Neugierig wie ein Gnom (10 FAQ-Antworten); insgesamt 28
 - [x] 21 Erfolge inkl. geheimem Abschluss „Legende von Azeroth“ (neu u. a. Spieglein, Spieglein, Herold von Azeroth, Bibliothekar von Dalaran, Zurück nach Azeroth, Ein Name, den man sich merkt) mit Popup, Punktezähler im Header und Erfolgsliste unter `/erfolge` (oben die drei zuletzt errungenen, wie im WoW-Interface), dauerhaft nur mit Einwilligung
 
 ### Mobil & Barrierefreiheit
