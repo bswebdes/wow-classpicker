@@ -2,7 +2,7 @@
 title: "Druid in WoW Forever – Talent Trees, Races and Playstyle"
 description: "The Druid in WoW Forever explained: Balance, Feral Combat and Restoration, shapeshifting, races and every role in one class."
 classId: druid
-summary: "The Druid is WoW Forever's shapeshifter and, besides the Paladin, the only Classic class that can play all three roles: tank as a bear, deal damage as a cat or heal. New: the Skyborne can be Druids too."
+summary: "The Druid is WoW Forever's shapeshifter and, besides the Paladin, the only class that can play all three roles: tank as a bear, deal damage as a cat or heal. New: the Skyborne can be Druids too."
 date: "2026-10-13"
 updated: "2026-10-14"
 faq:

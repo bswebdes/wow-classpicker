@@ -19,7 +19,7 @@ faq:
 classes: [hunter, warlock, priest, paladin, warrior, druid]
 ---
 
-WoW Forever startet am **4. November 2026** und bringt das klassische Azeroth zurück: Stufe 60 als Maximum, Classic-Talentbäume und neun Klassen. Gleichzeitig gibt es neue Völker-Klassen-Kombinationen und mit den **Skyborne** ein neues Volk. Dieser Guide hilft dir, die passende Klasse für den Start zu finden. Den schnellen Weg bietet das [Forever-Quiz](/forever/welche-klasse-passt-zu-mir).
+WoW Forever startet am **4. November 2026** und bringt das klassische Azeroth zurück: Stufe 60 als Maximum, Classic-Talentbäume und neun Klassen. Gleichzeitig gibt es neue Völker-Klassen-Kombinationen und mit den **Himmelsgeborenen** ein neues Volk. Dieser Guide hilft dir, die passende Klasse für den Start zu finden. Den schnellen Weg bietet das [Forever-Quiz](/forever/welche-klasse-passt-zu-mir).
 
 ## Was ist anders als in Retail?
 

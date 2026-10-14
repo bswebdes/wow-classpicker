@@ -45,12 +45,12 @@ Treffsicherheit verbessert Schüsse aus der Distanz und war in Classic die typis
 
 ## Für wen ist der Jäger in Forever geeignet?
 
-**Passt zu dir, wenn …** du viel allein spielst, Tiere sammeln willst oder zum ersten Mal in Classic einsteigst.
+**Passt zu dir, wenn …** du viel allein spielst, Tiere sammeln willst oder zum ersten Mal in WoW Forever einsteigst.
 
 **Eher nicht, wenn …** du tanken oder heilen möchtest.
 
 ## Neu in Forever
 
-Der **Menschen-Jäger** ist eine neue Kombination. Außerdem können die **Skyborne** auf beiden Seiten Jäger werden.
+Der **Menschen-Jäger** ist eine neue Kombination. Außerdem können die **Himmelsgeborenen** auf beiden Seiten Jäger werden.
 
 Probier den Jäger im [Forever-Turnier](/forever) aus oder würfle im [Zufallsgenerator](/forever/zufaellige-klasse) Volk und Klasse.

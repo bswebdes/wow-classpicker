@@ -9,7 +9,7 @@ faq:
     a: "No. WoW Forever sticks to the 9 classes from the original Classic."
 ---
 
-## Classes in Classic: talent trees instead of specs
+## Classes in WoW Forever: talent trees instead of specs
 
 In WoW Forever you don't pick a specialization like in modern WoW. Instead you spend talent points across **three talent trees**. You get 51 points by level 60, and Forever adds an extra milestone talent to every tree. The trees in the table show what a class is typically played for.
 

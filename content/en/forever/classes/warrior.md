@@ -17,7 +17,7 @@ faq:
 ::class-art{name="warrior"}
 ::
 
-The Warrior fights with **Rage**, which builds as it deals and takes damage. Classic Warriors are defined by **stances**: Battle, Defensive and Berserker Stance each unlock different abilities, and good Warriors switch between them constantly.
+The Warrior fights with **Rage**, which builds as it deals and takes damage. In WoW Forever, as in Classic, Warriors are defined by **stances**: Battle, Defensive and Berserker Stance each unlock different abilities, and good Warriors switch between them constantly.
 
 ## Background and lore
 
@@ -53,4 +53,4 @@ Protection is the tank tree. In Classic, warriors were the tanks, because hardly
 
 In WoW Forever, the new **Skyborne** can be Warriors on both sides. Like every class, the Warrior gets an extra milestone talent in each tree.
 
-How does the Warrior fare against the other Classic classes? Find out in the [Forever tournament](/en/forever).
+How does the Warrior fare against the other WoW Forever classes? Find out in the [Forever tournament](/en/forever).

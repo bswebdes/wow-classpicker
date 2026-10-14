@@ -2,7 +2,7 @@
 title: "Forever Zufall"
 faq:
   - q: "Würfelt der Generator nur gültige Kombinationen?"
-    a: "Ja. Er würfelt ausschließlich Völker-Klassen-Kombinationen, die es in WoW Forever tatsächlich gibt, inklusive der neuen Kombinationen und der Skyborne."
+    a: "Ja. Er würfelt ausschließlich Völker-Klassen-Kombinationen, die es in WoW Forever tatsächlich gibt, inklusive der neuen Kombinationen und der Himmelsgeborenen."
   - q: "Kann ich nur für Allianz oder Horde würfeln?"
     a: "Ja. Wähle bei der Fraktion Allianz oder Horde aus, dann würfelt der Generator nur Völker dieser Seite."
 ---

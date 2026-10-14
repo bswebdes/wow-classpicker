@@ -45,7 +45,7 @@ Survival is about traps, agility and control. Deterrence lets you dodge attacks,
 
 ## Who is the Hunter for in Forever?
 
-**A good fit if you …** play a lot solo, want to collect pets or are new to Classic.
+**A good fit if you …** play a lot solo, want to collect pets or are new to WoW Forever.
 
 **Not ideal if you …** want to tank or heal.
 

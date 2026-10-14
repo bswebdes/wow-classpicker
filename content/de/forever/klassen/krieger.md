@@ -17,7 +17,7 @@ faq:
 ::class-art{name="warrior"}
 ::
 
-Der Krieger kämpft mit **Wut**, die er aufbaut, indem er Schaden austeilt und einsteckt. Typisch für Classic sind die **Haltungen**: Kampfhaltung, Verteidigungshaltung und Berserkerhaltung schalten jeweils andere Fähigkeiten frei, und gute Krieger wechseln ständig zwischen ihnen.
+Der Krieger kämpft mit **Wut**, die er aufbaut, indem er Schaden austeilt und einsteckt. Typisch für den Krieger in WoW Forever sind, wie schon in Classic, die **Haltungen**: Kampfhaltung, Verteidigungshaltung und Berserkerhaltung schalten jeweils andere Fähigkeiten frei, und gute Krieger wechseln ständig zwischen ihnen.
 
 ## Hintergrund und Lore
 
@@ -51,6 +51,6 @@ Schutz ist der Tank-Baum. In Classic waren Krieger die Tanks schlechthin, weil k
 
 ## Neu in Forever
 
-In WoW Forever können zum ersten Mal auch die neuen **Skyborne** auf beiden Seiten Krieger werden. Wie alle Klassen erhält der Krieger in jedem Talentbaum ein zusätzliches Meilenstein-Talent.
+In WoW Forever können zum ersten Mal auch die neuen **Himmelsgeborenen** auf beiden Seiten Krieger werden. Wie alle Klassen erhält der Krieger in jedem Talentbaum ein zusätzliches Meilenstein-Talent.
 
-Wie schlägt sich der Krieger gegen die anderen Classic-Klassen? Finde es im [Forever-Turnier](/forever) heraus.
+Wie schlägt sich der Krieger gegen die anderen Klassen in WoW Forever? Finde es im [Forever-Turnier](/forever) heraus.

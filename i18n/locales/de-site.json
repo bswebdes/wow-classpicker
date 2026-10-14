@@ -308,21 +308,21 @@
     },
     "home": {
       "title": "WoW Forever Class Picker – Welche Klasse spielst du in Forever?",
-      "description": "Welche Klasse spielst du in WoW Forever? Lass die 9 Classic-Klassen im Turnier kämpfen, mach das Quiz oder würfle Volk und Klasse. Start: 4. November 2026.",
+      "description": "Welche Klasse spielst du in WoW Forever? Lass die 9 Forever-Klassen im Turnier kämpfen, mach das Quiz oder würfle Volk und Klasse. Start: 4. November 2026.",
       "heading": "Welche Klasse spielst du in WoW Forever?",
-      "intro": "WoW Forever bringt das klassische Azeroth zurück, mit neuen Völker-Klassen-Kombinationen und dem neuen Volk der Skyborne. Wähle deine Favoriten unter den 9 Klassen und lass sie gegeneinander antreten.",
+      "intro": "WoW Forever bringt das klassische Azeroth zurück, mit neuen Völker-Klassen-Kombinationen und dem neuen Volk der Himmelsgeborenen. Wähle deine Favoriten unter den 9 Klassen und lass sie gegeneinander antreten.",
       "classesTeaser": "Alle 9 Klassen in WoW Forever mit Talentbäumen, Rollen und Völkern.",
       "randomTeaser": "Volk, Klasse und Talentbaum per Zufall. Für Twinks und Mutige."
     },
     "classes": {
       "title": "WoW Forever Klassen und Völker: Alle 56 Kombinationen",
-      "description": "Alle 9 Klassen in WoW Forever mit Talentbäumen und Rollen, dazu die komplette Völker-Klassen-Tabelle mit allen 56 Kombinationen und den neuen Skyborne.",
+      "description": "Alle 9 Klassen in WoW Forever mit Talentbäumen und Rollen, dazu die komplette Völker-Klassen-Tabelle mit allen 56 Kombinationen und den neuen Himmelsgeborenen.",
       "heading": "Klassen in WoW Forever",
-      "intro": "WoW Forever startet am 4. November 2026 mit den 9 Klassen aus Classic und klassischen Talentbäumen. Neu sind mehrere Völker-Klassen-Kombinationen und das Volk der Skyborne, das auf beiden Seiten spielbar ist."
+      "intro": "WoW Forever startet am 4. November 2026 mit den 9 Klassen aus Classic und klassischen Talentbäumen. Neu sind mehrere Völker-Klassen-Kombinationen und das Volk der Himmelsgeborenen, das auf beiden Seiten spielbar ist."
     },
     "quiz": {
       "title": "WoW Forever Klassen-Quiz: Welche Klasse passt zu mir?",
-      "description": "Welche Klasse passt in WoW Forever zu dir? 7 Fragen zu Rolle, Spielstil und Fantasy, dann kennst du deine Top 3 unter den 9 Classic-Klassen.",
+      "description": "Welche Klasse passt in WoW Forever zu dir? 7 Fragen zu Rolle, Spielstil und Fantasy, dann kennst du deine Top 3 unter den 9 Klassen von WoW Forever.",
       "heading": "Welche Klasse passt in WoW Forever zu mir?",
       "intro": "Sieben kurze Fragen, dann zeigen wir dir die drei Forever-Klassen, die am besten zu deinem Spielstil passen."
     },

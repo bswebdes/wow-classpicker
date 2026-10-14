@@ -7,7 +7,7 @@ imageAlt: "Skyborne artwork: a face in the mist above a snowy landscape"
 order: 11
 game: forever
 date: "2026-10-13"
-updated: "2026-10-13"
+updated: "2026-10-14"
 summary: "WoW Forever has 10 races and 9 classes for 56 combinations in total. New are Human Hunter, Dwarf Shaman, Gnome Priest, Orc Mage, Undead Paladin and Troll Warlock, plus the Skyborne race, which can play five classes on each side."
 faq:
   - q: "What are the new race and class combinations in WoW Forever?"
@@ -40,6 +40,8 @@ The **Skyborne** are WoW Forever's new race. Depending on faction they join a di
 
 - **Alliance (High Order):** Warrior, Hunter, Rogue, Mage, Druid
 - **Horde (Windshaper):** Warrior, Hunter, Rogue, Shaman, Druid
+
+Origin, racial abilities, starting zone and which class fits best are covered in the guide [Skyborne in WoW Forever](/en/guides/skyborne-wow-forever).
 
 ## All races and their classes
 

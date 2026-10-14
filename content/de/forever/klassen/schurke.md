@@ -51,6 +51,6 @@ Täuschung baut die Tarnung aus und ist im PvP stark. Mit Konzentration startest
 
 ## Neu in Forever
 
-Auch die **Skyborne** können auf beiden Seiten Schurken werden.
+Auch die **Himmelsgeborenen** können auf beiden Seiten Schurken werden.
 
 Schick den Schurken ins [Forever-Turnier](/forever) oder finde im [Forever-Quiz](/forever/welche-klasse-passt-zu-mir) heraus, ob er zu dir passt.

@@ -111,11 +111,11 @@ export const foreverRaces: RaceInfo[] = [
   { id: 'dwarf', faction: 'alliance', name: { de: 'Zwerg', en: 'Dwarf' }, classes: ['warrior', 'paladin', 'hunter', 'rogue', 'priest', 'shaman'], newClasses: ['shaman'] },
   { id: 'nightelf', faction: 'alliance', name: { de: 'Nachtelf', en: 'Night Elf' }, classes: ['warrior', 'hunter', 'rogue', 'priest', 'druid'] },
   { id: 'gnome', faction: 'alliance', name: { de: 'Gnom', en: 'Gnome' }, classes: ['warrior', 'rogue', 'priest', 'mage', 'warlock'], newClasses: ['priest'] },
-  { id: 'skyborne-alliance', faction: 'alliance', name: { de: 'Skyborne (High Order)', en: 'Skyborne (High Order)' }, classes: ['warrior', 'hunter', 'rogue', 'mage', 'druid'], newClasses: ['warrior', 'hunter', 'rogue', 'mage', 'druid'] },
+  { id: 'skyborne-alliance', faction: 'alliance', name: { de: 'Himmelsgeborene (Hoher Orden)', en: 'Skyborne (High Order)' }, classes: ['warrior', 'hunter', 'rogue', 'mage', 'druid'], newClasses: ['warrior', 'hunter', 'rogue', 'mage', 'druid'] },
   { id: 'orc', faction: 'horde', name: { de: 'Orc', en: 'Orc' }, classes: ['warrior', 'hunter', 'rogue', 'shaman', 'mage', 'warlock'], newClasses: ['mage'] },
   { id: 'undead', faction: 'horde', name: { de: 'Untoter', en: 'Undead' }, classes: ['warrior', 'paladin', 'rogue', 'priest', 'mage', 'warlock'], newClasses: ['paladin'] },
   { id: 'tauren', faction: 'horde', name: { de: 'Tauren', en: 'Tauren' }, classes: ['warrior', 'hunter', 'shaman', 'druid'] },
   { id: 'troll', faction: 'horde', name: { de: 'Troll', en: 'Troll' }, classes: ['warrior', 'hunter', 'rogue', 'priest', 'shaman', 'mage', 'warlock'], newClasses: ['warlock'] },
-  { id: 'skyborne-horde', faction: 'horde', name: { de: 'Skyborne (Windshaper)', en: 'Skyborne (Windshaper)' }, classes: ['warrior', 'hunter', 'rogue', 'shaman', 'druid'], newClasses: ['warrior', 'hunter', 'rogue', 'shaman', 'druid'] }
+  { id: 'skyborne-horde', faction: 'horde', name: { de: 'Himmelsgeborene (Windformer)', en: 'Skyborne (Windshaper)' }, classes: ['warrior', 'hunter', 'rogue', 'shaman', 'druid'], newClasses: ['warrior', 'hunter', 'rogue', 'shaman', 'druid'] }
 ]
 

@@ -51,6 +51,6 @@ Wiederherstellung ist der Heiler-Baum. Das Totem der Manaflut hält die Gruppe b
 
 ## Neu in Forever
 
-Der **Zwergen-Schamane** ist neu. Damit spielt die Allianz zum ersten Mal Schamanen. Auf Seiten der Horde können zusätzlich die **Skyborne** Schamanen werden.
+Der **Zwergen-Schamane** ist neu. Damit spielt die Allianz zum ersten Mal Schamanen. Auf Seiten der Horde können zusätzlich die **Himmelsgeborenen Windformer** Schamanen werden.
 
 Lass den Schamanen im [Forever-Turnier](/forever) antreten oder vergleiche [alle Forever-Klassen](/forever/klassen).

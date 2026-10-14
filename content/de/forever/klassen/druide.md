@@ -2,7 +2,7 @@
 title: "Druide in WoW Forever – Talentbäume, Völker und Spielweise"
 description: "Der Druide in WoW Forever erklärt: Gleichgewicht, Wilder Kampf und Wiederherstellung, Gestaltwandel, Völker und alle Rollen in einer Klasse."
 classId: druid
-summary: "Der Druide ist in WoW Forever der Gestaltwandler, der als einzige Classic-Klasse neben dem Paladin alle drei Rollen beherrscht: als Bär tanken, als Katze Schaden machen oder heilen. Neu: Auch die Skyborne können Druiden werden."
+summary: "Der Druide ist in WoW Forever der Gestaltwandler, der als einzige Klasse neben dem Paladin alle drei Rollen beherrscht: als Bär tanken, als Katze Schaden machen oder heilen. Neu: Auch die Himmelsgeborenen können Druiden werden."
 date: "2026-10-13"
 updated: "2026-10-14"
 faq:
@@ -51,6 +51,6 @@ Wiederherstellung ist der Heiler-Baum. Rasche Heilung verbraucht eine Heilung ü
 
 ## Neu in Forever
 
-Neben Nachtelfen und Tauren können jetzt die **Skyborne** auf beiden Seiten Druiden werden.
+Neben Nachtelfen und Tauren können jetzt die **Himmelsgeborenen** auf beiden Seiten Druiden werden.
 
 Lass den Druiden im [Forever-Turnier](/forever) kämpfen oder vergleiche [alle Forever-Klassen](/forever/klassen).

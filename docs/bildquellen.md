@@ -94,3 +94,12 @@ Die Hauptbilder liegen in `public/images/hero/` (1600 px und `-800` mit 800 px B
 | Datei | Original |
 | --- | --- |
 | `public/images/thalgrim.webp` | https://blz-contentstack-images.akamaized.net/v3/assets/blt3452e3b114fab0cd/bltc92a0bff9c62bb4f/616a002f9f3ef74e02a20d14/MD54JEPJ4K5R1603475588880.jpg (Zwergenseite, https://worldofwarcraft.blizzard.com/en-us/game/races/dwarf). Das Rundporträt zeigt per CSS nur den linken Zwerg, die Datei selbst ist nur verkleinert. |
+
+Himmelsgeborene (Skyborne), aus dem Blizzard-Artikel „WoW: Forever – Lernt die neuen Himmelsgeborenen kennen“ (https://worldofwarcraft.blizzard.com/de-de/news/24302071, abgerufen am 14.10.2026), nur verkleinert:
+
+| Datei | Original |
+| --- | --- |
+| `public/images/hero/skyborne-volk.webp` (+ `-800`) | https://bnetcmsus-a.akamaihd.net/cms/content_entry_media/T57OYWX3BMQM1789247713703.png |
+| `public/images/skyborne/factions.webp` | https://bnetcmsus-a.akamaihd.net/cms/content_entry_media/AVHUUPTTQG361790055105960.png |
+| `public/images/skyborne/classes.webp` | https://bnetcmsus-a.akamaihd.net/cms/content_entry_media/ZBYT90MPOE611790055105837.png |
+| `public/images/skyborne/zephras.webp` | https://bnetcmsus-a.akamaihd.net/cms/content_entry_media/SIEMA173U1BK1790055304500.png |
