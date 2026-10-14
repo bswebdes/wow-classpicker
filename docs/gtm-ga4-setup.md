@@ -434,15 +434,15 @@ Die Spendenbox hat jetzt drei Trank-Größen mit vorausgefülltem Betrag (1, 5, 
 
 | Ereignis | Wann | Parameter |
 | --- | --- | --- |
-| `donate_click` | Klick auf einen Trank oder „Eigener Betrag“ | `donation_amount` (1, 5 oder 10; 0 = eigener Betrag), `donation_currency` (`EUR` oder `USD`) |
+| `donate_click` | Klick auf einen Trank oder „Eigener Betrag“ | `value` (1, 5 oder 10; 0 = eigener Betrag), `donation_currency` (`EUR` oder `USD`) |
 
-> Die Parameter heißen bewusst nicht `value` und `currency`: Das sind in GA4 reservierte E-Commerce-Parameter, aus denen sich keine eigenen Dimensionen oder Messwerte anlegen lassen.
+> Die Währung heißt bewusst `donation_currency` statt `currency`: `currency` ist in GA4 reserviert, daraus lässt sich keine eigene Dimension anlegen. `value` dagegen lässt sich als Messwert registrieren.
 
 ### E2.1 Zwei neue Datenschichtvariablen
 
 | # | Variablenname | Name der Datenschichtvariable |
 | --- | --- | --- |
-| 23 | `DLV - donation_amount` | `donation_amount` |
+| 23 | `DLV - value` | `value` |
 | 24 | `DLV - donation_currency` | `donation_currency` |
 
 ### E2.2 Trigger erweitern
@@ -459,7 +459,7 @@ Die Spendenbox hat jetzt drei Trank-Größen mit vorausgefülltem Betrag (1, 5, 
 
 | Parametername | Wert |
 | --- | --- |
-| `donation_amount` | `{{DLV - donation_amount}}` |
+| `value` | `{{DLV - value}}` |
 | `donation_currency` | `{{DLV - donation_currency}}` |
 
 ### E2.4 In GA4 registrieren
@@ -469,10 +469,10 @@ Die Spendenbox hat jetzt drei Trank-Größen mit vorausgefülltem Betrag (1, 5, 
 | Art | Name | Ereignisparameter |
 | --- | --- | --- |
 | Benutzerdefinierte Dimension | Spenden-Währung | `donation_currency` |
-| Benutzerdefinierter Messwert | Spenden-Betrag (Klick) | `donation_amount` (Maßeinheit: Standard) |
+| Benutzerdefinierter Messwert | Spenden-Betrag (Klick) | `value` (Maßeinheit: Standard) |
 
 ### E2.5 Testen und veröffentlichen
 
 1. GTM-**Vorschau**, „Statistik“ im Cookie-Banner erlauben.
-2. Auf einen Trank klicken: `donate_click` mit `donation_amount = 5` und `donation_currency = EUR` (auf `/en` mit `USD`).
+2. Auf einen Trank klicken: `donate_click` mit `value = 5` und `donation_currency = EUR` (auf `/en` mit `USD`).
 3. **Senden** → Version „Spenden-Klicks“ veröffentlichen.

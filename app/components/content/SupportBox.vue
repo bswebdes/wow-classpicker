@@ -15,7 +15,7 @@ const potions = [
   { key: 'normal', amount: 5, size: 'h-7 w-7' },
   { key: 'large', amount: 10, size: 'h-8 w-8' }
 ]
-const track = amount => trackEvent('donate_click', { donation_amount: amount || 0, donation_currency: currency.value })
+const track = amount => trackEvent('donate_click', { value: amount || 0, donation_currency: currency.value })
 </script>
 
 <template>
