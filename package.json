@@ -34,8 +34,5 @@
   },
   "devDependencies": {
     "@nuxt/a11y": "^1.0.0-alpha.1"
-  },
-  "overrides": {
-    "postcss-selector-parser": "^7.1.6"
   }
 }

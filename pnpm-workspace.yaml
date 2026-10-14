@@ -1,6 +1,10 @@
 allowBuilds:
   esbuild: true
 
+# Sicherheitsupdate (npm audit): @tailwindcss/typography bringt sonst postcss-selector-parser 6 mit, CSS-Ausgabe identisch
+overrides:
+  postcss-selector-parser: ^7.1.6
+
 # pnpm lehnt Pakete ab, die jünger als 24 Stunden sind (Schutz vor frisch kompromittierten Versionen).
 # Diese exakten Versionen liefen schon mit npm in Produktion; die Ausnahme ist ab dem 15.10.2026 überflüssig
 # und kann dann entfernt werden. Neue Pakete bleiben der Regel unterworfen.
