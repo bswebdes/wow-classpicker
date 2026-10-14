@@ -25,6 +25,7 @@ Stand: 14.10.2026 · live auf [findyourmain.com](https://findyourmain.com), Bran
 - [ ] Thalgrim auch an anderen Stellen auftauchen lassen (z. B. Tipps auf Klassenseiten, 404-Seite), ggf. im Quest-Text als Zwerg erkennbar machen („bei meinem Bart“)
 
 ### Technik
+- [ ] Ab 15.10.2026: `minimumReleaseAgeExclude` in `pnpm-workspace.yaml` entfernen (44 Pakete vom 13.10., danach greift die 24-Stunden-Regel ohne Ausnahme)
 - [ ] Hydration-Warnung im Sprachumschalter (Dev): Der Link wird vor `useSetI18nParams` der Seite berechnet. Funktional korrekt (Server-Link bleibt), aber unschön
 - [ ] IndexNow meldet nach Deploys nur Seiten mit `lastmod` (Inhaltsseiten). Nach Änderungen an Tool-Seiten `pnpm indexnow --all` ausführen
 - [ ] Weitere Vergleichspaare indexieren, sobald Ubersuggest dafür Suchvolumen zeigt (`indexedPairs` in `app/utils/compare.ts`)
