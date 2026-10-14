@@ -1,6 +1,6 @@
 // Netlify ruft diese Funktion nach jedem erfolgreichen Deploy auf (Name = Ereignis).
 // Nur Produktions-Deploys melden ihre kürzlich geänderten URLs per IndexNow.
-import { readSitemap, recentUrls, submit } from '../../scripts/indexnow.mjs'
+import { readSitemap, recentUrls, submit } from '../../scripts/indexnow-lib.mjs'
 
 export const handler = async (event) => {
   const { payload } = JSON.parse(event.body || '{}')
