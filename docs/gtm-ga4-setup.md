@@ -420,8 +420,52 @@ Wie in Schritt 3.1 (**Variablen** → **Benutzerdefinierte Variablen** → **Neu
 1. GTM-**Vorschau** starten, Cookie-Banner „Statistik“ erlauben.
 2. Quiz durchspielen und **Ergebnis teilen** klicken (am PC wird der Link kopiert).
 3. In der Vorschau muss `share` erscheinen und `GA4 - App Events` ausgelöst werden, mit `method = copy_link`, `content_type = quiz_result` und der Klasse als `item_id`.
-4. Dasselbe in der Arena mit **Sieger teilen** (`content_type = arena_winner`).
+4. Dasselbe im Klassen-Turnier mit **Sieger teilen** (`content_type = arena_winner`, der interne Wert heißt aus Gründen der Vergleichbarkeit weiter so).
 5. **Senden** → Version „Teilen-Ereignis“ veröffentlichen.
 
 **Auswertung:** Unter **Berichte** → **Interaktion** → **Ereignisse** → `share` siehst du nach ein bis zwei Tagen, wie oft geteilt wird und welche Klassen am häufigsten geteilt werden. Die Besuche über geteilte Links erkennst du an den Seiten `/mein-main/…` bzw. `/en/my-main/…`.
 
+
+## Erweiterung 2 (14.10.2026): Spenden-Klicks
+
+> **Neu.** Nur abarbeiten, wenn Erweiterung 1 schon steht.
+
+Die Spendenbox hat jetzt drei Trank-Größen mit vorausgefülltem Betrag (1, 5, 10, auf Deutsch in Euro, auf Englisch in US-Dollar) und einen Link „Eigener Betrag“. Jeder Klick erzeugt ein Ereignis. Ob danach wirklich gespendet wurde, sieht nur PayPal, gemessen wird also das Interesse.
+
+| Ereignis | Wann | Parameter |
+| --- | --- | --- |
+| `donate_click` | Klick auf einen Trank oder „Eigener Betrag“ | `value` (1, 5 oder 10; 0 = eigener Betrag), `currency` (`EUR` oder `USD`) |
+
+### E2.1 Zwei neue Datenschichtvariablen
+
+| # | Variablenname | Name der Datenschichtvariable |
+| --- | --- | --- |
+| 23 | `DLV - value` | `value` |
+| 24 | `DLV - currency` | `currency` |
+
+### E2.2 Trigger erweitern
+
+`CE - App Events` öffnen und am Ende des Ausdrucks `|donate_click` ergänzen:
+
+```
+^(battle_start|battle_victory|battle_reset|quiz_start|quiz_decline|quiz_complete|random_roll|result_class_click|achievement_unlocked|mode_switch|language_switch|faq_open|share|donate_click)$
+```
+
+### E2.3 Tag erweitern
+
+`GA4 - App Events` öffnen, unter **Ereignisparameter** zwei Zeilen ergänzen:
+
+| Parametername | Wert |
+| --- | --- |
+| `value` | `{{DLV - value}}` |
+| `currency` | `{{DLV - currency}}` |
+
+### E2.4 In GA4 registrieren
+
+**Benutzerdefinierte Definitionen** → Dimension **Spenden-Währung** (`currency`, Bereich Ereignis) und Messwert **Spenden-Betrag (Klick)** (`value`, Bereich Ereignis, Einheit Standard).
+
+### E2.5 Testen und veröffentlichen
+
+1. GTM-**Vorschau**, „Statistik“ im Cookie-Banner erlauben.
+2. Auf einen Trank klicken: `donate_click` mit `value = 5` und `currency = EUR` (auf `/en` mit `USD`).
+3. **Senden** → Version „Spenden-Klicks“ veröffentlichen.

@@ -25,6 +25,7 @@ Stand: 14.10.2026 · live auf [findyourmain.com](https://findyourmain.com), Bran
 - [ ] Thalgrim auch an anderen Stellen auftauchen lassen (z. B. Tipps auf Klassenseiten, 404-Seite), ggf. im Quest-Text als Zwerg erkennbar machen („bei meinem Bart“)
 
 ### Technik
+- [ ] GTM: Erweiterung 2 aus `docs/gtm-ga4-setup.md` einrichten (Ereignis `donate_click` für die Spenden-Tränke)
 - [ ] Ab 15.10.2026: `minimumReleaseAgeExclude` in `pnpm-workspace.yaml` entfernen (44 Pakete vom 13.10., danach greift die 24-Stunden-Regel ohne Ausnahme)
 - [ ] Hydration-Warnung im Sprachumschalter (Dev): Der Link wird vor `useSetI18nParams` der Seite berechnet. Funktional korrekt (Server-Link bleibt), aber unschön
 - [ ] IndexNow meldet nach Deploys nur Seiten mit `lastmod` (Inhaltsseiten). Nach Änderungen an Tool-Seiten `pnpm indexnow --all` ausführen
@@ -41,7 +42,7 @@ Stand: 14.10.2026 · live auf [findyourmain.com](https://findyourmain.com), Bran
 ### Tracking & Einwilligung
 - [x] Cookie-Banner (vanilla-cookieconsent v3, Opt-in) mit Kategorien Notwendig / Erfolge speichern / Wowhead-Tooltips / Statistik
 - [x] Google Consent Mode v2, GTM `GTM-MSF6PT29` erst nach Zustimmung und nur auf `findyourmain.com` (lokal und auf Testadressen nie), GA4 eingerichtet nach `docs/gtm-ga4-setup.md` inkl. „Erweiterung 1“ (Ereignis `share`)
-- [x] Events nur nach Einwilligung: `battle_start/victory/reset`, `quiz_start/decline/complete`, `random_roll`, `result_class_click`, `achievement_unlocked`, `mode_switch`, `language_switch`, `faq_open`, `share`
+- [x] Events nur nach Einwilligung: `battle_start/victory/reset`, `quiz_start/decline/complete`, `random_roll`, `result_class_click`, `achievement_unlocked`, `mode_switch`, `language_switch`, `faq_open`, `share`, `donate_click`
 
 ### Technik
 - [x] Nuxt 4, Tailwind CSS 4, @nuxtjs/i18n 10, Nuxt Content (DE/EN), Vorrendern, Node 24 auf Netlify

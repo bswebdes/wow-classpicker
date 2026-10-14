@@ -723,7 +723,14 @@
     "text": "The site is free and ad-free. If you like, buy me a healing potion.",
     "button": "Buy a healing potion",
     "newTab": "PayPal, opens in a new tab",
-    "note": "Voluntary via PayPal, nothing in return."
+    "note": "Voluntary via PayPal, nothing in return.",
+    "pick": "Pick your potion",
+    "sizes": {
+      "small": "Minor healing potion",
+      "normal": "Healing potion",
+      "large": "Major healing potion"
+    },
+    "custom": "Custom amount"
   },
   "spec": {
     "facts": "At a glance",

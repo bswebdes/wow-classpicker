@@ -723,7 +723,14 @@
     "text": "Die Seite ist kostenlos und ohne Werbung. Wenn du magst, spendier mir einen Heiltrank.",
     "button": "Heiltrank spendieren",
     "newTab": "PayPal, öffnet in neuem Tab",
-    "note": "Freiwillig über PayPal, ohne Gegenleistung."
+    "note": "Freiwillig über PayPal, ohne Gegenleistung.",
+    "pick": "Wähle deinen Trank",
+    "sizes": {
+      "small": "Kleiner Heiltrank",
+      "normal": "Heiltrank",
+      "large": "Großer Heiltrank"
+    },
+    "custom": "Eigener Betrag"
   },
   "spec": {
     "facts": "Steckbrief",
