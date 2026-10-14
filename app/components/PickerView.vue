@@ -152,21 +152,8 @@ const handleReset = () => {
 
     <section class="mt-14">
       <h2 class="wow-title text-2xl">{{ $t('home.toolsTitle') }}</h2>
-      <div class="mt-4 grid gap-4 sm:grid-cols-3">
-        <NuxtLink
-          v-for="tool in [
-            { to: localePath(routeNameFor('quiz', mode)), title: $t('nav.quiz'), text: $t('home.quizTeaser') },
-            { to: localePath(routeNameFor('zufall', mode)), title: $t('nav.random'), text: mode === 'forever' ? $t('forever.home.randomTeaser') : $t('home.randomTeaser') },
-            { to: localePath(routeNameFor('klassen', mode)), title: $t('nav.classes'), text: mode === 'forever' ? $t('forever.home.classesTeaser') : $t('home.classesTeaser') }
-          ]"
-          :key="tool.to"
-          :to="tool.to"
-          class="wow-tooltip block transition-colors hover:border-gold"
-        >
-          <span class="block font-display font-bold text-gold">{{ tool.title }}</span>
-          <span class="mt-1 block text-[15px] text-neutral-300">{{ tool.text }}</span>
-        </NuxtLink>
-      </div>
+      <p class="mt-1 text-neutral-400">{{ $t('tools.subtitle') }}</p>
+      <ToolCards :mode="mode" class="mt-5" />
     </section>
 
     <ContentBlock :name="mode === 'forever' ? 'forever-home' : 'home'" class="mt-12" />

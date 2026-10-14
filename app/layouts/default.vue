@@ -1,6 +1,6 @@
 <script setup>
 const localePath = useLocalePath()
-const { t } = useI18n()
+const { t, locale } = useI18n()
 const { mode, modeBase, routeName } = useGameMode()
 
 // hreflang, canonical und lang-Attribut für alle Seiten
@@ -12,12 +12,60 @@ useHead(() => ({
 }))
 
 const navItems = computed(() => [
-  { to: localePath(routeName('index')), label: t('nav.picker') },
-  { to: localePath(routeName('klassen')), label: t('nav.classes') },
-  { to: localePath(routeName('quiz')), label: t('nav.quiz') },
-  { to: localePath(routeName('zufall')), label: t('nav.random') },
-  { to: localePath('ratgeber'), label: t('nav.guides') }
+  { key: 'index', icon: 'arena', to: localePath(routeName('index')), label: t('nav.picker') },
+  { key: 'klassen', icon: 'classes', to: localePath(routeName('klassen')), label: t('nav.classes') },
+  { key: 'quiz', icon: 'quiz', to: localePath(routeName('quiz')), label: t('nav.quiz') },
+  { key: 'zufall', icon: 'random', to: localePath(routeName('zufall')), label: t('nav.random') },
+  { key: 'ratgeber', icon: 'guides', to: localePath('ratgeber'), label: t('nav.guides') }
 ])
+
+// Aktiver Menüpunkt, auch auf Unterseiten (Klassen- und Spec-Seiten, Vergleiche, einzelne Ratgeber)
+const getRouteBaseName = useRouteBaseName()
+const activeKey = computed(() => {
+  const name = String(getRouteBaseName(route) || '').replace(/^forever-?/, '') || 'index'
+  if (name.startsWith('klassen')) return 'klassen'
+  if (name.startsWith('ratgeber')) return 'ratgeber'
+  return name
+})
+
+// Klassen-Menü am Desktop: öffnet bei Hover und Tastaturfokus, schließt nach einem Klick
+const megaClosed = ref(false)
+const megaClasses = computed(() => getClassList(mode.value))
+const nuxtApp = useNuxtApp()
+const footerColumns = computed(() => [
+  {
+    title: 'Retail · Midnight',
+    links: [
+      { to: localePath('index'), label: t('nav.picker') },
+      { to: localePath('klassen'), label: t('nav.classes') },
+      { to: localePath('quiz'), label: t('nav.quiz') },
+      { to: localePath('zufall'), label: t('nav.random') },
+      { to: localePath('klassen-vergleich'), label: t('compare.nav') }
+    ]
+  },
+  {
+    title: 'WoW Forever',
+    links: [
+      { to: localePath('forever'), label: t('nav.picker') },
+      { to: localePath('forever-klassen'), label: t('nav.classes') },
+      { to: localePath('forever-quiz'), label: t('nav.quiz') },
+      { to: localePath('forever-zufall'), label: t('nav.random') },
+      { to: localePath('forever-klassen-vergleich'), label: t('compare.nav') }
+    ]
+  },
+  {
+    title: t('footer.content'),
+    links: [
+      { to: localePath('ratgeber'), label: t('nav.guides') },
+      { to: localePath('erfolge'), label: t('footer.achievements') },
+      { to: localePath('ueber'), label: t('nav.about') },
+      { to: localePath('impressum'), label: t('footer.imprint') },
+      { to: localePath('datenschutz'), label: t('footer.privacy') },
+      { label: t('footer.cookies'), action: () => nuxtApp.$showCookieSettings?.() }
+    ]
+  }
+])
+const classPath = c => localePath({ name: routeName('klassen-slug'), params: { slug: c.slug[locale.value] } })
 
 // Ziel im anderen Modus: gleiche Seite, falls es sie dort gibt, sonst Startseite
 const route = useRoute()
@@ -35,7 +83,11 @@ const switchTarget = (target) => {
 
 // Mobiles Menü: schließt bei Seitenwechsel und mit Escape
 const menuOpen = ref(false)
-watch(() => route.fullPath, () => { menuOpen.value = false })
+watch(() => route.fullPath, () => {
+  menuOpen.value = false
+  megaClosed.value = true
+  if (import.meta.client) document.activeElement?.blur?.()
+})
 onMounted(() => {
   window.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') menuOpen.value = false
@@ -55,7 +107,7 @@ const modes = computed(() => [
 
     <header class="md:sticky md:top-0 z-40 border-b-2 border-gold-border/70 bg-[#0b0805]/95 backdrop-blur-sm shadow-[0_4px_16px_rgba(0,0,0,0.7)]">
       <div class="max-w-6xl w-[92%] mx-auto flex items-center justify-between gap-x-6 pt-3 max-md:pb-3">
-        <NuxtLink :to="localePath(routeName('index'))" class="flex items-center md:pb-3" aria-label="Find Your Main">
+        <NuxtLink :to="localePath(routeName('index'))" class="flex items-center md:pb-3">
           <span class="md:hidden"><SiteLogo :mode="mode" small /></span>
           <span class="hidden md:block"><SiteLogo :mode="mode" /></span>
         </NuxtLink>
@@ -145,21 +197,61 @@ const modes = computed(() => [
         </div>
       </div>
 
-      <!-- Desktop: Hauptnavigation -->
-      <div class="hidden border-t border-gold-border/40 bg-black/50 md:block">
-        <div class="max-w-6xl w-[92%] mx-auto flex flex-wrap items-center justify-between gap-3 py-2">
-          <nav :aria-label="$t('nav.menu')" class="flex flex-wrap items-center gap-x-5 font-display text-[15px] font-semibold">
-            <NuxtLink
-              v-for="item in navItems"
-              :key="item.to"
-              :to="item.to"
-              class="text-neutral-300 hover:text-gold transition-colors"
-              active-class="!text-gold"
-            >
-              {{ item.label }}
-            </NuxtLink>
+      <!-- Desktop: Hauptnavigation als Reiterleiste -->
+      <div class="hidden border-t border-gold-border/40 bg-gradient-to-b from-black/70 to-black/40 md:block">
+        <div class="max-w-6xl w-[92%] mx-auto flex items-center justify-between gap-3">
+          <nav :aria-label="$t('nav.menu')" class="flex items-stretch font-display text-[15px] font-semibold">
+            <template v-for="item in navItems" :key="item.key">
+              <!-- Klassen mit Megamenü -->
+              <!-- Unter lg richtet sich das Menü am Header aus, damit es nicht rechts übersteht -->
+              <div v-if="item.key === 'klassen'" class="group flex lg:relative" @mouseleave="megaClosed = false">
+                <NuxtLink
+                  :to="item.to"
+                  class="nav-tab"
+                  :class="activeKey === item.key && 'nav-tab-active'"
+                  :aria-current="activeKey === item.key ? 'page' : undefined"
+                  aria-haspopup="true"
+                >
+                  <NavIcon :name="item.icon" class="hidden lg:block" />
+                  {{ item.label }}
+                  <NavIcon name="chevron" :size="14" class="opacity-60 transition-transform group-hover:rotate-180" />
+                </NuxtLink>
+                <div
+                  class="mega-panel absolute left-[4%] top-full lg:left-0 z-50 hidden w-[min(44rem,88vw)] pt-1 group-focus-within:block group-hover:block"
+                  :class="megaClosed && '!hidden'"
+                >
+                  <div class="wow-frame !bg-[#120d07] !p-4">
+                    <p class="mb-3 font-display text-[12px] font-bold uppercase tracking-[0.25em] text-neutral-400">
+                      {{ mode === 'forever' ? `${$t('nav.classes')} · WoW Forever` : `${$t('nav.classes')} · WoW Midnight` }}
+                    </p>
+                    <ul class="grid grid-cols-3 gap-1 lg:grid-cols-4">
+                      <li v-for="c in megaClasses" :key="c.id">
+                        <NuxtLink :to="classPath(c)" class="flex items-center gap-2.5 rounded-[4px] px-2 py-1.5 transition-colors hover:bg-white/[0.06]" @click="megaClosed = true">
+                          <img :src="c.icon" alt="" width="28" height="28" class="wow-slot h-7 w-7 !border" loading="lazy" />
+                          <span class="font-display text-[14px] font-bold" :style="{ color: c.color }">{{ $t(`classes.${c.id}.name`) }}</span>
+                        </NuxtLink>
+                      </li>
+                    </ul>
+                    <div class="mt-3 flex flex-wrap gap-x-6 gap-y-1 border-t border-gold-border/40 pt-3 font-sans text-[15px] font-normal">
+                      <NuxtLink :to="item.to" class="flex items-center gap-1.5 text-gold hover:text-gold-light" @click="megaClosed = true"><NavIcon name="classes" :size="16" /> {{ $t('common.allClasses') }} ›</NuxtLink>
+                      <NuxtLink :to="localePath(routeName('klassen-vergleich'))" class="flex items-center gap-1.5 text-neutral-300 hover:text-gold" @click="megaClosed = true"><NavIcon name="compare" :size="16" /> {{ $t('compare.nav') }} ›</NuxtLink>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <NuxtLink
+                v-else
+                :to="item.to"
+                class="nav-tab"
+                :class="activeKey === item.key && 'nav-tab-active'"
+                :aria-current="activeKey === item.key ? 'page' : undefined"
+              >
+                <NavIcon :name="item.icon" class="hidden lg:block" />
+                {{ item.label }}
+              </NuxtLink>
+            </template>
           </nav>
-          <div class="flex items-center gap-3">
+          <div class="flex items-center gap-3 py-2">
             <ClientOnly><AchievementCounter /></ClientOnly>
             <LanguagePicker class="flex" />
           </div>
@@ -176,48 +268,55 @@ const modes = computed(() => [
       <SupportBox band />
     </aside>
 
-    <footer class="mt-10 border-t-2 border-gold-border/60 bg-black/60 text-neutral-400">
-      <div class="max-w-6xl w-[92%] mx-auto py-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
-        <div>
-          <SiteLogo :mode="mode" small />
-          <p class="mt-3 text-[15px]">{{ $t('footer.tagline') }}</p>
-        </div>
-        <div>
-          <p class="font-display font-bold text-gold mb-2">Retail · Midnight</p>
-          <ul class="space-y-1">
-            <li><NuxtLink :to="localePath('index')" class="hover:text-gold">{{ $t('nav.picker') }}</NuxtLink></li>
-            <li><NuxtLink :to="localePath('klassen')" class="hover:text-gold">{{ $t('nav.classes') }}</NuxtLink></li>
-            <li><NuxtLink :to="localePath('quiz')" class="hover:text-gold">{{ $t('nav.quiz') }}</NuxtLink></li>
-            <li><NuxtLink :to="localePath('zufall')" class="hover:text-gold">{{ $t('nav.random') }}</NuxtLink></li>
-            <li><NuxtLink :to="localePath('klassen-vergleich')" class="hover:text-gold">{{ $t('compare.nav') }}</NuxtLink></li>
+    <footer class="site-footer mt-16 text-neutral-400">
+      <!-- Ornament: Linie mit Wappen in der Mitte -->
+      <div class="relative flex items-center justify-center" aria-hidden="true">
+        <div class="h-px flex-1 bg-gradient-to-r from-transparent via-gold-border to-gold-border" />
+        <span class="mx-4 -my-8 rounded-full border-2 border-gold-border bg-[#0b0805] p-2.5 shadow-[0_0_24px_rgba(255,209,0,0.15)]"><SiteLogoCrest :mode="mode" /></span>
+        <div class="h-px flex-1 bg-gradient-to-l from-transparent via-gold-border to-gold-border" />
+      </div>
+
+      <div class="max-w-6xl w-[92%] mx-auto pt-12">
+        <!-- Alle Klassen auf einen Blick, je Spielmodus -->
+        <nav :aria-label="$t('footer.allClasses')" class="text-center">
+          <p class="font-display text-[12px] font-bold uppercase tracking-[0.3em] text-neutral-500">{{ $t('footer.allClasses') }} · {{ mode === 'forever' ? 'WoW Forever' : 'WoW Midnight' }}</p>
+          <ul class="mt-4 flex flex-wrap justify-center gap-2">
+            <li v-for="c in megaClasses" :key="c.id">
+              <NuxtLink :to="classPath(c)" class="footer-class block" :title="$t(`classes.${c.id}.name`)" :style="{ '--c': c.color }">
+                <img :src="c.icon" :alt="$t(`classes.${c.id}.name`)" width="40" height="40" class="wow-slot h-10 w-10" loading="lazy" />
+              </NuxtLink>
+            </li>
           </ul>
-        </div>
-        <div>
-          <p class="font-display font-bold text-gold mb-2">WoW Forever</p>
-          <ul class="space-y-1">
-            <li><NuxtLink :to="localePath('forever')" class="hover:text-gold">{{ $t('nav.picker') }}</NuxtLink></li>
-            <li><NuxtLink :to="localePath('forever-klassen')" class="hover:text-gold">{{ $t('nav.classes') }}</NuxtLink></li>
-            <li><NuxtLink :to="localePath('forever-quiz')" class="hover:text-gold">{{ $t('nav.quiz') }}</NuxtLink></li>
-            <li><NuxtLink :to="localePath('forever-zufall')" class="hover:text-gold">{{ $t('nav.random') }}</NuxtLink></li>
-            <li><NuxtLink :to="localePath('forever-klassen-vergleich')" class="hover:text-gold">{{ $t('compare.nav') }}</NuxtLink></li>
-          </ul>
-        </div>
-        <div>
-          <p class="font-display font-bold text-gold mb-2">{{ $t('footer.content') }}</p>
-          <ul class="space-y-1">
-            <li><NuxtLink :to="localePath('ratgeber')" class="hover:text-gold">{{ $t('nav.guides') }}</NuxtLink></li>
-            <li><NuxtLink :to="localePath('ueber')" class="hover:text-gold">{{ $t('nav.about') }}</NuxtLink></li>
-            <li><NuxtLink :to="localePath('impressum')" class="hover:text-gold">{{ $t('footer.imprint') }}</NuxtLink></li>
-            <li><NuxtLink :to="localePath('datenschutz')" class="hover:text-gold">{{ $t('footer.privacy') }}</NuxtLink></li>
-            <li><button class="hover:text-gold" @click="$showCookieSettings?.()">{{ $t('footer.cookies') }}</button></li>
-            <li><NuxtLink :to="localePath('erfolge')" class="hover:text-gold">{{ $t('footer.achievements') }}</NuxtLink></li>
-          </ul>
+        </nav>
+
+        <div class="mt-12 grid grid-cols-2 gap-x-6 gap-y-10 lg:grid-cols-[1.3fr_1fr_1fr_1fr]">
+          <div class="col-span-2 lg:col-span-1">
+            <SiteLogo :mode="mode" small />
+            <p class="mt-4 text-[15px] leading-relaxed">{{ $t('footer.tagline') }}</p>
+          </div>
+          <div v-for="col in footerColumns" :key="col.title">
+            <p class="footer-heading">{{ col.title }}</p>
+            <ul class="mt-3 space-y-1.5">
+              <li v-for="l in col.links" :key="l.label">
+                <NuxtLink v-if="l.to" :to="l.to" class="footer-link">{{ l.label }}</NuxtLink>
+                <button v-else class="footer-link" @click="l.action()">{{ l.label }}</button>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-      <p class="max-w-6xl w-[92%] mx-auto pb-10 text-xs text-neutral-500">
-        {{ $t('footer.disclaimer') }}
-        {{ $t('footer.madeBy') }} <a href="https://frysch.studio" class="underline hover:text-gold">frysch.studio</a>.
-      </p>
+
+      <div class="mt-12 border-t border-gold-border/30 bg-black/50">
+        <div class="max-w-6xl w-[92%] mx-auto flex flex-col gap-4 pt-6 pb-20 text-xs text-neutral-500 sm:flex-row sm:pb-6 sm:items-center sm:justify-between">
+          <p>
+            {{ $t('footer.disclaimer') }}
+            {{ $t('footer.madeBy') }} <a href="https://frysch.studio" class="underline hover:text-gold">frysch.studio</a>.
+          </p>
+          <a href="#" class="flex shrink-0 items-center gap-1.5 self-start font-display text-[13px] font-bold uppercase tracking-wider text-gold-dark hover:text-gold sm:self-auto">
+            <NavIcon name="arrowUp" :size="16" /> {{ $t('footer.toTop') }}
+          </a>
+        </div>
+      </div>
     </footer>
 
     <ClientOnly>

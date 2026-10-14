@@ -26,7 +26,9 @@
     "privacy": "Privacy",
     "madeBy": "Website by",
     "cookies": "Cookie settings",
-    "achievements": "Achievements"
+    "achievements": "Achievements",
+    "allClasses": "All classes",
+    "toTop": "Back to top"
   },
   "common": {
     "roles": {
@@ -725,5 +727,23 @@
     "toClassHint": "Class page with lore, races and comparison",
     "moreAbout": "More on {spec}",
     "allSpecs": "Specializations in detail"
+  },
+  "tools": {
+    "subtitle": "Four tools to help you pick your class.",
+    "use": "Use:",
+    "open": "Use",
+    "meta": {
+      "quiz": "Tool · 7 questions",
+      "random": "Tool · One click",
+      "classes": "Reference · {n} classes",
+      "compare": "Tool · Two classes"
+    },
+    "compareTeaser": "Put two classes side by side: roles, armor, difficulty and playstyle compared directly.",
+    "flavor": {
+      "quiz": "\"Tell me how you fight, and I will tell you who you are.\"",
+      "random": "\"Fate is never wrong. Mostly.\"",
+      "classes": "\"Knowledge is the sharpest blade.\"",
+      "compare": "\"Two paths, one goal: your main.\""
+    }
   }
 }

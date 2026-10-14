@@ -26,7 +26,9 @@
     "privacy": "Datenschutz",
     "madeBy": "Website von",
     "cookies": "Cookie-Einstellungen",
-    "achievements": "Erfolge"
+    "achievements": "Erfolge",
+    "allClasses": "Alle Klassen",
+    "toTop": "Nach oben"
   },
   "common": {
     "roles": {
@@ -725,5 +727,23 @@
     "toClassHint": "Klassenseite mit Lore, Völkern und Vergleich",
     "moreAbout": "Mehr zu {spec}",
     "allSpecs": "Spezialisierungen im Detail"
+  },
+  "tools": {
+    "subtitle": "Vier Werkzeuge, die dir bei der Klassenwahl helfen.",
+    "use": "Benutzen:",
+    "open": "Benutzen",
+    "meta": {
+      "quiz": "Werkzeug · 7 Fragen",
+      "random": "Werkzeug · Ein Klick",
+      "classes": "Nachschlagewerk · {n} Klassen",
+      "compare": "Werkzeug · Zwei Klassen"
+    },
+    "compareTeaser": "Stell zwei Klassen nebeneinander: Rollen, Rüstung, Einstieg und Spielgefühl im direkten Vergleich.",
+    "flavor": {
+      "quiz": "„Sag mir, wie du kämpfst, und ich sage dir, wer du bist.“",
+      "random": "„Das Schicksal irrt sich nie. Meistens.“",
+      "classes": "„Wissen ist die schärfste Klinge.“",
+      "compare": "„Zwei Wege, ein Ziel: dein Main.“"
+    }
   }
 }

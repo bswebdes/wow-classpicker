@@ -223,3 +223,91 @@
   background-image: linear-gradient(180deg, rgba(255, 210, 160, 0.18) 0%, transparent 50%, rgba(0, 0, 0, 0.35) 100%);
   text-shadow: 1px 1px 0 #000;
 }
+
+/* Reiter der Desktop-Navigation: aktiver Reiter mit goldener Leiste wie im Charakterfenster */
+@layer components {
+  .nav-tab {
+    @apply relative flex items-center gap-2 whitespace-nowrap px-2.5 py-3 text-[14px] text-neutral-300 transition-colors lg:px-4 lg:text-[15px];
+  }
+  .nav-tab:hover { @apply text-gold-light; background: radial-gradient(ellipse at bottom, rgba(255, 209, 0, 0.12), transparent 70%); }
+  /* Der Balken liegt genau auf der 2px-Unterkante des Headers: die Kante leuchtet unter dem Reiter auf,
+     statt eine zweite Linie darüber zu ziehen */
+  .nav-tab::after {
+    content: '';
+    @apply absolute inset-x-2 -bottom-[2px] h-[2px] opacity-0 transition-opacity;
+    background: linear-gradient(90deg, transparent, var(--color-gold) 20%, var(--color-gold-light) 50%, var(--color-gold) 80%, transparent);
+    box-shadow: 0 -4px 10px rgba(255, 209, 0, 0.45);
+  }
+  .nav-tab:hover::after { @apply opacity-40; }
+  .nav-tab-active { @apply text-gold; background: radial-gradient(ellipse at bottom, rgba(255, 209, 0, 0.16), transparent 70%); }
+  .nav-tab-active::after { @apply opacity-100; }
+}
+
+/* Footer: dunkler Grund mit goldenem Schimmer von oben */
+@layer components {
+  .site-footer {
+    background:
+      radial-gradient(ellipse 70% 120px at top, rgba(255, 209, 0, 0.07), transparent),
+      linear-gradient(180deg, #0d0a06, #050403);
+  }
+  .footer-heading { @apply font-display text-[15px] font-bold uppercase tracking-wider text-gold; }
+  .footer-link { @apply flex items-center gap-2 text-left text-[16px] text-neutral-400 transition-colors; }
+  .footer-link::before {
+    content: '';
+    @apply h-1.5 w-1.5 shrink-0 rotate-45 transition-colors;
+    background: var(--color-gold-border);
+  }
+  .footer-link:hover { @apply text-gold-light; }
+  .footer-link:hover::before { background: var(--color-gold); }
+  .footer-class img { @apply transition-[transform,box-shadow] duration-150; }
+  .footer-class:hover img, .footer-class:focus-visible img { transform: translateY(-2px); box-shadow: 0 0 0 1px var(--c), 0 0 14px var(--c); }
+}
+
+/* Werkzeug-Karte im Stil eines Gegenstands-Tooltips, leuchtet beim Hover in der Qualitätsfarbe */
+@layer components {
+  .tool-card {
+    @apply flex w-full flex-col rounded-md p-4 transition-[border-color,box-shadow,transform] duration-150;
+    background: linear-gradient(180deg, rgba(14, 14, 36, 0.96), rgba(6, 6, 18, 0.96));
+    border: 1px solid #8f8f8f;
+    box-shadow: inset 0 0 0 1px #000, 0 4px 14px rgba(0, 0, 0, 0.7);
+  }
+  .tool-card:hover, .tool-card:focus-visible {
+    border-color: var(--q);
+    box-shadow: inset 0 0 0 1px #000, 0 0 18px color-mix(in srgb, var(--q) 35%, transparent), 0 6px 18px rgba(0, 0, 0, 0.7);
+    transform: translateY(-2px);
+  }
+}
+
+/* FAQ-Eintrag: Tooltip-Grund, Quest-Fragezeichen, sanftes Aufklappen (wo der Browser es kann) */
+@layer components {
+  .faq-item {
+    @apply rounded-md transition-[border-color,box-shadow];
+    interpolate-size: allow-keywords;
+    background: linear-gradient(180deg, rgba(14, 14, 36, 0.95), rgba(7, 7, 20, 0.95));
+    border: 1px solid #6f6f78;
+    box-shadow: inset 0 0 0 1px #000, 0 4px 14px rgba(0, 0, 0, 0.6);
+  }
+  .faq-item:hover { border-color: rgba(255, 209, 0, 0.55); }
+  .faq-item[open] {
+    border-color: var(--color-gold-border);
+    box-shadow: inset 0 0 0 1px #000, 0 0 16px rgba(255, 209, 0, 0.12), 0 4px 14px rgba(0, 0, 0, 0.6);
+  }
+  .faq-item::details-content {
+    block-size: 0;
+    overflow: hidden;
+    transition: block-size 0.25s ease, content-visibility 0.25s allow-discrete;
+  }
+  .faq-item[open]::details-content { block-size: auto; }
+  .faq-marker {
+    @apply flex h-8 w-8 shrink-0 items-center justify-center rounded-full font-display text-[19px] font-black leading-none;
+    color: var(--color-gold);
+    background: radial-gradient(circle at 50% 35%, #3a2a12, #120d07);
+    border: 1px solid var(--color-gold-border);
+    text-shadow: 0 0 6px rgba(255, 209, 0, 0.7), 1px 1px 0 #000;
+  }
+  .faq-item[open] .faq-marker { border-color: var(--color-gold); box-shadow: 0 0 10px rgba(255, 209, 0, 0.35); }
+}
+
+/* Megamenü: geschlossen display:none (sonst verbreitert es unsichtbar die Seite), beim Öffnen kurz einblenden */
+.mega-panel { animation: mega-in 0.15s ease-out; }
+@keyframes mega-in { from { opacity: 0; transform: translateY(-4px); } }

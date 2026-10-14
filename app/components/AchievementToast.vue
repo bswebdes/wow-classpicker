@@ -2,13 +2,13 @@
 // Zeigt neu errungene Erfolge nacheinander unten mittig an, wie im Spiel
 const { queue } = useAchievements()
 const localePath = useLocalePath()
-// Während ein Dialog offen ist (z. B. Siegerauswertung), oben statt unten einblenden
 const modalOpen = useState('modal-open', () => false)
 const current = ref(null)
 let timer
 
 const showNext = () => {
-  if (current.value || !queue.value.length) return
+  // Während ein Dialog offen ist, zeigt der Dialog die Erfolge selbst an (z. B. Siegerauswertung)
+  if (current.value || modalOpen.value || !queue.value.length) return
   const [next, ...rest] = queue.value
   queue.value = rest
   current.value = achievementDefs.find(a => a.id === next) || null
@@ -23,10 +23,18 @@ const close = () => {
 }
 
 watch(queue, () => setTimeout(showNext, 600), { deep: true })
+// Öffnet sich ein Dialog, wandert der gerade sichtbare Erfolg zurück in die Warteschlange
+watch(modalOpen, (open) => {
+  if (open && current.value) {
+    queue.value = [current.value.id, ...queue.value]
+    current.value = null
+  }
+  else if (!open) setTimeout(showNext, 600)
+})
 </script>
 
 <template>
-  <div class="pointer-events-none fixed inset-x-0 z-[60] flex justify-center px-4" :class="modalOpen ? 'top-4' : 'bottom-20 sm:bottom-5'" aria-live="polite">
+  <div class="pointer-events-none fixed inset-x-0 z-[60] flex justify-center px-4 bottom-20 sm:bottom-5" aria-live="polite">
     <Transition
       enter-active-class="transition duration-300 ease-out"
       enter-from-class="opacity-0 translate-y-6 scale-95"
