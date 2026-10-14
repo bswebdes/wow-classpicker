@@ -25,11 +25,8 @@ Stand: 14.10.2026 · live auf [findyourmain.com](https://findyourmain.com), Bran
 - [ ] Thalgrim auch an anderen Stellen auftauchen lassen (z. B. Tipps auf Klassenseiten, 404-Seite), ggf. im Quest-Text als Zwerg erkennbar machen („bei meinem Bart“)
 
 ### Technik
-- [ ] GTM: Erweiterung 2 aus `docs/gtm-ga4-setup.md` (Ereignis `donate_click` mit `value` und `donation_currency`)
-- [ ] Ab 15.10.2026: `minimumReleaseAgeExclude` in `pnpm-workspace.yaml` entfernen (44 Pakete vom 13.10.)
-- [ ] Netlify: Header `cache-control` wird doppelt gesetzt (Groß-/Kleinschreibung), Build-Warnung bereinigen
+- [ ] Ab 14.10.2026, 19:27 Uhr: `minimumReleaseAgeExclude` in `pnpm-workspace.yaml` entfernen (jüngstes der 44 Pakete: 13.10., 17:26 UTC)
 - [ ] Netlify-UI: Build-Befehl optional von `npm run build` auf `pnpm run build` umstellen (funktioniert beides)
-- [ ] Hydration-Warnung im Sprachumschalter (nur Dev): Link wird vor `useSetI18nParams` der Seite berechnet, funktional korrekt
 
 ### Laufend
 - [ ] Bei jedem Patch: `app/utils/gameVersion.ts` anpassen (Anzeige „Spielstand“), Spec-Seiten auf geänderte Fähigkeiten prüfen (Namen kommen über `scripts/expand-spells.mjs` von Wowhead)
@@ -46,7 +43,7 @@ Stand: 14.10.2026 · live auf [findyourmain.com](https://findyourmain.com), Bran
 
 ### Tracking & Einwilligung
 - [x] Cookie-Banner (vanilla-cookieconsent v3, Opt-in) mit Kategorien Notwendig / Erfolge speichern / Wowhead-Tooltips / Statistik
-- [x] Google Consent Mode v2, GTM `GTM-MSF6PT29` erst nach Zustimmung und nur auf `findyourmain.com` (lokal und auf Testadressen nie), GA4 eingerichtet nach `docs/gtm-ga4-setup.md` inkl. „Erweiterung 1“ (Ereignis `share`)
+- [x] Google Consent Mode v2, GTM `GTM-MSF6PT29` erst nach Zustimmung und nur auf `findyourmain.com` (lokal und auf Testadressen nie), GA4 eingerichtet nach `docs/gtm-ga4-setup.md` inkl. „Erweiterung 1“ (Ereignis `share`) und „Erweiterung 2“ (`donate_click`)
 - [x] Events nur nach Einwilligung: `battle_start/victory/reset`, `quiz_start/decline/complete`, `random_roll`, `result_class_click`, `achievement_unlocked`, `mode_switch`, `language_switch`, `faq_open`, `share`, `donate_click`
 
 ### Technik
@@ -72,7 +69,7 @@ Stand: 14.10.2026 · live auf [findyourmain.com](https://findyourmain.com), Bran
 - [x] Bewertungsmethodik (Einstieg und Solo) auf der Über-uns-Seite, mit Community-Quellen abgeglichen, aus jeder Bewertungsbox verlinkt
 - [x] 40 Spec-Seiten (Retail, DE + EN) mit Kurzantwort, Steckbrief, Kernmechanik, Fähigkeiten, Lore, Stärken/Schwächen und eigener FAQ, verlinkt von den Klassenseiten; Klassen-FAQ ausgebaut (Retail + Forever)
 - [x] Offizielle deutsche Namen der Skyborne übernommen (Himmelsgeborene, Windformer, Hoher Orden; Blizzard-Artikel 24302071), eigener Ratgeber „Himmelsgeborene in WoW Forever“ (DE + EN)
-- [x] 14 Ratgeber: Klassenwahl, Anfänger, Solo, Tanks, Heiler, PvP (US 880), Klassen & Völker (US 170 / DE 140), Schnell leveln Midnight (DE 210), Schnell leveln Forever (auf Classic-Basis, DE 90), Forever-Tanks (DE 90) und Forever-Heiler (US 50), Klassenfarben (mit Farbkacheln zum Kopieren), Forever-Klassenwahl, Forever-Völker
+- [x] 15 Ratgeber: Klassenwahl, Anfänger, Solo, Tanks, Heiler, PvP (US 880), Klassen & Völker (US 170 / DE 140), Schnell leveln Midnight (DE 210), Schnell leveln Forever (auf Classic-Basis, DE 90), Forever-Tanks (DE 90) und Forever-Heiler (US 50), Klassenfarben (mit Farbkacheln zum Kopieren), Forever-Klassenwahl, Forever-Völker, Himmelsgeborene
 
 ### Bilder
 - [x] Offizielle Blizzard-Bilder (Nutzung auf nicht kommerziellen Fanseiten laut Blizzard Legal FAQ, Nachweis unter jedem Ratgeber/jeder Klassenseite, Quellen in `docs/bildquellen.md`): Klassen-Artworks im Text, Klassen-Reihen und Völker-Porträts in den Ratgebern, Hauptbild auf jeder Klassenseite und jedem Ratgeber, auch als Hintergrund im OG-Bild
