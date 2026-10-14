@@ -59,4 +59,4 @@ Der [Druide](/forever/klassen/druide) heilt vor allem mit Effekten über Zeit: [
 
 ## Welcher Heiler passt zu dir?
 
-Im [Forever-Quiz](/forever/welche-klasse-passt-zu-mir) findest du heraus, welche Klasse zu deinem Spielstil passt, oder du schickst die vier Heiler in die [Forever-Arena](/forever?classes=priest,paladin,shaman,druid). Fürs aktuelle WoW gibt es den Ratgeber [Heiler-Klassen in Midnight](/ratgeber/wow-heiler-klassen).
+Im [Forever-Quiz](/forever/welche-klasse-passt-zu-mir) findest du heraus, welche Klasse zu deinem Spielstil passt, oder du schickst die vier Heiler ins [Forever-Turnier](/forever?classes=priest,paladin,shaman,druid). Fürs aktuelle WoW gibt es den Ratgeber [Heiler-Klassen in Midnight](/ratgeber/wow-heiler-klassen).

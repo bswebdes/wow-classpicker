@@ -53,4 +53,4 @@ Survival is about traps, agility and control. Deterrence lets you dodge attacks,
 
 The **Human Hunter** is a new combination, and the **Skyborne** can be Hunters on both sides.
 
-Try the Hunter in the [Forever arena](/en/forever) or roll a race and class with the [random generator](/en/forever/random-class-generator).
+Try the Hunter in the [Forever tournament](/en/forever) or roll a race and class with the [random generator](/en/forever/random-class-generator).

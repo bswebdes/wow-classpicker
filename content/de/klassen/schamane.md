@@ -70,4 +70,4 @@ Wiederherstellung heilt mit Wellen, Regen und Totems. Besonders stark ist der Sc
 
 Der Schamane bringt viel mit, was Gruppen lieben: Kampfrausch, Unterbrechungen und nützliche Totems. Durch Selbstheilung und Reinkarnation kommt er auch solo gut zurecht. Wer ihn meistern will, braucht etwas Geduld, belohnt wird man mit einer der flexibelsten Klassen.
 
-Neugierig, wie sich der Schamane gegen die anderen schlägt? Schick ihn in die [Arena](/) oder mach das [Klassen-Quiz](/welche-klasse-passt-zu-mir).
+Neugierig, wie sich der Schamane gegen die anderen schlägt? Schick ihn ins [Klassen-Turnier](/) oder mach das [Klassen-Quiz](/welche-klasse-passt-zu-mir).

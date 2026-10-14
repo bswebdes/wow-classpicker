@@ -1,10 +1,11 @@
 # Tasks – Find Your Main (WoW Class Picker)
 
-Stand: 13.10.2026 · live auf [findyourmain.com](https://findyourmain.com), Branch `master` (Push deployt automatisch)
+Stand: 14.10.2026 · live auf [findyourmain.com](https://findyourmain.com), Branch `master` (Push deployt automatisch)
 
 ## 🔲 Offen
 
 ### Zeitkritisch
+- [ ] Bei jedem Patch `app/utils/gameVersion.ts` anpassen (Anzeige „Spielstand“ in Reitern und auf Inhaltsseiten), zum Forever-Start `status: 'live'` setzen
 - [ ] Nach dem Forever-Start am 4.11.2026: Forever-Fakten prüfen (Meilenstein-Talente, Skyborne-Fraktionen „High Order“/„Windshaper“, Talentbaum-Namen), `updated`-Datum setzen
 - [ ] Ebenfalls nach dem Start: Übernimmt Forever die Classic-Klassenquests (Haltungen, Totems, Dämonen, Reittiere)? Lore-Abschnitte der Forever-Klassenseiten anpassen
 - [ ] Ebenfalls nach dem Start: Stimmt die Classic-Annahme in den Ratgebern „WoW Forever schnell leveln“, „Forever-Tanks“ und „Forever-Heiler“ (Klassen, Paladin-Tank mit Meilenstein-Talenten, Erste Hilfe)? Hinweis-Kästen danach anpassen
@@ -24,6 +25,8 @@ Stand: 13.10.2026 · live auf [findyourmain.com](https://findyourmain.com), Bran
 - [ ] Thalgrim auch an anderen Stellen auftauchen lassen (z. B. Tipps auf Klassenseiten, 404-Seite), ggf. im Quest-Text als Zwerg erkennbar machen („bei meinem Bart“)
 
 ### Technik
+- [ ] Hydration-Warnung im Sprachumschalter (Dev): Der Link wird vor `useSetI18nParams` der Seite berechnet. Funktional korrekt (Server-Link bleibt), aber unschön
+- [ ] IndexNow meldet nach Deploys nur Seiten mit `lastmod` (Inhaltsseiten). Nach Änderungen an Tool-Seiten `npm run indexnow -- --all` ausführen
 - [ ] Weitere Vergleichspaare indexieren, sobald Ubersuggest dafür Suchvolumen zeigt (`indexedPairs` in `app/utils/compare.ts`)
 - [ ] `npm audit` beobachten: 24 Meldungen (node-forge, braces/micromatch, simple-git) stecken nur im Build- und Dev-Werkzeug von Nuxt, ohne passenden Fix für Nuxt 4. Bei Nuxt-Updates erneut prüfen
 
@@ -47,11 +50,16 @@ Stand: 13.10.2026 · live auf [findyourmain.com](https://findyourmain.com), Bran
 - [x] Automatischer SEO-Check nach jedem Build (`scripts/seo-check.mjs`, auch `npm run seo:check`): Fehler bei fehlendem Titel/Beschreibung/Canonical/OG-Bild, ≠ 1 H1 oder kaputten hreflang-Links brechen den Build ab; Warnungen bei Titeln über 70 und Beschreibungen über 165 Zeichen
 
 ### SEO & GEO
+- [x] IndexNow (Bing u. a.): Key in `public/`, automatische Meldung geänderter URLs nach jedem Produktions-Deploy (`netlify/functions/deploy-succeeded.mjs`), manuell `npm run indexnow`
 - [x] Keyword-Recherche mit Ubersuggest (`docs/seo-recherche.md`), Ubersuggest-Projekt „Find Your Main“ mit 20 Keywords (DE/US) für das Ranking-Tracking (wöchentlich)
 - [x] Sitemap-Index mit `lastmod` und hreflang-Paaren, `robots.txt` mit Content Signals, hreflang/Canonical auf allen Seiten
 - [x] Schema.org (WebPage/FAQPage, Article, Breadcrumb, ItemList, SoftwareApplication), OG-Bild pro Seite
 - [x] `llms.txt`, `llms-full.txt` und Markdown-Version jeder Seite, „Kurz gesagt“-Box und FAQs
 - [x] Sitemap bei Google Search Console und Bing Webmaster Tools eingereicht
+
+### Design
+- [x] Sieg-Dialog mobil, Desktop-Navigation mit Klassen-Megamenü, Footer, Werkzeug-Karten als Item-Tooltips, FAQ im Questlog-Stil
+- [x] „Arena“ in „Klassen-Turnier“ umbenannt (keine Verwechslung mit der PvP-Arena)
 
 ### Inhalte
 - [x] Retail: 13 Klassenseiten, Forever: 9 Klassenseiten mit Völker-Matrix (56 Kombinationen), jeweils Quiz und Zufallsgenerator

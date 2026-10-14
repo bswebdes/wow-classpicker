@@ -53,4 +53,4 @@ Frost is the tree for leveling and control. Ice Barrier protects you, Ice Block 
 
 The **Orc Mage** is a new combination, and Alliance **Skyborne** can be Mages too.
 
-Test the Mage in the [Forever arena](/en/forever) or roll a combination with the [random generator](/en/forever/random-class-generator).
+Test the Mage in the [Forever tournament](/en/forever) or roll a combination with the [random generator](/en/forever/random-class-generator).

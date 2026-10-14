@@ -53,4 +53,4 @@ Restoration is the healing tree. Swiftmend consumes a heal over time for instant
 
 Besides Night Elves and Tauren, the **Skyborne** can now be Druids on both sides.
 
-Let the Druid fight in the [Forever arena](/en/forever) or compare [all Forever classes](/en/forever/classes).
+Let the Druid fight in the [Forever tournament](/en/forever) or compare [all Forever classes](/en/forever/classes).

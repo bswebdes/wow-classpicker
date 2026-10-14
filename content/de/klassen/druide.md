@@ -78,4 +78,4 @@ Wiederherstellung heilt vor allem mit Effekten über Zeit. Du verteilst Verjüng
 
 Kein anderer Charakter deckt so viele Rollen und Spielstile ab wie der Druide. Für Twink-Muffel ist er ideal, denn ein Charakter reicht für alles. Die Kehrseite ist die Lernkurve: Wer alle Formen beherrschen will, hat einiges vor sich.
 
-Lies auch unsere Ratgeber zu [Tank-Klassen](/ratgeber/wow-tank-klassen) und [Heiler-Klassen](/ratgeber/wow-heiler-klassen), oder schick den Druiden direkt in die [Arena](/).
+Lies auch unsere Ratgeber zu [Tank-Klassen](/ratgeber/wow-tank-klassen) und [Heiler-Klassen](/ratgeber/wow-heiler-klassen), oder schick den Druiden direkt ins [Klassen-Turnier](/).

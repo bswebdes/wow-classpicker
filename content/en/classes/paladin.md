@@ -70,4 +70,4 @@ Retribution is the sword of the Light: a big two-handed weapon, golden wings and
 
 The Paladin is one of the most beginner-friendly classes in WoW: sturdy, with self-healing and plenty of safety nets. Its downside is short range and less mobility than classes like the Demon Hunter or Monk.
 
-Torn between the Paladin and other classes? The [class quiz](/en/wow-class-quiz) helps, and the [arena](/en) decides.
+Torn between the Paladin and other classes? The [class quiz](/en/wow-class-quiz) helps, and the [class tournament](/en) decides.

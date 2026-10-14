@@ -70,4 +70,4 @@ Frost verlangsamt und friert Gegner ein und zerschmettert sie dann mit Eislanzen
 
 Der Magier ist in Gruppen und im PvP stark und bietet drei sehr unterschiedliche Zauberstile. Solo muss er auf Kontrolle und Positionierung achten, weil ihm Selbstheilung weitgehend fehlt.
 
-Magier oder doch Hexenmeister? Vergleiche beide auf der [Klassenübersicht](/klassen) oder lass sie in der [Arena](/) gegeneinander antreten.
+Magier oder doch Hexenmeister? Vergleiche beide auf der [Klassenübersicht](/klassen) oder lass sie im [Klassen-Turnier](/) gegeneinander antreten.

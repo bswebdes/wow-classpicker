@@ -53,4 +53,4 @@ Vergeltung macht Nahkampf-Schaden mit Zweihandwaffe. Das Siegel des Befehls sorg
 
 Der **Untote Paladin** ist eine der neuen Völker-Klassen-Kombinationen. Damit ist der Paladin erstmals auf beiden Seiten spielbar, neben Menschen und Zwergen bei der Allianz.
 
-Teste den Paladin in der [Forever-Arena](/forever) oder vergleiche ihn mit [allen Forever-Klassen](/forever/klassen).
+Teste den Paladin im [Forever-Turnier](/forever) oder vergleiche ihn mit [allen Forever-Klassen](/forever/klassen).

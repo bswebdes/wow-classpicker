@@ -70,4 +70,4 @@ Verschlinger ist die neue Spezialisierung aus Midnight. Statt Teufelsmagie nutzt
 
 Der Dämonenjäger fühlt sich vom ersten Moment an schnell und mächtig an, Verwüstung ist dabei auch für Einsteiger gut spielbar. Mit dem Verschlinger hat die Klasse in Midnight einen ganz neuen Stil bekommen, der die Community allerdings spaltet: Manche lieben ihn, andere sind noch nicht überzeugt.
 
-Willst du den Dämonenjäger gegen andere Klassen sehen? Ab in die [Arena](/) oder zum [Zufallsgenerator](/zufaellige-klasse).
+Willst du den Dämonenjäger gegen andere Klassen sehen? Ab ins [Klassen-Turnier](/) oder zum [Zufallsgenerator](/zufaellige-klasse).

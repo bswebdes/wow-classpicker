@@ -51,4 +51,4 @@ Click a color to copy its hex code.
 
 The class colors have been tweaked slightly over the years, so you will sometimes find slightly different values online, for example for the Paladin or Shaman. The values above match the current version of the game.
 
-Find Your Main uses these colors too: in the [arena](/en), every class glows in its official color.
+Find Your Main uses these colors too: in the [class tournament](/en), every class glows in its official color.

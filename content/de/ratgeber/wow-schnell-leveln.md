@@ -48,4 +48,4 @@ Im aktuellen WoW levelt jede Klasse zügig. Gängige Levelratgeber für Midnight
 
 ## Spaß schlägt Tempo
 
-Die schnellste Klasse bringt wenig, wenn sie dir keinen Spaß macht. Die Unterschiede sind klein, und eine Klasse, die du gern spielst, levelst du automatisch flüssiger. Wenn du noch unentschlossen bist, hilft das [Klassen-Quiz](/welche-klasse-passt-zu-mir), oder du lässt die schnellen Kandidaten in der [Arena](/?classes=demonhunter,hunter,deathknight,paladin) gegeneinander antreten. Mehr zum Spielen ohne Gruppe steht im Ratgeber [beste Solo-Klasse](/ratgeber/beste-solo-klasse-wow).
+Die schnellste Klasse bringt wenig, wenn sie dir keinen Spaß macht. Die Unterschiede sind klein, und eine Klasse, die du gern spielst, levelst du automatisch flüssiger. Wenn du noch unentschlossen bist, hilft das [Klassen-Quiz](/welche-klasse-passt-zu-mir), oder du lässt die schnellen Kandidaten im [Klassen-Turnier](/?classes=demonhunter,hunter,deathknight,paladin) gegeneinander antreten. Mehr zum Spielen ohne Gruppe steht im Ratgeber [beste Solo-Klasse](/ratgeber/beste-solo-klasse-wow).

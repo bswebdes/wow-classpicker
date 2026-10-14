@@ -60,4 +60,4 @@ Schurke, Magier und Priester kommen solo gut zurecht, verlangen aber mehr Aufmer
 
 ## Übersicht: Solo-Tauglichkeit nach Klasse
 
-Unsere Einschätzung zur Solo-Tauglichkeit findest du für jede Klasse auf der [Klassenübersicht](/klassen) und den jeweiligen Klassenseiten. Und wenn du immer noch nicht weißt, welche es werden soll: Lass die Solo-Helden in der [Arena](/?classes=hunter,deathknight,paladin,warlock,demonhunter,druid) gegeneinander antreten.
+Unsere Einschätzung zur Solo-Tauglichkeit findest du für jede Klasse auf der [Klassenübersicht](/klassen) und den jeweiligen Klassenseiten. Und wenn du immer noch nicht weißt, welche es werden soll: Lass die Solo-Helden im [Klassen-Turnier](/?classes=hunter,deathknight,paladin,warlock,demonhunter,druid) gegeneinander antreten.

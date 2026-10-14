@@ -70,4 +70,4 @@ Destruction is all about direct, heavy fire spells. You build Soul Shards and sp
 
 For a cloth class, the Warlock is surprisingly tough: Drain Life, Healthstones and a Voidwalker make solo play very comfortable. In exchange, it often stands still to cast and is vulnerable to fast enemies.
 
-The Warlock also joins our [arena](/en) with Chaos Bolt and Drain Life. Who wins?
+The Warlock also joins our [class tournament](/en) with Chaos Bolt and Drain Life. Who wins?

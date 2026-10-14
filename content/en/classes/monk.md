@@ -70,4 +70,4 @@ Windwalker is the kung fu fighter who chains kicks and punches and hits whole gr
 
 The Monk is one of the most mobile classes and can play every role. Its specs have their own, sometimes unusual mechanics, such as the Brewmaster's Stagger, which makes it a better fit for players with some experience.
 
-In our picker the Monk fights with Fists of Fury and Fortifying Brew. Try it in the [arena](/en) or find out in the [class quiz](/en/wow-class-quiz) whether it suits you.
+In our picker the Monk fights with Fists of Fury and Fortifying Brew. Try it in the [class tournament](/en) or find out in the [class quiz](/en/wow-class-quiz) whether it suits you.

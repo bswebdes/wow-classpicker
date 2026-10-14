@@ -53,4 +53,4 @@ Schutz ist der Tank-Baum. In Classic waren Krieger die Tanks schlechthin, weil k
 
 In WoW Forever können zum ersten Mal auch die neuen **Skyborne** auf beiden Seiten Krieger werden. Wie alle Klassen erhält der Krieger in jedem Talentbaum ein zusätzliches Meilenstein-Talent.
 
-Wie schlägt sich der Krieger gegen die anderen Classic-Klassen? Finde es in der [Forever-Arena](/forever) heraus.
+Wie schlägt sich der Krieger gegen die anderen Classic-Klassen? Finde es im [Forever-Turnier](/forever) heraus.

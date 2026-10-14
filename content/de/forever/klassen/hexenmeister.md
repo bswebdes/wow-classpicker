@@ -53,4 +53,4 @@ Zerstörung setzt auf direkten Feuer- und Schattenschaden. Schattenbrand beendet
 
 Der **Troll-Hexenmeister** ist eine neue Völker-Klassen-Kombination.
 
-Schick den Hexenmeister in die [Forever-Arena](/forever) oder mach das [Forever-Quiz](/forever/welche-klasse-passt-zu-mir).
+Schick den Hexenmeister ins [Forever-Turnier](/forever) oder mach das [Forever-Quiz](/forever/welche-klasse-passt-zu-mir).

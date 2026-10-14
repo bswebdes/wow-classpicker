@@ -48,6 +48,6 @@ Tanks are the backbone of every group: they draw the enemies' attention, set the
 2. **Use your defensives actively.** Many tank deaths happen because defensive abilities are pressed too late or not at all.
 3. **Stay calm.** A tank who communicates clearly makes every group better.
 
-Not sure tanking is for you? The [class quiz](/en/wow-class-quiz) asks exactly that. Or let all six tanks clash in the [arena](/en?classes=warrior,paladin,deathknight,monk,druid,demonhunter).
+Not sure tanking is for you? The [class quiz](/en/wow-class-quiz) asks exactly that. Or let all six tanks clash in the [class tournament](/en?classes=warrior,paladin,deathknight,monk,druid,demonhunter).
 
 Playing WoW Forever? See the guide to [tank classes in WoW Forever](/en/guides/wow-forever-tank-classes).

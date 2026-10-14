@@ -53,4 +53,4 @@ The [Paladin](/en/forever/classes/paladin) tanks with shield and holy light. [**
 
 ## Which tank suits you?
 
-Still comparing? The [Forever quiz](/en/forever/class-quiz) shows which class suits your playstyle, or send the three tanks into the [Forever arena](/en/forever?classes=warrior,druid,paladin). For current WoW there is the guide to [tank classes in Midnight](/en/guides/wow-tank-classes).
+Still comparing? The [Forever quiz](/en/forever/class-quiz) shows which class suits your playstyle, or send the three tanks into the [Forever tournament](/en/forever?classes=warrior,druid,paladin). For current WoW there is the guide to [tank classes in Midnight](/en/guides/wow-tank-classes).

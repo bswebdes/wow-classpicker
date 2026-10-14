@@ -48,4 +48,4 @@ Every class levels quickly in current WoW. Common Midnight leveling guides agree
 
 ## Fun beats speed
 
-The fastest class is not worth much if you do not enjoy it. The differences are small, and a class you like playing automatically levels more smoothly. If you are still undecided, the [class quiz](/en/wow-class-quiz) can help, or let the fast candidates fight it out in the [arena](/en?classes=demonhunter,hunter,deathknight,paladin). More on playing without a group is in the guide to the [best solo class](/en/guides/best-wow-class-for-solo).
+The fastest class is not worth much if you do not enjoy it. The differences are small, and a class you like playing automatically levels more smoothly. If you are still undecided, the [class quiz](/en/wow-class-quiz) can help, or let the fast candidates fight it out in the [class tournament](/en?classes=demonhunter,hunter,deathknight,paladin). More on playing without a group is in the guide to the [best solo class](/en/guides/best-wow-class-for-solo).

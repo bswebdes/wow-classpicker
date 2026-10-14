@@ -53,4 +53,4 @@ Frost ist der Baum zum Leveln und für Kontrolle. Eisbarriere schützt dich, Eis
 
 Der **Orc-Magier** ist eine neue Kombination. Auch die **Skyborne** der Allianz können Magier werden.
 
-Teste den Magier in der [Forever-Arena](/forever) oder würfle eine Kombination im [Zufallsgenerator](/forever/zufaellige-klasse).
+Teste den Magier im [Forever-Turnier](/forever) oder würfle eine Kombination im [Zufallsgenerator](/forever/zufaellige-klasse).

@@ -70,4 +70,4 @@ Verstärkung ist eine Besonderheit: eine Schadens-Spezialisierung mit schwarzer 
 
 Der Rufer spielt sich anders als jede andere Klasse und bietet mit Verstärkung eine Rolle, die es sonst nicht gibt. Die kürzere Reichweite verlangt aber gutes Positionieren, und ermächtigte Zauber brauchen etwas Eingewöhnung.
 
-Der Rufer ist auch in unserem Picker dabei. Lass ihn in der [Arena](/) antreten oder vergleiche ihn mit [allen Klassen](/klassen).
+Der Rufer ist auch in unserem Picker dabei. Lass ihn im [Klassen-Turnier](/) antreten oder vergleiche ihn mit [allen Klassen](/klassen).

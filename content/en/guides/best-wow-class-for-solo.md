@@ -60,4 +60,4 @@ Rogue, Mage and Priest handle solo play fine but need more attention, since they
 
 ## Solo rating by class
 
-You will find our solo rating for every class on the [class overview](/en/classes) and the individual class pages. Still can't decide? Let the solo heroes fight it out in the [arena](/en?classes=hunter,deathknight,paladin,warlock,demonhunter,druid).
+You will find our solo rating for every class on the [class overview](/en/classes) and the individual class pages. Still can't decide? Let the solo heroes fight it out in the [class tournament](/en?classes=hunter,deathknight,paladin,warlock,demonhunter,druid).

@@ -59,4 +59,4 @@ The [Druid](/en/forever/classes/druid) heals mostly with effects over time: [**R
 
 ## Which healer suits you?
 
-The [Forever quiz](/en/forever/class-quiz) shows which class suits your playstyle, or send the four healers into the [Forever arena](/en/forever?classes=priest,paladin,shaman,druid). For current WoW there is the guide to [healer classes in Midnight](/en/guides/wow-healer-classes).
+The [Forever quiz](/en/forever/class-quiz) shows which class suits your playstyle, or send the four healers into the [Forever tournament](/en/forever?classes=priest,paladin,shaman,druid). For current WoW there is the guide to [healer classes in Midnight](/en/guides/wow-healer-classes).

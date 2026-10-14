@@ -70,4 +70,4 @@ Restoration heals with waves, rain and totems. The shaman shines when the group 
 
 The Shaman brings a lot that groups love: Bloodlust, interrupts and useful totems. Thanks to self-healing and Reincarnation, it also handles solo play well. Mastering it takes some patience, and the reward is one of the most flexible classes in the game.
 
-Curious how the Shaman fares against the others? Send it into the [arena](/en) or take the [class quiz](/en/wow-class-quiz).
+Curious how the Shaman fares against the others? Send it into the [class tournament](/en) or take the [class quiz](/en/wow-class-quiz).

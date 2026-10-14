@@ -53,4 +53,4 @@ Täuschung baut die Tarnung aus und ist im PvP stark. Mit Konzentration startest
 
 Auch die **Skyborne** können auf beiden Seiten Schurken werden.
 
-Schick den Schurken in die [Forever-Arena](/forever) oder finde im [Forever-Quiz](/forever/welche-klasse-passt-zu-mir) heraus, ob er zu dir passt.
+Schick den Schurken ins [Forever-Turnier](/forever) oder finde im [Forever-Quiz](/forever/welche-klasse-passt-zu-mir) heraus, ob er zu dir passt.

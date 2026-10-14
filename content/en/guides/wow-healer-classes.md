@@ -49,6 +49,6 @@ Healers keep the group alive and are in demand in every dungeon and raid. Six cl
 2. **Not every health bar needs to be full.** Efficient healing saves Mana for the dangerous moments.
 3. **Help with damage.** In quiet phases, every healer contributes damage too.
 
-The [class quiz](/en/wow-class-quiz) tells you whether healing is really your role. Or send all healer classes into the [arena](/en?classes=priest,paladin,shaman,druid,monk,evoker).
+The [class quiz](/en/wow-class-quiz) tells you whether healing is really your role. Or send all healer classes into the [class tournament](/en?classes=priest,paladin,shaman,druid,monk,evoker).
 
 Playing WoW Forever? See the guide to [healer classes in WoW Forever](/en/guides/wow-forever-healer-classes).

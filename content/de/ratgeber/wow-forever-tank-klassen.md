@@ -53,4 +53,4 @@ Der [Paladin](/forever/klassen/paladin) tankt mit Schild und heiligem Licht. [**
 
 ## Welcher Tank passt zu dir?
 
-Du willst noch vergleichen? Im [Forever-Quiz](/forever/welche-klasse-passt-zu-mir) findest du heraus, welche Klasse zu deinem Spielstil passt, oder du schickst die drei Tanks in die [Forever-Arena](/forever?classes=warrior,druid,paladin). Fürs aktuelle WoW gibt es den Ratgeber [Tank-Klassen in Midnight](/ratgeber/wow-tank-klassen).
+Du willst noch vergleichen? Im [Forever-Quiz](/forever/welche-klasse-passt-zu-mir) findest du heraus, welche Klasse zu deinem Spielstil passt, oder du schickst die drei Tanks ins [Forever-Turnier](/forever?classes=warrior,druid,paladin). Fürs aktuelle WoW gibt es den Ratgeber [Tank-Klassen in Midnight](/ratgeber/wow-tank-klassen).

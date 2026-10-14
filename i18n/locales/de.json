@@ -3,7 +3,7 @@
   "description": "Wähle deine WoW Klassen selbst und lass sie im Battle gegeneinander antreten. Du kannst nur deine Favoriten auswählen, eigene Setups bauen und optional deinen Namen hinterlegen. Am Ende steht dein neuer Main für Raid, Mythic+ oder PvP fest.",
   "startBattle": "KAMPF STARTEN!",
   "backToSelection": "Zur Auswahl",
-  "arenaStatus": "Gesamt-Status der Arena",
+  "arenaStatus": "Gesamt-Status des Turniers",
   "minTwoClasses": "Wähle mindestens 2 Klassen aus, um den Kampf zu starten!",
   "selection": {
     "title": "WÄHLE DEINE KÄMPFER",
@@ -160,11 +160,11 @@
     "startLog": "Der Kampf beginnt mit {count} Klassen!",
     "evadeLog": "{target} weicht dem Angriff von {attacker} aus!",
     "critLog": "KRITISCHER TREFFER von {attacker}!",
-    "logEmpty": "Wähle mindestens zwei Klassen und starte den Kampf. Hier erscheint dann alles, was in der Arena passiert.",
+    "logEmpty": "Wähle mindestens zwei Klassen und starte den Kampf. Hier erscheint dann alles, was im Turnier passiert.",
     "logTitle": "Kampflog",
     "megaCritLog": "MEGA-KRIT von {attacker}!",
     "eliminatedLog": "{target} wurde von {attacker} eliminiert!",
-    "winnerLog": "{winner} GEWINNT DIE ARENA!",
+    "winnerLog": "{winner} GEWINNT DAS TURNIER!",
     "resetLog": "Bereit für die nächste Runde? Wähle deine Klassen!",
     "status": {
       "ready": "Bereit!",
@@ -175,6 +175,6 @@
   },
   "seo": {
     "title": "WoW Class Picker: Welche Klasse spielst du? – Find Your Main",
-    "description": "Unentschlossen bei der WoW Klassenwahl für Midnight? Find Your Main entscheidet für dich: Arena-Kampf, Klassen-Quiz und Zufallsgenerator."
+    "description": "Unentschlossen bei der WoW Klassenwahl für Midnight? Find Your Main entscheidet für dich: Klassen-Turnier, Klassen-Quiz und Zufallsgenerator."
   }
 }

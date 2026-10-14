@@ -81,4 +81,4 @@ Diese Klassen sind nicht schlecht, aber anspruchsvoller: **Schurke** (viele Werk
 3. Nutze Tiefen und Quests, um deine Klasse in Ruhe kennenzulernen.
 4. Wenn es schneller gehen soll: Unsere Tipps zum [schnell Leveln](/ratgeber/wow-schnell-leveln) sparen Zeit, ganz egal mit welcher Klasse.
 
-Noch unsicher? Mach das [Klassen-Quiz](/welche-klasse-passt-zu-mir) oder lass die fünf Einsteiger-Klassen in der [Arena](/?classes=hunter,paladin,deathknight,demonhunter,warrior) gegeneinander kämpfen.
+Noch unsicher? Mach das [Klassen-Quiz](/welche-klasse-passt-zu-mir) oder lass die fünf Einsteiger-Klassen im [Klassen-Turnier](/?classes=hunter,paladin,deathknight,demonhunter,warrior) gegeneinander kämpfen.

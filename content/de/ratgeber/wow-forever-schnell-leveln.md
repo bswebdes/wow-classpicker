@@ -74,4 +74,4 @@ Der [Krieger](/forever/klassen/krieger) ist allein voraussichtlich die langsamst
 
 ## Spaß schlägt Tempo
 
-In WoW Forever bist du lange unterwegs. Umso wichtiger ist, dass dir deine Klasse Spaß macht, auch wenn sie nicht die schnellste ist. Welche zu dir passt, findest du im [Forever-Quiz](/forever/welche-klasse-passt-zu-mir) heraus, oder du lässt die schnellen Kandidaten in der [Forever-Arena](/forever?classes=hunter,warlock,mage,druid) antreten. Mehr zur Klassenwahl steht im Ratgeber [Welche Klasse in WoW Forever?](/ratgeber/welche-klasse-wow-forever).
+In WoW Forever bist du lange unterwegs. Umso wichtiger ist, dass dir deine Klasse Spaß macht, auch wenn sie nicht die schnellste ist. Welche zu dir passt, findest du im [Forever-Quiz](/forever/welche-klasse-passt-zu-mir) heraus, oder du lässt die schnellen Kandidaten im [Forever-Turnier](/forever?classes=hunter,warlock,mage,druid) antreten. Mehr zur Klassenwahl steht im Ratgeber [Welche Klasse in WoW Forever?](/ratgeber/welche-klasse-wow-forever).

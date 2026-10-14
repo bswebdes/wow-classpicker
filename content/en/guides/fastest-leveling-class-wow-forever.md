@@ -74,4 +74,4 @@ The [Warrior](/en/forever/classes/warrior) is most likely the slowest class to l
 
 ## Fun beats speed
 
-In WoW Forever you are on the road for a long time. That makes it all the more important that you enjoy your class, even if it is not the fastest. Find out which one suits you with the [Forever quiz](/en/forever/class-quiz), or let the fast candidates fight in the [Forever arena](/en/forever?classes=hunter,warlock,mage,druid). More on choosing a class is in the guide [Which class in WoW Forever?](/en/guides/which-class-wow-forever).
+In WoW Forever you are on the road for a long time. That makes it all the more important that you enjoy your class, even if it is not the fastest. Find out which one suits you with the [Forever quiz](/en/forever/class-quiz), or let the fast candidates fight in the [Forever tournament](/en/forever?classes=hunter,warlock,mage,druid). More on choosing a class is in the guide [Which class in WoW Forever?](/en/guides/which-class-wow-forever).

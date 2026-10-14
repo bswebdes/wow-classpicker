@@ -70,4 +70,4 @@ Frost slows and freezes enemies and then shatters them with Ice Lances. Lots of 
 
 The Mage is strong in groups and in PvP and offers three very different casting styles. Solo, it needs to rely on control and positioning, as it has very little self-healing.
 
-Mage or Warlock? Compare both on the [class overview](/en/classes) or let them fight it out in the [arena](/en).
+Mage or Warlock? Compare both on the [class overview](/en/classes) or let them fight it out in the [class tournament](/en).

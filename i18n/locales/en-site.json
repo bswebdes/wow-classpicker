@@ -5,7 +5,7 @@
     "gridLabel": "All class colors"
   },
   "nav": {
-    "picker": "Arena",
+    "picker": "Class Tournament",
     "classes": "Classes",
     "guides": "Guides",
     "quiz": "Class Quiz",
@@ -15,10 +15,17 @@
     "about": "About",
     "skip": "Skip to content",
     "openMenu": "Open menu",
-    "closeMenu": "Close menu"
+    "closeMenu": "Close menu",
+    "short": {
+      "picker": "Tournament",
+      "classes": "Classes",
+      "quiz": "Quiz",
+      "random": "Random",
+      "guides": "Guides"
+    }
   },
   "footer": {
-    "tagline": "Find Your Main is the WoW class picker that helps you choose your class in World of Warcraft: Midnight and WoW Forever, with an arena battle, a quiz and a random class generator.",
+    "tagline": "Find Your Main is the WoW class picker that helps you choose your class in World of Warcraft: Midnight and WoW Forever, with a class tournament, a quiz and a random class generator.",
     "disclaimer": "Fan project, not affiliated with Blizzard Entertainment. World of Warcraft and Blizzard Entertainment are trademarks of Blizzard Entertainment, Inc.",
     "tools": "Tools",
     "content": "Content",
@@ -58,7 +65,7 @@
     "ourRating": "Our take",
     "ratingNote": "These ratings help you pick a class. They are not a DPS ranking, and balance shifts with every patch.",
     "ratingMethod": "How we rate",
-    "fightInPicker": "Send it into the arena",
+    "fightInPicker": "Send it into the tournament",
     "allClasses": "All classes",
     "otherClasses": "More classes",
     "allGuides": "All guides",
@@ -105,7 +112,7 @@
     "resultIntro": "These classes match your answers best:",
     "match": "{percent}% match",
     "toClass": "View class",
-    "fightResult": "Top 3 to the arena",
+    "fightResult": "Top 3 to the tournament",
     "q": {
       "role": {
         "title": "Which role appeals to you most?",
@@ -217,7 +224,7 @@
     "filtersTitle": "What can drop?"
   },
   "siteSeo": {
-    "homeOgSubtitle": "Arena battle, quiz and random generator for choosing your class"
+    "homeOgSubtitle": "Class tournament, quiz and random generator for choosing your class"
   },
   "fighter": {
     "hp": "Health",
@@ -301,7 +308,7 @@
     },
     "home": {
       "title": "WoW Forever Class Picker – Which Class Will You Play in Forever?",
-      "description": "Which class will you play in WoW Forever? Let the 9 Classic classes fight in the arena, take the quiz or roll a race and class. Launch: 4 November 2026.",
+      "description": "Which class will you play in WoW Forever? Let the 9 Classic classes fight in the tournament, take the quiz or roll a race and class. Launch: 4 November 2026.",
       "heading": "Which class will you play in WoW Forever?",
       "intro": "WoW Forever brings classic Azeroth back, with new race and class combinations and the new Skyborne race. Pick your favorites among the 9 classes and let them fight.",
       "classesTeaser": "All 9 classes in WoW Forever with talent trees, roles and races.",
@@ -476,12 +483,12 @@
         "desc": "Decline Thalgrim's quest three times."
       },
       "arena_win": {
-        "name": "Arena Champion",
-        "desc": "Finish a battle in the arena."
+        "name": "Tournament Champion",
+        "desc": "Finish a battle in the class tournament."
       },
       "battle_royale": {
         "name": "Free for All",
-        "desc": "Send every class into the arena at once."
+        "desc": "Send every class into the tournament at once."
       },
       "gambler": {
         "name": "Gambler",
@@ -517,7 +524,7 @@
       },
       "herald": {
         "name": "Herald of Azeroth",
-        "desc": "Share your quiz result or your arena winner."
+        "desc": "Share your quiz result or your tournament winner."
       },
       "color_theory": {
         "name": "Color Theory",
@@ -529,7 +536,7 @@
       },
       "named_champion": {
         "name": "A Name to Remember",
-        "desc": "Win the arena with a fighter you named yourself."
+        "desc": "Win the tournament with a fighter you named yourself."
       },
       "bookworm": {
         "name": "Librarian of Dalaran",
@@ -638,18 +645,18 @@
     "buttonArena": "Share winner",
     "copied": "Link copied!",
     "textQuiz": "Thalgrim has spoken: my main in {game} is the {class}! Which class suits you?",
-    "textArena": "The {class} won my arena. My main in {game} is settled! Who wins yours?",
+    "textArena": "The {class} won my class tournament. My main in {game} is settled! Who wins yours?",
     "title": "My main in {game}: {class}",
     "heading": "My main: {class}",
-    "description": "My main in {game} is the {class}. Find out which WoW class suits you with the class quiz or in the arena.",
+    "description": "My main in {game} is the {class}. Find out which WoW class suits you with the class quiz or in the class tournament.",
     "fromQuiz": "Thalgrim Oakhorn has spoken: this player is a true {class}.",
-    "fromArena": "{name} the {class} beat everyone else in the arena.",
-    "fromArenaNoName": "The {class} beat everyone else in the arena.",
+    "fromArena": "{name} the {class} beat everyone else in the class tournament.",
+    "fromArenaNoName": "The {class} beat everyone else in the class tournament.",
     "generic": "Someone found their main here: the {class}.",
     "top3": "Top 3 from the quiz",
     "yourTurn": "Which class suits you?",
     "ctaQuiz": "Take the class quiz",
-    "ctaArena": "Go to the arena"
+    "ctaArena": "Go to the tournament"
   },
   "compare": {
     "nav": "Compare classes",
@@ -704,7 +711,7 @@
     "racesDiff": "More races can play the {classAcc} ({n} instead of {m}).",
     "racesSame": "Both are open to the same number of races ({n}).",
     "summaries": "The classes in short",
-    "fight": "Let them fight in the arena",
+    "fight": "Let them fight in the class tournament",
     "faqBetterQ": "Which is better: {a} or {b}?",
     "faqBetterA": "Neither class is better in general. {facts} In the end, what matters is which playstyle you enjoy more.",
     "faqDiffQ": "What is the difference between {a} and {b}?",
@@ -745,5 +752,9 @@
       "classes": "\"Knowledge is the sharpest blade.\"",
       "compare": "\"Two paths, one goal: your main.\""
     }
+  },
+  "version": {
+    "state": "Game version",
+    "checked": "checked on {date}"
   }
 }

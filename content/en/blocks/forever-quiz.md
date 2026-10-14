@@ -11,4 +11,4 @@ faq:
 
 Classic plays differently from modern WoW: leveling takes longer, groups matter more and each class has a clear main job. The quiz takes that into account and only scores the 9 WoW Forever classes.
 
-Afterwards, read up on the [Forever class pages](/en/forever/classes) or send your top 3 straight into the [Forever arena](/en/forever).
+Afterwards, read up on the [Forever class pages](/en/forever/classes) or send your top 3 straight into the [Forever tournament](/en/forever).

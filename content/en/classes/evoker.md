@@ -70,4 +70,4 @@ Augmentation is special: a damage specialization with black and bronze magic tha
 
 The Evoker plays unlike any other class, and Augmentation offers a role that doesn't exist anywhere else. Its shorter range demands good positioning, though, and empowered spells take some getting used to.
 
-The Evoker is in our picker too. Send it into the [arena](/en) or compare it with [all classes](/en/classes).
+The Evoker is in our picker too. Send it into the [class tournament](/en) or compare it with [all classes](/en/classes).

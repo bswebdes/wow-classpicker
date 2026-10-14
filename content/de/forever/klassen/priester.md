@@ -53,4 +53,4 @@ Schatten ist der Schadensbaum. In der Schattengestalt schindest du Gedanken, bel
 
 Der **Gnom-Priester** ist eine neue Völker-Klassen-Kombination.
 
-Wie schlägt sich der Priester gegen die anderen? Finde es in der [Forever-Arena](/forever) heraus.
+Wie schlägt sich der Priester gegen die anderen? Finde es im [Forever-Turnier](/forever) heraus.

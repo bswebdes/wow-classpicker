@@ -70,4 +70,4 @@ Zerstörung setzt auf direkte, wuchtige Feuerzauber. Du baust Seelensplitter auf
 
 Für eine Stoffklasse ist der Hexenmeister erstaunlich zäh: Blutsauger, Gesundheitssteine und ein Leerwandler machen ihn solo sehr angenehm. Dafür steht er oft still, um Zauber zu wirken, und ist gegen schnelle Gegner verwundbar.
 
-Der Hexenmeister ist auch in unserer [Arena](/) mit Chaosblitz und Blutsauger vertreten. Wer gewinnt?
+Der Hexenmeister ist auch in unserem [Klassen-Turnier](/) mit Chaosblitz und Blutsauger vertreten. Wer gewinnt?

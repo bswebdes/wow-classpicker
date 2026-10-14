@@ -70,4 +70,4 @@ Devourer is the new specialization from Midnight. Instead of fel magic it draws 
 
 The Demon Hunter feels fast and powerful from the first minute, and Havoc is very playable for beginners too. With the Devourer, the class got a completely new style in Midnight, though it splits the community: some love it, others aren't convinced yet.
 
-Want to see the Demon Hunter take on other classes? Head to the [arena](/en) or try the [random class generator](/en/random-class-generator).
+Want to see the Demon Hunter take on other classes? Head to the [class tournament](/en) or try the [random class generator](/en/random-class-generator).

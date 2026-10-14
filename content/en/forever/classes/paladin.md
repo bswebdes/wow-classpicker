@@ -53,4 +53,4 @@ Retribution deals melee damage with a two-handed weapon. Seal of Command adds he
 
 The **Undead Paladin** is one of the new race and class combinations. That makes the Paladin playable on both sides for the first time, alongside Humans and Dwarves for the Alliance.
 
-Test the Paladin in the [Forever arena](/en/forever) or compare it with [all Forever classes](/en/forever/classes).
+Test the Paladin in the [Forever tournament](/en/forever) or compare it with [all Forever classes](/en/forever/classes).

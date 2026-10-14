@@ -53,4 +53,4 @@ Destruction is about direct fire and shadow damage. Shadowburn finishes enemies 
 
 The **Troll Warlock** is a new race and class combination.
 
-Send the Warlock into the [Forever arena](/en/forever) or take the [Forever quiz](/en/forever/class-quiz).
+Send the Warlock into the [Forever tournament](/en/forever) or take the [Forever quiz](/en/forever/class-quiz).

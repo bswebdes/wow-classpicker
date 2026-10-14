@@ -53,4 +53,4 @@ Protection is the tank tree. In Classic, warriors were the tanks, because hardly
 
 In WoW Forever, the new **Skyborne** can be Warriors on both sides. Like every class, the Warrior gets an extra milestone talent in each tree.
 
-How does the Warrior fare against the other Classic classes? Find out in the [Forever arena](/en/forever).
+How does the Warrior fare against the other Classic classes? Find out in the [Forever tournament](/en/forever).

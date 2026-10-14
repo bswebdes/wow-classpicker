@@ -53,4 +53,4 @@ Shadow is the damage tree. In Shadowform you flay minds, inflict pain and heal y
 
 The **Gnome Priest** is a new race and class combination.
 
-How does the Priest fare against the others? Find out in the [Forever arena](/en/forever).
+How does the Priest fare against the others? Find out in the [Forever tournament](/en/forever).

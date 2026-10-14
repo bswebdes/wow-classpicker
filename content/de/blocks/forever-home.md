@@ -15,6 +15,6 @@ faq:
 
 WoW Forever ist Blizzards neue, dauerhafte Classic-Version: ein neu interpretiertes Azeroth mit Stufe 60 als Maximum, neuen Gebieten, Dungeons und Schlachtzügen. Damit stellt sich für viele die alte Frage neu: Welche Klasse spiele ich?
 
-Hier treten die **9 Classic-Klassen** gegeneinander an. Wähle deine Favoriten, gib ihnen Namen und schick sie in die Arena. Wer am Ende steht, wird dein Main für Forever.
+Hier treten die **9 Classic-Klassen** gegeneinander an. Wähle deine Favoriten, gib ihnen Namen und schick sie ins Turnier. Wer am Ende steht, wird dein Main für Forever.
 
 Lieber fundiert entscheiden? Lies den Ratgeber [Welche Klasse soll ich in WoW Forever spielen?](/ratgeber/welche-klasse-wow-forever) oder schau dir an, [welche Völker welche Klassen spielen können](/ratgeber/wow-forever-voelker-klassen).

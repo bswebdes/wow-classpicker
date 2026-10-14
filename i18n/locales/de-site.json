@@ -5,7 +5,7 @@
     "gridLabel": "Alle Klassenfarben"
   },
   "nav": {
-    "picker": "Arena",
+    "picker": "Klassen-Turnier",
     "classes": "Klassen",
     "guides": "Ratgeber",
     "quiz": "Klassen-Quiz",
@@ -15,10 +15,17 @@
     "about": "Über uns",
     "skip": "Zum Inhalt springen",
     "openMenu": "Menü öffnen",
-    "closeMenu": "Menü schließen"
+    "closeMenu": "Menü schließen",
+    "short": {
+      "picker": "Turnier",
+      "classes": "Klassen",
+      "quiz": "Quiz",
+      "random": "Zufall",
+      "guides": "Ratgeber"
+    }
   },
   "footer": {
-    "tagline": "Find Your Main ist der WoW Class Picker für deine Klassenwahl in World of Warcraft: Midnight und WoW Forever. Mit Arena-Kampf, Quiz und Zufallsgenerator.",
+    "tagline": "Find Your Main ist der WoW Class Picker für deine Klassenwahl in World of Warcraft: Midnight und WoW Forever. Mit Klassen-Turnier, Quiz und Zufallsgenerator.",
     "disclaimer": "Fanprojekt, keine Verbindung zu Blizzard Entertainment. World of Warcraft und Blizzard Entertainment sind Marken von Blizzard Entertainment, Inc.",
     "tools": "Tools",
     "content": "Inhalte",
@@ -58,7 +65,7 @@
     "ourRating": "Unsere Einschätzung",
     "ratingNote": "Die Bewertungen sind eine Orientierung für die Klassenwahl, keine DPS-Rangliste. Die aktuelle Balance ändert sich mit jedem Patch.",
     "ratingMethod": "Wie wir bewerten",
-    "fightInPicker": "In der Arena antreten lassen",
+    "fightInPicker": "Im Klassen-Turnier antreten lassen",
     "allClasses": "Alle Klassen",
     "otherClasses": "Weitere Klassen",
     "allGuides": "Alle Ratgeber",
@@ -105,7 +112,7 @@
     "resultIntro": "Diese Klassen passen am besten zu deinen Antworten:",
     "match": "{percent} % Übereinstimmung",
     "toClass": "Zur Klasse",
-    "fightResult": "Top 3 in die Arena",
+    "fightResult": "Top 3 ins Turnier",
     "q": {
       "role": {
         "title": "Welche Rolle reizt dich am meisten?",
@@ -217,7 +224,7 @@
     "filtersTitle": "Was darf rausfallen?"
   },
   "siteSeo": {
-    "homeOgSubtitle": "Arena-Kampf, Quiz und Zufallsgenerator für die Klassenwahl"
+    "homeOgSubtitle": "Klassen-Turnier, Quiz und Zufallsgenerator für die Klassenwahl"
   },
   "fighter": {
     "hp": "Lebenspunkte",
@@ -301,7 +308,7 @@
     },
     "home": {
       "title": "WoW Forever Class Picker – Welche Klasse spielst du in Forever?",
-      "description": "Welche Klasse spielst du in WoW Forever? Lass die 9 Classic-Klassen in der Arena kämpfen, mach das Quiz oder würfle Volk und Klasse. Start: 4. November 2026.",
+      "description": "Welche Klasse spielst du in WoW Forever? Lass die 9 Classic-Klassen im Turnier kämpfen, mach das Quiz oder würfle Volk und Klasse. Start: 4. November 2026.",
       "heading": "Welche Klasse spielst du in WoW Forever?",
       "intro": "WoW Forever bringt das klassische Azeroth zurück, mit neuen Völker-Klassen-Kombinationen und dem neuen Volk der Skyborne. Wähle deine Favoriten unter den 9 Klassen und lass sie gegeneinander antreten.",
       "classesTeaser": "Alle 9 Klassen in WoW Forever mit Talentbäumen, Rollen und Völkern.",
@@ -476,12 +483,12 @@
         "desc": "Lehne Thalgrims Quest dreimal ab."
       },
       "arena_win": {
-        "name": "Champion der Arena",
-        "desc": "Bring einen Kampf in der Arena zu Ende."
+        "name": "Champion des Turniers",
+        "desc": "Bring einen Kampf im Klassen-Turnier zu Ende."
       },
       "battle_royale": {
         "name": "Alle gegen alle",
-        "desc": "Schick alle Klassen gleichzeitig in die Arena."
+        "desc": "Schick alle Klassen gleichzeitig ins Turnier."
       },
       "gambler": {
         "name": "Glücksspieler",
@@ -517,7 +524,7 @@
       },
       "herald": {
         "name": "Herold von Azeroth",
-        "desc": "Teile dein Quiz-Ergebnis oder deinen Arena-Sieger."
+        "desc": "Teile dein Quiz-Ergebnis oder deinen Turniersieger."
       },
       "color_theory": {
         "name": "Farbenlehre",
@@ -529,7 +536,7 @@
       },
       "named_champion": {
         "name": "Ein Name, den man sich merkt",
-        "desc": "Gewinne die Arena mit einem Kämpfer, dem du selbst einen Namen gegeben hast."
+        "desc": "Gewinne das Turnier mit einem Kämpfer, dem du selbst einen Namen gegeben hast."
       },
       "bookworm": {
         "name": "Bibliothekar von Dalaran",
@@ -638,18 +645,18 @@
     "buttonArena": "Sieger teilen",
     "copied": "Link kopiert!",
     "textQuiz": "Thalgrim hat entschieden: Mein Main in {game} ist der {class}! Welche Klasse passt zu dir?",
-    "textArena": "Der {class} hat meine Arena gewonnen. Mein Main in {game} steht fest! Wer gewinnt bei dir?",
+    "textArena": "Der {class} hat mein Klassen-Turnier gewonnen. Mein Main in {game} steht fest! Wer gewinnt bei dir?",
     "title": "Mein Main in {game}: {class}",
     "heading": "Mein Main: {class}",
-    "description": "Mein Main in {game} ist der {class}. Finde mit dem Klassen-Quiz oder in der Arena heraus, welche WoW-Klasse zu dir passt.",
+    "description": "Mein Main in {game} ist der {class}. Finde mit dem Klassen-Quiz oder im Klassen-Turnier heraus, welche WoW-Klasse zu dir passt.",
     "fromQuiz": "Thalgrim Eichenhorn hat entschieden: In dieser Person steckt ein echter {class}.",
-    "fromArena": "{name} der {class} hat sich in der Arena gegen alle anderen durchgesetzt.",
-    "fromArenaNoName": "Der {class} hat sich in der Arena gegen alle anderen durchgesetzt.",
+    "fromArena": "{name} der {class} hat sich im Klassen-Turnier gegen alle anderen durchgesetzt.",
+    "fromArenaNoName": "Der {class} hat sich im Klassen-Turnier gegen alle anderen durchgesetzt.",
     "generic": "Hier hat jemand seinen Main gefunden: den {class}.",
     "top3": "Die Top 3 aus dem Quiz",
     "yourTurn": "Und welche Klasse passt zu dir?",
     "ctaQuiz": "Klassen-Quiz starten",
-    "ctaArena": "Ab in die Arena"
+    "ctaArena": "Ab ins Turnier"
   },
   "compare": {
     "nav": "Klassen vergleichen",
@@ -704,7 +711,7 @@
     "racesDiff": "Den {classAcc} können mehr Völker spielen ({n} statt {m}).",
     "racesSame": "Beide stehen gleich vielen Völkern offen ({n}).",
     "summaries": "Die Klassen in Kürze",
-    "fight": "In der Arena gegeneinander antreten lassen",
+    "fight": "Im Klassen-Turnier gegeneinander antreten lassen",
     "faqBetterQ": "Was ist besser: {a} oder {b}?",
     "faqBetterA": "Keine der beiden Klassen ist grundsätzlich besser. {facts} Am Ende zählt, welche Spielweise dir mehr Spaß macht.",
     "faqDiffQ": "Was ist der Unterschied zwischen {a} und {b}?",
@@ -745,5 +752,9 @@
       "classes": "„Wissen ist die schärfste Klinge.“",
       "compare": "„Zwei Wege, ein Ziel: dein Main.“"
     }
+  },
+  "version": {
+    "state": "Spielstand",
+    "checked": "geprüft am {date}"
   }
 }

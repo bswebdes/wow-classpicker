@@ -4,7 +4,7 @@ title: "Über uns"
 
 ## Was ist Find Your Main?
 
-Find Your Main ist ein WoW Class Picker und Fanprojekt für alle, die sich in World of Warcraft nicht für eine Klasse entscheiden können. Angefangen hat es als kleiner Arena-Kampf, in dem Klassen gegeneinander antreten. Inzwischen gibt es ein Klassen-Quiz, einen Zufallsgenerator und Ratgeber für das aktuelle WoW (Midnight) und WoW Forever.
+Find Your Main ist ein WoW Class Picker und Fanprojekt für alle, die sich in World of Warcraft nicht für eine Klasse entscheiden können. Angefangen hat es als kleines Klassen-Turnier, in dem Klassen gegeneinander antreten. Inzwischen gibt es ein Klassen-Quiz, einen Zufallsgenerator und Ratgeber für das aktuelle WoW (Midnight) und WoW Forever.
 
 ## Wer steckt dahinter?
 

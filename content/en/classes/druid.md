@@ -78,4 +78,4 @@ Restoration heals mostly with effects over time. You spread Rejuvenations ahead 
 
 No other class covers as many roles and playstyles as the Druid. If you don't like leveling alts, it is ideal: one character for everything. The downside is the learning curve, as mastering every form takes time.
 
-Also check out our guides to [tank classes](/en/guides/wow-tank-classes) and [healer classes](/en/guides/wow-healer-classes), or send the Druid straight into the [arena](/en).
+Also check out our guides to [tank classes](/en/guides/wow-tank-classes) and [healer classes](/en/guides/wow-healer-classes), or send the Druid straight into the [class tournament](/en).

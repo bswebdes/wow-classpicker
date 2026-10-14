@@ -53,4 +53,4 @@ Treffsicherheit verbessert Schüsse aus der Distanz und war in Classic die typis
 
 Der **Menschen-Jäger** ist eine neue Kombination. Außerdem können die **Skyborne** auf beiden Seiten Jäger werden.
 
-Probier den Jäger in der [Forever-Arena](/forever) aus oder würfle im [Zufallsgenerator](/forever/zufaellige-klasse) Volk und Klasse.
+Probier den Jäger im [Forever-Turnier](/forever) aus oder würfle im [Zufallsgenerator](/forever/zufaellige-klasse) Volk und Klasse.

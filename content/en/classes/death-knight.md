@@ -70,4 +70,4 @@ Unholy is the necromancer in plate armor. A ghoul is always at your side, you sp
 
 The Death Knight is tough, self-sufficient and can pull enemies out of position with Death Grip. Its biggest weakness is mobility: fast classes that stay at range give it a hard time.
 
-How does the Death Knight fare against other classes? Try it in the [arena](/en) or read our guide to [WoW tank classes](/en/guides/wow-tank-classes).
+How does the Death Knight fare against other classes? Try it in the [class tournament](/en) or read our guide to [WoW tank classes](/en/guides/wow-tank-classes).

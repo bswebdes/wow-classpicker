@@ -3,7 +3,7 @@
   "description": "Choose your WoW classes yourself and let them compete against each other in a battle. You can select only your favorites, build your own setups, and optionally enter your name. In the end, your new main for Raid, Mythic+, or PvP will be decided.",
   "startBattle": "START BATTLE!",
   "backToSelection": "Back to selection",
-  "arenaStatus": "Overall Arena Status",
+  "arenaStatus": "Overall Tournament Status",
   "minTwoClasses": "Select at least 2 classes to start the battle!",
   "selection": {
     "title": "SELECT YOUR FIGHTER",
@@ -160,11 +160,11 @@
     "startLog": "The battle begins with {count} classes!",
     "evadeLog": "{target} dodges the attack from {attacker}!",
     "critLog": "CRITICAL HIT by {attacker}!",
-    "logEmpty": "Pick at least two classes and start the battle. Everything that happens in the arena will show up here.",
+    "logEmpty": "Pick at least two classes and start the battle. Everything that happens in the tournament will show up here.",
     "logTitle": "Combat log",
     "megaCritLog": "MEGA-CRIT by {attacker}!",
     "eliminatedLog": "{target} was eliminated by {attacker}!",
-    "winnerLog": "{winner} WINS THE ARENA!",
+    "winnerLog": "{winner} WINS THE TOURNAMENT!",
     "resetLog": "Ready for the next round? Choose your classes!",
     "status": {
       "ready": "Ready!",
@@ -175,6 +175,6 @@
   },
   "seo": {
     "title": "WoW Class Picker: Which Class Should You Play? – Find Your Main",
-    "description": "Undecided about your WoW class for Midnight? Let Find Your Main decide: arena battle, class quiz and random class generator."
+    "description": "Undecided about your WoW class for Midnight? Let Find Your Main decide: class tournament, class quiz and random class generator."
   }
 }

@@ -51,4 +51,4 @@ Klick auf eine Farbe kopiert den Hex-Code.
 
 Die Klassenfarben wurden im Laufe der Jahre leicht angepasst, deshalb findest du im Netz manchmal minimal abweichende Werte, etwa beim Paladin oder Schamanen. Die Werte oben entsprechen der aktuellen Version des Spiels.
 
-Auch Find Your Main nutzt diese Farben: In der [Arena](/) leuchtet jede Klasse in ihrer offiziellen Farbe.
+Auch Find Your Main nutzt diese Farben: Im [Klassen-Turnier](/) leuchtet jede Klasse in ihrer offiziellen Farbe.

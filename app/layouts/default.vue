@@ -12,11 +12,11 @@ useHead(() => ({
 }))
 
 const navItems = computed(() => [
-  { key: 'index', icon: 'arena', to: localePath(routeName('index')), label: t('nav.picker') },
-  { key: 'klassen', icon: 'classes', to: localePath(routeName('klassen')), label: t('nav.classes') },
-  { key: 'quiz', icon: 'quiz', to: localePath(routeName('quiz')), label: t('nav.quiz') },
-  { key: 'zufall', icon: 'random', to: localePath(routeName('zufall')), label: t('nav.random') },
-  { key: 'ratgeber', icon: 'guides', to: localePath('ratgeber'), label: t('nav.guides') }
+  { key: 'index', icon: 'arena', to: localePath(routeName('index')), label: t('nav.picker'), short: t('nav.short.picker') },
+  { key: 'klassen', icon: 'classes', to: localePath(routeName('klassen')), label: t('nav.classes'), short: t('nav.short.classes') },
+  { key: 'quiz', icon: 'quiz', to: localePath(routeName('quiz')), label: t('nav.quiz'), short: t('nav.short.quiz') },
+  { key: 'zufall', icon: 'random', to: localePath(routeName('zufall')), label: t('nav.random'), short: t('nav.short.random') },
+  { key: 'ratgeber', icon: 'guides', to: localePath('ratgeber'), label: t('nav.guides'), short: t('nav.short.guides') }
 ])
 
 // Aktiver Menüpunkt, auch auf Unterseiten (Klassen- und Spec-Seiten, Vergleiche, einzelne Ratgeber)
@@ -94,9 +94,10 @@ onMounted(() => {
   })
 })
 
+// Modus-Reiter zeigen den Spielstand, auf dem die Inhalte beruhen (app/utils/gameVersion.ts)
 const modes = computed(() => [
-  { id: 'retail', label: 'Retail', sub: 'Midnight', to: switchTarget('retail') },
-  { id: 'forever', label: 'Forever', sub: 'Classic+', to: switchTarget('forever') }
+  { id: 'retail', label: 'Retail', sub: `Midnight · ${gameVersion.retail.patch}`, short: gameVersion.retail.patch, version: versionLabel('retail', locale.value), to: switchTarget('retail') },
+  { id: 'forever', label: 'Forever', sub: versionLabel('forever', locale.value), short: gameVersion.forever.status === 'live' ? gameVersion.forever.patch : 'Beta', version: versionLabel('forever', locale.value), to: switchTarget('forever') }
 ])
 </script>
 
@@ -123,11 +124,12 @@ const modes = computed(() => [
               ? 'border-gold-border bg-gradient-to-b from-[#3a2a12] to-[#1a120a] text-gold'
               : 'border-neutral-700 bg-neutral-900/80 text-neutral-400 hover:text-gold-light'"
             :aria-current="mode === m.id ? 'page' : undefined"
-            :title="m.label + ' · ' + m.sub"
+            :title="`${m.label} · ${m.version}`"
             @click="mode !== m.id && trackEvent('mode_switch', { from_mode: mode, to_mode: m.id })"
           >
             <GameLogo :mode="m.id" :height="46" eager :class="mode === m.id ? '' : 'opacity-60 grayscale-[60%]'" />
             <span class="font-display text-[11px] font-bold uppercase tracking-widest">{{ m.label }}</span>
+            <span class="text-[10px] leading-none tracking-wide opacity-80">{{ m.short }}</span>
           </NuxtLink>
         </nav>
 
@@ -213,7 +215,7 @@ const modes = computed(() => [
                   aria-haspopup="true"
                 >
                   <NavIcon :name="item.icon" class="hidden lg:block" />
-                  {{ item.label }}
+                  <span class="lg:hidden">{{ item.short }}</span><span class="hidden lg:inline">{{ item.label }}</span>
                   <NavIcon name="chevron" :size="14" class="opacity-60 transition-transform group-hover:rotate-180" />
                 </NuxtLink>
                 <div
@@ -247,7 +249,7 @@ const modes = computed(() => [
                 :aria-current="activeKey === item.key ? 'page' : undefined"
               >
                 <NavIcon :name="item.icon" class="hidden lg:block" />
-                {{ item.label }}
+                <span class="lg:hidden">{{ item.short }}</span><span class="hidden lg:inline">{{ item.label }}</span>
               </NuxtLink>
             </template>
           </nav>

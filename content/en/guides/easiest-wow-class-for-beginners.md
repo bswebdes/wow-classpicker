@@ -81,4 +81,4 @@ These classes aren't bad, just more demanding: **Rogue** (lots of tools, little 
 3. Use delves and quests to get to know your class at your own pace.
 4. Want to go faster? Our tips on the [fastest leveling class](/en/guides/fastest-leveling-class-wow) save time with any class.
 
-Still unsure? Take the [class quiz](/en/wow-class-quiz) or let the five beginner classes fight it out in the [arena](/en?classes=hunter,paladin,deathknight,demonhunter,warrior).
+Still unsure? Take the [class quiz](/en/wow-class-quiz) or let the five beginner classes fight it out in the [class tournament](/en?classes=hunter,paladin,deathknight,demonhunter,warrior).

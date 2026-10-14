@@ -95,4 +95,4 @@ In Classic war PvP vor allem **Welt-PvP**: spontane Schlachten zwischen Tarrens 
 
 ## Deine PvP-Klasse finden
 
-Du weißt noch nicht, welcher Spielstil zu dir passt? Das [Klassen-Quiz](/welche-klasse-passt-zu-mir) hilft dir weiter. Oder du schickst die PvP-Kandidaten erst einmal in die [Arena](/?classes=warrior,hunter,priest,rogue,mage,deathknight) und schaust, wer übrig bleibt.
+Du weißt noch nicht, welcher Spielstil zu dir passt? Das [Klassen-Quiz](/welche-klasse-passt-zu-mir) hilft dir weiter. Oder du schickst die PvP-Kandidaten erst einmal ins [Klassen-Turnier](/?classes=warrior,hunter,priest,rogue,mage,deathknight) und schaust, wer übrig bleibt.

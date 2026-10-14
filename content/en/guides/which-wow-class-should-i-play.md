@@ -78,4 +78,4 @@ In the end, gut feeling often decides. Do you want to be a holy knight, a demon 
 
 ## Still undecided?
 
-Then let them fight: pick your favorites in the [Find Your Main arena](/en) and send them into the arena. The last one standing becomes your main. Or let the [random class generator](/en/random-class-generator) roll a class and spec for you.
+Then let them fight: pick your favorites in the [Find Your Main class tournament](/en) and let them fight it out. The last one standing becomes your main. Or let the [random class generator](/en/random-class-generator) roll a class and spec for you.

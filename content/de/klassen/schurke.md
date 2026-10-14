@@ -70,4 +70,4 @@ Täuschung ist der Ninja. Du tauchst immer wieder in die Schatten ab und teilst 
 
 Der Schurke belohnt Erfahrung wie kaum eine andere Klasse: Wer seine Werkzeuge kennt, gewinnt Kämpfe, die eigentlich verloren sind. Für Einsteiger ist die Lernkurve aber steiler als bei Krieger oder Jäger, und ohne Selbstheilung wird es solo manchmal knapp.
 
-Lust auf einen Kampf? Schick den Schurken in die [Arena](/) oder vergleiche ihn mit [allen Klassen](/klassen).
+Lust auf einen Kampf? Schick den Schurken ins [Klassen-Turnier](/) oder vergleiche ihn mit [allen Klassen](/klassen).

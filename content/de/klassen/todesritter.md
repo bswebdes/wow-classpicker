@@ -70,4 +70,4 @@ Unheilig ist der Nekromant im Plattenpanzer. Ein Ghul begleitet dich immer, du v
 
 Der Todesritter ist zäh, selbstständig und kann Gegner mit Todesgriff gezielt aus der Gruppe holen. Seine größte Schwäche ist die Mobilität: Gegen schnelle Klassen, die auf Abstand bleiben, hat er es schwer.
 
-Wie schlägt sich der Todesritter gegen andere Klassen? Probier es in der [Arena](/) aus oder lies den Ratgeber zu [WoW Tank-Klassen](/ratgeber/wow-tank-klassen).
+Wie schlägt sich der Todesritter gegen andere Klassen? Probier es im [Klassen-Turnier](/) aus oder lies den Ratgeber zu [WoW Tank-Klassen](/ratgeber/wow-tank-klassen).

@@ -83,9 +83,9 @@ const formatDate = (date) => new Date(date).toLocaleDateString(locale.value === 
         </div>
       </PageHero>
       <p class="mt-4 max-w-3xl text-neutral-300">{{ page.description }}</p>
-      <p class="mt-2 text-[13px] text-neutral-500">
-        {{ page.updated ? $t('common.updated') : $t('common.published') }}:
-        <time :datetime="page.updated || page.date">{{ formatDate(page.updated || page.date) }}</time>
+      <p class="mt-2 flex flex-wrap items-center gap-x-3 gap-y-1.5 text-[13px] text-neutral-500">
+        <span>{{ page.updated ? $t('common.updated') : $t('common.published') }}: <time :datetime="page.updated || page.date">{{ formatDate(page.updated || page.date) }}</time></span>
+        <PatchBadge mode="retail" />
       </p>
     </header>
 

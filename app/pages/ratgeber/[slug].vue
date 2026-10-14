@@ -77,9 +77,9 @@ const formatDate = (date) => new Date(date).toLocaleDateString(locale.value === 
           <h1 class="wow-title text-3xl [filter:drop-shadow(0_2px_3px_#000)] sm:text-4xl">{{ page.title }}</h1>
         </PageHero>
         <h1 v-else class="wow-title text-3xl sm:text-4xl">{{ page.title }}</h1>
-        <p class="mt-2 text-[14px] text-neutral-500">
-          {{ page.updated ? $t('common.updated') : $t('common.published') }}:
-          <time :datetime="page.updated || page.date">{{ formatDate(page.updated || page.date) }}</time>
+        <p class="mt-2 flex flex-wrap items-center gap-x-3 gap-y-1.5 text-[14px] text-neutral-500">
+          <span>{{ page.updated ? $t('common.updated') : $t('common.published') }}: <time :datetime="page.updated || page.date">{{ formatDate(page.updated || page.date) }}</time></span>
+          <PatchBadge :mode="mode" />
         </p>
       </header>
 

@@ -70,4 +70,4 @@ Vergeltung ist das Schwert des Lichts: große Zweihandwaffe, goldene Flügel und
 
 Der Paladin ist eine der einsteigerfreundlichsten Klassen in WoW: robust, mit Selbstheilung und vielen Rettungsankern. Sein Nachteil ist die geringe Reichweite und eingeschränkte Mobilität im Vergleich zu Klassen wie Dämonenjäger oder Mönch.
 
-Du schwankst noch zwischen Paladin und anderen Klassen? Das [Klassen-Quiz](/welche-klasse-passt-zu-mir) hilft, die [Arena](/) entscheidet.
+Du schwankst noch zwischen Paladin und anderen Klassen? Das [Klassen-Quiz](/welche-klasse-passt-zu-mir) hilft, das [Klassen-Turnier](/) entscheidet.

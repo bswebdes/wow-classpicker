@@ -70,4 +70,4 @@ Protection is the shield tank that gathers enemies with leaps and taunts and the
 
 Its biggest strength is a simple core: the basic rotation clicks quickly, and plate armor forgives mistakes. [**Battle Shout**](https://www.wowhead.com/spell=6673){target="_blank" rel="noopener"} is a group buff every party is happy to have. Things get harder when enemies stay at range, since the Warrior has very few ranged options.
 
-Not sure if the Warrior should be your main? Take the [class quiz](/en/wow-class-quiz) or send it into the [arena](/en) against other classes.
+Not sure if the Warrior should be your main? Take the [class quiz](/en/wow-class-quiz) or send it into the [class tournament](/en) against other classes.

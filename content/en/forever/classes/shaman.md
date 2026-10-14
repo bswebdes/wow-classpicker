@@ -53,4 +53,4 @@ Restoration is the healing tree. Mana Tide Totem keeps the group's mana up, and 
 
 The **Dwarf Shaman** is new, giving the Alliance Shamans for the first time. On the Horde side, the **Skyborne** can also be Shamans.
 
-Send the Shaman into the [Forever arena](/en/forever) or compare [all Forever classes](/en/forever/classes).
+Send the Shaman into the [Forever tournament](/en/forever) or compare [all Forever classes](/en/forever/classes).

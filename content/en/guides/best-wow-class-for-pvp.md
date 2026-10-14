@@ -95,4 +95,4 @@ In Classic, PvP was mostly **world PvP**: spontaneous battles between Tarren Mil
 
 ## Find your PvP class
 
-Not sure which playstyle suits you yet? The [class quiz](/en/wow-class-quiz) will help. Or send the PvP candidates into the [arena](/en?classes=warrior,hunter,priest,rogue,mage,deathknight) first and see who is left standing.
+Not sure which playstyle suits you yet? The [class quiz](/en/wow-class-quiz) will help. Or send the PvP candidates into the [class tournament](/en?classes=warrior,hunter,priest,rogue,mage,deathknight) first and see who is left standing.

@@ -53,4 +53,4 @@ Wiederherstellung ist der Heiler-Baum. Rasche Heilung verbraucht eine Heilung ü
 
 Neben Nachtelfen und Tauren können jetzt die **Skyborne** auf beiden Seiten Druiden werden.
 
-Lass den Druiden in der [Forever-Arena](/forever) kämpfen oder vergleiche [alle Forever-Klassen](/forever/klassen).
+Lass den Druiden im [Forever-Turnier](/forever) kämpfen oder vergleiche [alle Forever-Klassen](/forever/klassen).

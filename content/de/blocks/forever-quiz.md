@@ -11,4 +11,4 @@ faq:
 
 Classic spielt sich anders als das heutige WoW: Leveln dauert länger, Gruppen sind wichtiger und jede Klasse hat eine klare Hauptaufgabe. Das Quiz berücksichtigt das und wertet deine Antworten nur für die 9 Klassen aus WoW Forever aus.
 
-Danach kannst du dich auf den [Forever-Klassenseiten](/forever/klassen) einlesen oder deine Top 3 direkt in der [Forever-Arena](/forever) kämpfen lassen.
+Danach kannst du dich auf den [Forever-Klassenseiten](/forever/klassen) einlesen oder deine Top 3 direkt im [Forever-Turnier](/forever) kämpfen lassen.

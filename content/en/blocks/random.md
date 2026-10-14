@@ -13,4 +13,4 @@ faq:
 
 Sometimes the best decision is not to decide yourself. The generator rolls a random class and spec from all 40 specs in Midnight. Use the filters to narrow it down to a role or armor type, perfect when your group still needs a healer.
 
-Like the result? The [class page](/en/classes) tells you how the class plays. And if you like two rolls, let them fight in the [arena](/en).
+Like the result? The [class page](/en/classes) tells you how the class plays. And if you like two rolls, let them fight in the [class tournament](/en).

@@ -70,4 +70,4 @@ Schutz ist der Tank mit Schild, der Gegner mit Sprüngen und Spott sammelt und d
 
 Die größte Stärke ist die Einfachheit im Kern: Die Grundrotation ist schnell verstanden, und Plattenrüstung verzeiht Fehler. Dazu kommt mit [**Schlachtruf**](https://www.wowhead.com/de/spell=6673){target="_blank" rel="noopener"} ein Gruppenbuff, den jede Gruppe gerne sieht. Schwierig wird es, wenn Gegner auf Distanz bleiben, denn der Krieger hat kaum Fernkampf-Optionen.
 
-Unsicher, ob der Krieger dein Main wird? Mach das [Klassen-Quiz](/welche-klasse-passt-zu-mir) oder schick ihn in der [Arena](/) gegen andere Klassen ins Rennen.
+Unsicher, ob der Krieger dein Main wird? Mach das [Klassen-Quiz](/welche-klasse-passt-zu-mir) oder schick ihn im [Klassen-Turnier](/) gegen andere Klassen ins Rennen.

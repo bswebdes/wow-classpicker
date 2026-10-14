@@ -15,6 +15,6 @@ faq:
 
 WoW Forever is Blizzard's new, permanent Classic version: a reimagined Azeroth with a level cap of 60 and new zones, dungeons and raids. That brings back the old question: which class should I play?
 
-Here the **9 Classic classes** face off. Pick your favorites, name them and send them into the arena. The last one standing becomes your main for Forever.
+Here the **9 Classic classes** face off. Pick your favorites, name them and send them into the tournament. The last one standing becomes your main for Forever.
 
 Prefer an informed decision? Read our guide [Which class should I play in WoW Forever?](/en/guides/which-class-wow-forever) or see [which races can play which classes](/en/guides/wow-forever-races-classes).

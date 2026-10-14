@@ -70,4 +70,4 @@ Subtlety is the ninja. You keep slipping into the shadows and deal huge damage i
 
 The Rogue rewards experience like few other classes: if you know your tools, you can win fights that look lost. For beginners, the learning curve is steeper than for a Warrior or Hunter, and without self-healing, solo play can get tight.
 
-Ready for a fight? Send the Rogue into the [arena](/en) or compare it with [all classes](/en/classes).
+Ready for a fight? Send the Rogue into the [class tournament](/en) or compare it with [all classes](/en/classes).

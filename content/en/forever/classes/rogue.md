@@ -53,4 +53,4 @@ Subtlety improves stealth and is strong in PvP. Premeditation lets you open with
 
 The **Skyborne** can be Rogues on both sides.
 
-Send the Rogue into the [Forever arena](/en/forever) or find out in the [Forever quiz](/en/forever/class-quiz) whether it suits you.
+Send the Rogue into the [Forever tournament](/en/forever) or find out in the [Forever quiz](/en/forever/class-quiz) whether it suits you.

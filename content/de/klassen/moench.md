@@ -70,4 +70,4 @@ Windläufer ist der Kung-Fu-Kämpfer, der Kombinationen aus Tritten und Schläge
 
 Der Mönch ist eine der mobilsten Klassen und in allen Rollen spielbar. Seine Spezialisierungen haben aber eigene, teils ungewöhnliche Mechaniken, etwa das Staffeln des Braumeisters. Das macht ihn eher zur Klasse für Spieler mit etwas Erfahrung.
 
-Im Picker kämpft der Mönch mit Furorfäusten und Stärkendem Gebräu. Probier ihn in der [Arena](/) aus oder finde im [Klassen-Quiz](/welche-klasse-passt-zu-mir) heraus, ob er zu dir passt.
+Im Picker kämpft der Mönch mit Furorfäusten und Stärkendem Gebräu. Probier ihn im [Klassen-Turnier](/) aus oder finde im [Klassen-Quiz](/welche-klasse-passt-zu-mir) heraus, ob er zu dir passt.
