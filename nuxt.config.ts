@@ -135,7 +135,12 @@ export default defineNuxtConfig({
       // Seiten als /klassen/magier.html statt /klassen/magier/index.html schreiben,
       // sonst leitet Netlify jede URL auf eine Variante mit Schrägstrich am Ende um
       autoSubfolderIndex: false,
+      // Standard ist 1 (Seite für Seite); parallel rendern verkürzt den Build deutlich
+      concurrency: 8,
       crawlLinks: true,
+      // Links mit Vorauswahl (/?classes=…, /klassen/vergleich?klasse=…) ergeben dieselbe statische Datei,
+      // der Crawler würde jede Variante aber neu rendern samt eigenem OG-Bild (fast 700 überflüssige Durchläufe)
+      ignore: [(route: string) => /\?(classes|klasse)=/.test(route)],
       routes: ['/', '/en', '/forever', '/en/forever', '/robots.txt', '/sitemap_index.xml', '/llms.txt', ...shareRoutes]
     }
   },

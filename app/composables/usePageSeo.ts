@@ -53,7 +53,13 @@ export const usePageSeo = (options: PageSeoOptions) => {
     twitterCard: 'summary_large_image'
   })
 
-  defineOgImage('ClassPicker', {
+  // Payload- (_payload.json) und Markdown-Renderings (.md für KI-Systeme) brauchen kein OG-Bild.
+  // Ohne diese Abfrage erzeugt jeder dieser Durchläufe ein eigenes, nirgends verlinktes Bild
+  // (vorher 1.140 statt rund 450 OG-Bilder pro Build)
+  const renderPath = import.meta.server ? (useRequestEvent()?.path || '') : ''
+  const internalRender = /\/_payload\.json|\.md(\?|$)/.test(renderPath)
+
+  if (!internalRender) defineOgImage('ClassPicker', {
     title: toValue(options.ogTitle) || toValue(options.title),
     subtitle: toValue(options.ogSubtitle) || toValue(options.description),
     classes: toValue(options.classes) || [],

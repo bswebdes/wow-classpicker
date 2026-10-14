@@ -21,11 +21,11 @@ Dieses Projekt ist eine **Nuxt 4 App** (Quellcode liegt in `app/`).
 1. Clone das Repository.
 2. Installiere die Abhängigkeiten:
 ```bash
-npm install
+pnpm install
 ```
 3. Starte den Development-Server (Node.js 22.5+ wegen nativer SQLite für Nuxt Content):
 ```bash
-npm run dev
+pnpm dev
 ```
 4. Öffne `http://localhost:3000` im Browser.
 

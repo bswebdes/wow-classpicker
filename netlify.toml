@@ -1,6 +1,8 @@
 [build.environment]
   # Nuxt Content braucht Node.js 22.5+ (native SQLite)
   NODE_VERSION = "24"
+  # Paketmanager pnpm (schneller als npm, Version wie packageManager in package.json)
+  PNPM_VERSION = "12.9.1"
 
 # Alte Netlify-Adresse dauerhaft auf die eigene Domain umleiten
 [[redirects]]

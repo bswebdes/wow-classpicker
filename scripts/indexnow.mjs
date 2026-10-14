@@ -1,6 +1,6 @@
 // IndexNow (Bing, Yandex, Seznam, Naver u. a.): meldet neue und geänderte URLs direkt an die Suchmaschinen.
 // Automatisch nach jedem Produktions-Deploy über netlify/functions/deploy-succeeded.mjs,
-// manuell mit `npm run indexnow` (Optionen: --all, --days=7, --dry).
+// manuell mit `pnpm indexnow` (Optionen: --all, --days=7, --dry).
 // Welche Seiten geändert sind, ergibt sich aus `lastmod` in der Live-Sitemap (Frontmatter `updated`/`date`).
 
 export const SITE = 'https://findyourmain.com'

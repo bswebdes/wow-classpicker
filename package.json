@@ -2,6 +2,7 @@
   "name": "find-your-main",
   "private": true,
   "type": "module",
+  "packageManager": "pnpm@12.9.1",
   "scripts": {
     "build": "nuxt build",
     "postbuild": "node scripts/seo-check.mjs",

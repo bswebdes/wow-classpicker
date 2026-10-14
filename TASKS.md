@@ -26,7 +26,7 @@ Stand: 14.10.2026 · live auf [findyourmain.com](https://findyourmain.com), Bran
 
 ### Technik
 - [ ] Hydration-Warnung im Sprachumschalter (Dev): Der Link wird vor `useSetI18nParams` der Seite berechnet. Funktional korrekt (Server-Link bleibt), aber unschön
-- [ ] IndexNow meldet nach Deploys nur Seiten mit `lastmod` (Inhaltsseiten). Nach Änderungen an Tool-Seiten `npm run indexnow -- --all` ausführen
+- [ ] IndexNow meldet nach Deploys nur Seiten mit `lastmod` (Inhaltsseiten). Nach Änderungen an Tool-Seiten `pnpm indexnow --all` ausführen
 - [ ] Weitere Vergleichspaare indexieren, sobald Ubersuggest dafür Suchvolumen zeigt (`indexedPairs` in `app/utils/compare.ts`)
 - [ ] `npm audit` beobachten: 24 Meldungen (node-forge, braces/micromatch, simple-git) stecken nur im Build- und Dev-Werkzeug von Nuxt, ohne passenden Fix für Nuxt 4. Bei Nuxt-Updates erneut prüfen
 
@@ -47,10 +47,10 @@ Stand: 14.10.2026 · live auf [findyourmain.com](https://findyourmain.com), Bran
 - [x] Schriften selbst gehostet, Logos als WebP über `@nuxt/image`, URLs ohne Schrägstrich am Ende (`autoSubfolderIndex: false`)
 - [x] Logo-Originale von 15 MB auf 1,9 MB verkleinert (960 px Breite, reicht für 2x bei 240 px); alte Versionen bleiben in der Git-Historie
 - [x] `npm audit`: `postcss-selector-parser` per `overrides` auf 7.1.6 gehoben (CSS-Ausgabe identisch); `simple-git` 4 bricht die Nuxt DevTools, bleibt deshalb
-- [x] Automatischer SEO-Check nach jedem Build (`scripts/seo-check.mjs`, auch `npm run seo:check`): Fehler bei fehlendem Titel/Beschreibung/Canonical/OG-Bild, ≠ 1 H1 oder kaputten hreflang-Links brechen den Build ab; Warnungen bei Titeln über 70 und Beschreibungen über 165 Zeichen
+- [x] Automatischer SEO-Check nach jedem Build (`scripts/seo-check.mjs`, auch `pnpm seo:check`): Fehler bei fehlendem Titel/Beschreibung/Canonical/OG-Bild, ≠ 1 H1 oder kaputten hreflang-Links brechen den Build ab; Warnungen bei Titeln über 70 und Beschreibungen über 165 Zeichen
 
 ### SEO & GEO
-- [x] IndexNow (Bing u. a.): Key in `public/`, automatische Meldung geänderter URLs nach jedem Produktions-Deploy (`netlify/functions/deploy-succeeded.mjs`), manuell `npm run indexnow`
+- [x] IndexNow (Bing u. a.): Key in `public/`, automatische Meldung geänderter URLs nach jedem Produktions-Deploy (`netlify/functions/deploy-succeeded.mjs`), manuell `pnpm indexnow`
 - [x] Keyword-Recherche mit Ubersuggest (`docs/seo-recherche.md`), Ubersuggest-Projekt „Find Your Main“ mit 20 Keywords (DE/US) für das Ranking-Tracking (wöchentlich)
 - [x] Sitemap-Index mit `lastmod` und hreflang-Paaren, `robots.txt` mit Content Signals, hreflang/Canonical auf allen Seiten
 - [x] Schema.org (WebPage/FAQPage, Article, Breadcrumb, ItemList, SoftwareApplication), OG-Bild pro Seite
