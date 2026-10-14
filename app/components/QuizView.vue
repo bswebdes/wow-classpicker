@@ -121,13 +121,7 @@ const quality = ['text-quality-epic border-quality-epic', 'text-quality-rare bor
 
       <!-- Questgeber -->
       <div class="flex items-center gap-3 border-b border-gold-border/60 bg-black/40 px-5 py-3">
-        <span class="relative shrink-0">
-          <!-- Ausschnitt per CSS (Bilddatei bleibt unverändert): Thalgrims Gesicht aus der Zwergenszene von Blizzard -->
-          <span class="relative block h-16 w-16 overflow-hidden rounded-full border-2 border-gold bg-[#2a1d08] shadow-[0_0_10px_rgba(255,209,0,0.4)]">
-            <img src="/images/thalgrim.webp" :alt="$t('quest.npcAlt')" width="1000" height="563" class="absolute max-w-none" style="width: 900%; left: -172%; top: -86%;" />
-          </span>
-          <span class="absolute -bottom-1 -right-1 flex h-6 w-6 items-center justify-center rounded-full border-2 border-gold bg-[#2a1d08] font-display text-[14px] font-black text-gold" aria-hidden="true">{{ finished ? '?' : '!' }}</span>
-        </span>
+        <ThalgrimPortrait :size="64" :marker="finished ? '?' : '!'" />
         <div class="min-w-0">
           <div class="font-display text-lg font-bold leading-tight text-gold">{{ finished ? $t('quiz.completeTitle') : $t('quiz.questTitle') }}</div>
           <div class="text-[14px] text-quality-uncommon">{{ $t('quest.npcName') }} <span class="text-neutral-400">&lt;{{ $t('quest.npcTitle') }}&gt;</span></div>

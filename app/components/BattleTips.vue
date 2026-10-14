@@ -116,12 +116,7 @@ const link = computed(() => {
     @focusout="hovered = false"
   >
     <div class="flex items-start gap-3">
-      <!-- Thalgrims Gesicht, derselbe Bildausschnitt wie im Quiz -->
-      <span class="relative mt-0.5 shrink-0">
-        <span class="relative block h-12 w-12 overflow-hidden rounded-full border-2 border-gold bg-[#2a1d08] shadow-[0_0_8px_rgba(255,209,0,0.35)]">
-          <img src="/images/thalgrim.webp" :alt="$t('quest.npcAlt')" width="1000" height="563" class="absolute max-w-none" style="width: 900%; left: -172%; top: -86%;" />
-        </span>
-      </span>
+      <ThalgrimPortrait :size="48" class="mt-0.5" />
       <div class="min-w-0 flex-1">
         <div class="flex flex-wrap items-baseline justify-between gap-x-3">
           <p class="font-display text-[13px] font-bold uppercase tracking-[0.2em] text-gold">{{ $t('tips.title') }}</p>
