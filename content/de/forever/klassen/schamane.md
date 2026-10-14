@@ -4,7 +4,12 @@ description: "Der Schamane in WoW Forever erklärt: Elementar, Verstärkung und 
 classId: shaman
 summary: "Der Schamane ist in WoW Forever ein vielseitiger Hybrid mit Totems, der heilen sowie Fern- oder Nahkampf-Schaden machen kann. Neu: Mit dem Zwerg gibt es den Schamanen erstmals auch für die Allianz."
 date: "2026-10-13"
-updated: "2026-10-13"
+updated: "2026-10-14"
+faq:
+  - q: "Welcher Schamanen-Talentbaum eignet sich in WoW Forever zum Leveln?"
+    a: "Auf Basis von WoW Classic voraussichtlich Verstärkung. Mit einer Zweihandwaffe, Waffenverzauberungen und Schocks levelt der Schamane robust, und er kann sich zwischendurch selbst heilen."
+  - q: "Wofür wird der Schamane in WoW Forever in Gruppen gebraucht?"
+    a: "Vor allem als Heiler mit Kettenheilung und für seine Totems, die die ganze Gruppe stärken. Neu in WoW Forever ist, dass Zwerge Schamanen werden können, bisher war der Schamane in Classic auf die Horde beschränkt."
 ---
 
 ## Spielweise

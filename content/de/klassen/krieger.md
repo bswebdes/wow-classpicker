@@ -4,7 +4,14 @@ description: "Der Krieger in WoW Midnight erklärt: Waffen, Furor und Schutz, Sp
 classId: warrior
 summary: "Der Krieger ist ein robuster Nahkämpfer in Plattenrüstung, der Schaden machen (Waffen, Furor) oder tanken (Schutz) kann. Er ist leicht zu lernen und ideal für Einsteiger, die Nahkampf ohne Zauberbuch mögen."
 date: "2026-10-13"
-updated: "2026-10-13"
+updated: "2026-10-14"
+faq:
+  - q: "Welche Krieger-Spezialisierung ist am einfachsten?"
+    a: "Furor gilt als die einfachste: wenige Knöpfe, viel Tempo und ein Wutanfall, der sich fast von selbst ergibt. Waffen verlangt etwas mehr Planung mit Fenstern für große Treffer, Schutz ist der Tank mit Schild."
+  - q: "Welche Krieger-Spezialisierung eignet sich zum Leveln?"
+    a: "Furor und Waffen machen solo guten Schaden, Furor heilt sich dabei über Blutdurst etwas selbst. Schutz hält mehr aus, tötet aber langsamer. Weil du außerhalb des Kampfes jederzeit wechseln kannst, lohnt sich Ausprobieren."
+  - q: "Wer sind die bekanntesten Krieger in WoW?"
+    a: "Zu den bekanntesten Kriegern gehören Varian Wrynn, der als Gladiator Lo'Gosh mit zwei Waffen kämpfte, der Orc-General Varok Saurfang und Grommash Höllschrei mit seiner Axt Blutschrei."
 ---
 
 ## Spielweise
@@ -28,17 +35,23 @@ Waffen ist der Krieger mit der großen Zweihandwaffe und der Spec für Leute, di
 
 **Typische Fähigkeiten:** [**Tödlicher Stoß**](https://www.wowhead.com/de/spell=12294){target="_blank" rel="noopener"}, [**Kolossales Schmettern**](https://www.wowhead.com/de/spell=167105){target="_blank" rel="noopener"}, [**Klingensturm**](https://www.wowhead.com/de/spell=227847){target="_blank" rel="noopener"}
 
+[Waffen-Krieger im Detail ›](/klassen/krieger/waffen)
+
 ### Furor
 
 Furor führt zwei Waffen und spielt sich wie ein Rausch. Du hältst den Krieger im **Wutanfall**, schlägst fast ununterbrochen zu und heilst dich dabei. Wenige Knöpfe, viel Tempo, viel Spaß. Furor wird in vielen Community-Listen als einer der leichtesten Nahkämpfer genannt.
 
 **Typische Fähigkeiten:** [**Blutdurst**](https://www.wowhead.com/de/spell=23881){target="_blank" rel="noopener"}, [**Toben**](https://www.wowhead.com/de/spell=184367){target="_blank" rel="noopener"}, [**Tollkühnheit**](https://www.wowhead.com/de/spell=1719){target="_blank" rel="noopener"}
 
+[Furor-Krieger im Detail ›](/klassen/krieger/furor)
+
 ### Schutz
 
 Schutz ist der Tank mit Schild, der Gegner mit Sprüngen und Spott sammelt und dann einfach stehen bleibt. Du blockst, fängst Schaden ab und haust mit dem Schild zurück. Wer sich gern zwischen Gruppe und Gefahr stellt, fühlt sich hier zu Hause.
 
 **Typische Fähigkeiten:** [**Schildschlag**](https://www.wowhead.com/de/spell=23922){target="_blank" rel="noopener"}, [**Zähne zusammenbeißen**](https://www.wowhead.com/de/spell=190456){target="_blank" rel="noopener"}, [**Letztes Gefecht**](https://www.wowhead.com/de/spell=12975){target="_blank" rel="noopener"}
+
+[Schutzkrieger im Detail ›](/klassen/krieger/schutz)
 
 ## Für wen ist der Krieger geeignet?
 

@@ -4,7 +4,14 @@ description: "Der Priester in WoW Midnight erklärt: Disziplin, Heilig und Schat
 classId: priest
 summary: "Der Priester ist die klassische Heilerklasse mit gleich zwei Heiler-Spezialisierungen (Disziplin, Heilig) und dem Schattenpriester als Fernkampf-Schaden. In Stoffrüstung ist er in Gruppen stark, solo aber verwundbar."
 date: "2026-10-13"
-updated: "2026-10-13"
+updated: "2026-10-14"
+faq:
+  - q: "Welche Priester-Spezialisierung ist am einfachsten?"
+    a: "Heilig ist der klassische, reaktive Heiler und wird oft als guter erster Heiler empfohlen. Disziplin verlangt mehr Vorausplanung, weil sie über Abbitte durch Angriffe heilt. Schatten ist die Schadens-Spezialisierung mit Effekten über Zeit."
+  - q: "Welche Priester-Spezialisierung eignet sich zum Leveln?"
+    a: "Schatten ist zum Leveln die beste Wahl, weil sie den meisten Schaden macht und sich über Vampirberührung selbst heilt. Disziplin geht auch, weil sie über Angriffe heilt. Heilig ist solo am langsamsten."
+  - q: "Warum passt der Schattenpriester so gut zu WoW Midnight?"
+    a: "In WoW Midnight greift die Leere unter Xal'atath nach Quel'Thalas und dem Sonnenbrunnen. Schattenpriester nutzen genau diese Leerenmagie und trugen Xal'atath in Legion sogar als Artefaktdolch."
 ---
 
 ## Spielweise
@@ -28,17 +35,23 @@ Disziplin heilt auf ungewöhnliche Art: Mit [**Machtwort: Schild**](https://www.
 
 **Typische Fähigkeiten:** [**Sühne**](https://www.wowhead.com/de/spell=47540){target="_blank" rel="noopener"}, [**Machtwort: Glanz**](https://www.wowhead.com/de/spell=194509){target="_blank" rel="noopener"}
 
+[Disziplin-Priester im Detail ›](/klassen/priester/disziplin)
+
 ### Heilig
 
 Heilig ist der klassische Heiler: große Heilzauber, Flächenheilung und starke Notfall-Knöpfe, wenn es eng wird. Das Spielgefühl ist reaktiv und übersichtlich. Heilig-Priester wird in Einsteiger-Ratgebern oft als guter erster Heiler genannt.
 
 **Typische Fähigkeiten:** [**Segenswort: Epiphanie**](https://www.wowhead.com/de/spell=2050){target="_blank" rel="noopener"}, [**Schutzgeist**](https://www.wowhead.com/de/spell=47788){target="_blank" rel="noopener"}, [**Gotteshymne**](https://www.wowhead.com/de/spell=64843){target="_blank" rel="noopener"}
 
+[Heilig-Priester im Detail ›](/klassen/priester/heilig)
+
 ### Schatten
 
 Schatten ist der Priester, der der Leere zu nahe gekommen ist. Du belegst Gegner mit Schaden über Zeit, baust **Wahnsinn** auf und entfesselst dann Tentakel und dunkle Visionen. Düster, stimmungsvoll und mittel anspruchsvoll.
 
 **Typische Fähigkeiten:** [**Gedankenschinden**](https://www.wowhead.com/de/spell=15407){target="_blank" rel="noopener"}, [**Vampirberührung**](https://www.wowhead.com/de/spell=34914){target="_blank" rel="noopener"}, [**Schattenwort: Schmerz**](https://www.wowhead.com/de/spell=589){target="_blank" rel="noopener"}
+
+[Schattenpriester im Detail ›](/klassen/priester/schatten)
 
 ## Für wen ist der Priester geeignet?
 

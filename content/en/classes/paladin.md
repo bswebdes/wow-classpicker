@@ -4,7 +4,14 @@ description: "The Paladin in WoW Midnight explained: Holy, Protection and Retrib
 classId: paladin
 summary: "The Paladin is a plate wearer wielding holy Light and, alongside Druid and Monk, can play all three roles: Holy heals, Protection tanks, Retribution deals damage. Plenty of emergency abilities make it very beginner friendly."
 date: "2026-10-13"
-updated: "2026-10-13"
+updated: "2026-10-14"
+faq:
+  - q: "Which Paladin spec is the easiest?"
+    a: "Retribution and Protection are both considered beginner friendly. Retribution follows a clear loop of building and spending Holy Power, Protection is one of the most forgiving tanks in the game. Holy is an approachable healer with direct heals."
+  - q: "Which Paladin spec is best for leveling?"
+    a: "Retribution kills enemies fastest, Protection survives the most and can gather many enemies at once. Both heal themselves. Holy is much slower solo."
+  - q: "Who are the most famous Paladins in WoW?"
+    a: "Uther the Lightbringer was the first Paladin of the Silver Hand, Tirion Fordring wielded the Ashbringer against the Lich King, and Lady Liadrin leads the Blood Knights of Quel'Thalas, the setting of WoW Midnight."
 ---
 
 ## Playstyle
@@ -28,17 +35,23 @@ Holy is the healer who likes to stand on the front line. With **Beacon of Light*
 
 **Signature abilities:** [**Holy Shock**](https://www.wowhead.com/spell=20473){target="_blank" rel="noopener"}, [**Beacon of Light**](https://www.wowhead.com/spell=53563){target="_blank" rel="noopener"}
 
+[Holy Paladin in detail ›](/en/classes/paladin/holy)
+
 ### Protection
 
 Protection is the knight in shining armor who throws a shield at enemies and heals you and your group with the Light. Lots of emergency buttons make the Protection Paladin very forgiving. Many lists name it one of the easiest tanks to start with.
 
 **Signature abilities:** [**Avenger's Shield**](https://www.wowhead.com/spell=31935){target="_blank" rel="noopener"}, [**Guardian of Ancient Kings**](https://www.wowhead.com/spell=86659){target="_blank" rel="noopener"}
 
+[Protection Paladin in detail ›](/en/classes/paladin/protection)
+
 ### Retribution
 
 Retribution is the sword of the Light: a big two-handed weapon, golden wings and Holy damage that crashes down on enemies in waves. You build Holy Power and spend it on heavy strikes. Direct, easy to understand and very comfortable solo.
 
 **Signature abilities:** [**Templar's Verdict**](https://www.wowhead.com/spell=85256){target="_blank" rel="noopener"}, [**Wake of Ashes**](https://www.wowhead.com/spell=255937){target="_blank" rel="noopener"}, [**Divine Storm**](https://www.wowhead.com/spell=53385){target="_blank" rel="noopener"}
+
+[Retribution Paladin in detail ›](/en/classes/paladin/retribution)
 
 ## Who is the Paladin for?
 

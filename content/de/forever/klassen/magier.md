@@ -4,7 +4,12 @@ description: "Der Magier in WoW Forever erklärt: Arkan, Feuer und Frost, Portal
 classId: mage
 summary: "Der Magier ist in WoW Forever ein Fernkampf-Zauberer mit viel Schaden und Kontrolle, der sich Essen und Wasser selbst herbeizaubert. Neu ist der Orc-Magier auf Seiten der Horde."
 date: "2026-10-13"
-updated: "2026-10-13"
+updated: "2026-10-14"
+faq:
+  - q: "Welcher Magier-Talentbaum eignet sich in WoW Forever zum Leveln?"
+    a: "Auf Basis von WoW Classic voraussichtlich Frost. Frostblitz verlangsamt, Frostnova friert ein, und mit Flächenzaubern wie Blizzard kannst du später ganze Gegnergruppen auf einmal besiegen."
+  - q: "Wofür wird der Magier in WoW Forever in Gruppen gebraucht?"
+    a: "Für viel Fernkampfschaden und Kontrolle mit Verwandlung. Dazu beschwört der Magier Essen und Wasser für die Gruppe und kann Portale in die Hauptstädte öffnen."
 ---
 
 ## Spielweise

@@ -4,7 +4,12 @@ description: "The Mage in WoW Forever explained: Arcane, Fire and Frost, portals
 classId: mage
 summary: "The Mage is a ranged caster in WoW Forever with lots of damage and control that conjures its own food and water. New: the Orc Mage for the Horde."
 date: "2026-10-13"
-updated: "2026-10-13"
+updated: "2026-10-14"
+faq:
+  - q: "Which Mage talent tree is best for leveling in WoW Forever?"
+    a: "Based on WoW Classic, most likely Frost. Frostbolt slows, Frost Nova roots, and with area spells like Blizzard you can later defeat whole packs of enemies at once."
+  - q: "What is the Mage needed for in WoW Forever groups?"
+    a: "For lots of ranged damage and crowd control with Polymorph. The Mage also conjures food and water for the group and can open portals to the capitals."
 ---
 
 ## Playstyle

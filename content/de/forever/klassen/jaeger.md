@@ -4,7 +4,12 @@ description: "Der Jäger in WoW Forever erklärt: Tierherrschaft, Treffsicherhei
 classId: hunter
 summary: "Der Jäger ist in WoW Forever die entspannteste Klasse zum Leveln: Sein gezähmtes Tier hält die Gegner fest, während er aus der Distanz angreift. Neu ist der Menschen-Jäger auf Seiten der Allianz."
 date: "2026-10-13"
-updated: "2026-10-13"
+updated: "2026-10-14"
+faq:
+  - q: "Welcher Jäger-Talentbaum eignet sich in WoW Forever zum Leveln?"
+    a: "Auf Basis von WoW Classic voraussichtlich Tierherrschaft. Dein Tier tankt Gegner, du schießt aus der Distanz, und der Jäger gilt in Classic als eine der schnellsten Klassen zum Leveln."
+  - q: "Wofür wird der Jäger in WoW Forever in Gruppen gebraucht?"
+    a: "Für stetigen Fernkampfschaden und Werkzeuge wie Fallen und Tranquilisierender Schuss. In Classic war der Jäger auch beim Pullen von Gegnergruppen beliebt, etwa mit Totstellen."
 ---
 
 ## Spielweise

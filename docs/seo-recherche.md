@@ -121,3 +121,26 @@ Ohne Daten (14.10.2026 geprüft): rogue vs warrior, hunter vs mage, priest vs dr
 
 Alle übrigen Paare ohne messbares Volumen: erreichbar und teilbar, aber `noindex`, damit keine dünnen Massenseiten im Index landen.
 
+
+## Nachtrag 14.10.2026: Spezialisierungen
+
+Spec-Kopfbegriffe haben deutlich mehr Volumen als die Klassen selbst, mit informativer Suchintention. Umgesetzt als 40 Spec-Seiten je Sprache (`/klassen/<klasse>/<spec>`, `/en/classes/<class>/<spec>`) mit Kurzantwort, Kernmechanik, Fähigkeiten (über die Wowhead-Tooltip-API geprüft), Lore und FAQ.
+
+| Keyword | Markt | Volumen | SD |
+| --- | --- | --- | --- |
+| devourer demon hunter | US | 5.400 | 30 |
+| retribution paladin wow | US | 3.600 | 30 |
+| frost mage wow | US | 2.900 | 35 |
+| devourer demon hunter talents | US | 2.400 | 18 |
+| shadow priest wow talents | US | 1.300 | 25 |
+| affliction warlock wow | US | 1.000 | 37 |
+| shadow priest wow | US | 590 | 32 |
+| beast mastery hunter wow | US | 390 | 31 |
+| wow vergelter paladin | DE | 390 | 21 |
+| wow schattenpriester | DE | 210 | 20 |
+| wow schattenpriester guide | DE | 170 | 22 |
+| wow vergelter paladin guide deutsch | DE | 140 | 23 |
+| wow dämonenjäger verschlinger skillung | DE | 110 | 22 |
+| wow dämonenjäger verschlinger | DE | 90 | 22 |
+
+Viele Varianten zielen auf Talente, BiS und Rotation (Wowhead/Icy Veins). Wir besetzen den informativen Teil (Spielweise, „für wen“, Lore) und verlinken für Builds nicht nach außen. Forever-Talentbäume bekommen eigene Seiten erst nach dem Start, weil Forever die Bäume überarbeitet.

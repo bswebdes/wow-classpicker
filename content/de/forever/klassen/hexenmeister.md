@@ -4,7 +4,12 @@ description: "Der Hexenmeister in WoW Forever erklärt: Gebrechen, Dämonologie 
 classId: warlock
 summary: "Der Hexenmeister ist in WoW Forever ein Fernkampf-Zauberer mit Flüchen und dämonischen Begleitern und eine der stärksten Klassen zum Solo-Leveln. Neu ist der Troll-Hexenmeister."
 date: "2026-10-13"
-updated: "2026-10-13"
+updated: "2026-10-14"
+faq:
+  - q: "Welcher Hexenmeister-Talentbaum eignet sich in WoW Forever zum Leveln?"
+    a: "Auf Basis von WoW Classic voraussichtlich Gebrechen oder Dämonologie. Dein Dämon tankt Gegner, Effekte über Zeit erledigen den Rest, und mit Lebensentzug kommst du ohne viele Pausen aus."
+  - q: "Wofür wird der Hexenmeister in WoW Forever in Gruppen gebraucht?"
+    a: "Für Schaden und viele Hilfsmittel: Gesundheitssteine, Seelensteine zum Wiederbeleben und das Herbeirufen von Mitspielern. In Classic war das Ritual der Beschwörung vor jedem Dungeon gefragt."
 ---
 
 ## Spielweise

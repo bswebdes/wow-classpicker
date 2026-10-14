@@ -4,7 +4,12 @@ description: "Der Priester in WoW Forever erklärt: Disziplin, Heilig und Schatt
 classId: priest
 summary: "Der Priester ist in WoW Forever der klassische Heiler und in jeder Gruppe gefragt. Mit Schatten hat er eine starke Alternative für Schaden und Solo-Spiel. Neu ist der Gnom-Priester."
 date: "2026-10-13"
-updated: "2026-10-13"
+updated: "2026-10-14"
+faq:
+  - q: "Welcher Priester-Talentbaum eignet sich in WoW Forever zum Leveln?"
+    a: "Auf Basis von WoW Classic voraussichtlich Schatten. Mit Schattenwort: Schmerz, Gedankenschinden und Machtwort: Schild levelt der Priester sicher, und ab Schattengestalt macht er deutlich mehr Schaden."
+  - q: "Wofür wird der Priester in WoW Forever in Gruppen gebraucht?"
+    a: "Vor allem als Heiler. In Classic war der Priester einer der wichtigsten Heiler in Dungeons und Raids, dazu kommt sein Seelenstärke-Buff für die ganze Gruppe."
 ---
 
 ## Spielweise

@@ -4,7 +4,14 @@ description: "The Hunter in WoW Midnight explained: Beast Mastery, Marksmanship 
 classId: hunter
 summary: "The Hunter is a ranged fighter with an animal companion and is widely seen as the easiest class in WoW, especially as Beast Mastery. It can only deal damage but is extremely strong solo."
 date: "2026-10-13"
-updated: "2026-10-13"
+updated: "2026-10-14"
+faq:
+  - q: "Which Hunter spec is the easiest?"
+    a: "Beast Mastery is the easiest and in almost every list the most recommended spec for newcomers. You can cast almost everything on the move, and your pet draws the enemies' attention."
+  - q: "Which Hunter spec is best for leveling?"
+    a: "Beast Mastery is ideal for leveling because your pet tanks enemies and you hardly ever have to stand still. Marksmanship deals heavy damage but needs to stand still for Aimed Shot. Survival fights in melee with its pet at its side."
+  - q: "Who are the most famous Hunters in WoW?"
+    a: "Rexxar, the half-ogre champion of the Horde with his bear Misha, and Sylvanas Windrunner, once Ranger-General of Quel'Thalas, are among the best-known Hunters."
 ---
 
 ## Playstyle
@@ -28,17 +35,23 @@ Beast Mastery is the pet specialization above all. Your pet deals a big part of 
 
 **Signature abilities:** [**Bestial Wrath**](https://www.wowhead.com/spell=19574){target="_blank" rel="noopener"}, [**Barbed Shot**](https://www.wowhead.com/spell=217200){target="_blank" rel="noopener"}
 
+[Beast Mastery Hunter in detail ›](/en/classes/hunter/beast-mastery)
+
 ### Marksmanship
 
 Marksmanship is the sharpshooter with bow or gun who fires heavy shots from long range. Some shots take a moment, so positioning matters. If you like waiting for the perfect moment for a big hit, this is your spec.
 
 **Signature abilities:** [**Rapid Fire**](https://www.wowhead.com/spell=257044){target="_blank" rel="noopener"}, [**Trueshot**](https://www.wowhead.com/spell=288613){target="_blank" rel="noopener"}
 
+[Marksmanship Hunter in detail ›](/en/classes/hunter/marksmanship)
+
 ### Survival
 
 Survival is the exception among hunters: a melee fighter with spear, traps and bombs who fights side by side with your pet. Wilderness instead of shooting range. A little unusual, but with a personality of its own.
 
 **Signature abilities:** [**Raptor Strike**](https://www.wowhead.com/spell=186270){target="_blank" rel="noopener"}, [**Wildfire Bomb**](https://www.wowhead.com/spell=259495){target="_blank" rel="noopener"}, [**Harpoon**](https://www.wowhead.com/spell=190925){target="_blank" rel="noopener"}
+
+[Survival Hunter in detail ›](/en/classes/hunter/survival)
 
 ## Who is the Hunter for?
 

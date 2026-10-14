@@ -4,7 +4,14 @@ description: "The Death Knight in WoW Midnight explained: Blood, Frost and Unhol
 classId: deathknight
 summary: "The Death Knight is a plate fighter with dark magic, one of the most forgiving tanks as Blood and a melee damage dealer as Frost or Unholy. Strong self-healing makes it very sturdy solo."
 date: "2026-10-13"
-updated: "2026-10-13"
+updated: "2026-10-14"
+faq:
+  - q: "Which Death Knight spec is the easiest?"
+    a: "Frost is considered the most approachable: direct strikes, few key buttons and a clear burst window. Blood is a very self-sufficient tank with lots of self-healing, Unholy has the most to manage with ghouls and plagues."
+  - q: "Which Death Knight spec is best for leveling?"
+    a: "All three are strong solo, because Death Strike heals you. Blood is nearly unkillable, Frost and Unholy kill faster. Unholy also has a ghoul to keep enemies busy."
+  - q: "Who is the most famous Death Knight in WoW?"
+    a: "Arthas Menethil, who led the Scourge as the Lich King, defined the image of the Death Knight. Today Darion Mograine leads the Knights of the Ebon Blade, who broke free from the Lich King."
 ---
 
 ## Playstyle
@@ -28,17 +35,23 @@ Blood is the vampire among tanks: the more damage you take, the more you heal. Y
 
 **Signature abilities:** [**Marrowrend**](https://www.wowhead.com/spell=195182){target="_blank" rel="noopener"}, [**Heart Strike**](https://www.wowhead.com/spell=206930){target="_blank" rel="noopener"}, [**Dancing Rune Weapon**](https://www.wowhead.com/spell=49028){target="_blank" rel="noopener"}
 
+[Blood Death Knight in detail ›](/en/classes/death-knight/blood)
+
 ### Frost
 
 Frost wields two weapons or a big two-hander and strikes with icy blows. The playstyle is fast and direct. The fantasy: the cold, merciless knight from Northrend.
 
 **Signature abilities:** [**Obliterate**](https://www.wowhead.com/spell=49020){target="_blank" rel="noopener"}, [**Pillar of Frost**](https://www.wowhead.com/spell=51271){target="_blank" rel="noopener"}
 
+[Frost Death Knight in detail ›](/en/classes/death-knight/frost)
+
 ### Unholy
 
 Unholy is the necromancer in plate armor. A ghoul is always at your side, you spread plagues and summon the undead at the right moment. More to manage than Frost, but a very strong pet fantasy.
 
 **Signature abilities:** [**Festering Strike**](https://www.wowhead.com/spell=85948){target="_blank" rel="noopener"}, [**Apocalypse**](https://www.wowhead.com/spell=275699){target="_blank" rel="noopener"}, [**Dark Transformation**](https://www.wowhead.com/spell=63560){target="_blank" rel="noopener"}
+
+[Unholy Death Knight in detail ›](/en/classes/death-knight/unholy)
 
 ## Who is the Death Knight for?
 

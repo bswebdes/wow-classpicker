@@ -1,5 +1,5 @@
 import { queryCollection } from '@nuxt/content/server'
-import { classInfo } from '~~/app/utils/classInfo'
+import { classInfo, specSlug } from '~~/app/utils/classInfo'
 import { foreverClassInfo } from '~~/app/utils/foreverInfo'
 import { indexedPairs, pairSlug } from '~~/app/utils/compare'
 
@@ -20,8 +20,9 @@ const entries = (pairs: Pair[]) => pairs.flatMap(({ de, en, lastmod }) => {
 })
 
 export default defineSitemapEventHandler(async (event) => {
-  const [classesDe, foreverDe, guidesDe, guidesEn] = await Promise.all([
+  const [classesDe, specsDe, foreverDe, guidesDe, guidesEn] = await Promise.all([
     queryCollection(event, 'classes_de').select('path', 'updated', 'date').all(),
+    queryCollection(event, 'specs_de').select('path', 'updated', 'date').all(),
     queryCollection(event, 'forever_classes_de').select('path', 'updated', 'date').all(),
     queryCollection(event, 'guides_de').select('path', 'key', 'updated', 'date').all(),
     queryCollection(event, 'guides_en').select('path', 'key').all()
@@ -37,6 +38,12 @@ export default defineSitemapEventHandler(async (event) => {
       en: `/en/classes/${c.slug.en}`,
       lastmod: lastmodOf(classesDe, `/klassen/${c.slug.de}`)
     })),
+    // Spec-Seiten nur, wenn es den Text gibt
+    ...classInfo.flatMap(c => c.specs.map(s => ({
+      de: `/klassen/${c.slug.de}/${specSlug(s, 'de')}`,
+      en: `/en/classes/${c.slug.en}/${specSlug(s, 'en')}`,
+      lastmod: lastmodOf(specsDe, `/klassen/${c.slug.de}/${specSlug(s, 'de')}`)
+    })).filter(p => specsDe.some(d => d.path === p.de))),
     ...foreverClassInfo.map(c => ({
       de: `/forever/klassen/${c.slug.de}`,
       en: `/en/forever/classes/${c.slug.en}`,

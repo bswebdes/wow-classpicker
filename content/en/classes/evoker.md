@@ -4,7 +4,14 @@ description: "The Evoker in WoW Midnight explained: Devastation, Preservation an
 classId: evoker
 summary: "The Evoker is a draconic caster in mail that fights at about 25 yards and charges up its spells. It plays damage (Devastation), healing (Preservation) or support (Augmentation), but no tank."
 date: "2026-10-13"
-updated: "2026-10-13"
+updated: "2026-10-14"
+faq:
+  - q: "Which Evoker spec is the easiest?"
+    a: "Devastation is considered the most approachable and is often named a beginner friendly ranged spec. Preservation is a creative healer, Augmentation a demanding support spec for groups."
+  - q: "Can the Evoker tank?"
+    a: "No. The Evoker has no tank spec. It plays damage as Devastation, healing as Preservation and support as Augmentation. If you want to tank, you need a different class."
+  - q: "What is special about the Evoker's playstyle?"
+    a: "Evokers use empowered spells that you hold down to charge in several ranks. Add a short range of 25 yards and Hover, which lets you cast while moving."
 ---
 
 ## Playstyle
@@ -28,17 +35,23 @@ Devastation is the damage evoker with red and blue dragon magic: Fire Breath, Di
 
 **Signature abilities:** [**Eternity Surge**](https://www.wowhead.com/spell=359073){target="_blank" rel="noopener"}, [**Dragonrage**](https://www.wowhead.com/spell=375087){target="_blank" rel="noopener"}
 
+[Devastation Evoker in detail ›](/en/classes/evoker/devastation)
+
 ### Preservation
 
 Preservation heals with green Dream magic and bronze time magic. Empowered heals and Echoes double up your spells, and time spells can even undo damage. A creative healer for everyone who likes to experiment.
 
 **Signature abilities:** [**Dream Breath**](https://www.wowhead.com/spell=355936){target="_blank" rel="noopener"}, [**Echo**](https://www.wowhead.com/spell=364343){target="_blank" rel="noopener"}
 
+[Preservation Evoker in detail ›](/en/classes/evoker/preservation)
+
 ### Augmentation
 
 Augmentation is special: a damage specialization with black and bronze magic that mostly makes other players stronger. Its contribution often barely shows on the damage meter. Perfect if you like pulling strings in the background, but demanding in groups.
 
 **Signature abilities:** [**Ebon Might**](https://www.wowhead.com/spell=395152){target="_blank" rel="noopener"}, [**Prescience**](https://www.wowhead.com/spell=409311){target="_blank" rel="noopener"}, [**Breath of Eons**](https://www.wowhead.com/spell=403631){target="_blank" rel="noopener"}
+
+[Augmentation Evoker in detail ›](/en/classes/evoker/augmentation)
 
 ## Who is the Evoker for?
 

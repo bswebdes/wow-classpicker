@@ -4,7 +4,14 @@ description: "Der Todesritter in WoW Midnight erklärt: Blut, Frost und Unheilig
 classId: deathknight
 summary: "Der Todesritter ist ein Plattenkämpfer mit dunkler Magie, der als Blut einer der verzeihendsten Tanks ist und als Frost oder Unheilig Nahkampf-Schaden macht. Starke Selbstheilung macht ihn solo sehr robust."
 date: "2026-10-13"
-updated: "2026-10-13"
+updated: "2026-10-14"
+faq:
+  - q: "Welche Todesritter-Spezialisierung ist am einfachsten?"
+    a: "Frost gilt als die zugänglichste: direkte Schläge, wenige wichtige Knöpfe und ein klares Burst-Fenster. Blut ist ein sehr eigenständiger Tank mit viel Selbstheilung, Unheilig hat mit Ghulen und Seuchen am meisten zu verwalten."
+  - q: "Welche Todesritter-Spezialisierung eignet sich zum Leveln?"
+    a: "Alle drei sind solo stark, weil Todesstoß dich heilt. Blut ist kaum totzukriegen, Frost und Unheilig töten schneller. Unheilig hat zusätzlich einen Ghul, der Gegner beschäftigt."
+  - q: "Wer ist der bekannteste Todesritter in WoW?"
+    a: "Arthas Menethil, der als Lichkönig die Geißel anführte, prägte das Bild des Todesritters. Heute führt Darion Mograine die Ritter der Schwarzen Klinge, die sich vom Lichkönig losgesagt haben."
 ---
 
 ## Spielweise
@@ -28,17 +35,23 @@ Blut ist der Vampir unter den Tanks: Je mehr Schaden du nimmst, desto stärker h
 
 **Typische Fähigkeiten:** [**Markzerfetzer**](https://www.wowhead.com/de/spell=195182){target="_blank" rel="noopener"}, [**Herzstoß**](https://www.wowhead.com/de/spell=206930){target="_blank" rel="noopener"}, [**Tanzende Runenwaffe**](https://www.wowhead.com/de/spell=49028){target="_blank" rel="noopener"}
 
+[Blut-Todesritter im Detail ›](/klassen/todesritter/blut)
+
 ### Frost
 
 Frost führt zwei Waffen oder eine große Zweihandwaffe und schlägt mit eisigen Hieben zu. Die Spielweise ist schnell und direkt. Die Fantasy: der kalte, gnadenlose Ritter aus Nordend.
 
 **Typische Fähigkeiten:** [**Auslöschen**](https://www.wowhead.com/de/spell=49020){target="_blank" rel="noopener"}, [**Säule des Frosts**](https://www.wowhead.com/de/spell=51271){target="_blank" rel="noopener"}
 
+[Frost-Todesritter im Detail ›](/klassen/todesritter/frost)
+
 ### Unheilig
 
 Unheilig ist der Nekromant im Plattenpanzer. Ein Ghul begleitet dich immer, du verbreitest Seuchen und rufst im richtigen Moment Untote herbei. Mehr zu verwalten als Frost, dafür eine sehr starke Pet-Fantasy.
 
 **Typische Fähigkeiten:** [**Schwärender Stoß**](https://www.wowhead.com/de/spell=85948){target="_blank" rel="noopener"}, [**Apokalypse**](https://www.wowhead.com/de/spell=275699){target="_blank" rel="noopener"}, [**Dunkle Transformation**](https://www.wowhead.com/de/spell=63560){target="_blank" rel="noopener"}
+
+[Unheilig-Todesritter im Detail ›](/klassen/todesritter/unheilig)
 
 ## Für wen ist der Todesritter geeignet?
 

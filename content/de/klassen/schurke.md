@@ -4,7 +4,14 @@ description: "Der Schurke in WoW Midnight erklärt: Meucheln, Gesetzlosigkeit un
 classId: rogue
 summary: "Der Schurke ist ein Nahkämpfer mit Tarnung, Giften und vielen Kontrolleffekten. Er spielt nur Schaden, ist stark im PvP und belohnt Erfahrung, ist für Einsteiger aber anspruchsvoller."
 date: "2026-10-13"
-updated: "2026-10-13"
+updated: "2026-10-14"
+faq:
+  - q: "Welche Schurken-Spezialisierung ist am einfachsten?"
+    a: "Meucheln gilt als die ruhigste und planbarste, weil du mit Giften und Blutungen über Zeit arbeitest. Gesetzlosigkeit reagiert auf viele Zufallseffekte, Täuschung lebt von kurzen, gut getimten Fenstern. Alle drei verlangen etwas Übung."
+  - q: "Ist der Schurke gut solo?"
+    a: "Ja, mit etwas Vorsicht. Mit Verstohlenheit wählst du deine Kämpfe selbst und schleichst an unnötigen Gegnern vorbei. In Leder bist du aber verwundbarer als Plattenträger, große Gruppen solltest du mit Bedacht ziehen."
+  - q: "Wer sind die bekanntesten Schurken in WoW?"
+    a: "Zu den bekanntesten Schurken gehören Mathias Shaw, Meisterspion des SI:7, die Blutelfe Valeera Sanguinar und die Assassine Garona Halforcen."
 ---
 
 ## Spielweise
@@ -28,17 +35,23 @@ Meucheln ist die Giftmischerin unter den Schurken. Du vergiftest deine Dolche, l
 
 **Typische Fähigkeiten:** [**Verstümmeln**](https://www.wowhead.com/de/spell=1329){target="_blank" rel="noopener"}, [**Vergiften**](https://www.wowhead.com/de/spell=32645){target="_blank" rel="noopener"}, [**Todesmal**](https://www.wowhead.com/de/spell=360194){target="_blank" rel="noopener"}
 
+[Meuchel-Schurke im Detail ›](/klassen/schurke/meucheln)
+
 ### Gesetzlosigkeit
 
 Gesetzlosigkeit ist der Pirat: Säbel, Pistolenschüsse und ein Würfelwurf, der zufällige Buffs verteilt. Das macht die Spec lebendig und ein wenig chaotisch. Viele Ratgeber zählen sie zu den anspruchsvolleren Specs, weil du ständig auf neue Effekte reagierst.
 
 **Typische Fähigkeiten:** [**Schicksalswürfel**](https://www.wowhead.com/de/spell=315508){target="_blank" rel="noopener"}, [**Zwischen die Augen**](https://www.wowhead.com/de/spell=315341){target="_blank" rel="noopener"}, [**Adrenalinrausch**](https://www.wowhead.com/de/spell=13750){target="_blank" rel="noopener"}
 
+[Gesetzlosigkeits-Schurke im Detail ›](/klassen/schurke/gesetzlosigkeit)
+
 ### Täuschung
 
 Täuschung ist der Ninja. Du tauchst immer wieder in die Schatten ab und teilst in kurzen Fenstern enormen Schaden aus. Wenn ein Burst-Fenster perfekt sitzt, fühlt sich das großartig an. Wer Timing liebt, wird hier glücklich.
 
 **Typische Fähigkeiten:** [**Schattentanz**](https://www.wowhead.com/de/spell=185313){target="_blank" rel="noopener"}, [**Schattenschlag**](https://www.wowhead.com/de/spell=185438){target="_blank" rel="noopener"}, [**Schattenklingen**](https://www.wowhead.com/de/spell=121471){target="_blank" rel="noopener"}
+
+[Täuschungs-Schurke im Detail ›](/klassen/schurke/taeuschung)
 
 ## Für wen ist der Schurke geeignet?
 

@@ -4,7 +4,12 @@ description: "The Priest in WoW Forever explained: Discipline, Holy and Shadow, 
 classId: priest
 summary: "The Priest is WoW Forever's classic healer and always in demand. Shadow offers a strong alternative for damage and solo play. New: the Gnome Priest."
 date: "2026-10-13"
-updated: "2026-10-13"
+updated: "2026-10-14"
+faq:
+  - q: "Which Priest talent tree is best for leveling in WoW Forever?"
+    a: "Based on WoW Classic, most likely Shadow. With Shadow Word: Pain, Mind Flay and Power Word: Shield the Priest levels safely, and from Shadowform onward it deals much more damage."
+  - q: "What is the Priest needed for in WoW Forever groups?"
+    a: "Mainly as a healer. In Classic the Priest was one of the most important healers in dungeons and raids, plus its Fortitude buff for the whole group."
 ---
 
 ## Playstyle

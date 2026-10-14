@@ -4,7 +4,12 @@ description: "The Hunter in WoW Forever explained: Beast Mastery, Marksmanship a
 classId: hunter
 summary: "The Hunter is WoW Forever's most relaxed class to level: its tamed pet holds enemies while it attacks from range. New: the Human Hunter for the Alliance."
 date: "2026-10-13"
-updated: "2026-10-13"
+updated: "2026-10-14"
+faq:
+  - q: "Which Hunter talent tree is best for leveling in WoW Forever?"
+    a: "Based on WoW Classic, most likely Beast Mastery. Your pet tanks enemies, you shoot from range, and in Classic the Hunter was one of the fastest classes to level."
+  - q: "What is the Hunter needed for in WoW Forever groups?"
+    a: "For steady ranged damage and tools like traps and Tranquilizing Shot. In Classic the Hunter was also popular for pulling packs of enemies, for example with Feign Death."
 ---
 
 ## Playstyle

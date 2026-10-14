@@ -4,7 +4,14 @@ description: "The Priest in WoW Midnight explained: Discipline, Holy and Shadow,
 classId: priest
 summary: "The Priest is the classic healing class with two healing specs (Discipline, Holy) and Shadow as a ranged damage spec. In cloth it is strong in groups but vulnerable solo."
 date: "2026-10-13"
-updated: "2026-10-13"
+updated: "2026-10-14"
+faq:
+  - q: "Which Priest spec is the easiest?"
+    a: "Holy is the classic, reactive healer and is often recommended as a first healer. Discipline needs more planning, since it heals through attacks via Atonement. Shadow is the damage spec with effects over time."
+  - q: "Which Priest spec is best for leveling?"
+    a: "Shadow is the best choice for leveling, as it deals the most damage and heals itself through Vampiric Touch. Discipline works too, since it heals through attacks. Holy is the slowest solo."
+  - q: "Why does Shadow Priest fit WoW Midnight so well?"
+    a: "In WoW Midnight the Void, led by Xal'atath, reaches for Quel'Thalas and the Sunwell. Shadow Priests wield exactly that Void magic and even carried Xal'atath as their artifact dagger in Legion."
 ---
 
 ## Playstyle
@@ -28,17 +35,23 @@ Discipline heals in an unusual way: [**Power Word: Shield**](https://www.wowhead
 
 **Signature abilities:** [**Penance**](https://www.wowhead.com/spell=47540){target="_blank" rel="noopener"}, [**Power Word: Radiance**](https://www.wowhead.com/spell=194509){target="_blank" rel="noopener"}
 
+[Discipline Priest in detail ›](/en/classes/priest/discipline)
+
 ### Holy
 
 Holy is the classic healer: big heals, area healing and strong emergency buttons when things get tight. The playstyle is reactive and easy to follow. Beginner guides often name Holy Priest a good first healer.
 
 **Signature abilities:** [**Holy Word: Serenity**](https://www.wowhead.com/spell=2050){target="_blank" rel="noopener"}, [**Guardian Spirit**](https://www.wowhead.com/spell=47788){target="_blank" rel="noopener"}, [**Divine Hymn**](https://www.wowhead.com/spell=64843){target="_blank" rel="noopener"}
 
+[Holy Priest in detail ›](/en/classes/priest/holy)
+
 ### Shadow
 
 Shadow is the priest who got too close to the Void. You apply damage over time, build up **Insanity** and then unleash tentacles and dark visions. Grim, atmospheric and moderately demanding.
 
 **Signature abilities:** [**Mind Flay**](https://www.wowhead.com/spell=15407){target="_blank" rel="noopener"}, [**Vampiric Touch**](https://www.wowhead.com/spell=34914){target="_blank" rel="noopener"}, [**Shadow Word: Pain**](https://www.wowhead.com/spell=589){target="_blank" rel="noopener"}
+
+[Shadow Priest in detail ›](/en/classes/priest/shadow)
 
 ## Who is the Priest for?
 

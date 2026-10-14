@@ -4,7 +4,14 @@ description: "Der Magier in WoW Midnight erklärt: Arkan, Feuer und Frost, Porta
 classId: mage
 summary: "Der Magier ist der klassische Fernkampf-Zauberer mit Arkan-, Feuer- und Frostmagie und großem Burst-Schaden. Er spielt nur Schaden, bringt Portale und Essen mit und ist in Stoff eher zerbrechlich."
 date: "2026-10-13"
-updated: "2026-10-13"
+updated: "2026-10-14"
+faq:
+  - q: "Welche Magier-Spezialisierung ist am einfachsten?"
+    a: "Frost gilt als die zugänglichste Magier-Spezialisierung, mit viel Kontrolle und gut lesbaren Effekten. Feuer reagiert stark auf Zufallseffekte, Arkan zählt mit seiner Mana-Verwaltung zu den anspruchsvollsten Specs."
+  - q: "Welche Magier-Spezialisierung eignet sich zum Leveln?"
+    a: "Frost ist solo die sicherste Wahl, weil du Gegner verlangsamst und einfrierst. Feuer tötet schnell und kann sich mit Versengen bewegen. Arkan macht viel Schaden, braucht aber eine gute Mana-Planung."
+  - q: "Wer sind die bekanntesten Magier in WoW?"
+    a: "Jaina Prachtmeer ist die bekannteste Frostmagierin, Khadgar der Erzmagier der Kirin Tor und Kael'thas Sonnenwanderer der letzte Prinz der Hochelfen und ein Meister des Feuers."
 ---
 
 ## Spielweise
@@ -28,17 +35,23 @@ Arkan ist die reine Magie: Du baust **Arkanladungen** auf, jonglierst mit deinem
 
 **Typische Fähigkeiten:** [**Arkanschlag**](https://www.wowhead.com/de/spell=30451){target="_blank" rel="noopener"}, [**Arkane Woge**](https://www.wowhead.com/de/spell=365350){target="_blank" rel="noopener"}, [**Berührung der Magi**](https://www.wowhead.com/de/spell=321507){target="_blank" rel="noopener"}
 
+[Arkanmagier im Detail ›](/klassen/magier/arkan)
+
 ### Feuer
 
 Feuer lebt von kritischen Treffern und Kettenreaktionen. Kleine Zauber erzeugen Procs, die dir einen sofortigen Pyroschlag schenken. Wenn alles zündet, explodiert der Bildschirm in Flammen. Spaßig und schnell, aber du reagierst ständig auf Zufallseffekte.
 
 **Typische Fähigkeiten:** [**Pyroschlag**](https://www.wowhead.com/de/spell=11366){target="_blank" rel="noopener"}, [**Feuerschlag**](https://www.wowhead.com/de/spell=108853){target="_blank" rel="noopener"}, [**Einäschern**](https://www.wowhead.com/de/spell=190319){target="_blank" rel="noopener"}
 
+[Feuermagier im Detail ›](/klassen/magier/feuer)
+
 ### Frost
 
 Frost verlangsamt und friert Gegner ein und zerschmettert sie dann mit Eislanzen. Viel Kontrolle, gut lesbare Procs und ein ruhigeres Tempo. Frost gilt als die zugänglichste Magier-Spezialisierung und ist solo die sicherste Wahl.
 
 **Typische Fähigkeiten:** [**Frostblitz**](https://www.wowhead.com/de/spell=116){target="_blank" rel="noopener"}, [**Eislanze**](https://www.wowhead.com/de/spell=30455){target="_blank" rel="noopener"}, [**Gefrorene Kugel**](https://www.wowhead.com/de/spell=84714){target="_blank" rel="noopener"}, [**Eisige Adern**](https://www.wowhead.com/de/spell=12472){target="_blank" rel="noopener"}
+
+[Frostmagier im Detail ›](/klassen/magier/frost)
 
 ## Für wen ist der Magier geeignet?
 

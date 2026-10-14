@@ -225,23 +225,37 @@
   },
   "classFaq": {
     "rolesQ": "Welche Rollen kann der {class} in {game} spielen?",
-    "rolesA": "Der {class} kann {roles} spielen. Seine {specsLabel}: {specs}.",
+    "rolesA": "Der {class} hat {count} {specsLabel}: {specs}. Damit kann er {roles} spielen.",
+    "rolesRetail": "Die Spezialisierung wechselst du außerhalb des Kampfes jederzeit kostenlos, ein Charakter deckt also alle diese Rollen ab.",
+    "rolesForever": "Welchen Baum du ausbaust, legst du über die Verteilung deiner Talentpunkte fest. Viele spielen beim Leveln einen anderen Baum als später in Dungeons und Raids.",
+    "count": {
+      "2": "zwei",
+      "3": "drei",
+      "4": "vier"
+    },
     "armorQ": "Welche Rüstung trägt der {class}?",
-    "armorA": "Der {class} trägt {armor}.",
+    "armorA": "Der {class} trägt {armor}, {armorNote}. Dieselbe Rüstungsart tragen auch {others}, mit ihnen teilst du dir in Gruppen die Rüstungsbeute.",
+    "armorNote": {
+      "plate": "die schwerste Rüstungsart im Spiel",
+      "mail": "die zweitschwerste Rüstungsart",
+      "leather": "eine mittelschwere Rüstungsart",
+      "cloth": "die leichteste Rüstungsart. Er hält weniger Treffer aus und setzt dafür auf Abstand, Schilde und Kontrolle"
+    },
+    "armorForever": "Wie in Classic lernt er {armor} voraussichtlich erst ab Stufe 40 und trägt davor {lighter}.",
     "beginnerQ": "Ist der {class} gut für Anfänger?",
     "beginnerA": {
-      "easy": "Ja. Der {class} gilt als einsteigerfreundlich: Er ist robust und hat eine gut verständliche Spielweise.",
-      "medium": "Bedingt. Der {class} ist gut lernbar, verlangt aber etwas mehr Übung als die einfachsten Klassen.",
-      "hard": "Eher für Fortgeschrittene. Der {class} hat viele Werkzeuge und belohnt Erfahrung, die Lernkurve ist steiler."
+      "easy": "Ja. Der {class} gilt als einsteigerfreundlich: Er ist robust, verzeiht Fehler und seine Spielweise ist schnell verstanden. Für den ersten Charakter ist er eine sichere Wahl.",
+      "medium": "Bedingt. Die Grundlagen des {class} sitzen schnell, für Dungeons und Raids brauchst du aber etwas mehr Übung als bei den einfachsten Klassen. Wer sich darauf einlässt, bleibt nicht lange Anfänger.",
+      "hard": "Eher für Fortgeschrittene. Der {class} hat viele Werkzeuge und belohnt Erfahrung, die Lernkurve ist steiler. Als erste Klasse geht er trotzdem, wenn dich seine Fantasy reizt: Beim Leveln lernst du die Fähigkeiten nach und nach kennen."
     },
     "soloQ": "Ist der {class} gut für Solo-Spieler?",
     "soloA": {
-      "good": "Ja. Der {class} kommt allein sehr gut zurecht, etwa durch Selbstheilung, Robustheit oder einen Begleiter.",
-      "medium": "Ja, mit etwas Übung. Der {class} kommt solo gut zurecht, braucht aber Aufmerksamkeit bei größeren Gegnergruppen.",
-      "weak": "Eher nicht. Der {class} ist allein langsamer oder verwundbarer und spielt seine Stärken vor allem in der Gruppe aus."
+      "good": "Ja. Der {class} kommt allein sehr gut zurecht, etwa durch Selbstheilung, Robustheit oder einen Begleiter. Questen, Weltinhalte und Leveln gehen zügig und ohne viele Pausen.",
+      "medium": "Ja, mit etwas Übung. Der {class} kommt solo gut zurecht, braucht aber Aufmerksamkeit, wenn mehrere Gegner gleichzeitig angreifen. Mit den richtigen Notfall-Knöpfen ist das gut beherrschbar.",
+      "weak": "Eher nicht. Der {class} ist allein langsamer oder verwundbarer und spielt seine Stärken vor allem in der Gruppe aus. In Dungeons und Raids ist er dafür umso gefragter."
     },
     "racesQ": "Welche Völker können in {game} {class} werden?",
-    "racesA": "In {game} können folgende Völker {class} werden: {races}."
+    "racesA": "In {game} können {count} Völker {class} werden: {races}."
   },
   "about": {
     "title": "Über Find Your Main: Wer dahintersteckt und wie wir bewerten",
@@ -701,5 +715,15 @@
     "button": "Heiltrank spendieren",
     "newTab": "PayPal, öffnet in neuem Tab",
     "note": "Freiwillig über PayPal, ohne Gegenleistung."
+  },
+  "spec": {
+    "facts": "Steckbrief",
+    "range": "Kampfdistanz",
+    "class": "Klasse",
+    "otherSpecs": "Weitere Spezialisierungen: {class}",
+    "toClass": "Alles zum {class}",
+    "toClassHint": "Klassenseite mit Lore, Völkern und Vergleich",
+    "moreAbout": "Mehr zu {spec}",
+    "allSpecs": "Spezialisierungen im Detail"
   }
 }

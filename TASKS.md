@@ -12,7 +12,8 @@ Stand: 13.10.2026 · live auf [findyourmain.com](https://findyourmain.com), Bran
 - [ ] Mit Patch 12.2: Paladin für Nachtelf, Troll und Untote von `upcomingClasses` nach `classes` verschieben (`app/utils/retailRaces.ts`), Ratgeber „Klassen & Völker“ anpassen
 
 ### SEO-Inhalte (nach Suchvolumen)
-- [ ] Spezialisierungs-Seiten (z. B. „Verschlinger Dämonenjäger“), sobald die Klassenseiten ranken
+- [ ] Forever-Talentbaum-Seiten nach dem Start (Bäume werden in Forever überarbeitet), Retail-Vorbild: `/klassen/<klasse>/<spec>`
+- [ ] Spec-Seiten bei größeren Patches prüfen (Fähigkeiten-Namen ändern sich, z. B. „Schattenwort: Wahnsinn“), Linktexte kommen über `scripts/expand-spells.mjs` von Wowhead
 
 ### Reichweite
 - [ ] In Communitys teilen: r/wow, r/wownoob, r/classicwow, Discord, Gilden-Seiten
@@ -57,6 +58,7 @@ Stand: 13.10.2026 · live auf [findyourmain.com](https://findyourmain.com), Bran
 - [x] Klassenseiten mit Lore-Abschnitt und eigenem Abschnitt je Spezialisierung bzw. Talentbaum (Spielgefühl, typische Fähigkeiten), Lore von Benny gegengelesen; Verschlinger-Fähigkeiten über die Wowhead-Suche ergänzt
 - [x] Völker-Klassen-Matrix für Retail (26 Völker, 240 Kombis, Quelle: Warcraft Wiki) auf `/klassen#voelker`, spielbare Völker auf jeder Klassenseite
 - [x] Bewertungsmethodik (Einstieg und Solo) auf der Über-uns-Seite, mit Community-Quellen abgeglichen, aus jeder Bewertungsbox verlinkt
+- [x] 40 Spec-Seiten (Retail, DE + EN) mit Kurzantwort, Steckbrief, Kernmechanik, Fähigkeiten, Lore, Stärken/Schwächen und eigener FAQ, verlinkt von den Klassenseiten; Klassen-FAQ ausgebaut (Retail + Forever)
 - [x] 14 Ratgeber: Klassenwahl, Anfänger, Solo, Tanks, Heiler, PvP (US 880), Klassen & Völker (US 170 / DE 140), Schnell leveln Midnight (DE 210), Schnell leveln Forever (auf Classic-Basis, DE 90), Forever-Tanks (DE 90) und Forever-Heiler (US 50), Klassenfarben (mit Farbkacheln zum Kopieren), Forever-Klassenwahl, Forever-Völker
 
 ### Bilder

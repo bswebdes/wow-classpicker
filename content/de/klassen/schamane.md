@@ -4,7 +4,14 @@ description: "Der Schamane in WoW Midnight erklärt: Elementar, Verstärkung und
 classId: shaman
 summary: "Der Schamane nutzt Totems und Elementarmagie und kann Fernkampf-Schaden (Elementar), Nahkampf-Schaden (Verstärkung) oder Heilung (Wiederherstellung) spielen. Er bringt Kampfrausch und viele Gruppenwerkzeuge mit."
 date: "2026-10-13"
-updated: "2026-10-13"
+updated: "2026-10-14"
+faq:
+  - q: "Welche Schamanen-Spezialisierung ist am einfachsten?"
+    a: "Elementar gilt als die zugänglichste: Flammenschock setzen, Lavaeruption zünden, mit Blitzen Mahlstrom aufbauen. Verstärkung zählt zu den anspruchsvollsten Specs im Spiel, Wiederherstellung ist ein Heiler mit Totems."
+  - q: "Welche Schamanen-Spezialisierung eignet sich zum Leveln?"
+    a: "Elementar und Verstärkung machen solo guten Schaden, beide tragen Kette und können sich heilen. Verstärkung ist im Nahkampf schneller, Elementar sicherer auf Distanz. Wiederherstellung ist solo langsam."
+  - q: "Wer ist der bekannteste Schamane in WoW?"
+    a: "Thrall, der die Horde neu gründete und später mit dem Irdenen Ring Azeroth nach dem Kataklysmus heilen wollte. Bei den Draenei war Nobundo der erste Schamane seines Volkes."
 ---
 
 ## Spielweise
@@ -28,17 +35,23 @@ Elementar wirft Blitze und Lava aus der Distanz. Kettenblitzschlag und Erdbeben 
 
 **Typische Fähigkeiten:** [**Lavaeruption**](https://www.wowhead.com/de/spell=51505){target="_blank" rel="noopener"}, [**Sturmhüter**](https://www.wowhead.com/de/spell=191634){target="_blank" rel="noopener"}
 
+[Elementar-Schamane im Detail ›](/klassen/schamane/elementar)
+
 ### Verstärkung
 
 Verstärkung ist der Sturm im Nahkampf: zwei Waffen, Elementarmagie in jedem Schlag und Geisterwölfe an deiner Seite. Viele Effekte greifen ineinander, deshalb zählt Verstärkung in vielen Listen zu den anspruchsvollsten Specs. Wenn es aber läuft, fühlt sie sich großartig an.
 
 **Typische Fähigkeiten:** [**Lavapeitsche**](https://www.wowhead.com/de/spell=60103){target="_blank" rel="noopener"}, [**Wildgeist**](https://www.wowhead.com/de/spell=51533){target="_blank" rel="noopener"}
 
+[Verstärker-Schamane im Detail ›](/klassen/schamane/verstaerkung)
+
 ### Wiederherstellung
 
 Wiederherstellung heilt mit Wellen, Regen und Totems. Besonders stark ist der Schamane, wenn die Gruppe eng beieinandersteht. Mit einem Totem kannst du sogar die Lebenspunkte der Gruppe angleichen und so Mitspieler retten.
 
 **Typische Fähigkeiten:** [**Springflut**](https://www.wowhead.com/de/spell=61295){target="_blank" rel="noopener"}, [**Totem der Heilungsflut**](https://www.wowhead.com/de/spell=108280){target="_blank" rel="noopener"}, [**Totem der Geistverbindung**](https://www.wowhead.com/de/spell=98008){target="_blank" rel="noopener"}
+
+[Wiederherstellungs-Schamane im Detail ›](/klassen/schamane/wiederherstellung)
 
 ## Für wen ist der Schamane geeignet?
 

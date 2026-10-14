@@ -4,7 +4,14 @@ description: "The Warlock in WoW Midnight explained: Affliction, Demonology and 
 classId: warlock
 summary: "The Warlock is a ranged caster with curses and demon companions. It only deals damage but is very tough for a cloth class and comfortable to play solo."
 date: "2026-10-13"
-updated: "2026-10-13"
+updated: "2026-10-14"
+faq:
+  - q: "Which Warlock spec is the easiest?"
+    a: "Destruction is considered the easiest: build Soul Shards and spend them on Chaos Bolt. Affliction manages many effects over time, Demonology summons a whole demon army."
+  - q: "Is the Warlock good solo?"
+    a: "Yes. Warlocks have a demon to keep enemies busy, lots of self-healing and good survival tools. Affliction and Demonology are considered especially relaxed for questing."
+  - q: "Who is the most famous Warlock in WoW?"
+    a: "Gul'dan, the first orc Warlock, who sold his people to the Burning Legion and founded the Shadow Council. His Hand of Gul'dan is still a Demonology ability today."
 ---
 
 ## Playstyle
@@ -28,17 +35,23 @@ Affliction spreads curses and damage over time across many enemies and lets them
 
 **Signature abilities:** [**Agony**](https://www.wowhead.com/spell=980){target="_blank" rel="noopener"}, [**Unstable Affliction**](https://www.wowhead.com/spell=30108){target="_blank" rel="noopener"}, [**Malefic Rapture**](https://www.wowhead.com/spell=324536){target="_blank" rel="noopener"}
 
+[Affliction Warlock in detail ›](/en/classes/warlock/affliction)
+
 ### Demonology
 
 Demonology is the pet fantasy at its purest. A Felguard fights by your side, imps pour out of the ground, Dreadstalkers charge in, and at the end a Tyrant arrives to empower them all. Lots of chaos on screen, but with a clear rhythm.
 
 **Signature abilities:** [**Hand of Gul'dan**](https://www.wowhead.com/spell=105174){target="_blank" rel="noopener"}, [**Call Dreadstalkers**](https://www.wowhead.com/spell=104316){target="_blank" rel="noopener"}, [**Summon Demonic Tyrant**](https://www.wowhead.com/spell=265187){target="_blank" rel="noopener"}
 
+[Demonology Warlock in detail ›](/en/classes/warlock/demonology)
+
 ### Destruction
 
 Destruction is all about direct, heavy fire spells. You build Soul Shards and spend them on a [**Chaos Bolt**](https://www.wowhead.com/spell=116858){target="_blank" rel="noopener"} that lands huge hits. Add Rain of Fire on groups and an Infernal falling from the sky. Easy to understand and very satisfying.
 
 **Signature abilities:** [**Incinerate**](https://www.wowhead.com/spell=29722){target="_blank" rel="noopener"}, [**Rain of Fire**](https://www.wowhead.com/spell=5740){target="_blank" rel="noopener"}, [**Summon Infernal**](https://www.wowhead.com/spell=1122){target="_blank" rel="noopener"}
+
+[Destruction Warlock in detail ›](/en/classes/warlock/destruction)
 
 ## Who is the Warlock for?
 

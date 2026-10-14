@@ -4,7 +4,14 @@ description: "The Rogue in WoW Midnight explained: Assassination, Outlaw and Sub
 classId: rogue
 summary: "The Rogue is a melee fighter with stealth, poisons and lots of crowd control. It only deals damage, is strong in PvP and rewards experience, but it is more demanding for beginners."
 date: "2026-10-13"
-updated: "2026-10-13"
+updated: "2026-10-14"
+faq:
+  - q: "Which Rogue spec is the easiest?"
+    a: "Assassination is considered the calmest and most plannable, since you work with poisons and bleeds over time. Outlaw reacts to many random procs, Subtlety lives on short, well-timed windows. All three take some practice."
+  - q: "Is the Rogue good solo?"
+    a: "Yes, with some care. Stealth lets you choose your fights and sneak past enemies you do not need to fight. In leather, though, you are more vulnerable than plate wearers, so pull big groups with care."
+  - q: "Who are the most famous Rogues in WoW?"
+    a: "Among the best-known Rogues are Mathias Shaw, spymaster of SI:7, the Blood Elf Valeera Sanguinar and the assassin Garona Halforcen."
 ---
 
 ## Playstyle
@@ -28,17 +35,23 @@ Assassination is the poisoner among rogues. You coat your daggers in poison, app
 
 **Signature abilities:** [**Mutilate**](https://www.wowhead.com/spell=1329){target="_blank" rel="noopener"}, [**Envenom**](https://www.wowhead.com/spell=32645){target="_blank" rel="noopener"}, [**Deathmark**](https://www.wowhead.com/spell=360194){target="_blank" rel="noopener"}
 
+[Assassination Rogue in detail ›](/en/classes/rogue/assassination)
+
 ### Outlaw
 
 Outlaw is the pirate: sabers, pistol shots and a roll of the dice that hands out random buffs. That makes the spec lively and a little chaotic. Many guides list it among the more demanding specs, because you are constantly reacting to new effects.
 
 **Signature abilities:** [**Roll the Bones**](https://www.wowhead.com/spell=315508){target="_blank" rel="noopener"}, [**Between the Eyes**](https://www.wowhead.com/spell=315341){target="_blank" rel="noopener"}, [**Adrenaline Rush**](https://www.wowhead.com/spell=13750){target="_blank" rel="noopener"}
 
+[Outlaw Rogue in detail ›](/en/classes/rogue/outlaw)
+
 ### Subtlety
 
 Subtlety is the ninja. You keep slipping into the shadows and deal huge damage in short windows. When a burst window lines up perfectly, it feels amazing. If you love timing, you will be happy here.
 
 **Signature abilities:** [**Shadow Dance**](https://www.wowhead.com/spell=185313){target="_blank" rel="noopener"}, [**Shadowstrike**](https://www.wowhead.com/spell=185438){target="_blank" rel="noopener"}, [**Shadow Blades**](https://www.wowhead.com/spell=121471){target="_blank" rel="noopener"}
+
+[Subtlety Rogue in detail ›](/en/classes/rogue/subtlety)
 
 ## Who is the Rogue for?
 

@@ -4,7 +4,14 @@ description: "The Monk in WoW Midnight explained: Brewmaster, Mistweaver and Win
 classId: monk
 summary: "The Monk is a highly mobile martial artist in leather that can play all three roles: Brewmaster tanks, Mistweaver heals, Windwalker deals melee damage. Its mechanics suit players with some experience."
 date: "2026-10-13"
-updated: "2026-10-13"
+updated: "2026-10-14"
+faq:
+  - q: "Which Monk spec is the easiest?"
+    a: "None of the three is truly simple. Mistweaver is the most approachable as a healer, Windwalker requires a varied rhythm, and Brewmaster has its own Stagger system. In return the Monk is very mobile."
+  - q: "Which Monk spec is best for leveling?"
+    a: "Windwalker deals the most damage solo and is very fast, Brewmaster survives more and hits whole groups with Keg Smash. Mistweaver is slower solo."
+  - q: "Where do Monks come from in WoW?"
+    a: "Monks come from Pandaria and arrived with Mists of Pandaria. Each spec is dedicated to one of the four August Celestials: Niuzao for the Brewmaster, Yu'lon for the Mistweaver and Xuen for the Windwalker."
 ---
 
 ## Playstyle
@@ -28,17 +35,23 @@ Brewmaster is an unusual tank: instead of fully blocking damage, it spreads dama
 
 **Signature abilities:** [**Keg Smash**](https://www.wowhead.com/spell=121253){target="_blank" rel="noopener"}, [**Purifying Brew**](https://www.wowhead.com/spell=119582){target="_blank" rel="noopener"}
 
+[Brewmaster Monk in detail ›](/en/classes/monk/brewmaster)
+
 ### Mistweaver
 
 Mistweaver heals with mists and can join the fight in melee to heal allies through strikes. You decide whether you heal classically from range or jump into the fray. The serpent Yu'lon guides this path.
 
 **Signature abilities:** [**Renewing Mist**](https://www.wowhead.com/spell=115151){target="_blank" rel="noopener"}, [**Vivify**](https://www.wowhead.com/spell=116670){target="_blank" rel="noopener"}, [**Revival**](https://www.wowhead.com/spell=115310){target="_blank" rel="noopener"}
 
+[Mistweaver Monk in detail ›](/en/classes/monk/mistweaver)
+
 ### Windwalker
 
 Windwalker is the kung fu fighter who chains kicks and punches and hits whole groups with spinning attacks. You should avoid repeating the same ability back to back, which keeps you on your toes. Fast, mobile and a treat for anyone who loves martial arts.
 
 **Signature abilities:** [**Rising Sun Kick**](https://www.wowhead.com/spell=107428){target="_blank" rel="noopener"}, [**Tiger Palm**](https://www.wowhead.com/spell=100780){target="_blank" rel="noopener"}
+
+[Windwalker Monk in detail ›](/en/classes/monk/windwalker)
 
 ## Who is the Monk for?
 

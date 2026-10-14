@@ -4,7 +4,14 @@ description: "Der Paladin in WoW Midnight erklärt: Heilig, Schutz und Vergeltun
 classId: paladin
 summary: "Der Paladin ist ein Plattenträger mit heiligem Licht, der als einzige Klasse neben Druide und Mönch alle drei Rollen spielen kann: Heilig heilt, Schutz tankt, Vergeltung macht Schaden. Viele Notfallfähigkeiten machen ihn sehr einsteigerfreundlich."
 date: "2026-10-13"
-updated: "2026-10-13"
+updated: "2026-10-14"
+faq:
+  - q: "Welche Paladin-Spezialisierung ist am einfachsten?"
+    a: "Vergeltung und Schutz gelten beide als einsteigerfreundlich. Vergeltung folgt einem klaren Kreislauf aus Heiliger Kraft aufbauen und ausgeben, Schutz ist einer der gnädigsten Tanks im Spiel. Heilig ist ein zugänglicher Heiler mit direkten Heilungen."
+  - q: "Welche Paladin-Spezialisierung eignet sich zum Leveln?"
+    a: "Vergeltung tötet Gegner am schnellsten, Schutz hält am meisten aus und kann viele Gegner auf einmal sammeln. Beide heilen sich selbst. Heilig ist solo deutlich langsamer."
+  - q: "Wer sind die bekanntesten Paladine in WoW?"
+    a: "Uther der Lichtbringer war der erste Paladin der Silbernen Hand, Tirion Fordring führte den Aschenbringer gegen den Lichkönig, und Lady Liadrin führt die Blutritter von Quel'Thalas an, dem Schauplatz von WoW Midnight."
 ---
 
 ## Spielweise
@@ -28,17 +35,23 @@ Heilig ist der Heiler, der gern in der ersten Reihe steht. Über die **Flamme de
 
 **Typische Fähigkeiten:** [**Heiliger Schock**](https://www.wowhead.com/de/spell=20473){target="_blank" rel="noopener"}, [**Flamme des Glaubens**](https://www.wowhead.com/de/spell=53563){target="_blank" rel="noopener"}
 
+[Heilig-Paladin im Detail ›](/klassen/paladin/heilig)
+
 ### Schutz
 
 Schutz ist der Ritter in glänzender Rüstung, der einen Schild nach Gegnern wirft und sich und die Gruppe mit Licht heilt. Viele Notfall-Knöpfe machen den Schutzpaladin sehr fehlertolerant. Er gilt in vielen Listen als einer der einfachsten Tanks für den Einstieg.
 
 **Typische Fähigkeiten:** [**Schild des Rächers**](https://www.wowhead.com/de/spell=31935){target="_blank" rel="noopener"}, [**Wächter der Uralten Könige**](https://www.wowhead.com/de/spell=86659){target="_blank" rel="noopener"}
 
+[Schutzpaladin im Detail ›](/klassen/paladin/schutz)
+
 ### Vergeltung
 
 Vergeltung ist das Schwert des Lichts: große Zweihandwaffe, goldene Flügel und Heiliger Schaden, der in Wellen auf Gegner niedergeht. Du baust Heilige Kraft auf und gibst sie in wuchtigen Schlägen wieder aus. Direkt, verständlich und gerade solo sehr angenehm.
 
 **Typische Fähigkeiten:** [**Urteil des Templers**](https://www.wowhead.com/de/spell=85256){target="_blank" rel="noopener"}, [**Aschewelle**](https://www.wowhead.com/de/spell=255937){target="_blank" rel="noopener"}, [**Göttlicher Sturm**](https://www.wowhead.com/de/spell=53385){target="_blank" rel="noopener"}
+
+[Vergelter-Paladin im Detail ›](/klassen/paladin/vergeltung)
 
 ## Für wen ist der Paladin geeignet?
 

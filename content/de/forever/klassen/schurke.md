@@ -4,7 +4,12 @@ description: "Der Schurke in WoW Forever erklärt: Meucheln, Kampf und Täuschun
 classId: rogue
 summary: "Der Schurke ist in WoW Forever ein Nahkämpfer aus dem Schatten mit Tarnung, Giften und starker Kontrolle. Im PvP ist er gefürchtet, im Schlachtzug ein solider Schadensausteiler."
 date: "2026-10-13"
-updated: "2026-10-13"
+updated: "2026-10-14"
+faq:
+  - q: "Welcher Schurken-Talentbaum eignet sich in WoW Forever zum Leveln?"
+    a: "Auf Basis von WoW Classic voraussichtlich Kampf. Er macht solo stetigen Schaden mit Schwertern oder Dolchen. Mit Verstohlenheit wählst du deine Kämpfe selbst und schleichst an unnötigen Gegnern vorbei."
+  - q: "Wofür wird der Schurke in WoW Forever in Gruppen gebraucht?"
+    a: "Für viel Nahkampfschaden und Kontrolle mit Kopfnuss. Dazu kann der Schurke Schlösser knacken, in Classic etwa für Truhen und verschlossene Türen in Dungeons."
 ---
 
 ## Spielweise

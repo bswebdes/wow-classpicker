@@ -4,7 +4,12 @@ description: "Der Paladin in WoW Forever erklärt: Heilig, Schutz und Vergeltung
 classId: paladin
 summary: "Der Paladin ist in WoW Forever ein robuster Heiler und Unterstützer in Plattenrüstung. Neu ist, dass mit den Untoten zum ersten Mal auch die Horde Paladine spielen kann."
 date: "2026-10-13"
-updated: "2026-10-13"
+updated: "2026-10-14"
+faq:
+  - q: "Welcher Paladin-Talentbaum eignet sich in WoW Forever zum Leveln?"
+    a: "Auf Basis von WoW Classic voraussichtlich Vergeltung. Der Paladin levelt robust und mit wenig Pausen, weil er sich selbst heilt, aber sein Schaden ist eher gemächlich. Viele Paladine wechseln später für Gruppen auf Heilig."
+  - q: "Wofür wird der Paladin in WoW Forever in Gruppen gebraucht?"
+    a: "Vor allem als Heiler und für seine Segen, etwa den Segen der Könige, den die ganze Gruppe schätzt. Neu ist, dass mit den Untoten erstmals auch die Horde Paladine spielen kann."
 ---
 
 ## Spielweise

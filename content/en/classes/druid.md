@@ -4,7 +4,14 @@ description: "The Druid in WoW Midnight explained: Balance, Feral, Guardian and 
 classId: druid
 summary: "The Druid is WoW's shapeshifter and the only class with four specs: Balance (ranged), Feral (melee), Guardian (tank) and Restoration (healing). Maximum flexibility, with a learning curve."
 date: "2026-10-13"
-updated: "2026-10-13"
+updated: "2026-10-14"
+faq:
+  - q: "Which Druid spec is the easiest?"
+    a: "Guardian is considered an easy-to-learn tank, Balance a solid entry into ranged play. Feral is one of the most demanding specs in the game, Restoration requires proactive healing."
+  - q: "Which Druid spec is best for leveling?"
+    a: "Guardian is nearly unkillable solo, Feral prowls as a cat and kills quickly, Balance fights safely from range. All three can heal themselves in an emergency."
+  - q: "Who is the most famous Druid in WoW?"
+    a: "Malfurion Stormrage, the first mortal Druid, trained by the demigod Cenarius. He led the Druids through many wars and walked the Emerald Dream for thousands of years."
 ---
 
 ## Playstyle
@@ -28,11 +35,15 @@ Balance fights as a moonkin from range and switches between solar and lunar magi
 
 **Signature abilities:** [**Starsurge**](https://www.wowhead.com/spell=78674){target="_blank" rel="noopener"}, [**Starfall**](https://www.wowhead.com/spell=191034){target="_blank" rel="noopener"}, [**Celestial Alignment**](https://www.wowhead.com/spell=194223){target="_blank" rel="noopener"}
 
+[Balance Druid in detail ›](/en/classes/druid/balance)
+
 ### Feral
 
 Feral prowls as a cat, tears wounds and makes enemies bleed. You manage energy, combo points and several bleeds at once. Many community lists call Feral one of the hardest specs, but fans find it extremely rewarding.
 
 **Signature abilities:** [**Shred**](https://www.wowhead.com/spell=5221){target="_blank" rel="noopener"}, [**Rip**](https://www.wowhead.com/spell=1079){target="_blank" rel="noopener"}, [**Ferocious Bite**](https://www.wowhead.com/spell=22568){target="_blank" rel="noopener"}
+
+[Feral Druid in detail ›](/en/classes/druid/feral)
 
 ### Guardian
 
@@ -40,11 +51,15 @@ Guardian tanks in bear form with lots of armor, huge health and self-healing. Th
 
 **Signature abilities:** [**Mangle**](https://www.wowhead.com/spell=33917){target="_blank" rel="noopener"}, [**Ironfur**](https://www.wowhead.com/spell=192081){target="_blank" rel="noopener"}, [**Frenzied Regeneration**](https://www.wowhead.com/spell=22842){target="_blank" rel="noopener"}
 
+[Guardian Druid in detail ›](/en/classes/druid/guardian)
+
 ### Restoration
 
 Restoration heals mostly with effects over time. You spread Rejuvenations ahead of time and let your healing work before the damage arrives. That takes practice and awareness, but it is fun if you like planning ahead.
 
 **Signature abilities:** [**Rejuvenation**](https://www.wowhead.com/spell=774){target="_blank" rel="noopener"}, [**Lifebloom**](https://www.wowhead.com/spell=33763){target="_blank" rel="noopener"}, [**Wild Growth**](https://www.wowhead.com/spell=48438){target="_blank" rel="noopener"}, [**Tranquility**](https://www.wowhead.com/spell=740){target="_blank" rel="noopener"}
+
+[Restoration Druid in detail ›](/en/classes/druid/restoration)
 
 ## Who is the Druid for?
 

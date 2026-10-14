@@ -4,7 +4,12 @@ description: "The Warlock in WoW Forever explained: Affliction, Demonology and D
 classId: warlock
 summary: "The Warlock is a ranged caster with curses and demon companions in WoW Forever and one of the strongest classes for solo leveling. New: the Troll Warlock."
 date: "2026-10-13"
-updated: "2026-10-13"
+updated: "2026-10-14"
+faq:
+  - q: "Which Warlock talent tree is best for leveling in WoW Forever?"
+    a: "Based on WoW Classic, most likely Affliction or Demonology. Your demon tanks enemies, effects over time do the rest, and with Drain Life you get by with few breaks."
+  - q: "What is the Warlock needed for in WoW Forever groups?"
+    a: "For damage and lots of utility: Healthstones, Soulstones for resurrection and summoning other players. In Classic the Ritual of Summoning was in demand before every dungeon."
 ---
 
 ## Playstyle

@@ -6,6 +6,7 @@ const props = defineProps({
 const route = useRoute()
 const { locale, t } = useI18n()
 const localePath = useLocalePath()
+const NuxtLink = resolveComponent('NuxtLink')
 
 const info = computed(() => getClassBySlug(String(route.params.slug), locale.value, props.mode))
 if (!info.value) {
@@ -38,24 +39,46 @@ const upcomingRaces = computed(() => getRaces(props.mode).filter(r => r.upcoming
 const specsLabel = computed(() => props.mode === 'forever' ? t('forever.talentTrees') : t('common.specs'))
 const gameName = computed(() => props.mode === 'forever' ? 'WoW Forever' : 'WoW Midnight')
 
-// FAQ aus den Klassendaten: immer korrekt und auf jeder Klassenseite gleich aufgebaut
+// FAQ aus den Klassendaten (immer korrekt, auf jeder Klassenseite gleich aufgebaut),
+// ergänzt um redaktionelle Fragen aus dem Frontmatter der Klassenseite
 const faq = computed(() => {
   const c = info.value
+  const forever = props.mode === 'forever'
   const list = (items) => new Intl.ListFormat(locale.value, { type: 'conjunction' }).format(items)
   const roles = list(classRoles(c).map(r => t(`common.roles.${r}`)))
-  const specs = list(c.specs.map(s => s.name[locale.value]))
+  const specs = list(c.specs.map(s => `${s.name[locale.value]} (${t(`common.roles.${s.role}`)}, ${t(`common.range.${s.range}`)})`))
+  const others = list(getClassList(props.mode).filter(o => o.armor === c.armor && o.id !== c.id).map(o => t(`classes.${o.id}.name`)))
+  const armor = t(`common.armor.${c.armor}`)
+  // In Classic tragen Jäger/Schamanen bis Stufe 40 Leder, Krieger/Paladine Kette
+  const lighter = { plate: 'mail', mail: 'leather' }[c.armor]
   const level = c.difficulty <= 2 ? 'easy' : c.difficulty === 3 ? 'medium' : 'hard'
+  const vars = { class: className.value, game: gameName.value }
   const items = [
-    { q: t('classFaq.rolesQ', { class: className.value, game: gameName.value }), a: t('classFaq.rolesA', { class: className.value, roles, specsLabel: specsLabel.value, specs }) },
-    { q: t('classFaq.armorQ', { class: className.value }), a: t('classFaq.armorA', { class: className.value, armor: t(`common.armor.${c.armor}`) }) },
-    { q: t('classFaq.beginnerQ', { class: className.value }), a: t(`classFaq.beginnerA.${level}`, { class: className.value }) },
-    { q: t('classFaq.soloQ', { class: className.value }), a: t(c.solo >= 4 ? 'classFaq.soloA.good' : c.solo === 3 ? 'classFaq.soloA.medium' : 'classFaq.soloA.weak', { class: className.value }) }
+    {
+      q: t('classFaq.rolesQ', vars),
+      a: `${t('classFaq.rolesA', { ...vars, count: t(`classFaq.count.${c.specs.length}`), specsLabel: specsLabel.value, specs, roles })} ${t(forever ? 'classFaq.rolesForever' : 'classFaq.rolesRetail')}`
+    },
+    ...(page.value.faq || []),
+    {
+      q: t('classFaq.armorQ', vars),
+      a: [
+        t('classFaq.armorA', { ...vars, armor, armorNote: t(`classFaq.armorNote.${c.armor}`), others }),
+        forever && lighter ? t('classFaq.armorForever', { armor, lighter: t(`common.armor.${lighter}`) }) : ''
+      ].filter(Boolean).join(' ')
+    },
+    { q: t('classFaq.beginnerQ', vars), a: t(`classFaq.beginnerA.${level}`, vars) },
+    { q: t('classFaq.soloQ', vars), a: t(c.solo >= 4 ? 'classFaq.soloA.good' : c.solo === 3 ? 'classFaq.soloA.medium' : 'classFaq.soloA.weak', vars) }
   ]
   if (races.value.length) {
-    items.push({ q: t('classFaq.racesQ', { class: className.value, game: gameName.value }), a: t('classFaq.racesA', { class: className.value, game: gameName.value, races: list(races.value.map(r => r.name[locale.value])) }) })
+    items.push({ q: t('classFaq.racesQ', vars), a: t('classFaq.racesA', { ...vars, count: races.value.length, races: list(races.value.map(r => r.name[locale.value])) }) })
   }
   return items
 })
+
+// Retail hat eigene Seiten je Spezialisierung
+const specPath = s => props.mode === 'retail'
+  ? localePath({ name: 'klassen-slug-spec', params: { slug: info.value.slug[locale.value], spec: specSlug(s, locale.value) } })
+  : null
 
 usePageSeo({
   title: () => page.value.seo?.title || page.value.title,
@@ -98,9 +121,9 @@ const formatDate = (date) => new Date(date).toLocaleDateString(locale.value === 
 
     <header>
       <PageHero :image="`class-${info.id}`" :alt="$t(`art.heroes.${info.id}`)">
-        <div class="flex items-center gap-4 sm:items-end">
-          <img :src="info.icon" :alt="className" width="96" height="96" class="wow-slot h-16 w-16 shrink-0 !border-gold-border sm:h-20 sm:w-20" />
-          <h1 class="font-display text-3xl font-bold sm:text-4xl" :style="{ color: info.color, textShadow: '0 2px 6px #000, 0 0 2px #000' }">{{ page.title }}</h1>
+        <div class="flex flex-col items-start gap-3 sm:flex-row sm:items-end sm:gap-4">
+          <img :src="info.icon" :alt="className" width="96" height="96" class="wow-slot -mt-12 sm:mt-0 h-16 w-16 shrink-0 !border-gold-border sm:h-20 sm:w-20" />
+          <h1 class="min-w-0 font-display text-[1.6rem] font-bold leading-tight [overflow-wrap:anywhere] sm:text-4xl" :style="{ color: info.color, textShadow: '0 2px 6px #000, 0 0 2px #000' }">{{ page.title }}</h1>
         </div>
       </PageHero>
       <p class="mt-4 max-w-3xl text-neutral-300">{{ page.description }}</p>
@@ -119,9 +142,12 @@ const formatDate = (date) => new Date(date).toLocaleDateString(locale.value === 
       <div class="wow-tooltip">
         <h2 class="mb-3 font-display font-bold text-gold">{{ specsLabel }}</h2>
         <ul class="space-y-2">
-          <li v-for="s in info.specs" :key="s.id" class="flex justify-between gap-3 border-b border-white/10 pb-2 last:border-0">
-            <span class="font-semibold" :style="{ color: info.color }">{{ s.name[locale] }}<span class="sr-only">:</span></span>
-            <span class="text-[14px] text-neutral-400">{{ $t(`common.roles.${s.role}`) }} · {{ $t(`common.range.${s.range}`) }}</span>
+          <li v-for="s in info.specs" :key="s.id" class="flex items-center justify-between gap-3 border-b border-white/10 pb-2 last:border-0">
+            <component :is="specPath(s) ? NuxtLink : 'span'" :to="specPath(s) || undefined" class="flex min-w-0 items-center gap-2 font-semibold" :class="specPath(s) && 'underline decoration-dotted underline-offset-4 hover:brightness-125'" :style="{ color: info.color }">
+              <img v-if="mode === 'retail'" :src="specIcon(info.id, s.id)" alt="" width="24" height="24" class="h-6 w-6 shrink-0 rounded-[3px] border border-black" />
+              <span>{{ s.name[locale] }}</span><span class="sr-only">:</span>
+            </component>
+            <span class="text-right text-[14px] text-neutral-400">{{ $t(`common.roles.${s.role}`) }} · {{ $t(`common.range.${s.range}`) }}</span>
           </li>
         </ul>
       </div>

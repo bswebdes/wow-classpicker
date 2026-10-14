@@ -4,7 +4,14 @@ description: "The Shaman in WoW Midnight explained: Elemental, Enhancement and R
 classId: shaman
 summary: "The Shaman uses totems and elemental magic and can play ranged damage (Elemental), melee damage (Enhancement) or healing (Restoration). It brings Bloodlust and lots of group utility."
 date: "2026-10-13"
-updated: "2026-10-13"
+updated: "2026-10-14"
+faq:
+  - q: "Which Shaman spec is the easiest?"
+    a: "Elemental is considered the most approachable: apply Flame Shock, fire Lava Burst, build Maelstrom with lightning. Enhancement is one of the most demanding specs in the game, Restoration a healer with totems."
+  - q: "Which Shaman spec is best for leveling?"
+    a: "Elemental and Enhancement deal good damage solo, both wear mail and can heal themselves. Enhancement is faster in melee, Elemental safer at range. Restoration is slow solo."
+  - q: "Who is the most famous Shaman in WoW?"
+    a: "Thrall, who refounded the Horde and later tried to heal Azeroth after the Cataclysm with the Earthen Ring. Among the Draenei, Nobundo was the first Shaman of his people."
 ---
 
 ## Playstyle
@@ -28,17 +35,23 @@ Elemental hurls lightning and lava from range. Chain Lightning and Earthquake ma
 
 **Signature abilities:** [**Lava Burst**](https://www.wowhead.com/spell=51505){target="_blank" rel="noopener"}, [**Stormkeeper**](https://www.wowhead.com/spell=191634){target="_blank" rel="noopener"}
 
+[Elemental Shaman in detail ›](/en/classes/shaman/elemental)
+
 ### Enhancement
 
 Enhancement is a storm in melee: two weapons, elemental magic in every strike and spirit wolves at your side. Many effects interlock, which is why many lists rank Enhancement among the most demanding specs. When it flows, though, it feels fantastic.
 
 **Signature abilities:** [**Lava Lash**](https://www.wowhead.com/spell=60103){target="_blank" rel="noopener"}, [**Feral Spirit**](https://www.wowhead.com/spell=51533){target="_blank" rel="noopener"}
 
+[Enhancement Shaman in detail ›](/en/classes/shaman/enhancement)
+
 ### Restoration
 
 Restoration heals with waves, rain and totems. The shaman shines when the group stands close together. One totem can even equalize the group's health and save allies that way.
 
 **Signature abilities:** [**Riptide**](https://www.wowhead.com/spell=61295){target="_blank" rel="noopener"}, [**Healing Tide Totem**](https://www.wowhead.com/spell=108280){target="_blank" rel="noopener"}, [**Spirit Link Totem**](https://www.wowhead.com/spell=98008){target="_blank" rel="noopener"}
+
+[Restoration Shaman in detail ›](/en/classes/shaman/restoration)
 
 ## Who is the Shaman for?
 

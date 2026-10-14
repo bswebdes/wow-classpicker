@@ -161,5 +161,19 @@ export const getClassInfo = (id: string, mode: GameMode = 'retail') =>
 export const getClassBySlug = (slug: string, locale: Locale, mode: GameMode = 'retail') =>
   getClassList(mode).find(c => c.slug[locale] === slug)
 
+// URL-Slug einer Spezialisierung, aus dem Namen abgeleitet ("Tierherrschaft" → "tierherrschaft", "Beast Mastery" → "beast-mastery")
+export const specSlug = (s: SpecInfo, locale: Locale) => s.name[locale].toLowerCase()
+  .replace(/ä/g, 'ae').replace(/ö/g, 'oe').replace(/ü/g, 'ue').replace(/ß/g, 'ss')
+  .replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')
+
+export const specIcon = (classId: string, specId: string) => `/spec-icons/${classId}-${specId}.webp`
+
+// Spezialisierung über die Slugs aus der URL finden (nur Retail hat eigene Spec-Seiten)
+export const getSpecBySlug = (classSlug: string, slug: string, locale: Locale) => {
+  const c = getClassBySlug(classSlug, locale)
+  const s = c?.specs.find(sp => specSlug(sp, locale) === slug)
+  return c && s ? { cls: c, spec: s } : undefined
+}
+
 export const classRoles = (c: ClassInfo): Role[] =>
   (['tank', 'healer', 'dps'] as Role[]).filter(r => c.specs.some(s => s.role === r))

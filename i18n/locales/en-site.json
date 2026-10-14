@@ -225,23 +225,37 @@
   },
   "classFaq": {
     "rolesQ": "Which roles can the {class} play in {game}?",
-    "rolesA": "The {class} can play {roles}. Its {specsLabel}: {specs}.",
+    "rolesA": "The {class} has {count} {specsLabel}: {specs}. That lets it play {roles}.",
+    "rolesRetail": "You can switch specializations for free at any time outside of combat, so one character covers all of these roles.",
+    "rolesForever": "Which tree you build is decided by how you spend your talent points. Many players level with a different tree than the one they use in dungeons and raids.",
+    "count": {
+      "2": "two",
+      "3": "three",
+      "4": "four"
+    },
     "armorQ": "What armor does the {class} wear?",
-    "armorA": "The {class} wears {armor}.",
+    "armorA": "The {class} wears {armor}, {armorNote}. It shares that armor type with the {others}, so you split armor loot with them in groups.",
+    "armorNote": {
+      "plate": "the heaviest armor type in the game",
+      "mail": "the second-heaviest armor type",
+      "leather": "a medium armor type",
+      "cloth": "the lightest armor type. It takes hits less well and relies on distance, shields and crowd control instead"
+    },
+    "armorForever": "As in Classic, it will most likely learn {armor} at level 40 and wear {lighter} before that.",
     "beginnerQ": "Is the {class} good for beginners?",
     "beginnerA": {
-      "easy": "Yes. The {class} is considered beginner friendly: it is sturdy and easy to understand.",
-      "medium": "Somewhat. The {class} is easy to learn but needs a bit more practice than the simplest classes.",
-      "hard": "It is better for experienced players. The {class} has lots of tools and rewards experience, so the learning curve is steeper."
+      "easy": "Yes. The {class} is considered beginner friendly: it is sturdy, forgives mistakes and its playstyle clicks quickly. It is a safe pick for your first character.",
+      "medium": "Somewhat. The basics of the {class} click quickly, but dungeons and raids need a bit more practice than the simplest classes. If you stick with it, you won't stay a beginner for long.",
+      "hard": "It is better for experienced players. The {class} has lots of tools and rewards experience, so the learning curve is steeper. It still works as a first class if its fantasy excites you: while leveling you learn its abilities one at a time."
     },
     "soloQ": "Is the {class} good for solo players?",
     "soloA": {
-      "good": "Yes. The {class} does very well on its own, thanks to self-healing, sturdiness or a companion.",
-      "medium": "Yes, with some practice. The {class} handles solo play well but needs care with bigger groups of enemies.",
-      "weak": "Not really. The {class} is slower or more vulnerable alone and shines mostly in groups."
+      "good": "Yes. The {class} does very well on its own, thanks to self-healing, sturdiness or a companion. Questing, world content and leveling go quickly with little downtime.",
+      "medium": "Yes, with some practice. The {class} handles solo play well but needs care when several enemies attack at once. With the right emergency buttons that is easy to manage.",
+      "weak": "Not really. The {class} is slower or more vulnerable alone and shines mostly in groups. In dungeons and raids it is all the more welcome."
     },
     "racesQ": "Which races can be a {class} in {game}?",
-    "racesA": "In {game}, these races can be a {class}: {races}."
+    "racesA": "In {game}, {count} races can be a {class}: {races}."
   },
   "about": {
     "title": "About Find Your Main: Who We Are and How We Rate Classes",
@@ -701,5 +715,15 @@
     "button": "Buy a healing potion",
     "newTab": "PayPal, opens in a new tab",
     "note": "Voluntary via PayPal, nothing in return."
+  },
+  "spec": {
+    "facts": "At a glance",
+    "range": "Range",
+    "class": "Class",
+    "otherSpecs": "Other {class} specializations",
+    "toClass": "All about the {class}",
+    "toClassHint": "Class page with lore, races and comparison",
+    "moreAbout": "More on {spec}",
+    "allSpecs": "Specializations in detail"
   }
 }

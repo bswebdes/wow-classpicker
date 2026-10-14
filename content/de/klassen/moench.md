@@ -4,7 +4,14 @@ description: "Der Mönch in WoW Midnight erklärt: Braumeister, Nebelwirker und 
 classId: monk
 summary: "Der Mönch ist ein extrem mobiler Kampfkünstler in Leder, der alle drei Rollen spielen kann: Braumeister tankt, Nebelwirker heilt, Windläufer macht Nahkampf-Schaden. Seine Mechaniken sind eher etwas für Spieler mit Erfahrung."
 date: "2026-10-13"
-updated: "2026-10-13"
+updated: "2026-10-14"
+faq:
+  - q: "Welche Mönch-Spezialisierung ist am einfachsten?"
+    a: "Keine der drei ist ganz einfach. Nebelwirker ist als Heiler am zugänglichsten, Windläufer verlangt einen abwechslungsreichen Rhythmus, und Braumeister hat mit Staffeln ein eigenes System. Dafür ist der Mönch sehr beweglich."
+  - q: "Welche Mönch-Spezialisierung eignet sich zum Leveln?"
+    a: "Windläufer macht solo den meisten Schaden und ist sehr schnell, Braumeister hält mehr aus und trifft mit Fasshieb ganze Gruppen. Nebelwirker ist solo langsamer."
+  - q: "Woher kommen die Mönche in WoW?"
+    a: "Mönche stammen aus Pandaria und kamen mit Mists of Pandaria ins Spiel. Jede Spezialisierung ist einem der vier Himmlischen Erhabenen gewidmet: Niuzao dem Braumeister, Yu'lon dem Nebelwirker und Xuen dem Windläufer."
 ---
 
 ## Spielweise
@@ -28,17 +35,23 @@ Braumeister ist ein ungewöhnlicher Tank: Statt Schaden komplett zu blocken, ver
 
 **Typische Fähigkeiten:** [**Fasshieb**](https://www.wowhead.com/de/spell=121253){target="_blank" rel="noopener"}, [**Reinigendes Gebräu**](https://www.wowhead.com/de/spell=119582){target="_blank" rel="noopener"}
 
+[Braumeister-Mönch im Detail ›](/klassen/moench/braumeister)
+
 ### Nebelwirker
 
 Nebelwirker heilt mit Nebeln und kann dabei im Nahkampf mitkämpfen, um über Schläge Verbündete zu heilen. Du entscheidest, ob du lieber klassisch aus der Distanz heilst oder mitten ins Getümmel springst. Die Schlange Yu'lon begleitet diesen Weg.
 
 **Typische Fähigkeiten:** [**Erneuernder Nebel**](https://www.wowhead.com/de/spell=115151){target="_blank" rel="noopener"}, [**Beleben**](https://www.wowhead.com/de/spell=116670){target="_blank" rel="noopener"}, [**Belebung**](https://www.wowhead.com/de/spell=115310){target="_blank" rel="noopener"}
 
+[Nebelwirker-Mönch im Detail ›](/klassen/moench/nebelwirker)
+
 ### Windläufer
 
 Windläufer ist der Kung-Fu-Kämpfer, der Kombinationen aus Tritten und Schlägen aneinanderreiht und mit Wirbelattacken ganze Gruppen trifft. Du solltest Fähigkeiten nicht direkt hintereinander wiederholen, das hält dich auf Trab. Schnell, mobil und ein Fest für alle, die Kampfkunst lieben.
 
 **Typische Fähigkeiten:** [**Tritt der aufgehenden Sonne**](https://www.wowhead.com/de/spell=107428){target="_blank" rel="noopener"}, [**Tigerklaue**](https://www.wowhead.com/de/spell=100780){target="_blank" rel="noopener"}
+
+[Windläufer-Mönch im Detail ›](/klassen/moench/windlaeufer)
 
 ## Für wen ist der Mönch geeignet?
 

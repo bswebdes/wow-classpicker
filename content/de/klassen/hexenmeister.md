@@ -4,7 +4,14 @@ description: "Der Hexenmeister in WoW Midnight erklärt: Gebrechen, Dämonologie
 classId: warlock
 summary: "Der Hexenmeister ist ein Fernkampf-Zauberer mit Flüchen und Dämonen als Begleitern. Er spielt nur Schaden, ist für eine Stoffklasse aber sehr zäh und solo angenehm zu spielen."
 date: "2026-10-13"
-updated: "2026-10-13"
+updated: "2026-10-14"
+faq:
+  - q: "Welche Hexenmeister-Spezialisierung ist am einfachsten?"
+    a: "Zerstörung gilt als die einfachste: Seelensplitter aufbauen und für einen Chaosblitz ausgeben. Gebrechen verwaltet viele Effekte über Zeit, Dämonologie beschwört eine ganze Dämonenarmee."
+  - q: "Ist der Hexenmeister gut solo?"
+    a: "Ja. Hexenmeister haben einen Dämon, der Gegner beschäftigt, viel Selbstheilung und gute Überlebenswerkzeuge. Gebrechen und Dämonologie gelten als besonders entspannt beim Questen."
+  - q: "Wer ist der bekannteste Hexenmeister in WoW?"
+    a: "Gul'dan, der erste Hexenmeister der Orcs, der sein Volk an die Brennende Legion verkaufte und den Schattenrat gründete. Seine Hand von Gul'dan ist bis heute eine Fähigkeit der Dämonologie."
 ---
 
 ## Spielweise
@@ -28,17 +35,23 @@ Gebrechen verteilt Flüche und Schaden über Zeit auf viele Gegner und lässt si
 
 **Typische Fähigkeiten:** [**Agonie**](https://www.wowhead.com/de/spell=980){target="_blank" rel="noopener"}, [**Instabiles Gebrechen**](https://www.wowhead.com/de/spell=30108){target="_blank" rel="noopener"}, [**Unheilvolle Euphorie**](https://www.wowhead.com/de/spell=324536){target="_blank" rel="noopener"}
 
+[Gebrechen-Hexenmeister im Detail ›](/klassen/hexenmeister/gebrechen)
+
 ### Dämonologie
 
 Dämonologie ist die Pet-Fantasy pur. Eine Teufelswache kämpft an deiner Seite, Wichtel strömen aus dem Boden, Schreckenspirscher stürmen los, und am Ende kommt ein Tyrann, der sie alle stärkt. Viel Chaos auf dem Bildschirm, aber mit klarem Rhythmus.
 
 **Typische Fähigkeiten:** [**Hand von Gul'dan**](https://www.wowhead.com/de/spell=105174){target="_blank" rel="noopener"}, [**Schreckenspirscher rufen**](https://www.wowhead.com/de/spell=104316){target="_blank" rel="noopener"}, [**Dämonischen Tyrannen beschwören**](https://www.wowhead.com/de/spell=265187){target="_blank" rel="noopener"}
 
+[Dämonologie-Hexenmeister im Detail ›](/klassen/hexenmeister/daemonologie)
+
 ### Zerstörung
 
 Zerstörung setzt auf direkte, wuchtige Feuerzauber. Du baust Seelensplitter auf und gibst sie für einen [**Chaosblitz**](https://www.wowhead.com/de/spell=116858){target="_blank" rel="noopener"} aus, der riesige Treffer erzielt. Dazu Feuerregen auf Gruppen und eine Höllenbestie, die vom Himmel fällt. Einfach zu verstehen und sehr befriedigend.
 
 **Typische Fähigkeiten:** [**Verbrennen**](https://www.wowhead.com/de/spell=29722){target="_blank" rel="noopener"}, [**Feuerregen**](https://www.wowhead.com/de/spell=5740){target="_blank" rel="noopener"}, [**Höllenbestie beschwören**](https://www.wowhead.com/de/spell=1122){target="_blank" rel="noopener"}
+
+[Zerstörungs-Hexenmeister im Detail ›](/klassen/hexenmeister/zerstoerung)
 
 ## Für wen ist der Hexenmeister geeignet?
 

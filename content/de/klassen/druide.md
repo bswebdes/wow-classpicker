@@ -4,7 +4,14 @@ description: "Der Druide in WoW Midnight erklärt: Gleichgewicht, Wildheit, Wäc
 classId: druid
 summary: "Der Druide ist der Gestaltwandler von WoW und die einzige Klasse mit vier Spezialisierungen: Gleichgewicht (Fernkampf), Wildheit (Nahkampf), Wächter (Tank) und Wiederherstellung (Heilung). Maximal flexibel, aber mit Lernkurve."
 date: "2026-10-13"
-updated: "2026-10-13"
+updated: "2026-10-14"
+faq:
+  - q: "Welche Druiden-Spezialisierung ist am einfachsten?"
+    a: "Wächter gilt als gut lernbarer Tank, Gleichgewicht als solider Einstieg in den Fernkampf. Wildheit zählt zu den anspruchsvollsten Specs im Spiel, Wiederherstellung verlangt vorausschauendes Heilen."
+  - q: "Welche Druiden-Spezialisierung eignet sich zum Leveln?"
+    a: "Wächter ist solo kaum totzukriegen, Wildheit schleicht als Katze und tötet schnell, Gleichgewicht kämpft sicher aus der Distanz. Alle drei können sich im Notfall heilen."
+  - q: "Wer ist der bekannteste Druide in WoW?"
+    a: "Malfurion Sturmgrimm, der erste sterbliche Druide, ausgebildet vom Halbgott Cenarius. Er führte die Druiden in vielen Kriegen und wandelte jahrtausendelang durch den Smaragdgrünen Traum."
 ---
 
 ## Spielweise
@@ -28,11 +35,15 @@ Gleichgewicht kämpft als Mondkin aus der Distanz und wechselt zwischen Sonnen- 
 
 **Typische Fähigkeiten:** [**Sternensog**](https://www.wowhead.com/de/spell=78674){target="_blank" rel="noopener"}, [**Sternenregen**](https://www.wowhead.com/de/spell=191034){target="_blank" rel="noopener"}, [**Himmlische Ausrichtung**](https://www.wowhead.com/de/spell=194223){target="_blank" rel="noopener"}
 
+[Gleichgewichts-Druide im Detail ›](/klassen/druide/gleichgewicht)
+
 ### Wildheit
 
 Wildheit schleicht als Katze, reißt Wunden und lässt Gegner bluten. Du verwaltest Energie, Combopunkte und mehrere Blutungen gleichzeitig. Viele Community-Listen nennen Wildheit eine der schwierigsten Specs, dafür ist sie für Fans extrem befriedigend.
 
 **Typische Fähigkeiten:** [**Schreddern**](https://www.wowhead.com/de/spell=5221){target="_blank" rel="noopener"}, [**Zerfetzen**](https://www.wowhead.com/de/spell=1079){target="_blank" rel="noopener"}, [**Wilder Biss**](https://www.wowhead.com/de/spell=22568){target="_blank" rel="noopener"}
+
+[Wildheits-Druide im Detail ›](/klassen/druide/wildheit)
 
 ### Wächter
 
@@ -40,11 +51,15 @@ Wächter tankt in Bärengestalt mit viel Rüstung, großen Lebenspunkten und Sel
 
 **Typische Fähigkeiten:** [**Zerfleischen**](https://www.wowhead.com/de/spell=33917){target="_blank" rel="noopener"}, [**Eisenfell**](https://www.wowhead.com/de/spell=192081){target="_blank" rel="noopener"}, [**Rasende Regeneration**](https://www.wowhead.com/de/spell=22842){target="_blank" rel="noopener"}
 
+[Wächter-Druide im Detail ›](/klassen/druide/waechter)
+
 ### Wiederherstellung
 
 Wiederherstellung heilt vor allem mit Effekten über Zeit. Du verteilst Verjüngungen vorausschauend und lässt deine Heilung arbeiten, bevor der Schaden kommt. Das braucht Übung und Übersicht, macht aber Spaß, wenn du gern vorausplanst.
 
 **Typische Fähigkeiten:** [**Verjüngung**](https://www.wowhead.com/de/spell=774){target="_blank" rel="noopener"}, [**Blühendes Leben**](https://www.wowhead.com/de/spell=33763){target="_blank" rel="noopener"}, [**Wildwuchs**](https://www.wowhead.com/de/spell=48438){target="_blank" rel="noopener"}, [**Gelassenheit**](https://www.wowhead.com/de/spell=740){target="_blank" rel="noopener"}
+
+[Wiederherstellungs-Druide im Detail ›](/klassen/druide/wiederherstellung)
 
 ## Für wen ist der Druide geeignet?
 

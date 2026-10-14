@@ -4,7 +4,12 @@ description: "The Rogue in WoW Forever explained: Assassination, Combat and Subt
 classId: rogue
 summary: "The Rogue is a melee fighter from the shadows in WoW Forever, with stealth, poisons and strong crowd control. Feared in PvP and a solid damage dealer in raids."
 date: "2026-10-13"
-updated: "2026-10-13"
+updated: "2026-10-14"
+faq:
+  - q: "Which Rogue talent tree is best for leveling in WoW Forever?"
+    a: "Based on WoW Classic, most likely Combat. It deals steady damage solo with swords or daggers. Stealth lets you choose your fights and sneak past enemies you do not need to fight."
+  - q: "What is the Rogue needed for in WoW Forever groups?"
+    a: "For lots of melee damage and crowd control with Sap. The Rogue can also pick locks, which in Classic opened chests and locked doors in dungeons."
 ---
 
 ## Playstyle

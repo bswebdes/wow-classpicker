@@ -4,7 +4,12 @@ description: "The Druid in WoW Forever explained: Balance, Feral Combat and Rest
 classId: druid
 summary: "The Druid is WoW Forever's shapeshifter and, besides the Paladin, the only Classic class that can play all three roles: tank as a bear, deal damage as a cat or heal. New: the Skyborne can be Druids too."
 date: "2026-10-13"
-updated: "2026-10-13"
+updated: "2026-10-14"
+faq:
+  - q: "Which Druid talent tree is best for leveling in WoW Forever?"
+    a: "Based on WoW Classic, most likely Feral Combat. In Cat Form you sneak up on enemies, in Bear Form you take a lot of punishment, and Travel Form gets you around quickly."
+  - q: "What is the Druid needed for in WoW Forever groups?"
+    a: "Mainly as a healer and for its Mark of the Wild, which strengthens the whole group. It can also revive a teammate in combat with Rebirth and tank as a bear."
 ---
 
 ## Playstyle

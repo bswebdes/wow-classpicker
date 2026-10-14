@@ -4,7 +4,12 @@ description: "The Paladin in WoW Forever explained: Holy, Protection and Retribu
 classId: paladin
 summary: "The Paladin is a sturdy healer and support in plate in WoW Forever. New: with the Undead, the Horde can play Paladins for the first time."
 date: "2026-10-13"
-updated: "2026-10-13"
+updated: "2026-10-14"
+faq:
+  - q: "Which Paladin talent tree is best for leveling in WoW Forever?"
+    a: "Based on WoW Classic, most likely Retribution. The Paladin levels sturdily with little downtime because it heals itself, but its damage is rather slow. Many Paladins switch to Holy for groups later."
+  - q: "What is the Paladin needed for in WoW Forever groups?"
+    a: "Mainly as a healer and for its blessings, such as Blessing of Kings, which the whole group values. What is new is that, with the Undead, the Horde can play Paladins for the first time."
 ---
 
 ## Playstyle

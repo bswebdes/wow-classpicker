@@ -4,7 +4,14 @@ description: "Der Rufer (Evoker) in WoW Midnight erklärt: Verheerung, Bewahrung
 classId: evoker
 summary: "Der Rufer (Evoker) ist ein Drachenmagier in Kettenrüstung, der auf rund 25 Meter kämpft und Zauber auflädt. Er spielt Schaden (Verheerung), Heilung (Bewahrung) oder Support (Verstärkung), aber keinen Tank."
 date: "2026-10-13"
-updated: "2026-10-13"
+updated: "2026-10-14"
+faq:
+  - q: "Welche Rufer-Spezialisierung ist am einfachsten?"
+    a: "Verheerung gilt als die zugänglichste und wird oft als einsteigerfreundlicher Fernkämpfer genannt. Bewahrung ist ein kreativer Heiler, Verstärkung eine anspruchsvolle Support-Spezialisierung für Gruppen."
+  - q: "Kann der Rufer tanken?"
+    a: "Nein. Der Rufer hat keine Tank-Spezialisierung, er spielt Schaden mit Verheerung, Heilung mit Bewahrung und Support mit Verstärkung. Wer tanken will, braucht eine andere Klasse."
+  - q: "Was ist besonders an der Spielweise des Rufers?"
+    a: "Rufer nutzen ermächtigte Zauber, die du gedrückt hältst und in mehreren Stufen auflädst. Dazu kommt eine kurze Reichweite von 25 Metern und mit Schweben die Möglichkeit, im Laufen zu zaubern."
 ---
 
 ## Spielweise
@@ -28,17 +35,23 @@ Verheerung ist der Schadens-Rufer mit roter und blauer Drachenmagie: Feueratem, 
 
 **Typische Fähigkeiten:** [**Ewigkeitswoge**](https://www.wowhead.com/de/spell=359073){target="_blank" rel="noopener"}, [**Drachenwut**](https://www.wowhead.com/de/spell=375087){target="_blank" rel="noopener"}
 
+[Verheerungs-Rufer im Detail ›](/klassen/rufer/verheerung)
+
 ### Bewahrung
 
 Bewahrung heilt mit grüner Traum- und bronzener Zeitmagie. Mit ermächtigten Heilungen und Echos verdoppelst du Zauber, und mit Zeitzaubern kannst du Schaden sogar rückgängig machen. Ein kreativer Heiler für alle, die gern experimentieren.
 
 **Typische Fähigkeiten:** [**Traumatem**](https://www.wowhead.com/de/spell=355936){target="_blank" rel="noopener"}, [**Echo**](https://www.wowhead.com/de/spell=364343){target="_blank" rel="noopener"}
 
+[Bewahrungs-Rufer im Detail ›](/klassen/rufer/bewahrung)
+
 ### Verstärkung
 
 Verstärkung ist eine Besonderheit: eine Schadens-Spezialisierung mit schwarzer und bronzener Magie, die vor allem andere Spieler stärker macht. Ihr Beitrag taucht im Damage-Meter oft gar nicht richtig auf. Perfekt, wenn du gern im Hintergrund die Fäden ziehst, in Gruppen aber anspruchsvoll.
 
 **Typische Fähigkeiten:** [**Schwarzmacht**](https://www.wowhead.com/de/spell=395152){target="_blank" rel="noopener"}, [**Voraussicht**](https://www.wowhead.com/de/spell=409311){target="_blank" rel="noopener"}, [**Atem der Äonen**](https://www.wowhead.com/de/spell=403631){target="_blank" rel="noopener"}
+
+[Verstärkungs-Rufer im Detail ›](/klassen/rufer/verstaerkung)
 
 ## Für wen ist der Rufer geeignet?
 

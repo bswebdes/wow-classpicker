@@ -4,7 +4,12 @@ description: "Der Druide in WoW Forever erklärt: Gleichgewicht, Wilder Kampf un
 classId: druid
 summary: "Der Druide ist in WoW Forever der Gestaltwandler, der als einzige Classic-Klasse neben dem Paladin alle drei Rollen beherrscht: als Bär tanken, als Katze Schaden machen oder heilen. Neu: Auch die Skyborne können Druiden werden."
 date: "2026-10-13"
-updated: "2026-10-13"
+updated: "2026-10-14"
+faq:
+  - q: "Welcher Druiden-Talentbaum eignet sich in WoW Forever zum Leveln?"
+    a: "Auf Basis von WoW Classic voraussichtlich Wilder Kampf. In Katzengestalt schleichst du dich an, in Bärengestalt hältst du viel aus, und mit Reisegestalt bist du schnell unterwegs."
+  - q: "Wofür wird der Druide in WoW Forever in Gruppen gebraucht?"
+    a: "Vor allem als Heiler und für sein Mal der Wildnis, das die ganze Gruppe stärkt. Dazu kann er im Kampf mit Wiedergeburt einen Mitspieler wiederbeleben und als Bär auch tanken."
 ---
 
 ## Spielweise

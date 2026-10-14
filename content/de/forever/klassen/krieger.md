@@ -4,7 +4,12 @@ description: "Der Krieger in WoW Forever erklärt: Waffen, Furor und Schutz, Hal
 classId: warrior
 summary: "Der Krieger ist in WoW Forever der klassische Plattentank und im Schlachtzug ein starker Nahkämpfer. Beim Leveln ist er allerdings langsam und stark von Ausrüstung abhängig, deshalb eher etwas für geduldige Spieler."
 date: "2026-10-13"
-updated: "2026-10-13"
+updated: "2026-10-14"
+faq:
+  - q: "Welcher Krieger-Talentbaum eignet sich in WoW Forever zum Leveln?"
+    a: "Auf Basis von WoW Classic voraussichtlich Waffen: Mit einer großen Zweihandwaffe und Talenten wie Tödlicher Stoß machst du solo den besten Schaden. Der Krieger levelt aber auch dann eher langsam und braucht viele Pausen zum Essen, weil er sich nicht selbst heilt."
+  - q: "Wofür wird der Krieger in WoW Forever in Gruppen gebraucht?"
+    a: "Vor allem als Tank. In Classic war der Schutzkrieger der Standard-Tank für Dungeons und Raids, und das dürfte auch in WoW Forever so bleiben. Gute Krieger-Tanks sind entsprechend gefragt."
 ---
 
 ## Spielweise

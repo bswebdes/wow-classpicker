@@ -4,7 +4,12 @@ description: "The Shaman in WoW Forever explained: Elemental, Enhancement and Re
 classId: shaman
 summary: "The Shaman is a versatile totem hybrid in WoW Forever that can heal or deal ranged or melee damage. New: with the Dwarf, the Alliance gets Shamans for the first time."
 date: "2026-10-13"
-updated: "2026-10-13"
+updated: "2026-10-14"
+faq:
+  - q: "Which Shaman talent tree is best for leveling in WoW Forever?"
+    a: "Based on WoW Classic, most likely Enhancement. With a two-hander, weapon imbues and shocks the Shaman levels sturdily and can heal itself between fights."
+  - q: "What is the Shaman needed for in WoW Forever groups?"
+    a: "Mainly as a healer with Chain Heal and for its totems, which strengthen the whole group. New in WoW Forever: Dwarves can become Shamans, while in Classic the Shaman was limited to the Horde."
 ---
 
 ## Playstyle

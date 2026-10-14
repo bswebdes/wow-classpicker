@@ -4,7 +4,12 @@ description: "The Warrior in WoW Forever explained: Arms, Fury and Protection, s
 classId: warrior
 summary: "The Warrior is WoW Forever's classic plate tank and a strong melee fighter in raids. Leveling is slow and gear dependent, though, so it suits patient players."
 date: "2026-10-13"
-updated: "2026-10-13"
+updated: "2026-10-14"
+faq:
+  - q: "Which Warrior talent tree is best for leveling in WoW Forever?"
+    a: "Based on WoW Classic, most likely Arms: with a big two-hander and talents like Mortal Strike you deal the best solo damage. The Warrior still levels rather slowly and needs lots of breaks to eat, since it cannot heal itself."
+  - q: "What is the Warrior needed for in WoW Forever groups?"
+    a: "Mainly as a tank. In Classic the Protection Warrior was the standard tank for dungeons and raids, and that is likely to stay true in WoW Forever. Good Warrior tanks are in demand accordingly."
 ---
 
 ## Playstyle

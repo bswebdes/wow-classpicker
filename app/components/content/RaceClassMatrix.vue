@@ -13,7 +13,8 @@ const hasUpcoming = computed(() => races.value.some(r => r.upcomingClasses?.leng
 
 <template>
   <div class="not-prose wow-frame !p-0">
-    <div class="wow-scroll overflow-x-auto" tabindex="0" role="region" :aria-label="$t(`races.matrixTitle.${mode}`)">
+    <!-- relative: sonst ragen die absolut positionierten sr-only-Texte aus dem Scrollbereich und verbreitern die Seite -->
+    <div class="wow-scroll relative overflow-x-auto" tabindex="0" role="region" :aria-label="$t(`races.matrixTitle.${mode}`)">
       <table class="w-full text-center text-[14px]">
         <thead class="border-b border-gold-border/60">
           <tr>
