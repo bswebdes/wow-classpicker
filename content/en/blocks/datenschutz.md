@@ -2,9 +2,9 @@
 title: "Privacy policy"
 ---
 
-As of 13 October 2026. This is a courtesy translation; the German version is legally binding.
+As of 17 October 2026. This is a courtesy translation; the German version is legally binding.
 
-Protecting your personal data matters to me. Find Your Main is a private, non-commercial fan project. Here you can find out which data is processed when you visit this website, for what purpose and on what legal basis, and what rights you have. I keep data processing deliberately lean: analytics only runs with your consent, and fonts are not loaded from Google.
+Protecting your personal data matters to me. Find Your Main is a private, non-commercial fan project. Here you can find out which data is processed when you visit this website, for what purpose and on what legal basis, and what rights you have. I keep data processing deliberately lean: Google Analytics only runs with your consent, the cookie-free statistics tool Umami runs on my own server in the EU, and fonts are not loaded from Google.
 
 ## Controller
 
@@ -75,6 +75,20 @@ Google Analytics 4 does not store full IP addresses: the IP address is only used
 The data is processed on Google servers, including in the USA. Google LLC is certified under the EU-US Data Privacy Framework (adequacy decision, Art. 45 GDPR). Google's data processing terms for Google advertising products apply. The data is deleted automatically after the retention period set in Google Analytics, at most 14 months.
 
 The legal basis is your consent under Art. 6(1)(a) GDPR and § 25(1) TDDDG, which you can withdraw at any time via the cookie settings. I also use Google Consent Mode, so Google services automatically follow your choice. More: [policies.google.com/privacy](https://policies.google.com/privacy).
+
+## Cookie-free statistics (Umami)
+
+To understand which pages are read and how visitors find the website, I also use Umami, a privacy-friendly analytics tool. I run Umami myself on my server at Contabo GmbH, Munich, in a data centre in France (EU), at analyse.frysch.studio. The data is not passed on to third parties and not transferred to the USA.
+
+Umami records:
+
+- pages visited, page titles and where the visit came from (e.g. a search engine or a linking website)
+- technical details such as device type, browser, operating system, screen size and language
+- approximate location (country, region, city), derived from the IP address
+
+Umami does not set cookies and stores nothing in your browser. Your IP address is not stored: it is only used briefly to determine the location and – together with browser details and a random value that changes every month – to create an anonymous visit ID. This means I can neither identify you as a person nor recognise your visit in the following month. I only see aggregated numbers.
+
+The legal basis is my legitimate interest in privacy-friendly audience measurement to improve the website (Art. 6(1)(f) GDPR). If you have enabled "Do Not Track" in your browser, Umami does not count your visit. You can also object to the statistics at any time, for example by email. I delete the statistics data after 14 months at the latest.
 
 ## Wowhead tooltips
 

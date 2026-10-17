@@ -2,9 +2,9 @@
 title: "Datenschutzerklärung"
 ---
 
-Stand: 13. Oktober 2026
+Stand: 17. Oktober 2026
 
-Der Schutz deiner persönlichen Daten ist mir wichtig. Find Your Main ist ein privates, nicht kommerzielles Fanprojekt. Hier erfährst du, welche Daten beim Besuch dieser Website verarbeitet werden, wofür und auf welcher Rechtsgrundlage, und welche Rechte du hast. Ich halte die Datenverarbeitung bewusst schlank: Analyse-Dienste laufen nur mit deiner Einwilligung, und Schriften werden nicht von Google geladen.
+Der Schutz deiner persönlichen Daten ist mir wichtig. Find Your Main ist ein privates, nicht kommerzielles Fanprojekt. Hier erfährst du, welche Daten beim Besuch dieser Website verarbeitet werden, wofür und auf welcher Rechtsgrundlage, und welche Rechte du hast. Ich halte die Datenverarbeitung bewusst schlank: Google Analytics läuft nur mit deiner Einwilligung, die cookiefreie Statistik Umami läuft auf meinem eigenen Server in der EU, und Schriften werden nicht von Google geladen.
 
 ## Verantwortlicher
 
@@ -75,6 +75,20 @@ Google Analytics 4 speichert keine vollständigen IP-Adressen: Die IP-Adresse wi
 Die Daten werden auf Servern von Google verarbeitet, auch in den USA. Google LLC ist unter dem EU-US Data Privacy Framework zertifiziert (Angemessenheitsbeschluss, Art. 45 DSGVO). Es gelten die Bedingungen zur Auftragsverarbeitung für Google-Werbeprodukte. Die Daten werden nach Ablauf der in Google Analytics eingestellten Aufbewahrungsdauer, höchstens 14 Monate, automatisch gelöscht.
 
 Rechtsgrundlage ist deine Einwilligung nach Art. 6 Abs. 1 lit. a DSGVO und § 25 Abs. 1 TDDDG, die du jederzeit über die Cookie-Einstellungen widerrufen kannst. Zusätzlich nutze ich den Google Consent Mode: Google-Dienste richten sich damit automatisch nach deiner Auswahl. Mehr dazu: [policies.google.com/privacy](https://policies.google.com/privacy).
+
+## Statistik ohne Cookies (Umami)
+
+Damit ich weiß, welche Seiten gelesen werden und wie Besucher auf die Website finden, nutze ich zusätzlich Umami, eine datensparsame Statistik-Software. Ich betreibe Umami selbst auf meinem Server bei der Contabo GmbH, München, in einem Rechenzentrum in Frankreich (EU) unter analyse.frysch.studio. Die Daten gehen an keinen Dritten und nicht in die USA.
+
+Erfasst werden:
+
+- aufgerufene Seiten, Seitentitel und die Herkunft des Besuchs (z. B. Suchmaschine oder verlinkende Website)
+- technische Angaben wie Gerätetyp, Browser, Betriebssystem, Bildschirmgröße und Sprache
+- ungefährer Standort (Land, Region, Stadt), abgeleitet aus der IP-Adresse
+
+Umami setzt keine Cookies und speichert nichts in deinem Browser. Deine IP-Adresse wird nicht gespeichert: Sie dient nur kurz zur Standortbestimmung und – zusammen mit Browserangaben und einem Zufallswert, der jeden Monat wechselt – zur Bildung einer anonymen Besuchs-Kennung. Dadurch erkenne ich weder dich als Person noch deinen Besuch im nächsten Monat wieder. Ich sehe nur zusammengefasste Zahlen.
+
+Rechtsgrundlage ist mein berechtigtes Interesse an einer datensparsamen Reichweitenmessung, um die Website zu verbessern (Art. 6 Abs. 1 lit. f DSGVO). Hast du in deinem Browser „Do Not Track“ eingeschaltet, zählt Umami deinen Besuch nicht. Du kannst der Statistik außerdem jederzeit widersprechen, zum Beispiel per E-Mail an mich. Die Statistikdaten lösche ich nach spätestens 14 Monaten.
 
 ## Wowhead-Tooltips
 
