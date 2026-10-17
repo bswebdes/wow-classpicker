@@ -83,6 +83,7 @@ To understand which pages are read and how visitors find the website, I also use
 Umami records:
 
 - pages visited, page titles and where the visit came from (e.g. a search engine or a linking website)
+- actions on the site, e.g. a started quiz, an arena battle or a click to a class page (not linked to you as a person)
 - technical details such as device type, browser, operating system, screen size and language
 - approximate location (country, region, city), derived from the IP address
 

@@ -83,6 +83,7 @@ Damit ich weiß, welche Seiten gelesen werden und wie Besucher auf die Website f
 Erfasst werden:
 
 - aufgerufene Seiten, Seitentitel und die Herkunft des Besuchs (z. B. Suchmaschine oder verlinkende Website)
+- Aktionen auf der Seite, z. B. ein gestartetes Quiz, ein Arena-Kampf oder ein Klick zur Klassenseite (ohne Bezug zu deiner Person)
 - technische Angaben wie Gerätetyp, Browser, Betriebssystem, Bildschirmgröße und Sprache
 - ungefährer Standort (Land, Region, Stadt), abgeleitet aus der IP-Adresse
 
