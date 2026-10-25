@@ -1,27 +1,13 @@
 import * as CookieConsent from 'vanilla-cookieconsent'
 import 'vanilla-cookieconsent/dist/cookieconsent.css'
 
-const GTM_ID = 'GTM-MSF6PT29'
-
-// Google Tag Manager erst nach Einwilligung laden (Consent-Mode-Standard steht im <head>)
-// Nur auf der echten Domain messen: lokal (Dev-Server, Vorschau) und auf Testadressen wird GTM nie geladen
-const isProductionHost = () => window.location.hostname === 'findyourmain.com'
-
-const loadGtm = () => {
-  const w = window as unknown as { dataLayer: unknown[], gtag?: (...args: unknown[]) => void, __gtmLoaded?: boolean }
-  if (w.__gtmLoaded) return
-  if (!isProductionHost()) {
-    console.info('[GTM] nicht geladen: nur auf findyourmain.com aktiv')
-    return
+// Früher gesetzte Google-Analytics-Cookies löschen (GA4 ist seit 25.10.2026 raus)
+const eraseOldGaCookies = () => {
+  for (const name of document.cookie.split(';').map(c => c.split('=')[0]!.trim()).filter(n => /^_ga/.test(n))) {
+    for (const domain of ['', `; domain=${window.location.hostname}`, `; domain=.${window.location.hostname.replace(/^www\./, '')}`]) {
+      document.cookie = `${name}=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/${domain}`
+    }
   }
-  w.__gtmLoaded = true
-  w.gtag?.('consent', 'update', { analytics_storage: 'granted' })
-  w.dataLayer = w.dataLayer || []
-  w.dataLayer.push({ 'gtm.start': Date.now(), 'event': 'gtm.js' })
-  const script = document.createElement('script')
-  script.async = true
-  script.src = `https://www.googletagmanager.com/gtm.js?id=${GTM_ID}`
-  document.head.appendChild(script)
 }
 
 // Wowhead-Tooltips erst nach Einwilligung laden
@@ -43,6 +29,7 @@ const refreshWowhead = () => {
 }
 
 export default defineNuxtPlugin((nuxtApp) => {
+  eraseOldGaCookies()
   const i18n = nuxtApp.$i18n as { locale: { value: string }, t: (key: string) => string }
   const localePath = useLocalePath()
   const consent = useConsentState()
@@ -50,20 +37,18 @@ export default defineNuxtPlugin((nuxtApp) => {
 
   const applyConsent = () => {
     const preferences = CookieConsent.acceptedCategory('preferences')
-    const analytics = CookieConsent.acceptedCategory('analytics')
-    consent.value = { preferences, analytics }
-    ;(window as unknown as { __fymAnalytics?: boolean }).__fymAnalytics = analytics
+    consent.value = { preferences }
     if (preferences) achievements.load()
     else achievements.clearStorage()
-    if (analytics) loadGtm()
     if (CookieConsent.acceptedCategory('external')) loadWowhead()
     // Widerruf: bereits geladenes Wowhead-Script nur durch Neuladen wieder los
     else if ((window as unknown as { __whLoaded?: boolean }).__whLoaded) window.location.reload()
   }
 
   CookieConsent.run({
-    // Revision erhöhen, wenn neue Kategorien dazukommen: Bestehende Besucher werden dann erneut gefragt
-    revision: 1,
+    // Revision erhöhen, wenn Kategorien dazukommen oder wegfallen: Bestehende Besucher werden dann erneut gefragt
+    // (2 = Statistik/Google Analytics raus, 25.10.2026)
+    revision: 2,
     cookie: { name: 'cc_cookie', expiresAfterDays: 182 },
     guiOptions: {
       consentModal: { layout: 'box', position: 'bottom left', equalWeightButtons: true },
@@ -72,10 +57,7 @@ export default defineNuxtPlugin((nuxtApp) => {
     categories: {
       necessary: { enabled: true, readOnly: true },
       preferences: {},
-      external: {},
-      analytics: {
-        autoClear: { cookies: [{ name: /^_ga/ }] }
-      }
+      external: {}
     },
     language: {
       default: i18n.locale.value === 'en' ? 'en' : 'de',

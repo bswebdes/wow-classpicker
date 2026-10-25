@@ -4,7 +4,7 @@ const props = defineProps({
   url: { type: String, required: true },
   text: { type: String, required: true },
   label: { type: String, required: true },
-  // Für das GA4-Ereignis "share"
+  // Für das Statistik-Ereignis "share" (Umami)
   contentType: { type: String, required: true },
   itemId: { type: String, required: true }
 })

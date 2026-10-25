@@ -2,9 +2,9 @@
 title: "Datenschutzerklärung"
 ---
 
-Stand: 17. Oktober 2026
+Stand: 25. Oktober 2026
 
-Der Schutz deiner persönlichen Daten ist mir wichtig. Find Your Main ist ein privates, nicht kommerzielles Fanprojekt. Hier erfährst du, welche Daten beim Besuch dieser Website verarbeitet werden, wofür und auf welcher Rechtsgrundlage, und welche Rechte du hast. Ich halte die Datenverarbeitung bewusst schlank: Google Analytics läuft nur mit deiner Einwilligung, die cookiefreie Statistik Umami läuft auf meinem eigenen Server in der EU, und Schriften werden nicht von Google geladen.
+Der Schutz deiner persönlichen Daten ist mir wichtig. Find Your Main ist ein privates, nicht kommerzielles Fanprojekt. Hier erfährst du, welche Daten beim Besuch dieser Website verarbeitet werden, wofür und auf welcher Rechtsgrundlage, und welche Rechte du hast. Ich halte die Datenverarbeitung bewusst schlank: Es gibt kein Google Analytics und keine Tracking-Cookies, die cookiefreie Statistik Umami läuft auf meinem eigenen Server in der EU, und Schriften werden nicht von Google geladen.
 
 ## Verantwortlicher
 
@@ -37,7 +37,7 @@ Schriftarten, Bilder und alle übrigen Dateien dieser Website werden direkt von 
 
 ## Cookies, lokaler Speicher und Einwilligung
 
-Beim ersten Besuch fragt dich ein Cookie-Banner, ob du optionale Funktionen zulassen möchtest: das Speichern deiner Erfolge, Wowhead-Tooltips und Statistik mit Google Analytics. Ohne deine Zustimmung wird nichts davon gespeichert oder geladen, und es wird keine Verbindung zu Google oder Wowhead aufgebaut.
+Beim ersten Besuch fragt dich ein Cookie-Banner, ob du optionale Funktionen zulassen möchtest: das Speichern deiner Erfolge und Wowhead-Tooltips. Ohne deine Zustimmung wird nichts davon gespeichert oder geladen, und es wird keine Verbindung zu Wowhead aufgebaut. Cookies für Statistik oder Werbung setzt diese Website nicht; Google Analytics und den Google Tag Manager nutze ich nicht.
 
 **Technisch notwendig** sind zwei Cookies:
 
@@ -54,31 +54,9 @@ Auf dieser Website kannst du zum Spaß Erfolge sammeln, etwa wenn du mehrere Kla
 
 Rechtsgrundlage ist deine Einwilligung nach § 25 Abs. 1 TDDDG. Du kannst sie jederzeit in den Cookie-Einstellungen widerrufen; der Eintrag wird dann gelöscht. Du kannst ihn außerdem über die Einstellungen deines Browsers entfernen.
 
-## Google Tag Manager
-
-Wenn du in die Statistik eingewilligt hast, nutze ich den Google Tag Manager der Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland („Google“). Der Tag Manager ist ein Werkzeug, mit dem ich Dienste wie Google Analytics auf der Website einbinde und steuere. Er setzt selbst keine Cookies, beim Laden wird aber deine IP-Adresse an Google übermittelt. Dabei kann es auch zu einer Übermittlung an die Google LLC in den USA kommen.
-
-Rechtsgrundlage ist deine Einwilligung nach Art. 6 Abs. 1 lit. a DSGVO und § 25 Abs. 1 TDDDG. Ohne Einwilligung wird der Tag Manager nicht geladen.
-
-## Google Analytics 4
-
-Mit deiner Einwilligung nutze ich Google Analytics 4, einen Webanalysedienst von Google. Damit verstehe ich, wie die Website genutzt wird, und kann sie verbessern. Dabei werden insbesondere erfasst:
-
-- aufgerufene Seiten, Verweildauer und Scrolltiefe
-- Nutzung der Funktionen, etwa gestartete Kämpfe, abgeschlossene Quizze, Zufallswürfe und errungene Erfolge
-- Herkunft des Besuchs (z. B. Suchmaschine oder verlinkende Website)
-- technische Angaben wie Gerätetyp, Browser, Betriebssystem und Bildschirmauflösung
-- ungefährer Standort (Land, Region, Stadt), abgeleitet aus der IP-Adresse
-
-Google Analytics 4 speichert keine vollständigen IP-Adressen: Die IP-Adresse wird nur zur Standortbestimmung verwendet und anschließend verworfen. Zur Wiedererkennung setzt Google Analytics die Cookies „_ga“ und „_ga_*“ mit einer Laufzeit von 2 Jahren. Die Daten werden in pseudonymer Form verarbeitet; eine Zusammenführung mit deinem Namen findet nicht statt. Google-Signale und personalisierte Werbefunktionen sind deaktiviert.
-
-Die Daten werden auf Servern von Google verarbeitet, auch in den USA. Google LLC ist unter dem EU-US Data Privacy Framework zertifiziert (Angemessenheitsbeschluss, Art. 45 DSGVO). Es gelten die Bedingungen zur Auftragsverarbeitung für Google-Werbeprodukte. Die Daten werden nach Ablauf der in Google Analytics eingestellten Aufbewahrungsdauer, höchstens 14 Monate, automatisch gelöscht.
-
-Rechtsgrundlage ist deine Einwilligung nach Art. 6 Abs. 1 lit. a DSGVO und § 25 Abs. 1 TDDDG, die du jederzeit über die Cookie-Einstellungen widerrufen kannst. Zusätzlich nutze ich den Google Consent Mode: Google-Dienste richten sich damit automatisch nach deiner Auswahl. Mehr dazu: [policies.google.com/privacy](https://policies.google.com/privacy).
-
 ## Statistik ohne Cookies (Umami)
 
-Damit ich weiß, welche Seiten gelesen werden und wie Besucher auf die Website finden, nutze ich zusätzlich Umami, eine datensparsame Statistik-Software. Ich betreibe Umami selbst auf meinem Server bei der Contabo GmbH, München, in einem Rechenzentrum in Frankreich (EU) unter analyse.frysch.studio. Die Daten gehen an keinen Dritten und nicht in die USA.
+Damit ich weiß, welche Seiten gelesen werden und wie Besucher auf die Website finden, nutze ich Umami, eine datensparsame Statistik-Software. Ich betreibe Umami selbst auf meinem Server bei der Contabo GmbH, München, in einem Rechenzentrum in Frankreich (EU) unter analyse.frysch.studio. Die Daten gehen an keinen Dritten und nicht in die USA.
 
 Erfasst werden:
 

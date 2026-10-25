@@ -2,9 +2,9 @@
 title: "Privacy policy"
 ---
 
-As of 17 October 2026. This is a courtesy translation; the German version is legally binding.
+As of 25 October 2026. This is a courtesy translation; the German version is legally binding.
 
-Protecting your personal data matters to me. Find Your Main is a private, non-commercial fan project. Here you can find out which data is processed when you visit this website, for what purpose and on what legal basis, and what rights you have. I keep data processing deliberately lean: Google Analytics only runs with your consent, the cookie-free statistics tool Umami runs on my own server in the EU, and fonts are not loaded from Google.
+Protecting your personal data matters to me. Find Your Main is a private, non-commercial fan project. Here you can find out which data is processed when you visit this website, for what purpose and on what legal basis, and what rights you have. I keep data processing deliberately lean: there is no Google Analytics and no tracking cookies, the cookie-free statistics tool Umami runs on my own server in the EU, and fonts are not loaded from Google.
 
 ## Controller
 
@@ -37,7 +37,7 @@ Fonts, images and all other files are loaded directly from this website. There i
 
 ## Cookies, local storage and consent
 
-On your first visit, a cookie banner asks whether you want to allow optional features: saving your achievements, Wowhead tooltips and statistics with Google Analytics. Without your consent, none of this is stored or loaded, and no connection to Google or Wowhead is made.
+On your first visit, a cookie banner asks whether you want to allow optional features: saving your achievements and Wowhead tooltips. Without your consent, none of this is stored or loaded, and no connection to Wowhead is made. This website does not set cookies for statistics or advertising; I do not use Google Analytics or Google Tag Manager.
 
 **Technically necessary** are two cookies:
 
@@ -54,31 +54,9 @@ For fun, you can collect achievements on this website, for example by viewing se
 
 The legal basis is your consent under § 25(1) TDDDG. You can withdraw it at any time in the cookie settings; the entry is then deleted. You can also remove it via your browser settings.
 
-## Google Tag Manager
-
-If you have consented to statistics, I use Google Tag Manager from Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Ireland ("Google"). Tag Manager is a tool I use to embed and control services such as Google Analytics on the website. It does not set cookies itself, but your IP address is transmitted to Google when it loads. This may include a transfer to Google LLC in the USA.
-
-The legal basis is your consent under Art. 6(1)(a) GDPR and § 25(1) TDDDG. Without consent, Tag Manager is not loaded.
-
-## Google Analytics 4
-
-With your consent, I use Google Analytics 4, a web analytics service from Google, to understand how the website is used and improve it. It records in particular:
-
-- pages viewed, time on page and scroll depth
-- use of features, such as battles started, quizzes completed, random rolls and achievements earned
-- where the visit came from (e.g. search engine or referring website)
-- technical information such as device type, browser, operating system and screen resolution
-- approximate location (country, region, city), derived from the IP address
-
-Google Analytics 4 does not store full IP addresses: the IP address is only used to determine location and then discarded. To recognize returning visitors, Google Analytics sets the cookies "_ga" and "_ga_*" with a lifetime of 2 years. The data is processed in pseudonymous form and is not combined with your name. Google signals and personalized advertising features are disabled.
-
-The data is processed on Google servers, including in the USA. Google LLC is certified under the EU-US Data Privacy Framework (adequacy decision, Art. 45 GDPR). Google's data processing terms for Google advertising products apply. The data is deleted automatically after the retention period set in Google Analytics, at most 14 months.
-
-The legal basis is your consent under Art. 6(1)(a) GDPR and § 25(1) TDDDG, which you can withdraw at any time via the cookie settings. I also use Google Consent Mode, so Google services automatically follow your choice. More: [policies.google.com/privacy](https://policies.google.com/privacy).
-
 ## Cookie-free statistics (Umami)
 
-To understand which pages are read and how visitors find the website, I also use Umami, a privacy-friendly analytics tool. I run Umami myself on my server at Contabo GmbH, Munich, in a data centre in France (EU), at analyse.frysch.studio. The data is not passed on to third parties and not transferred to the USA.
+To understand which pages are read and how visitors find the website, I use Umami, a privacy-friendly analytics tool. I run Umami myself on my server at Contabo GmbH, Munich, in a data centre in France (EU), at analyse.frysch.studio. The data is not passed on to third parties and not transferred to the USA.
 
 Umami records:
 

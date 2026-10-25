@@ -42,13 +42,9 @@ export default defineNuxtConfig({
         { rel: 'apple-touch-icon', href: '/apple-touch-icon.png' }
       ],
       script: [
-        // Umami (cookiefreie Statistik, selbst gehostet auf analyse.frysch.studio): läuft ohne Einwilligung, respektiert Do Not Track
+        // Umami (cookiefreie Statistik, selbst gehostet auf analyse.frysch.studio): einzige Statistik (kein Google Analytics), läuft ohne Einwilligung, respektiert Do Not Track
         { src: 'https://analyse.frysch.studio/script.js', defer: true, 'data-website-id': 'a898de1c-936c-42ac-8890-85a5fb3fcf20',
-          'data-domains': 'findyourmain.com,www.findyourmain.com', 'data-do-not-track': 'true' },
-        {
-          // Google Consent Mode v2: alles verweigert, bis im Cookie-Banner zugestimmt wird
-          innerHTML: "window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',functionality_storage:'denied',personalization_storage:'denied',security_storage:'granted',wait_for_update:500});"
-        }
+          'data-domains': 'findyourmain.com,www.findyourmain.com', 'data-do-not-track': 'true' }
       ]
     }
   },

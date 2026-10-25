@@ -43,8 +43,8 @@ Stand: 14.10.2026 · live auf [findyourmain.com](https://findyourmain.com), Bran
 - [x] Über-uns-Seite: privates Fanprojekt von Benny, Quellen und Bewertungsmethode
 
 ### Tracking & Einwilligung
-- [x] Cookie-Banner (vanilla-cookieconsent v3, Opt-in) mit Kategorien Notwendig / Erfolge speichern / Wowhead-Tooltips / Statistik
-- [x] Google Consent Mode v2, GTM `GTM-MSF6PT29` erst nach Zustimmung und nur auf `findyourmain.com` (lokal und auf Testadressen nie), GA4 eingerichtet nach `docs/gtm-ga4-setup.md` inkl. „Erweiterung 1“ (Ereignis `share`) und „Erweiterung 2“ (`donate_click`)
+- [x] Cookie-Banner (vanilla-cookieconsent v3, Opt-in) mit Kategorien Notwendig / Erfolge speichern / Wowhead-Tooltips (Statistik seit 25.10.2026 raus, Revision 2)
+- [x] Google Analytics 4 + GTM + Consent Mode komplett entfernt (25.10.2026): Statistik nur noch Umami (cookiefrei), alte `_ga`-Cookies werden beim Besuch gelöscht. GA4-Property und GTM-Container `GTM-MSF6PT29` in Google löschen (Benny)
 - [x] Events nur nach Einwilligung: `battle_start/victory/reset`, `quiz_start/decline/complete`, `random_roll`, `result_class_click`, `achievement_unlocked`, `mode_switch`, `language_switch`, `faq_open`, `share`, `donate_click`
 
 ### Technik
@@ -98,7 +98,7 @@ Stand: 14.10.2026 · live auf [findyourmain.com](https://findyourmain.com), Bran
 - [x] Spenden-Tränke mit vorausgefülltem Betrag (1, 5, 10, DE in Euro, EN in Dollar) plus „Eigener Betrag“; Monetarisierung über Werbung oder Affiliate bewusst verworfen
 
 ### Teilen
-- [x] Quiz-Ergebnis und Turniersieger teilbar: Seite „Mein Main“ je Klasse und Modus (`/mein-main/<klasse>`, `/en/my-main/<class>`, Forever analog) mit eigenem OG-Bild, Top 3 bzw. Kämpfername in der URL, `noindex`, nicht in der Sitemap; Teilen-Knopf nutzt das System-Menü oder kopiert den Link, GA4-Ereignis `share`
+- [x] Quiz-Ergebnis und Turniersieger teilbar: Seite „Mein Main“ je Klasse und Modus (`/mein-main/<klasse>`, `/en/my-main/<class>`, Forever analog) mit eigenem OG-Bild, Top 3 bzw. Kämpfername in der URL, `noindex`, nicht in der Sitemap; Teilen-Knopf nutzt das System-Menü oder kopiert den Link, Umami-Ereignis `share`
 - [x] Turnier: große Intro-Texte („Wähle deine Kämpfer“, READY/FIGHT) entfernt, der Kampf startet sofort
 
 ### Erfolge

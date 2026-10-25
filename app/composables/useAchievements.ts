@@ -8,7 +8,7 @@ interface AchievementState {
   sets: Record<string, string[]>
 }
 
-export const useConsentState = () => useState('consent', () => ({ preferences: false, analytics: false }))
+export const useConsentState = () => useState('consent', () => ({ preferences: false }))
 
 export const useAchievements = () => {
   const state = useState<AchievementState>('achievements', () => ({ unlocked: {}, counters: {}, sets: {} }))
