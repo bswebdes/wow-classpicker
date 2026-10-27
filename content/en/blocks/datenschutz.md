@@ -17,19 +17,17 @@ Email: [findyourmain@pm.me](mailto:findyourmain@pm.me)
 
 I have not appointed a data protection officer, as there is no legal obligation to do so.
 
-## Hosting and server log files
+## Hosting
 
-This website is hosted by Netlify, Inc., 101 2nd Street, Suite 1500, San Francisco, CA 94105, USA and delivered through its global content delivery network. When you visit the website, Netlify automatically processes data that your browser transmits (server log files):
+This website runs on my own server, which I rent from Contabo GmbH, Aschauer Straße 32a, 81549 Munich, Germany. The server is located in a data centre in France (EU). When you visit the website, the server briefly processes the data your browser transmits:
 
 - IP address
 - date and time of access
-- page or file requested and amount of data transferred
+- page or file requested
 - referrer URL (the previously visited page)
 - browser type and version, operating system
 
-This data is technically necessary to deliver the website, ensure its stability and security and fend off attacks. The legal basis is Art. 6(1)(f) GDPR; my legitimate interest lies in providing the website securely and reliably. Netlify deletes the log files automatically after a short time.
-
-Netlify processes the data under its Data Processing Addendum. Netlify is certified under the EU-US Data Privacy Framework, so an adequacy decision of the EU Commission applies to transfers to the USA (Art. 45 GDPR). More: [netlify.com/privacy](https://www.netlify.com/privacy/).
+This data is technically necessary to deliver the website to your browser. I do not store access logs (server log files) containing this data. The legal basis is Art. 6(1)(f) GDPR; my legitimate interest lies in providing the website securely and reliably. Contabo acts as my processor; the data does not leave the EU.
 
 ## Fonts and images
 

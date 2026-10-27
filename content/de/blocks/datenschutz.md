@@ -17,19 +17,17 @@ E-Mail: [findyourmain@pm.me](mailto:findyourmain@pm.me)
 
 Einen Datenschutzbeauftragten habe ich nicht benannt, da hierzu keine gesetzliche Pflicht besteht.
 
-## Hosting und Server-Logfiles
+## Hosting
 
-Diese Website wird bei Netlify, Inc., 101 2nd Street, Suite 1500, San Francisco, CA 94105, USA gehostet und über deren weltweites Servernetz (Content Delivery Network) ausgeliefert. Beim Aufruf der Website verarbeitet Netlify automatisch Daten, die dein Browser übermittelt (sogenannte Server-Logfiles):
+Diese Website läuft auf meinem eigenen Server, den ich bei der Contabo GmbH, Aschauer Straße 32a, 81549 München, miete. Der Server steht in einem Rechenzentrum in Frankreich (EU). Beim Aufruf der Website verarbeitet der Server kurz die Daten, die dein Browser dabei übermittelt:
 
 - IP-Adresse
 - Datum und Uhrzeit des Zugriffs
-- aufgerufene Seite bzw. Datei und übertragene Datenmenge
+- aufgerufene Seite bzw. Datei
 - Referrer-URL (die zuvor besuchte Seite)
 - Browsertyp und -version, Betriebssystem
 
-Diese Daten sind technisch erforderlich, um die Website auszuliefern, ihre Stabilität und Sicherheit zu gewährleisten und Angriffe abzuwehren. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO; mein berechtigtes Interesse liegt in einer sicheren und zuverlässigen Bereitstellung der Website. Die Logfiles werden von Netlify nach kurzer Zeit automatisch gelöscht.
-
-Netlify verarbeitet die Daten auf Grundlage seiner Bedingungen zur Auftragsverarbeitung (Data Processing Addendum). Netlify ist unter dem EU-US Data Privacy Framework zertifiziert; damit besteht für die Übermittlung in die USA ein Angemessenheitsbeschluss der EU-Kommission (Art. 45 DSGVO). Mehr dazu: [netlify.com/privacy](https://www.netlify.com/privacy/).
+Diese Daten sind technisch nötig, um die Website an deinen Browser auszuliefern. Zugriffsprotokolle (Server-Logfiles) mit diesen Daten speichere ich nicht. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO; mein berechtigtes Interesse liegt in einer sicheren und zuverlässigen Bereitstellung der Website. Contabo ist dabei als Auftragsverarbeiter für mich tätig, die Daten verlassen die EU nicht.
 
 ## Schriftarten und Bilder
 
