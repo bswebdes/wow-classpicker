@@ -1,0 +1,9 @@
+.git
+node_modules
+.output
+.nuxt
+.data
+dist
+.netlify
+**/.env
+**/.env.*
