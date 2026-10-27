@@ -2,9 +2,9 @@
 title: "Datenschutzerklärung"
 ---
 
-Stand: 25. Oktober 2026
+Stand: 27. Oktober 2026
 
-Der Schutz deiner persönlichen Daten ist mir wichtig. Find Your Main ist ein privates, nicht kommerzielles Fanprojekt. Hier erfährst du, welche Daten beim Besuch dieser Website verarbeitet werden, wofür und auf welcher Rechtsgrundlage, und welche Rechte du hast. Ich halte die Datenverarbeitung bewusst schlank: Es gibt kein Google Analytics und keine Tracking-Cookies, die cookiefreie Statistik Umami läuft auf meinem eigenen Server in der EU, und Schriften werden nicht von Google geladen.
+Der Schutz deiner persönlichen Daten ist mir wichtig. Find Your Main ist ein privates, nicht kommerzielles Fanprojekt. Hier erfährst du, welche Daten beim Besuch dieser Website verarbeitet werden, wofür und auf welcher Rechtsgrundlage, und welche Rechte du hast. Ich halte die Datenverarbeitung bewusst schlank: Es gibt kein Google Analytics und keine Tracking-Cookies, die cookiefreie Statistik Saysmo ist mein eigenes Werkzeug und speichert die Daten in der EU, und Schriften werden nicht von Google geladen.
 
 ## Verantwortlicher
 
@@ -54,20 +54,24 @@ Auf dieser Website kannst du zum Spaß Erfolge sammeln, etwa wenn du mehrere Kla
 
 Rechtsgrundlage ist deine Einwilligung nach § 25 Abs. 1 TDDDG. Du kannst sie jederzeit in den Cookie-Einstellungen widerrufen; der Eintrag wird dann gelöscht. Du kannst ihn außerdem über die Einstellungen deines Browsers entfernen.
 
-## Statistik ohne Cookies (Umami)
+## Statistik ohne Cookies (Saysmo)
 
-Damit ich weiß, welche Seiten gelesen werden und wie Besucher auf die Website finden, nutze ich Umami, eine datensparsame Statistik-Software. Ich betreibe Umami selbst auf meinem Server bei der Contabo GmbH, München, in einem Rechenzentrum in Frankreich (EU) unter analyse.frysch.studio. Die Daten gehen an keinen Dritten und nicht in die USA.
+Damit ich weiß, welche Seiten gelesen werden und wie Besucher auf die Website finden, messe ich mit Saysmo, wie die Website genutzt wird. Saysmo ist mein eigenes Werkzeug (frysch.studio, Benjamin Schey). Dazu lädt jede Seite ein kleines Skript von t.saysmo.com.
 
 Erfasst werden:
 
-- aufgerufene Seiten, Seitentitel und die Herkunft des Besuchs (z. B. Suchmaschine oder verlinkende Website)
+- aufgerufene Seiten und Seitentitel, die Herkunft des Besuchs (z. B. Suchmaschine oder verlinkende Website) und Kampagnen-Angaben im Link
+- Land, Region und Stadt (aus der IP-Adresse abgeleitet)
+- Browser, Betriebssystem, Gerätetyp und Sprache, jeweils aus den Angaben, die dein Browser bei jedem Aufruf ohnehin mitschickt
+- wie lange eine Seite aktiv angesehen und wie weit nach unten gescrollt wurde
+- Klicks auf Links zu anderen Websites sowie auf Telefon- und E-Mail-Links (ohne Nummer oder Adresse), Downloads, abgeschickte Formulare (nur, dass ein Formular abgeschickt wurde, nie die Eingaben), aufgerufene Fehlerseiten und Suchbegriffe einer Suche auf dieser Website
 - Aktionen auf der Seite, z. B. ein gestartetes Quiz, ein Arena-Kampf oder ein Klick zur Klassenseite (ohne Bezug zu deiner Person)
-- technische Angaben wie Gerätetyp, Browser, Betriebssystem, Bildschirmgröße und Sprache
-- ungefährer Standort (Land, Region, Stadt), abgeleitet aus der IP-Adresse
 
-Umami setzt keine Cookies und speichert nichts in deinem Browser. Deine IP-Adresse wird nicht gespeichert: Sie dient nur kurz zur Standortbestimmung und – zusammen mit Browserangaben und einem Zufallswert, der jeden Monat wechselt – zur Bildung einer anonymen Besuchs-Kennung. Dadurch erkenne ich weder dich als Person noch deinen Besuch im nächsten Monat wieder. Ich sehe nur zusammengefasste Zahlen.
+Saysmo setzt keine Cookies, speichert nichts in deinem Browser und überträgt keine Geräteeigenschaften wie die Bildschirmgröße. IP-Adresse und Browserkennung werden nicht gespeichert: Beim Empfang wird daraus eine pseudonyme Kennung gebildet, deren Zufallswert jeden Monat neu erzeugt und danach gelöscht wird. Es werden keine Profile gebildet und niemand über Monate oder andere Websites hinweg wiedererkannt. Ich sehe nur zusammengefasste Zahlen.
 
-Rechtsgrundlage ist mein berechtigtes Interesse an einer datensparsamen Reichweitenmessung, um die Website zu verbessern (Art. 6 Abs. 1 lit. f DSGVO). Hast du in deinem Browser „Do Not Track“ eingeschaltet, zählt Umami deinen Besuch nicht. Du kannst der Statistik außerdem jederzeit widersprechen, zum Beispiel per E-Mail an mich. Die Statistikdaten lösche ich nach spätestens 14 Monaten.
+Saysmo läuft bei Cloudflare, Inc. (101 Townsend St., San Francisco, CA 94107, USA; zertifiziert nach dem EU-US Data Privacy Framework, Art. 45 DSGVO). Der Empfang erfolgt im weltweiten Netz von Cloudflare, gespeichert werden die Daten in der EU und nach 14 Monaten automatisch gelöscht.
+
+Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO; mein berechtigtes Interesse liegt darin, die Nutzung der Website zu verstehen und sie zu verbessern. Du kannst dem jederzeit widersprechen, zum Beispiel per E-Mail an mich.
 
 ## Wowhead-Tooltips
 

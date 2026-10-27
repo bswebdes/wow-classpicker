@@ -42,9 +42,9 @@ export default defineNuxtConfig({
         { rel: 'apple-touch-icon', href: '/apple-touch-icon.png' }
       ],
       script: [
-        // Umami (cookiefreie Statistik, selbst gehostet auf analyse.frysch.studio): einzige Statistik (kein Google Analytics), läuft ohne Einwilligung, respektiert Do Not Track
-        { src: 'https://analyse.frysch.studio/script.js', defer: true, 'data-website-id': 'a898de1c-936c-42ac-8890-85a5fb3fcf20',
-          'data-domains': 'findyourmain.com,www.findyourmain.com', 'data-do-not-track': 'true' }
+        // Saysmo (cookiefreie Statistik, t.saysmo.com): einzige Statistik (kein Google Analytics), läuft ohne Einwilligung
+        { src: 'https://t.saysmo.com/p.js', defer: true, 'data-website-id': 'web_j9k9NotEwLfpLqHrqIXS',
+          'data-domains': 'findyourmain.com,www.findyourmain.com' }
       ]
     }
   },

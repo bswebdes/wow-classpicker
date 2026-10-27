@@ -2,9 +2,9 @@
 title: "Privacy policy"
 ---
 
-As of 25 October 2026. This is a courtesy translation; the German version is legally binding.
+As of 27 October 2026. This is a courtesy translation; the German version is legally binding.
 
-Protecting your personal data matters to me. Find Your Main is a private, non-commercial fan project. Here you can find out which data is processed when you visit this website, for what purpose and on what legal basis, and what rights you have. I keep data processing deliberately lean: there is no Google Analytics and no tracking cookies, the cookie-free statistics tool Umami runs on my own server in the EU, and fonts are not loaded from Google.
+Protecting your personal data matters to me. Find Your Main is a private, non-commercial fan project. Here you can find out which data is processed when you visit this website, for what purpose and on what legal basis, and what rights you have. I keep data processing deliberately lean: there is no Google Analytics and no tracking cookies, the cookie-free statistics tool Saysmo is my own tool and stores the data in the EU, and fonts are not loaded from Google.
 
 ## Controller
 
@@ -54,20 +54,24 @@ For fun, you can collect achievements on this website, for example by viewing se
 
 The legal basis is your consent under § 25(1) TDDDG. You can withdraw it at any time in the cookie settings; the entry is then deleted. You can also remove it via your browser settings.
 
-## Cookie-free statistics (Umami)
+## Cookie-free statistics (Saysmo)
 
-To understand which pages are read and how visitors find the website, I use Umami, a privacy-friendly analytics tool. I run Umami myself on my server at Contabo GmbH, Munich, in a data centre in France (EU), at analyse.frysch.studio. The data is not passed on to third parties and not transferred to the USA.
+To understand which pages are read and how visitors find the website, I use Saysmo to measure how the website is used. Saysmo is my own tool (frysch.studio, Benjamin Schey). For this, every page loads a small script from t.saysmo.com.
 
-Umami records:
+Saysmo records:
 
-- pages visited, page titles and where the visit came from (e.g. a search engine or a linking website)
+- pages visited and page titles, where the visit came from (e.g. a search engine or a linking website) and campaign details in the link
+- country, region and city (derived from the IP address)
+- browser, operating system, device type and language, each taken from the information your browser sends with every request anyway
+- how long a page was actively viewed and how far down it was scrolled
+- clicks on links to other websites and on phone and email links (without the number or address), downloads, submitted forms (only the fact that a form was submitted, never what was entered), error pages visited and search terms of a search on this website
 - actions on the site, e.g. a started quiz, an arena battle or a click to a class page (not linked to you as a person)
-- technical details such as device type, browser, operating system, screen size and language
-- approximate location (country, region, city), derived from the IP address
 
-Umami does not set cookies and stores nothing in your browser. Your IP address is not stored: it is only used briefly to determine the location and – together with browser details and a random value that changes every month – to create an anonymous visit ID. This means I can neither identify you as a person nor recognise your visit in the following month. I only see aggregated numbers.
+Saysmo does not set cookies, stores nothing in your browser and does not transmit device properties such as the screen size. IP address and browser identifier are not stored: on receipt, they are turned into a pseudonymous ID whose random value is newly generated every month and deleted afterwards. No profiles are created and nobody is recognised across months or across other websites. I only see aggregated numbers.
 
-The legal basis is my legitimate interest in privacy-friendly audience measurement to improve the website (Art. 6(1)(f) GDPR). If you have enabled "Do Not Track" in your browser, Umami does not count your visit. You can also object to the statistics at any time, for example by email. I delete the statistics data after 14 months at the latest.
+Saysmo runs on Cloudflare, Inc. (101 Townsend St., San Francisco, CA 94107, USA; certified under the EU-US Data Privacy Framework, Art. 45 GDPR). Data is received in Cloudflare's global network, stored in the EU and deleted automatically after 14 months.
+
+The legal basis is Art. 6(1)(f) GDPR; my legitimate interest is to understand how the website is used and to improve it. You can object to this at any time, for example by email.
 
 ## Wowhead tooltips
 
