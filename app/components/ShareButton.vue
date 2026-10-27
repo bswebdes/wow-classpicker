@@ -4,7 +4,7 @@ const props = defineProps({
   url: { type: String, required: true },
   text: { type: String, required: true },
   label: { type: String, required: true },
-  // Für das Statistik-Ereignis "share" (Umami)
+  // Für das Statistik-Ereignis "share" (Saysmo)
   contentType: { type: String, required: true },
   itemId: { type: String, required: true }
 })
