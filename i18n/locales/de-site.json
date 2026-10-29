@@ -871,6 +871,7 @@
     "cta": "Namen finden",
     "ctaClass": "Namen für deinen {class}",
     "ctaCharacter": "Namen für diesen Charakter",
-    "copiedName": "{name} kopiert"
+    "copiedName": "{name} kopiert",
+    "copySurname": "Nachname"
   }
 }

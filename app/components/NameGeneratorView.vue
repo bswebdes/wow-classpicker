@@ -133,16 +133,22 @@ const fullName = n => n.last ? `${n.first} ${n.last}` : n.first
 const { copied, copy } = useCopyText()
 // Kurzer goldener Schimmer auf dem Namensschild beim Kopieren
 const flash = ref(false)
-const copyName = (n) => {
+// Ein Name zählt pro Besuch nur einmal als kopiert, auch wenn Vor- und Nachname (Forever: zwei Eingabefelder) einzeln kopiert werden
+const countedCopies = new Set()
+// part: 'full' (ganzer Name), 'first' oder 'last' (Forever einzeln)
+const copyName = (n, part = 'full') => {
   if (!n) return
-  copy(fullName(n))
+  copy(part === 'first' ? n.first : part === 'last' ? n.last : fullName(n))
   if (n.id === current.value?.id) {
     flash.value = false
     requestAnimationFrame(() => { flash.value = true })
     setTimeout(() => { flash.value = false }, 700)
   }
-  $fetch(`/api/names/${n.id}`, { method: 'POST', body: { action: 'copy' } }).catch(() => {})
-  trackEvent('name_copy', { game_mode: props.mode, race: race.value, style: style.value })
+  if (!countedCopies.has(n.id)) {
+    countedCopies.add(n.id)
+    $fetch(`/api/names/${n.id}`, { method: 'POST', body: { action: 'copy' } }).catch(() => {})
+  }
+  trackEvent('name_copy', { game_mode: props.mode, race: race.value, style: style.value, part })
 }
 const report = (n) => {
   $fetch(`/api/names/${n.id}`, { method: 'POST', body: { action: 'report' } }).catch(() => {})
@@ -241,16 +247,17 @@ const factionText = computed(() => ({ alliance: '#9cc2ff', horde: '#ff9c9c' })[s
             <!-- Namensschild -->
             <div class="flex min-h-[64px] flex-col justify-end sm:min-h-[76px]" :class="{ 'name-flash': flash }">
               <Transition name="nameplate" mode="out-in">
-                <div v-if="current" :key="current.id" class="flex items-center gap-2">
-                  <!-- unsichtbarer Platzhalter in Knopfbreite, damit der Name mittig bleibt -->
-                  <span class="w-8 shrink-0" aria-hidden="true" />
-                  <div class="flex min-w-0 flex-col">
-                    <span class="font-display text-[22px] font-bold leading-tight text-gold [text-shadow:0_2px_4px_#000,0_0_12px_rgba(0,0,0,0.9)] sm:text-[32px]">{{ current.first }}</span>
-                    <span v-if="current.last" class="font-display text-[17px] font-bold leading-tight text-neutral-100 [text-shadow:0_2px_4px_#000] sm:text-[24px]">{{ current.last }}</span>
+                <!-- Forever: Vor- und Nachname einzeln kopierbar (im Spiel zwei Eingabefelder); Retail: ein Knopf -->
+                <div v-if="current" :key="current.id" class="flex flex-col items-center">
+                  <div v-for="part in (current.last ? ['first', 'last'] : ['first'])" :key="part" class="flex items-center gap-2">
+                    <!-- unsichtbarer Platzhalter in Knopfbreite, damit der Name mittig bleibt -->
+                    <span class="w-7 shrink-0" aria-hidden="true" />
+                    <span v-if="part === 'first'" class="font-display text-[22px] font-bold leading-tight text-gold [text-shadow:0_2px_4px_#000,0_0_12px_rgba(0,0,0,0.9)] sm:text-[32px]">{{ current.first }}</span>
+                    <span v-else class="font-display text-[17px] font-bold leading-tight text-neutral-100 [text-shadow:0_2px_4px_#000] sm:text-[24px]">{{ current.last }}</span>
+                    <button type="button" class="icon-btn shrink-0 !h-7 !w-7" :aria-label="$t('names.copy', { name: current[part] })" :title="$t('names.copy', { name: current[part] })" @click="copyName(current, current.last ? part : 'full')">
+                      <NavIcon :name="copied === current[part] ? 'check' : 'copy'" :size="14" />
+                    </button>
                   </div>
-                  <button type="button" class="icon-btn shrink-0 !h-8 !w-8" :title="$t('names.copy', { name: fullName(current) })" :aria-label="$t('names.copy', { name: fullName(current) })" @click="copyName(current)">
-                    <NavIcon :name="copied === fullName(current) ? 'check' : 'copy'" :size="16" />
-                  </button>
                 </div>
                 <span v-else class="text-[14px] text-neutral-300">{{ loading ? '…' : $t('names.empty') }}</span>
               </Transition>
@@ -358,9 +365,11 @@ const factionText = computed(() => ({ alliance: '#9cc2ff', horde: '#ff9c9c' })[s
       </p>
       <ul v-if="forever && surnames.length" class="mt-3 grid gap-2 sm:grid-cols-2">
         <li v-for="s in surnames" :key="s" class="flex items-center gap-2 rounded-[4px] border border-neutral-800 bg-black/40 px-3 py-2">
-          <span class="min-w-0 flex-1 truncate font-display text-[17px] font-bold text-gold">{{ ownName }} {{ s }}</span>
-          <button type="button" class="wow-btn wow-btn-sm wow-btn-stone shrink-0" :aria-label="$t('names.copy', { name: `${ownName} ${s}` })" @click="copy(`${ownName} ${s}`)">
-            {{ copied === `${ownName} ${s}` ? '✓' : $t('names.copyShort') }}
+          <span class="min-w-0 flex-1 truncate font-display text-[17px] font-bold text-neutral-300">{{ ownName }} <span class="text-gold">{{ s }}</span></span>
+          <!-- Nur der Nachname: den Vornamen hat man schon, im Spiel sind es zwei Felder -->
+          <button type="button" class="wow-btn wow-btn-sm wow-btn-stone shrink-0 !gap-1.5" :aria-label="$t('names.copy', { name: s })" @click="copy(s)">
+            <NavIcon :name="copied === s ? 'check' : 'copy'" :size="14" />
+            {{ $t('names.copySurname') }}
           </button>
         </li>
       </ul>
