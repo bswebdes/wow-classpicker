@@ -10,14 +10,15 @@ const tools = computed(() => [
   { key: 'quiz', icon: 'quiz', quality: '#a335ee', to: localePath(routeNameFor('quiz', props.mode)), title: t('nav.quiz'), text: t('home.quizTeaser') },
   { key: 'random', icon: 'random', quality: '#0070dd', to: localePath(routeNameFor('zufall', props.mode)), title: t('nav.random'), text: props.mode === 'forever' ? t('forever.home.randomTeaser') : t('home.randomTeaser') },
   { key: 'classes', icon: 'classes', quality: '#1eff00', to: localePath(routeNameFor('klassen', props.mode)), title: t('nav.classes'), text: props.mode === 'forever' ? t('forever.home.classesTeaser') : t('home.classesTeaser') },
-  { key: 'compare', icon: 'compare', quality: '#ff8000', to: localePath(routeNameFor('klassen-vergleich', props.mode)), title: t('compare.nav'), text: t('tools.compareTeaser') }
+  { key: 'compare', icon: 'compare', quality: '#ff8000', to: localePath(routeNameFor('klassen-vergleich', props.mode)), title: t('compare.nav'), text: t('tools.compareTeaser') },
+  { key: 'names', icon: 'names', quality: '#e6cc80', to: localePath(routeNameFor('namensgenerator', props.mode)), title: t('nav.names'), text: props.mode === 'forever' ? t('forever.home.namesTeaser') : t('home.namesTeaser') }
 ])
 const classCount = computed(() => getClassList(props.mode).length)
 </script>
 
 <template>
-  <ul class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-    <li v-for="tool in tools" :key="tool.key" class="flex">
+  <ul class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
+    <li v-for="(tool, i) in tools" :key="tool.key" v-reveal="i" class="flex">
       <NuxtLink :to="tool.to" class="tool-card group" :style="{ '--q': tool.quality }">
         <span class="flex items-start gap-3">
           <span class="wow-slot flex h-12 w-12 shrink-0 items-center justify-center !border-[color:var(--q)]/70" :style="{ color: tool.quality }">

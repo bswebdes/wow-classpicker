@@ -185,6 +185,7 @@ onMounted(() => {
       <div class="grid shrink-0 grid-cols-2 gap-2 border-t border-gold-border/60 bg-black/50 p-3 sm:flex sm:justify-center sm:gap-3">
         <ShareButton v-if="shareUrl" :url="shareUrl" :text="shareText" :label="$t('share.buttonArena')" content-type="arena_winner" :item-id="winner.classId" class="wow-btn-sm !py-2 sm:!px-4" />
         <button class="wow-btn wow-btn-stone wow-btn-sm !py-2 sm:!px-4" :class="!shareUrl && 'col-span-2'" @click="emit('again')">⚔ {{ $t('result.again') }}</button>
+        <NuxtLink :to="localePath(routeNameFor('namensgenerator', mode))" class="wow-btn wow-btn-stone wow-btn-sm col-span-2 !py-2 sm:col-span-1 sm:!px-4" @click="trackEvent('names_cta', { source: 'arena', game_mode: mode }); emit('close')">✒ {{ $t('names.cta') }}</NuxtLink>
         <button class="col-span-2 py-1 text-[14px] text-neutral-400 underline decoration-dotted underline-offset-4 hover:text-gold sm:col-span-1" @click="emit('close')">{{ $t('result.viewFight') }}</button>
       </div>
     </div>

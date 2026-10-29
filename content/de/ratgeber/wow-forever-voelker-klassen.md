@@ -67,3 +67,5 @@ Herkunft, Volksfähigkeiten, Startgebiet und welche Klasse am besten passt, steh
 *Stand der Beta. Bis zum Start am 4. November 2026 sind Änderungen möglich.*
 
 Du willst dich überraschen lassen? Der [Forever-Zufallsgenerator](/forever/zufaellige-klasse) würfelt Volk, Klasse und Talentbaum, auf Wunsch nur für deine Fraktion.
+
+Dein Volk steht fest? In WoW Forever braucht jeder Charakter auch einen Nachnamen: Der [Forever-Namensgenerator](/forever/namensgenerator) schlägt Vor- und Nachnamen für jedes Volk vor, auf Wunsch mit deutschen Nachnamen.

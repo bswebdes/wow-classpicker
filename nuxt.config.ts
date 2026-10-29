@@ -99,7 +99,7 @@ export default defineNuxtConfig({
     llmsTxt: {
       notes: [
         'Find Your Main is a WoW class picker that helps players choose a class in World of Warcraft. It covers retail WoW (Midnight, 13 classes, 40 specializations) and WoW Forever (Classic+, launching 4 November 2026, 9 classes, 10 races, 56 race-class combinations).',
-        'Tools: an arena battle simulator, a class quiz and a random class generator. Content: one page per class for each game, one page per retail specialization (all 40 Midnight specs, including the new Devourer Demon Hunter) with playstyle, core mechanics, key abilities, lore and FAQ, plus guides on beginner classes, solo classes, tanks, healers and class colors.',
+        'Tools: an arena battle simulator, a class quiz, a random class generator and a name generator (first names for retail WoW, first name and surname for WoW Forever, with German surnames on the German pages). Content: one page per class for each game, one page per retail specialization (all 40 Midnight specs, including the new Devourer Demon Hunter) with playstyle, core mechanics, key abilities, lore and FAQ, plus guides on beginner classes, solo classes, tanks, healers and class colors.',
         'German is the default language; English pages live under /en. Ratings for difficulty and solo play are editorial assessments, not DPS rankings.'
       ]
     }
@@ -132,6 +132,9 @@ export default defineNuxtConfig({
   nitro: {
     // Der Node-Server komprimiert nicht selbst: .br/.gz-Varianten beim Build erzeugen (HTML, JS, CSS)
     compressPublicAssets: { gzip: true, brotli: true },
+    // Namensgenerator: nächtlicher Nachschub mit Claude Haiku (server/tasks/names/refill.ts), Startvorrat in server/assets
+    experimental: { tasks: true },
+    scheduledTasks: { '0 4 * * *': ['names:refill'] },
     prerender: {
       // Seiten als /klassen/magier/index.html schreiben (Standard): Der Node-Server findet nur diese Form,
       // /klassen/magier.html (früher für Netlify) übersieht er und rendert die Seite bei jedem Aufruf neu

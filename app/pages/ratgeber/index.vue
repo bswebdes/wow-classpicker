@@ -56,7 +56,7 @@ const style = {
     <FilterChips v-model="filter" :label="$t('guidesPage.filterLabel')" :options="filterOptions" class="mt-8" />
 
     <ul class="mt-6 grid gap-4 md:grid-cols-2">
-      <li v-for="g in visible" :key="g.path">
+      <li v-for="(g, i) in visible" :key="g.path" v-reveal="i % 2">
         <NuxtLink
           :to="localePath({ name: 'ratgeber-slug', params: { slug: slugOf(g.path) } })"
           class="wow-tooltip relative flex h-full flex-col overflow-hidden !pl-6 transition-colors before:absolute before:inset-y-0 before:left-0 before:w-1.5 before:content-[''] hover:border-gold"

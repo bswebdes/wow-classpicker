@@ -51,6 +51,12 @@ Auf dieser Website kannst du zum Spaß Erfolge sammeln, etwa wenn du mehrere Kla
 
 Rechtsgrundlage ist deine Einwilligung nach § 25 Abs. 1 TDDDG. Du kannst sie jederzeit in den Cookie-Einstellungen widerrufen; der Eintrag wird dann gelöscht. Du kannst ihn außerdem über die Einstellungen deines Browsers entfernen.
 
+## Namensgenerator
+
+Der Namensgenerator holt seine Vorschläge von diesem Server. Kopierst oder meldest du einen Namen, zählt der Server nur, wie oft dieser Name kopiert oder gemeldet wurde, damit vergebene oder unpassende Namen seltener erscheinen. Über dich wird dabei nichts gespeichert. Einen Vornamen, den du für die Nachnamen-Suche eintippst, nutzt der Server nur für diese Suche; er wird nicht gespeichert und an niemanden weitergegeben. Zum Schutz vor Missbrauch zählt der Server kurzzeitig im Arbeitsspeicher, wie viele Anfragen von einer IP-Adresse kommen; die Zählung verfällt nach spätestens einer Stunde.
+
+Die Namen selbst lasse ich vorab mit Claude (Anthropic) erzeugen, und oft gemeldete Namen lasse ich dort automatisch prüfen. Dabei wird nur der Name selbst übertragen, keine Daten von Besuchern, und was du eintippst, geht an keine KI. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO; mein berechtigtes Interesse liegt in einem funktionierenden und vor Missbrauch geschützten Werkzeug.
+
 ## Statistik ohne Cookies (Saysmo)
 
 Damit ich weiß, welche Seiten gelesen werden und wie Besucher auf die Website finden, messe ich mit Saysmo, wie die Website genutzt wird. Saysmo ist mein eigenes Werkzeug (frysch.studio, Benjamin Schey). Dazu lädt jede Seite ein kleines Skript von t.saysmo.com.

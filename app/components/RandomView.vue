@@ -215,6 +215,14 @@ const idleReel = computed(() => [...getClassList(props.mode), ...getClassList(pr
                 <NuxtLink :to="classLink(result)" class="wow-btn wow-btn-sm" @click="trackEvent('result_class_click', { source: 'random', class_id: result.classId, game_mode: mode })">
                   {{ $t('result.learnMore', { class: $t(`classAccusative.${result.classId}`) }) }} ›
                 </NuxtLink>
+                <!-- Forever würfelt auch das Volk: direkt Namen für genau diesen Charakter -->
+                <NuxtLink
+                  :to="localePath({ name: routeNameFor('namensgenerator', mode), query: result.race ? { race: result.race.id } : {} })"
+                  class="wow-btn wow-btn-sm wow-btn-stone"
+                  @click="trackEvent('names_cta', { source: 'random', race: result.race?.id, game_mode: mode })"
+                >
+                  ✒ {{ $t(result.race ? 'names.ctaCharacter' : 'names.cta') }}
+                </NuxtLink>
               </div>
             </div>
           </Transition>

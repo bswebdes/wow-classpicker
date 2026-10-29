@@ -36,7 +36,7 @@ useSchemaOrg([
     <NuxtLink :to="localePath(routeNameFor('klassen-vergleich', mode))" class="wow-btn wow-btn-stone mt-5">⚖ {{ $t('compare.nav') }}</NuxtLink>
 
     <div class="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-      <ClassCard v-for="c in classes" :key="c.id" :class-id="c.id" :mode="mode" />
+      <ClassCard v-for="(c, i) in classes" :key="c.id" v-reveal="i % 3" :class-id="c.id" :mode="mode" />
     </div>
 
     <h2 class="wow-title mt-14 text-2xl">{{ $t('classesPage.tableTitle') }}</h2>

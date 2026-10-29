@@ -213,6 +213,9 @@ const formatDate = (date) => new Date(date).toLocaleDateString(locale.value === 
       <NuxtLink :to="localePath(routeNameFor('quiz', mode))" class="wow-btn wow-btn-stone wow-btn-lg">
         {{ $t('nav.quiz') }}
       </NuxtLink>
+      <NuxtLink :to="localePath(routeNameFor('namensgenerator', mode))" class="wow-btn wow-btn-stone wow-btn-lg" @click="trackEvent('names_cta', { source: 'class', class_id: info.id, game_mode: mode })">
+        ✒ {{ $t('names.ctaClass', { class: $t(`classes.${info.id}.name`) }) }}
+      </NuxtLink>
     </div>
 
     <section class="mt-14">

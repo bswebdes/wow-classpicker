@@ -65,3 +65,5 @@ Wenn du dich zuerst in ein Volk verliebt hast, kannst du mit diesen Klassen also
 Nimm das Volk, das dir gefällt. Volksfähigkeiten bringen kleine Vorteile, aber der Unterschied ist gering und ändert sich mit Patches. Aussehen, Animationen, Geschichte und Fraktion begleiten dich dagegen jeden Tag. Wenn dein Lieblingsvolk deine Wunschklasse nicht spielen kann, lohnt sich ein Blick auf die Klassen, die fast jedem Volk offenstehen.
 
 Du weißt noch gar nicht, welche Klasse es werden soll? Das [Klassen-Quiz](/welche-klasse-passt-zu-mir) hilft dir, oder du lässt die seltenen Klassen im [Klassen-Turnier](/?classes=evoker,demonhunter,druid,paladin,shaman) gegeneinander antreten. Für das klassische Azeroth gibt es eine eigene Übersicht: [WoW Forever Völker und Klassen](/ratgeber/wow-forever-voelker-klassen).
+
+Wenn Volk und Klasse feststehen, fehlt nur noch der Name: Der [WoW-Namensgenerator](/namensgenerator) schlägt einzigartige Namen für jedes Volk vor, mit Varianten, falls deiner vergeben ist.
