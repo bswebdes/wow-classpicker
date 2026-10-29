@@ -70,7 +70,7 @@ Spielerisch hat Blizzard dem Orc am 26. Oktober **Befehlsgewalt** zurückgegeben
 
 Die Verlassenen haben sich gerade erst vom Lichkönig befreit, und viele von ihnen greifen zur dunklen Magie, um sich gegen ihn zu behaupten. Ein untoter Hexenmeister im Magieviertel von Unterstadt ist eines der klassischsten Bilder von World of Warcraft.
 
-[Wille der Verlassenen](https://www.wowhead.com/forever/de/spell=7744) bricht alle 2 Minuten Furcht, Bezauberung und Schlaf. Gegen andere Hexenmeister, deren Furcht eine der stärksten Waffen ist, macht dich das zur ersten PvP-Wahl der Horde. [Kannibalismus](https://www.wowhead.com/forever/de/spell=20577) gibt in Forever auch Mana zurück, und [Berührung des Grabes](https://www.wowhead.com/forever/de/spell=1260189) entzieht Gegnern beim Zaubern mit 30 Prozent Chance Leben.
+[Wille der Verlassenen](https://www.wowhead.com/forever/de/spell=7744) bricht alle 2 Minuten Furcht, Bezauberung und Schlaf. Gegen andere Hexenmeister, deren Furcht eine der stärksten Waffen ist, macht dich das zur ersten PvP-Wahl der Horde. [Kannibalismus](https://www.wowhead.com/forever/de/spell=20577) gibt in Forever auch Mana zurück, und [Berührung des Grabes](https://www.wowhead.com/forever/de/spell=1260201) entzieht Gegnern beim Zaubern mit 30 Prozent Chance Leben.
 
 ### Troll: die neue Kombination
 

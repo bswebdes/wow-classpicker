@@ -70,7 +70,7 @@ In gameplay, Blizzard gave the Orc **Command** back on 26 October: your pets dea
 
 The Forsaken have only just freed themselves from the Lich King, and many of them turn to dark magic to stand against him. An undead warlock in the Magic Quarter of Undercity is one of the most classic images in World of Warcraft.
 
-[Will of the Forsaken](https://www.wowhead.com/forever/spell=7744) breaks fear, charm and sleep every 2 minutes. Against other Warlocks, whose fear is one of their strongest weapons, that makes you the first PvP pick for the Horde. [Cannibalize](https://www.wowhead.com/forever/spell=20577) restores mana as well in Forever, and [Touch of the Grave](https://www.wowhead.com/forever/spell=1260189) has a 30 percent chance to drain life from your target when you cast.
+[Will of the Forsaken](https://www.wowhead.com/forever/spell=7744) breaks fear, charm and sleep every 2 minutes. Against other Warlocks, whose fear is one of their strongest weapons, that makes you the first PvP pick for the Horde. [Cannibalize](https://www.wowhead.com/forever/spell=20577) restores mana as well in Forever, and [Touch of the Grave](https://www.wowhead.com/forever/spell=1260201) has a 30 percent chance to drain life from your target when you cast.
 
 ### Troll: the new combination
 

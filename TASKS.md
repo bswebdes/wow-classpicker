@@ -12,6 +12,7 @@ Stand: 29.10.2026 · live auf [findyourmain.com](https://findyourmain.com), Bran
   - Classic-Klassenquests (Haltungen, Totems, Dämonen, Reittiere) in den Lore-Abschnitten der Klassenseiten
   - Classic-Annahmen in den Ratgebern „Schnell leveln“, „Forever-Tanks“, „Forever-Heiler“ (Paladin-Tank, Erste Hilfe) samt Hinweis-Kästen
   - Ratgeber „Bestes Volk für Magier/Hexenmeister in Forever“ (Stand Blizzard-Notizen 26./27.10.): Zahlen der Volksfähigkeiten (Heureka!, Gnadenlos, Windgesegnet, Berserker-Dauer, Abklingzeiten von Fluch brechen und Berserker), Spell-ID und deutscher Name von „Befehlsgewalt“ (Orc, fehlt noch auf Wowhead), Empfehlungen von Wowhead/Icy Veins nach dem Start
+  - Ratgeber „Bestes Volk für Jäger/Paladin in Forever“: Befehlsgewalt (Orc, Begleiter +5 %), Artisan's Precision (Zwerg, +1 % Treffer, ID und deutscher Name fehlen), Elunes Licht, Ebenenlaufen, Durchhaltevermögen; Unbeugsamkeit 5 oder 10 % (Wowhead zeigt 5 %, Notizen 10 %); Spott-Reichweite von Siegel des Furors; Klassenquests der untoten Paladine und das Reittier mit Stufe 60
 - [ ] Forever-Talentbaum-Seiten nach Vorbild `/klassen/<klasse>/<spec>`, sobald die überarbeiteten Bäume feststehen
 
 ### Mit Patch 12.2
@@ -23,7 +24,8 @@ Stand: 29.10.2026 · live auf [findyourmain.com](https://findyourmain.com), Bran
 ### Neue Ratgeber (Ubersuggest 29.10.2026, Suchen/Monat USA)
 - [ ] Serie „Bestes Volk für [Klasse]“, je Klasse eine Seite DE/EN, mit Link zum Namensgenerator (?race=…): Hexenmeister 1.000, Magier 720, Todesritter 390, Jäger 320, Paladin 260 (Schwierigkeit 24–34)
   - [x] Magier + Hexenmeister, je Retail und Forever (29.10.2026)
-  - [ ] weiter mit Todesritter, Jäger, Paladin. Werkzeuge: `::race-picks{races="…" reasons="…|…" mode="…"}` (Völkerkarten mit Generator-Link), Beitragsbild per `node scripts/hero-races.mjs race-<klasse> class-<klasse> volk-f,volk-m,…`, Simulationen bei Bloodmallet (castingpatchwerk), PvP-Rangliste murlok.io
+  - [x] Todesritter, Jäger, Paladin (Retail) + Jäger, Paladin (Forever), DE/EN (29.10.2026)
+  - [ ] weiter mit den übrigen Klassen (Suchvolumen prüfen). Werkzeuge: `::race-picks{races="…" reasons="…|…" mode="…"}` (Völkerkarten mit Generator-Link), Beitragsbild per `node scripts/hero-races.mjs race-<klasse> class-<klasse> volk-f,volk-m,…`, Simulationen bei Bloodmallet (castingpatchwerk), PvP-Rangliste murlok.io
 - [ ] „Allianz oder Horde?“ DE/EN (USA 210, DE 110, Dezember-Spitze 390), mit Blick auf Forever (Paladin/Schamane für beide Fraktionen)
 - [ ] „Beste DPS-Klasse“ (590): redaktionell nach Spielstil, keine Schadensrangliste
 - [ ] Optional „Einsteiger-Tierlist“ aus den eigenen Bewertungen (wow class tier list 1.600)
