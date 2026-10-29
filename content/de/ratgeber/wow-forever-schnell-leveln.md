@@ -2,6 +2,7 @@
 title: "WoW Forever schnell leveln: Welche Klasse levelt am schnellsten?"
 description: "Welche Klasse levelt in WoW Forever am schnellsten? Jäger, Hexenmeister, Magier und Co., basierend auf WoW Classic, mit Tipps für weniger Pausen."
 key: forever-leveling
+topic: knowledge
 image: barrens
 imageAlt: "Das Brachland im klassischen Azeroth: goldene Savanne mit Schirmbäumen unter blauem Himmel"
 order: 12

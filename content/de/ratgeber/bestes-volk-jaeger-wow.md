@@ -2,6 +2,8 @@
 title: "Bestes Volk für Jäger in WoW Midnight: Lore, Fähigkeiten, Werte"
 description: "Welches Volk passt zum Jäger? Alle 26 Völker in WoW Midnight mit Lore, Volksfähigkeiten und ehrlichen Zahlen für Tierherrschaft, Treffsicherheit, Überleben und PvP."
 key: race-hunter
+topic: races
+series: race
 image: race-hunter
 imageAlt: "Porträts von Nachtelfe, Zwerg, Orcin, Tauren, Blutelfe und Vulpera vor einem dunklen Wald"
 order: 21

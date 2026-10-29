@@ -2,6 +2,7 @@
 title: "Beste Solo-Klasse in WoW Midnight – Klassen für Einzelgänger"
 description: "Welche WoW-Klasse ist am besten für Solo-Spieler? Die stärksten Klassen für Quests, Tiefen und Open World in Midnight, ohne Gruppe."
 key: solo
+topic: class
 image: harandar
 imageAlt: "Harandar: ein Wald aus riesigen, leuchtenden Pilzen"
 summary: "Die besten Solo-Klassen in WoW Midnight sind Jäger, Todesritter (Blut), Paladin, Hexenmeister, Dämonenjäger und Druide. Sie haben Selbstheilung, einen Begleiter oder viel Robustheit."

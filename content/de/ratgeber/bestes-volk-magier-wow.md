@@ -2,6 +2,8 @@
 title: "Bestes Volk für Magier in WoW Midnight: Lore, Fähigkeiten, Werte"
 description: "Welches Volk passt zum Magier? Alle 26 Völker in WoW Midnight mit Lore, Volksfähigkeiten und ehrlichen Zahlen für Arkan, Feuer, Frost, M+ und PvP."
 key: race-mage
+topic: races
+series: race
 image: race-mage
 imageAlt: "Porträts von Leerenelfe, Zwerg, Menschenfrau, Blutelf, Trollin und Tauren vor schwebenden Felsinseln in violettem Arkanlicht"
 order: 16

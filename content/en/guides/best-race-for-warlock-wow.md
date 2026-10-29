@@ -2,6 +2,8 @@
 title: "Best Race for Warlock in WoW Midnight: Lore, Racials, Numbers"
 description: "Which race suits a Warlock? All 26 races in WoW Midnight with lore, racial abilities and honest numbers for Affliction, Demonology, Destruction and PvP."
 key: race-warlock
+topic: races
+series: race
 image: race-warlock
 imageAlt: "Portraits of an Orc, Human woman, Gnome, Undead woman, Void Elf and Troll woman in front of a lava landscape under a red sky"
 order: 17

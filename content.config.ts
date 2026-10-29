@@ -32,6 +32,10 @@ const guideSchema = z.object({
   // Reihenfolge in der Ratgeber-Übersicht
   order: z.number().default(99),
   game: z.enum(['retail', 'forever']).default('retail'),
+  // Thema für die Gruppen der Ratgeber-Übersicht
+  topic: z.enum(['class', 'roles', 'races', 'knowledge']).default('knowledge'),
+  // Serie mit einer Seite je Klasse (race = „Bestes Volk für …“), erscheint als Klassen-Raster statt als Karten
+  series: z.enum(['race']).optional(),
   summary: z.string().optional(),
   faq: faqSchema,
   date: z.string(),

@@ -2,6 +2,7 @@
 title: "WoW Forever Heiler-Klassen: Priester, Paladin, Schamane und Druide"
 description: "Welche Klasse ist der beste Heiler in WoW Forever? Priester, Paladin, Schamane und Druide im Vergleich, basierend auf WoW Classic, mit Stärken und Spielgefühl."
 key: forever-healers
+topic: roles
 image: ashenvale
 imageAlt: "Das Eschental im klassischen Azeroth: ein Wald in violettem Abendlicht"
 order: 14

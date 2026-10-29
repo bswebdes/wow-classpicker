@@ -2,6 +2,7 @@
 title: "Which WoW Class Should I Play in Midnight? A Decision Guide"
 description: "Which WoW class should you play? Find the right class for Midnight in 5 steps, with picks by role, playstyle and experience."
 key: which-class
+topic: class
 image: midnight-heroes
 imageAlt: "Heroes of different races look out over a city under a purple evening sky"
 summary: "Pick your WoW class in five steps: role (tank, healer, damage), melee or ranged, favorite content, desired complexity and fantasy. If you are undecided, Paladin, Druid and Monk are ideal because they can play all three roles."

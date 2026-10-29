@@ -2,6 +2,8 @@
 title: "Bestes Volk für Todesritter in WoW Midnight: Lore und Werte"
 description: "Welches Volk passt zum Todesritter? 23 Völker in WoW Midnight mit Lore, Volksfähigkeiten und ehrlichen Zahlen für Blut, Frost, Unheilig, Mythisch+ und PvP."
 key: race-deathknight
+topic: races
+series: race
 image: race-deathknight
 imageAlt: "Porträts von Mensch, Orcin, Untotem, Blutelfe, Zwerg und Taurin vor einem eisigen Nordend-Gebirge"
 order: 20

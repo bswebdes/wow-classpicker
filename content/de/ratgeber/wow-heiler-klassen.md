@@ -2,6 +2,7 @@
 title: "WoW Heiler-Klassen in Midnight – alle 7 Heiler im Vergleich"
 description: "Welcher Heiler passt zu dir? Alle 7 Heiler-Spezialisierungen in WoW Midnight im Vergleich, von Disziplin-Priester bis Bewahrungs-Rufer."
 key: healers
+topic: roles
 image: eversong
 imageAlt: "Immersangwald in leuchtend goldenem und rotem Herbstlaub"
 summary: "In WoW Midnight gibt es sieben Heiler-Spezialisierungen in sechs Klassen: Priester (Heilig, Disziplin), Paladin (Heilig), Schamane, Druide (je Wiederherstellung), Mönch (Nebelwirker) und Rufer (Bewahrung). Heilig-Paladin und Heilig-Priester sind für Einsteiger am zugänglichsten."

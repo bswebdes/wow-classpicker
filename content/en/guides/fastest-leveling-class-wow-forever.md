@@ -2,6 +2,7 @@
 title: "Fastest Leveling Class in WoW Forever"
 description: "Which class levels fastest in WoW Forever? Hunter, Warlock, Mage and more, based on WoW Classic, with tips for less downtime while leveling."
 key: forever-leveling
+topic: knowledge
 image: barrens
 imageAlt: "The Barrens in classic Azeroth: golden savanna with flat-topped trees under a blue sky"
 order: 12

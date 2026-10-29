@@ -2,6 +2,7 @@
 title: "WoW Class Race Combos: Every Combination in Midnight"
 description: "Which race can play which class? All 240 race and class combos in WoW Midnight as a table, with rare classes, the Haranir and new combinations."
 key: races
+topic: races
 image: haranir
 imageAlt: "A Haranir stands in front of a purple landscape with giant mushrooms"
 order: 8

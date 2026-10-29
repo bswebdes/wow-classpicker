@@ -2,6 +2,7 @@
 title: "Best WoW Class for Solo Play in Midnight: Lone Wolf Picks"
 description: "What is the best WoW class for solo players? The strongest classes for quests, delves and open world in Midnight, no group needed."
 key: solo
+topic: class
 image: harandar
 imageAlt: "Harandar: a forest of giant glowing mushrooms"
 summary: "The best solo classes in WoW Midnight are Hunter, Death Knight (Blood), Paladin, Warlock, Demon Hunter and Druid. They have self-healing, a companion or lots of sturdiness."

@@ -2,6 +2,7 @@
 title: "Beste Klasse für PvP in WoW Midnight – welche passt zu dir?"
 description: "Welche WoW-Klasse ist die beste für PvP? Klassen für Arena, Solo-Shuffle, Schlachtfelder und Kriegsmodus nach Spielstil, mit leichtem Einstieg und ohne Tier-List."
 key: pvp
+topic: roles
 image: prey
 imageAlt: "Blutelf mit roten Klingen in einer dunklen Umgebung"
 order: 6

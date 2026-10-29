@@ -2,6 +2,8 @@
 title: "Best Race for Paladin in WoW Midnight: Lore, Racials, Numbers"
 description: "Which race suits a Paladin? All 9 paladin races in WoW Midnight with lore, racial abilities and numbers for Holy, Protection, Retribution and PvP, plus patch 12.2."
 key: race-paladin
+topic: races
+series: race
 image: race-paladin
 imageAlt: "Portraits of a Human, Blood Elf woman, Dwarf, Tauren woman, Draenei and Lightforged Draenei woman in front of the tall windows of a dark cathedral"
 order: 22

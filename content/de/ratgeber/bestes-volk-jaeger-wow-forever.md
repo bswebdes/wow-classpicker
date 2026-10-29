@@ -2,6 +2,8 @@
 title: "Bestes Volk für Jäger in WoW Forever: Nachtelf, Orc, Mensch & Co."
 description: "Welches Volk für Jäger in WoW Forever? Nachtelf, Zwerg, Orc, Tauren, Troll und die neuen Menschen- und Himmelsgeborenen-Jäger mit Fähigkeiten, Lore und Empfehlungen."
 key: race-hunter-forever
+topic: races
+series: race
 image: race-hunter-forever
 imageAlt: "Porträts von Nachtelfe, Zwerg, Menschenfrau, Orc, Taurin, Troll und Himmelsgeborenem vor der Steppe des Brachlands"
 order: 23

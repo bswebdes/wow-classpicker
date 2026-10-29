@@ -2,6 +2,8 @@
 title: "Best Race for Warlock in WoW Forever: Orc, Gnome, Human & More"
 description: "Which race for Warlock in WoW Forever? Orc, Gnome, Human, Undead and the new Troll Warlock with racial abilities, lore and recommendations."
 key: race-warlock-forever
+topic: races
+series: race
 image: race-warlock-forever
 imageAlt: "Portraits of an Orc, Gnome woman, Undead, Human woman and Troll in front of a wooden walkway in a misty swamp"
 order: 19

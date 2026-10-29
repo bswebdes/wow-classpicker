@@ -2,6 +2,8 @@
 title: "Best Race for Hunter in WoW Midnight: Lore, Racials and Numbers"
 description: "Which race suits a Hunter? All 26 races in WoW Midnight with lore, racial abilities and honest numbers for Beast Mastery, Marksmanship, Survival and PvP."
 key: race-hunter
+topic: races
+series: race
 image: race-hunter
 imageAlt: "Portraits of a Night Elf woman, Dwarf, Orc woman, Tauren, Blood Elf woman and Vulpera in front of a dark forest"
 order: 21

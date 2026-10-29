@@ -2,6 +2,7 @@
 title: "WoW Healer Classes in Midnight – All 7 Healers Compared"
 description: "Which healer suits you? All 7 healing specs in WoW Midnight compared, from Discipline Priest to Preservation Evoker."
 key: healers
+topic: roles
 image: eversong
 imageAlt: "Eversong Woods in glowing golden and red autumn foliage"
 summary: "WoW Midnight has seven healing specs across six classes: Priest (Holy, Discipline), Paladin (Holy), Shaman, Druid (both Restoration), Monk (Mistweaver) and Evoker (Preservation). Holy Paladin and Holy Priest are the most approachable for beginners."

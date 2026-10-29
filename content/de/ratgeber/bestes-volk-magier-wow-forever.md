@@ -2,6 +2,8 @@
 title: "Bestes Volk für Magier in WoW Forever: Gnom, Mensch, Orc & Co."
 description: "Welches Volk für Magier in WoW Forever? Gnom, Mensch, Himmelsgeborene, Untote, Troll und der neue Orc-Magier mit Volksfähigkeiten, Lore und Empfehlungen."
 key: race-mage-forever
+topic: races
+series: race
 image: race-mage-forever
 imageAlt: "Porträts von Gnomin, Mensch, Himmelsgeborenem, Untoter, Troll und Orcin vor dem Himmel über Himmelswall"
 order: 18

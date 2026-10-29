@@ -2,6 +2,7 @@
 title: "WoW Forever Races and Classes: All 56 Combinations"
 description: "Which race can play which class in WoW Forever? All 56 race and class combinations, the new combinations and the new Skyborne race."
 key: forever-races
+topic: races
 image: skyborne
 imageAlt: "Skyborne artwork: a face in the mist above a snowy landscape"
 order: 11

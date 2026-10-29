@@ -2,6 +2,8 @@
 title: "Bestes Volk für Paladin in WoW Forever: Mensch, Zwerg, Untoter"
 description: "Welches Volk für Paladin in WoW Forever? Mensch, Zwerg und der neue untote Paladin der Horde mit Volksfähigkeiten, Lore, Klassenquests und Empfehlungen."
 key: race-paladin-forever
+topic: races
+series: race
 image: race-paladin-forever
 imageAlt: "Porträts von Menschenfrau, Zwerg und Untoter vor den Mauern von Sturmwind"
 order: 24

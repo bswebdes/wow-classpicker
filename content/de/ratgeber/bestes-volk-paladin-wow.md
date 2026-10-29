@@ -2,6 +2,8 @@
 title: "Bestes Volk für Paladin in WoW Midnight: Lore, Fähigkeiten, Werte"
 description: "Welches Volk passt zum Paladin? Alle 9 Paladin-Völker in WoW Midnight mit Lore, Volksfähigkeiten und Zahlen für Heilig, Schutz, Vergeltung und PvP, plus Patch 12.2."
 key: race-paladin
+topic: races
+series: race
 image: race-paladin
 imageAlt: "Porträts von Mensch, Blutelfe, Zwerg, Taurin, Draenei und Lichtgeschmiedeter Draenei vor den hohen Fenstern einer dunklen Kathedrale"
 order: 22

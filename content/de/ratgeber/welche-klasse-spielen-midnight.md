@@ -2,6 +2,7 @@
 title: "Welche Klasse soll ich in WoW Midnight spielen? Guide"
 description: "Welche WoW-Klasse passt zu mir? In 5 Schritten zur richtigen Klasse für Midnight, mit Empfehlungen nach Rolle, Spielstil und Erfahrung."
 key: which-class
+topic: class
 image: midnight-heroes
 imageAlt: "Helden verschiedener Völker blicken auf eine Stadt unter violettem Abendhimmel"
 summary: "Wähle deine WoW-Klasse in fünf Schritten: Rolle (Tank, Heiler, Schaden), Nah- oder Fernkampf, Lieblingsinhalte, gewünschte Komplexität und Fantasy. Für Unentschlossene sind Paladin, Druide und Mönch ideal, weil sie alle drei Rollen spielen können."

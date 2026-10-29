@@ -2,6 +2,7 @@
 title: "Fastest Leveling Class in WoW Midnight"
 description: "Which class levels fastest in WoW Midnight? Why your route matters more than your class, which classes feel fast and leveling tips that actually save you time."
 key: leveling
+topic: knowledge
 image: neighborhoods
 imageAlt: "A cobbled path leads through a village with blue roofs and green trees"
 order: 9
