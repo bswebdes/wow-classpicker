@@ -55,9 +55,10 @@ export const nameVariants = (name: string, max = 4): string[] => {
   const lastVowel = [...n].map((c, i) => [c, i] as const).reverse().find(([c, i]) => i > 0 && accents[c])
   if (lastVowel) out.add(n.slice(0, lastVowel[1]) + accents[lastVowel[0]] + n.slice(lastVowel[1] + 1))
   if (/i/.test(n.slice(1))) out.add(n[0] + n.slice(1).replace('i', 'y'))
-  const cons = n.slice(1).match(/[lnrsth](?=[aeiouy])/)
+  // Konsonant zwischen zwei Vokalen verdoppeln (Velindra → Vellindra), nie am Wortanfang (sonst „Chhuvaka“)
+  const cons = n.match(/(?<=[aeiouy])[lnrst](?=[aeiouy])/)
   if (cons?.index !== undefined) {
-    const i = cons.index + 1
+    const i = cons.index
     out.add(n.slice(0, i) + n[i] + n.slice(i))
   }
   if (/[^aeiou]$/.test(n)) out.add(n + 'a')

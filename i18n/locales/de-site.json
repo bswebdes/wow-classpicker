@@ -848,7 +848,7 @@
       "description": "Kostenloser WoW Namensgenerator: einzigartige Vornamen für jedes Volk in Midnight, episch, düster, Lore oder lustig. Mit Varianten, falls dein Name vergeben ist.",
       "heading": "WoW Namensgenerator",
       "intro": "Finde einen Namen für deinen nächsten Charakter: Volk, Geschlecht und Stil wählen, Namen kopieren. Ist er auf deinem Realm vergeben, nimm eine der Varianten.",
-      "hint": "In Retail muss ein Name nur auf deinem Realm frei sein. Vergeben? Über ⇄ bekommst du Varianten mit Akzent oder anderer Schreibweise.",
+      "hint": "In Retail muss ein Name nur auf deinem Realm frei sein. Vergeben? Über ⇄ bekommst du Varianten mit Akzent oder anderer Schreibweise. Nach drei Kopien schlagen wir einen Namen nicht mehr vor.",
       "ownTitle": "Eigenen Namen prüfen",
       "ownIntro": "Gib einen Namen ein: Wir prüfen ihn gegen die WoW-Namensregeln und schlagen Varianten vor, falls er vergeben ist."
     },
@@ -857,7 +857,7 @@
       "description": "Namensgenerator für WoW Forever: Vor- und Nachname für jedes Volk, episch, düster, Lore oder lustig, auch mit deutschen Nachnamen. Plus Nachnamen zu deinem Vornamen.",
       "heading": "WoW Forever Namensgenerator",
       "intro": "In WoW Forever hat jeder Charakter einen Vor- und einen Nachnamen. Wähle Volk, Geschlecht und Stil und sichere dir deine Kombination, bevor sie jemand anderes nimmt.",
-      "hint": "Die Kombination aus Vor- und Nachname muss in deiner Region einzigartig sein. Namen, die schon oft kopiert wurden, zeigen wir seltener.",
+      "hint": "Die Kombination aus Vor- und Nachname muss in deiner Region einzigartig sein. Nach drei Kopien schlagen wir eine Kombination nicht mehr vor; Vor- und Nachname einzeln bleiben verfügbar.",
       "ownTitle": "Nachnamen zu deinem Vornamen",
       "ownIntro": "Du hast schon einen Vornamen? Gib ihn ein und bekomme passende Nachnamen für das gewählte Volk und den Stil."
     },
@@ -870,6 +870,7 @@
     "history": "Zuletzt gezeigt",
     "cta": "Namen finden",
     "ctaClass": "Namen für deinen {class}",
-    "ctaCharacter": "Namen für diesen Charakter"
+    "ctaCharacter": "Namen für diesen Charakter",
+    "copiedName": "{name} kopiert"
   }
 }

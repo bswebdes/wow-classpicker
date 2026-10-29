@@ -15,6 +15,6 @@ faq:
 
 WoW Forever ist die erste WoW-Version, in der jeder Charakter einen Nachnamen trägt. Das gibt dir viel mehr Freiheit als in Retail: Auch wenn es *Kaelith* tausendfach gibt, kann *Kaelith Dämmerweber* noch frei sein. Gleichzeitig sind gute Kombinationen schnell weg, denn die ganze Region teilt sich einen Namensvorrat.
 
-Wähle oben Volk und Stil und kopiere den Namen, der dir gefällt. Namen, die schon viele kopiert haben, zeigen wir seltener, damit du frische Vorschläge bekommst.
+Wähle oben Volk und Stil und kopiere den Namen, der dir gefällt. Nach drei Kopien schlagen wir eine Kombination nicht mehr vor, damit du frische Vorschläge bekommst. Vor- und Nachname einzeln bleiben verfügbar.
 
 Du schwankst noch bei der Klasse? Unser Ratgeber [Welche Klasse in WoW Forever?](/ratgeber/welche-klasse-wow-forever) hilft dir, und der [Forever-Zufallsgenerator](/forever/zufaellige-klasse) würfelt Volk und Klasse für dich aus.

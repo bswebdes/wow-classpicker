@@ -11,8 +11,9 @@ export interface NameCombo { game: NameGame, race: string, gender: NameGender, s
 export interface NameRow { id: number, first: string, last: string }
 export interface SeedName extends NameCombo { first: string, last: string }
 
-// Ab so vielen Kopien gilt ein Name als wahrscheinlich vergeben; Forever-Namen sind regionweit einzigartig
-const RETIRE_COPIES: Record<NameGame, number> = { forever: 3, retail: 5 }
+// Ab 3 Kopien gilt ein Name als wahrscheinlich vergeben (Benny 29.10.2026). retired: 0 aktiv, 1 vergeben, 2 unpassend (nach Prüfung).
+// Forever: vergeben ist nur die Kombination; Vor- und Nachname bleiben einzeln nutzbar (Nachnamen-Suche)
+const RETIRE_COPIES = 3
 // Meldungen entfernen nie direkt: ab so vielen Meldungen prüft der nächtliche Job den Name (reviewed = 1: schon als ok geprüft)
 export const REVIEW_REPORTS = { new: 2, reviewed: 5 }
 // Ein Nachname darf höchstens so oft vorkommen, sonst sehen alle dieselben Nachnamen
@@ -94,31 +95,33 @@ const where = (f: Filter) => {
   return { sql: parts.join(' AND '), args }
 }
 
-// Zufällige Namen; schon gezeigte (exclude) nur, wenn sonst nichts mehr da ist.
-// Notfallnetz: erst ausgemusterte derselben Auswahl, dann derselbe Filter ohne Stil.
+// Zufällige aktive Namen (vergebene und unpassende nie). Notfallnetz: derselbe Filter ohne Stil,
+// zuletzt schon gezeigte Namen derselben Auswahl, damit die Bühne nie leer bleibt.
 export const pickNames = async (f: Filter, exclude: number[], limit = 10): Promise<NameRow[]> => {
   const d = await ensureSeeded()
   const out: NameRow[] = []
   const seen = new Set(exclude)
-  const take = (filter: Filter, retired: boolean) => {
+  const take = (filter: Filter, skipSeen = true) => {
     const w = where(filter)
-    const skip = [...seen].slice(-300)
+    const skip = skipSeen ? [...seen].slice(-300) : out.map(r => r.id)
     const notIn = skip.length ? ` AND id NOT IN (${skip.map(() => '?').join(',')})` : ''
-    const rows = d.prepare(`SELECT id, first, last FROM names WHERE ${w.sql} AND retired = ?${notIn} ORDER BY random() LIMIT ?`)
-      .all(...w.args, retired ? 1 : 0, ...skip, limit - out.length) as unknown as NameRow[]
+    const rows = d.prepare(`SELECT id, first, last FROM names WHERE ${w.sql} AND retired = 0${notIn} ORDER BY random() LIMIT ?`)
+      .all(...w.args, ...skip, limit - out.length) as unknown as NameRow[]
     for (const r of rows) { out.push(r); seen.add(r.id) }
   }
-  take(f, false)
-  if (out.length < limit) take(f, true)
-  if (out.length < limit && f.style) take({ ...f, style: undefined }, false)
+  take(f)
+  if (out.length < limit && f.style) take({ ...f, style: undefined })
+  if (out.length < limit) take(f, false)
   return out
 }
 
-// Nachnamen zu einem eigenen Vornamen: aus dem Forever-Vorrat, ohne Kombinationen, die es schon gibt
+// Nachnamen zu einem eigenen Vornamen: aus dem Forever-Vorrat, ohne Kombinationen, die es schon gibt.
+// Auch Nachnamen aus vergebenen Kombinationen (retired 1) sind erlaubt, nur unpassende (retired 2) nie.
 export const pickSurnames = async (f: Filter, first: string, limit = 10): Promise<string[]> => {
   const d = await ensureSeeded()
   const w = where({ ...f, gender: undefined })
-  const rows = d.prepare(`SELECT DISTINCT last FROM names WHERE ${w.sql} AND retired = 0 AND last != '' ORDER BY random() LIMIT ?`)
+  const rows = d.prepare(`SELECT DISTINCT last FROM names WHERE ${w.sql} AND retired < 2 AND last != ''
+    AND last NOT IN (SELECT last FROM names WHERE retired = 2 AND last != '') ORDER BY random() LIMIT ?`)
     .all(...w.args, limit * 3) as { last: string }[]
   const taken = d.prepare('SELECT 1 FROM names WHERE game = ? AND first = ? AND last = ?')
   return rows.map(r => r.last).filter(l => !taken.get(f.game, first, l)).slice(0, limit)
@@ -126,11 +129,10 @@ export const pickSurnames = async (f: Filter, first: string, limit = 10): Promis
 
 export const markName = async (id: number, action: 'copy' | 'report') => {
   const d = await ensureSeeded()
-  const row = d.prepare('SELECT game FROM names WHERE id = ?').get(id) as { game: NameGame } | undefined
-  if (!row) return false
+  if (!d.prepare('SELECT 1 FROM names WHERE id = ?').get(id)) return false
   if (action === 'copy') {
-    d.prepare('UPDATE names SET copies = copies + 1, retired = CASE WHEN copies + 1 >= ? THEN 1 ELSE retired END WHERE id = ?')
-      .run(RETIRE_COPIES[row.game], id)
+    d.prepare('UPDATE names SET copies = copies + 1, retired = CASE WHEN retired = 0 AND copies + 1 >= ? THEN 1 ELSE retired END WHERE id = ?')
+      .run(RETIRE_COPIES, id)
   }
   else d.prepare('UPDATE names SET reports = reports + 1 WHERE id = ?').run(id)
   return true
@@ -145,7 +147,7 @@ export const reportedNames = (limit = 200) => open().prepare(
 // Ergebnis der Prüfung: unpassende raus, die übrigen als geprüft markieren und Zähler zurücksetzen
 export const applyReview = (remove: number[], keep: number[]) => {
   const d = open()
-  const out = d.prepare('UPDATE names SET retired = 1 WHERE id = ?')
+  const out = d.prepare('UPDATE names SET retired = 2 WHERE id = ?')
   const ok = d.prepare('UPDATE names SET reviewed = 1, reports = 0 WHERE id = ?')
   d.exec('BEGIN')
   for (const id of remove) out.run(id)

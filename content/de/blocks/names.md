@@ -6,7 +6,7 @@ faq:
   - q: "Mein Name ist schon vergeben. Was kann ich tun?"
     a: "In Retail muss ein Name nur auf deinem Realm frei sein. Probier eine Variante: ein Akzent auf einem Buchstaben (aus Velindra wird Velíndra), ein y statt eines i, ein doppelter Konsonant oder ein zusätzlicher Vokal am Ende. Der Knopf ⇄ neben jedem Namen zeigt dir solche Varianten."
   - q: "Sind die Namen wirklich einzigartig?"
-    a: "Jeder Name steht nur einmal in unserem Vorrat, und Namen, die schon oft kopiert wurden, zeigen wir seltener. Ob ein Name auf deinem Realm noch frei ist, siehst du nur im Spiel, denn Blizzard bietet dafür keine Abfrage an."
+    a: "Jeder Name steht nur einmal in unserem Vorrat, und nach drei Kopien schlagen wir einen Namen nicht mehr vor. Ob ein Name auf deinem Realm noch frei ist, siehst du nur im Spiel, denn Blizzard bietet dafür keine Abfrage an."
   - q: "Woher kommen die Namen?"
     a: "Die Namen werden vorab mit KI erstellt und gegen die WoW-Namensregeln und eine Sperrliste mit Lore-Figuren und beleidigenden Wörtern geprüft. Was du hier eintippst, geht an keine KI."
 ---
