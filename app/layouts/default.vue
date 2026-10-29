@@ -16,7 +16,9 @@ const navItems = computed(() => [
   { key: 'klassen', icon: 'classes', to: localePath(routeName('klassen')), label: t('nav.classes'), short: t('nav.short.classes') },
   { key: 'quiz', icon: 'quiz', to: localePath(routeName('quiz')), label: t('nav.quiz'), short: t('nav.short.quiz') },
   { key: 'zufall', icon: 'random', to: localePath(routeName('zufall')), label: t('nav.random'), short: t('nav.short.random') },
-  { key: 'ratgeber', icon: 'guides', to: localePath('ratgeber'), label: t('nav.guides'), short: t('nav.short.guides') }
+  // Namensgenerator statt Ratgeber (29.10.2026): Die Ratgeber-Übersicht kam kaum übers Menü, die Ratgeber selbst über Google.
+  // Ratgeber bleiben im Footer und im mobilen Menü verlinkt.
+  { key: 'namensgenerator', icon: 'names', to: localePath(routeName('namensgenerator')), label: t('nav.names'), short: t('nav.short.names') }
 ])
 
 // Aktiver Menüpunkt, auch auf Unterseiten (Klassen- und Spec-Seiten, Vergleiche, einzelne Ratgeber)
@@ -40,7 +42,8 @@ const footerColumns = computed(() => [
       { to: localePath('klassen'), label: t('nav.classes') },
       { to: localePath('quiz'), label: t('nav.quiz') },
       { to: localePath('zufall'), label: t('nav.random') },
-      { to: localePath('klassen-vergleich'), label: t('compare.nav') }
+      { to: localePath('klassen-vergleich'), label: t('compare.nav') },
+      { to: localePath('namensgenerator'), label: t('nav.names') }
     ]
   },
   {
@@ -50,7 +53,8 @@ const footerColumns = computed(() => [
       { to: localePath('forever-klassen'), label: t('nav.classes') },
       { to: localePath('forever-quiz'), label: t('nav.quiz') },
       { to: localePath('forever-zufall'), label: t('nav.random') },
-      { to: localePath('forever-klassen-vergleich'), label: t('compare.nav') }
+      { to: localePath('forever-klassen-vergleich'), label: t('compare.nav') },
+      { to: localePath('forever-namensgenerator'), label: t('nav.names') }
     ]
   },
   {
@@ -172,6 +176,7 @@ const modes = computed(() => [
       </nav>
 
       <!-- Mobil: aufklappbares Menü -->
+      <Transition name="menu">
       <div v-if="menuOpen" id="mobile-menu" class="border-t border-gold-border/60 bg-[#0b0805] md:hidden">
         <nav :aria-label="$t('nav.menu')">
           <ul>
@@ -182,6 +187,12 @@ const modes = computed(() => [
                 active-class="!text-gold bg-gold/5"
               >
                 {{ item.label }}
+                <span class="text-gold-dark" aria-hidden="true">›</span>
+              </NuxtLink>
+            </li>
+            <li>
+              <NuxtLink :to="localePath('ratgeber')" class="flex items-center justify-between border-b border-white/5 px-5 py-3.5 font-display text-[17px] font-semibold text-neutral-200" active-class="!text-gold bg-gold/5">
+                {{ $t('nav.guides') }}
                 <span class="text-gold-dark" aria-hidden="true">›</span>
               </NuxtLink>
             </li>
@@ -198,6 +209,7 @@ const modes = computed(() => [
           <button class="text-[15px] text-neutral-400 underline underline-offset-2" @click="$showCookieSettings?.()">{{ $t('footer.cookies') }}</button>
         </div>
       </div>
+      </Transition>
 
       <!-- Desktop: Hauptnavigation als Reiterleiste -->
       <div class="hidden border-t border-gold-border/40 bg-gradient-to-b from-black/70 to-black/40 md:block">

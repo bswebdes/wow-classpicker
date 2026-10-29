@@ -311,3 +311,21 @@
 /* Megamenü: geschlossen display:none (sonst verbreitert es unsichtbar die Seite), beim Öffnen kurz einblenden */
 .mega-panel { animation: mega-in 0.15s ease-out; }
 @keyframes mega-in { from { opacity: 0; transform: translateY(-4px); } }
+
+/* Bewegung (29.10.2026): kurz und dezent. „Bewegung reduzieren“ schaltet alles über die Regel oben ab. */
+/* Hereingleiten beim Scrollen (v-reveal, app/plugins/reveal.ts) */
+.reveal {
+  opacity: 0;
+  transform: translateY(14px);
+  transition: opacity 0.45s ease-out var(--reveal-delay, 0ms), transform 0.45s cubic-bezier(0.2, 0.7, 0.2, 1) var(--reveal-delay, 0ms);
+}
+.reveal.is-visible { opacity: 1; transform: none; }
+
+/* Seitenwechsel (app/app.vue) */
+.page-enter-active, .page-leave-active { transition: opacity 0.16s ease, transform 0.16s ease; }
+.page-enter-from { opacity: 0; transform: translateY(6px); }
+.page-leave-to { opacity: 0; }
+
+/* Mobiles Menü gleitet herunter */
+.menu-enter-active, .menu-leave-active { transition: opacity 0.18s ease, transform 0.18s ease; }
+.menu-enter-from, .menu-leave-to { opacity: 0; transform: translateY(-8px); }

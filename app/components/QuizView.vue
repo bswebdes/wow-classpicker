@@ -200,8 +200,10 @@ const quality = ['text-quality-epic border-quality-epic', 'text-quality-rare bor
       </div>
 
       <!-- Fortschritt wie ein Erfahrungsbalken -->
-      <div class="h-2.5 bg-black/70">
-        <div class="h-full bg-gradient-to-b from-[#c76bff] to-[#58139e] transition-all duration-300" :style="{ width: `${(Math.min(step, questions.length) / questions.length) * 100}%` }" />
+      <div class="relative h-2.5 overflow-hidden bg-black/70">
+        <div class="xp-fill h-full bg-gradient-to-b from-[#c76bff] to-[#58139e]" :style="{ width: `${(Math.min(step, questions.length) / questions.length) * 100}%` }" />
+        <!-- Unterteilung wie beim Erfahrungsbalken im Spiel -->
+        <div class="pointer-events-none absolute inset-0 bg-[repeating-linear-gradient(90deg,transparent_0,transparent_calc(10%-1px),rgba(0,0,0,0.55)_calc(10%-1px),rgba(0,0,0,0.55)_10%)]" />
       </div>
 
       <div class="flex flex-wrap items-center justify-between gap-3 border-t border-gold-border/60 bg-black/40 px-5 py-3">
@@ -217,6 +219,7 @@ const quality = ['text-quality-epic border-quality-epic', 'text-quality-rare bor
               ⚔ {{ $t('quiz.fightResult') }}
             </NuxtLink>
             <ShareButton v-if="shareUrl" :url="shareUrl" :text="shareText" :label="$t('share.button')" content-type="quiz_result" :item-id="results[0].id" />
+            <NuxtLink :to="localePath(routeNameFor('namensgenerator', mode))" class="wow-btn wow-btn-stone" @click="track('names_cta', { source: 'quiz' })">✒ {{ $t('names.cta') }}</NuxtLink>
             <button class="wow-btn wow-btn-stone" @click="restart">{{ $t('quiz.restart') }}</button>
           </template>
         </div>
@@ -227,3 +230,19 @@ const quality = ['text-quality-epic border-quality-epic', 'text-quality-rare bor
     <ContentBlock :name="mode === 'forever' ? 'forever-quiz' : 'quiz'" class="mt-12" />
   </main>
 </template>
+
+<style scoped>
+/* Erfahrungsbalken: läuft weich nach, an der Kante ein heller Schimmer */
+.xp-fill {
+  position: relative;
+  transition: width 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.xp-fill::after {
+  content: '';
+  position: absolute;
+  inset: 0 0 0 auto;
+  width: 14px;
+  background: linear-gradient(90deg, transparent, rgba(255, 230, 255, 0.85));
+  filter: blur(1px);
+}
+</style>

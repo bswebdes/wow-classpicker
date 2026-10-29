@@ -19,6 +19,20 @@ Stand: 29.10.2026 · live auf [findyourmain.com](https://findyourmain.com), Bran
 ### Reichweite
 - [ ] In Communitys teilen: r/wow, r/wownoob, r/classicwow, Discord, Gilden-Seiten
 
+### Neue Ratgeber (Ubersuggest 29.10.2026, Suchen/Monat USA)
+- [ ] Serie „Bestes Volk für [Klasse]“, je Klasse eine Seite DE/EN, mit Link zum Namensgenerator (?race=…): Hexenmeister 1.000, Magier 720, Todesritter 390, Jäger 320, Paladin 260 (Schwierigkeit 24–34). Start mit Magier + Hexenmeister
+- [ ] „Allianz oder Horde?“ DE/EN (USA 210, DE 110, Dezember-Spitze 390), mit Blick auf Forever (Paladin/Schamane für beide Fraktionen)
+- [ ] „Beste DPS-Klasse“ (590): redaktionell nach Spielstil, keine Schadensrangliste
+- [ ] Optional „Einsteiger-Tierlist“ aus den eigenen Bewertungen (wow class tier list 1.600)
+- [ ] „Einfachster Heiler“ (140) als Abschnitt + Titel im bestehenden Heiler-Ratgeber
+- [ ] Eine Woche nach dem Forever-Start (ab 11.11.2026) Forever-Suchbegriffe neu messen (bisher kaum Daten: rested xp 110, ret paladin 90, tier list 70)
+
+### Namensgenerator (seit 29.10.2026)
+- [ ] Beiträge zu Namen je Klasse und Volk („Namen für Magier“, „Paladin-Namen für Draenei“ …), Suchvolumen USA: paladin wow names 260, druid 260, shaman 210, demon hunter 170; dazu Seiten je Volk (night elf names 590, troll 480, blood elf 390)
+- [ ] Klassen als Filter im Generator, erst wenn die Beiträge zeigen, dass es gefragt ist (Vorrat × 13)
+- [ ] Nach einer Woche prüfen: Saysmo-Ereignisse `name_generate`, `name_copy`, `name_report`; gemeldete und geprüfte Namen in der Tabelle `names` (Spalten reports, reviewed)
+- [ ] Startvorrat neu erzeugen: Dev-Server mit `ANTHROPIC_API_KEY`, `/_nitro/tasks/names:refill?maxNames=25000` aufrufen (währenddessen keine Dateien ändern, sonst bricht der Lauf ab), dann `pnpm names:export`
+
 ### Features & Ideen
 - [ ] Tipp-Datenbank (`app/data/tips.ts`) nach und nach erweitern, z. B. zu jeder Spec und nach dem Forever-Start
 - [ ] Turnier-Modi: 1 gegen 1, Turnierbaum

@@ -52,3 +52,5 @@ Forever allows combinations that didn't exist before, such as **Undead Paladins*
 ## Our tip
 
 Pick a class whose fantasy carries you. WoW Forever is a long journey, and a class you enjoy will still be fun after 50 hours. If you can't decide, let your favorites fight it out in the [Forever tournament](/en/forever).
+
+Picked your class? The [Forever name generator](/en/forever/name-generator) finds a first name and surname to match before someone else claims them.

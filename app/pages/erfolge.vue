@@ -26,6 +26,8 @@ const rest = computed(() => [
   ...byDate.value.slice(3),
   ...achievementDefs.filter(a => !state.value.unlocked[a.id])
 ])
+// In den letzten 24 Stunden errungen: Glanz läuft einmal über die Karte
+const isNew = a => Date.now() - new Date(state.value.unlocked[a.id]).getTime() < 86_400_000
 const nameOf = a => a.secret && !state.value.unlocked[a.id] ? '???' : t(`achievements.list.${a.id}.name`)
 const descOf = a => a.secret && !state.value.unlocked[a.id] ? t('achievements.secret') : t(`achievements.list.${a.id}.desc`)
 </script>
@@ -54,7 +56,7 @@ const descOf = a => a.secret && !state.value.unlocked[a.id] ? t('achievements.se
         <template v-if="recent.length">
           <h2 class="mt-6 font-display text-[15px] font-bold uppercase tracking-wider text-gold">{{ $t('achievements.recent') }}</h2>
           <ul class="mt-3 grid gap-2 sm:grid-cols-3">
-            <li v-for="a in recent" :key="a.id" class="flex flex-col items-center rounded-md border border-gold bg-gradient-to-b from-[#3a2a12] to-[#1a120a] p-3 text-center shadow-[0_0_14px_rgba(255,209,0,0.15)]">
+            <li v-for="(a, i) in recent" :key="a.id" class="relative flex flex-col items-center overflow-hidden rounded-md border border-gold bg-gradient-to-b from-[#3a2a12] to-[#1a120a] p-3 text-center shadow-[0_0_14px_rgba(255,209,0,0.15)]" :class="{ 'achievement-new': isNew(a) }" :style="{ '--i': i }">
               <img :src="a.icon" alt="" width="56" height="56" class="wow-slot h-14 w-14 !border-gold" />
               <div class="mt-2 font-display font-bold leading-tight text-white">{{ nameOf(a) }}</div>
               <div class="mt-1 text-[13px] text-neutral-300">{{ descOf(a) }}</div>
@@ -91,3 +93,19 @@ const descOf = a => a.secret && !state.value.unlocked[a.id] ? t('achievements.se
     </section>
   </main>
 </template>
+
+<style scoped>
+/* Frisch errungen: goldener Glanz läuft einmal über die Karte (nacheinander) */
+.achievement-new::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(105deg, transparent 35%, rgba(255, 225, 120, 0.45) 50%, transparent 65%);
+  transform: translateX(-100%);
+  animation: achievement-shine 1.1s ease-out calc(0.3s + var(--i) * 0.2s) forwards;
+  pointer-events: none;
+}
+@keyframes achievement-shine {
+  to { transform: translateX(100%); }
+}
+</style>

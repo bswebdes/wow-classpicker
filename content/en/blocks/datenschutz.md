@@ -51,6 +51,12 @@ For fun, you can collect achievements on this website, for example by viewing se
 
 The legal basis is your consent under § 25(1) TDDDG. You can withdraw it at any time in the cookie settings; the entry is then deleted. You can also remove it via your browser settings.
 
+## Name generator
+
+The name generator loads its suggestions from this server. When you copy or report a name, the server only counts how often that name was copied or reported, so that taken or unsuitable names appear less often. Nothing about you is stored. A first name you type for the surname search is used by the server for that search only; it is not stored or shared with anyone. To prevent abuse, the server briefly counts in memory how many requests come from an IP address; the count expires after one hour at the latest.
+
+The names themselves are created in advance with Claude (Anthropic), and names that are reported often are checked there automatically. Only the name itself is transferred, no visitor data, and nothing you type is sent to an AI. The legal basis is Art. 6(1)(f) GDPR; my legitimate interest is a working tool that is protected against abuse.
+
 ## Cookie-free statistics (Saysmo)
 
 To understand which pages are read and how visitors find the website, I use Saysmo to measure how the website is used. Saysmo is my own tool (frysch.studio, Benjamin Schey). For this, every page loads a small script from t.saysmo.com.

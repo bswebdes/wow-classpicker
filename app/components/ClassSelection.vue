@@ -47,6 +47,7 @@ const getPlayerIndex = (id) => {
           type="button"
           class="wow-slot fighter-slot h-[72px] w-[72px] transition-all duration-150"
           :class="selectedClasses.has(id) ? 'is-selected' : 'grayscale-[85%] opacity-70 hover:grayscale-0 hover:opacity-100'"
+          :style="{ '--c': data.color }"
           :aria-pressed="selectedClasses.has(id)"
           :aria-label="$t(`classes.${id}.name`)"
           @click="emit('toggle', id)"
@@ -98,4 +99,12 @@ const getPlayerIndex = (id) => {
   border-color: var(--color-gold);
   box-shadow: inset 0 0 0 1px #000, 0 0 0 1px var(--color-gold-border), 0 0 14px rgba(255, 209, 0, 0.55);
 }
+/* Hover: Klasse leuchtet in ihrer Farbe und hebt sich leicht an */
+.fighter-slot:not(.is-selected):hover,
+.fighter-slot:not(.is-selected):focus-visible {
+  border-color: var(--c);
+  box-shadow: inset 0 0 0 1px #000, 0 0 14px color-mix(in srgb, var(--c) 70%, transparent);
+  transform: translateY(-2px);
+}
+.fighter-slot:active { transform: scale(0.95); }
 </style>

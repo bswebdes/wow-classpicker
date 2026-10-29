@@ -21,8 +21,10 @@
       "classes": "Klassen",
       "quiz": "Quiz",
       "random": "Zufall",
-      "guides": "Ratgeber"
-    }
+      "guides": "Ratgeber",
+      "names": "Namen"
+    },
+    "names": "Namensgenerator"
   },
   "footer": {
     "tagline": "Find Your Main ist der WoW Class Picker für deine Klassenwahl in World of Warcraft: Midnight und WoW Forever. Mit Klassen-Turnier, Quiz und Zufallsgenerator.",
@@ -83,7 +85,8 @@
     "quizTeaser": "Beantworte 7 Fragen und finde die WoW-Klasse, die zu deinem Spielstil passt.",
     "randomTeaser": "Ein Klick, eine zufällige Klasse samt Spezialisierung. Für Mutige und Twinks.",
     "classesTeaser": "Alle 13 Klassen in Midnight mit Rollen, Rüstung und Spielgefühl im Überblick.",
-    "ogTitle": "Welche WoW-Klasse spielst du in Midnight?"
+    "ogTitle": "Welche WoW-Klasse spielst du in Midnight?",
+    "namesTeaser": "Einzigartige Vornamen für jedes Volk, mit Varianten, falls deiner vergeben ist."
   },
   "classesPage": {
     "title": "WoW Klassen in Midnight: Alle 13 Klassen im Überblick",
@@ -312,7 +315,8 @@
       "heading": "Welche Klasse spielst du in WoW Forever?",
       "intro": "WoW Forever bringt das klassische Azeroth zurück, mit neuen Völker-Klassen-Kombinationen und dem neuen Volk der Himmelsgeborenen. Wähle deine Favoriten unter den 9 Klassen und lass sie gegeneinander antreten.",
       "classesTeaser": "Alle 9 Klassen in WoW Forever mit Talentbäumen, Rollen und Völkern.",
-      "randomTeaser": "Volk, Klasse und Talentbaum per Zufall. Für Twinks und Mutige."
+      "randomTeaser": "Volk, Klasse und Talentbaum per Zufall. Für Twinks und Mutige.",
+      "namesTeaser": "Vor- und Nachname für deinen WoW-Forever-Charakter, in Sekunden."
     },
     "classes": {
       "title": "WoW Forever Klassen und Völker: Alle 56 Kombinationen",
@@ -573,6 +577,10 @@
       "curious": {
         "name": "Neugierig wie ein Gnom",
         "desc": "Klappe 10 Antworten in den häufigen Fragen auf."
+      },
+      "name_finder": {
+        "name": "Wie heißt du?",
+        "desc": "Lass dir im Namensgenerator 5-mal neue Namen zeigen."
       }
     },
     "pointsShort": "Punkte",
@@ -773,21 +781,23 @@
     "allSpecs": "Spezialisierungen im Detail"
   },
   "tools": {
-    "subtitle": "Vier Werkzeuge, die dir bei der Klassenwahl helfen.",
+    "subtitle": "Fünf Werkzeuge, die dir bei der Klassen- und Namenswahl helfen.",
     "use": "Benutzen:",
     "open": "Benutzen",
     "meta": {
       "quiz": "Werkzeug · 7 Fragen",
       "random": "Werkzeug · Ein Klick",
       "classes": "Nachschlagewerk · {n} Klassen",
-      "compare": "Werkzeug · Zwei Klassen"
+      "compare": "Werkzeug · Zwei Klassen",
+      "names": "Werkzeug · Tausende Namen"
     },
     "compareTeaser": "Stell zwei Klassen nebeneinander: Rollen, Rüstung, Einstieg und Spielgefühl im direkten Vergleich.",
     "flavor": {
       "quiz": "„Sag mir, wie du kämpfst, und ich sage dir, wer du bist.“",
       "random": "„Das Schicksal irrt sich nie. Meistens.“",
       "classes": "„Wissen ist die schärfste Klinge.“",
-      "compare": "„Zwei Wege, ein Ziel: dein Main.“"
+      "compare": "„Zwei Wege, ein Ziel: dein Main.“",
+      "names": "„Ein Held braucht einen Namen, den die Barden besingen können.“"
     }
   },
   "version": {
@@ -802,5 +812,64 @@
     "pause": "Tipps anhalten",
     "resume": "Tipps fortsetzen",
     "newTab": "öffnet in neuem Tab"
+  },
+  "names": {
+    "filtersTitle": "Namensoptionen",
+    "race": "Volk",
+    "gender": "Geschlecht",
+    "style": "Stil",
+    "surnameLang": "Sprache der Nachnamen",
+    "female": "Weiblich",
+    "male": "Männlich",
+    "empty": "Für diese Auswahl gibt es noch keine Namen. Probier einen anderen Stil oder ein anderes Volk.",
+    "more": "Neuer Name",
+    "copy": "{name} kopieren",
+    "report": "Unpassenden Namen melden",
+    "variants": "Varianten",
+    "variantsIntro": "Vergeben? Probier eine Variante:",
+    "ownPlaceholder": "Dein Vorname",
+    "findSurnames": "Nachnamen finden",
+    "valid": "{name} erfüllt die WoW-Namensregeln.",
+    "problems": {
+      "length": "2 bis 12 Buchstaben",
+      "letters": "nur Buchstaben, keine Leerzeichen, Zahlen oder Sonderzeichen (auch kein ß)",
+      "case": "nur der erste Buchstabe groß",
+      "triple": "kein Buchstabe dreimal hintereinander",
+      "blocked": "nicht erlaubt (Lore-Figur oder gesperrtes Wort)"
+    },
+    "styles": {
+      "epic": "Episch",
+      "dark": "Düster",
+      "lore": "Lore",
+      "funny": "Lustig"
+    },
+    "retail": {
+      "title": "WoW Namensgenerator: Einzigartige Charakternamen für Midnight",
+      "description": "Kostenloser WoW Namensgenerator: einzigartige Vornamen für jedes Volk in Midnight, episch, düster, Lore oder lustig. Mit Varianten, falls dein Name vergeben ist.",
+      "heading": "WoW Namensgenerator",
+      "intro": "Finde einen Namen für deinen nächsten Charakter: Volk, Geschlecht und Stil wählen, Namen kopieren. Ist er auf deinem Realm vergeben, nimm eine der Varianten.",
+      "hint": "In Retail muss ein Name nur auf deinem Realm frei sein. Vergeben? Über ⇄ bekommst du Varianten mit Akzent oder anderer Schreibweise.",
+      "ownTitle": "Eigenen Namen prüfen",
+      "ownIntro": "Gib einen Namen ein: Wir prüfen ihn gegen die WoW-Namensregeln und schlagen Varianten vor, falls er vergeben ist."
+    },
+    "forever": {
+      "title": "WoW Forever Namensgenerator: Vor- und Nachnamen",
+      "description": "Namensgenerator für WoW Forever: Vor- und Nachname für jedes Volk, episch, düster, Lore oder lustig, auch mit deutschen Nachnamen. Plus Nachnamen zu deinem Vornamen.",
+      "heading": "WoW Forever Namensgenerator",
+      "intro": "In WoW Forever hat jeder Charakter einen Vor- und einen Nachnamen. Wähle Volk, Geschlecht und Stil und sichere dir deine Kombination, bevor sie jemand anderes nimmt.",
+      "hint": "Die Kombination aus Vor- und Nachname muss in deiner Region einzigartig sein. Namen, die schon oft kopiert wurden, zeigen wir seltener.",
+      "ownTitle": "Nachnamen zu deinem Vornamen",
+      "ownIntro": "Du hast schon einen Vornamen? Gib ihn ein und bekomme passende Nachnamen für das gewählte Volk und den Stil."
+    },
+    "neutral": "Neutral",
+    "allRaces": "Alle Völker",
+    "allFactions": "Allianz und Horde",
+    "randomRace": "Zufälliges Volk und Geschlecht",
+    "copied": "Kopiert",
+    "copyShort": "Kopieren",
+    "history": "Zuletzt gezeigt",
+    "cta": "Namen finden",
+    "ctaClass": "Namen für deinen {class}",
+    "ctaCharacter": "Namen für diesen Charakter"
   }
 }

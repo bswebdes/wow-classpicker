@@ -35,6 +35,7 @@ export const achievementDefs: AchievementDef[] = [
   { id: 'regular', points: 10, icon: '/spec-icons/monk-brewmaster.webp' },
   { id: 'duel', points: 5, icon: '/spec-icons/warrior-arms.webp' },
   { id: 'curious', points: 5, icon: '/spec-icons/rogue-subtlety.webp' },
+  { id: 'name_finder', points: 10, icon: '/class-icons/ClassIcon_warlock.webp' },
   // Krönung: schaltet sich frei, sobald alle anderen errungen sind
   { id: 'completionist', points: 25, icon: '/class-icons/ClassIcon_evoker.webp', secret: true }
 ]
@@ -49,6 +50,7 @@ export const achievementThresholds = {
   guidesMany: 10,
   comparisons: 3,
   rolls: 10,
+  nameRolls: 5,
   declines: 3,
   tips: 10,
   specPages: 5,

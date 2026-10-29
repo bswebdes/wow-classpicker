@@ -94,6 +94,7 @@ const quality = ['text-quality-epic border-quality-epic', 'text-quality-rare bor
       <div class="mt-5 flex flex-wrap justify-center gap-3">
         <NuxtLink :to="localePath(routeNameFor('quiz', mode))" class="wow-btn wow-btn-lg">{{ $t('share.ctaQuiz') }} ›</NuxtLink>
         <NuxtLink :to="localePath(routeNameFor('index', mode))" class="wow-btn wow-btn-stone wow-btn-lg">⚔ {{ $t('share.ctaArena') }}</NuxtLink>
+        <NuxtLink :to="localePath(routeNameFor('namensgenerator', mode))" class="wow-btn wow-btn-stone wow-btn-lg">✒ {{ $t('names.cta') }}</NuxtLink>
       </div>
       <p class="mt-6">
         <NuxtLink :to="classLink(info.id)" class="text-neutral-300 underline decoration-dotted underline-offset-2 hover:text-gold">{{ $t('result.learnMore', { class: $t(`classAccusative.${info.id}`) }) }} ›</NuxtLink>

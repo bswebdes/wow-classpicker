@@ -2,7 +2,7 @@ import type { GameMode } from '~/utils/classInfo'
 
 // Seiten, die es in beiden Modi gibt. Retail-Routen heißen wie die Basis,
 // Forever-Routen liegen unter pages/forever/ ("forever", "forever-klassen", ...).
-export const modeRoutes = ['index', 'klassen', 'klassen-slug', 'klassen-vergleich', 'quiz', 'zufall'] as const
+export const modeRoutes = ['index', 'klassen', 'klassen-slug', 'klassen-vergleich', 'quiz', 'zufall', 'namensgenerator'] as const
 export type ModeRoute = typeof modeRoutes[number]
 
 export const routeNameFor = (base: ModeRoute, mode: GameMode) =>

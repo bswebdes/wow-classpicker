@@ -65,3 +65,5 @@ So if you fell in love with a race first, you can hardly go wrong with these cla
 Pick the race you like. Racial abilities give small advantages, but the difference is minor and changes with patches. Looks, animations, story and faction, on the other hand, stay with you every day. If your favorite race cannot play your dream class, look at the classes that almost every race can play.
 
 Not sure which class it should be yet? The [class quiz](/en/wow-class-quiz) will help, or let the rare classes fight it out in the [class tournament](/en?classes=evoker,demonhunter,druid,paladin,shaman). Classic Azeroth has its own overview: [WoW Forever races and classes](/en/guides/wow-forever-races-classes).
+
+Once race and class are set, your character still needs a name: the [WoW name generator](/en/name-generator) suggests unique names for every race, with variants in case yours is taken.

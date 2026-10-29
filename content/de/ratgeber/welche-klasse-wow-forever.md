@@ -52,3 +52,5 @@ Forever erlaubt Kombinationen, die es früher nicht gab, etwa **Untote Paladine*
 ## Unser Tipp
 
 Nimm dir für den Start eine Klasse, deren Fantasy dich trägt. WoW Forever ist eine lange Reise, und die Klasse, die dir Spaß macht, spielst du auch nach 50 Stunden noch gern. Wenn du dich nicht entscheiden kannst: Lass deine Favoriten im [Forever-Turnier](/forever) gegeneinander kämpfen.
+
+Klasse gefunden? Der [Forever-Namensgenerator](/forever/namensgenerator) findet einen passenden Vor- und Nachnamen, bevor ihn sich jemand anderes sichert.

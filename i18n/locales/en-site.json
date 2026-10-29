@@ -21,8 +21,10 @@
       "classes": "Classes",
       "quiz": "Quiz",
       "random": "Random",
-      "guides": "Guides"
-    }
+      "guides": "Guides",
+      "names": "Names"
+    },
+    "names": "Name Generator"
   },
   "footer": {
     "tagline": "Find Your Main is the WoW class picker that helps you choose your class in World of Warcraft: Midnight and WoW Forever, with a class tournament, a quiz and a random class generator.",
@@ -83,7 +85,8 @@
     "quizTeaser": "Answer 7 questions and find the WoW class that fits your playstyle.",
     "randomTeaser": "One click, one random class and spec. For the brave and for alts.",
     "classesTeaser": "All 13 classes in Midnight with roles, armor and playstyle at a glance.",
-    "ogTitle": "Which WoW class will you play in Midnight?"
+    "ogTitle": "Which WoW class will you play in Midnight?",
+    "namesTeaser": "Unique first names for every race, with variants in case yours is taken."
   },
   "classesPage": {
     "title": "WoW Classes in Midnight: All 13 Classes Explained",
@@ -312,7 +315,8 @@
       "heading": "Which class will you play in WoW Forever?",
       "intro": "WoW Forever brings classic Azeroth back, with new race and class combinations and the new Skyborne race. Pick your favorites among the 9 classes and let them fight.",
       "classesTeaser": "All 9 classes in WoW Forever with talent trees, roles and races.",
-      "randomTeaser": "Race, class and talent tree at random. For alts and the brave."
+      "randomTeaser": "Race, class and talent tree at random. For alts and the brave.",
+      "namesTeaser": "First name and surname for your WoW Forever character, in seconds."
     },
     "classes": {
       "title": "WoW Forever Classes and Races: All 56 Combinations",
@@ -573,6 +577,10 @@
       "curious": {
         "name": "Curious as a Gnome",
         "desc": "Open 10 answers in the FAQs."
+      },
+      "name_finder": {
+        "name": "What's in a Name?",
+        "desc": "Roll new names 5 times in the name generator."
       }
     },
     "pointsShort": "points",
@@ -773,21 +781,23 @@
     "allSpecs": "Specializations in detail"
   },
   "tools": {
-    "subtitle": "Four tools to help you pick your class.",
+    "subtitle": "Five tools to help you pick your class and name.",
     "use": "Use:",
     "open": "Use",
     "meta": {
       "quiz": "Tool · 7 questions",
       "random": "Tool · One click",
       "classes": "Reference · {n} classes",
-      "compare": "Tool · Two classes"
+      "compare": "Tool · Two classes",
+      "names": "Tool · Thousands of names"
     },
     "compareTeaser": "Put two classes side by side: roles, armor, difficulty and playstyle compared directly.",
     "flavor": {
       "quiz": "\"Tell me how you fight, and I will tell you who you are.\"",
       "random": "\"Fate is never wrong. Mostly.\"",
       "classes": "\"Knowledge is the sharpest blade.\"",
-      "compare": "\"Two paths, one goal: your main.\""
+      "compare": "\"Two paths, one goal: your main.\"",
+      "names": "\"A hero needs a name the bards can sing.\""
     }
   },
   "version": {
@@ -802,5 +812,64 @@
     "pause": "Pause tips",
     "resume": "Resume tips",
     "newTab": "opens in a new tab"
+  },
+  "names": {
+    "filtersTitle": "Name options",
+    "race": "Race",
+    "gender": "Gender",
+    "style": "Style",
+    "surnameLang": "Surname language",
+    "female": "Female",
+    "male": "Male",
+    "empty": "No names for this selection yet. Try another style or race.",
+    "more": "New name",
+    "copy": "Copy {name}",
+    "report": "Report unsuitable name",
+    "variants": "Variants",
+    "variantsIntro": "Taken? Try a variant:",
+    "ownPlaceholder": "Your first name",
+    "findSurnames": "Find surnames",
+    "valid": "{name} follows the WoW naming rules.",
+    "problems": {
+      "length": "2 to 12 letters",
+      "letters": "letters only, no spaces, numbers or special characters",
+      "case": "only the first letter capitalized",
+      "triple": "no letter three times in a row",
+      "blocked": "not allowed (lore character or blocked word)"
+    },
+    "styles": {
+      "epic": "Epic",
+      "dark": "Dark",
+      "lore": "Lore",
+      "funny": "Funny"
+    },
+    "retail": {
+      "title": "WoW Name Generator: Unique Character Names for Midnight",
+      "description": "Free WoW name generator: unique first names for every race and gender in Midnight, epic, dark, lore-friendly or funny. With variants if yours is taken.",
+      "heading": "WoW Name Generator",
+      "intro": "Find a name for your next character: pick race, gender and style, then copy a name you like. If it is taken on your realm, try one of the variants.",
+      "hint": "In retail WoW a name only has to be free on your realm. Taken? Use ⇄ for variants with accents or a different spelling.",
+      "ownTitle": "Check your own name",
+      "ownIntro": "Type a name to check it against the WoW naming rules and get variants in case it is taken."
+    },
+    "forever": {
+      "title": "WoW Forever Name Generator: First Names and Surnames",
+      "description": "Name generator for WoW Forever: first name and surname for every race, epic, dark, lore-friendly or funny. Plus matching surnames for your own first name.",
+      "heading": "WoW Forever Name Generator",
+      "intro": "In WoW Forever every character has a first name and a surname. Pick race, gender and style and claim the combination you like before someone else does.",
+      "hint": "The combination of first name and surname must be unique in your region. Names that many people have copied are shown less often.",
+      "ownTitle": "Surnames for your first name",
+      "ownIntro": "Already have a first name? Enter it and get fitting surnames for the race and style you picked."
+    },
+    "neutral": "Neutral",
+    "allRaces": "All races",
+    "allFactions": "Alliance and Horde",
+    "randomRace": "Random race and gender",
+    "copied": "Copied",
+    "copyShort": "Copy",
+    "history": "Recent names",
+    "cta": "Find a name",
+    "ctaClass": "Names for your {class}",
+    "ctaCharacter": "Names for this character"
   }
 }

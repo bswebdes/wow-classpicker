@@ -67,3 +67,5 @@ Origin, racial abilities, starting zone and which class fits best are covered in
 *Based on the beta. Changes are possible before launch on 4 November 2026.*
 
 Want to be surprised? The [Forever random generator](/en/forever/random-class-generator) rolls race, class and talent tree, optionally for your faction only.
+
+Found your race? In WoW Forever every character also needs a surname: the [Forever name generator](/en/forever/name-generator) suggests first names and surnames for each race.
