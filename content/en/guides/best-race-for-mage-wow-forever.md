@@ -78,7 +78,7 @@ One catch: to play Skyborne you need at least the **Skyborne Heroic Pack**.
 
 In WoW Forever the Forsaken have only just freed themselves from the Lich King and want to overthrow his rule. Many of them kept the magical skill of their former lives. [Will of the Forsaken](https://www.wowhead.com/forever/spell=7744) frees you from charm, fear and sleep every 2 minutes, which makes the Undead the first PvP pick for the Horde. The lasting immunity from WoW Classic is gone, though.
 
-For leveling, [Cannibalize](https://www.wowhead.com/forever/spell=20577) is much better now: in Forever it restores 7 percent of your health **and mana** every 2 seconds for 10 seconds. New is [Touch of the Grave](https://www.wowhead.com/forever/spell=1260189), which has a 30 percent chance to drain life from your target when you cast.
+For leveling, [Cannibalize](https://www.wowhead.com/forever/spell=20577) is much better now: in Forever it restores 7 percent of your health **and mana** every 2 seconds for 10 seconds. New is [Touch of the Grave](https://www.wowhead.com/forever/spell=1260201), which has a 30 percent chance to drain life from your target when you cast.
 
 ### Troll: burst and regeneration
 

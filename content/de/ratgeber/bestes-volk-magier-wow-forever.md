@@ -78,7 +78,7 @@ Ein Haken: Um Himmelsgeborene zu spielen, brauchst du mindestens das **Skyborne 
 
 Die Verlassenen haben sich in WoW Forever gerade erst vom Lichkönig befreit und wollen seine Herrschaft stürzen. Viele von ihnen haben das magische Können ihres früheren Lebens behalten. [Wille der Verlassenen](https://www.wowhead.com/forever/de/spell=7744) befreit dich alle 2 Minuten von Bezauberung, Furcht und Schlaf, und damit ist der Untote im PvP die erste Wahl der Horde. Eine längere Immunität wie in WoW Classic gibt es aber nicht mehr.
 
-Zum Leveln ist [Kannibalismus](https://www.wowhead.com/forever/de/spell=20577) jetzt deutlich besser: In Forever gibt er dir 10 Sekunden lang alle 2 Sekunden 7 Prozent deiner Gesundheit **und deines Manas** zurück. Neu ist [Berührung des Grabes](https://www.wowhead.com/forever/de/spell=1260189), die beim Zaubern mit 30 Prozent Chance Leben vom Gegner entzieht.
+Zum Leveln ist [Kannibalismus](https://www.wowhead.com/forever/de/spell=20577) jetzt deutlich besser: In Forever gibt er dir 10 Sekunden lang alle 2 Sekunden 7 Prozent deiner Gesundheit **und deines Manas** zurück. Neu ist [Berührung des Grabes](https://www.wowhead.com/forever/de/spell=1260201), die beim Zaubern mit 30 Prozent Chance Leben vom Gegner entzieht.
 
 ### Troll: Burst und Regeneration
 
