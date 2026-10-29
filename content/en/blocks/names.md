@@ -6,7 +6,7 @@ faq:
   - q: "My name is already taken. What can I do?"
     a: "In retail WoW a name only has to be free on your realm. Try a variant: an accent on one letter (Velindra becomes Velíndra), a y instead of an i, a doubled consonant or an extra vowel at the end. The ⇄ button next to each name shows variants like these."
   - q: "Are the names really unique?"
-    a: "Every name in the generator exists only once in our pool, and names that many people have copied are shown less often. Whether a name is still free on your realm can only be checked in the game, because Blizzard offers no way to look it up."
+    a: "Every name in the generator exists only once in our pool, and after three copies we stop suggesting a name. Whether a name is still free on your realm can only be checked in the game, because Blizzard offers no way to look it up."
   - q: "Where do the names come from?"
     a: "The names are created with AI ahead of time and checked against the WoW naming rules and a blocklist of lore characters and offensive words. Nothing you type here is sent to an AI."
 ---

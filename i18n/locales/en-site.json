@@ -848,7 +848,7 @@
       "description": "Free WoW name generator: unique first names for every race and gender in Midnight, epic, dark, lore-friendly or funny. With variants if yours is taken.",
       "heading": "WoW Name Generator",
       "intro": "Find a name for your next character: pick race, gender and style, then copy a name you like. If it is taken on your realm, try one of the variants.",
-      "hint": "In retail WoW a name only has to be free on your realm. Taken? Use ⇄ for variants with accents or a different spelling.",
+      "hint": "In retail WoW a name only has to be free on your realm. Taken? Use ⇄ for variants with accents or a different spelling. After three copies we stop suggesting a name.",
       "ownTitle": "Check your own name",
       "ownIntro": "Type a name to check it against the WoW naming rules and get variants in case it is taken."
     },
@@ -857,7 +857,7 @@
       "description": "Name generator for WoW Forever: first name and surname for every race, epic, dark, lore-friendly or funny. Plus matching surnames for your own first name.",
       "heading": "WoW Forever Name Generator",
       "intro": "In WoW Forever every character has a first name and a surname. Pick race, gender and style and claim the combination you like before someone else does.",
-      "hint": "The combination of first name and surname must be unique in your region. Names that many people have copied are shown less often.",
+      "hint": "The combination of first name and surname must be unique in your region. After three copies we stop suggesting a combination, the first name and surname stay available on their own.",
       "ownTitle": "Surnames for your first name",
       "ownIntro": "Already have a first name? Enter it and get fitting surnames for the race and style you picked."
     },
@@ -870,6 +870,8 @@
     "history": "Recent names",
     "cta": "Find a name",
     "ctaClass": "Names for your {class}",
-    "ctaCharacter": "Names for this character"
+    "ctaCharacter": "Names for this character",
+    "copiedName": "{name} copied",
+    "copySurname": "Surname"
   }
 }

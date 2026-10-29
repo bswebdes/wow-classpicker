@@ -26,6 +26,9 @@ const paths = {
   mug: 'M6 8h9v10a2 2 0 01-2 2H8a2 2 0 01-2-2V8zM15 11h2a2 2 0 010 4h-2M7 8c0-2 1.5-3 3-3s2 1 3 1 2-1 2 2M9 11v6M12 11v6',
   // Schreibfeder
   names: 'M20 4c-6 0-11 4-13 11l-2 5M20 4c0 6-4 10-10 11M7 15h3M13 9l-4 4',
+  // Kopieren (zwei Blätter)
+  copy: 'M9 9h10v11H9zM5 15V4h10',
+  check: 'M5 12.5l4.5 4.5L19 7.5',
   chevron: 'M6 9l6 6 6-6',
   arrowUp: 'M12 19V5M6 11l6-6 6 6'
 }

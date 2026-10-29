@@ -15,6 +15,6 @@ faq:
 
 WoW Forever is the first version of World of Warcraft where every character carries a surname. That gives you far more freedom than in retail: Even if *Kaelith* exists a thousand times, *Kaelith Duskweaver* may still be free. At the same time, good combinations go fast, because the whole region shares one pool of names.
 
-Pick a race and a style above and copy the name you like. Names that many people have already copied are shown less often, so you get fresh suggestions.
+Pick a race and a style above and copy the name you like. After three copies we stop suggesting a combination, so you get fresh suggestions. The first name and surname stay available on their own.
 
 Still deciding on a class? Our guide [Which class should I play in WoW Forever?](/en/guides/which-class-wow-forever) helps, and the [Forever random generator](/en/forever/random-class-generator) rolls race and class for you.
