@@ -124,13 +124,16 @@ const faq = computed(() => pair.value
     ]
   : [])
 
-// SEO: Startseite indexierbar, Paare nur mit Suchvolumen
+// SEO: Startseite indexierbar, Paare nur mit Suchvolumen.
+// Forever bekommt eigene Beschreibungen, sonst sind Retail- und Forever-Paar für Google Duplikate
+const forever = props.mode === 'forever'
 if (pair.value) {
+  const pairDescription = () => t(forever ? 'compare.pairDescriptionForever' : 'compare.pairDescription', { a: name(a.value.id), b: name(b.value.id) })
   usePageSeo({
     title: () => t('compare.pairTitle', { a: name(a.value.id), b: name(b.value.id), game: game.value }),
-    description: () => t('compare.pairDescription', { a: name(a.value.id), b: name(b.value.id) }),
+    description: pairDescription,
     ogTitle: () => t('compare.pairHeading', { a: name(a.value.id), b: name(b.value.id) }),
-    ogSubtitle: () => t('compare.pairDescription', { a: name(a.value.id), b: name(b.value.id) }),
+    ogSubtitle: pairDescription,
     classes: [a.value.id, b.value.id],
     mode: props.mode,
     image: `class-${a.value.id}`,
@@ -140,8 +143,8 @@ if (pair.value) {
 }
 else {
   usePageSeo({
-    title: () => t(props.mode === 'forever' ? 'compare.titleForever' : 'compare.title'),
-    description: () => t('compare.description'),
+    title: () => t(forever ? 'compare.titleForever' : 'compare.title'),
+    description: () => t(forever ? 'compare.descriptionForever' : 'compare.description'),
     ogTitle: () => t('compare.heading'),
     mode: props.mode,
     pageType: 'WebPage'

@@ -692,6 +692,7 @@
     "titleForever": "Compare WoW Forever Classes: Two Classes Side by Side",
     "heading": "Compare classes",
     "description": "Compare two WoW classes directly: roles, armor, specializations, beginner friendliness, solo play and races at a glance, for Midnight and WoW Forever.",
+    "descriptionForever": "Compare two WoW Forever classes directly: roles, armor, beginner friendliness, solo play and playable races at a glance. Find your Forever main.",
     "intro": "Torn between two classes? Pick both and see at a glance how they differ.",
     "pickA": "First class",
     "pickB": "Second class",
@@ -701,6 +702,7 @@
     "pairTitle": "{a} vs {b} in {game}: Class Comparison",
     "pairHeading": "{a} vs {b}",
     "pairDescription": "{a} or {b}? Roles, armor, specializations, beginner friendliness and solo play compared side by side, so you find the class that suits you.",
+    "pairDescriptionForever": "{a} or {b} in WoW Forever? Roles, armor, beginner friendliness, solo play and races compared side by side, so you find your main for Forever.",
     "differences": "Key differences",
     "overview": "At a glance",
     "row": {

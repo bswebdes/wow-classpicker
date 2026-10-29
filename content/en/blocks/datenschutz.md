@@ -2,7 +2,7 @@
 title: "Privacy policy"
 ---
 
-As of 27 October 2026. This is a courtesy translation; the German version is legally binding.
+As of 29 October 2026. This is a courtesy translation; the German version is legally binding.
 
 Protecting your personal data matters to me. Find Your Main is a private, non-commercial fan project. Here you can find out which data is processed when you visit this website, for what purpose and on what legal basis, and what rights you have. I keep data processing deliberately lean: there is no Google Analytics and no tracking cookies, the cookie-free statistics tool Saysmo is my own tool and stores the data in the EU, and fonts are not loaded from Google.
 
@@ -37,12 +37,11 @@ Fonts, images and all other files are loaded directly from this website. There i
 
 On your first visit, a cookie banner asks whether you want to allow optional features: saving your achievements and Wowhead tooltips. Without your consent, none of this is stored or loaded, and no connection to Wowhead is made. This website does not set cookies for statistics or advertising; I do not use Google Analytics or Google Tag Manager.
 
-**Technically necessary** are two cookies:
+**Technically necessary** is one cookie:
 
 - "cc_cookie" stores your choice in the cookie banner (decision and time) so the banner does not reappear on every page view. Lifetime: 6 months.
-- "i18n_redirected" stores the language (German or English) so you are not redirected again on every visit.
 
-The legal basis is § 25(2) no. 2 TDDDG and Art. 6(1)(f) GDPR (language) or Art. 6(1)(c) GDPR in conjunction with Art. 7(1) GDPR (proof of consent).
+The legal basis is § 25(2) no. 2 TDDDG and Art. 6(1)(c) GDPR in conjunction with Art. 7(1) GDPR (proof of consent).
 
 **Withdrawing or changing consent:** use the cookie icon at the bottom left or the "Cookie settings" link in the footer to change your choice at any time with effect for the future. When you withdraw consent, the related data is deleted.
 

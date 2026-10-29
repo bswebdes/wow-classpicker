@@ -21,10 +21,12 @@ const htmlFiles = (dir) => readdirSync(dir).flatMap((name) => {
   return name.endsWith('.html') && !['200.html', '404.html'].includes(name) ? [path] : []
 })
 
-// https://findyourmain.com/en/guides/x -> .output/public/en/guides/x.html
+// https://findyourmain.com/en/guides/x -> .output/public/en/guides/x/index.html (früher x.html)
 const fileForUrl = (url) => {
   const path = url.replace(site, '').replace(/\/$/, '')
-  return path ? join(root, `${path}.html`) : join(root, 'index.html')
+  if (!path) return join(root, 'index.html')
+  const flat = join(root, `${path}.html`)
+  return existsSync(flat) ? flat : join(root, path, 'index.html')
 }
 
 const decode = text => text.replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/&#39;/g, '\'').replace(/&lt;/g, '<').replace(/&gt;/g, '>')
@@ -39,7 +41,7 @@ const warnings = []
 
 for (const file of htmlFiles(root)) {
   const html = readFileSync(file, 'utf8')
-  const page = `/${relative(root, file).replace(/\.html$/, '').replace(/^index$/, '')}`
+  const page = `/${relative(root, file).replace(/\.html$/, '').replace(/(^|\/)index$/, '')}`
   const noindex = /<meta name="robots" content="[^"]*noindex/.test(html)
 
   const title = attr(html, /<title>([^<]*)<\/title>/)

@@ -1,6 +1,6 @@
 # Tasks – Find Your Main (WoW Class Picker)
 
-Stand: 14.10.2026 · live auf [findyourmain.com](https://findyourmain.com), Branch `master` (Push deployt automatisch)
+Stand: 29.10.2026 · live auf [findyourmain.com](https://findyourmain.com), Branch `master`, eigener Server (Dokploy, Push deployt NICHT automatisch)
 
 ## 🔲 Offen
 
@@ -27,7 +27,9 @@ Stand: 14.10.2026 · live auf [findyourmain.com](https://findyourmain.com), Bran
 
 ### Technik
 - [ ] Ab 14.10.2026, 19:27 Uhr: `minimumReleaseAgeExclude` in `pnpm-workspace.yaml` entfernen (jüngstes der 44 Pakete: 13.10., 17:26 UTC)
-- [ ] Netlify-UI: Build-Befehl optional von `npm run build` auf `pnpm run build` umstellen (funktioniert beides)
+- [ ] Nach jedem Deploy in Dokploy: `pnpm indexnow` (automatische Meldung gab es nur auf Netlify)
+- [ ] Netlify-Reste aufräumen, nach Bennys OK: `netlify.toml`, `netlify/functions/`
+- [ ] Google-Absturz ab 25.10.2026 (Einblendungen 761 → 17 am Tag): Indexierung in der Search Console klären (Benny)
 
 ### Laufend
 - [ ] Bei jedem Patch: `app/utils/gameVersion.ts` anpassen (Anzeige „Spielstand“), Spec-Seiten auf geänderte Fähigkeiten prüfen (Namen kommen über `scripts/expand-spells.mjs` von Wowhead)
