@@ -3,8 +3,12 @@
 FROM node:24-slim AS build
 WORKDIR /app
 RUN corepack enable
+# Pakete zuerst und nur anhand des Lockfiles laden: Docker behält diese Schicht, solange sich
+# package.json/Lockfile nicht ändern (spart ~40 s pro Deploy). Danach Code kopieren und offline installieren.
+COPY package.json pnpm-lock.yaml pnpm-workspace.yaml ./
+RUN pnpm fetch
 COPY . .
-RUN pnpm install --frozen-lockfile
+RUN pnpm install --frozen-lockfile --offline
 RUN NITRO_PRESET=node-server pnpm run build
 
 FROM node:24-slim
