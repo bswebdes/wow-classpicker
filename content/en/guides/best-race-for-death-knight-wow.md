@@ -2,6 +2,8 @@
 title: "Best Race for Death Knight in WoW Midnight: Lore and Numbers"
 description: "Which race suits a Death Knight? 23 races in WoW Midnight with lore, racial abilities and honest numbers for Blood, Frost, Unholy, Mythic+ and PvP."
 key: race-deathknight
+topic: races
+series: race
 image: race-deathknight
 imageAlt: "Portraits of a Human, Orc woman, Undead, Blood Elf woman, Dwarf and Tauren woman in front of icy Northrend mountains"
 order: 20

@@ -2,6 +2,7 @@
 title: "Skyborne in WoW Forever: Classes, Racials & Lore"
 description: "The Skyborne in WoW Forever: Windshaper and High Order, every class, racial abilities, the Zephras Isle starting zone and lore. Plus which class fits best."
 key: forever-skyborne
+topic: races
 image: skyborne-volk
 imageAlt: "Three Skyborne in armor and robes in front of a tower on Zephras Isle"
 order: 11.5

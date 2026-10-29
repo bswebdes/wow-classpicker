@@ -2,6 +2,8 @@
 title: "Bestes Volk für Hexenmeister in WoW Forever: Orc, Gnom & Co."
 description: "Welches Volk für Hexenmeister in WoW Forever? Orc, Gnom, Mensch, Untote und der neue Troll-Hexenmeister mit Volksfähigkeiten, Lore und Empfehlungen."
 key: race-warlock-forever
+topic: races
+series: race
 image: race-warlock-forever
 imageAlt: "Porträts von Orc, Gnomin, Untotem, Menschenfrau und Troll vor einem Holzsteg in einem nebligen Sumpf"
 order: 19

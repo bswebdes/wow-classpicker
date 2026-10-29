@@ -100,7 +100,21 @@
     "heading": "Class choice guides",
     "description": "Guides on choosing a class in WoW Midnight and WoW Forever: beginner classes, solo, tanks, healers, PvP, fast leveling, races and class colors.",
     "filterLabel": "Game",
-    "filterAll": "All"
+    "filterAll": "All",
+    "filterTopic": "Topic",
+    "topicAll": "All",
+    "topics": {
+      "class": "Class choice",
+      "roles": "Roles",
+      "races": "Races",
+      "knowledge": "Leveling & more"
+    },
+    "raceSeries": "Best race for your class",
+    "raceSeriesHint": "Tap a class to open its guide. Greyed-out classes are coming soon.",
+    "comingSoon": "soon",
+    "new": "New",
+    "empty": "There is no guide for this selection yet.",
+    "raceSeriesPrefix": "Best race for"
   },
   "quiz": {
     "title": "WoW Class Quiz: Which WoW Class Should I Play in Midnight?",

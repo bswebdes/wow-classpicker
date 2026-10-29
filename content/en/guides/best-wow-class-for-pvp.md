@@ -2,6 +2,7 @@
 title: "Best WoW Class for PvP in Midnight – Which One Fits You?"
 description: "What is the best WoW class for PvP? Classes for arena, Solo Shuffle, battlegrounds and War Mode by playstyle, with easy picks for beginners and no tier list."
 key: pvp
+topic: roles
 image: prey
 imageAlt: "Blood elf with red blades in a dark setting"
 order: 6

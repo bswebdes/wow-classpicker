@@ -2,6 +2,8 @@
 title: "Best Race for Paladin in WoW Forever: Human, Dwarf, Undead"
 description: "Which race for Paladin in WoW Forever? Human, Dwarf and the new Horde Undead Paladin with racials, lore, class quests and recommendations."
 key: race-paladin-forever
+topic: races
+series: race
 image: race-paladin-forever
 imageAlt: "Portraits of a Human woman, a Dwarf and an Undead woman in front of the walls of Stormwind"
 order: 24

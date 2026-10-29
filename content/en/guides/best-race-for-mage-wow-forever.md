@@ -2,6 +2,8 @@
 title: "Best Race for Mage in WoW Forever: Gnome, Human, Orc and More"
 description: "Which race for Mage in WoW Forever? Gnome, Human, Skyborne, Undead, Troll and the new Orc Mage with racial abilities, lore and recommendations."
 key: race-mage-forever
+topic: races
+series: race
 image: race-mage-forever
 imageAlt: "Portraits of a Gnome woman, Human, Skyborne, Undead woman, Troll and Orc woman against the sky above Skywall"
 order: 18

@@ -2,6 +2,7 @@
 title: "WoW Forever Tank Classes: Which Tank Should You Play?"
 description: "All 3 tank classes in WoW Forever compared: Warrior, Druid and Paladin. Raid and dungeon strengths, playstyle and whether Paladins can tank, based on Classic."
 key: forever-tanks
+topic: roles
 image: dustwallow
 imageAlt: "A wooden walkway leads through the misty Dustwallow Marsh in classic Azeroth"
 order: 13

@@ -2,6 +2,8 @@
 title: "Bestes Volk für Hexenmeister in WoW Midnight: Lore und Werte"
 description: "Welches Volk passt zum Hexenmeister? Alle 26 Völker in WoW Midnight mit Lore, Volksfähigkeiten und ehrlichen Zahlen für Gebrechen, Dämonologie, Zerstörung und PvP."
 key: race-warlock
+topic: races
+series: race
 image: race-warlock
 imageAlt: "Porträts von Orc, Menschenfrau, Gnom, Untoter, Leerenelf und Trollin vor einer Lavalandschaft unter rotem Himmel"
 order: 17

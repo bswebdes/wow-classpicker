@@ -2,6 +2,7 @@
 title: "WoW Forever Völker und Klassen: Alle 56 Kombinationen"
 description: "Welches Volk kann in WoW Forever welche Klasse spielen? Alle 56 Völker-Klassen-Kombinationen, die neuen Kombinationen und das neue Volk der Himmelsgeborenen."
 key: forever-races
+topic: races
 image: skyborne
 imageAlt: "Artwork der Himmelsgeborenen (Skyborne): ein Gesicht im Nebel über einer verschneiten Landschaft"
 order: 11

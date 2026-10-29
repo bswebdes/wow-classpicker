@@ -2,6 +2,7 @@
 title: "WoW Forever Healer Classes: Which Healer Should You Play?"
 description: "All 4 healer classes in WoW Forever compared: Priest, Paladin, Shaman and Druid. Strengths, group healing, mana and which healer suits you, based on Classic."
 key: forever-healers
+topic: roles
 image: ashenvale
 imageAlt: "Ashenvale in classic Azeroth: a forest in purple evening light"
 order: 14

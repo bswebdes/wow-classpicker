@@ -2,6 +2,7 @@
 title: "Welche Klasse soll ich in WoW Forever spielen? Guide zum Start"
 description: "Welche Klasse passt in WoW Forever zu dir? Alle 9 Klassen nach Rolle, Solo-Tauglichkeit und Gruppenbedarf, mit Tipps für den Start am 4. November 2026."
 key: forever-which-class
+topic: class
 image: mulgore
 imageAlt: "Mulgore im klassischen Azeroth: grüne Hügel und Felsen im Abendlicht"
 order: 10

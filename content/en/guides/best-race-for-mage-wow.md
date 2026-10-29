@@ -2,6 +2,8 @@
 title: "Best Race for Mage in WoW Midnight: Lore, Racials and Numbers"
 description: "Which race suits a Mage? All 26 races in WoW Midnight with lore, racial abilities and honest numbers for Arcane, Fire, Frost, Mythic+ and PvP."
 key: race-mage
+topic: races
+series: race
 image: race-mage
 imageAlt: "Portraits of a Void Elf, Dwarf, Human woman, Blood Elf, Troll woman and Tauren in front of floating islands bathed in purple arcane light"
 order: 16

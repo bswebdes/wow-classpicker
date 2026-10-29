@@ -2,6 +2,7 @@
 title: "Which Class Should I Play in WoW Forever? Launch Guide"
 description: "Which class suits you in WoW Forever? All 9 classes by role, solo strength and group demand, with tips for launch on 4 November 2026."
 key: forever-which-class
+topic: class
 image: mulgore
 imageAlt: "Mulgore in classic Azeroth: green hills and cliffs in the evening light"
 order: 10

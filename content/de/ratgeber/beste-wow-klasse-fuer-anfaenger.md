@@ -2,6 +2,7 @@
 title: "Beste WoW-Klasse für Anfänger in Midnight – die 5 einfachsten Klassen"
 description: "Welche WoW-Klasse ist am einfachsten? Die 5 besten Klassen für Anfänger und Wiedereinsteiger in Midnight, mit Tipps zu Spezialisierung und Spielstil."
 key: beginner
+topic: class
 image: new-players
 imageAlt: "Ein Greif mit Sattel steht vor einem Turm unter blauem Himmel"
 summary: "Die einfachsten WoW-Klassen für Anfänger in Midnight sind Jäger (Tierherrschaft), Paladin, Todesritter, Dämonenjäger (Verwüstung) und Krieger. Sie verzeihen Fehler, haben übersichtliche Rotationen und kommen solo gut zurecht."

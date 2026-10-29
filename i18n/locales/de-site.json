@@ -100,7 +100,21 @@
     "heading": "Ratgeber zur Klassenwahl",
     "description": "Ratgeber zur Klassenwahl in WoW Midnight und WoW Forever: Anfänger-Klassen, Solo, Tanks, Heiler, PvP, schnell leveln, Völker und Klassenfarben.",
     "filterLabel": "Spiel",
-    "filterAll": "Alle"
+    "filterAll": "Alle",
+    "filterTopic": "Thema",
+    "topicAll": "Alle",
+    "topics": {
+      "class": "Klassenwahl",
+      "roles": "Rollen",
+      "races": "Völker",
+      "knowledge": "Leveln & Wissen"
+    },
+    "raceSeries": "Bestes Volk für deine Klasse",
+    "raceSeriesHint": "Klasse antippen, um den Ratgeber zu öffnen. Ausgegraute Klassen folgen bald.",
+    "comingSoon": "folgt",
+    "new": "Neu",
+    "empty": "Für diese Auswahl gibt es noch keinen Ratgeber.",
+    "raceSeriesPrefix": "Bestes Volk für"
   },
   "quiz": {
     "title": "Welche WoW-Klasse passt zu mir? Das Klassen-Quiz für Midnight",

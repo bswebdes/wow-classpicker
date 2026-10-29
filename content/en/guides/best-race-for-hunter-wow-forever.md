@@ -2,6 +2,8 @@
 title: "Best Race for Hunter in WoW Forever: Night Elf, Orc, Human & More"
 description: "Which race for Hunter in WoW Forever? Night Elf, Dwarf, Orc, Tauren, Troll and the new Human and Skyborne Hunters with racials, lore and recommendations."
 key: race-hunter-forever
+topic: races
+series: race
 image: race-hunter-forever
 imageAlt: "Portraits of a Night Elf woman, Dwarf, Human woman, Orc, Tauren woman, Troll and Skyborne in front of the Barrens savanna"
 order: 23

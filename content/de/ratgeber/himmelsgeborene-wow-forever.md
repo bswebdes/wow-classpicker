@@ -2,6 +2,7 @@
 title: "Himmelsgeborene in WoW Forever: Klassen, Volksfähigkeiten & Lore"
 description: "Die Himmelsgeborenen (Skyborne) in WoW Forever: Windformer und Hoher Orden, alle Klassen, Volksfähigkeiten, Startgebiet Zephras und Lore. Mit Klassen-Tipps."
 key: forever-skyborne
+topic: races
 image: skyborne-volk
 imageAlt: "Drei Himmelsgeborene in Rüstung und Roben vor einem Turm auf der Insel Zephras"
 order: 11.5

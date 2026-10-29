@@ -2,6 +2,7 @@
 title: "Easiest WoW Class for Beginners in Midnight – Top 5 Picks"
 description: "What is the easiest WoW class? The 5 best classes for new and returning players in Midnight, with tips on specs and playstyle."
 key: beginner
+topic: class
 image: new-players
 imageAlt: "A saddled gryphon stands in front of a tower under a blue sky"
 summary: "The easiest WoW classes for beginners in Midnight are Hunter (Beast Mastery), Paladin, Death Knight, Demon Hunter (Havoc) and Warrior. They forgive mistakes, have clear rotations and do well solo."

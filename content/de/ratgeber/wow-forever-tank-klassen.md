@@ -2,6 +2,7 @@
 title: "WoW Forever Tank-Klassen: Krieger, Druide und Paladin im Vergleich"
 description: "Welche Klasse ist der beste Tank in WoW Forever? Krieger, Druide und Paladin im Vergleich, basierend auf WoW Classic: Stärken, Spielgefühl und wo jeder Tank glänzt."
 key: forever-tanks
+topic: roles
 image: dustwallow
 imageAlt: "Ein Holzsteg führt durch die nebligen Düstermarschen im klassischen Azeroth"
 order: 13
