@@ -2,7 +2,7 @@
 title: "Datenschutzerklärung"
 ---
 
-Stand: 27. Oktober 2026
+Stand: 29. Oktober 2026
 
 Der Schutz deiner persönlichen Daten ist mir wichtig. Find Your Main ist ein privates, nicht kommerzielles Fanprojekt. Hier erfährst du, welche Daten beim Besuch dieser Website verarbeitet werden, wofür und auf welcher Rechtsgrundlage, und welche Rechte du hast. Ich halte die Datenverarbeitung bewusst schlank: Es gibt kein Google Analytics und keine Tracking-Cookies, die cookiefreie Statistik Saysmo ist mein eigenes Werkzeug und speichert die Daten in der EU, und Schriften werden nicht von Google geladen.
 
@@ -37,12 +37,11 @@ Schriftarten, Bilder und alle übrigen Dateien dieser Website werden direkt von 
 
 Beim ersten Besuch fragt dich ein Cookie-Banner, ob du optionale Funktionen zulassen möchtest: das Speichern deiner Erfolge und Wowhead-Tooltips. Ohne deine Zustimmung wird nichts davon gespeichert oder geladen, und es wird keine Verbindung zu Wowhead aufgebaut. Cookies für Statistik oder Werbung setzt diese Website nicht; Google Analytics und den Google Tag Manager nutze ich nicht.
 
-**Technisch notwendig** sind zwei Cookies:
+**Technisch notwendig** ist ein Cookie:
 
 - „cc_cookie“ speichert deine Auswahl im Cookie-Banner (Entscheidung und Zeitpunkt), damit das Banner nicht bei jedem Seitenaufruf erneut erscheint. Laufzeit: 6 Monate.
-- „i18n_redirected“ speichert die Sprache (Deutsch oder Englisch), damit du nicht bei jedem Besuch erneut umgeleitet wirst.
 
-Rechtsgrundlage ist § 25 Abs. 2 Nr. 2 TDDDG sowie Art. 6 Abs. 1 lit. f DSGVO (Sprache) bzw. Art. 6 Abs. 1 lit. c DSGVO in Verbindung mit Art. 7 Abs. 1 DSGVO (Nachweis der Einwilligung).
+Rechtsgrundlage ist § 25 Abs. 2 Nr. 2 TDDDG sowie Art. 6 Abs. 1 lit. c DSGVO in Verbindung mit Art. 7 Abs. 1 DSGVO (Nachweis der Einwilligung).
 
 **Einwilligung widerrufen oder ändern:** Über das Cookie-Symbol unten links oder den Link „Cookie-Einstellungen“ im Footer kannst du deine Auswahl jederzeit mit Wirkung für die Zukunft ändern. Beim Widerruf werden die zugehörigen Daten gelöscht.
 

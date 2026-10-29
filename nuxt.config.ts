@@ -128,12 +128,13 @@ export default defineNuxtConfig({
     }
   },
 
-  // Seiten werden beim Build vorgerendert (statisch auf Netlify ausgeliefert)
+  // Seiten werden beim Build vorgerendert und vom Node-Server (deploy/Dockerfile) ausgeliefert
   nitro: {
+    // Der Node-Server komprimiert nicht selbst: .br/.gz-Varianten beim Build erzeugen (HTML, JS, CSS)
+    compressPublicAssets: { gzip: true, brotli: true },
     prerender: {
-      // Seiten als /klassen/magier.html statt /klassen/magier/index.html schreiben,
-      // sonst leitet Netlify jede URL auf eine Variante mit Schrägstrich am Ende um
-      autoSubfolderIndex: false,
+      // Seiten als /klassen/magier/index.html schreiben (Standard): Der Node-Server findet nur diese Form,
+      // /klassen/magier.html (früher für Netlify) übersieht er und rendert die Seite bei jedem Aufruf neu
       // Standard ist 1 (Seite für Seite); parallel rendern verkürzt den Build deutlich
       concurrency: 8,
       crawlLinks: true,
@@ -153,10 +154,8 @@ export default defineNuxtConfig({
       { code: 'de', language: 'de-DE', name: 'Deutsch', files: ['de.json', 'de-site.json'] },
       { code: 'en', language: 'en-US', name: 'English', files: ['en.json', 'en-site.json'] }
     ],
-    detectBrowserLanguage: {
-      useCookie: true,
-      cookieKey: 'i18n_redirected',
-      redirectOn: 'root'
-    }
+    // Keine automatische Weiterleitung nach Browsersprache: Googlebot rendert mit Englisch
+    // und wurde von / auf /en umgeleitet. Die Sprache wählt man über den LanguagePicker.
+    detectBrowserLanguage: false
   }
 })

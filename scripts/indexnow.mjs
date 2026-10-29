@@ -1,5 +1,6 @@
 // IndexNow manuell: pnpm indexnow [--all] [--days=3] [--dry]
-// Nach jedem Produktions-Deploy läuft die Meldung automatisch (netlify/functions/deploy-succeeded.mjs).
+// Seit dem Umzug auf den eigenen Server (27.10.2026) gibt es keine automatische Meldung mehr
+// (netlify/functions/deploy-succeeded.mjs lief nur auf Netlify): nach jedem Deploy in Dokploy von Hand starten.
 import { readSitemap, recentUrls, submit } from './indexnow-lib.mjs'
 
 const args = process.argv.slice(2)

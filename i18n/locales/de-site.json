@@ -692,6 +692,7 @@
     "titleForever": "WoW Forever Klassen vergleichen: Zwei Klassen im Vergleich",
     "heading": "Klassen vergleichen",
     "description": "Vergleiche zwei WoW-Klassen direkt: Rollen, Rüstung, Spezialisierungen, Einstieg, Solo-Spiel und Völker auf einen Blick, für Midnight und WoW Forever.",
+    "descriptionForever": "Vergleiche zwei Klassen in WoW Forever: Rollen, Rüstung, Einstieg, Solo-Spiel und spielbare Völker auf einen Blick. Finde deinen Main für Forever.",
     "intro": "Du schwankst zwischen zwei Klassen? Wähle beide aus und sieh auf einen Blick, worin sie sich unterscheiden.",
     "pickA": "Erste Klasse",
     "pickB": "Zweite Klasse",
@@ -701,6 +702,7 @@
     "pairTitle": "{a} vs. {b} in {game}: Klassenvergleich",
     "pairHeading": "{a} vs. {b}",
     "pairDescription": "{a} oder {b}? Rollen, Rüstung, Spezialisierungen, Einstieg und Solo-Spiel im direkten Vergleich, damit du die passende Klasse findest.",
+    "pairDescriptionForever": "{a} oder {b} in WoW Forever? Rollen, Rüstung, Einstieg, Solo-Spiel und Völker im direkten Vergleich, damit du deinen Main für Forever findest.",
     "differences": "Die wichtigsten Unterschiede",
     "overview": "Im Überblick",
     "row": {

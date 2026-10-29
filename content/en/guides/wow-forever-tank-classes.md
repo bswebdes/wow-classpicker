@@ -1,6 +1,6 @@
 ---
-title: "WoW Forever Tank Classes: Warrior, Druid and Paladin Compared"
-description: "Which class is the best tank in WoW Forever? Warrior, Druid and Paladin compared, based on WoW Classic: strengths, playstyle and where each tank shines."
+title: "WoW Forever Tank Classes: Which Tank Should You Play?"
+description: "All 3 tank classes in WoW Forever compared: Warrior, Druid and Paladin. Raid and dungeon strengths, playstyle and whether Paladins can tank, based on Classic."
 key: forever-tanks
 image: dustwallow
 imageAlt: "A wooden walkway leads through the misty Dustwallow Marsh in classic Azeroth"
